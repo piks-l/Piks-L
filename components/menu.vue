@@ -28,9 +28,9 @@
 				<div class="menu__item menu__item--1" data-direction="bt">
 					<div class="menu__item-inner">
 						<div class="mainmenu">
-							<a href="#" class="mainmenu__item">Story</a>
-							<a href="#" class="mainmenu__item">Chronicles</a>
-							<a href="#" class="mainmenu__item">Tour</a>
+							<a href="#" class="mainmenu__item">Actualités</a>
+							<a href="#" class="mainmenu__item">Artworks</a>
+							<a href="#" class="mainmenu__item">Tattoos</a>
 							<a href="#" class="mainmenu__item">Contact</a>
 						</div>
 						<p class="label label--topleft label--vert-mirror">Menu principal</p>
