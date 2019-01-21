@@ -3,10 +3,11 @@
   
     <div class="share border">
      <p class="link">
-      Nous suivre :
-      <a class="entry" href="https://www.facebook.com/lacourdesmiraclestattoos/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <a class="entry" href="https://www.instagram.com/lacourdesmiraclestattoos/" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a class="entry" href="https://www.twitter.com/lacourtattoo" target="_blank"><i class="fab fa-twitter"></i></a>
+      Me suivre :
+      <a class="entry" href="https://www.facebook.com/sebastienoddtattoo" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a class="entry" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a class="entry" href="https://twitter.com/sebastienodd" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a class="entry" href="https://www.youtube.com/channel/UCH8hl7gSMTr4TcBSIF8PiwA" target="_blank"><i class="fab fa-youtube"></i></a>
      </p>
     </div>
     <div class="videos border">
