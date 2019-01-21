@@ -1,11 +1,9 @@
 <template>
-    <div id="footer" class="footer-cdm">
+    <div id="footer">
         <section class="footer-black">
-            <h1 class="typo-logo">LA COUR DES MIRACLES</h1>
-            <p><b>©</b>Tous droits réservés</p>
-            <span>1 Rue Delacroix : </span><a slot="activator" href="tel:+33561539255">05 61 53 92 55</a><br>       
-            <span>10 Rue Malbec : </span><a slot="activator" href="tel:+330984011269">09 84 01 12 69</a><br>       
-            <a href="contact@thebigvoodoo.com">contact@lacourdesmiracles.tattoo</a><br>
+            <h1 class="typo-logo">SEBASTIEN ODD</h1>
+            <p><b>©</b>Tous droits réservés</p>     
+            <a href="sebastienoddtattoos@gmail.com">sebastienoddtattoos@gmail.com</a><br>
             <span class="body-1">Réalisé avec <b>&hearts;</b> par <a target="_blank" href="https://influx-agence.fr">Influx</a></span>
         </section>
     </div>
