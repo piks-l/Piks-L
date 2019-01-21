@@ -82,13 +82,6 @@
   import $ from 'jquery'
   export default {
       head: {
-        link: [
-          { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Slabo+27px' }
-        ],
-        script: [
-          { src: 'https//influx-agence.fr/cms/imagesloaded.pkgd.min.js', ssr: false  },
-          { src: 'https//influx-agence.fr/cms/TweenMax.min.js', ssr: false  }
-        ]
       },
       mounted: () => {
 {
