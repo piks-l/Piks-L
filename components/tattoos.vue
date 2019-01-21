@@ -3,7 +3,7 @@
       <div class="container">
           <div class="wrapper">
               <article v-for="tattoo in tattoos.slice().reverse()" :key="tattoo.date">  
-                  <nuxt-link class="title" :to="artwork._path">
+                  <nuxt-link class="title" :to="tattoo._path">
                     <div class="thumb">
                         <img :src="tattoo.thumbnail" :alt="tattoo.title">
                         <svg class="svgtilt" width="100%" height="100%">
