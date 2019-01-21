@@ -702,7 +702,8 @@ main {
 	text-align: center;
 	max-width: 70%;
 	color: var(--color-quote);
-	font-family: "sabbath-black",serif;
+	font-family: 'Playfair Display', serif;
+  font-weight: 600;
 }
 
 .menu__item-link {
