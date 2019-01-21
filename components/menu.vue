@@ -606,6 +606,8 @@ main {
 
 .menu--open {
 	pointer-events: auto;
+  background: #FFB413 !important;
+  transition: 0.5s ease all;
 }
 
 .menu__item {
