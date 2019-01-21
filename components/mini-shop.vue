@@ -33,8 +33,8 @@
         </div>
       </div>      
       <div class="navigation">
-          <div id="delacroix" class="select active">rue Delacroix</div>
-          <div id="malbec" class="select">rue Malbec</div>
+          <div id="delacroix" class="select active">ARTWORKS</div>
+          <div id="malbec" class="select">TATTOOS</div>
       </div>
   </div>
 </template>
