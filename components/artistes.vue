@@ -5,7 +5,7 @@
               <article v-for="artwork in artworks.slice().reverse()" :key="artwork.date">  
                   <nuxt-link class="title" :to="artwork._path">
                     <div class="thumb">
-                        <img :src="artwork.miniature" :alt="artwork.title">
+                        <img :src="artwork.thumbnail" :alt="artwork.title">
                         <svg class="svgtilt" width="100%" height="100%">
                           <rect x="5%" y="5%" width="90%" height="90%" />
                         </svg>
