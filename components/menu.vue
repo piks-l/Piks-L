@@ -44,7 +44,7 @@
 				<div class="menu__item menu__item--4" data-direction="rl">
 					<div class="menu__item-inner">
 						<p class="label label--topleft label--line">Actualités</p>
-						<a href="#" class="menu__item-link">Learn how to <br> participate</a>
+						<a href="#" class="menu__item-link">Bienvenue sur <br>le nouveau site</a>
 					</div>
 				</div>
 				<div class="menu__item menu__item--5" data-direction="tb">
