@@ -2,15 +2,15 @@
     <div class="equipes">
       <div class="container">
           <div class="wrapper">
-              <article v-for="artiste in artistes.slice().reverse()" :key="artiste.date">  
-                  <nuxt-link class="title" :to="artiste._path">
+              <article v-for="artworks in artwork.slice().reverse()" :key="artworks.date">  
+                  <nuxt-link class="title" :to="artworks._path">
                     <div class="thumb">
-                        <img :src="artiste.miniature" :alt="artiste.title">
+                        <img :src="artworks.miniature" :alt="artworks.title">
                         <svg class="svgtilt" width="100%" height="100%">
                           <rect x="5%" y="5%" width="90%" height="90%" />
                         </svg>
                     </div>
-                    <h3 class="underline">{{ artiste.title }}</h3>
+                    <h3 class="underline">{{ artworks.title }}</h3>
                   </nuxt-link>
               </article>
           </div>
@@ -127,12 +127,12 @@
 <script>
   export default {
     data() {
-      const context = require.context('~/content/artistes/page/', false, /\.json$/);
-      const artistes = context.keys().map(key => ({
+      const context = require.context('~/content/artworks/page/', false, /\.json$/);
+      const artworks = context.keys().map(key => ({
         ...context(key),
-        _path: `/artistes/${key.replace('.json', '').replace('./', '')}`
+        _path: `/artworks/${key.replace('.json', '').replace('./', '')}`
       }));
-      return { artistes };
+      return { artworks };
     }
   };
 </script>
