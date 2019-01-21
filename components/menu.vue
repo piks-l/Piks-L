@@ -32,8 +32,8 @@
 							<a href="#" class="mainmenu__item">Tour</a>
 							<a href="#" class="mainmenu__item">Contact</a>
 						</div>
-						<p class="label label--topleft label--vert-mirror">the important stuff</p>
-						<p class="label label--bottomright label--vert">made in bannockburn</p>
+						<p class="label label--topleft label--vert-mirror">Menu principal</p>
+						<p class="label label--bottomright label--vert">www.sebastien-odd.tattoo</p>
 					</div>
 				</div>
 				<div class="menu__item menu__item--2" data-direction="lr">
