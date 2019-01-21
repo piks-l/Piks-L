@@ -7,14 +7,10 @@
       </div>
     </div>
     <div class="portfolio">
-      <img class="artist-cover" :src="couverture">
       <div class="works" v-for="(img, i) in galerie.slice().reverse()" :key="galerie.i">
           <div class="center" >
             <img class="fontblur" v-lazy="img">
             <img class="artist-img" v-lazy="img">
-            <svg class="svgtilt" width="100%" height="100%">
-                <rect x="5%" y="5%" width="90%" height="90%" />
-            </svg>
           </div>  
       </div>
     </div>
@@ -171,9 +167,9 @@ export default {
       background: gray;
   }
   .works {
-      width: 25%;
+      width: 100%;
       display: inline-block;
-      height: 25vw;
+      height: auto;
       overflow: hidden;
       margin-bottom: -5px;
       position: relative;
