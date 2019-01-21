@@ -1,7 +1,6 @@
 <template>
   <div class="artist">
     <div :class="'intro artist-'+title">
-      <img class="artist-cover" :src="couverture">
       <div class="header">
           <h2>{{ title }}</h2>    
           <vue-markdown>{{description}}</vue-markdown>
@@ -12,9 +11,6 @@
           <div class="center" >
             <img class="fontblur" v-lazy="img">
             <img class="artist-img" v-lazy="img">
-            <svg class="svgtilt" width="100%" height="100%">
-                <rect x="5%" y="5%" width="90%" height="90%" />
-            </svg>
           </div>  
       </div>
     </div>
