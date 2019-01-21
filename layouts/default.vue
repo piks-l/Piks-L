@@ -18,14 +18,6 @@
           cdmHeader,
           cdmFooter
       },
-      head: {
-        link: [
-          { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Slabo+27px' }
-        ],
-        script: [
-       
-        ]
-      },
       mounted: () => {
           $("#navbar").removeClass('hidden');
       }
@@ -33,7 +25,7 @@
 </script>
 <style>
 html {
-  font-family: 'Domine', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -48,7 +40,8 @@ html {
   margin: 0;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: titaniaregular;
+  font-family: 'Playfair Display', serif;
+  font-weight:900;
 }
   body{
     background:#000;
