@@ -799,7 +799,7 @@ main {
 		overflow: hidden;
 		position: fixed;
 		top: 0;
-		left: 0;
+		left: 50%;
 		grid-template-columns: 20% 30% 50%;
 		grid-template-rows: 60% 40%;
 		grid-template-areas: 
