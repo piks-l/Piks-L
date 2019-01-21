@@ -4,7 +4,7 @@
       <img class="artist-cover" :src="couverture">
       <div class="header">
           <h2>{{ title }}</h2>    
-          <vue-markdown>{{intro}}</vue-markdown>
+          <vue-markdown>{{description}}</vue-markdown>
       </div>
     </div>
     <div class="portfolio">
