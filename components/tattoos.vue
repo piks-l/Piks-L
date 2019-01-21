@@ -128,7 +128,7 @@
   export default {
     data() {
       const context = require.context('~/content/tattoos/page/', false, /\.json$/);
-      const artworks = context.keys().map(key => ({
+      const tattoos = context.keys().map(key => ({
         ...context(key),
         _path: `/tattoos/${key.replace('.json', '').replace('./', '')}`
       }));
