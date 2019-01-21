@@ -24,7 +24,7 @@
 		</svg>
 		<main>
 			<div class="content">
-				<div class="background" style="background-image: url(img/1.jpg)"></div>
+				<div class="background" style="background-image: url(https://tympanus.net/Development/MultiboxMenu/img/1.jpg)"></div>
 				<h2 class="content__title">Carmeca</h2>
 				<p class="content__tagline">Europe's most immersive LARP experience</p>
 			</div>
@@ -287,7 +287,7 @@
         layout() {
             let inner = '';
             for (let i = 0; i <= this.layersTotal-1; ++i) {
-                inner +=  '<div class="background__copy" style="background-image: url(img/1.jpg)"></div>';
+                inner +=  '<div class="background__copy" style="background-image: url(https://tympanus.net/Development/MultiboxMenu/img/1.jpg)"></div>';
             }
             this.DOM.main.innerHTML = inner;
             this.DOM.layers = Array.from(this.DOM.main.querySelectorAll('.background__copy'));
@@ -509,7 +509,7 @@ main {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background-image: url(../img/1.jpg);
+	background-image: url(https://tympanus.net/Development/MultiboxMenu/img/1.jpg);
 	background-position: 50% 0%;
 	background-size: cover;
 	z-index: 1;
@@ -711,7 +711,7 @@ main {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: url(../img/2.jpg) no-repeat 50% 50%;
+	background: url(https://tympanus.net/Development/MultiboxMenu/img/2.jpg) no-repeat 50% 50%;
 	background-size: cover;
 	transition: transform 0.8s cubic-bezier(0.2,1,0.8,1);
 }
