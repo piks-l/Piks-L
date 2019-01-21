@@ -355,9 +355,9 @@ body {
 	--color-bg: #252525;
 	--color-link: #fff;
 	--color-link-hover: #f20c40;
-	--color-bg-item1: #15171b;
+	--color-bg-item1: #212121;
 	--color-bg-item2: #2c35b7;
-	--color-bg-item3: #0f1013;
+	--color-bg-item3: #000000;
 	--color-bg-item4: #1d2027;
 	--color-bg-item5: #0f1013;
 	--color-item-alt: #494d54;
