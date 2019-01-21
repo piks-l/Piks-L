@@ -38,7 +38,7 @@
   import influxBlog from '~/components/blog.vue'
   import influxArtworks from '~/components/artworks.vue'
   import influxTattoos from '~/components/tattoos.vue'
-  import influxShop from '~/components/shop.vue'
+  import influxShop from '~/components/mini-shop.vue'
 
   // export
   export default {
