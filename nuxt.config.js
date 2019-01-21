@@ -23,7 +23,8 @@ module.exports = {
     ],
     script: [
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js', ssr: false },
-      { src:'js/TweenMax.min.js', type: 'text/javascript' }
+      { src:'js/TweenMax.min.js', type: 'text/javascript' },
+      { src:'js/imagesloaded.pkgd.min.js', type: 'text/javascript' }
     ]
   },
   router: {
