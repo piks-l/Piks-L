@@ -52,6 +52,16 @@ export default {
 }
 </script>
 <style>  
+.minishop .delacroix.shop-left {
+    left: 0;
+    padding-top: 150px;
+    background: #212121;
+}
+.minishop .malbec.shop-left {
+    left: 0;
+    padding-top: 150px;
+    background: #151515;
+}
   .minishop {
       height: 240px;
       background: #000;
