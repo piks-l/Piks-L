@@ -28,7 +28,7 @@
 				<div class="menu__item menu__item--1" data-direction="bt">
 					<div class="menu__item-inner">
 						<div class="mainmenu">
-							<a href="#" class="mainmenu__item">Actualités</a>
+              <nuxt-link class="mainmenu__item" to="/">Accueil</nuxt-link>
 							<a href="#" class="mainmenu__item">Artworks</a>
 							<a href="#" class="mainmenu__item">Tattoos</a>
 							<a href="#" class="mainmenu__item">Contact</a>
