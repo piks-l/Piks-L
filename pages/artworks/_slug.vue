@@ -121,7 +121,6 @@ export default {
       position: relative;
       width: 100%;
       height:auto;
-      min-height: 80vh;
       margin-top: 58px;
   }
   .intro.artist-PIERO {
@@ -141,14 +140,14 @@ export default {
       top: 50vh;
   }
   .artist .header {
-      width: 40%;
+      width: 100%;
       height: auto;
       position: relative;
-      left: 55%;
-      top: 40vh;
+      top: 85px;
       -webkit-transform: translatey(-50%);
       transform: translatey(-50%);
-      padding:30px 0;
+      padding: 30px 0;
+      text-align: center;
   }
   .artist h2 {
       color: #fff;
