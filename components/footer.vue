@@ -1,6 +1,5 @@
 <template>
     <div id="footer">
-        <influx-navbar/>
         <section class="footer-black">
             <h1 class="typo-logo">SEBASTIEN ODD</h1>
             <p><b>©</b> SEBASTIEN ODD</p>     
@@ -9,17 +8,6 @@
         </section>
     </div>
 </template>
-<script>
-  import $ from 'jquery'
-  import influxNavbar from '~/components/navbar.vue'
-  export default {
-      transition: 'page',
-      components: {
-          influxNavbar
-      }
-
-  }
-</script>
 <style>
     #footer .footer-black {
         width: 100%;
