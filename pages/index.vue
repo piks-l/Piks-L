@@ -1,14 +1,16 @@
 <template>
 <div>
   <div class="container border">
-    <h2>L'équipe</h2>
-    <p>Les artistes de <b>la Cour des Miracles</b> sont tous des <i>artistes</i> reconnus et confirmés. Ils ont chacun leur propre <i>style</i>, il est important de vous familiariser avec leurs différents <i>univers</i>. Nous vous proposons donc d’aller voir les <i>galeries</i> et <i>pages perso</i> de chacun et de suivre les liens proposés.</p>
-    <h3>La cour des miracles <strong>recherche des tatoueurs</strong>, bon niveau et book solide requis !</h3>
+    <h2>ARTWORKS</h2>
+    <influx-artworks/>
   </div>
-  <cdm-artistes/>
+  <div class="container border black">
+    <h2>TATTOOS</h2>
+    <influx-tattoos/>
+  </div>
   
   <div class="container border black">
-    <h2>Nos studios</h2>
+    <h2>Sébastien Odd, tatoueur on the road vivant à Toulouse.</h2>
     <p>Pour chaque projet nous préférons bien évidemment en discuter avec vous directement. La plupart des tatouages réalisés sont des motifs originaux, et une rencontre est souvent nécessaire. Cependant pour un premier contact ou ceux qui viennent de loin il est possible de contacter par <a href="mailto:contact@lacourdesmiracles.tattoo">mail</a> ou via notre page facebook.</p>
   </div>
 
@@ -21,7 +23,7 @@
     <h2>Actualités</h2>
   </div>  
   <div class="content-blog">
-    <cdm-blog/>
+    <influx-blog/>
       <div class="full-width">
         <div class="container border black">
             <nuxt-link to="/blog/"><p>Voir les autres actualités !</p></nuxt-link>
@@ -35,15 +37,17 @@
 <script>
   import $ from 'jquery'
   // import components
-  import cdmBlog from '~/components/blog.vue'
-  import cdmArtistes from '~/components/artistes.vue'
-  
+  import influxBlog from '~/components/blog.vue'
+  import influxArtworks from '~/components/artworks.vue'
+  import influxTattoos from '~/components/tattoos.vue'
+
   // export
   export default {
     layout: 'default',
     components: {
-        cdmBlog,
-        cdmArtistes
+        influxBlog,
+        influxArtistes,
+        influxTattoos
     },
     head() {
       return {
