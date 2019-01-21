@@ -1,20 +1,18 @@
 <template>
 <div>
-  <div class="container border">
+  <div class="container border sideleft">
     <h2>ARTWORKS</h2>
     <influx-artworks/>
   </div>
-  <div class="container border black">
+  <div class="container border sideright">
     <h2>TATTOOS</h2>
     <influx-tattoos/>
   </div>
   
   <div class="container border black">
     <h2>Sébastien Odd, tatoueur on the road vivant à Toulouse.</h2>
-    <p>Pour chaque projet nous préférons bien évidemment en discuter avec vous directement. La plupart des tatouages réalisés sont des motifs originaux, et une rencontre est souvent nécessaire. Cependant pour un premier contact ou ceux qui viennent de loin il est possible de contacter par <a href="mailto:contact@lacourdesmiracles.tattoo">mail</a> ou via notre page facebook.</p>
+    <p>Il travaille plusieurs styles notamment le style réaliste pour lequel il est souvent demandé. Il adore aussi l’univers des comics, du jeu vidéo et du dessin en général et tatoue également beaucoup de pièces ,en newschool et en néo-trad, aux illustrations de qualité et au dessin maîtrisé.</p>
   </div>
-
-  
   <div class="container border black">
     <p><b>Pour aborder vos projets et prendre rendez-vous, veuillez m'envoyer un mail en précisant l'emplacement, les dimensions et l'inspirations en y joignant éventuellement 2 ou 3 photos</b></p>
   </div>
