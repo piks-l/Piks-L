@@ -12,7 +12,7 @@
     <p>Pour chaque projet nous préférons bien évidemment en discuter avec vous directement. La plupart des tatouages réalisés sont des motifs originaux, et une rencontre est souvent nécessaire. Cependant pour un premier contact ou ceux qui viennent de loin il est possible de contacter par <a href="mailto:contact@lacourdesmiracles.tattoo">mail</a> ou via notre page facebook.</p>
   </div>
 
-  <cdm-shop/>
+  <influx-menu/>
   
   <div class="container border black">
     <p><b>Pour aborder vos projets et prendre rendez-vous, veuillez m'envoyer un mail en précisant l'emplacement, les dimensions et l'inspirations en y joignant éventuellement 2 ou 3 photos</b></p>
@@ -38,18 +38,18 @@
   // import components
   import cdmBlog from '~/components/blog.vue'
   import cdmArtistes from '~/components/artistes.vue'
-  import cdmShop from '~/components/shop.vue'
+  import influxMenu from '~/components/menu.vue'
   // export
   export default {
     layout: 'default',
     components: {
         cdmBlog,
         cdmArtistes,
-        cdmShop
+        influxMenu
     },
     head() {
       return {
-        title: 'LA COUR DES MIRACLES',
+        title: 'SEBASTIEN-ODD',
         meta: [
           { hid: 'description', name: 'description', content: 'Sébastien Odd est tatoueur chez Artcore Tattoos à Toulouse. Il travaille le tatouage réaliste, le newschool, le néo-trad et l’illustration.' },
           { 'property': 'og:title', 'content': 'SEBASTIEN-ODD', 'vmid': 'og:title' },
