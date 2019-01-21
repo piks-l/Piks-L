@@ -1,6 +1,6 @@
 <template>
   <section class="header">
-    <img class="font-logo" src="/images/uploads/vierge-couverture.jpg">
+    <img class="font-logo" src="/images/uploads/logobombyx.png">
   </section>
 </template>
 <style>
