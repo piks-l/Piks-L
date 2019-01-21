@@ -27,7 +27,6 @@
 				<div class="menu__item menu__item--2" data-direction="lr">
 					<div class="menu__item-inner">
 						<div class="menu__item-map"></div>
-						<a href="#" class="menu__item-hoverlink">The location</a>
 					</div>
 				</div>
 				<div class="menu__item menu__item--3" data-direction="bt">
