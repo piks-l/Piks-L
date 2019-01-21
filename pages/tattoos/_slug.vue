@@ -42,7 +42,7 @@ export default {
   layout: 'artistes',
   components: { VueMarkdown, VueLazyload, cdmMinishop },
   async asyncData({ params }) {
-    let page = await import('~/content/artistes/page/' + params.slug + '.json');
+    let page = await import('~/content/tattoos/page/' + params.slug + '.json');
     return page;
   },
   head() {
