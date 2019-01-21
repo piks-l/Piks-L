@@ -86,20 +86,11 @@
           { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Slabo+27px' }
         ],
         script: [
-       
+          { src: 'https//influx-agence.fr/cms/imagesloaded.pkgd.min.js', ssr: false  },
+          { src: 'https//influx-agence.fr/cms/TweenMax.min.js', ssr: false  }
         ]
       },
       mounted: () => {
-         /**
- * demo.js
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2018, Codrops
- * http://www.codrops.com
- */
 {
     // Class Menu.
     class Menu {
