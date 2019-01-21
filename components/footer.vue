@@ -13,7 +13,7 @@
     #footer .footer-black {
         width: 100%;
         float: left;
-        background:#000000;
+        background:#212121;
         color:#ffffff;
         text-align:center;
         padding: 40px;
