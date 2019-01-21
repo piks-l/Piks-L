@@ -23,6 +23,12 @@
 			</symbol>
 		</svg>
 		<main>
+    
+   		<div class="content">
+				<div class="background" style="background-image: url(img/1.jpg)"></div>
+				<h2 class="content__title">Carmeca</h2>
+				<p class="content__tagline">Europe's most immersive LARP experience</p>
+			</div>
 			<nav class="menu">
 				<div class="menu__item menu__item--1" data-direction="bt">
 					<div class="menu__item-inner">
