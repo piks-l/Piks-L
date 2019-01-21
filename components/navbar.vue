@@ -6,10 +6,11 @@
     </div>
     <div class="menu">
       <img class="logo" src="https://www.lacourdesmiracles.tattoo/assets/img/Logo-Max-Black.png" alt="logo">
-      <nuxt-link class="effect-left" to="/artistes/">L'équipe</nuxt-link>
-      <nuxt-link class="effect-left" to="/studios/">Nos studios</nuxt-link>
       <nuxt-link class="no-active" to="/">Accueil</nuxt-link>
+      <nuxt-link class="no-active" to="/">Biographie</nuxt-link>
       <nuxt-link class="effect-right" to="/blog/">Actualités</nuxt-link>
+      <nuxt-link class="effect-left" to="/artworks/">Artworks</nuxt-link>
+      <nuxt-link class="effect-left" to="/tattoos/">Tattoos</nuxt-link>
       <nuxt-link class="effect-right" to="/contact/">Contact</nuxt-link> 
     </div>
     <div class="progress-container"><div class="progress-bar" id="myBar"></div></div> 
