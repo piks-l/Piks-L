@@ -1,13 +1,13 @@
 <template>
   <div class="artist">
     <div :class="'intro artist-'+title">
-      <img class="artist-cover" :src="couverture">
       <div class="header">
           <h2>{{ title }}</h2>    
           <vue-markdown>{{description}}</vue-markdown>
       </div>
     </div>
     <div class="portfolio">
+      <img class="artist-cover" :src="couverture">
       <div class="works" v-for="(img, i) in galerie.slice().reverse()" :key="galerie.i">
           <div class="center" >
             <img class="fontblur" v-lazy="img">
@@ -18,10 +18,9 @@
           </div>  
       </div>
     </div>
-    <cdm-minishop :class="shop"/>
     <div class="full-width">
         <div class="container border black">
-            <nuxt-link to="/artistes/"><p>Voir les autres tatoueurs.</p></nuxt-link>
+            <nuxt-link to="/artworks/"><p>Voir les autres artworks</p></nuxt-link>
         </div>
     </div>   
     <div class="lightbox">
