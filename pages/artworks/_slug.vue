@@ -182,14 +182,12 @@ export default {
   }
   .artist-img {
       position: relative;
-      top: 50%;
       left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+      -webkit-transform: translatex(-50%);
+      transform: translatex(-50%);
       filter:blur(50px);
       -webkit-transition: 0.5s all ease;
       transition: 0.5s all ease;
-      width:100%;
   }
   .artist-img[lazy=loaded]{
       filter:blur(0px) !important;
