@@ -8,7 +8,7 @@ var dynamicRoutes = getDynamicPaths({
 });
 module.exports = {
   head: {
-    title: 'LA COUR DES MIRACLES',
+    title: 'SEBASTIEN ODD',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
@@ -22,7 +22,9 @@ module.exports = {
       { rel: 'stylesheet', integrity: 'sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz', href: 'https://use.fontawesome.com/releases/v5.4.1/css/all.css', crossorigin: 'anonymous' }
     ],
     script: [
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js', ssr: false }
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js', ssr: false },
+      { src: '~/assets/js/TweenMax.min.js', ssr: false },
+      { src: '~/assets/js/imagesloaded.pkgd.min', ssr: false }
     ]
   },
   router: {
