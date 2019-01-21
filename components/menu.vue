@@ -44,7 +44,7 @@
 				<div class="menu__item menu__item--4" data-direction="rl">
 					<div class="menu__item-inner">
 						<p class="label label--topleft label--line">Actualités</p>
-						<a href="#" class="menu__item-link">Bienvenue sur <br>le nouveau site</a>
+						<a href="https://twitter.com/sebastienodd/status/1074620073464217600" target="_blank"class="menu__item-link">J'ai commencé à <br>tatouer des amis ...</a>
 					</div>
 				</div>
 				<div class="menu__item menu__item--5" data-direction="tb">
