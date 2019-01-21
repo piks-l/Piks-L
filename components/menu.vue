@@ -675,7 +675,7 @@ main {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: url(https://tympanus.net/Development/MultiboxMenu/img/2.jpg) no-repeat 50% 50%;
+	background: url(https://influx-002.netlify.com/images/uploads/logobombyx.png) no-repeat 50% 50%;
 	background-size: cover;
 	transition: transform 0.8s cubic-bezier(0.2,1,0.8,1);
 }
