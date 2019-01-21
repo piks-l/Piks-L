@@ -3,7 +3,8 @@ var glob = require('glob');
 var path = require('path');
 var dynamicRoutes = getDynamicPaths({
   '/blog': 'blog/posts/*.json',
-  '/artistes': 'artistes/page/*.json'
+  '/artworks': 'artworks/page/*.json',
+  '/tattoos': 'tattoos/page/*.json'
 });
 module.exports = {
   head: {
