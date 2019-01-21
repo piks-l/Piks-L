@@ -1,14 +1,25 @@
 <template>
     <div id="footer">
+        <influx-navbar/>
         <section class="footer-black">
             <h1 class="typo-logo">SEBASTIEN ODD</h1>
-            <p><b>©</b>Tous droits réservés</p>     
+            <p><b>©</b> SEBASTIEN ODD</p>     
             <a href="sebastienoddtattoos@gmail.com">sebastienoddtattoos@gmail.com</a><br>
             <span class="body-1">Réalisé avec <b>&hearts;</b> par <a target="_blank" href="https://influx-agence.fr">Influx</a></span>
         </section>
     </div>
 </template>
+<script>
+  import $ from 'jquery'
+  import influxNavbar from '~/components/navbar.vue'
+  export default {
+      transition: 'page',
+      components: {
+          influxNavbar
+      }
 
+  }
+</script>
 <style>
     #footer .footer-black {
         width: 100%;
