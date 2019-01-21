@@ -2,15 +2,15 @@
     <div class="equipes">
       <div class="container">
           <div class="wrapper">
-              <article v-for="artworks in artwork.slice().reverse()" :key="artworks.date">  
-                  <nuxt-link class="title" :to="artworks._path">
+              <article v-for="artwork in artworks.slice().reverse()" :key="artwork.date">  
+                  <nuxt-link class="title" :to="artwork._path">
                     <div class="thumb">
-                        <img :src="artworks.miniature" :alt="artworks.title">
+                        <img :src="artwork.miniature" :alt="artwork.title">
                         <svg class="svgtilt" width="100%" height="100%">
                           <rect x="5%" y="5%" width="90%" height="90%" />
                         </svg>
                     </div>
-                    <h3 class="underline">{{ artworks.title }}</h3>
+                    <h3 class="underline">{{ artwork.title }}</h3>
                   </nuxt-link>
               </article>
           </div>
