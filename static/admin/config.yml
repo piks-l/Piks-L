@@ -17,7 +17,7 @@ collections:
       - {label: "Description", name: "description", widget: "markdown", required: true}
       - {label: "Galerie", name: "galerie", widget: "list", field: {label: Image, name: image, widget: image}}
       - {label: "Date de publication", name: "date", widget: "date", format: "DD/MM/YYYY"}
-      - {label: "Miniature", name: "miniature", widget: "image", required: true}
+      - {label: "Miniature", name: "thumbnail", widget: "image", required: true}
   - name: "tattoos"
     label: "Tattoos" 
     folder: "content/tattoos/page"
@@ -30,7 +30,7 @@ collections:
       - {label: "Description", name: "description", widget: "markdown", required: true}
       - {label: "Galerie", name: "galerie", widget: "list", field: {label: Image, name: image, widget: image}}
       - {label: "Date de publication", name: "date", widget: "date", format: "DD/MM/YYYY"}
-      - {label: "Miniature", name: "miniature", widget: "image", required: true}
+      - {label: "Miniature", name: "thumbnail", widget: "image", required: true}
   - name: "blog"
     label: "Blog" 
     folder: "content/blog/posts"
