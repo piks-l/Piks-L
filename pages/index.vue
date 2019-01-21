@@ -15,11 +15,11 @@
   <cdm-shop/>
   
   <div class="container border black">
-    <p><b>Tous nos locaux respectent des règles d’hygiène strictes tant au niveau de la stérilisation qu’au niveau des matériaux utilisés !</b></p>
+    <p><b>Pour aborder vos projets et prendre rendez-vous, veuillez m'envoyer un mail en précisant l'emplacement, les dimensions et l'inspirations en y joignant éventuellement 2 ou 3 photos</b></p>
   </div>
   
   <div class="container border">
-    <h2>Nos actualités</h2>
+    <h2>Actualités</h2>
   </div>  
   <div class="content-blog">
     <cdm-blog/>
