@@ -4,7 +4,7 @@
       <img class="artist-cover" :src="couverture">
       <div class="header">
           <h2>{{ title }}</h2>    
-          <vue-markdown>{{intro}}</vue-markdown>
+          <vue-markdown>{{description}}</vue-markdown>
       </div>
     </div>
     <div class="portfolio">
@@ -18,10 +18,10 @@
           </div>  
       </div>
     </div>
-    <cdm-minishop :class="shop"/>
+
     <div class="full-width">
         <div class="container border black">
-            <nuxt-link to="/artistes/"><p>Voir les autres tatoueurs.</p></nuxt-link>
+            <nuxt-link to="/tattoos/"><p>Voir les autres tattoos.</p></nuxt-link>
         </div>
     </div>   
     <div class="lightbox">
@@ -37,7 +37,7 @@
 import $ from 'jquery'
 import VueMarkdown from 'vue-markdown'
 import VueLazyload from 'vue-lazyload'
-import cdmMinishop from '~/components/mini-shop.vue'
+
 export default {
   layout: 'artistes',
   components: { VueMarkdown, VueLazyload, cdmMinishop },
