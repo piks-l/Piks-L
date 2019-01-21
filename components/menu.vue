@@ -28,7 +28,7 @@
 				<div class="menu__item menu__item--1" data-direction="bt">
 					<div class="menu__item-inner">
 						<div class="mainmenu">
-              <nuxt-link class="mainmenu__item" to="/">Accueil</nuxt-link>
+              <nuxt-link class="mainmenu__item" to="/blog/">Actualités</nuxt-link>
 							<a href="#" class="mainmenu__item">Artworks</a>
 							<a href="#" class="mainmenu__item">Tattoos</a>
 							<a href="#" class="mainmenu__item">Contact</a>
@@ -50,7 +50,7 @@
 							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">Biographie</span></a>
 							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">Actualités</span></a>
 							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">Artworks</span></a>
-							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">Tattos</span></a>
+							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">Tattoos</span></a>
 							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">Contact</span></a>
 						</div>
 					</div>
