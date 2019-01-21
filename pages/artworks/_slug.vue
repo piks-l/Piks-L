@@ -160,7 +160,7 @@ export default {
       font-size: 22px;
       line-height: 30px;
       padding: 0 30px;
-      text-align:justify;
+      text-align:center;
   }
   .artist a {
       color: #e6e6e6;
