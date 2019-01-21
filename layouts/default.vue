@@ -19,7 +19,6 @@
           cdmFooter
       },
       head: {
-        title: 'LA COUR DES MIRACLES',
         link: [
           { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Slabo+27px' }
         ],
