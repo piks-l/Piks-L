@@ -46,19 +46,18 @@
 				<div class="menu__item menu__item--3" data-direction="bt">
 					<div class="menu__item-inner">
 						<div class="sidemenu">
-							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">The Gameplay</span></a>
-							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">About LARP</span></a>
-							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">The Rules</span></a>
-							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">History</span></a>
-							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">People</span></a>
-							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">Join</span></a>
-							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">...</span></a>
+							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">Accueil</span></a>
+							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">Biographie</span></a>
+							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">Actualités</span></a>
+							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">Artworks</span></a>
+							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">Tattos</span></a>
+							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">Contact</span></a>
 						</div>
 					</div>
 				</div>
 				<div class="menu__item menu__item--4" data-direction="rl">
 					<div class="menu__item-inner">
-						<p class="label label--topleft label--line">Join us now</p>
+						<p class="label label--topleft label--line">Actualités</p>
 						<a href="#" class="menu__item-link">Learn how to <br> participate</a>
 					</div>
 				</div>
