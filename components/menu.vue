@@ -353,7 +353,7 @@ body {
 	--color-text: #fff;
 	--color-bg: #252525;
 	--color-link: #fff;
-	--color-link-hover: #f20c40;
+	--color-link-hover: #ffb413;
   --color-bg-item1: #212121;
   --color-bg-item2: #000000;
   --color-bg-item3: #212121;
