@@ -4,22 +4,18 @@
           <article v-for="post in posts.slice().reverse().slice(0,3)" :key="post.date">
               <nuxt-link class="blog-title underline" :to="post._path">{{ post.title }}</nuxt-link>
               <img class="blog-cover" :src="post.couverture">
-              <vue-markdown>{{post.intro}}...</vue-markdown>
               <div class="blog-footer">  
                   <nuxt-link class="blog-readmore" :to="post._path">En savoir plus</nuxt-link>
                   <div class="blog-date">{{ post.date }}</div>
               </div>
           </article>
       </div>
-      <cdm-sidebar/>
   </div>
 </template>
 <script>
-  import cdmSidebar from '~/components/sidebar.vue'
   import VueMarkdown from 'vue-markdown'
   export default {
     components: {
-      cdmSidebar,
       VueMarkdown 
     },
     data() {
@@ -38,15 +34,15 @@
 <style>
   .blog-list {
       display: inline-grid;
-      width: 70%;
+      width: 100%;
       padding-right: 15px;
   }
   a.blog-title {
     color: #000;
     text-decoration: none;
     position: relative;
-    font-family: titaniaregular,serif;
-    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
   }
   article img {
     width: 100%;
