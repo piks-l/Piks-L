@@ -697,13 +697,14 @@ main {
 }
 
 .quote {
-	font-size: 2rem;
+	font-size: 1rem;
 	padding: 1rem;
 	text-align: center;
 	max-width: 70%;
 	color: var(--color-quote);
 	font-family: 'Playfair Display', serif;
-  font-weight: 600;
+  font-weight: 400;
+  line-height: 25px;
 }
 
 .menu__item-link {
