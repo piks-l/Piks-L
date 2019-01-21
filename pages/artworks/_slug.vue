@@ -32,10 +32,10 @@
 import $ from 'jquery'
 import VueMarkdown from 'vue-markdown'
 import VueLazyload from 'vue-lazyload'
-import cdmMinishop from '~/components/mini-shop.vue'
+
 export default {
   layout: 'artistes',
-  components: { VueMarkdown, VueLazyload, cdmMinishop },
+  components: { VueMarkdown, VueLazyload },
   async asyncData({ params }) {
     let page = await import('~/content/artworks/page/' + params.slug + '.json');
     return page;
