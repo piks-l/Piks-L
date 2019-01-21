@@ -11,7 +11,7 @@
     <h2>Nos studios</h2>
     <p>Pour chaque projet nous préférons bien évidemment en discuter avec vous directement. La plupart des tatouages réalisés sont des motifs originaux, et une rencontre est souvent nécessaire. Cependant pour un premier contact ou ceux qui viennent de loin il est possible de contacter par <a href="mailto:contact@lacourdesmiracles.tattoo">mail</a> ou via notre page facebook.</p>
   </div>
-  <influx-menu/>
+
   
   <div class="container border black">
     <p><b>Pour aborder vos projets et prendre rendez-vous, veuillez m'envoyer un mail en précisant l'emplacement, les dimensions et l'inspirations en y joignant éventuellement 2 ou 3 photos</b></p>
@@ -37,15 +37,13 @@
   // import components
   import cdmBlog from '~/components/blog.vue'
   import cdmArtistes from '~/components/artistes.vue'
-  import influxMenu from '~/components/menu.vue'
   
   // export
   export default {
     layout: 'default',
     components: {
         cdmBlog,
-        cdmArtistes,
-        influxMenu
+        cdmArtistes
     },
     head() {
       return {
