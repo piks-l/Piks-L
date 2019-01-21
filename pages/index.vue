@@ -8,7 +8,7 @@
     <h2>TATTOOS</h2>
     <influx-tattoos/>
   </div>
-  
+  <influx-shop/>
   <div class="container border black">
     <h2>Sébastien Odd, tatoueur on the road vivant à Toulouse.</h2>
     <p>Il travaille plusieurs styles notamment le style réaliste pour lequel il est souvent demandé. Il adore aussi l’univers des comics, du jeu vidéo et du dessin en général et tatoue également beaucoup de pièces ,en newschool et en néo-trad, aux illustrations de qualité et au dessin maîtrisé.</p>
@@ -38,12 +38,14 @@
   import influxBlog from '~/components/blog.vue'
   import influxArtworks from '~/components/artworks.vue'
   import influxTattoos from '~/components/tattoos.vue'
+  import influxShop from '~/components/shop.vue'
 
   // export
   export default {
     layout: 'default',
     components: {
         influxBlog,
+        influxShop,
         influxArtworks,
         influxTattoos
     },
