@@ -44,7 +44,7 @@
 				<div class="menu__item menu__item--4" data-direction="rl">
 					<div class="menu__item-inner">
 						<p class="label label--topleft label--line">Actualités</p>
-						<a href="https://twitter.com/sebastienodd/status/1074620073464217600" target="_blank"class="menu__item-link">J'ai commencé à <br>tatouer des amis ...</a>
+						<a href="https://twitter.com/sebastienodd/status/1074620073464217600" target="_blank"class="menu__item-link">J'ai commencé à tatouer des amis. Leur confiance m’a aidé a surmonter cette idée de forte ...</a>
 					</div>
 				</div>
 				<div class="menu__item menu__item--5" data-direction="tb">
