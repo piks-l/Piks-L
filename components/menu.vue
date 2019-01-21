@@ -1,4 +1,5 @@
 <template>
+  <div>
 		<svg class="hidden">
 			<symbol id="icon-arrow" viewBox="0 0 24 24">
 				<title>arrow</title>
@@ -74,6 +75,7 @@
 				<button class="action action--close"><svg class="icon icon--close"><use xlink:href="#icon-close"></use></svg></button>
 			</nav>
 		</main>
+   </div>
 </template>
 
 <script>
