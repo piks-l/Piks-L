@@ -1,6 +1,6 @@
 <template>
   <div>
-    <cdm-navbar/>
+    <influx-menu/>
     <cdm-header/>
     <nuxt/>
     <cdm-footer/>
@@ -8,13 +8,13 @@
 </template>
 <script>
   import $ from 'jquery'
-  import cdmNavbar from '~/components/navbar.vue'
+  import influxMenu from '~/components/menu.vue'
   import cdmHeader from '~/components/header.vue'
   import cdmFooter from '~/components/footer.vue'
   export default {
       transition: 'page',
       components: {
-          cdmNavbar,
+          influxMenu,
           cdmHeader,
           cdmFooter
       },
