@@ -1,9 +1,8 @@
 <template>
   <div class="minishop">
       <div class="delacroix shop-select shop-left active">
-          <p>1 RUE DELACROIX</p>
           <div class="middle-right">
-              <a class="mapping" target="_blank" href="https://www.google.com.br/maps/place/La+Cour+des+Miracles+tatouages+et+piercing/@43.601287,1.4504512,17z/data=!4m13!1m7!3m6!1s0x12aebc9a9b1e13dd:0xaf2c8f779f133463!2s1+Rue+Delacroix,+31000+Toulouse!3b1!8m2!3d43.601287!4d1.4526399!3m4!1s0x12aebc845b6d2811:0x7f46f16bb41fc5ed!8m2!3d43.6012935!4d1.4526337">S'Y RENDRE</a>
+              <nuxt-link class="mapping" target="_blank" to="/artworks/">en voir plus</nuxt-link>
           </div> 
       </div>      
       <div class="delacroix shop-select shop-right active">
@@ -17,9 +16,8 @@
         </div>
       </div>      
       <div class="malbec shop-select shop-left">
-          <p>10 RUE MALBEC</p>
           <div class="middle-right">
-              <a class="mapping" target="_blank" href="https://www.google.fr/maps/place/the+Court+of+Miracles/@43.6021081,1.3699905,12z/data=!4m18!1m12!4m11!1m3!2m2!1d1.440715!2d43.6017352!1m6!1m2!1s0x12aebb63a06df025:0x4aa5e963aefb867e!2sla+cour+des+miracles+rue+malbec+google+map!2m2!1d1.4400303!2d43.6021295!3m4!1s0x12aebb63a06df025:0x4aa5e963aefb867e!8m2!3d43.6021295!4d1.4400303">S'Y RENDRE</a>
+              <nuxt-link class="mapping" target="_blank" to="/tattoos/">en voir plus</nuxt-link>
           </div> 
       </div>      
       <div class="malbec shop-select shop-right">
