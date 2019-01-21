@@ -3,25 +3,32 @@ backend:
   branch: master
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
-display_url: https://lacourdesmiracles.tattoo/
+display_url: https://www.sebastien-odd.tattoo/
 collections:
-  - name: "artistes"
-    label: "Artiste" 
-    folder: "content/artistes/page"
+  - name: "artworks"
+    label: "Artworks" 
+    folder: "content/artworks/page"
     create: true
     slug: "{{slug}}"
     format: 'json'
     fields:
       - {label: "Image de couverture", name: "couverture", widget: "image", required: true}
       - {label: "Nom", name: "title", widget: "string", tagname: "h1", required: true}
-      - {label: "Intro", name: "intro", widget: "markdown", required: true}
-      - label: "Shop"
-        name: "shop"
-        widget: "select"
-        options:
-          - { label: "rue Delacroix", value: "dlc" }
-          - { label: "rue Malbec", value: "mlb" }
-          - { label: "Les deux", value: "all" }
+      - {label: "Description", name: "description", widget: "markdown", required: true}
+      - {label: "Galerie", name: "galerie", widget: "list", field: {label: Image, name: image, widget: image}}
+      - {label: "Date de publication", name: "date", widget: "date", format: "DD/MM/YYYY"}
+      - {label: "Miniature", name: "miniature", widget: "image", required: true}
+      - {label: "SEO Description", name: "description", widget: "text", required: true}
+  - name: "tattoos"
+    label: "Tattoos" 
+    folder: "content/tattoos/page"
+    create: true
+    slug: "{{slug}}"
+    format: 'json'
+    fields:
+      - {label: "Image de couverture", name: "couverture", widget: "image", required: true}
+      - {label: "Nom", name: "title", widget: "string", tagname: "h1", required: true}
+      - {label: "Description", name: "description", widget: "markdown", required: true}
       - {label: "Galerie", name: "galerie", widget: "list", field: {label: Image, name: image, widget: image}}
       - {label: "Date de publication", name: "date", widget: "date", format: "DD/MM/YYYY"}
       - {label: "Miniature", name: "miniature", widget: "image", required: true}
