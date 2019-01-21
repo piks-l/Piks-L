@@ -365,7 +365,7 @@ body {
 	--color-info: #57535a;
 	--color-title: #e23434;
 	--color-tagline: #e2e2e2;
-	font-family: "europa", Futura, Arial, sans-serif;
+	font-family: 'Playfair Display', serif;
 	min-height: 100vh;
 	color: #57585c;
 	color: var(--color-text);
