@@ -36,7 +36,7 @@ import VueLazyload from 'vue-lazyload'
 
 export default {
   layout: 'artistes',
-  components: { VueMarkdown, VueLazyload, cdmMinishop },
+  components: { VueMarkdown, VueLazyload },
   async asyncData({ params }) {
     let page = await import('~/content/tattoos/page/' + params.slug + '.json');
     return page;
