@@ -46,7 +46,7 @@
     layout: 'default',
     components: {
         influxBlog,
-        influxArtistes,
+        influxArtworks,
         influxTattoos
     },
     head() {
