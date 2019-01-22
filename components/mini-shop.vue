@@ -52,6 +52,10 @@ export default {
 }
 </script>
 <style>  
+.info .container {
+    padding: 0px;
+    margin: 0px;
+}
 .minishop .delacroix.shop-left {
     left: 0;
     padding-top: 150px;
@@ -62,6 +66,16 @@ export default {
     padding-top: 150px;
     background: #151515;
 }
+.minishop .equipes article {
+    0px !important;
+}
+
+.minishop .shop-right.active {
+
+    padding: 0px;
+
+}
+
   .minishop {
       height: 240px;
       background: #000;
