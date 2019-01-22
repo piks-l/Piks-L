@@ -10,7 +10,6 @@
                           <rect x="5%" y="5%" width="90%" height="90%" />
                         </svg>
                     </div>
-                    <h3 class="underline">{{ artwork.title }}</h3>
                   </nuxt-link>
               </article>
           </div>
@@ -67,10 +66,6 @@
       color: black;
       text-decoration: none;
   }
-  .equipes h3 {
-      display: initial;
-      position: relative;
-  }
   @media only screen and (min-width:960px) and (max-width:1264px){
       .equipes article {
           padding: 15px 10%;
@@ -96,9 +91,6 @@
           -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
       }
-      .equipes h3 {
-          font-size: 30px;
-      }
   }
   @media only screen and (max-width:599px){
       .wrapper {
@@ -117,9 +109,6 @@
           left: 50%;
           -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-      }
-      .equipes h3 {
-          font-size: 30px;
       }
   }
 </style>
