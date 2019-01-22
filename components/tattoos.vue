@@ -10,7 +10,6 @@
                           <rect x="5%" y="5%" width="90%" height="90%" />
                         </svg>
                     </div>
-                    <h3 class="underline">{{ tattoo.title }}</h3>
                   </nuxt-link>
               </article>
           </div>
@@ -66,10 +65,6 @@
       font-size: 32px;
       color: black;
       text-decoration: none;
-  }
-  .equipes h3 {
-      display: initial;
-      position: relative;
   }
   @media only screen and (min-width:960px) and (max-width:1264px){
       .equipes article {
