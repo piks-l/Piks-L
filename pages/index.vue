@@ -1,13 +1,5 @@
 <template>
 <div>
-  <div class="container border sideleft">
-    <h2>ARTWORKS</h2>
-    <influx-artworks/>
-  </div>
-  <div class="container border sideright">
-    <h2>TATTOOS</h2>
-    <influx-tattoos/>
-  </div>
   <influx-shop/>
   <div class="container border black">
     <h2>Sébastien Odd, tatoueur on the road vivant à Toulouse.</h2>
@@ -36,8 +28,6 @@
   import $ from 'jquery'
   // import components
   import influxBlog from '~/components/blog.vue'
-  import influxArtworks from '~/components/artworks.vue'
-  import influxTattoos from '~/components/tattoos.vue'
   import influxShop from '~/components/mini-shop.vue'
 
   // export
