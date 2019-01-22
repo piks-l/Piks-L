@@ -23,10 +23,7 @@
       <div class="malbec shop-select shop-right">
         <div class="transform">
             <div class="info">
-                <p>Mardi au Samedi : <b>13H/19H</b></p>
-                <a class="tel" href="tel:+33984011269">09 84 01 12 69</a><br/>
-                <a class="mailto" href="mailto:contact@thebigvoodoo.com">contact@thebigvoodoo.com</a><br/>
-                <p>10 RUE MALBEC 31000 TOULOUSE</p>
+              <influx-tattoos/>
             </div>
         </div>
       </div>      
@@ -38,7 +35,11 @@
 </template>
 <script> 
 import $ from 'jquery'
+import influxTattoos from '~/components/tattoos.vue'
 export default {
+  components: {
+      influxTattoos
+  },
   mounted: () => {
   
       if($('.minishop').hasClass('mlb')){
