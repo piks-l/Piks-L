@@ -67,7 +67,8 @@ export default {
     background: #151515;
 }
 .minishop .equipes article {
-    0px !important;
+        padding: 0px!important;
+    margin: 0px!important;
 }
 
 .minishop .shop-right.active {
