@@ -89,6 +89,7 @@ export default {
   }
   .minishop .shop-right{
       right:0;
+      padding: 0px;
   }
   .minishop .malbec.shop-left,
   .minishop .delacroix.shop-right{
@@ -136,7 +137,8 @@ export default {
       display:none;
   }
   .minishop .info {
-      padding: 0 15px;
+      margin: 0px;
+      padding: 0px;
       color: #fff;
   }
   .minishop .info p {
