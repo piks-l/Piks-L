@@ -35,9 +35,7 @@
     layout: 'default',
     components: {
         influxBlog,
-        influxShop,
-        influxArtworks,
-        influxTattoos
+        influxShop
     },
     head() {
       return {
