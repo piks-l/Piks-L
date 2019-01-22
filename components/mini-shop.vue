@@ -8,10 +8,7 @@
       <div class="delacroix shop-select shop-right active">
         <div class="transform">
             <div class="info">
-                <p>Mardi au Samedi : <b>10H à 12H et 14H à 19H</b></p>
-                <a class="tel" href="tel:+33561539255">05 61 53 92 55</a><br/>
-                <a class="mailto" href="mailto:contact@thebigvoodoo.com">contact@thebigvoodoo.com</a><br/>
-                <p>1 RUE DELACROIX 31000 TOULOUSE</p>
+                <influx-artworks/>
             </div>
         </div>
       </div>      
@@ -36,9 +33,11 @@
 <script> 
 import $ from 'jquery'
 import influxTattoos from '~/components/tattoos.vue'
+import influxArtworks from '~/components/artworks.vue'
 export default {
   components: {
-      influxTattoos
+      influxTattoos,
+      influxArtworks
   },
   mounted: () => {
   
