@@ -184,7 +184,7 @@ export default {
       cursor:pointer;
   }
   .minishop .navigation .select.active{
-      color:#fff;
+      color:#FFB413;
       font-size: 72px;
   }
   .minishop .middle-right {
