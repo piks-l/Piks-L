@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Content Manager</title>
+        <title>INFLUX CMS</title>
 
         <!-- Include the styles for the Netlify CMS UI, after your own styles -->
         <link rel="stylesheet" href="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.css"/>
@@ -64,6 +64,20 @@
             --topCardWidth: 682px;
             --transition: .2s ease;
           }
+          @media only screen and (max-width:800px){
+              .nc-appHeader-content {
+                  max-width: none;
+                  min-width: 0;
+              }
+              .nc-appHeader-button {
+                  font-size: 0;
+                  padding: 18px 12px;
+              }
+              .nc-appHeader-siteLink {
+                  display: none;
+              }
+          }
+          
       </style>
     </head>
     <body>
