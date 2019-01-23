@@ -5,10 +5,7 @@
               <article v-for="tattoo in tattoos.slice().reverse().slice(0,4)" :key="tattoo.date">  
                   <nuxt-link class="title" :to="tattoo._path">
                     <div class="thumb">
-                        <img :src="tattoo.thumbnail" :alt="tattoo.title">
-                        <svg class="svgtilt" width="100%" height="100%">
-                          <rect x="5%" y="5%" width="90%" height="90%" />
-                        </svg>
+                        <img v-lazy="tattoo.thumbnail" :alt="tattoo.title">
                     </div>
                   </nuxt-link>
               </article>
