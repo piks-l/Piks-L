@@ -34,10 +34,10 @@
 				<div class="menu__item menu__item--3" data-direction="bt">
 					<div class="menu__item-inner">
 						<div class="sidemenu">
-							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner"><i class="fab fa-facebook-f"></i></span></a>
-							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">Twitter</span></a>
-							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">Instagram</span></a>
-							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">Youtube</span></a>
+							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner"><i class="fab fa-facebook-f"></i>Facebook</span></a>
+							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner"><i class="fab fa-twitter-f"></i>Twitter</span></a>
+							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner"><i class="fab fa-instagram-f"></i>Instagram</span></a>
+							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner"><i class="fab fa-youtube-f"></i>Youtube</span></a>
 						</div>
 					</div>
 				</div>
