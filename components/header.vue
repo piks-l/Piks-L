@@ -1,6 +1,6 @@
 <template>
   <section class="header">
-    <img class="font-logo" src="/images/uploads/logobombyx.png">
+    <img class="font-logo" v-lazy="/images/uploads/logobombyx.png">
   </section>
 </template>
 <style>
@@ -20,3 +20,8 @@
   }
 
 </style>
+
+<script>
+  import VueLazyload from 'vue-lazyload'
+  export default { components: { VueLazyload }  };
+</script>
