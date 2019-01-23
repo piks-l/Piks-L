@@ -15,6 +15,8 @@
 				<div class="menu__item menu__item--1" data-direction="bt">
 					<div class="menu__item-inner">
 						<div class="mainmenu">
+              <nuxt-link class="mainmenu__item" to="/">Accueil</nuxt-link>
+              <nuxt-link class="mainmenu__item" to="/">Biographie</nuxt-link>
               <nuxt-link class="mainmenu__item" to="/blog/">Actualités</nuxt-link>
 							<nuxt-link class="mainmenu__item" to="/artworks/">Artworks</nuxt-link>
 							<nuxt-link class="mainmenu__item" to="/tattoos/">Tattoos</nuxt-link>
@@ -32,12 +34,10 @@
 				<div class="menu__item menu__item--3" data-direction="bt">
 					<div class="menu__item-inner">
 						<div class="sidemenu">
-							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">Accueil</span></a>
-							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">Biographie</span></a>
-							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">Actualités</span></a>
-							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">Artworks</span></a>
-							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">Tattoos</span></a>
-							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">Contact</span></a>
+							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner"><i class="fab fa-facebook-f"></i></span></a>
+							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">Twitter</span></a>
+							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">Instagram</span></a>
+							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">Youtube</span></a>
 						</div>
 					</div>
 				</div>
