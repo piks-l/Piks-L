@@ -4,14 +4,13 @@
     
     <cdm-header/>
     <nuxt/>
-    <influx-navbar/>
+
     <cdm-footer/>
   </div>
 </template>
 <script>
   import $ from 'jquery'
   import influxMenu from '~/components/menu.vue'
-  import influxNavbar from '~/components/navbar.vue'
   import cdmHeader from '~/components/header.vue'
   import cdmFooter from '~/components/footer.vue'
   export default {
@@ -19,8 +18,7 @@
       components: {
           influxMenu,
           cdmHeader,
-          cdmFooter,
-          influxNavbar
+          cdmFooter
       },
       mounted: () => {
           $("#navbar").removeClass('hidden');
