@@ -1,0 +1,10 @@
+{
+  "couverture": "/images/uploads/bruce.jpg",
+  "title": "BRUCE LEE",
+  "description": "Tattoo by Seb Odd",
+  "galerie": [
+    "/images/uploads/bruce.jpg"
+  ],
+  "date": "27/11/2018",
+  "thumbnail": "/images/uploads/bruce.jpg"
+}
