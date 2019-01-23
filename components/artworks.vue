@@ -5,7 +5,7 @@
               <article v-for="artwork in artworks.slice().reverse().slice(0,4)" :key="artwork.date">  
                   <nuxt-link class="title" :to="artwork._path">
                     <div class="thumb">
-                        <img :src="artwork.thumbnail" v-lazy="img" :alt="artwork.title">
+                        <img  v-lazy="artwork.thumbnail" :alt="artwork.title">
                     </div>
                   </nuxt-link>
               </article>
