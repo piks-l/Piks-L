@@ -1,6 +1,6 @@
 <template>
   <section class="header">
-    <img class="font-logo" v-lazy="/images/uploads/logobombyx.png">
+    <img class="font-logo" v-lazy="images/uploads/logobombyx.png">
   </section>
 </template>
 <style>
