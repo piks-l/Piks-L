@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 72px;
       line-height: 1.11em;
       font-weight: 900;
-      font-family: 'titaniaregular', serif;
+      font-family: 'Playfair Display', serif;
   }
   .black h2, .black p{
       color:#fff;
@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
   .border p b{
       color:#000;
       font-size:22px;
-      font-family: "titaniaregular",serif;
+      font-family: 'Playfair Display', serif;
       font-weight: 400;
       line-height: 30px;
   }
