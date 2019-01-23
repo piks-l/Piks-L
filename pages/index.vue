@@ -49,10 +49,7 @@
       }
     },
     mounted () {
-      	VanillaTilt.init(document.querySelectorAll("h2"), {
-          max: 25,
-          speed: 400
-        });
+      	
     }
   }
 </script>
