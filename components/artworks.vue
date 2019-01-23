@@ -2,7 +2,7 @@
     <div class="equipes">
       <div class="container">
           <div class="wrapper">
-              <article v-for="artwork in artworks.slice(4).reverse()" :key="artwork.date">  
+              <article v-for="artwork in artworks.slice().reverse().slice(0,4)" :key="artwork.date">  
                   <nuxt-link class="title" :to="artwork._path">
                     <div class="thumb">
                         <img :src="artwork.thumbnail" :alt="artwork.title">
