@@ -2,7 +2,7 @@
   <div class="minishop">
       <div class="delacroix shop-select shop-left active">
           <div class="middle-right">
-              <nuxt-link class="mapping" target="_blank" to="/artworks/">Voir la galerie</nuxt-link>
+              <nuxt-link class="mapping" to="/artworks/">Voir la galerie</nuxt-link>
           </div> 
       </div>      
       <div class="delacroix shop-select shop-right active">
@@ -14,7 +14,7 @@
       </div>      
       <div class="malbec shop-select shop-left">
           <div class="middle-right">
-              <nuxt-link class="mapping" target="_blank" to="/tattoos/">Voir la galerie</nuxt-link>
+              <nuxt-link class="mapping" to="/tattoos/">Voir la galerie</nuxt-link>
           </div> 
       </div>      
       <div class="malbec shop-select shop-right">
