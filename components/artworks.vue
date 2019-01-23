@@ -5,10 +5,7 @@
               <article v-for="artwork in artworks.slice().reverse().slice(0,4)" :key="artwork.date">  
                   <nuxt-link class="title" :to="artwork._path">
                     <div class="thumb">
-                        <img :src="artwork.thumbnail" :alt="artwork.title">
-                        <svg class="svgtilt" width="100%" height="100%">
-                          <rect x="5%" y="5%" width="90%" height="90%" />
-                        </svg>
+                        <img :src="artwork.thumbnail" v-lazy="img" :alt="artwork.title">
                     </div>
                   </nuxt-link>
               </article>
@@ -114,7 +111,9 @@
 </style>
 
 <script>
+  import VueLazyload from 'vue-lazyload'
   export default {
+    components: { VueLazyload },
     data() {
       const context = require.context('~/content/artworks/page/', false, /\.json$/);
       const artworks = context.keys().map(key => ({
