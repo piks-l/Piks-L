@@ -1,0 +1,10 @@
+{
+  "couverture": "/images/uploads/dog.jpg",
+  "title": "DOG TATTOO",
+  "description": "DOG tattoo by Seb Odd",
+  "galerie": [
+    "/images/uploads/dog.jpg"
+  ],
+  "date": "15/11/2018",
+  "thumbnail": "/images/uploads/dog.jpg"
+}
