@@ -166,7 +166,6 @@ export default {
   .minishop .info a {
       font-size: 16px;
       font-weight: 500;
-      font-family: 'titaniaregular', serif;
       letter-spacing:1px;
       color: #fff;
   }
@@ -194,7 +193,6 @@ export default {
       font-size: 45px;
       line-height: 1;
       font-weight: 900;
-      font-family: 'titaniaregular', serif;
       color:#000;
       -webkit-transition: all 1000ms cubic-bezier(0.8, 0, 0.2, 1) 0s;
       transition: all 1000ms cubic-bezier(0.8, 0, 0.2, 1) 0s;
@@ -216,7 +214,6 @@ export default {
       margin: 15px 0;
       line-height: 1;
       font-weight: 900;
-      font-family: titaniaregular,serif;
       text-align: center;
       display: block;
       position: relative;
@@ -239,7 +236,6 @@ export default {
   .minishop .shop-left p{
       font-size: 50px;
       line-height: 1;
-      font-family: titaniaregular,serif;
       position: relative;
       color: #fff;
       -webkit-transition: all .5s ease;
