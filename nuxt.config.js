@@ -30,7 +30,7 @@ module.exports = {
   router: {
     scrollBehavior: function (to, from, savedPosition) { return { x: 0, y: 0 } }
   },
-  css: [ '~/assets/css/global.css', '~/assets/css/menu.css' ],
+  css: [ '~/assets/css/global.css', '~/assets/css/menu.css', '~/assets/css/responsive.css' ],
   plugins: [{src: '~/plugins/vue-lazyload', ssr: false}],
   loading: false,
   generate: {
