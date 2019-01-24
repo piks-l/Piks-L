@@ -10,7 +10,7 @@
 </template>
 <script>
   import $ from 'jquery'
-  import influxMenu from '~/components/menu.vue'
+  import influxMenu from '~/components/ui/menu.vue'
   import cdmHeader from '~/components/header.vue'
   import cdmFooter from '~/components/footer.vue'
   export default {
