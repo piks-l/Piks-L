@@ -1,4 +1,7 @@
-
+.sidemenu__item i.fab {
+  margin-right: 15px;
+  color: #525252;
+}
 
 .hidden {
 	position: absolute;
