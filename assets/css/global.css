@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900');
-/* HTML5 */
+/* Configuration */
 body {
 	--color-text: #fff;
 	--color-bg: #252525;
@@ -26,6 +26,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+/* HTML5 */
 *,
 *::after,
 *::before {
@@ -48,21 +49,9 @@ html{
   -ms-text-size-adjust:100%;
   -webkit-text-size-adjust:100%;
 }
-a:focus{
-  outline:thin dotted;
-}
-a:active,a:hover{
-  outline:0;
-}
-h1{
-  font-size:2em;
-  margin:0.67em 0;
-}
+
 abbr[title]{
   border-bottom:1px dotted;
-}
-b,strong{
-  font-weight:bold;
 }
 dfn{
   font-style:italic;
@@ -83,9 +72,6 @@ pre{
 }
 q{
   quotes:"\201C" "\201D" "\2018" "\2019";
-}
-small{
-  font-size:80%;
 }
 sub,sup{
   font-size:75%;
@@ -159,13 +145,40 @@ table{
   border-collapse:collapse;
   border-spacing:0;
 }
-
-.sidemenu__item i.fab {
-  margin-right: 15px;
-  color: #525252;
+/* Titre */
+h1{
+  font-size:2em;
+  margin:0.67em 0;
+}
+/* Lien */
+a {
+	text-decoration: none;
+	color: var(--color-link);
+	outline: none;
+	transition: color 0.2s;
+}
+a:focus{
+  outline:thin dotted;
+}
+a:active,a:hover{
+  outline:0;
+}
+a:hover,
+a:focus {
+	color: var(--color-link-hover);
 }
 
-
+button:focus,
+a:focus {
+	outline: none;
+}
+/* Typographie */
+b,strong{
+  font-weight:bold;
+}
+small{
+  font-size:80%;
+}
 /* Page Loader */
 .js .loading::before {
 	content: '';
@@ -202,22 +215,6 @@ table{
 }
 
 
-a {
-	text-decoration: none;
-	color: var(--color-link);
-	outline: none;
-	transition: color 0.2s;
-}
-
-a:hover,
-a:focus {
-	color: var(--color-link-hover);
-}
-
-button:focus,
-a:focus {
-	outline: none;
-}
 
 /* Other */
 .wrapper {
