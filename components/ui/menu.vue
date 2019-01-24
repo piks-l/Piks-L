@@ -58,7 +58,216 @@
 		</main>
    </div>
 </template>
-
+<style>
+  @import url('https://influx-002.netlify.com/css/config.css');
+  .sidemenu__item i.fab {
+    margin-right: 15px;
+    color: #525252;
+  }
+  .hidden {
+    position: absolute;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+  }
+  /* Icons */
+  .icon {
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0 auto;
+    fill: currentColor;
+  }
+  main {
+    position: relative;
+    width: 100%;
+  }
+  .frame {
+    position: relative;
+    z-index: 199;
+  }
+  .content {
+    text-align: center;
+    position: relative;
+    z-index: 100;
+  }
+  /* Top Navigation Style */
+  .content__title {
+    font-size: 14vw;
+    font-weight: normal;
+    mix-blend-mode: screen;
+    line-height: 0.8;
+    text-transform: lowercase;
+    margin: 0;
+    color: var(--color-title);
+    z-index: 199;
+  }
+  .content__tagline {
+    color: var(--color-tagline);
+    margin: 1rem 0 0 0;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.125rem;
+    word-spacing: 0.25rem;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 199;
+  }
+  .action {
+    background: none;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    padding: 0;
+  }
+  .action--menu {
+    pointer-events: auto;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    z-index: 1000;
+  }
+  .menu--open .action--menu {
+    pointer-events: none;
+  }
+  .action--close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.75rem;
+    z-index: 1000;
+    opacity: 0;
+    padding: 0 0.5rem;
+  }
+  .icon--menu {
+    width: 2rem;
+  }
+  .icon--close {
+    width: 1rem;
+  }
+  .menu {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    z-index: 200;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3,33.33%);
+    pointer-events: none;
+  }
+  .menu--open {
+    pointer-events: auto;
+    background: #151515 !important;
+    transition: 0.5s ease all;
+  }
+  .menu__item {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .menu__item-inner {
+    overflow: hidden;
+    transform: translate3d(100%,0,0);
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .menu__item--1 .menu__item-inner {
+    background: var(--color-bg-item1);
+  }
+  .menu__item--2 .menu__item-inner {
+    background: var(--color-bg-item2);
+  }
+  .menu__item--3 .menu__item-inner {
+    background: var(--color-bg-item3);
+  }
+  .menu__item--4 .menu__item-inner {
+    background: var(--color-bg-item4);
+  }
+  .menu__item--5 .menu__item-inner {
+    background: var(--color-bg-item5);
+  }
+  .menu__item--4, 
+  .menu__item--5 {
+    display: none;
+  }
+  .label {
+    display: none;
+  }
+  .mainmenu__item {
+    opacity: 0;
+  }
+  .mainmenu__item,
+  .sidemenu__item {
+    position: relative;
+    overflow: hidden;
+    transition: color 0.1s;
+    margin: 0.25rem 0;
+    display: block;
+  }
+  .sidemenu__item-inner {
+    display: block;
+    transform: translate3d(0,100%,0);
+  }
+  .menu__item-map {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(https://influx-002.netlify.com/images/uploads/logobombyx.png) no-repeat 50% 50%;
+    background-size: cover;
+    transition: transform 0.8s cubic-bezier(0.2,1,0.8,1);
+  }
+  .menu__item-inner:hover .menu__item-map {
+    transform: scale3d(1.1,1.1,1);
+  }
+  .menu__item-hoverlink {
+    font-weight: bold;
+    text-transform: capitalize;
+    position: relative;
+    z-index: 1000;
+    display: block;
+  }
+  .menu__item-hoverlink:hover {
+    color: var(--color-link);
+  }
+  .quote {
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+    max-width: 70%;
+    color: var(--color-quote);
+    font-weight: 400;
+    line-height: 25px;
+  }
+  .menu__item-link {
+    text-align: left;
+    align-self: flex-start;
+    justify-self: start;
+    font-size: 1.5rem;
+    width: 100%;
+    line-height: 1;
+    padding: 2rem ;
+    margin: 3rem 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 3rem);
+  }
+  .menu__item-link::after {
+    content: '\27F6';
+    display: block;
+    margin-top: auto;
+    font-size: 0.95rem;
+  }
+</style>
 <script>
   import $ from 'jquery'
   export default {
