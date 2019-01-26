@@ -1,5 +1,7 @@
 <template>
- <footer class="site-footer">
+ 
+    <div id="footer">
+    <footer class="site-footer">
       <div class="container">
         <div class="row">
           <div class="col-50">
@@ -51,7 +53,6 @@
         </div>
       </div>
 </footer>
-    <div id="footer">
         <section class="footer-black">
             <h1 class="typo-logo">SEBASTIEN ODD</h1>
             <p><b>©</b> SEBASTIEN ODD</p>     
