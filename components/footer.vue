@@ -1,18 +1,20 @@
 <template>
     <footer id="footer">
      <div class="topnav-centered">
-        <a href="#home" class="active">Home</a>
+      <nuxt-link class="effect-left" to="/">Accueil</nuxt-link>
+      <nuxt-link class="no-active" to="/">Biographie</nuxt-link>
+      <nuxt-link class="no-active" to="/blog/">Actualités</nuxt-link>
+      <nuxt-link class="no-active" to="/artworks/">Artworks</nuxt-link>
+      <nuxt-link class="no-active" to="/tattoos/">Tattoos</nuxt-link>
+      <nuxt-link class="effect-right" to="/contact/">Contact</nuxt-link> 
      </div>
-      <a href="#home" class="active">Home</a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
     </footer>
 </template>
 <style>
 #footer {
   background-color: #333;
   overflow: hidden;
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
