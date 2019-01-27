@@ -7,13 +7,6 @@
       <a href="#news">News</a>
       <a href="#contact">Contact</a>
     </footer>
-        <section class="footer-black">
-            <h1 class="typo-logo">SEBASTIEN ODD</h1>
-            <p><b>©</b> SEBASTIEN ODD</p>     
-            <a href="sebastienoddtattoos@gmail.com">sebastienoddtattoos@gmail.com</a><br>
-            <span class="body-1">Réalisé avec <b>&hearts;</b> par <a target="_blank" href="https://influx-agence.fr">Influx</a></span>
-        </section>
-    </div>
 </template>
 <style>
 #footer {
