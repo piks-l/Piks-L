@@ -8,7 +8,7 @@
 <script>
   import $ from 'jquery'
   import cdmNavbar from '~/components/navbar.vue'
-  import cdmFooter from '~/components/footer.vue'
+  import cdmFooter from '~/components/ui/footer.vue'
   export default {
       transition: 'page',
       components: {
