@@ -1,5 +1,5 @@
 <template>
-  <div id="menu">
+  <nav id="menu">
 		<svg class="hidden">
 			<symbol id="icon-menu" viewBox="0 0 119 25">
 				<title>menu</title>
@@ -56,7 +56,7 @@
 				<button class="action action--close"><svg class="icon icon--close"><use xlink:href="#icon-close"></use></svg></button>
 			</nav>
 		</main>
-   </div>
+   </nav>
 </template>
 
 <script>
@@ -66,7 +66,6 @@
       },
       mounted: () => {
 {
-    // Class Menu.
     class Menu {
         constructor(el) {
             this.DOM = {el: el};
@@ -82,22 +81,15 @@
             this.DOM.openCtrl.addEventListener('mouseleave', () => {
                 allowTilt = true;
             });
-
-            // The menu items.
             this.DOM.items = Array.from(this.DOM.el.querySelectorAll('.menu__item'));
-            // The total number of items.
-            this.itemsTotal = this.DOM.items.length;
-
-            // Custom elements that will be animated.
+            this.itemsTotal = this.DOM.items.length;.
             this.DOM.mainLinks = this.DOM.el.querySelectorAll('.mainmenu > a.mainmenu__item');
             this.DOM.sidemenuLinks = this.DOM.el.querySelectorAll('.sidemenu span.sidemenu__item-inner');
             this.DOM.menulink = this.DOM.el.querySelector('.menu__item-link');
         }
-        // Open the menu.
         open() {
             this.toggle('open');
         }
-        // Close the menu.
         close() {
             this.toggle('close');
         }
@@ -178,8 +170,6 @@
                     });
                 }
             });
-
-            // Show/Hide open and close ctrls.
             TweenMax.to(this.DOM.closeCtrl, 0.6, {
                 ease: action === 'open' ? Quint.easeOut : Quart.easeInOut,
                 startAt: action === 'open' ? {rotation: 0} : null,
@@ -191,23 +181,17 @@
                 ease: action === 'open' ? Quint.easeOut : Quad.easeOut,
                 opacity: action === 'open' ? 0 : 1
             });
-
-            // Main links animation.
             TweenMax.staggerTo(this.DOM.mainLinks, action === 'open' ? 0.9 : 0.2, {
                 ease: action === 'open' ? Quint.easeOut : Quart.easeInOut,
                 startAt: action === 'open' ? {y: '50%', opacity: 0} : null,
                 y: action === 'open' ? '0%' : '50%',
                 opacity: action === 'open' ? 1 : 0
             }, action === 'open' ? 0.1 : -0.1);
-
-            // Sidemenu links animation.
             TweenMax.staggerTo(this.DOM.sidemenuLinks, action === 'open' ? 0.5 : 0.2, {
                 ease: action === 'open' ? Quint.easeInOut : Quart.easeInOut,
                 startAt: action === 'open' ? {y: '100%'} : null,
                 y: action === 'open' ? '0%' : '100%'
             }, action === 'open' ? 0.05 : -0.05);
-
-            // The "Learn how to participate" menu link.
             TweenMax.to(this.DOM.menulink, action === 'open' ? 0.9 : 0.6, {
                 ease: action === 'open' ? Quint.easeOut : Quart.easeInOut,
                 startAt: action === 'open' ? {x: '10%'} : null,
@@ -217,12 +201,8 @@
     }
 	// Initialize the Menu.
     const menu = new Menu(document.querySelector('nav.menu'));
-
     // Preload images.
     imagesLoaded(document.querySelector('.background'), {background: true}, () => document.body.classList.remove('loading'));
-    // extra stuff..
-    
-    // From http://www.quirksmode.org/js/events_properties.html#position
     // Get the mouse position.
 	const getMousePos = (e) => {
         let posx = 0;
@@ -260,48 +240,6 @@
             this.mousemoveFn = ev => requestAnimationFrame(() => this.tilt(ev));
             document.body.addEventListener('mousemove', this.mousemoveFn);
         }
-        // Tilt the image wrap and texts when mouse moving the current slide.
-        tilt(ev) {
-            if ( !allowTilt ) return;
-            const mousepos = getMousePos(ev);
-            const bounds = this.DOM.main.getBoundingClientRect();
-            // Mouse position relative to the main element (this.DOM.main).
-            const relmousepos = { 
-                x : mousepos.x - bounds.left, 
-                y : mousepos.y - bounds.top
-            };
-
-            this.DOM.layers.forEach((layer, pos) => {
-                // Move the element from -val to val pixels in both x and y axis.
-                let val = (pos+1);
-                let t = {x:[val,-val],y:[val,-val]},
-                    r = {x:[-2,2],y:[-val,val]},
-                    s = {v:[1.03,0.97]};
-
-                const transforms = {
-                    translation : {
-                        x: (t.x[1]-t.x[0])/bounds.width*relmousepos.x + t.x[0],
-                        y: (t.y[1]-t.y[0])/bounds.height*relmousepos.y + t.y[0]
-                    },
-                    rotation : {
-                        x: (r.x[1]-r.x[0])/bounds.height*relmousepos.y + r.x[0],
-                        y: (r.y[1]-r.y[0])/bounds.width*relmousepos.x + r.y[0]
-                    },
-                    scale : {
-                        v: (s.v[1]-s.v[0])/bounds.height*relmousepos.y + s.v[0],
-                    }
-                };
-
-                TweenMax.to(layer, 1.5, {
-                    ease: 'Power1.easeOut',
-                    x: transforms.translation.x,
-                    y: transforms.translation.y,
-                    rotationX: transforms.rotation.x,
-                    rotationY: transforms.rotation.y,
-                    scale: transforms.scale.v,
-                });
-            });
-        }
         // Scale up all the layers.
         zoom() {
             TweenMax.staggerTo( this.DOM.layers, 1.5, {
@@ -324,17 +262,6 @@
             }, 0.07);
         }
     }
-
-    let allowTilt = true;
-    const tilt = new TiltFx();
-
-    // Hovering the github link zooms in the main image.
-    const githubEl =  document.querySelector('.github');
-    githubEl.addEventListener('mouseenter', () => {
-        allowTilt = false;
-        tilt.zoom()
-    });
-    githubEl.addEventListener('mouseleave', () => allowTilt = true);
 }
  
       }
