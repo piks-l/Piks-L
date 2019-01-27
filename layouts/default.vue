@@ -5,20 +5,20 @@
     <cdm-header/>
     <nuxt/>
 
-    <cdm-footer/>
+    <influx-footer/>
   </div>
 </template>
 <script>
   import $ from 'jquery'
   import influxMenu from '~/components/ui/menu.vue'
   import cdmHeader from '~/components/header.vue'
-  import cdmFooter from '~/components/footer.vue'
+  import influxFooter from '~/components/ui/footer.vue'
   export default {
       transition: 'page',
       components: {
           influxMenu,
           cdmHeader,
-          cdmFooter
+          influxFooter
       },
       mounted: () => {
           $("#navbar").removeClass('hidden');
