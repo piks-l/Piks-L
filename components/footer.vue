@@ -21,36 +21,29 @@
 </template>
 <style>
 #footer {
-  background-color: #333;
+  background-color: #000000;
   overflow: hidden;
   position: relative;
   bottom: 0;
   width: 100%;
-}
-.topnav-centered a {
-  float: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding: 25px 0px;
 }
 #footer a {
-  float: left;
-  display: block;
   color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
+  padding: 15px 15px;
   text-decoration: none;
-  font-size: 17px;
+  display: inline-block;
 }
-#footer a:hover {
-  background-color: #ddd;
-  color: black;
+#footer .navigation, 
+#footer .reseaux, 
+#footer .copyright {
+  display: block;
+  position: relative;
+  text-align: center;
+}
+#footer .reseaux a{
+  color:#212121;
 }
 
-/* Add a color to the active/current link */
-.navbar a.active {
-  background-color: #4CAF50;
-  color: white;
-}
+
 </style>
