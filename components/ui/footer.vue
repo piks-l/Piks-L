@@ -33,12 +33,13 @@
   padding: 15px 15px;
   text-decoration: none;
   display: inline-block;
+  position: relative;
 }
 #footer .navigation a::after {
     content: "";
     width: 100%;
-    top: 58%;
-    height: 6px;
+    top: 50%;
+    height: 3px;
     background: #ffb413;
     position: absolute;
     left: 0;
