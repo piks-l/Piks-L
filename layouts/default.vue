@@ -15,7 +15,7 @@
       transition: 'page',
       components: {
           influxMenu,
-          cdmHeader,
+          influxHeader,
           influxFooter
       },
       mounted: () => {
