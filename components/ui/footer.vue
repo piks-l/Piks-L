@@ -20,6 +20,7 @@
   </footer>
 </template>
 <style>
+/* FOOTER */
 #footer {
   background-color: #000000;
   overflow: hidden;
@@ -28,12 +29,24 @@
   width: 100%;
   padding: 25px 0px;
 }
+/* FOOTER GENERAL */
+#footer .navigation, 
+#footer .reseaux, 
+#footer .copyright {
+  display: block;
+  position: relative;
+  text-align: center;
+}
 #footer a {
   color: #f2f2f2;
   padding: 15px 15px;
   text-decoration: none;
   display: inline-block;
   position: relative;
+}
+/* FOOTER NAVIGATION */
+#footer .navigation a.nuxt-link-active {
+    color: #525252 !important;
 }
 #footer .navigation a::after {
     content: "";
@@ -59,19 +72,14 @@
     transform: scaleX(1);
     color: #ffb413; 
 }
-#footer .navigation, 
-#footer .reseaux, 
-#footer .copyright {
-  display: block;
-  position: relative;
-  text-align: center;
-}
+/* FOOTER RESEAUX */
 #footer .reseaux a {
   color: #525252;
 }
 #footer .reseaux a:hover {
   color: #FFFFFF;
 }
+/* FOOTER COPYRIGHT */
 #footer .copyright p {
     line-height: 51px;
 }
