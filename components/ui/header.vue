@@ -22,11 +22,8 @@
   }
   .center-logo{
       position: relative;
-      max-height: 90%;
-      top: 5%;
-      max-width: 80%;
-      left: 10%;
-      height: 90%;
+      width: 100%;
+      height: 100%;
   }
   .center-logo img {
       max-width: 100%;
