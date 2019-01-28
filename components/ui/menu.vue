@@ -431,6 +431,9 @@
 	.mainmenu {
 		counter-reset: menuitem;
 	}
+  .mainmenu a {
+    color: #fff;
+  }
 	.mainmenu__item {
 		font-size: 5vw;
 		text-transform: lowercase;
@@ -457,7 +460,7 @@
 		width: 100%;
 		top: 58%;
 		height: 6px;
-		background: #252525;
+		background: #FFB413;
 		position: absolute;
 		left: 0;
 		opacity: 0;
@@ -481,8 +484,12 @@
 		opacity: 0;
 		transition: opacity 0.3s;
 	}
+  .menu__item-inner{
+    color: #FFFFFF;
+	}
 	.menu__item-inner:hover .menu__item-hoverlink {
 		opacity: 1;
+    color: #FFB413;
 	}
 }
 </style>
