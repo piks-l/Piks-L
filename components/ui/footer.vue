@@ -15,7 +15,7 @@
       <a href="#"><i class="fab fa-youtube"></i></a>
     </div>
     <div class="copyright">
-      <p>© Copyright 2019 Sebatien-Odd - All Rights Reserved</p>
+      <p>© Copyright 2019 <a href="https://sebastien-odd.tattoo">Sebatien-Odd</a> - All Rights Reserved</p>
     </div>
   </footer>
 </template>
