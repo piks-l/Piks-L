@@ -1,5 +1,5 @@
 <template>
-  <div id="menu">
+  <nav id="menu">
 		<svg class="hidden">
 			<symbol id="icon-menu" viewBox="0 0 119 25">
 				<title>menu</title>
@@ -11,7 +11,7 @@
 			</symbol>
 		</svg>
 		<main>
-			<nav class="menu">
+			<div class="menu">
 				<div class="menu__item menu__item--1" data-direction="bt">
 					<div class="menu__item-inner">
 						<div class="mainmenu">
@@ -54,9 +54,9 @@
 				</div>
 				<button class="action action--menu"><svg class="icon icon--menu"><use xlink:href="#icon-menu"></use></svg></button>
 				<button class="action action--close"><svg class="icon icon--close"><use xlink:href="#icon-close"></use></svg></button>
-			</nav>
+			</div>
 		</main>
-   </div>
+   </nav>
 </template>
 <style>
   @import url('https://influx-002.netlify.com/css/config.css');
