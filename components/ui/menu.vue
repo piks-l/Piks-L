@@ -476,20 +476,20 @@
 		text-transform: uppercase;
 		letter-spacing: 0.15rem;
 		font-size: 0.85rem;
+    color: #FFF;
 	}
-	.menu__item-hoverlink {
+  .sidemenu__item:hover {
+    color: #FFB413;
+  }
+  .menu__item-hoverlink {
 		font-size: 1.25rem;
 		text-transform: lowercase;
 		border-bottom: 2px solid #fff;
 		opacity: 0;
 		transition: opacity 0.3s;
 	}
-  .menu__item-inner{
-    color: #FFFFFF;
-	}
 	.menu__item-inner:hover .menu__item-hoverlink {
 		opacity: 1;
-    color: #FFB413;
 	}
 }
 </style>
