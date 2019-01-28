@@ -1,10 +1,8 @@
 <template>
   <div>
     <influx-menu/>
-    
     <influx-header/>
     <nuxt/>
-
     <influx-footer/>
   </div>
 </template>
