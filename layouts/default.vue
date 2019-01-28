@@ -2,7 +2,7 @@
   <div>
     <influx-menu/>
     
-    <cdm-header/>
+    <influx-header/>
     <nuxt/>
 
     <influx-footer/>
@@ -11,7 +11,7 @@
 <script>
   import $ from 'jquery'
   import influxMenu from '~/components/ui/menu.vue'
-  import cdmHeader from '~/components/header.vue'
+  import influxHeader from '~/components/ui/header.vue'
   import influxFooter from '~/components/ui/footer.vue'
   export default {
       transition: 'page',
