@@ -34,6 +34,30 @@
   text-decoration: none;
   display: inline-block;
 }
+#footer a::after {
+    content: "";
+    width: 100%;
+    top: 58%;
+    height: 6px;
+    background: #ffb413;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: opacity .3s,-webkit-transform .3s;
+    transition: opacity .3s,-webkit-transform .3s;
+    transition: transform .3s,opacity .3s;
+    transition: transform .3s,opacity .3s,-webkit-transform .3s;
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+#footer a:hover::after {
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    color: #ffb413; 
+}
 #footer .navigation, 
 #footer .reseaux, 
 #footer .copyright {
@@ -46,8 +70,5 @@
 }
 #footer .copyright p {
     line-height: 51px;
-}
-#footer a:hover {
-  color: #ffb413; 
 }
 </style>
