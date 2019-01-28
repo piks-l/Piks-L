@@ -1,7 +1,11 @@
 <template>
   <header class="header">
-    <img class="font-logo" src="images/uploads/logobombyx.png" alt="Logo Papillon">
-    <img class="font-logo" src="images/uploads/00000000050.png" alt="Logo Sebatien Odd Tattoo">
+    <div>
+      <img class="font-logo" src="images/uploads/00000000050.png" alt="Logo Sebatien Odd Tattoo">
+    </div>
+    <div>
+      <img class="font-logo" src="images/uploads/logobombyx.png" alt="Logo Papillon">
+    </div>
   </header>
 </template>
 <style>
