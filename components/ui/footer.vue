@@ -69,6 +69,9 @@
 #footer .reseaux a {
   color: #525252;
 }
+#footer .reseaux a:hover {
+  color: #FFFFFF;
+}
 #footer .copyright p {
     line-height: 51px;
 }
