@@ -75,4 +75,7 @@
 #footer .copyright p {
     line-height: 51px;
 }
+#footer .copyright a {
+    padding: 0;
+}
 </style>
