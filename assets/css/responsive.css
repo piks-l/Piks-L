@@ -194,7 +194,7 @@
 		transition: color 0.3s;
 	}
 	.mainmenu__item:hover {
-		color: var(--color-item-alt);
+		color: #525252;
 	}
 	.mainmenu__item::before {
 		counter-increment: menuitem;
