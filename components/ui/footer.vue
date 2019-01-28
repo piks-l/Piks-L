@@ -34,7 +34,7 @@
   text-decoration: none;
   display: inline-block;
 }
-#footer a::after {
+#footer .navigation a::after {
     content: "";
     width: 100%;
     top: 58%;
@@ -52,7 +52,7 @@
     -webkit-transform-origin: 100% 50%;
     transform-origin: 100% 50%;
 }
-#footer a:hover::after {
+#footer .navigation a:hover::after {
     opacity: 1;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
