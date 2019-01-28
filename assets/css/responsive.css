@@ -139,7 +139,6 @@
 	}
 	.label {
 		display: block;
-		color: var(--color-item-alt);
 		position: absolute;
 		z-index: 1000;
 		font-size: 0.85rem;
@@ -212,7 +211,7 @@
 		width: 100%;
 		top: 58%;
 		height: 6px;
-		background: var(--color-link-hover);
+		background: #252525;
 		position: absolute;
 		left: 0;
 		opacity: 0;
