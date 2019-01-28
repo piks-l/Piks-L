@@ -41,14 +41,13 @@
   position: relative;
   text-align: center;
 }
-#footer .reseaux a{
-  color:#CCCCCC;
+#footer .reseaux a {
+  color: #525252;
 }
 #footer .copyright p {
     line-height: 51px;
 }
 #footer a:hover {
-  color: #ffffff;
-  background: #ffb413;
+  color: #ffb413; 
 }
 </style>
