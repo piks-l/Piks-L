@@ -1,10 +1,7 @@
 <template>
   <header class="header">
-    <div>
+    <div class="center-logo">
       <img src="images/uploads/00000000050.png" alt="Logo Sebatien Odd Tattoo">
-    </div>
-    <div>
-      <img class="logo" src="images/uploads/logobombyx.png" alt="Logo Papillon">
     </div>
   </header>
 </template>
@@ -22,6 +19,23 @@
       top: 50%;
       -webkit-transform: translateX(-50%) translateY(-50%);
       transform: translateX(-50%) translateY(-50%);
+  }
+  .center-logo{
+      position: relative;
+      max-height: 90%;
+      top: 5%;
+      max-width: 80%;
+      left: 10%;
+      height: 90%;
+  }
+  .center-logo img {
+      max-width: 100%;
+      max-height: 100%;
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
   }
 </style>
 
