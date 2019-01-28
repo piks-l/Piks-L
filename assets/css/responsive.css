@@ -203,7 +203,7 @@
 	    font-size: 0.85rem;	
 	    top: 25%;
 	    left: -1.25rem;
-	    color: var(--color-item-alt);
+	    color: #525252;
 	}
 	.mainmenu__item::after {
 		content: '';
