@@ -61,12 +61,14 @@
 <style>
   @import url('https://influx-002.netlify.com/css/config.css');
   #menu {
-    background: #151515;
-    height: 75px;
-    position: fixed;
-    z-index: 111;
-    top: 0px;
-    width: 100%;
+      background: url(/images/uploads/logobombyx.png);
+      height: 75px;
+      position: fixed;
+      z-index: 111;
+      top: 0;
+      width: 100%;
+      background-position: center 44%;
+      background-color: black;
   }
   .sidemenu__item i.fab {
     margin-right: 15px;
