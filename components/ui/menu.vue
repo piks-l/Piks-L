@@ -60,6 +60,14 @@
 </template>
 <style>
   @import url('https://influx-002.netlify.com/css/config.css');
+  #menu {
+    background: #151515;
+    height: 75px;
+    position: fixed;
+    z-index: 111;
+    top: 0px;
+    width: 100%;
+  }
   .sidemenu__item i.fab {
     margin-right: 15px;
     color: #525252;
