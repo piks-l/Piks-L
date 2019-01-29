@@ -1,6 +1,6 @@
 <template>
 <div>
-  <div class="container border">
+  <div class="container">
     <h2>ARTWORKS</h2>
   </div>
   <cdm-artworks/>
