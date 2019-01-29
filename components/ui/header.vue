@@ -68,7 +68,8 @@
 }
 
 #text {
-  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
 }
 
 svg {
@@ -77,19 +78,24 @@ svg {
 
 .active {
   fill: #E63946;
-  .rect { 
-    transform: translate3d(0, 30px, 0); 
-  }
-  .circ {
-    transform: translate3d(30px, 0, 0) scale(0.5);
-  }
-  .text {
-    transform: rotate(90deg) scaleX(0.08) translate3d(-300px, -35px, 0);
-  }
-  .footer {
-    transform: translate3d(100px, 0, 0);
-  }
 }
+.active .rect {
+  -webkit-transform: translate3d(0, 30px, 0);
+          transform: translate3d(0, 30px, 0);
+}
+.active .circ {
+  -webkit-transform: translate3d(30px, 0, 0) scale(0.5);
+          transform: translate3d(30px, 0, 0) scale(0.5);
+}
+.active .text {
+  -webkit-transform: rotate(90deg) scaleX(0.08) translate3d(-300px, -35px, 0);
+          transform: rotate(90deg) scaleX(0.08) translate3d(-300px, -35px, 0);
+}
+.active .footer {
+  -webkit-transform: translate3d(100px, 0, 0);
+          transform: translate3d(100px, 0, 0);
+}
+
 </style>
 
 <script>
