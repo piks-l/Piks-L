@@ -92,13 +92,11 @@
     -moz-osx-font-smoothing: grayscale;
   }
   #menu {
-      background: url(/images/uploads/logobombyx.png);
       height: 75px;
       position: fixed;
       z-index: 111;
       top: 0;
       width: 100%;
-      background-position: center 44%;
       background-color: black;
   }
   
