@@ -98,11 +98,13 @@ svg {
 
 </style>
 
+
 <script>
-//  import VueLazyload from 'vue-lazyload'
-export default { 
+export default {
   data() {
-    return { changed: false }
+    return {
+      changed: false
+    }
   }
-};
+}
 </script>
