@@ -9,13 +9,14 @@
   </header>
 </template>
 <style>
-#animation {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
+  #animation {
+      position: absolute;
+      right: 50%;
+      top: 0;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translateX(50%);
+  }
   .header{
     position: relative;
     z-index: -1;
