@@ -65,32 +65,7 @@
 /* Import */
   @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900');
 /* Général */
-  body {
-    --color-text: #ffffff;
-    --color-bg: #252525;
-    --color-link: #ffffff;
-    --color-link-hover: #ffb413;
-    --color-bg-item1: #212121;
-    --color-bg-item2: #000000;
-    --color-bg-item3: #212121;
-    --color-bg-item4: #151515;
-    --color-bg-item5: #000000;
-    --color-item-alt: #525252;
-    --color-quote: #ffffff;
-    --color-info: #cccccc;
-    --color-title: #e23434;
-    --color-tagline: #e2e2e2;
-    font-family: 'Playfair Display', serif;
-    min-height: 100vh;
-    color: #57585c;
-    color: var(--color-text);
-    background-color: #fff;
-    background-color: var(--color-bg);
-    padding: 6rem 0 0 0;
-    margin:0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+  
   #menu {
       height: 75px;
       position: fixed;
