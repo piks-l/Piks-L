@@ -4,32 +4,19 @@
       <source src="https://www.influx-agence.fr/cms/sebastienodd-animation.mp4" type="video/mp4">
     </video>
     <div class="center-logo">
-      <a @click="changed = !changed">Change</a>
-      <br>
-      <svg :class="{ active: changed }" xmlns="http://www.w3.org/2000/svg" width="447" height="442" viewBox="0 0 447 442">
-        <transition-group name="layout" tag="g">
-          <rect class="items rect" ref="rect" key="rect" width="171" height="171"/>
-          <circle class="items circ" key="circ" id="profile" cx="382" cy="203" r="65"/>
-          <g class="items text" id="text" key="text">
-            <rect x="56" y="225" width="226" height="16"/>
-            <rect x="56" y="252" width="226" height="16"/>
-            <rect x="56" y="280" width="226" height="16"/>
-          </g>
-          <rect class="items footer" key="footer" id="footer" y="423" width="155" height="19" rx="9.5" ry="9.5"/>
-        </transition-group>
-      </svg>
-      <img src="images/uploads/00000000050.png" alt="Logo Sebatien Odd Tattoo">
+      <img @click="changed = !changed" src="images/uploads/00000000050.png" alt="Logo Sebatien Odd Tattoo">
     </div>
   </header>
 </template>
 <style>
-  #animation {
+  video#animation {
       position: absolute;
       left: 50%;
       top: 50%;
       min-width: 100%;
       min-height: 100%;
       transform: translate(-50%, -50%);
+      transition:1s all ease;
   }
   .header{
     position: relative;
@@ -37,6 +24,14 @@
     width:100%;
     margin-top: 75px;
     overflow: hidden;
+    transition:1s all ease;
+  }
+  .header.active{
+    height:20vh;
+  }
+  .header.active #animation{
+    filter:blur(10px);
+    opacity:.5;
   }
   .logo {
       height: 100vh;
