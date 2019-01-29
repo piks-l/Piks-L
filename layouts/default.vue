@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .container {
       padding: 30px;
-      margin: 40px auto;
+      margin: 0 auto;
       max-width: 1170px;
   }
   
@@ -98,10 +98,11 @@ h1, h2, h3, h4, h5, h6 {
       text-decoration: none;
   }
   section{
-    background:#fff;
+      background:#EAEAEA;
+      padding: 40px 0;
   }
   section:nth-child(2n-1){
-    background:#dedede;
+      background:#fff;
   }
   .page-enter-active, .page-leave-active {
     transition: all .5s ease;
