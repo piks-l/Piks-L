@@ -37,7 +37,7 @@
     z-index: -1;
     height:70vh;
     width:100%;
-    top: 75px;
+    margin-top: 75px;
     overflow: hidden;
   }
   .logo {
