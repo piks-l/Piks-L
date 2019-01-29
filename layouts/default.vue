@@ -88,7 +88,6 @@ h1, h2, h3, h4, h5, h6 {
       padding: 0 30px;
   }
   .container {
-      background: #fff;
       padding: 30px;
       margin: 40px auto;
       max-width: 1170px;
@@ -98,7 +97,12 @@ h1, h2, h3, h4, h5, h6 {
       color: #000;
       text-decoration: none;
   }
-
+  section{
+    bckground:#fff;
+  }
+  section:nth-child(2n-1){
+    bckground:#dedede;
+  }
   .page-enter-active, .page-leave-active {
     transition: all .5s ease;
   }
