@@ -4,7 +4,7 @@
       <source src="https://www.influx-agence.fr/cms/sebastienodd-animation.mp4" type="video/mp4">
     </video>
     <div class="center-logo">
-      <a @click="changed = !changed">Change</a>
+      <a @click.native="changed = !changed">Change</a>
       <br>
       <svg :class="{ active: changed }" xmlns="http://www.w3.org/2000/svg" width="447" height="442" viewBox="0 0 447 442">
         <transition-group name="layout" tag="g">
