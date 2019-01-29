@@ -2,20 +2,20 @@
   <footer id="footer">
     <div class="navigation">
       <nuxt-link to="/">Accueil</nuxt-link>
-      <nuxt-link to="/">Biographie</nuxt-link>
+      <nuxt-link to="/biographie/">Biographie</nuxt-link>
       <nuxt-link to="/blog/">Actualités</nuxt-link>
       <nuxt-link to="/artworks/">Artworks</nuxt-link>
       <nuxt-link to="/tattoos/">Tattoos</nuxt-link>
       <nuxt-link to="/contact/">Contact</nuxt-link> 
     </div>
     <div class="reseaux">
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a target="_blank" href="https://www.facebook.com/sebastienoddtattoo/"><i class="fab fa-facebook-f"></i></a>
+      <a target="_blank" href="https://twitter.com/sebastienodd"><i class="fab fa-twitter"></i></a>
+      <a target="_blank" href="#"><i class="fab fa-instagram"></i></a>
+      <a target="_blank" href="https://www.youtube.com/channel/UCH8hl7gSMTr4TcBSIF8PiwA"><i class="fab fa-youtube"></i></a>
     </div>
     <div class="copyright">
-      <p>© Copyright 2019 <a href="https://sebastien-odd.tattoo">Sebatien-Odd</a> - All Rights Reserved</p>
+      <p>© 2019 <a href="https://sebastien-odd.tattoo">Sebatien-Odd</a> - All Rights Reserved</p>
     </div>
   </footer>
 </template>
