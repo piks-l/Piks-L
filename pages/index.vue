@@ -3,12 +3,12 @@
     <div class="choix-creation">
       <div class="split gauche">
         <div class="centre">
-          <h3>ARTWORKS</h3>
+          <nuxt-link to="/artworks/"><h3>Artworks</h3></nuxt-link>
         </div>
       </div>
       <div class="split droite">
         <div class="centre">
-          <h3>TATTOOS</h3>
+          <nuxt-link to="/tattoos/"><h3>Tattoos</h3></nuxt-link>
         </div>
       </div>
     </div>
