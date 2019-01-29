@@ -3,7 +3,7 @@
     <article class="post">
       <img class="header" :src="couverture">
       <div class="shadow"></div>
-      <div class="container">
+      <div class="container white">
         <h2>{{ title }}</h2>
         <div class="meta">
           <p>Par  <nuxt-link to="/artistes/piero/">Piero</nuxt-link>, le <b>{{ date }}</b></p> 
@@ -75,6 +75,9 @@ export default {
       background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 60%, rgba(0,0,0,1) 100%);
       background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 60%, rgba(0,0,0,1) 100%);
       z-index: -1;
+  }
+  .white{
+      background:#fff;
   }
   hr {
     margin: 30px;
