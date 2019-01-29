@@ -73,60 +73,20 @@ h1, h2, h3, h4, h5, h6 {
       padding: 0 30px;
   }
   .container {
-      background: #fff;
       padding: 30px;
-      margin: 40px auto;
+      margin: 0 auto;
       max-width: 1170px;
   }
   .wrapper {
       grid-template-columns: 25% 25% 25% 25%;
       display: grid;
   }
-  .border{
-      text-align:center;
-      border-color: #e6e6e6 !important;
-      border-style: double inset !important;
-      border-width: 7px 0 !important;
-  }
-  .border.black{
-      border-color: #151515 !important;
-  }
-  .black{
-    background:#000;
-    color:#fff;
-  }
-  .border.black p b {
-    color: #fff;
-  }
-  .border .h2 {
-      font-size: 72px;
-      line-height: 1.11em;
-      font-weight: 900;
-      font-family: 'titaniaregular', serif;
-  }
-  .black h2, .black p{
-      color:#fff;
-  }
-  .border p{
-      color:rgb(128, 128, 128);
-      font-size:22px;
-  }
-  .border p b{
-      color:#000;
-      font-size:22px;
-      font-family: "titaniaregular",serif;
-      font-weight: 400;
-      line-height: 30px;
-  }
   
   a:hover {
       color: #000;
       text-decoration: none;
   }
-  .black a:hover, .black a {
-      color: #fff;
-      text-decoration: none;
-  }
+ 
   .underline {
     width: calc(100%);
     background-image: linear-gradient(transparent calc(100% - 15px), red 10px);
