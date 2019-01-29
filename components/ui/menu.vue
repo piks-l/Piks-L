@@ -101,16 +101,12 @@
       background-position: center 44%;
       background-color: black;
   }
-  .progress-container {
-    width: 100%;
-    height: 8px;
-    background: #ccc;
-  }
-  .progress-bar {
-    height: 8px;
-    background: #4caf50;
-    width: 0%;
-  }
+  
+  /* Scroll indicator */
+  .progress-container { width: 100%; height: 5px; background: #525252; }
+  .progress-bar { width: 0%; height: 5px; background: #FFB413; }
+  
+  /* Menu - Reseaux sociaux */
   .sidemenu__item i.fab {
     margin-right: 15px;
     color: #525252;
