@@ -11,7 +11,7 @@
     <div class="reseaux">
       <a target="_blank" href="https://www.facebook.com/sebastienoddtattoo/"><i class="fab fa-facebook-f"></i></a>
       <a target="_blank" href="https://twitter.com/sebastienodd"><i class="fab fa-twitter"></i></a>
-      <a target="_blank" href="#"><i class="fab fa-instagram"></i></a>
+      <a target="_blank" href="https://www.instagram.com/sebastien_odd_tattoo/"><i class="fab fa-instagram"></i></a>
       <a target="_blank" href="https://www.youtube.com/channel/UCH8hl7gSMTr4TcBSIF8PiwA"><i class="fab fa-youtube"></i></a>
     </div>
     <div class="copyright">
