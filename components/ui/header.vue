@@ -11,11 +11,11 @@
 <style>
   #animation {
       position: absolute;
-      right: 50%;
+      left: 50%;
       top: 50%;
       min-width: 100%;
       min-height: 100%;
-      transform: translate(50%, 50%);
+      transform: translate(-50%, -50%);
   }
   .header{
     position: relative;
