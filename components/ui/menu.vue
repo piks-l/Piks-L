@@ -183,6 +183,7 @@
     z-index: 1000;
     opacity: 0;
     padding: 0 0.5rem;
+    color:#fff;
   }
   .icon--menu {
     width: 2rem;
