@@ -23,6 +23,7 @@
     height:70vh;
     width:100%;
     top: 75px;
+    overflow: hidden;
   }
   .logo {
       height: 100vh;
