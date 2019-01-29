@@ -13,10 +13,8 @@
       <a target="_blank" href="https://twitter.com/sebastienodd"><i class="fab fa-twitter"></i></a>
       <a target="_blank" href="https://www.instagram.com/sebastien_odd_tattoo/"><i class="fab fa-instagram"></i></a>
       <a target="_blank" href="https://www.youtube.com/channel/UCH8hl7gSMTr4TcBSIF8PiwA"><i class="fab fa-youtube"></i></a>
-    </div>
-    <div class="navigation-contact">
-      <a href="tel:+33641850394"><i class="fas fa-phone"></i> 06 41 85 03 94</a>
-      <a href="mailto:sebastienoddtattoos@gmail.com"><i class="fas fa-at"></i> sebastienoddtattoos@gmail.com</a>
+      <a target="_blank" href="mailto:sebastienoddtattoos@gmail.com"><i class="fas fa-at"></i></a>
+      <a target="_blank" href="tel:+33641850394"><i class="fas fa-phone"></i></a>
     </div>
     <div class="copyright">
       <p>© 2019 <a href="https://sebastien-odd.tattoo">Sebatien-Odd</a> - Tous droits réservés</p>
@@ -24,6 +22,7 @@
   </footer>
 </template>
 <style>
+
 /* FOOTER */
 #footer {
   background-color: #000000;
@@ -33,10 +32,10 @@
   width: 100%;
   padding: 25px 0px;
 }
+
 /* FOOTER GENERAL */
 #footer .navigation, 
 #footer .reseaux,
-#footer .navigation-contact, 
 #footer .copyright {
   display: block;
   position: relative;
@@ -49,6 +48,7 @@
   display: inline-block;
   position: relative;
 }
+
 /* FOOTER NAVIGATION */
 #footer .navigation a.nuxt-link-active {
     color: #525252 !important;
@@ -77,6 +77,7 @@
     transform: scaleX(1);
     color: #ffb413; 
 }
+
 /* FOOTER RESEAUX */
 #footer .reseaux a {
   color: #525252;
@@ -84,13 +85,7 @@
 #footer .reseaux a:hover {
   color: #FFFFFF;
 }
-/* FOOTER NAVIGATION-CONTACT */
-#footer .navigation-contact a {
-  color: #525252;
-}
-#footer .navigation-contact a:hover {
-  color: #FFFFFF;
-}
+
 /* FOOTER COPYRIGHT */
 #footer .copyright p {
     line-height: 51px;
@@ -98,4 +93,5 @@
 #footer .copyright a {
     padding: 0;
 }
+
 </style>
