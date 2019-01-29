@@ -1,6 +1,8 @@
 <template>
   <div id="menu">
-    <div class="progress-bar" id="myBar"></div>
+    <div class="progress-container">
+      <div class="progress-bar" id="scrollindicator"></div>
+    </div>
 		<svg class="hidden">
 			<symbol id="icon-menu" viewBox="0 0 119 25">
 				<title>menu</title>
@@ -98,6 +100,16 @@
       width: 100%;
       background-position: center 44%;
       background-color: black;
+  }
+  .progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+  }
+  .progress-bar {
+    height: 8px;
+    background: #4caf50;
+    width: 0%;
   }
   .sidemenu__item i.fab {
     margin-right: 15px;
