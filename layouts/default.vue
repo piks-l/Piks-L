@@ -98,10 +98,10 @@ h1, h2, h3, h4, h5, h6 {
       text-decoration: none;
   }
   section{
-    bckground:#fff;
+    background:#fff;
   }
   section:nth-child(2n-1){
-    bckground:#dedede;
+    background:#dedede;
   }
   .page-enter-active, .page-leave-active {
     transition: all .5s ease;
