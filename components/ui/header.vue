@@ -1,5 +1,5 @@
 <template>
-  <header :class="header '{ active: changed }'">
+  <header class="header" :class="{ active: changed }">
     <video autoplay muted loop id="animation">
       <source src="https://www.influx-agence.fr/cms/sebastienodd-animation.mp4" type="video/mp4">
     </video>
