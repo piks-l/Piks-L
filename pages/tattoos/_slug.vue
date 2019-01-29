@@ -16,7 +16,7 @@
     </div>
 
     <div class="full-width">
-        <div class="container border black">
+        <div class="container">
             <nuxt-link to="/tattoos/"><p>Voir les autres tattoos.</p></nuxt-link>
         </div>
     </div>   
@@ -121,9 +121,6 @@ export default {
       min-height: 80vh;
       margin-top: 58px;
   }
-  .intro.artist-PIERO {
-      min-height: 100vh;
-  }
   .artist {
       padding: 0 !important;
   }
@@ -133,9 +130,6 @@ export default {
       position: fixed;
       z-index: -1;
       top: 58px;
-  }
-  .intro.artist-PIERO .header{
-      top: 50vh;
   }
   .artist .header {
       width: 40%;
