@@ -13,6 +13,7 @@
       <a target="_blank" href="https://twitter.com/sebastienodd"><i class="fab fa-twitter"></i></a>
       <a target="_blank" href="https://www.instagram.com/sebastien_odd_tattoo/"><i class="fab fa-instagram"></i></a>
       <a target="_blank" href="https://www.youtube.com/channel/UCH8hl7gSMTr4TcBSIF8PiwA"><i class="fab fa-youtube"></i></a>
+      - 
       <a target="_blank" href="mailto:sebastienoddtattoos@gmail.com"><i class="fas fa-at"></i></a>
       <a target="_blank" href="tel:+33641850394"><i class="fas fa-phone"></i></a>
     </div>
