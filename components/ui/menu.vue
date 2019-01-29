@@ -47,7 +47,7 @@
 				<div class="menu__item menu__item--4" data-direction="rl">
 					<div class="menu__item-inner">
 						<p class="label label--topleft label--line">Contact</p>
-						<p" class="menu__item-link">Pour aborder vos projets et prendre rendez-vous, veuillez m'envoyer un mail en précisant l'emplacement, les dimensions et l'inspirations en y joignant éventuellement 2 ou 3 photos</p>
+						<p class="menu__item-link">Pour aborder vos projets et prendre rendez-vous, veuillez m'envoyer un mail en précisant l'emplacement, les dimensions et l'inspirations en y joignant éventuellement 2 ou 3 photos</p>
 					</div>
 				</div>
 				<div class="menu__item menu__item--5" data-direction="tb">
@@ -55,7 +55,7 @@
 						<p class="quote">Pour aborder vos projets et prendre rendez-vous, veuillez m'envoyer un mail en précisant l'emplacement, les dimensions et l'inspirations en y joignant éventuellement 2 ou 3 photos</p>
 					</div>
 				</div>
-				<button class="action action--menu"><svg class="icon icon--menu"><use xlink:href="#icon-menu"></use></svg></button>
+				<div class="circle"><button class="action action--menu"><svg class="icon icon--menu"><use xlink:href="#icon-menu"></use></svg></button></div>
 				<button class="action action--close"><svg class="icon icon--close"><use xlink:href="#icon-close"></use></svg></button>
 			</nav>
 		</main>
@@ -97,7 +97,7 @@
       z-index: 111;
       top: 0;
       width: 100%;
-      background-color: black;
+      background-color: #fff;
   }
   
   /* Scroll indicator */
@@ -162,7 +162,7 @@
   .action {
     background: none;
     border: 0;
-    color: #fff;
+    color: #000;
     cursor: pointer;
     padding: 0;
   }
