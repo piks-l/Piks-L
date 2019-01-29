@@ -3,7 +3,7 @@
     <article class="post">
       <img class="header" :src="couverture">
       <div class="shadow"></div>
-      <div class="container border">
+      <div class="container">
         <h2>{{ title }}</h2>
         <div class="meta">
           <p>Par  <nuxt-link to="/artistes/piero/">Piero</nuxt-link>, le <b>{{ date }}</b></p> 
@@ -17,7 +17,7 @@
       <cdm-derniersarticles/>
     </article>
     <div class="full-width">
-        <div class="container border black">
+        <div class="container">
             <nuxt-link to="/blog/"><p>Revenir sur le blog</p></nuxt-link>
         </div>
     </div> 
