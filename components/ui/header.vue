@@ -1,11 +1,21 @@
 <template>
   <header class="header">
+    <video autoplay muted loop id="animation">
+      <source src="/videos/sebastienodd-animation.mp4" type="video/mp4">
+    </video>
     <div class="center-logo">
       <img src="images/uploads/00000000050.png" alt="Logo Sebatien Odd Tattoo">
     </div>
   </header>
 </template>
 <style>
+#animation {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
   .header{
     position: relative;
     z-index: -1;
