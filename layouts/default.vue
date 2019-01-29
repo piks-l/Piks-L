@@ -29,10 +29,10 @@
 
 /* Général */
 body {
-	--color-text: #ffffff;
+	--color-text: #000;
 	--color-bg: #252525;
-	--color-link: #ffffff;
-	--color-link-hover: #ffb413;
+	--color-link: #000;
+	--color-link-hover: #ccc;
   --color-bg-item1: #212121;
   --color-bg-item2: #000000;
   --color-bg-item3: #212121;
