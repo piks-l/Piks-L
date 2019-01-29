@@ -30,7 +30,7 @@
 /* Général */
 body {
 	--color-text: #000;
-	--color-bg: #252525;
+	--color-bg: #fff;
 	--color-link: #000;
 	--color-link-hover: #ccc;
   --color-bg-item1: #212121;
