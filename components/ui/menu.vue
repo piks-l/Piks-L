@@ -1,5 +1,6 @@
 <template>
   <div id="menu">
+    <div class="progress-bar" id="myBar"></div>
 		<svg class="hidden">
 			<symbol id="icon-menu" viewBox="0 0 119 25">
 				<title>menu</title>
@@ -499,6 +500,13 @@
       head: {
       },
       mounted: () => {
+        window.onscroll = function() {myFunction()};
+        function myFunction() {
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = (winScroll / height) * 100;
+          document.getElementById("scrollindicator").style.width = scrolled + "%";
+        } 
 {
     // Class Menu.
     class Menu {
