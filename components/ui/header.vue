@@ -33,7 +33,6 @@
   }
   .header{
     position: relative;
-    z-index: -1;
     height:70vh;
     width:100%;
     margin-top: 75px;
