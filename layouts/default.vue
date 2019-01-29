@@ -93,50 +93,9 @@ h1, h2, h3, h4, h5, h6 {
       margin: 40px auto;
       max-width: 1170px;
   }
-  .border{
-      text-align:center;
-      border-color: #e6e6e6 !important;
-      border-style: double inset !important;
-      border-width: 7px 0 !important;
-  }
-  .border.black{
-      border-color: #151515 !important;
-  }
-  .black{
-    background:#000;
-    color:#fff;
-  }
-  .border.black p b {
-    color: #fff;
-  }
-  .border .h2 {
-      font-size: 72px;
-      line-height: 1.11em;
-      font-weight: 900;
-      font-family: 'Playfair Display', serif;
-  }
-  .black h2, .black p{
-      color:#fff;
-  }
-  .border p{
-      color: grey;
-      font-size: 18px;
-      line-height: 1.7;
-  }
-  .border p b{
-      color:#000;
-      font-size:22px;
-      font-family: 'Playfair Display', serif;
-      font-weight: 400;
-      line-height: 30px;
-  }
   
   a:hover {
       color: #000;
-      text-decoration: none;
-  }
-  .black a:hover, .black a {
-      color: #fff;
       text-decoration: none;
   }
 
