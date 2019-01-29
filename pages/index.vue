@@ -1,13 +1,15 @@
 <template>
   <section>
-    <div class="split gauche">
-      <div class="centre">
-        <h3>ARTWORKS</h3>
+    <div class="choix-creation">
+      <div class="split gauche">
+        <div class="centre">
+          <h3>ARTWORKS</h3>
+        </div>
       </div>
-    </div>
-    <div class="split droit">
-      <div class="centre">
-        <h3>TATTOOS</h3>
+      <div class="split droit">
+        <div class="centre">
+          <h3>TATTOOS</h3>
+        </div>
       </div>
     </div>
     <div class="container border black">
