@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <video autoplay muted loop id="animation">
-      <source src="/videos/sebastienodd-animation.mp4" type="video/mp4">
+      <source src="https://www.influx-agence.fr/cms/sebastienodd-animation.mp4" type="video/mp4">
     </video>
     <div class="center-logo">
       <img src="images/uploads/00000000050.png" alt="Logo Sebatien Odd Tattoo">
