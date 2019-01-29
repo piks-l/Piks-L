@@ -20,7 +20,7 @@
   }
   .header{
     position: relative;
-    height:70vh;
+    height:100vh;
     width:100%;
     margin-top: 75px;
     overflow: hidden;
