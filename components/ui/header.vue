@@ -4,7 +4,7 @@
       <source src="https://www.influx-agence.fr/cms/sebastienodd-animation.mp4" type="video/mp4">
     </video>
     <div class="center-logo">
-      <img @click="changed = !changed" src="images/uploads/00000000050.png" alt="Logo Sebatien Odd Tattoo">
+      <img @click="changed = !changed" src="https://influx-002.netlify.com/images/uploads/00000000050.png" alt="Logo Sebatien Odd Tattoo">
     </div>
   </header>
 </template>
