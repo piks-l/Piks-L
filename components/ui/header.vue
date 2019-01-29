@@ -97,7 +97,7 @@ svg {
 export default {
   data() {
     return {
-      changed: true
+      changed: false
     }
   }
 }
