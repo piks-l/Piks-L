@@ -6,7 +6,7 @@
           <h3>ARTWORKS</h3>
         </div>
       </div>
-      <div class="split droit">
+      <div class="split droite">
         <div class="centre">
           <h3>TATTOOS</h3>
         </div>
@@ -23,6 +23,9 @@
       <h2>Actualités</h2>
     </div>  
     <div class="content-blog">
+      <div class="full-width">
+        <h2>Actualités</h2>
+      </div>
       <influx-blog/>
         <div class="full-width">
           <div class="container border black">
@@ -63,20 +66,24 @@
   }
 </script>
 <style>
+/* DOUBLE BUTTON*/
+.choix-creation {
+  height: 100px;
+  display: block;
+  position: relative;
+}
 .split {
   height: 100%;
   width: 50%;
-  position: fixed;
+  position: absolute;
   z-index: 1;
-  top: 0;
   overflow-x: hidden;
-  padding-top: 20px;
 }
 .gauche {
   left: 0;
   background-color: #252525;
 }
-.droit {
+.droite {
   right: 0;
   background-color: #000000;
 }
