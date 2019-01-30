@@ -72,7 +72,7 @@
       z-index: 111;
       top: 0;
       width: 100%;
-      background-color: #fff;
+      background-color: transparent;
   }
   
   /* Scroll indicator */
