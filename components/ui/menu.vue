@@ -548,18 +548,6 @@
                   setTimeout(close, 3000);
               }
               
-              var myVar;
-
-              function myFunction() {
-                myVar = setTimeout(alertFunc, 3000);
-              }
-
-              function alertFunc() {
-                alert("Hello!");
-              }
-              
-              
-              
               toggle(action) {
                   if ( this.isAnimating ) return;
                   // (dis)allow the main image tilt effect.
