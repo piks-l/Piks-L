@@ -161,8 +161,10 @@
   .circle .icon {
       top: 50%;
       left: 50%;
+      -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       margin-left: 3px;
+      position: absolute;
   }
   .menu--open .action--menu {
     pointer-events: none;
