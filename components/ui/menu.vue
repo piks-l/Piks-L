@@ -310,22 +310,25 @@
       transform: none !important;
   }
   .background {
-    perspective: 1000px;
+      -webkit-perspective: 1000px;
+      perspective: 1000px;
+      position: relative !important;
+      opacity: 1 !important;
   }
   .background,
   .background__copy {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-image: url(https://influx-002.netlify.com/images/uploads/logobombyx.png);
-    background-position: 50% 0%;
-    background-size: cover;
-    z-index: 1;
+      position: fixed;
+      width: 100%;
+      height: 600px;
+      top: 0;
+      left: 0;
+      background-image: url(https://influx-002.netlify.com/images/uploads/logobombyx.png);
+      background-position: 50% 0%;
+      background-size: cover;
+      z-index: 1;
   }
   .background__copy {
-    opacity: 0.3;
+      opacity: 0.1;
   }
   
   
