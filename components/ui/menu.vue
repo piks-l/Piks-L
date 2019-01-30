@@ -515,9 +515,11 @@
                   this.DOM = {el: el};
                   // Open and close ctls.
                   this.DOM.openCtrl = this.DOM.el.querySelector('.action--menu');
-                  this.DOM.closeCtrl = this.DOM.el.querySelector('.action--close, .mainmenu');
+                  this.DOM.closeCtrl = this.DOM.el.querySelector('.action--close');
+                  this.DOM.menuCtrl = this.DOM.el.querySelector('.mainmenu');
                   this.DOM.openCtrl.addEventListener('click', () => this.open());
                   this.DOM.closeCtrl.addEventListener('click', () => this.close());
+                  this.DOM.menuCtrl.addEventListener('click', () => setTimeout(function(){ this.close() }, 3000));
                   this.DOM.openCtrl.addEventListener('mouseenter', () => {
                       allowTilt = false;
                       tilt.reset()
