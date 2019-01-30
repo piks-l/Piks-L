@@ -148,12 +148,7 @@
     right: 1.5rem;
     z-index: 1000;
   }
-  .circle .action--menu {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      margin-left: 3px;
-  }
+  
   .circle {
       height: 40px;
       width: 40px;
@@ -162,6 +157,12 @@
       right: 25px;
       top: 15px;
       border-radius: 50%;
+  }
+  .circle .icon {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin-left: 3px;
   }
   .menu--open .action--menu {
     pointer-events: none;
@@ -511,7 +512,7 @@
             this.DOM = {el: el};
             // Open and close ctls.
             this.DOM.openCtrl = this.DOM.el.querySelector('.action--menu');
-            this.DOM.closeCtrl = this.DOM.el.querySelector('.action--close');
+            this.DOM.closeCtrl = this.DOM.el.querySelector('.action--close, .mainmenu__item');
             this.DOM.openCtrl.addEventListener('click', () => this.open());
             this.DOM.closeCtrl.addEventListener('click', () => this.close());
             this.DOM.openCtrl.addEventListener('mouseenter', () => {
