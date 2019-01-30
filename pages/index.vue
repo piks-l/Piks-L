@@ -3,7 +3,7 @@
     <section>
       <div class="container">
         <div class="bloc">
-          <img class="font-logo" src="images/uploads/papillon-réaliste.jpg">
+          <img class="font-logo" src="images/uploads/logobombyx.png">
         </div>
         <div class="bloc">
           <h2>Sébastien Odd, tatoueur on the road vivant à Toulouse.</h2>
@@ -56,15 +56,24 @@
   }
 </script>
 <style>
-/* DOUBLE BUTTON*/
+  .bloc {
+      position: relative;
+      width: 50%;
+      display: inline-block;
+      padding: 15px;
+  }
+  .bloc .font-logo {
+      max-width: 100%;
+      max-height: 100%;
+      position: absolute;
+  }
+  @media only screen and (min-width:960px) and (max-width:1264px){
 
-@media only screen and (min-width:960px) and (max-width:1264px){
+  }
+  @media only screen and (min-width:600px) and (max-width:959px){
 
-}
-@media only screen and (min-width:600px) and (max-width:959px){
+  }
+  @media only screen and (max-width:599px){
 
-}
-@media only screen and (max-width:599px){
-
-}
+  }
 </style>
