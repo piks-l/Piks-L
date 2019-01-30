@@ -2,8 +2,13 @@
   <div>
     <section>
       <div class="container">
-        <h2>Sébastien Odd, tatoueur on the road vivant à Toulouse.</h2>
-        <p>Il travaille plusieurs styles notamment le style réaliste pour lequel il est souvent demandé. Il adore aussi l’univers des comics, du jeu vidéo et du dessin en général et tatoue également beaucoup de pièces ,en newschool et en néo-trad, aux illustrations de qualité et au dessin maîtrisé.</p>
+        <div class="bloc">
+          <img class="font-logo" src="images/uploads/papillon-réaliste.jpg">
+        </div>
+        <div class="bloc">
+          <h2>Sébastien Odd, tatoueur on the road vivant à Toulouse.</h2>
+          <p>Il travaille plusieurs styles notamment le style réaliste pour lequel il est souvent demandé. Il adore aussi l’univers des comics, du jeu vidéo et du dessin en général et tatoue également beaucoup de pièces ,en newschool et en néo-trad, aux illustrations de qualité et au dessin maîtrisé.</p>
+        </div>        
       </div>
     </section>
     <section>
