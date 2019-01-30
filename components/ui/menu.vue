@@ -55,7 +55,7 @@
 						<p class="quote">Pour aborder vos projets et prendre rendez-vous, veuillez m'envoyer un mail en précisant l'emplacement, les dimensions et l'inspirations en y joignant éventuellement 2 ou 3 photos</p>
 					</div>
 				</div>
-				<div class="circle"><button class="action action--menu"><svg class="icon icon--menu"><use xlink:href="#icon-menu"></use></svg></button></div>
+				<button class="circle action action--menu"><svg class="icon icon--menu"><use xlink:href="#icon-menu"></use></svg></button>
 				<button class="action action--close"><svg class="icon icon--close"><use xlink:href="#icon-close"></use></svg></button>
 			</nav>
 		</main>
