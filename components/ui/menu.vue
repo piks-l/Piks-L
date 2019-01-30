@@ -324,10 +324,12 @@
     background-size: cover;
     z-index: 1;
   }
-
   .background__copy {
     opacity: 0.3;
   }
+  
+  
+  
   /* Moin de 848px */
 @media screen and (min-width: 53em) {
 	body {
