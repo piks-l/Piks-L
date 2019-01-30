@@ -19,7 +19,7 @@
           influxFooter
       },
       mounted: () => {
-          $("#navbar").removeClass('hidden');
+          
       }
   }
 </script>
