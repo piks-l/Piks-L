@@ -519,7 +519,7 @@
                   this.DOM.menuCtrl = this.DOM.el.querySelector('.mainmenu');
                   this.DOM.openCtrl.addEventListener('click', () => this.open());
                   this.DOM.closeCtrl.addEventListener('click', () => this.close());
-                  this.DOM.menuCtrl.addEventListener('click', () => this.menuclose());
+                  this.DOM.menuCtrl.addEventListener('click', () => setTimeout(function(){this.close()}, 3000));
                   this.DOM.openCtrl.addEventListener('mouseenter', () => {
                       allowTilt = false;
                       tilt.reset()
@@ -543,11 +543,7 @@
               // Close the menu.
               close() {
                   this.toggle('close');
-              }
-              menuclose() { 
-                  setTimeout(close, 3000);
-              }
-              
+              }              
               toggle(action) {
                   if ( this.isAnimating ) return;
                   // (dis)allow the main image tilt effect.
