@@ -71,9 +71,10 @@
       background-position: 50% 0%;
       background-size: contain;
       z-index: 1;
+      background-repeat: no-repeat;
   }
   .background__copy {
-      opacity: 0.1;
+      opacity: 0.3;
   }
   
 .items {
