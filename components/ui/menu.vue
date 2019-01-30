@@ -539,9 +539,6 @@
         close() {
             this.toggle('close');
         }
-        $('.mainmenu__item').click(function() {
-            close();
-        })
         toggle(action) {
             if ( this.isAnimating ) return;
             // (dis)allow the main image tilt effect.
@@ -768,4 +765,8 @@
  
       }
   }
+  
+  $('.mainmenu__item').click(function() {
+      $('.action--close').click();
+  })
 </script>
