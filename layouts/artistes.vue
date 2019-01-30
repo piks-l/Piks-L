@@ -1,19 +1,19 @@
 <template>
   <div>
-    <cdm-navbar/>
+    <influx-menu/>
     <nuxt/>
-    <cdm-footer/>
+    <influx-footer/>
   </div>
 </template>
 <script>
   import $ from 'jquery'
-  import cdmNavbar from '~/components/navbar.vue'
-  import cdmFooter from '~/components/ui/footer.vue'
+  import influxMenu from '~/components/ui/menu.vue'
+  import influxFooter from '~/components/ui/footer.vue'
   export default {
       transition: 'page',
       components: {
-          cdmNavbar,
-          cdmFooter
+          influxMenu,
+          influxFooter
       },
       head: {
         link: [
@@ -21,11 +21,49 @@
         ]
       },
       mounted: () => {
-          $("#navbar").addClass('hidden');
+          
       }
   }
 </script>
 <style>
+  body {
+    --color-text: #000;
+    --color-bg: #fff;
+    --color-link: #000;
+    --color-link-hover: #ccc;
+    --color-bg-item1: #212121;
+    --color-bg-item2: #000000;
+    --color-bg-item3: #212121;
+    --color-bg-item4: #151515;
+    --color-bg-item5: #000000;
+    --color-item-alt: #525252;
+    --color-quote: #ffffff;
+    --color-info: #cccccc;
+    --color-title: #e23434;
+    --color-tagline: #e2e2e2;
+    font-family: 'Playfair Display', serif;
+    min-height: 100vh;
+    color: #57585c;
+    color: var(--color-text);
+    background-color: #fff;
+    background-color: var(--color-bg);
+    padding: 6rem 0 0 0;
+    margin:0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    word-spacing: 1px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    font-weight:400;
+  }
   .page-enter-active, .page-leave-active {
     transition: all .5s ease;
   }
