@@ -764,6 +764,7 @@
       }
       $('.mainmenu__item').click(function() {
           $('.action--close').click();
+          console.log('test');
       })
     }
   }  
