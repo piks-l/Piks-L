@@ -261,7 +261,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: url(images/uploads/logobombyx.png) no-repeat 50% 50%;
+    background: url(https://influx-002.netlify.com/images/uploads/logobombyx.png) no-repeat 50% 50%;
     background-size: cover;
     transition: transform 0.8s cubic-bezier(0.2,1,0.8,1);
   }
@@ -319,7 +319,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-image: url(images/uploads/logobombyx.png);
+    background-image: url(https://influx-002.netlify.com/images/uploads/logobombyx.png);
     background-position: 50% 0%;
     background-size: cover;
     z-index: 1;
@@ -710,7 +710,7 @@
                     layout() {
                         let inner = '';
                         for (let i = 0; i <= this.layersTotal-1; ++i) {
-                            inner +=  '<div class="background__copy" style="background-image: url(images/uploads/logobombyx.png)"></div>';
+                            inner +=  '<div class="background__copy" style="background-image: url(https://influx-002.netlify.com/images/uploads/logobombyx.png)"></div>';
                         }
                         this.DOM.main.innerHTML = inner;
                         this.DOM.layers = Array.from(this.DOM.main.querySelectorAll('.background__copy'));
