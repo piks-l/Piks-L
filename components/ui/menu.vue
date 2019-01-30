@@ -148,6 +148,21 @@
     right: 1.5rem;
     z-index: 1000;
   }
+  .circle .action--menu {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin-left: 3px;
+  }
+  .circle {
+      height: 40px;
+      width: 40px;
+      background: #fff;
+      position: absolute;
+      right: 25px;
+      top: 15px;
+      border-radius: 50%;
+  }
   .menu--open .action--menu {
     pointer-events: none;
   }
