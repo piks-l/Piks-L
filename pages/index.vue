@@ -61,11 +61,12 @@
       width: 50%;
       display: inline-block;
       padding: 15px;
+      vertical-align: middle;
   }
   .bloc .font-logo {
       max-width: 100%;
       max-height: 100%;
-      position: absolute;
+      position: relative;
   }
   @media only screen and (min-width:960px) and (max-width:1264px){
 
