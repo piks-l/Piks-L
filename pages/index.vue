@@ -79,25 +79,7 @@
       max-height: 100%;
       position: relative;
   }
-  .background {
-    perspective: 1000px;
-  }
-  .background,
-  .background__copy {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-image: url(images/uploads/logobombyx.png);
-    background-position: 50% 0%;
-    background-size: cover;
-    z-index: 1;
-  }
 
-  .background__copy {
-    opacity: 0.3;
-  }
   @media only screen and (min-width:960px) and (max-width:1264px){
 
   }
