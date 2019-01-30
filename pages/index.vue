@@ -62,7 +62,7 @@
     display: table;
     width: 100%;
   }
-  #biographie {
+  #biographie .container{
     display: table-cell;
     vertical-align: middle;
   }
