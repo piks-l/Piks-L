@@ -512,7 +512,7 @@
                   this.DOM = {el: el};
                   // Open and close ctls.
                   this.DOM.openCtrl = this.DOM.el.querySelector('.action--menu');
-                  this.DOM.closeCtrl = this.DOM.el.querySelector('.action--close');
+                  this.DOM.closeCtrl = this.DOM.el.querySelector('.action--close, .mainmenu');
                   this.DOM.openCtrl.addEventListener('click', () => this.open());
                   this.DOM.closeCtrl.addEventListener('click', () => this.close());
                   this.DOM.openCtrl.addEventListener('mouseenter', () => {
@@ -762,10 +762,6 @@
           });
           githubEl.addEventListener('mouseleave', () => allowTilt = true);
       }
-      $('.mainmenu__item').click(function() {
-          $('.action--close').click();
-          console.log('test');
-      })
     }
   }  
 </script>
