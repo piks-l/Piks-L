@@ -22,7 +22,6 @@
     position: relative;
     height:80vh;
     width:100%;
-    margin-top: 75px;
     overflow: hidden;
     transition:1s all ease;
   }
