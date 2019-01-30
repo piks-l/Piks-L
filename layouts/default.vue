@@ -75,9 +75,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
   font-weight:900;
 }
-  body{
-    background:#000;
-  }
   h2 {
       font-size: 72px;
       line-height: 1.11em;
