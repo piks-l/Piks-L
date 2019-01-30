@@ -304,6 +304,9 @@
     margin-top: auto;
     font-size: 0.95rem;
   }
+  .mainmenu {
+      transform: none !important;
+  }
   /* Moin de 848px */
 @media screen and (min-width: 53em) {
 	body {
