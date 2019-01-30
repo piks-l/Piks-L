@@ -3,7 +3,7 @@
     <section id="biographie">
       <div class="container">
         <div class="bloc">
-          <div class="background" style="background-image: url(https://influx-002.netlify.com/images/uploads/00000000050.png)"></div>
+          <img class="font-logo" src="images/uploads/logobombyx.png">
         </div>
         <div class="bloc">
           <h2>Sébastien Odd, tatoueur on the road vivant à Toulouse.</h2>
