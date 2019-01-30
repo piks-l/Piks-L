@@ -4,7 +4,7 @@
       <source src="https://www.influx-agence.fr/cms/sebastienodd-animation.mp4" type="video/mp4">
     </video>
     <div class="center-logo">
-      <img @click="changed = !changed" src="https://influx-002.netlify.com/images/uploads/00000000050.png" alt="Logo Sebatien Odd Tattoo">
+      <div class="background" @click="changed = !changed" style="background-image: url(https://influx-002.netlify.com/images/uploads/00000000050.png)"></div>
     </div>
   </header>
 </template>
@@ -54,7 +54,27 @@
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
   }
-  
+   .background {
+      -webkit-perspective: 1000px;
+      perspective: 1000px;
+      position: relative !important;
+      opacity: 1 !important;
+  }
+  .background,
+  .background__copy {
+      position: fixed;
+      width: 100%;
+      height: 600px;
+      top: 0;
+      left: 0;
+      background-image: url(https://influx-002.netlify.com/images/uploads/00000000050.png);
+      background-position: 50% 0%;
+      background-size: contain;
+      z-index: 1;
+  }
+  .background__copy {
+      opacity: 0.1;
+  }
   
 .items {
   transition: all 0.4s ease;
