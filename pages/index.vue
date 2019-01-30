@@ -89,7 +89,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-image: url(../img/1.jpg);
+    background-image: url(images/uploads/logobombyx.png);
     background-position: 50% 0%;
     background-size: cover;
     z-index: 1;
