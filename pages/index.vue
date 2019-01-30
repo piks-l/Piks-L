@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section>
+    <section id="biographie">
       <div class="container">
         <div class="bloc">
           <img class="font-logo" src="images/uploads/logobombyx.png">
@@ -57,6 +57,16 @@
   }
 </script>
 <style>
+  #biographie {
+    height: 90vh;
+    display: table;
+    width: 100%;
+  }
+  #biographie {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
   .bloc {
       position: relative;
       width: 50%;
