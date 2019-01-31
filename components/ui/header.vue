@@ -6,9 +6,57 @@
     <div class="center-logo">
       <div class="background" @click="changed = !changed" style="background-image: url(https://influx-002.netlify.com/images/uploads/00000000050.png)"></div>
     </div>
+    <div id=mouse_body>
+      <div id=mouse_wheel></div>
+    </div>
   </header>
 </template>
 <style>
+#mouse_body {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #fff;
+  border-radius: 32px;
+  /* used just to add space from top */
+  margin-top: 150px !important;
+  /* size of the mouse body */
+  height: 43px;
+  width: 23px;
+   /* to center in browser */
+  margin: 0 auto;
+}
+
+#mouse_wheel {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #fff;
+  border-radius: 8px;
+  background-color: #fff;
+  /* position property required to play animation  */
+  position: relative; 
+  height: 3px;
+  width: 3px;
+  /* to center wheel in mouse body */
+  margin: 0 auto; 
+  animation: wheel_animation 1.5s linear infinite;
+}
+
+/* include use -moz-, -webkit-, or -o- for respective browser type*/
+@keyframes wheel_animation { 
+  0% {
+    opacity: 0;
+    top: 2px;
+  }
+  50% {
+    opacity: 1;
+    top: 50%;
+  }
+  100% {
+    opacity: 0;
+    top: 33px;
+  }
+}
+
   video#animation {
       position: absolute;
       left: 50%;
