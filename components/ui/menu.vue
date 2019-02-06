@@ -270,14 +270,19 @@
   .menu__item-hoverlink:hover {
     color: var(--color-link);
   }
+  .quote:hover {
+    border-top: 5px solid #FFB413;
+  }
   .quote {
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 1rem;
     text-align: center;
     max-width: 70%;
     color: var(--color-quote);
     font-weight: 400;
     line-height: 25px;
+    border-top: 5px solid #FFF;
+    transition: 1s all ease;
   }
   .menu__item-link {
     text-align: left;
