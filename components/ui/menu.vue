@@ -483,12 +483,15 @@
 		transform: scale3d(1,1,1);
 	}
   .sidemenu__item {
-      text-transform: lowercase;
-      font-size: 1.1rem;
-      color: #cecece;
+    text-transform: lowercase;
+    font-size: 1.1rem;
+    color: #cecece;
   }
   .sidemenu__item:hover {
-    color: #151515;
+    color: #525252;
+  }
+  .sidemenu__item:hover i {
+    color: #ffb413;
   }
   .menu__item-hoverlink {
 		font-size: 1.25rem;
