@@ -257,17 +257,7 @@
     display: block;
     transform: translate3d(0,100%,0);
   }
-  .menu__item-map {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: url(https://influx-002.netlify.com/images/uploads/logobombyx.png) no-repeat 50% 50%;
-    background-size: cover;
-    transition: transform 0.8s cubic-bezier(0.2,1,0.8,1);
-  }
-  .menu__item-inner:hover .menu__item-map {
+  .menu__item-inner:hover video {
     transform: scale3d(1.1,1.1,1);
   }
   .menu__item-hoverlink {
@@ -439,7 +429,7 @@
 		counter-reset: menuitem;
 	}
   .mainmenu a {
-    color: #fff;
+    color: #525252;
   }
 	.mainmenu__item {
 		font-size: 5vw;
@@ -451,7 +441,7 @@
 		transition: color 0.3s;
 	}
 	.mainmenu__item:hover {
-		color: #525252;
+		color: #cecece;
 	}
 	.mainmenu__item::before {
 		counter-increment: menuitem;
@@ -460,7 +450,7 @@
 	    font-size: 0.85rem;	
 	    top: 25%;
 	    left: -1.25rem;
-	    color: #525252;
+	    color: #cecece;
 	}
 	.mainmenu__item::after {
 		content: '';
