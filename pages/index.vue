@@ -2,12 +2,11 @@
   <div>
     <section id="biographie">
       <div class="container">
-        <div class="bloc" data-200="transform:translateY(-50px);" data-500="transform:translateY(0px);">
+        <div class="bloc" >
           <img class="font-logo" src="images/uploads/logobombyx.png">
         </div>
-        <div class="bloc">
-           <div data-0="opacity:0;" data-1000="opacity:1;">WOOOT</div>
-          <h2>Sébastien Odd, tatoueur on the road vivant à Toulouse.</h2>
+        <div class="bloc" data-200="transform:translateY(-200px);" data-500="transform:translateY(0px);">
+          <h2 data-0="opacity:0;width:0%;" data-1000="opacity:1;width:100%;">Sébastien Odd, tatoueur on the road vivant à Toulouse.</h2>
           <p>Il travaille plusieurs styles notamment le style <strong>réaliste</strong> pour lequel il est souvent demandé.<br>
           Il adore aussi l’univers des <strong>comics</strong>, du <strong>jeu vidéo</strong> et du <strong>dessin</strong> en général et <em>tatoue</em> également beaucoup de pièces ,en <em>newschool</em> et en <em>néo-trad</em>, aux <strong>illustrations de qualité</strong> et au <strong>dessin maîtrisé</strong>.</p>
         </div>        
