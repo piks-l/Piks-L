@@ -405,8 +405,10 @@
 	.label--bottomright {
 		bottom: 2rem;
 		right: 2rem;
-    color:#FFB413;
 	}
+  .label--bottomright strong {
+    color: #FFB413;
+  }
 	.label::before {
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
