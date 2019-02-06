@@ -55,7 +55,6 @@ export default {
       position: relative;
       width: 100%;
       height:auto;
-      margin-top: 58px;
       z-index:1;
   }
   .artist {
@@ -65,10 +64,9 @@ export default {
       width: 100%;
       height: auto;
       position: relative;
-      top: 85px;
       -webkit-transform: translatey(-50%);
       transform: translatey(-50%);
-      padding: 30px 0;
+      padding: 50px 0;
       text-align: center;
   }
   .portfolio {
@@ -138,9 +136,6 @@ export default {
         width: 50%;
         height: 50vw;
     }
-    .artist .full-width {
-        margin: -30px 0 0;
-    }
     .artist .container {
         margin: 0;
     }
@@ -159,17 +154,12 @@ export default {
     }
     .artist .full-width {
         margin-bottom: 0;
-        margin-top: -30px;
     }
     .artist .container {
         margin: 0;
     }
     .artist .header {
         width: 100%;
-        left: 0;
-        top: 30px !important;
-        -webkit-transform: none;
-        transform: none;
     }
     .artist-cover {
         height: 100vh;
