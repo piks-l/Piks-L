@@ -54,7 +54,7 @@
 				</div>
 				<div class="menu__item menu__item--5" data-direction="tb">
 					<div class="menu__item-inner">
-						<p class="quote">Pour aborder vos projets et prendre rendez-vous, veuillez m'envoyer un mail en précisant l'emplacement, les dimensions et l'inspirations en y joignant éventuellement 2 ou 3 photos</p>
+						<p class="quote">Pour aborder vos projets et prendre rendez-vous, <nuxt-link class="mainmenu__item" to="/contact/">veuillez m'envoyer un mail</nuxt-link> en précisant l'emplacement, les dimensions, l'inspirations et en y joignant 2 ou 3 photos</p>
 					</div>
 				</div>
 				<button class="circle action action--menu"><svg class="icon icon--menu"><use xlink:href="#icon-menu"></use></svg></button>
