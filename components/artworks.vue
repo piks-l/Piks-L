@@ -1,5 +1,5 @@
 <template>
-    <div class="equipes">
+    <div class="portfolio">
       <div class="container">
           <div class="wrapper">
               <article v-for="artwork in artworks.slice().reverse().slice(0,4)" :key="artwork.date" class="work" :class="{ active: openWork }" @click="openWork = true">  
@@ -11,6 +11,16 @@
               </article>
           </div>
       </div>
+    </div>
+    <div class="portfolio">
+       <article v-for="artwork in artworks.slice().reverse().slice(0,4)" :key="artwork.date" class="work" :class="{ active: openWork }" @click="openWork = true">
+          <nuxt-link class="title" :to="artwork._path">
+            <div class="center" >
+              <img class="fontblur" v-lazy="artwork.thumbnail" :alt="artwork.title">
+              <img class="artist-img" v-lazy="artwork.thumbnail" :alt="artwork.title">
+            </div>  
+          </nuxt-link>
+       </article>
     </div>
 </template>
 
@@ -31,3 +41,47 @@
     }
   };
 </script>
+<style>
+  .portfolio {
+      position: relative;
+      background: gray;
+  }
+  .works {
+      width: 25%;
+      display: inline-block;
+      height: 25vw;
+      overflow: hidden;
+      margin-bottom: -5px;
+      position: relative;
+  }
+  .center {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+  }
+  .artist-img {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      filter:blur(50px);
+      -webkit-transition: 0.5s all ease;
+      transition: 0.5s all ease;
+      width:100%;
+  }
+  .artist-img[lazy=loaded]{
+      filter:blur(0px) !important;
+  }
+  .fontblur{
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      filter:blur(50px);
+      position: absolute;
+      height:110%;
+      width: auto;
+  }
+</style>
