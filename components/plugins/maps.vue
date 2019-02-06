@@ -39,15 +39,16 @@
 
 <style scoped>
   .google-map {
-    width: 100%;
-    height: 200px;
-    margin: 0 auto;
-    transition: 1s ease all;
+    width:100%;
+    height:100px;
+    margin:0 auto;
+    transition:1s ease all;
+    opacity:.7;
+    filter:greyscale(1);
   }
   .google-map.active {
-    height: 350px;
-  }
-  .google-map .gmnoprint {
-    display: none !important;
+    height:250px;
+    opacity:1;
+    filter:greyscale(0);
   }
 </style>
