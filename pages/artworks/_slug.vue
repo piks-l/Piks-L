@@ -7,7 +7,7 @@
       </div>
     </div>
     <div class="portfolio">
-      <div class="works" v-for="(img, i) in galerie.slice().reverse()" :key="galerie.i">
+      <div class="work" v-for="(img, i) in galerie.slice().reverse()" :key="galerie.i">
           <div class="center" >
             <img class="fontblur" v-lazy="img">
             <img class="artist-img" v-lazy="img">
