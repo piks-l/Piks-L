@@ -31,7 +31,6 @@
 <style>
   .portfolio {
       position: relative;
-      background: gray;
   }
   .works {
       width: 25%;
