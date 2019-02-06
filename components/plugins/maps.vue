@@ -19,7 +19,8 @@
     mounted: function () {
       const element = document.getElementById(this.mapName)
       const options = {
-        zoom: 14,
+        zoom: 16,
+        mapTypeControl: true,
         center: new google.maps.LatLng(43.5993471,1.4431301)
       }
       const map = new google.maps.Map(element, options);
