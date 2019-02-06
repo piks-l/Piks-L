@@ -20,7 +20,7 @@
       const element = document.getElementById(this.mapName)
       const options = {
         zoom: 16,
-        mapTypeControl: true,
+        mapTypeControl: false,
         center: new google.maps.LatLng(43.5993471,1.4431301)
       }
       const map = new google.maps.Map(element, options);
