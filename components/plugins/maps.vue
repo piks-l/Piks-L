@@ -1,5 +1,5 @@
 <template>
-  <div class="google-map" :class="{ active: openMap }" :id="mapName" @mouseover="openMap = !openMap" @mouseleave="openMap = !openMap"></div>
+  <div class="google-map" :class="{ active: openMap }" :id="mapName" @mouseover="openMap = true" @mouseleave="openMap = false"></div>
 </template>
 
 <script>
