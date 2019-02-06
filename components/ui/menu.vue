@@ -26,7 +26,7 @@
 							<nuxt-link class="mainmenu__item" to="/contact/">Contact</nuxt-link>
 						</div>
 						<p class="label label--topleft label--vert-mirror">Menu principal</p>
-						<p class="label label--bottomright label--vert">www.sebastien-odd.tattoo</p>
+						<p class="label label--bottomright label--vert">www.sebastien-odd.tattoo/<strong>{{this.$route.name}}</strong></p>
 					</div>
 				</div>
 				<div class="menu__item menu__item--2" data-direction="lr">
