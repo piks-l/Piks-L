@@ -17,16 +17,27 @@
       <a target="_blank" href="mailto:sebastienoddtattoos@gmail.com"><i class="fas fa-at"></i></a>
       <a target="_blank" href="tel:+33641850394"><i class="fas fa-phone"></i></a>
     </div>
+    <influx-maps name="example"/>
     <div class="copyright">
       <p>© 2019 <a href="https://sebastien-odd.tattoo">Sebatien-Odd</a> - Tous droits réservés</p>
     </div>
   </footer>
 </template>
+
+<script>
+import influxMaps from '~/components/plugins/maps.vue'
+export default {
+  components: {
+      influxMaps
+  }
+ }
+</script>
 <style>
 
 /* FOOTER */
 #footer {
-  background-color: #000000;
+  background-color: #212121;
+  color: #CCCCCC;
   overflow: hidden;
   position: relative;
   bottom: 0;
