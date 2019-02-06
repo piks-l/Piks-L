@@ -2,7 +2,7 @@
   <div>
     <section id="biographie">
       <div class="container">
-        <div class="bloc">
+        <div class="bloc" data-200="transform:translateY(-50px);" data-500="transform:translateY(0px);">
           <img class="font-logo" src="images/uploads/logobombyx.png">
         </div>
         <div class="bloc">
