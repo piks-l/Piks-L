@@ -3,19 +3,19 @@
   <div class="container">
     <h2>ARTWORKS</h2>
   </div>
-  <cdm-artworks/>
+  <influx-artworks/>
 </div>
 </template>
 
 <script>
   import $ from 'jquery'
   // import components
-  import cdmArtworks from '~/components/artworks.vue'
+  import influxArtworks from '~/components/artworks.vue'
   // export
   export default {
     layout: 'default',
     components: {
-        cdmArtworks
+        influxArtworks
     },
     mounted: () => {
       	
