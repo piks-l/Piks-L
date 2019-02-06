@@ -88,6 +88,7 @@ export default {
   }
   .work .center{
       padding:50px 0;
+      overflow: visible !important;
   }
   .artist-img {
       position: relative;
@@ -111,15 +112,22 @@ export default {
       height:110%;
       width: auto;
   }
-  .full-width{
+  .artist .full-width{
       width:100%;
-      background:#fff;
+      background:transparent;
       display: inline-block;
       z-index:1;
       position:relative;
   }
-  .full-width p {
+  .artist .full-width p {
       text-align: center;
+      display: inline-block;
+      padding: 15px 25px;
+      background: #fff;
+      position: relative;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
   }
 
   @media only screen and (min-width:960px) and (max-width:1264px){
