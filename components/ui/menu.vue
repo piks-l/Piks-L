@@ -482,14 +482,13 @@
 		opacity: 1;
 		transform: scale3d(1,1,1);
 	}
-	.sidemenu__item {
-		text-transform: uppercase;
-		letter-spacing: 0.15rem;
-		font-size: 0.85rem;
-    color: #FFF;
-	}
+  .sidemenu__item {
+      text-transform: lowercase;
+      font-size: 1.1rem;
+      color: #cecece;
+  }
   .sidemenu__item:hover {
-    color: #FFB413;
+    color: #151515;
   }
   .menu__item-hoverlink {
 		font-size: 1.25rem;
