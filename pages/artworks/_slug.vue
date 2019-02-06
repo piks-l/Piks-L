@@ -64,8 +64,6 @@ export default {
       width: 100%;
       height: auto;
       position: relative;
-      -webkit-transform: translatey(-50%);
-      transform: translatey(-50%);
       padding: 50px 0;
       text-align: center;
   }
