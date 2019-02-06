@@ -44,11 +44,11 @@
     margin:0 auto;
     transition:1s ease all;
     opacity:.7;
-    filter:greyscale(1);
+    filter:grayscale(1);
   }
   .google-map.active {
     height:250px;
     opacity:1;
-    filter:greyscale(0);
+    filter:grayscale(0);
   }
 </style>
