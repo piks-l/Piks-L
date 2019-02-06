@@ -9,6 +9,10 @@
     data: function () {
       return {
         mapName: this.name + "-map",
+        markerCoordinates: [{
+          latitude: 43.5993471,
+          longitude: 1.4431301
+        }]
       }
     },
     mounted: function () {
@@ -17,8 +21,13 @@
         zoom: 14,
         center: new google.maps.LatLng(43.5993471,1.4431301)
       }
-
       const map = new google.maps.Map(element, options);
+      
+      this.markerCoordinates.forEach((coord) => {
+        const position = new google.maps.LatLng(coord.latitude, coord.longitude);
+        const marker = new google.maps.Marker({ position, map });
+      });
+
     }
   };
 </script>
