@@ -56,7 +56,10 @@
       filter:blur(50px);
       -webkit-transition: 0.5s all ease;
       transition: 0.5s all ease;
-      width:100%;
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
   }
   .artist-img[lazy=loaded]{
       filter:blur(0px) !important;
