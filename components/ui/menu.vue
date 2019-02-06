@@ -31,7 +31,9 @@
 				</div>
 				<div class="menu__item menu__item--2" data-direction="lr">
 					<div class="menu__item-inner">
-						<div class="menu__item-map"></div>
+						    <video autoplay muted loop id="animation">
+                   <source src="https://www.influx-agence.fr/cms/sebastienodd-animation.mp4" type="video/mp4">
+                </video>
 					</div>
 				</div>
 				<div class="menu__item menu__item--3" data-direction="bt">
