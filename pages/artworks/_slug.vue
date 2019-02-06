@@ -56,6 +56,7 @@ export default {
       width: 100%;
       height:auto;
       margin-top: 58px;
+      z-index:1;
   }
   .artist {
       padding: 0 !important;
@@ -77,8 +78,6 @@ export default {
       width: 100%;
       display: inline-block;
       height: auto;
-      overflow: hidden;
-      margin-bottom: -5px;
       position: relative;
   }
   .center {
@@ -116,6 +115,8 @@ export default {
       width:100%;
       background:#fff;
       display: inline-block;
+      z-index:1;
+      position:relative;
   }
   .full-width p {
       text-align: center;
