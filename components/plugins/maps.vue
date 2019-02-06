@@ -44,7 +44,7 @@
   .google-map.active {
     height: 350px;
   }
-  .gmnoprint {
+  .google-map .gmnoprint {
     display: none !important;
   }
 </style>
