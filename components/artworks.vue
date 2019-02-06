@@ -4,7 +4,7 @@
           <nuxt-link class="title" :to="artwork._path">
             <div class="center" >
               <img class="fontblur" v-lazy="artwork.thumbnail" :alt="artwork.title">
-              <img class="artist-img" v-lazy="artwork.thumbnail" :alt="artwork.title">
+              <img class="artists-img" v-lazy="artwork.thumbnail" :alt="artwork.title">
             </div>  
           </nuxt-link>
        </article>
@@ -46,7 +46,7 @@
       overflow: hidden;
       position: relative;
   }
-  .artist-img {
+  .artists-img {
       position: relative;
       top: 50%;
       left: 50%;
@@ -60,7 +60,7 @@
       max-width: 100%;
       max-height: 100%;
   }
-  .artist-img[lazy=loaded]{
+  .artists-img[lazy=loaded]{
       filter:blur(0px) !important;
   }
   .fontblur{
