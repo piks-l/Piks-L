@@ -60,13 +60,6 @@ export default {
   .artist {
       padding: 0 !important;
   }
-  .artist-cover {
-      height: calc(100vh - 58px);
-      width: auto;
-      position: fixed;
-      z-index: -1;
-      top: 58px;
-  }
   .artist .header {
       width: 100%;
       height: auto;
@@ -81,7 +74,7 @@ export default {
       position: relative;
       background: gray;
   }
-  .works {
+  .work {
       width: 100%;
       display: inline-block;
       height: auto;
@@ -94,6 +87,9 @@ export default {
       height: 100%;
       overflow: hidden;
       position: relative;
+  }
+  .work .center{
+      padding:50px 0;
   }
   .artist-img {
       position: relative;
