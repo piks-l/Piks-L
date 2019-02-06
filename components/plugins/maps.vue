@@ -1,5 +1,5 @@
 <template>
-  <div class="google-map" :class="{ active: openMap }" :id="mapName" @mouseover="openMap = true" @mouseleave="openMap = false"></div>
+  <section class="google-map" :class="{ active: openMap }" :id="mapName" @mouseover="openMap = true" @mouseleave="openMap = false"></section>
 </template>
 
 <script>
@@ -42,5 +42,8 @@
   }
   .google-map.active {
     height: 350px;
+  }
+  .gmnoprint {
+    display: none !important;
   }
 </style>
