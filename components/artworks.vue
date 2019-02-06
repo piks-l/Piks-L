@@ -1,18 +1,5 @@
 <template>
     <div class="portfolio">
-      <div class="container">
-          <div class="wrapper">
-              <article v-for="artwork in artworks.slice().reverse().slice(0,4)" :key="artwork.date" class="work" :class="{ active: openWork }" @click="openWork = true">  
-                  <nuxt-link class="title" :to="artwork._path">
-                    <div class="thumb">
-                        <img  v-lazy="artwork.thumbnail" :alt="artwork.title">
-                    </div>
-                  </nuxt-link>
-              </article>
-          </div>
-      </div>
-    </div>
-    <div class="portfolio">
        <article v-for="artwork in artworks.slice().reverse().slice(0,4)" :key="artwork.date" class="work" :class="{ active: openWork }" @click="openWork = true">
           <nuxt-link class="title" :to="artwork._path">
             <div class="center" >
