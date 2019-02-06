@@ -26,7 +26,6 @@
           <nuxt-link to="/blog/"><p>Voir les autres actualités !</p></nuxt-link>
       </div>
     </section>
-    <influx-maps name="example"/>
   </div>
 </template>
 
@@ -34,13 +33,11 @@
   import $ from 'jquery'
   // import components
   import influxBlog from '~/components/blog.vue'
-  import influxMaps from '~/components/plugins/maps.vue'
   // export
   export default {
     layout: 'default',
     components: {
-        influxBlog,
-        influxMaps
+        influxBlog
     },
     head() {
       return {
