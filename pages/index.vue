@@ -26,7 +26,7 @@
           <nuxt-link to="/blog/"><p>Voir les autres actualités !</p></nuxt-link>
       </div>
     </section>
-    <influx-maps/>
+    <influx-maps name="example"/>
   </div>
 </template>
 
