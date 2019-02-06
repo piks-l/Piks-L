@@ -6,8 +6,8 @@
     <div class="center-logo">
       <div class="background" @click="changed = !changed" style="background-image: url(https://influx-002.netlify.com/images/uploads/00000000050.png)"></div>
     </div>
-    <div id=mouse_body>
-      <div id=mouse_wheel></div>
+    <div id="mouse_body">
+      <div id="mouse_wheel"></div>
     </div>
   </header>
 </template>
