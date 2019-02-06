@@ -388,6 +388,7 @@
 		font-weight: bold;
 		margin: 0;
 		white-space: nowrap;
+    color: #cccccc;
 	}
 	.label--topleft {
 		top: 2rem;
@@ -404,9 +405,9 @@
 	.label--bottomright {
 		bottom: 2rem;
 		right: 2rem;
+    color:#FFB413;
 	}
 	.label::before {
-		content: '------------- ';
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 		letter-spacing: -1px;
