@@ -123,21 +123,10 @@ export default {
   }
 
   @media only screen and (min-width:960px) and (max-width:1264px){
-    .artist-cover {
-        height: calc(100vh - 58px);
-        width: auto;
-        position: fixed;
-        z-index: -1;
-        top: 58px;
-        right: 0;
-    }
-    .artist .header {
-        width: 60%;
-        left: 40%;
-    }
+
   }
   @media only screen and (min-width:600px) and (max-width:959px){
-    .works {
+    .work {
         width: 50%;
         height: 50vw;
     }
@@ -156,7 +145,7 @@ export default {
     }
   }
   @media only screen and (max-width:599px){
-    .works {
+    .work {
         width: 100%;
         height: 100vw;
     }
