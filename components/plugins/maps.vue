@@ -38,12 +38,9 @@
     width: 100%;
     height: 200px;
     margin: 0 auto;
-    background: gray;
+    transition: 1s ease all;
   }
-  .google-map {
-    width: 100%;
-    height: 200px;
-    margin: 0 auto;
-    background: gray;
+  .google-map.active {
+    height: 350px;
   }
 </style>
