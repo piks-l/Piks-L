@@ -760,6 +760,8 @@
                     }, 0.07);
                 }
           }
+          let allowTilt = true;
+          const tilt = new TiltFx();
 
       }
     }
