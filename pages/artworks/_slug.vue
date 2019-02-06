@@ -72,7 +72,6 @@ export default {
   }
   .portfolio {
       position: relative;
-      background: gray;
   }
   .work {
       width: 100%;
