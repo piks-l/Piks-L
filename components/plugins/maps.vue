@@ -1,5 +1,5 @@
 <template>
-  <div class="google-map" :id="mapName"></div>
+  <div class="google-map" :class="{ active: openMap }" :id="mapName" @click="openMap = !openMap"></div>
 </template>
 
 <script>
@@ -8,6 +8,7 @@
     props: ['name'],
     data: function () {
       return {
+        openMap: false,
         mapName: this.name + "-map",
         markerCoordinates: [{
           latitude: 43.5993471,
@@ -34,8 +35,14 @@
 
 <style scoped>
   .google-map {
-    width: 800px;
-    height: 600px;
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    background: gray;
+  }
+  .google-map {
+    width: 100%;
+    height: 200px;
     margin: 0 auto;
     background: gray;
   }
