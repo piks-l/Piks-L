@@ -22,7 +22,7 @@
       },
       data() {
         return {
-          changed: false
+          changed: true
         }
       },
       mounted: () => {
@@ -30,15 +30,7 @@
       }
   }
 </script>
-<script>
-export default {
-  data() {
-    return {
-      changed: false
-    }
-  }
-}
-</script>
+
 <style>
   body {
     --color-text: #000;
