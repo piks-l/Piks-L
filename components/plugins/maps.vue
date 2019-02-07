@@ -26,7 +26,7 @@
       }
       const map = new google.maps.Map(element, options);
       
-      var iconBase = 'https://image.flaticon.com/icons/png/512/54/54574.png';
+      var iconBase = 'https://influx-002.netlify.com/images/uploads/icons-map.png';
 
       this.markerCoordinates.forEach((coord) => {
         const position = new google.maps.LatLng(coord.latitude, coord.longitude);
