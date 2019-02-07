@@ -657,10 +657,18 @@
               }
               // Open the menu.
               open() {
+                    $('#menu-icon-trigger').click(function(e){
+                      e.preventDefault();
+                      $('#menu-icon-wrapper').toggleClass('open');
+                    });
                   this.toggle('open');
               }
               // Close the menu.
               close() {
+                    $('#menu-icon-trigger').click(function(e){
+                      e.preventDefault();
+                      $('#menu-icon-wrapper').toggleClass('open');
+                    });
                   this.toggle('close');
               }              
               toggle(action) {
@@ -740,17 +748,7 @@
                       }
                   });
                   // Show/Hide open and close ctrls.
-                  TweenMax.to(this.DOM.closeCtrl, 0.6, {
-                      ease: action === 'open' ? Quint.easeOut : Quart.easeInOut,
-                      startAt: action === 'open' ? {rotation: 0} : null,
-                      opacity: action === 'open' ? 1 : 0,
-                      rotation: action === 'open' ? 180 : 270
-                  });
-                  TweenMax.to(this.DOM.openCtrl, action === 'open' ? 0.6 : 0.3, {
-                      delay: action === 'open' ? 0 : 0.3,
-                      ease: action === 'open' ? Quint.easeOut : Quad.easeOut,
-                      opacity: action === 'open' ? 0 : 1
-                  });
+
                   // Main links animation.
                   TweenMax.staggerTo(this.DOM.mainLinks, action === 'open' ? 0.9 : 0.2, {
                       ease: action === 'open' ? Quint.easeOut : Quart.easeInOut,
