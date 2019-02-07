@@ -634,8 +634,8 @@
               constructor(el) {
                   this.DOM = {el: el};
                   // Open and close ctls.
-                  this.DOM.openCtrl = this.DOM.el.querySelector('.action--menu');
-                  this.DOM.closeCtrl = this.DOM.el.querySelector('.action--close');
+                  this.DOM.openCtrl = this.DOM.el.querySelector('#menu-icon-trigger');
+                  this.DOM.closeCtrl = this.DOM.el.querySelector('#menu-icon-trigger');
                   this.DOM.menuCtrl = this.DOM.el.querySelector('.mainmenu');
                   this.DOM.openCtrl.addEventListener('click', () => this.open());
                   this.DOM.closeCtrl.addEventListener('click', () => this.close());
@@ -766,7 +766,7 @@
               }
           }
       	  // Initialize the Menu.
-          const menu = new Menu(document.querySelector('#menu-icon-trigger'));
+          const menu = new Menu(document.querySelector('nav.menu'));
           // Preload images.
           imagesLoaded(document.querySelector('.background'), {background: true}, () => document.body.classList.remove('loading'));
           // extra stuff..
