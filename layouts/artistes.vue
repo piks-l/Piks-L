@@ -20,10 +20,24 @@
           { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Slabo+27px' }
         ]
       },
+      data() {
+        return {
+          changed: false
+        }
+      },
       mounted: () => {
           
       }
   }
+</script>
+<script>
+export default {
+  data() {
+    return {
+      changed: false
+    }
+  }
+}
 </script>
 <style>
   body {
