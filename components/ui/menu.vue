@@ -625,6 +625,7 @@
       $('#menu-icon-trigger').click(function(e){
         e.preventDefault();
         $('#menu-icon-wrapper').toggleClass('open');
+        $('nav.menu').toggleClass('open');
       });
       // Class Menu
       {
