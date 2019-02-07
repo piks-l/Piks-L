@@ -39,10 +39,10 @@
 				<div class="menu__item menu__item--3" data-direction="bt">
 					<div class="menu__item-inner">
 						<div class="sidemenu">
-							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner"><i class="fab fa-facebook-f"></i>Facebook</span></a>
-							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner"><i class="fab fa-twitter"></i>Twitter</span></a>
-							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner"><i class="fab fa-instagram"></i>Instagram</span></a>
-							<a href="#" class="sidemenu__item"><span class="sidemenu__item-inner"><i class="fab fa-youtube"></i>Youtube</span></a>
+							<a target="_blank" href="https://www.facebook.com/sebastienoddtattoo/" class="sidemenu__item"><span class="sidemenu__item-inner"><i class="fab fa-facebook-f"></i>Facebook</span></a>
+							<a target="_blank" href="https://twitter.com/sebastienodd" class="sidemenu__item"><span class="sidemenu__item-inner"><i class="fab fa-twitter"></i>Twitter</span></a>
+							<a target="_blank" href="https://www.instagram.com/sebastien_odd_tattoo/" class="sidemenu__item"><span class="sidemenu__item-inner"><i class="fab fa-instagram"></i>Instagram</span></a>
+							<a target="_blank" href="https://www.youtube.com/channel/UCH8hl7gSMTr4TcBSIF8PiwA" class="sidemenu__item"><span class="sidemenu__item-inner"><i class="fab fa-youtube"></i>Youtube</span></a>
 						</div>
 					</div>
 				</div>
@@ -231,6 +231,9 @@
   }
   .menu__item--4 .menu__item-inner {
     background: var(--color-bg-item4);
+  }
+  .menu__item--4 .label {
+    color: #ACACAC;
   }
   .menu__item--4 a {
     font-size: 3.5vw;
