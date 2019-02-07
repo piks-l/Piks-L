@@ -657,18 +657,12 @@
               }
               // Open the menu.
               open() {
-                    $('#menu-icon-trigger').click(function(e){
-                      e.preventDefault();
-                      $('#menu-icon-wrapper').toggleClass('open');
-                    });
+                  $('#menu-icon-wrapper').toggleClass('open');
                   this.toggle('open');
               }
               // Close the menu.
               close() {
-                    $('#menu-icon-trigger').click(function(e){
-                      e.preventDefault();
-                      $('#menu-icon-wrapper').toggleClass('open');
-                    });
+                  $('#menu-icon-wrapper').toggleClass('open');
                   this.toggle('close');
               }              
               toggle(action) {
