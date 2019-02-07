@@ -766,7 +766,7 @@
               }
           }
       	  // Initialize the Menu.
-          const menu = new Menu(document.querySelector('nav.menu'));
+          const menu = new Menu(document.querySelector('#menu-icon-trigger'));
           // Preload images.
           imagesLoaded(document.querySelector('.background'), {background: true}, () => document.body.classList.remove('loading'));
           // extra stuff..
