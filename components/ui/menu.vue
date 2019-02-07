@@ -202,7 +202,7 @@
   }
   .menu--open {
     pointer-events: auto;
-    background: #151515 !important;
+    background: #FFFFFF !important;
     transition: 0.5s ease all;
   }
   .menu__item {
