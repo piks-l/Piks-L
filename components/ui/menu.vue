@@ -232,6 +232,13 @@
   .menu__item--4 .menu__item-inner {
     background: var(--color-bg-item4);
   }
+  .menu__item--4 a {
+    font-size: 3.5vw;
+    color: #ACACAC;
+  }
+  .menu__item--4 a:hover {
+    color: #525252;
+  }
   .menu__item--5 .menu__item-inner {
     background: var(--color-bg-item5);
   }
@@ -302,11 +309,16 @@
     flex-direction: column;
     height: calc(100% - 3rem);
   }
+  .menu__item-link:hover::after {
+      color: #FFB413;
+  }
   .menu__item-link::after {
-    content: '\27F6';
-    display: block;
-    margin-top: auto;
-    font-size: 0.95rem;
+      content: "\27F6";
+      display: block;
+      margin-top: auto;
+      font-size: 15.2px;
+      font-size: 2.95rem;
+      color: #CECECE;
   }
   .mainmenu {
       transform: none !important;
