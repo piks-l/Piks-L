@@ -1,13 +1,5 @@
 <template>
   <div id="menu">
-  <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
-							<svg width="1000px" height="1000px">
-								<path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
-								<path class="path2" d="M 300 500 L 700 500"></path>
-								<path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
-							</svg>
-							<button id="menu-icon-trigger" class="menu-icon-trigger"></button>
-						</div>
     <div class="progress-container">
       <div class="progress-bar" id="scrollindicator"></div>
     </div>
@@ -21,8 +13,17 @@
 				<path d="M24 1.485L22.515 0 12 10.515 1.485 0 0 1.485 10.515 12 0 22.515 1.485 24 12 13.484 22.515 24 24 22.515 13.484 12z"/>
 			</symbol>
 		</svg>
+    <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
+      <svg width="1000px" height="1000px">
+        <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+        <path class="path2" d="M 300 500 L 700 500"></path>
+        <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+      </svg>
+      <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+    </div>
 		<main>
 			<nav class="menu">
+        
 				<div class="menu__item menu__item--1" data-direction="bt">
 					<div class="menu__item-inner">
 						<div class="mainmenu">
@@ -631,16 +632,17 @@
         class Menu {
           constructor(el) {
               this.DOM = {el: el};
-              
+
               // Open and close ctls.
-              this.DOM.openCtrl = this.DOM.el.querySelector('#menu-icon-wrapper');
+              this.DOM.openCtrl = this.DOM.el.querySelector('#menu-icon-trigger');
               this.DOM.openCtrl.addEventListener('click', () => this.open());
               
-              this.DOM.closeCtrl = this.DOM.el.querySelector('#menu-icon-wrapper');
+              this.DOM.closeCtrl = this.DOM.el.querySelector('#menu-icon-trigger');
               this.DOM.closeCtrl.addEventListener('click', () => this.close());
               
               this.DOM.menuCtrl = this.DOM.el.querySelector('.mainmenu');
-              
+              this.DOM.menuCtrl.addEventListener('click', () => this.close());
+
               this.DOM.openCtrl.addEventListener('mouseenter', () => {
                   allowTilt = false;
                   tilt.reset()
@@ -660,12 +662,10 @@
           }
           // Open the menu.
           open() {
-              $('#menu-icon-wrapper').toggleClass('open');
               this.toggle('open');
           }
           // Close the menu.
           close() {
-              $('#menu-icon-wrapper').toggleClass('open');
               this.toggle('close');
           }              
           toggle(action) {
