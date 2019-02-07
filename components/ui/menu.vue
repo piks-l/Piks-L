@@ -49,7 +49,7 @@
 				<div class="menu__item menu__item--4" data-direction="rl">
 					<div class="menu__item-inner">
 						<p class="label label--topleft label--line">Me rejoindre</p>
-						<a href="/contact" class="menu__item-link">Tatoueur on the road !</a>
+						<a target="_blank" href="https://fr-fr.facebook.com/greengalerieexpo/" class="menu__item-link">Tatoueur on the road !</a>
 					</div>
 				</div>
 				<div class="menu__item menu__item--5" data-direction="tb">
