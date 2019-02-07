@@ -1,7 +1,7 @@
 <template>
     <div class="portfolio">
        <article v-for="tattoo in tattoos.slice().reverse()" :key="tattoo.date" class="works" :class="{ active: openWork }" @click="openWork = true">
-          <nuxt-link class="title" :to="artwork._path">
+          <nuxt-link class="title" :to="tattoo._path">
             <div class="center" >
               <img class="fontblur" v-lazy="tattoo.thumbnail" :alt="tattoo.title">
               <img class="artists-img" v-lazy="tattoo.thumbnail" :alt="tattoo.title">
