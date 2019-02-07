@@ -551,7 +551,7 @@
 	-webkit-animation-timing-function: linear;
 }
 .menu-icon-wrapper {
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
   margin: -12px 0px 0px -12px;
@@ -559,6 +559,7 @@
   height: 34px;
   pointer-events: none;
   transition: 0.1s;
+  z-index:9999;
 }
 .menu-icon-wrapper svg {
   position: absolute;
@@ -568,8 +569,8 @@
   transform-origin: 0 0;
 }
 .menu-icon-wrapper svg path {
-  stroke: #fff;
-  stroke-width: 60px;
+  stroke: #151515;
+  stroke-width: 30px;
   stroke-linecap: round;
   stroke-linejoin: round;
   fill: transparent;
