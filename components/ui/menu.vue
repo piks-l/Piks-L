@@ -1,5 +1,13 @@
 <template>
   <div id="menu">
+  <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
+							<svg width="1000px" height="1000px">
+								<path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+								<path class="path2" d="M 300 500 L 700 500"></path>
+								<path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+							</svg>
+							<button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+						</div>
     <div class="progress-container">
       <div class="progress-bar" id="scrollindicator"></div>
     </div>
@@ -542,22 +550,85 @@
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-timing-function: linear;
 }
+.menu-icon-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -12px 0px 0px -12px;
+  width: 34px;
+  height: 34px;
+  pointer-events: none;
+  transition: 0.1s;
+}
+.menu-icon-wrapper svg {
+  position: absolute;
+  top: -33px;
+  left: -33px;
+  transform: scale(0.1);
+  transform-origin: 0 0;
+}
+.menu-icon-wrapper svg path {
+  stroke: #fff;
+  stroke-width: 60px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: transparent;
+  transition: stroke-dasharray 0.5s;
+}
+.menu-icon-wrapper svg path.path1 {
+  stroke-dashoffset: 5803.15px;
+  stroke-dasharray: 2901.57px, 2981.57px, 240px;
+}
+.menu-icon-wrapper svg path.path2 {
+  stroke-dashoffset: 800px;
+  stroke-dasharray: 400px, 480px, 240px;
+}
+.menu-icon-wrapper svg path.path3 {
+  stroke-dashoffset: 6993.11px;
+  stroke-dasharray: 3496.56px, 3576.56px, 240px;
+}
+.menu-icon-wrapper.open svg path.path1 {
+  stroke-dasharray: 2901.57px, 5258.15px, 240px;
+}
+.menu-icon-wrapper.open svg path.path2 {
+  stroke-dasharray: 400px, 600px, 0px;
+}
+.menu-icon-wrapper.open svg path.path3 {
+  stroke-dasharray: 3496.56px, 6448.11px, 240px;
+}
+.menu-icon-wrapper .menu-icon-trigger {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  pointer-events: auto;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
 </style>
 <script>
   import $ from 'jquery'
   export default {
-    head: {
-    },
     mounted: () => {
-      window.onscroll = function() {myFunction()};
-      function myFunction() {
+      // Class Menu
+      window.onscroll = function() { scrollIndi() };
+      function scrollIndi() {
         var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
         var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         var scrolled = (winScroll / height) * 100;
         document.getElementById("scrollindicator").style.width = scrolled + "%";
-      } 
+      }
+      // Icon Menu
+      $('#menu-icon-trigger').click(function(e){
+        e.preventDefault();
+        $('#menu-icon-wrapper').toggleClass('open');
+      });
+      // Class Menu
       {
-          // Class Menu.
+         
           class Menu {
               constructor(el) {
                   this.DOM = {el: el};
