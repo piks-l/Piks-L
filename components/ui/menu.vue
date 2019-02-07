@@ -48,8 +48,8 @@
 				</div>
 				<div class="menu__item menu__item--4" data-direction="rl">
 					<div class="menu__item-inner">
-						<p class="label label--topleft label--line">Contact</p>
-						<p class="menu__item-link">Pour aborder vos projets et prendre rendez-vous, veuillez m'envoyer un mail en précisant l'emplacement, les dimensions et l'inspirations en y joignant éventuellement 2 ou 3 photos</p>
+						<p class="label label--topleft label--line">Me rejoindre</p>
+						<a href="/contact" class="menu__item-link">Tatoueur on the road !</a>
 					</div>
 				</div>
 				<div class="menu__item menu__item--5" data-direction="tb">
