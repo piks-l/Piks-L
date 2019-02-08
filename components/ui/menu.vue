@@ -3,17 +3,6 @@
     <div class="progress-container">
       <div class="progress-bar" id="scrollindicator"></div>
     </div>
-		<svg class="hidden">
-			<symbol id="icon-menu" viewBox="0 0 119 25">
-				<title>menu</title>
-				<path d="M36,8 L36,0 L100,0 L100,8 L36,8 Z M0,8 L0,0 L24,0 L24,8 L0,8 Z M0,28 L0,20 L71,20 L71,28 L0,28 Z"/>
-			</symbol>
-			<symbol id="icon-close" viewBox="0 0 24 24">
-				<title>close</title>
-				<path d="M24 1.485L22.515 0 12 10.515 1.485 0 0 1.485 10.515 12 0 22.515 1.485 24 12 13.484 22.515 24 24 22.515 13.484 12z"/>
-			</symbol>
-		</svg>
-    
 		<main>
 			<nav class="menu">
         
@@ -59,7 +48,7 @@
 						<p class="quote">Pour aborder vos projets et prendre rendez-vous, <nuxt-link to="/contact/">veuillez m'envoyer un mail</nuxt-link> en précisant l'emplacement, les dimensions, l'inspirations et en y joignant 2 ou 3 photos</p>
 					</div>
 				</div>
-				<button class="circle action action--menu"></button>
+				<button class="action action--menu"></button>
 				<button class="action action--close"></button>
 			  <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
           <svg width="1000px" height="1000px">
@@ -403,6 +392,13 @@
       text-align: center;
       z-index: 199;
     }
+    
+    
+    
+    
+    
+
+    /* menu icon effect */
     .action {
       background: none;
       border: 0;
@@ -410,49 +406,81 @@
       cursor: pointer;
       padding: 0;
       z-index:2;
-    }
-    .action--menu {
-      pointer-events: auto;
+      right: 25px;
+      top: 15px;
+      width: 40px;
+      height: 40px;
       position: absolute;
-      top: 1.5rem;
-      right: 1.5rem;
-      z-index: 1000;
-    }
-    
-    .circle {
-        height: 40px;
-        width: 40px;
-        position: absolute;
-        right: 25px;
-        top: 15px;
-        border-radius: 50%;
-    }
-    .circle .icon {
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        margin-left: 3px;
-        position: absolute;
+      pointer-events: auto;
     }
     .menu--open .action--menu {
       pointer-events: none;
     }
-    .action--close {
+    .menu-icon-wrapper {
+      position: fixed;
+      right: 25px;
+      top: 15px;
+      width: 40px;
+      height: 40px;
+      pointer-events: none;
+      transition: 0.1s;
+    }
+    .menu-icon-wrapper svg {
       position: absolute;
-      top: 1.5rem;
-      right: 1.75rem;
-      z-index: 1000;
-      opacity: 0;
-      padding: 0 0.5rem;
-      color:#525252;
+      top: -30px;
+      left: -30px;
+      transform: scale(0.1);
+      transform-origin: 0 0;
     }
-    .icon--menu {
-      width: 2rem;
+    .menu-icon-wrapper svg path {
+      stroke: #151515;
+      stroke-width: 30px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: transparent;
+      transition: stroke-dasharray 0.5s;
     }
-    .icon--close {
-      width: 1rem;
+    .menu-icon-wrapper svg path.path1 {
+      stroke-dashoffset: 5803.15px;
+      stroke-dasharray: 2901.57px, 2981.57px, 240px;
     }
+    .menu-icon-wrapper svg path.path2 {
+      stroke-dashoffset: 800px;
+      stroke-dasharray: 400px, 480px, 240px;
+    }
+    .menu-icon-wrapper svg path.path3 {
+      stroke-dashoffset: 6993.11px;
+      stroke-dasharray: 3496.56px, 3576.56px, 240px;
+    }
+
+    .menu--open .menu-icon-wrapper svg path.path1 {
+      stroke-dasharray: 2901.57px, 5258.15px, 240px;
+    }
+    .menu--open .menu-icon-wrapper svg path.path2 {
+      stroke-dasharray: 400px, 600px, 0px;
+    }
+    .menu--open .menu-icon-wrapper svg path.path3 {
+      stroke-dasharray: 3496.56px, 6448.11px, 240px;
+    }
+    .menu-icon-wrapper .menu-icon-trigger {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      pointer-events: auto;
+      background: none;
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     .menu {
       text-align: center;
       width: 100%;
@@ -619,64 +647,6 @@
       -webkit-animation-timing-function: linear;
     }
     
-    /* menu icon effect */
-    .menu-icon-wrapper {
-      position: fixed;
-      right: 25px;
-      top: 15px;
-      width: 40px;
-      height: 40px;
-      pointer-events: none;
-      transition: 0.1s;
-    }
-    .menu-icon-wrapper svg {
-      position: absolute;
-      top: -30px;
-      left: -30px;
-      transform: scale(0.1);
-      transform-origin: 0 0;
-    }
-    .menu-icon-wrapper svg path {
-      stroke: #151515;
-      stroke-width: 30px;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      fill: transparent;
-      transition: stroke-dasharray 0.5s;
-    }
-    .menu-icon-wrapper svg path.path1 {
-      stroke-dashoffset: 5803.15px;
-      stroke-dasharray: 2901.57px, 2981.57px, 240px;
-    }
-    .menu-icon-wrapper svg path.path2 {
-      stroke-dashoffset: 800px;
-      stroke-dasharray: 400px, 480px, 240px;
-    }
-    .menu-icon-wrapper svg path.path3 {
-      stroke-dashoffset: 6993.11px;
-      stroke-dasharray: 3496.56px, 3576.56px, 240px;
-    }
-
-    .menu--open .menu-icon-wrapper svg path.path1 {
-      stroke-dasharray: 2901.57px, 5258.15px, 240px;
-    }
-    .menu--open .menu-icon-wrapper svg path.path2 {
-      stroke-dasharray: 400px, 600px, 0px;
-    }
-    .menu--open .menu-icon-wrapper svg path.path3 {
-      stroke-dasharray: 3496.56px, 6448.11px, 240px;
-    }
-    .menu-icon-wrapper .menu-icon-trigger {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      cursor: pointer;
-      pointer-events: auto;
-      background: none;
-      border: none;
-      margin: 0;
-      padding: 0;
-    }
     
     /* Moin de 848px */
   @media screen and (min-width: 53em) {
