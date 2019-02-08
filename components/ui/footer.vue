@@ -19,7 +19,7 @@
     </div>
     <influx-maps name="greegalerie"/>
     <div class="copyright">
-      <p>© 2019 <a data-hover href="https://sebastien-odd.tattoo">Sebatien-Odd</a> - Tous droits réservés</p>
+      <p>© <a data-hover href="https://sebastien-odd.tattoo">SEBASTIEN ODD</a> - Tous droits réservés</p>
     </div>
     <influx-cursor/>
   </footer>
