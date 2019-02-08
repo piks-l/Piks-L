@@ -17,18 +17,21 @@
       <a target="_blank" href="mailto:sebastienoddtattoos@gmail.com"><i class="fas fa-at"></i></a>
       <a target="_blank" href="tel:+33641850394"><i class="fas fa-phone"></i></a>
     </div>
-    <influx-maps name="example"/>
+    <influx-maps name="greegalerie"/>
     <div class="copyright">
       <p>© 2019 <a data-hover href="https://sebastien-odd.tattoo">Sebatien-Odd</a> - Tous droits réservés</p>
     </div>
+    <influx-cursor/>
   </footer>
 </template>
 
 <script>
 import influxMaps from '~/components/plugins/maps.vue'
+import influxCursor from '~/components/ui/cursor.vue'
 export default {
   components: {
-      influxMaps
+      influxMaps,
+      influxCursor
   }
 }
 </script>
