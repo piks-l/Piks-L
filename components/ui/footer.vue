@@ -131,7 +131,7 @@ export default {
   background-color: #212121;
   color: #CCCCCC;
   overflow: hidden;
-  position: relative;
+  /*position: relative;*/
   bottom: 0;
   width: 100%;
   padding: 25px 0px;
