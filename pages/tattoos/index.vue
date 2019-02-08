@@ -18,7 +18,7 @@
 
 <script>
   import $ from 'jquery'
-  import VueLazyload from 'vue-lazyload
+  import VueLazyload from 'vue-lazyload'
 
   // export
   export default {
