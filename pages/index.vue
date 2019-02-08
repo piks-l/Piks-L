@@ -7,8 +7,8 @@
         </div>
         <div class="bloc" data-0="transform:translateX(200px);" data-500="transform:translateX(0px);">
           <h2 data-250="transform:translateX(100px);opacity:0;" data-500="transform:translateX(0px);opacity:1;">SEBASTIEN ODD</h2>
-          <h3 data-260="transform:translateX(100px);opacity:0;" data-500="transform:translateX(0px);opacity:1;">TATOUEUR ON THE ROAD</h3>
-          <h3 data-270="transform:translateX(100px);opacity:0;" data-500="transform:translateX(0px);opacity:1;">SUR TOULOUSE</h3>
+          <h3 data-280="transform:translateX(100px);opacity:0;" data-500="transform:translateX(0px);opacity:1;">TATOUEUR ON THE ROAD</h3>
+          <h3 data-310="transform:translateX(100px);opacity:0;" data-500="transform:translateX(0px);opacity:1;">SUR TOULOUSE</h3>
           <p>Il travaille plusieurs styles notamment le style <strong>réaliste</strong> pour lequel il est souvent demandé.<br>
           Il adore aussi l’univers des <strong>comics</strong>, du <strong>jeu vidéo</strong> et du <strong>dessin</strong> en général et <em>tatoue</em> également beaucoup de pièces ,en <em>newschool</em> et en <em>néo-trad</em>, aux <strong>illustrations de qualité</strong> et au <strong>dessin maîtrisé</strong>.</p>
         </div>        
