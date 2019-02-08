@@ -29,48 +29,5 @@
   };
 </script>
 <style>
-  .portfolio {
-      position: relative;
-  }
-  .works {
-      width: 25%;
-      display: inline-block;
-      height: 25vw;
-      overflow: hidden;
-      margin-bottom: -5px;
-      position: relative;
-  }
-  .center {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      position: relative;
-  }
-  .artists-img {
-      position: relative;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      filter:blur(50px);
-      -webkit-transition: 0.5s all ease;
-      transition: 0.5s all ease;
-      width: auto;
-      height: auto;
-      max-width: 100%;
-      max-height: 100%;
-  }
-  .artists-img[lazy=loaded]{
-      filter:blur(0px) !important;
-  }
-  .fontblur{
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      filter:blur(50px);
-      position: absolute;
-      height:110%;
-      width: auto;
-  }
+ 
 </style>
