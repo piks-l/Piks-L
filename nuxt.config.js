@@ -30,7 +30,7 @@ module.exports = {
   },
   plugins: [{src: '~/plugins/vue-lazyload', ssr: false}],
   loading: {
-    color: '#000000',
+    color: '#FFB413',
     height: '5px'
   },
   generate: {
