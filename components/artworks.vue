@@ -1,6 +1,6 @@
 <template>
     <div class="portfolio">
-       <article v-for="artwork in artworks.slice().reverse()" :key="artwork.date" class="works" :class="{ active: openWork }" @click="openWork = true">
+       <article v-for="artwork in artworks.slice().reverse()" :key="artwork.date" class="works" >
           <nuxt-link class="title" :to="artwork._path">
             <div class="centrer" >
               <img class="fontblur" v-lazy="artwork.thumbnail" :alt="artwork.title">
@@ -22,7 +22,6 @@
         _path: `/artworks/${key.replace('.json', '').replace('./', '')}`
       }));
       return { 
-        openWork: false,
         artworks 
       };
     }
