@@ -395,27 +395,44 @@
     
     
     
-    
-    
-
-    /* menu icon effect */
     .action {
       background: none;
       border: 0;
       color: #000;
       cursor: pointer;
       padding: 0;
-      z-index:2;
-      right: 25px;
-      top: 15px;
       width: 40px;
       height: 40px;
-      position: absolute;
-      pointer-events: auto;
     }
+    .action--menu {
+      pointer-events: auto;
+      position: absolute;
+      top: 15px;
+      right: 25px;
+      z-index: 1000;
+    }
+    
     .menu--open .action--menu {
       pointer-events: none;
     }
+    .action--close {
+      position: absolute;
+      top: 15px;
+      right: 25px;
+      z-index: 1000;
+      opacity: 0;
+      padding: 0 0.5rem;
+      color:#525252;
+    }
+    .icon--menu {
+      width: 2rem;
+    }
+    .icon--close {
+      width: 1rem;
+    }
+    
+
+    /* menu icon effect */
     .menu-icon-wrapper {
       position: fixed;
       right: 25px;
@@ -424,6 +441,7 @@
       height: 40px;
       pointer-events: none;
       transition: 0.1s;
+      z-index:1;
     }
     .menu-icon-wrapper svg {
       position: absolute;
