@@ -32,7 +32,10 @@ module.exports = {
   },
   css: [ '~/assets/css/global.css', '~/assets/css/responsive.css' ],
   plugins: [{src: '~/plugins/vue-lazyload', ssr: false}],
-  loading: false,
+  loading: {
+    color: '#FFB413',
+    height: '5px'
+  },
   generate: {
     routes: dynamicRoutes
   },
