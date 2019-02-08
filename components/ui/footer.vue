@@ -36,9 +36,6 @@ export default {
 }
 </script>
 <style>
-body{
- cursor:none!important;
-}
 /* FOOTER */
 #footer {
   background-color: #212121;
