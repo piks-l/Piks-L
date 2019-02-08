@@ -59,8 +59,8 @@
 						<p class="quote">Pour aborder vos projets et prendre rendez-vous, <nuxt-link to="/contact/">veuillez m'envoyer un mail</nuxt-link> en précisant l'emplacement, les dimensions, l'inspirations et en y joignant 2 ou 3 photos</p>
 					</div>
 				</div>
-				<button class="circle action action--menu"><svg class="icon icon--menu"><use xlink:href="#icon-menu"></use></svg></button>
-				<button class="action action--close"><svg class="icon icon--close"><use xlink:href="#icon-close"></use></svg></button>
+				<button class="circle action action--menu"></button>
+				<button class="action action--close"></button>
 			  <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
           <svg width="1000px" height="1000px">
             <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
@@ -620,65 +620,64 @@
     }
     
     /* menu icon effect */
-     .menu-icon-wrapper {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    margin: -12px 0px 0px -12px;
-    width: 34px;
-    height: 34px;
-    pointer-events: none;
-    transition: 0.1s;
-    z-index:9999;
-  }
-  .menu-icon-wrapper svg {
-    position: absolute;
-    top: -33px;
-    left: -33px;
-    transform: scale(0.1);
-    transform-origin: 0 0;
-  }
-  .menu-icon-wrapper svg path {
-    stroke: #151515;
-    stroke-width: 30px;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    fill: transparent;
-    transition: stroke-dasharray 0.5s;
-  }
-  .menu-icon-wrapper svg path.path1 {
-    stroke-dashoffset: 5803.15px;
-    stroke-dasharray: 2901.57px, 2981.57px, 240px;
-  }
-  .menu-icon-wrapper svg path.path2 {
-    stroke-dashoffset: 800px;
-    stroke-dasharray: 400px, 480px, 240px;
-  }
-  .menu-icon-wrapper svg path.path3 {
-    stroke-dashoffset: 6993.11px;
-    stroke-dasharray: 3496.56px, 3576.56px, 240px;
-  }
-  
-  .menu--open .menu-icon-wrapper svg path.path1 {
-    stroke-dasharray: 2901.57px, 5258.15px, 240px;
-  }
-  .menu--open .menu-icon-wrapper svg path.path2 {
-    stroke-dasharray: 400px, 600px, 0px;
-  }
-  .menu--open .menu-icon-wrapper svg path.path3 {
-    stroke-dasharray: 3496.56px, 6448.11px, 240px;
-  }
-  .menu-icon-wrapper .menu-icon-trigger {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    pointer-events: auto;
-    background: none;
-    border: none;
-    margin: 0;
-    padding: 0;
-  }
+    .menu-icon-wrapper {
+      position: fixed;
+      right: 28px;
+      top: 18px;
+      width: 34px;
+      height: 34px;
+      pointer-events: none;
+      transition: 0.1s;
+      z-index:9999;
+    }
+    .menu-icon-wrapper svg {
+      position: absolute;
+      top: -33px;
+      left: -33px;
+      transform: scale(0.1);
+      transform-origin: 0 0;
+    }
+    .menu-icon-wrapper svg path {
+      stroke: #151515;
+      stroke-width: 30px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: transparent;
+      transition: stroke-dasharray 0.5s;
+    }
+    .menu-icon-wrapper svg path.path1 {
+      stroke-dashoffset: 5803.15px;
+      stroke-dasharray: 2901.57px, 2981.57px, 240px;
+    }
+    .menu-icon-wrapper svg path.path2 {
+      stroke-dashoffset: 800px;
+      stroke-dasharray: 400px, 480px, 240px;
+    }
+    .menu-icon-wrapper svg path.path3 {
+      stroke-dashoffset: 6993.11px;
+      stroke-dasharray: 3496.56px, 3576.56px, 240px;
+    }
+
+    .menu--open .menu-icon-wrapper svg path.path1 {
+      stroke-dasharray: 2901.57px, 5258.15px, 240px;
+    }
+    .menu--open .menu-icon-wrapper svg path.path2 {
+      stroke-dasharray: 400px, 600px, 0px;
+    }
+    .menu--open .menu-icon-wrapper svg path.path3 {
+      stroke-dasharray: 3496.56px, 6448.11px, 240px;
+    }
+    .menu-icon-wrapper .menu-icon-trigger {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      pointer-events: auto;
+      background: none;
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
     
     /* Moin de 848px */
   @media screen and (min-width: 53em) {
