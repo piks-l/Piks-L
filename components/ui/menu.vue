@@ -13,14 +13,7 @@
 				<path d="M24 1.485L22.515 0 12 10.515 1.485 0 0 1.485 10.515 12 0 22.515 1.485 24 12 13.484 22.515 24 24 22.515 13.484 12z"/>
 			</symbol>
 		</svg>
-    <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
-      <svg width="1000px" height="1000px">
-        <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
-        <path class="path2" d="M 300 500 L 700 500"></path>
-        <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
-      </svg>
-      <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
-    </div>
+    
 		<main>
 			<nav class="menu">
         
@@ -68,7 +61,15 @@
 				</div>
 				<button class="circle action action--menu"><svg class="icon icon--menu"><use xlink:href="#icon-menu"></use></svg></button>
 				<button class="action action--close"><svg class="icon icon--close"><use xlink:href="#icon-close"></use></svg></button>
-			</nav>
+			  <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
+          <svg width="1000px" height="1000px">
+            <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+            <path class="path2" d="M 300 500 L 700 500"></path>
+            <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+          </svg>
+          <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+        </div>
+      </nav>
 		</main>
    </div>
 </template>
@@ -116,12 +117,10 @@
           // Open the menu.
           open() {
               this.toggle('open');
-              $('#menu-icon-wrapper').toggleClass('open');
           }
           // Close the menu.
           close() {
               this.toggle('close');
-              $('#menu-icon-wrapper').toggleClass('open');
           }              
           toggle(action) {
               if ( this.isAnimating ) return;
@@ -595,6 +594,92 @@
         transform: none !important;
     }  
     
+    /* Shack effect */
+    @-webkit-keyframes spaceboots {
+      0% { -webkit-transform: translate(0px, 1px) rotate(0deg); }
+      10% { -webkit-transform: translate(0px, -2px) rotate(0deg); }
+      20% { -webkit-transform: translate(0px, 0px) rotate(0deg); }
+      30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+      40% { -webkit-transform: translate(0px, -1px) rotate(0deg); }
+      45% { -webkit-transform: translate(0px, -2px) rotate(0deg); }
+      50% { -webkit-transform: translate(0px, 0px) rotate(0deg); }
+      55% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+      60% { -webkit-transform: translate(0px, 1px) rotate(0deg); }
+      70% { -webkit-transform: translate(0px, 1px) rotate(0deg); }
+      80% { -webkit-transform: translate(0px, -1px) rotate(0deg); }
+      90% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+      100% { -webkit-transform: translate(0px, -2px) rotate(0deg); }
+    }
+    .shake:hover,
+    .shake:focus {
+      -webkit-animation-name: spaceboots;
+      -webkit-animation-duration: 0.8s;
+      -webkit-transform-origin:50% 50%;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+    }
+    
+    /* menu icon effect */
+     .menu-icon-wrapper {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: -12px 0px 0px -12px;
+    width: 34px;
+    height: 34px;
+    pointer-events: none;
+    transition: 0.1s;
+    z-index:9999;
+  }
+  .menu-icon-wrapper svg {
+    position: absolute;
+    top: -33px;
+    left: -33px;
+    transform: scale(0.1);
+    transform-origin: 0 0;
+  }
+  .menu-icon-wrapper svg path {
+    stroke: #151515;
+    stroke-width: 30px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: transparent;
+    transition: stroke-dasharray 0.5s;
+  }
+  .menu-icon-wrapper svg path.path1 {
+    stroke-dashoffset: 5803.15px;
+    stroke-dasharray: 2901.57px, 2981.57px, 240px;
+  }
+  .menu-icon-wrapper svg path.path2 {
+    stroke-dashoffset: 800px;
+    stroke-dasharray: 400px, 480px, 240px;
+  }
+  .menu-icon-wrapper svg path.path3 {
+    stroke-dashoffset: 6993.11px;
+    stroke-dasharray: 3496.56px, 3576.56px, 240px;
+  }
+  
+  .menu--open .menu-icon-wrapper svg path.path1 {
+    stroke-dasharray: 2901.57px, 5258.15px, 240px;
+  }
+  .menu--open .menu-icon-wrapper svg path.path2 {
+    stroke-dasharray: 400px, 600px, 0px;
+  }
+  .menu--open .menu-icon-wrapper svg path.path3 {
+    stroke-dasharray: 3496.56px, 6448.11px, 240px;
+  }
+  .menu-icon-wrapper .menu-icon-trigger {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    pointer-events: auto;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+    
     /* Moin de 848px */
   @media screen and (min-width: 53em) {
   	body {
@@ -787,85 +872,6 @@
   		opacity: 1;
   	}
   }
-  @-webkit-keyframes spaceboots {
-  	0% { -webkit-transform: translate(0px, 1px) rotate(0deg); }
-  	10% { -webkit-transform: translate(0px, -2px) rotate(0deg); }
-  	20% { -webkit-transform: translate(0px, 0px) rotate(0deg); }
-  	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
-  	40% { -webkit-transform: translate(0px, -1px) rotate(0deg); }
-    45% { -webkit-transform: translate(0px, -2px) rotate(0deg); }
-  	50% { -webkit-transform: translate(0px, 0px) rotate(0deg); }
-    55% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
-  	60% { -webkit-transform: translate(0px, 1px) rotate(0deg); }
-  	70% { -webkit-transform: translate(0px, 1px) rotate(0deg); }
-  	80% { -webkit-transform: translate(0px, -1px) rotate(0deg); }
-  	90% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
-  	100% { -webkit-transform: translate(0px, -2px) rotate(0deg); }
-  }
-  .shake:hover,
-  .shake:focus {
-  	-webkit-animation-name: spaceboots;
-  	-webkit-animation-duration: 0.8s;
-  	-webkit-transform-origin:50% 50%;
-  	-webkit-animation-iteration-count: infinite;
-  	-webkit-animation-timing-function: linear;
-  }
-  .menu-icon-wrapper {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    margin: -12px 0px 0px -12px;
-    width: 34px;
-    height: 34px;
-    pointer-events: none;
-    transition: 0.1s;
-    z-index:9999;
-  }
-  .menu-icon-wrapper svg {
-    position: absolute;
-    top: -33px;
-    left: -33px;
-    transform: scale(0.1);
-    transform-origin: 0 0;
-  }
-  .menu-icon-wrapper svg path {
-    stroke: #151515;
-    stroke-width: 30px;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    fill: transparent;
-    transition: stroke-dasharray 0.5s;
-  }
-  .menu-icon-wrapper svg path.path1 {
-    stroke-dashoffset: 5803.15px;
-    stroke-dasharray: 2901.57px, 2981.57px, 240px;
-  }
-  .menu-icon-wrapper svg path.path2 {
-    stroke-dashoffset: 800px;
-    stroke-dasharray: 400px, 480px, 240px;
-  }
-  .menu-icon-wrapper svg path.path3 {
-    stroke-dashoffset: 6993.11px;
-    stroke-dasharray: 3496.56px, 3576.56px, 240px;
-  }
-  .menu-icon-wrapper.open svg path.path1 {
-    stroke-dasharray: 2901.57px, 5258.15px, 240px;
-  }
-  .menu-icon-wrapper.open svg path.path2 {
-    stroke-dasharray: 400px, 600px, 0px;
-  }
-  .menu-icon-wrapper.open svg path.path3 {
-    stroke-dasharray: 3496.56px, 6448.11px, 240px;
-  }
-  .menu-icon-wrapper .menu-icon-trigger {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    pointer-events: auto;
-    background: none;
-    border: none;
-    margin: 0;
-    padding: 0;
-  }
+  
+ 
 </style>
