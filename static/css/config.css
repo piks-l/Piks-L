@@ -65,7 +65,11 @@ h1, h2, h3, h4, h5, h6 {
       margin: 0 auto;
       max-width: 1170px;
   }
-  
+  a, button {
+    text-decoration: none;
+    color: currentColor;
+    cursor: none !important;
+  }
   a:hover {
       color: #000;
       text-decoration: none;
