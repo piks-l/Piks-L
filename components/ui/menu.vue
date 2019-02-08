@@ -451,10 +451,8 @@
       transform-origin: 0 0;
     }
     .menu-icon-wrapper svg path {
-      stroke: #151515;
-      stroke-width: 30px;
-      stroke-linecap: round;
-      stroke-linejoin: round;
+      stroke: #525252;
+      stroke-width: 20px;
       fill: transparent;
       transition: stroke-dasharray 0.5s;
     }
@@ -484,7 +482,6 @@
       position: relative;
       width: 100%;
       height: 100%;
-      cursor: pointer;
       pointer-events: auto;
       background: none;
       border: none;
