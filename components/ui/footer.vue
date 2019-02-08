@@ -125,7 +125,9 @@ export default {
  }
 </script>
 <style>
-
+body{
+ cursor:none!important;
+}
 /* FOOTER */
 #footer {
   background-color: #212121;
@@ -155,7 +157,7 @@ export default {
 #footer .cursor__inner--circle {
 	width: 30px;
 	height:30px;
-	border: 1px solid #151515;
+	border: 1px solid #FFFFFF;
 	mix-blend-mode: difference;
 }
 
