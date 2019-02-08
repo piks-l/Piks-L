@@ -5,12 +5,12 @@
       <div class="cursor__inner cursor__inner--dot"></div>
     </div>
     <div class="navigation">
-      <nuxt-link to="/">Accueil</nuxt-link>
-      <nuxt-link to="/biographie/">Biographie</nuxt-link>
-      <nuxt-link to="/blog/">Actualités</nuxt-link>
-      <nuxt-link to="/artworks/">Artworks</nuxt-link>
-      <nuxt-link to="/tattoos/">Tattoos</nuxt-link>
-      <nuxt-link to="/contact/">Contact</nuxt-link> 
+      <nuxt-link data-hover to="/">Accueil</nuxt-link>
+      <nuxt-link data-hover to="/biographie/">Biographie</nuxt-link>
+      <nuxt-link data-hover to="/blog/">Actualités</nuxt-link>
+      <nuxt-link data-hover to="/artworks/">Artworks</nuxt-link>
+      <nuxt-link data-hover to="/tattoos/">Tattoos</nuxt-link>
+      <nuxt-link data-hover to="/contact/">Contact</nuxt-link> 
     </div>
     <div class="reseaux">
       <a target="_blank" href="https://www.facebook.com/sebastienoddtattoo/"><i class="fab fa-facebook-f"></i></a>
