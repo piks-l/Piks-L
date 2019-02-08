@@ -6,15 +6,15 @@
       <div class="container white">
         <h2>{{ title }}</h2>
         <div class="meta">
-          <p>Par  <nuxt-link to="/artistes/piero/">Piero</nuxt-link>, le <b>{{ date }}</b></p> 
+          <p><b>{{ date }}</b></p> 
         </div>
         <vue-markdown class="content-intro">{{intro}}</vue-markdown>
         <div class="contenu">
             <vue-markdown class="content-article">{{article}}</vue-markdown>
         </div>
-        <cdm-sidebar/>
+        <influx-sidebar/>
       </div>
-      <cdm-derniersarticles/>
+      <influx-derniersarticles/>
     </article>
     <div class="full-width">
         <div class="container">
@@ -25,15 +25,15 @@
 </template>
 
 <script>
-import cdmDerniersarticles from '~/components/plug/derniers-articles.vue'
-import cdmSidebar from '~/components/sidebar.vue'
+import influxDerniersarticles from '~/components/plug/derniers-articles.vue'
+import influxSidebar from '~/components/sidebar.vue'
 import VueMarkdown from 'vue-markdown'
 export default {
   layout: 'default',
   scrollToTop: true,
   components: { 
-    cdmDerniersarticles,
-    cdmSidebar,
+    influxDerniersarticles,
+    influxSidebar,
     VueMarkdown 
   },
   async asyncData({ params }) {
