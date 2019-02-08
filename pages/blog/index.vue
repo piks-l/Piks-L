@@ -27,13 +27,13 @@
   import VueMarkdown from 'vue-markdown'
   
   // import components
-  import inluxSidebar from '~/components/sidebar.vue'
+  import influxSidebar from '~/components/sidebar.vue'
   
   // export
   export default {
     layout: 'default',
     components: {
-        inluxSidebar,
+        influxSidebar,
         VueMarkdown 
     },
     head() {
