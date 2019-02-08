@@ -409,6 +409,7 @@
       color: #000;
       cursor: pointer;
       padding: 0;
+      z-index:2;
     }
     .action--menu {
       pointer-events: auto;
@@ -421,7 +422,6 @@
     .circle {
         height: 40px;
         width: 40px;
-        background: #fff;
         position: absolute;
         right: 25px;
         top: 15px;
@@ -622,18 +622,17 @@
     /* menu icon effect */
     .menu-icon-wrapper {
       position: fixed;
-      right: 28px;
-      top: 18px;
-      width: 34px;
-      height: 34px;
+      right: 25px;
+      top: 15px;
+      width: 40px;
+      height: 40px;
       pointer-events: none;
       transition: 0.1s;
-      z-index:9999;
     }
     .menu-icon-wrapper svg {
       position: absolute;
-      top: -33px;
-      left: -33px;
+      top: -30px;
+      left: -30px;
       transform: scale(0.1);
       transform-origin: 0 0;
     }
