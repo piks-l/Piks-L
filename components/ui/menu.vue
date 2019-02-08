@@ -9,12 +9,12 @@
 				<div class="menu__item menu__item--1" data-direction="bt">
 					<div class="menu__item-inner">
 						<div class="mainmenu">
-              <nuxt-link class="mainmenu__item" to="/">Accueil</nuxt-link>
-              <nuxt-link class="mainmenu__item" to="/">Biographie</nuxt-link>
-              <nuxt-link class="mainmenu__item" to="/blog/">Actualités</nuxt-link>
-							<nuxt-link class="mainmenu__item" to="/artworks/">Artworks</nuxt-link>
-							<nuxt-link class="mainmenu__item shake" to="/tattoos/">Tattoos</nuxt-link>
-							<nuxt-link class="mainmenu__item" to="/contact/">Contact</nuxt-link>
+              <nuxt-link data-hover class="mainmenu__item" to="/">Accueil</nuxt-link>
+              <nuxt-link data-hover class="mainmenu__item" to="/">Biographie</nuxt-link>
+              <nuxt-link data-hover class="mainmenu__item" to="/blog/">Actualités</nuxt-link>
+							<nuxt-link data-hover class="mainmenu__item" to="/artworks/">Artworks</nuxt-link>
+							<nuxt-link data-hover class="mainmenu__item shake" to="/tattoos/">Tattoos</nuxt-link>
+							<nuxt-link data-hover class="mainmenu__item" to="/contact/">Contact</nuxt-link>
 						</div>
 						<p class="label label--topleft label--vert-mirror">menu</p>
 						<p class="label label--bottomright label--vert">www.sebastien-odd.tattoo<strong>{{this.$route.path}}</strong></p>
@@ -40,17 +40,17 @@
 				<div class="menu__item menu__item--4" data-direction="rl">
 					<div class="menu__item-inner">
 						<p class="label label--topleft label--line">Me rejoindre</p>
-						<a target="_blank" href="https://fr-fr.facebook.com/greengalerieexpo/" class="menu__item-link">Tatoueur on the road !</a>
+						<a target="_blank" data-hover href="https://fr-fr.facebook.com/greengalerieexpo/" class="menu__item-link">Tatoueur on the road !</a>
 					</div>
 				</div>
 				<div class="menu__item menu__item--5" data-direction="tb">
 					<div class="menu__item-inner">
-						<p class="quote">Pour aborder vos projets et prendre rendez-vous, <nuxt-link to="/contact/">veuillez m'envoyer un mail</nuxt-link> en précisant l'emplacement, les dimensions, l'inspirations et en y joignant 2 ou 3 photos</p>
+						<p class="quote">Pour aborder vos projets et prendre rendez-vous, <nuxt-link data-hover to="/contact/">veuillez m'envoyer un mail</nuxt-link> en précisant l'emplacement, les dimensions, l'inspirations et en y joignant 2 ou 3 photos</p>
 					</div>
 				</div>
 				<button class="action action--menu"></button>
 				<button class="action action--close"></button>
-			  <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
+			  <div data-hover id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
           <svg width="1000px" height="1000px">
             <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
             <path class="path2" d="M 300 500 L 700 500"></path>
