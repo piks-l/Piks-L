@@ -58,12 +58,21 @@ export default {
 #footer .copyright {
   background: #ccc;
 }
+#footer .copyright a {
+  color: #000;
+}
+#footer .copyright a:hover {
+  color: #FFB413;
+}
 #footer a {
-  color: #f2f2f2;
-  padding: 15px 15px;
+  color: #525252;
+  padding: 15px;
   text-decoration: none;
   display: inline-block;
   position: relative;
+}
+#footer a:hover {
+  color: #cecece;
 }
 
 /* FOOTER NAVIGATION */
