@@ -1,10 +1,7 @@
 <template>
-  <header class="header" :class="{ active: changed }">
-    <video autoplay muted loop id="animation">
-      <source src="https://www.influx-agence.fr/cms/sebastienodd-animation.mp4" type="video/mp4">
-    </video>
+  <header class="header">
     <div class="center-logo">
-      <div class="background" @click="changed = !changed" style="background-image: url(https://influx-002.netlify.com/images/uploads/00000000050.png)"></div>
+      <div class="background" style="background-image: url(https://influx-002.netlify.com/images/uploads/00000000050.png)"></div>
     </div>
     <div id="mouse_body">
       <div id="mouse_wheel"></div>
@@ -14,11 +11,10 @@
 <style>
 #mouse_body {
   border-style: solid;
-  border-width: 2px;
-  border-color: #fff;
+  border-width: 1px;
+  border-color: #525252;
   border-radius: 32px;
   /* used just to add space from top */
-  margin-top: 150px !important;
   /* size of the mouse body */
   height: 43px;
   width: 23px;
@@ -28,8 +24,8 @@
 
 #mouse_wheel {
   border-style: solid;
-  border-width: 2px;
-  border-color: #fff;
+  border-width: 1px;
+  border-color: #FFB413;
   border-radius: 8px;
   background-color: #fff;
   /* position property required to play animation  */
