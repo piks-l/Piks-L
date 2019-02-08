@@ -90,8 +90,8 @@
           constructor(el) {
               this.DOM = {el: el};
 
-              this.DOM.openCtrl = this.DOM.el.querySelector('.menu-icon-wrapper');
-              this.DOM.closeCtrl = this.DOM.el.querySelector('.open');
+              this.DOM.openCtrl = this.DOM.el.querySelector('.action--menu');
+              this.DOM.closeCtrl = this.DOM.el.querySelector('.action--close');
               this.DOM.menuCtrl = this.DOM.el.querySelector('.mainmenu');
               this.DOM.openCtrl.addEventListener('click', () => this.open());
               this.DOM.closeCtrl.addEventListener('click', () => this.close());
