@@ -38,13 +38,10 @@ export default {
 <style>
 /* FOOTER */
 #footer {
-  background-color: #212121;
-  color: #CCCCCC;
   overflow: hidden;
   /*position: relative;*/
   bottom: 0;
   width: 100%;
-  padding: 25px 0px;
 }
 
 /* FOOTER GENERAL */
@@ -54,6 +51,12 @@ export default {
   display: block;
   position: relative;
   text-align: center;
+}
+#footer .reseaux {
+  background: #dedede;
+}
+#footer .copyright {
+  background: #ccc;
 }
 #footer a {
   color: #f2f2f2;
