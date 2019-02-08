@@ -2,7 +2,7 @@
     <div class="portfolio">
        <article v-for="artwork in artworks.slice().reverse()" :key="artwork.date" class="works" :class="{ active: openWork }" @click="openWork = true">
           <nuxt-link class="title" :to="artwork._path">
-            <div class="center" >
+            <div class="centrer" >
               <img class="fontblur" v-lazy="artwork.thumbnail" :alt="artwork.title">
               <img class="artists-img" v-lazy="artwork.thumbnail" :alt="artwork.title">
             </div>  
