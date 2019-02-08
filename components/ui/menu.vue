@@ -633,16 +633,12 @@
           constructor(el) {
               this.DOM = {el: el};
 
-              // Open and close ctls.
-              this.DOM.openCtrl = this.DOM.el.querySelector('#menu-icon-trigger');
-              this.DOM.openCtrl.addEventListener('click', () => this.open());
-              
-              this.DOM.closeCtrl = this.DOM.el.querySelector('#menu-icon-trigger');
-              this.DOM.closeCtrl.addEventListener('click', () => this.close());
-              
+              this.DOM.openCtrl = this.DOM.el.querySelector('.action--menu');
+              this.DOM.closeCtrl = this.DOM.el.querySelector('.action--close');
               this.DOM.menuCtrl = this.DOM.el.querySelector('.mainmenu');
+              this.DOM.openCtrl.addEventListener('click', () => this.open());
+              this.DOM.closeCtrl.addEventListener('click', () => this.close());
               this.DOM.menuCtrl.addEventListener('click', () => this.close());
-
               this.DOM.openCtrl.addEventListener('mouseenter', () => {
                   allowTilt = false;
                   tilt.reset()
@@ -663,10 +659,12 @@
           // Open the menu.
           open() {
               this.toggle('open');
+              $('#menu-icon-wrapper').toggleClass('open');
           }
           // Close the menu.
           close() {
               this.toggle('close');
+              $('#menu-icon-wrapper').toggleClass('open');
           }              
           toggle(action) {
               if ( this.isAnimating ) return;
@@ -745,7 +743,17 @@
                   }
               });
               // Show/Hide open and close ctrls.
-
+                TweenMax.to(this.DOM.closeCtrl, 0.6, {
+                    ease: action === 'open' ? Quint.easeOut : Quart.easeInOut,
+                    startAt: action === 'open' ? {rotation: 0} : null,
+                    opacity: action === 'open' ? 1 : 0,
+                    rotation: action === 'open' ? 180 : 270
+                });
+                TweenMax.to(this.DOM.openCtrl, action === 'open' ? 0.6 : 0.3, {
+                    delay: action === 'open' ? 0 : 0.3,
+                    ease: action === 'open' ? Quint.easeOut : Quad.easeOut,
+                    opacity: action === 'open' ? 0 : 1
+                });
               // Main links animation.
               TweenMax.staggerTo(this.DOM.mainLinks, action === 'open' ? 0.9 : 0.2, {
                   ease: action === 'open' ? Quint.easeOut : Quart.easeInOut,
