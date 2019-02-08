@@ -4,19 +4,39 @@
       <h2>Nos actualités</h2>
   </div>  
   <div class="content-blog">
-      <cdm-blog/>
+    <div class="container">
+      <div class="blog-list">
+        <article v-for="post in posts.slice().reverse()" :key="post.date">
+          <nuxt-link class="blog-title underline" :to="post._path">{{ post.title }}</nuxt-link>
+          <img class="blog-cover" :src="post.couverture">
+          <vue-markdown>{{post.intro}}...</vue-markdown>
+          <div class="blog-footer">  
+              <nuxt-link class="blog-readmore" :to="post._path">En savoir plus</nuxt-link>
+              <div class="blog-date"><p>Par <nuxt-link to="/artistes/piero/">Piero</nuxt-link>, le <b>{{ post.date }}</b></p></div>
+          </div>
+        </article>
+      </div>
+      <influx-sidebar/>
+    </div>
   </div>
 </div>
 </template>
 
 <script>
   import $ from 'jquery'
+  import VueMarkdown from 'vue-markdown'
+  
   // import components
-  import cdmBlog from '~/components/blog-full.vue'
+  import inluxSidebar from '~/components/sidebar.vue'
+  
   // export
   export default {
     layout: 'default',
-     head() {
+    components: {
+        inluxSidebar,
+        VueMarkdown 
+    },
+    head() {
       return {
         title: 'NOS ACTUALITÉS',
         meta: [
@@ -27,8 +47,13 @@
         ]
       }
     },
-    components: {
-        cdmBlog
+    data() {
+      const context = require.context('~/content/blog/posts/', false, /\.json$/);
+      const posts = context.keys().map(key => ({
+        ...context(key),
+        _path: `/blog/${key.replace('.json', '').replace('./', '')}`
+      }));
+      return { posts };
     },
     mounted: () => {
       	
