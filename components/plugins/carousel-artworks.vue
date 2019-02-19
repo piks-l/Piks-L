@@ -12,16 +12,16 @@
   </svg>    
       </span>
     </div>
-   <div v-for="post in posts.slice().reverse().slice(0, 3)" :key="post.date" class="carousel-item carousel-item--1">
+   <div v-for="art in arts.slice().reverse().slice(0, 3)" :key="art.date" class="carousel-item carousel-item--1">
 
       <div class="carousel-item__info">
         <div class="carousel-item__container">
-        <h2 class="carousel-item__subtitle">{{ post.date }}</h2>
-        <h1 class="carousel-item__title">{{ post.title }}</h1>
-        <nuxt-link :to="post._path" class="carousel-item__btn">En savoir plus</nuxt-link>
+        <h2 class="carousel-item__subtitle">{{ art.date }}</h2>
+        <h1 class="carousel-item__title">{{ art.title }}</h1>
+        <nuxt-link :to="art._path" class="carousel-item__btn">En savoir plus</nuxt-link>
           </div>
       </div>
-            <div class="carousel-item__image" :style="{ backgroundImage: `url(${post.couverture})` }"></div>
+            <div class="carousel-item__image" :style="{ backgroundImage: `url(${art.couverture})` }"></div>
     </div>
 
   </div>
@@ -30,11 +30,11 @@
   export default {
     data() {
       const context = require.context('~/content/artworks/page/', false, /\.json$/);
-      const posts = context.keys().map(key => ({
+      const arts = context.keys().map(key => ({
         ...context(key),
         _path: `/artworks/${key.replace('.json', '').replace('./', '')}`
       }));
-      return { posts };
+      return { arts };
     },
     mounted: function () {
       $('.carousel-item').eq(0).addClass('active');
