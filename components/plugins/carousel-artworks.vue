@@ -37,31 +37,31 @@
     mounted: function () {
       $('.carousel-item-artworks').eq(0).addClass('active');
       var total = $('.carousel-item-artworks').length;
-      var current-artworks = 0;
+      var currentArtworks = 0;
       $('#moveRight-artworks').on('click', function(){
-        var next=current-artworks;
-        current-artworks= current-artworks+1;
-        setSlide(next, current-artworks);
+        var next=currentArtworks;
+        currentArtworks= currentArtworks+1;
+        setSlide(next, currentArtworks);
       });
       $('#moveLeft-artworks').on('click', function(){
-        var prev=curren-artworkst;
-        current-artworks = current-artworks- 1;
-        setSlide(prev, current-artworks);
+        var prev=currenArtworkst;
+        currentArtworks = currentArtworks- 1;
+        setSlide(prev, currentArtworks);
       });
       function setSlide(prev, next){
-        var slide= current-artworks;
+        var slide= currentArtworks;
         if(next>total-1){
          slide=0;
-          current-artworks=0;
+          currentArtworks=0;
         }
         if(next<0){
           slide=total - 1;
-          current-artworks=total - 1;
+          currentArtworks=total - 1;
         }
        $('.carousel-item-artworks').eq(prev).removeClass('active');
        $('.carousel-item-artworks').eq(slide).addClass('active');
         setTimeout(function(){},800);
-        console.log('current '+current-artworks);
+        console.log('current '+currentArtworks);
         console.log('prev '+prev);
       }
     }
