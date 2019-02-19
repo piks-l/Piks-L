@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="center-logo">
-      <div class="background" style="background-image: url(https://influx-002.netlify.com/images/uploads/00000000050.png)"></div>
+      <div class="background" style="background-image: url(https://influx-002.netlify.com/images/uploads/logobombyx.png)"></div>
     </div>
     <div id="mouse_body">
       <div id="mouse_wheel"></div>
@@ -111,7 +111,7 @@
       height: 600px;
       top: 0;
       left: 0;
-      background-image: url(https://influx-002.netlify.com/images/uploads/00000000050.png);
+      background-image: url(https://influx-002.netlify.com/images/uploads/logobombyx.png);
       background-position: 50% 0%;
       background-size: contain;
       z-index: 1;
