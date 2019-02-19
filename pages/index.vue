@@ -19,12 +19,16 @@
         <p><b>Pour aborder vos projets et prendre rendez-vous, veuillez m'envoyer un mail en précisant l'emplacement, les dimensions et l'inspirations en y joignant éventuellement 2 ou 3 photos</b></p>
       </div>
     </section>
+        
+    <section>
+      <influx-carouselartworks class="caroublog"/>
+      <influx-carouseltattoos class="caroublog"/>
+    </section>
+    
     <section>
       <div class="container">
         <h2>Actualités</h2>
       </div>
-      <influx-carouselartworks class="caroublog"/>
-      <influx-carouseltattoos class="caroublog"/>
       <div class="container">
           <nuxt-link to="/blog/"><p>Voir les autres actualités !</p></nuxt-link>
       </div>
