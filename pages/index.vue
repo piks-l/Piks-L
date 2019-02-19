@@ -45,7 +45,7 @@
   export default {
     layout: 'default',
     components: {
-        influxCarouselblog,
+        influxCarouselartworks,
         influxCarouseltattoos
     },
     head() {
