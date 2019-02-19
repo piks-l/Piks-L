@@ -2,22 +2,19 @@
   <div>
     <section id="biographie">
       <div class="container">
-        <div class="bloc">
-          <img class="font-logo" src="images/uploads/logobombyx.png">
-        </div>
-        <div class="bloc biographie-descrition" data-800="transform:translateY(0px);opacity:1;" data-900="transform:translateY(100px);opacity:0;">
+        <div class="biographie-descrition" data-800="transform:translateY(0px);opacity:1;" data-900="transform:translateY(100px);opacity:0;">
           <h2 data-250="transform:translateY(10px);opacity:0;" data-500="transform:translateY(0px);opacity:1;">SEBASTIEN ODD</h2>
           <h3 data-280="transform:translateY(10px);opacity:0;" data-500="transform:translateY(0px);opacity:1;">TATOUEUR ON THE ROAD</h3>
           <h3 data-310="transform:translateY(10px);opacity:0;" data-500="transform:translateY(0px);opacity:1;">SUR TOULOUSE</h3>
-          <p data-330="transform:translateY(10px);opacity:0;" data-500="transform:translateY(0px);opacity:1;">
-          Il travaille plusieurs styles notamment le style <strong>réaliste</strong> pour lequel il est souvent demandé.<br>
-          Il adore aussi l’univers des <strong>comics</strong>, du <strong>jeu vidéo</strong> et du <strong>dessin</strong> en général et <em>tatoue</em> également beaucoup de pièces ,en <em>newschool</em> et en <em>néo-trad</em>, aux <strong>illustrations de qualité</strong> et au <strong>dessin maîtrisé</strong>.
-          </p>
         </div>        
       </div>
     </section>
     <section>
       <div class="container">
+        <p>
+          Il travaille plusieurs styles notamment le style <strong>réaliste</strong> pour lequel il est souvent demandé.<br>
+          Il adore aussi l’univers des <strong>comics</strong>, du <strong>jeu vidéo</strong> et du <strong>dessin</strong> en général et <em>tatoue</em> également beaucoup de pièces ,en <em>newschool</em> et en <em>néo-trad</em>, aux <strong>illustrations de qualité</strong> et au <strong>dessin maîtrisé</strong>.
+          </p>
         <p><b>Pour aborder vos projets et prendre rendez-vous, veuillez m'envoyer un mail en précisant l'emplacement, les dimensions et l'inspirations en y joignant éventuellement 2 ou 3 photos</b></p>
       </div>
     </section>
