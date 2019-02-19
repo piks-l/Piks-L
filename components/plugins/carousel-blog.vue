@@ -12,12 +12,12 @@
   </svg>    
       </span>
     </div>
-   <div class="carousel-item carousel-item--1">
-      <div class="carousel-item__image"></div>
+   <div v-for="post in posts.slice().reverse().slice(0, 3)" :key="post.date" class="carousel-item carousel-item--1">
+      <div class="carousel-item__image" :style="'background-image=url('+post.couverture+');"></div>
       <div class="carousel-item__info">
         <div class="carousel-item__container">
         <h2 class="carousel-item__subtitle">The white building </h2>
-        <h1 class="carousel-item__title">White building</h1>
+        <h1 class="carousel-item__title">{{ post.title }}</h1>
         <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
         <a href="#" class="carousel-item__btn">Read the article</a>
           </div>
@@ -176,29 +176,6 @@
     line-height: 22px;
     margin-bottom: 35px;
 }
-
-.carousel-item--1 .carousel-item__image{
-  background-image: url('https://images.pexels.com/photos/991012/pexels-photo-991012.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-}
-
-
-.carousel-item--2 .carousel-item__image{
-  background-image: url('https://images.pexels.com/photos/921294/pexels-photo-921294.png?auto=compress&cs=tinysrgb&h=750&w=1260');
-}
-
-.carousel-item--3 .carousel-item__image{
-  background-image: url('https://images.pexels.com/photos/92733/pexels-photo-92733.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
-}
-
-.carousel-item--4 .carousel-item__image{
-  background-image: url('https://images.pexels.com/photos/1008732/pexels-photo-1008732.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
-}
-
-.carousel-item--5 .carousel-item__image{
-  background-image: url('https://images.pexels.com/photos/1029614/pexels-photo-1029614.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-}
-
-
 
 
 .carousel-item__container{
