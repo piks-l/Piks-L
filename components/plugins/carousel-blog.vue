@@ -18,7 +18,6 @@
         <div class="carousel-item__container">
         <h2 class="carousel-item__subtitle">{{ post.date }}</h2>
         <h1 class="carousel-item__title">{{ post.title }}</h1>
-        <p class="carousel-item__description">{{ post.intro }}</p>
         <nuxt-link :to="post._path" class="carousel-item__btn">En savoir plus</nuxt-link>
           </div>
       </div>
@@ -29,10 +28,10 @@
 <script>
   export default {
     data() {
-      const context = require.context('~/content/blog/posts/', false, /\.json$/);
+      const context = require.context('~/content/tattoos/page/', false, /\.json$/);
       const posts = context.keys().map(key => ({
         ...context(key),
-        _path: `/blog/${key.replace('.json', '').replace('./', '')}`
+        _path: `/tattoos/${key.replace('.json', '').replace('./', '')}`
       }));
       return { posts };
     },
