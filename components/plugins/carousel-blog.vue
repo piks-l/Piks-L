@@ -71,7 +71,7 @@
 </script>
 <style>
 .caroublog {
-  height: 350px;
+  height: 350px!important;
 }
 .carousel {
     width: 100%;
