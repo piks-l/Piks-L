@@ -12,53 +12,7 @@
   </svg>    
       </span>
     </div>
-    <div class="carousel-item carousel-item--1">
-      <div class="carousel-item__image"></div>
-      <div class="carousel-item__info">
-        <div class="carousel-item__container">
-        <h2 class="carousel-item__subtitle">The grand moment </h2>
-        <h1 class="carousel-item__title">Le tour</h1>
-        <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-        <a href="#" class="carousel-item__btn">Explore the tour</a>
-          </div>
-      </div>
-    </div>
-    <div class="carousel-item carousel-item--2">
-      <div class="carousel-item__image"></div>
-      <div class="carousel-item__info">
-        <div class="carousel-item__container">
-        <h2 class="carousel-item__subtitle">The big window </h2>
-        <h1 class="carousel-item__title">Minimal window</h1>
-        <p class="carousel-item__description">Clear Glass Window With Brown and White Wooden Frame iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-        <a href="#" class="carousel-item__btn">Read the article</a>
-          </div>
-      </div>
-    </div>
-      <div class="carousel-item carousel-item--3">
-      <div class="carousel-item__image"></div>
-      <div class="carousel-item__info">
-        <div class="carousel-item__container">
-        <h2 class="carousel-item__subtitle">Tropical palms </h2>
-        <h1 class="carousel-item__title">Palms</h1>
-        <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-        <a href="#" class="carousel-item__btn">Explore the palms</a>
-          </div>
-      </div>
-    </div>
-
-     <div class="carousel-item carousel-item--4">
-      <div class="carousel-item__image"></div>
-      <div class="carousel-item__info">
-        <div class="carousel-item__container">
-        <h2 class="carousel-item__subtitle">Beach </h2>
-        <h1 class="carousel-item__title">The beach </h1>
-        <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-        <a href="#" class="carousel-item__btn">Explore the beach</a>
-          </div>
-      </div>
-    </div>
-
-   <div class="carousel-item carousel-item--5">
+   <div class="carousel-item carousel-item--1">
       <div class="carousel-item__image"></div>
       <div class="carousel-item__info">
         <div class="carousel-item__container">
