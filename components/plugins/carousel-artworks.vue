@@ -130,7 +130,7 @@
     background-repeat: no-repeat;
     background-size: cover;
    position:relative;
-  transform: translateX(100%);
+  transform: translateX(-100%);
   transition: 0.6s all ease-in-out;
 }
 
