@@ -1,7 +1,7 @@
 <template>
   <div class="carousel-artworks">
-    <div class="carousel-artworks__nav">
-      <span id="moveLeft-artworks" class="carousel-artworks__arrow">
+    <div class="carousel__nav">
+      <span id="moveLeft-artworks" class="carousel__arrow">
         <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
           <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
         </svg>
