@@ -14,6 +14,7 @@
      </div>
      <h3>ARTWORKS</h3>
      <div v-for="art in arts.slice().reverse().slice(0, 3)" :key="art.date" class="carousel-item-artworks">
+      <div class="carousel-item__image" :style="{ backgroundImage: `url(${art.couverture})` }"></div>
       <div class="carousel-item__info">
         <div class="carousel-item__container">
           <h2 class="carousel-item__subtitle">{{ art.date }}</h2>
