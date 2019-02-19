@@ -46,7 +46,7 @@
     layout: 'default',
     components: {
         influxCarouselblog,
-        influxCarouseltattoo
+        influxCarouseltattoos
     },
     head() {
       return {
