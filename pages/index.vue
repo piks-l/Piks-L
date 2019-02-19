@@ -23,7 +23,7 @@
       <div class="container">
         <h2>Actualités</h2>
       </div>
-      <influx-blog/>
+      <influx-carouselblog class="caroublog"/>
       <div class="container">
           <nuxt-link to="/blog/"><p>Voir les autres actualités !</p></nuxt-link>
       </div>
@@ -33,13 +33,13 @@
 
 <script>
   import $ from 'jquery'
-  // import components
-  import influxBlog from '~/components/blog.vue'
+  // import plugins
+  import influxCarouselblog from '~/components/plugins/carousel-blog.vue'
   // export
   export default {
     layout: 'default',
     components: {
-        influxBlog
+        influxCarouselblog
     },
     head() {
       return {
