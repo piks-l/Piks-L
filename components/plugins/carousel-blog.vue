@@ -13,7 +13,7 @@
       </span>
     </div>
    <div v-for="post in posts.slice().reverse().slice(0, 3)" :key="post.date" class="carousel-item carousel-item--1">
-      <div class="carousel-item__image" :style="{ backgroundImage: `url(${couverture})` }"></div>
+      <div class="carousel-item__image" :style="{ backgroundImage: `url(${post.couverture})` }"></div>
       <div class="carousel-item__info">
         <div class="carousel-item__container">
         <h2 class="carousel-item__subtitle">{{ post.date }}</h2>
