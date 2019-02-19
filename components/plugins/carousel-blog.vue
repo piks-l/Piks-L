@@ -16,10 +16,10 @@
       <div class="carousel-item__image" :style="'background-image=url('+post.couverture+');"></div>
       <div class="carousel-item__info">
         <div class="carousel-item__container">
-        <h2 class="carousel-item__subtitle">The white building </h2>
+        <h2 class="carousel-item__subtitle">{{ post.date }}</h2>
         <h1 class="carousel-item__title">{{ post.title }}</h1>
-        <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-        <a href="#" class="carousel-item__btn">Read the article</a>
+        <p class="carousel-item__description">{{ post.intro }}</p>
+        <nuxt-link :to="post._path" class="carousel-item__btn">En savoir plus</nuxt-link>
           </div>
       </div>
     </div>
