@@ -1,12 +1,12 @@
 <template>
   <div class="carousel-artworks">
     <div class="carousel__nav">
-      <span id="moveLeft-artworks" class="carousel__arrow">
+      <span data-hover id="moveLeft-artworks" class="carousel__arrow">
         <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
           <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
         </svg>
       </span>
-      <span id="moveRight-artworks" class="carousel__arrow" >
+      <span data-hover id="moveRight-artworks" class="carousel__arrow" >
         <svg class="carousel__icon"  width="24" height="24" viewBox="0 0 24 24">
           <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
         </svg>    
@@ -19,7 +19,7 @@
         <div class="carousel-item__container">
           <h2 class="carousel-item__subtitle">{{ art.date }}</h2>
           <h1 class="carousel-item__title">{{ art.title }}</h1>
-          <nuxt-link :to="art._path" class="carousel-item__btn">En savoir plus</nuxt-link>
+          <nuxt-link data-hover :to="art._path" class="carousel-item__btn">En savoir plus</nuxt-link>
         </div>
       </div>
     </div>
@@ -45,7 +45,7 @@
         setSlide(next, currentArtworks);
       });
       $('#moveLeft-artworks').on('click', function(){
-        var prev=currenArtworkst;
+        var prev=currenArtworks;
         currentArtworks = currentArtworks- 1;
         setSlide(prev, currentArtworks);
       });
