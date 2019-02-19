@@ -13,7 +13,7 @@
       </span>
     </div>
    <div v-for="post in posts.slice().reverse().slice(0, 3)" :key="post.date" class="carousel-item carousel-item--1">
-      <div class="carousel-item__image" :style="{ backgroundImage: `url(${post.couverture})` }"></div>
+
       <div class="carousel-item__info">
         <div class="carousel-item__container">
         <h2 class="carousel-item__subtitle">{{ post.date }}</h2>
@@ -21,6 +21,7 @@
         <nuxt-link :to="post._path" class="carousel-item__btn">En savoir plus</nuxt-link>
           </div>
       </div>
+            <div class="carousel-item__image" :style="{ backgroundImage: `url(${post.couverture})` }"></div>
     </div>
 
   </div>
@@ -28,10 +29,10 @@
 <script>
   export default {
     data() {
-      const context = require.context('~/content/tattoos/page/', false, /\.json$/);
+      const context = require.context('~/content/artworks/page/', false, /\.json$/);
       const posts = context.keys().map(key => ({
         ...context(key),
-        _path: `/tattoos/${key.replace('.json', '').replace('./', '')}`
+        _path: `/artworks/${key.replace('.json', '').replace('./', '')}`
       }));
       return { posts };
     },
