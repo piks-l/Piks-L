@@ -119,9 +119,7 @@
 .carousel {
     width: 100%;
     height: 100%;
-    display: flex;
-    max-width: 900px;
-    max-height: 550px;   
+    display: flex;   
     overflow: hidden;
   position: relative;
 }
