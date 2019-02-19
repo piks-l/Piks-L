@@ -107,7 +107,7 @@
   -webkit-justify-content: center;
   -webkit-flex-direction: column;
   
-  order: 1;
+  order: 2;
   left: 0;
   margin: auto;
   padding: 0 40px;
@@ -118,11 +118,11 @@
 .carousel-item__image {
     width: 60%;
     height: 100%;
-    order: 2;
+    order: 1;
     align-self: flex-end;
     flex-basis: 60%;
   
-      -webkit-order: 2;
+      -webkit-order: 1;
     -webkit-align-self: flex-end;
     -webkit-flex-basis: 60%;
   
