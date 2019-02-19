@@ -17,6 +17,7 @@
       <a target="_blank" href="mailto:sebastienoddtattoos@gmail.com"><i class="fas fa-at"></i></a>
       <a target="_blank" href="tel:+33641850394"><i class="fas fa-phone"></i></a>
     </div>
+    <influx-carouselblog/>
     <influx-maps name="greegalerie"/>
     <div class="copyright">
       <p>© <a data-hover href="https://sebastien-odd.tattoo">SEBASTIEN ODD</a> - Tous droits réservés</p>
@@ -26,12 +27,14 @@
 </template>
 
 <script>
+import influxCarouselblog from '~/components/plugins/carousel-blog.vue'
 import influxMaps from '~/components/plugins/maps.vue'
 import influxCursor from '~/components/ui/cursor.vue'
 export default {
   components: {
       influxMaps,
-      influxCursor
+      influxCursor,
+      influxCarouselblog
   }
 }
 </script>
