@@ -5,7 +5,7 @@
         <div class="bloc">
           <img class="font-logo" src="images/uploads/logobombyx.png">
         </div>
-        <div class="bloc biographie-descrition" data-0="transform:translateY(-10px);" data-500="transform:translateY(-10px);">
+        <div class="bloc biographie-descrition" data-500="transform:translateY(0px);opacity:1;" data-500="transform:translateY(100px);opacity:0;">
           <h2 data-250="transform:translateY(10px);opacity:0;" data-500="transform:translateY(0px);opacity:1;">SEBASTIEN ODD</h2>
           <h3 data-280="transform:translateY(10px);opacity:0;" data-500="transform:translateY(0px);opacity:1;">TATOUEUR ON THE ROAD</h3>
           <h3 data-310="transform:translateY(10px);opacity:0;" data-500="transform:translateY(0px);opacity:1;">SUR TOULOUSE</h3>
