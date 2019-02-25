@@ -214,7 +214,7 @@
         imagesLoaded(document.querySelector('.background'), {background: true}, () => document.body.classList.remove('loading'));
         // extra stuff..
         // From http://www.quirksmode.org/js/events_properties.html#position
-        
+        let allowTilt = true;
 
       }
     } // Mounted end
