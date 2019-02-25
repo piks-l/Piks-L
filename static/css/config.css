@@ -85,6 +85,9 @@ h1, h2, h3, h4, h5, h6 {
   section:nth-child(2n-1){
       background:#fff;
   }
+  .blend-mode{
+    mix-blend-mode: hard-light;
+  }
   .page-enter-active, .page-leave-active {
     transition: all .5s ease;
   }
