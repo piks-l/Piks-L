@@ -292,7 +292,7 @@
               }
         }
         let allowTilt = true;
-        const tilt = new TiltFx();
+
       }
     } // Mounted end
   } // Export end 
