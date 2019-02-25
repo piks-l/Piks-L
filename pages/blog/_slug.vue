@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page">
     <article class="post">
       <img class="header" :src="couverture">
       <div class="shadow"></div>
