@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="page">
   <div class="container border">
       <h2>Nos actualités</h2>
   </div>  
