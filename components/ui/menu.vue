@@ -214,26 +214,7 @@
         imagesLoaded(document.querySelector('.background'), {background: true}, () => document.body.classList.remove('loading'));
         // extra stuff..
         // From http://www.quirksmode.org/js/events_properties.html#position
-        // Get the mouse position.
-      	const getMousePos = (e) => {
-              let posx = 0;
-              let posy = 0;
-          		if (!e) e = window.event;
-          		if (e.pageX || e.pageY) 	{
-          			posx = e.pageX;
-          			posy = e.pageY;
-          		}
-          		else if (e.clientX || e.clientY) 	{
-          			posx = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
-          			posy = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
-          		}
-          		return { x : posx, y : posy }
-              };
-              
-              
-              
-        }
-        let allowTilt = true;
+        
 
       }
     } // Mounted end
