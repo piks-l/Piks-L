@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page">
     <div class="container border black">
       <h2>Nous contactez</h2>
     </div>
