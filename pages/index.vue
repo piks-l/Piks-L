@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page">
     <section id="biographie">
       <div class="container">
         <div class="biographie-descrition" data-800="transform:translateY(0px);opacity:1;" data-900="transform:translateY(100px);opacity:0;">
