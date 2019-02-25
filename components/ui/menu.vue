@@ -230,45 +230,7 @@
           		return { x : posx, y : posy }
               };
               
-              // Tilt the image wrap and texts when mouse moving the current slide.
-              tilt(ev) {
-                  if ( !allowTilt ) return;
-                  const mousepos = getMousePos(ev);
-                  const bounds = this.DOM.main.getBoundingClientRect();
-                  // Mouse position relative to the main element (this.DOM.main).
-                  const relmousepos = { 
-                      x : mousepos.x - bounds.left, 
-                      y : mousepos.y - bounds.top
-                  };
-                  this.DOM.layers.forEach((layer, pos) => {
-                      // Move the element from -val to val pixels in both x and y axis.
-                      let val = (pos+1);
-                      let t = {x:[val,-val],y:[val,-val]},
-                          r = {x:[-2,2],y:[-val,val]},
-                          s = {v:[1.03,0.97]};
-                      const transforms = {
-                          translation : {
-                              x: (t.x[1]-t.x[0])/bounds.width*relmousepos.x + t.x[0],
-                              y: (t.y[1]-t.y[0])/bounds.height*relmousepos.y + t.y[0]
-                          },
-                          rotation : {
-                              x: (r.x[1]-r.x[0])/bounds.height*relmousepos.y + r.x[0],
-                              y: (r.y[1]-r.y[0])/bounds.width*relmousepos.x + r.y[0]
-                          },
-                          scale : {
-                              v: (s.v[1]-s.v[0])/bounds.height*relmousepos.y + s.v[0],
-                          }
-                      };
-                      TweenMax.to(layer, 1.5, {
-                          ease: 'Power1.easeOut',
-                          x: transforms.translation.x,
-                          y: transforms.translation.y,
-                          rotationX: transforms.rotation.x,
-                          rotationY: transforms.rotation.y,
-                          scale: transforms.scale.v,
-                      });
-                  });
-              }
+              
               // Scale up all the layers.
               zoom() {
                   TweenMax.staggerTo( this.DOM.layers, 1.5, {
