@@ -4,7 +4,7 @@
       <video autoplay muted loop id="animation">
          <source src="https://www.influx-agence.fr/cms/sebastienodd-animation.mp4" type="video/mp4">
       </video>
-      <div class="background" style="background-image: url(https://influx-002.netlify.com/images/uploads/00000000050.png)"></div>
+      <div class="backgrounds" style="background-image: url(https://influx-002.netlify.com/images/uploads/00000000050.png)"></div>
     </div>
     <div id="mouse_body">
       <div id="mouse_wheel"></div>
@@ -101,7 +101,7 @@
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
   }
-   .background {
+   .backgrounds {
       -webkit-perspective: 1000px;
       perspective: 1000px;
       position: relative !important;
