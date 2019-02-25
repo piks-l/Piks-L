@@ -4,7 +4,7 @@
       <video autoplay muted loop id="animation">
          <source src="https://www.influx-agence.fr/cms/sebastienodd-animation.mp4" type="video/mp4">
       </video>
-      <div class="backgrounds" style="background-image: url(https://influx-002.netlify.com/images/uploads/00000000050.png)"></div>
+      <div class="logo" style="background-image: url(https://influx-002.netlify.com/images/uploads/00000000050.png)"></div>
     </div>
     <div id="mouse_body">
       <div id="mouse_wheel"></div>
@@ -80,9 +80,9 @@
     opacity:.5;
   }
   .logo {
-      height: 100vh;
+      height: 20vh;
       left: 50%;
-      position: fixed;
+      position: absolute;
       top: 50%;
       -webkit-transform: translateX(-50%) translateY(-50%);
       transform: translateX(-50%) translateY(-50%);
@@ -101,29 +101,7 @@
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
   }
-   .backgrounds {
-      -webkit-perspective: 1000px;
-      perspective: 1000px;
-      position: relative !important;
-      opacity: 1 !important;
-  }
-  .background,
-  .background__copy {
-      position: fixed;
-      width: 100%;
-      height: 600px;
-      top: 0;
-      left: 0;
-      background-image: url(https://influx-002.netlify.com/images/uploads/logobombyx.png);
-      background-position: 50% 0%;
-      background-size: contain;
-      z-index: 1;
-      background-repeat: no-repeat;
-  }
-  .background__copy {
-      opacity: 0.3;
-  }
-  
+
 .items {
   transition: all 0.4s ease;
 }
