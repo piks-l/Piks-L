@@ -88,6 +88,9 @@ h1, h2, h3, h4, h5, h6 {
   .blend-mode{
     mix-blend-mode: hard-light;
   }
+  .blend-mode-2{
+    mix-blend-mode: hard-light;
+  }
   .page-enter-active, .page-leave-active {
     transition: all .5s ease;
   }
