@@ -9,7 +9,7 @@
         </div>        
       </div>
     </section>
-    <section>
+    <section class="blend-mode">
       <div class="container">
         <p>
           Il travaille plusieurs styles notamment le style <strong>réaliste</strong> pour lequel il est souvent demandé.<br>
