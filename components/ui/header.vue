@@ -23,6 +23,11 @@
   width: 23px;
    /* to center in browser */
   margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translatex(-50%);
+  transform: translatex(-50%);
 }
 
 #mouse_wheel {
