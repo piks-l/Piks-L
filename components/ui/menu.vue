@@ -229,27 +229,7 @@
           		}
           		return { x : posx, y : posy }
               };
-              // Main image  tilt effect.
-              class TiltFx {
-                  constructor() {
-                      this.DOM = {main: document.querySelector('.background')};
-                      // Number of layers (how many repeated image elements)
-                      this.layersTotal = 4;
-                      this.layout();
-                      this.initEvents();
-                  }
-                  layout() {
-                      let inner = '';
-                      for (let i = 0; i <= this.layersTotal-1; ++i) {
-                          inner +=  '<div class="background__copy" style="background-image: url(https://influx-002.netlify.com/images/uploads/00000000050.png)"></div>';
-                      }
-                      this.DOM.main.innerHTML = inner;
-                      this.DOM.layers = Array.from(this.DOM.main.querySelectorAll('.background__copy'));
-                  }
-                  initEvents() {
-                      this.mousemoveFn = ev => requestAnimationFrame(() => this.tilt(ev));
-                      document.body.addEventListener('mousemove', this.mousemoveFn);
-                  }
+              
               // Tilt the image wrap and texts when mouse moving the current slide.
               tilt(ev) {
                   if ( !allowTilt ) return;
