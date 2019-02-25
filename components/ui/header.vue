@@ -66,7 +66,7 @@
       transition:1s all ease;
   }
   .header{
-    position: fixed;
+    position: relative;
     height:80vh;
     width:100%;
     overflow: hidden;
@@ -89,7 +89,7 @@
       transform: translateX(-50%) translateY(-50%);
   }
   .center-logo{
-      position: relative;
+      position: fixed;
       width: 100%;
       height: 100%;
   }
