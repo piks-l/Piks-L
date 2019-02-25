@@ -87,7 +87,6 @@
               this.DOM.menuCtrl.addEventListener('click', () => this.close());
               this.DOM.openCtrl.addEventListener('mouseenter', () => {
                   allowTilt = false;
-                  tilt.reset()
               });
               this.DOM.openCtrl.addEventListener('mouseleave', () => {
                   allowTilt = true;
@@ -210,10 +209,6 @@
         }
     	  // Initialize the Menu.
         const menu = new Menu(document.querySelector('nav.menu'));
-        // Preload images.
-        imagesLoaded(document.querySelector('.background'), {background: true}, () => document.body.classList.remove('loading'));
-        // extra stuff..
-        // From http://www.quirksmode.org/js/events_properties.html#position
         let allowTilt = true;
 
       }
