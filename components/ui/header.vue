@@ -1,7 +1,10 @@
 <template>
   <header class="header">
     <div class="center-logo">
-      <div class="background" style="background-image: url(https://influx-002.netlify.com/images/uploads/logobombyx.png)"></div>
+      <video autoplay muted loop id="animation">
+         <source src="https://www.influx-agence.fr/cms/sebastienodd-animation.mp4" type="video/mp4">
+      </video>
+      <div class="background" style="background-image: url(https://influx-002.netlify.com/images/uploads/00000000050.png)"></div>
     </div>
     <div id="mouse_body">
       <div id="mouse_wheel"></div>
