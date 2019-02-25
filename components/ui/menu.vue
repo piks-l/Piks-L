@@ -231,27 +231,7 @@
               };
               
               
-              // Scale up all the layers.
-              zoom() {
-                  TweenMax.staggerTo( this.DOM.layers, 1.5, {
-                      ease: 'Expo.easeOut',
-                      x: 0,
-                      y: 0,
-                      rotationX: 0,
-                      rotationY: 0,
-                      scale: 1.1,
-                  }, 0.04);
-              }
-              reset() {
-                  TweenMax.staggerTo( this.DOM.layers, 1.5, {
-                      ease: 'Expo.easeOut',
-                      x: 0,
-                      y: 0,
-                      rotationX: 0,
-                      rotationY: 0,
-                      scale: 1,
-                  }, 0.07);
-              }
+              
         }
         let allowTilt = true;
 
