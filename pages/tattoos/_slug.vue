@@ -1,5 +1,5 @@
 <template>
-  <div class="artist">
+  <div class="page artist">
     <div :class="'intro artist-'+title">
       <div class="header">
           <h2>{{ title }}</h2>    
