@@ -87,11 +87,13 @@
       top: 50%;
       -webkit-transform: translateX(-50%) translateY(-50%);
       transform: translateX(-50%) translateY(-50%);
+      max-width: 100%;
+      max-height: 100%;
   }
   .center-logo{
       position: fixed;
       width: 100%;
-      height: 100%;
+      height: 80vh;
   }
 
 .items {
