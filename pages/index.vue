@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <section id="biographie">
+    <section class="blend-mode" id="biographie">
       <div class="container">
         <div class="biographie-descrition" data-800="transform:translateY(0px);opacity:1;" data-900="transform:translateY(100px);opacity:0;">
           <h2 data-250="transform:translateY(10px);opacity:0;" data-500="transform:translateY(0px);opacity:1;">SEBASTIEN ODD</h2>
@@ -9,7 +9,7 @@
         </div>        
       </div>
     </section>
-    <section class="blend-mode">
+    <section class="blend-mode-2">
       <div class="container">
         <p>
           Il travaille plusieurs styles notamment le style <strong>réaliste</strong> pour lequel il est souvent demandé.<br>
