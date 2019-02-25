@@ -66,11 +66,12 @@
       transition:1s all ease;
   }
   .header{
-    position: relative;
+    position: fixed;
     height:80vh;
     width:100%;
     overflow: hidden;
     transition:1s all ease;
+    z-index:0;
   }
   .header.active{
     height:20vh;
@@ -80,7 +81,7 @@
     opacity:.5;
   }
   .logo {
-      height: 20vh;
+      height: auto;
       left: 50%;
       position: absolute;
       top: 50%;
@@ -91,15 +92,6 @@
       position: relative;
       width: 100%;
       height: 100%;
-  }
-  .center-logo img {
-      max-width: 100%;
-      max-height: 100%;
-      top: 50%;
-      left: 50%;
-      position: absolute;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
   }
 
 .items {
