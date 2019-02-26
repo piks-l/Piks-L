@@ -2,25 +2,25 @@
   <div class="carousel-tattoos">
     <div class="carousel__nav">
      <span id="moveLeft" class="carousel__arrow">
-          <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
-      <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
-  </svg>
+        <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+        </svg>
       </span>
       <span id="moveRight" class="carousel__arrow" >
         <svg class="carousel__icon"  width="24" height="24" viewBox="0 0 24 24">
-    <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
-  </svg>    
+          <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+        </svg>    
       </span>
     </div>
    <div v-for="post in posts.slice().reverse().slice(0, 3)" :key="post.date" class="carousel-item carousel-item--1">
-      <div class="carousel-item__image" :style="{ backgroundImage: `url(${post.couverture})` }"></div>
       <div class="carousel-item__info">
         <div class="carousel-item__container">
-        <h2 class="carousel-item__subtitle">{{ post.date }}</h2>
-        <h1 class="carousel-item__title">{{ post.title }}</h1>
-        <nuxt-link :to="post._path" class="carousel-item__btn">En savoir plus</nuxt-link>
-          </div>
+          <h2 class="carousel-item__subtitle">{{ post.date }}</h2>
+          <h1 class="carousel-item__title">{{ post.title }}</h1>
+          <nuxt-link :to="post._path" class="carousel-item__btn">En savoir plus</nuxt-link>
+        </div>
       </div>
+      <div class="carousel-item__image" :style="{ backgroundImage: `url(${post.couverture})` }"></div>
     </div>
 
   </div>
