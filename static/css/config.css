@@ -501,11 +501,11 @@ h1, h2, h3, h4, h5, h6 {
       margin-bottom: 35px;
   }
   .carousel-item__container {
-      border-right: 2px solid #cecece;
+      box-shadow: 0 0 0 40px #fff, 4px 0 0 38px #cecece;
   }
   .carousel-tattoos .carousel-item__container {
       border-right: none;
-      border-left: 2px solid #cecece;
+      box-shadow: 0 0 0 40px #fff, -4px 0 0 38px #cecece;
   }
   .carousel-item__btn {
       width: 35%;
