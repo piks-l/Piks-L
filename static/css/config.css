@@ -439,13 +439,16 @@ h1, h2, h3, h4, h5, h6 {
       padding: 0 40px;
       width: 40%;
   }
+  .carousel-tattoos .carousel-item__info {
+      order: 1;
+  }
   .carousel-item__image {
       width: 60%;
-      height: 100%;
-      order: 1;
+      height: 100%;      
       align-self: flex-end;
       flex-basis: 60%;
-      -webkit-order: 1;
+      order: 1;
+      -webkit-order: 1;    
       -webkit-align-self: flex-end;
       -webkit-flex-basis: 60%;
       background-position: center;
@@ -457,6 +460,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .carousel-tattoos .carousel-item__image {
       transform: translateX(100%);
+      order: 2;
   }
   .carousel-item__subtitle {
       font-family: 'Open Sans', sans-serif;
