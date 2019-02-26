@@ -536,7 +536,9 @@ h1, h2, h3, h4, h5, h6 {
       left:5%;  
   }
   .carousel-artworks .carousel__nav {
-      left:95%; 
+      right:5%; 
+      -webkit-transform: translate(50%, -50%);
+      transform: translate(50%, -50%);
   }
   .carousel__icon {
       display: inline-block;
