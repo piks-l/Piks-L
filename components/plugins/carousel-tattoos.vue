@@ -1,5 +1,5 @@
 <template>
-  <div class="carousel">
+  <div class="carousel-tattoos">
     <div class="carousel__nav">
      <span id="moveLeft" class="carousel__arrow">
           <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
@@ -36,15 +36,15 @@
       return { posts };
     },
     mounted: function () {
-      $('.carousel-item').eq(0).addClass('active');
-      var total = $('.carousel-item').length;
+      $('.carousel-tattoos .carousel-item').eq(0).addClass('active');
+      var total = $('.carousel-tattoos .carousel-item').length;
       var current = 0;
-      $('#moveRight').on('click', function(){
+      $('.carousel-tattoos #moveRight').on('click', function(){
         var next=current;
         current= current+1;
         setSlide(next, current);
       });
-      $('#moveLeft').on('click', function(){
+      $('.carousel-tattoos #moveLeft').on('click', function(){
         var prev=current;
         current = current- 1;
         setSlide(prev, current);
@@ -59,8 +59,8 @@
           slide=total - 1;
           current=total - 1;
         }
-       $('.carousel-item').eq(prev).removeClass('active');
-       $('.carousel-item').eq(slide).addClass('active');
+       $('.carousel-tattoos .carousel-item').eq(prev).removeClass('active');
+       $('.carousel-tattoos .carousel-item').eq(slide).addClass('active');
         setTimeout(function(){},800);
         console.log('current '+current);
         console.log('prev '+prev);
