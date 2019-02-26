@@ -400,10 +400,7 @@ h1, h2, h3, h4, h5, h6 {
   /*Carousel*/
   .caroublog {
       height: 350px!important;
-  }
-  .carousel-artworks {
       width: 100%;
-      height: 100%;
       display: flex;   
       overflow: hidden;
       position: relative;
