@@ -1,10 +1,11 @@
 <template>
   <header class="header">
     <div class="center-logo">
-      <video autoplay muted loop id="animation" data-0="opacity:1;" data-800="opacity:.5;">
+      <video autoplay muted loop id="animation">
          <source src="https://www.influx-agence.fr/cms/sebastienodd-animation.mp4" type="video/mp4">
       </video>
       <img class="logo" src="https://influx-002.netlify.com/images/uploads/00000000050.png" alt="">
+      <div class="smog" data-0="opacity:1;" data-750="opacity:.5;"></div>
     </div>
     <div id="mouse_body">
       <div id="mouse_wheel"></div>
@@ -28,6 +29,14 @@
   left: 50%;
   -webkit-transform: translatex(-50%);
   transform: translatex(-50%);
+}
+.smog{
+    background:rgba(0,0,0,.5);
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
 }
 
 #mouse_wheel {
