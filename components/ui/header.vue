@@ -1,5 +1,5 @@
 <template>
-  <header class="header" data-560="background:#fff;" data-800="background:#000;">
+  <header class="header" data-560="background:#ffffff;" data-800="background:#000000;">
     <div class="center-logo">
       <video autoplay muted loop id="animation" data-560="opacity:1;" data-800="opacity:.5;">
          <source src="https://www.influx-agence.fr/cms/sebastienodd-animation.mp4" type="video/mp4">
