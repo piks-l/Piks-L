@@ -408,7 +408,7 @@ h1, h2, h3, h4, h5, h6 {
       overflow: hidden;
       position: relative;
   }
-  .carousel-item-artworks {
+  .carousel-item {
       visibility:visible;
       display: flex;
       width: 100%;
@@ -425,7 +425,7 @@ h1, h2, h3, h4, h5, h6 {
       z-index: 0;
       transition: 0.6s all linear;
   }
-  .carousel-artworks .carousel-item__info {
+  .carousel-item__info {
       height: 100%;
       display: flex;
       justify-content: center;
@@ -439,7 +439,7 @@ h1, h2, h3, h4, h5, h6 {
       padding: 0 40px;
       width: 40%;
   }
-  .carousel-artworks .carousel-item__image {
+  .carousel-item__image {
       width: 60%;
       height: 100%;
       order: 1;
