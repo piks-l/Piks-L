@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
       background:#fff;
   }
   .blend-mode{
-    mix-blend-mode: hard-light;
+    mix-blend-mode: lighten;
   }
   .blend-mode-2{
     mix-blend-mode: hard-light;
@@ -124,6 +124,9 @@ h1, h2, h3, h4, h5, h6 {
   }
   .underline:hover {
     background-size: 100% 100%;
+  }
+  .biographie-descrition {
+      text-align: center;
   }
   @media only screen and (min-width:960px) and (max-width:1264px){
   
