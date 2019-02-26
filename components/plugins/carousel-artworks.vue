@@ -1,19 +1,19 @@
 <template>
   <div class="carousel-artworks">
     <div class="carousel__nav">
-      <span data-hover id="moveLeft-artworks" class="carousel__arrow">
+      <span data-hover id="moveLeft" class="carousel__arrow">
         <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
           <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
         </svg>
       </span>
-      <span data-hover id="moveRight-artworks" class="carousel__arrow" >
+      <span data-hover id="moveRight" class="carousel__arrow" >
         <svg class="carousel__icon"  width="24" height="24" viewBox="0 0 24 24">
           <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
         </svg>    
       </span>
      </div>
      <h3>ARTWORKS</h3>
-     <div v-for="art in arts.slice(0, 3)" :key="art.date" class="carousel-item-artworks">
+     <div v-for="art in arts.slice(0, 3)" :key="art.date" class="carousel-item">
       <div class="carousel-item__image" :style="{ backgroundImage: `url(${art.couverture})` }"></div>
       <div class="carousel-item__info">
         <div class="carousel-item__container">
@@ -37,15 +37,15 @@
       return { arts };
     },
     mounted: function () {
-      $('.carousel-item-artworks').eq(0).addClass('active');
-      var total = $('.carousel-item-artworks').length;
+      $('.carousel-artworks .carousel-item').eq(0).addClass('active');
+      var total = $('.carousel-artworks .carousel-item').length;
       var currentArtworks = 0;
-      $('#moveRight-artworks').on('click', function(){
+      $('.carousel-artworks #moveRight').on('click', function(){
         var next=currentArtworks;
         currentArtworks= currentArtworks+1;
         setSlide(next, currentArtworks);
       });
-      $('#moveLeft-artworks').on('click', function(){
+      $('.carousel-artworks #moveLeft').on('click', function(){
         var prev=currenArtworks;
         currentArtworks = currentArtworks- 1;
         setSlide(prev, currentArtworks);
@@ -60,11 +60,11 @@
           slide=total - 1;
           currentArtworks=total - 1;
         }
-       $('.carousel-item-artworks').eq(prev).removeClass('active');
-       $('.carousel-item-artworks').eq(slide).addClass('active');
-        setTimeout(function(){},800);
-        console.log('current '+currentArtworks);
-        console.log('prev '+prev);
+       $('.carousel-artworks .carousel-item').eq(prev).removeClass('active');
+       $('.carousel-artworks .carousel-item').eq(slide).addClass('active');
+          setTimeout(function(){},800);
+          console.log('current '+currentArtworks);
+          console.log('prev '+prev);
       }
     }
   };
