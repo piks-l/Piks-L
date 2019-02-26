@@ -46,7 +46,7 @@
         setSlide(next, currentArtworks);
       });
       $('.carousel-artworks #moveLeft').on('click', function(){
-        var prev=currenArtworks;
+        var prev=currentArtworks;
         currentArtworks = currentArtworks- 1;
         setSlide(prev, currentArtworks);
       });
