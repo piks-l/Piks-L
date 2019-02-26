@@ -86,7 +86,6 @@
     overflow: hidden;
     transition:1s all ease;
     z-index:0;
-    background:#000000;
   }
   .header.active{
     height:20vh;
