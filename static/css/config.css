@@ -422,6 +422,9 @@ h1, h2, h3, h4, h5, h6 {
       z-index: 0;
       transition: 0.6s all linear;
   }
+  .carousel-tattoos .carousel-item {
+      left: 10%;
+  }
   .carousel-item__info {
       height: 100%;
       display: flex;
@@ -511,10 +514,17 @@ h1, h2, h3, h4, h5, h6 {
   }
   .carousel__nav {
       position: absolute;
-      right: 0;
       z-index: 2;
       background-color: #fff;
-      bottom: 0;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  }
+  .carousel-tattos .carousel__nav {
+      left:5%;  
+  }
+  .carousel-artworks .carousel__nav {
+      right:5%;  
   }
   .carousel__icon {
       display: inline-block;
