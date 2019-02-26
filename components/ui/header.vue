@@ -5,7 +5,7 @@
          <source src="https://www.influx-agence.fr/cms/sebastienodd-animation.mp4" type="video/mp4">
       </video>
       <img class="logo" src="https://influx-002.netlify.com/images/uploads/00000000050.png" alt="">
-      <div class="smog" data-0="opacity:1;" data-750="opacity:.5;"></div>
+      <div class="smog" data-0="opacity:0;" data-750="opacity:.5;"></div>
     </div>
     <div id="mouse_body">
       <div id="mouse_wheel"></div>
