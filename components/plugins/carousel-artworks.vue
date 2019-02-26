@@ -19,7 +19,7 @@
         <div class="carousel-item__container">
           <h2 class="carousel-item__subtitle">{{ art.date }}</h2>
           <h1 class="carousel-item__title">{{ art.title }}</h1>
-                <p class="carousel-item__description">{{ art.description }}</p>
+          <p class="carousel-item__description">{{ art.description }}</p>
           <nuxt-link data-hover :to="art._path" class="carousel-item__btn">En savoir plus</nuxt-link>
         </div>
       </div>
