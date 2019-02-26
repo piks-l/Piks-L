@@ -19,7 +19,7 @@
       </div>
     </section>
         
-    <section>
+    <section class="no-padding">
       <influx-carouselartworks class="caroublog"/>
       <influx-carouseltattoos class="caroublog"/>
     </section>
