@@ -3,9 +3,8 @@
     <section class="blend-mode" id="biographie">
       <div class="container">
         <div class="biographie-descrition" data-800="transform:translateY(0px);opacity:1;" data-900="position:sticky;">
-          <h2 data-250="transform:translateY(10px);opacity:0;" data-500="transform:translateY(0px);opacity:.9;">SEBASTIEN ODD</h2>
-          <h3 data-280="transform:translateY(10px);opacity:0;" data-500="transform:translateY(0px);opacity:.9;">TATOUEUR ON THE ROAD</h3>
-          <h3 data-310="transform:translateY(10px);opacity:0;" data-500="transform:translateY(0px);opacity:.9;">SUR TOULOUSE</h3>
+          <h2 data-250="transform:translateY(0px);opacity:.9;" data-500="transform:translateY(0px);opacity:.9;">SEBASTIEN ODD</h2>
+          <h3 data-280="transform:translateY(0px);opacity:.9;" data-500="transform:translateY(0px);opacity:.9;">TATOUEUR ON THE ROAD SUR TOULOUSE</h3>
         </div>        
       </div>
     </section>
