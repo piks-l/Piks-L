@@ -5,22 +5,9 @@ media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 display_url: https://www.sebastien-odd.tattoo/
 collections:
-  - name: "artworks"
-    label: "Artworks" 
-    folder: "content/artworks/page"
-    create: true
-    slug: "{{slug}}"
-    format: 'json'
-    fields:
-      - {label: "Image de couverture", name: "couverture", widget: "image", required: true}
-      - {label: "Nom", name: "title", widget: "string", tagname: "h1", required: true}
-      - {label: "Description", name: "description", widget: "markdown", required: true}
-      - {label: "Galerie", name: "galerie", widget: "list", field: {label: Image, name: image, widget: image}}
-      - {label: "Date de publication", name: "date", widget: "date", format: "DD/MM/YYYY"}
-      - {label: "Miniature", name: "thumbnail", widget: "image", required: true}
-  - name: "tattoos"
-    label: "Tattoos" 
-    folder: "content/tattoos/page"
+  - name: "artistes"
+    label: "Artistes" 
+    folder: "content/artistes/page"
     create: true
     slug: "{{slug}}"
     format: 'json'
