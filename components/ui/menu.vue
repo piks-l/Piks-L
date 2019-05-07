@@ -9,15 +9,15 @@
 				<div class="menu__item menu__item--1" data-direction="bt">
 					<div class="menu__item-inner">
 						<div class="mainmenu">
-              <nuxt-link data-hover class="mainmenu__item" to="/">Accueil</nuxt-link>
-              <nuxt-link data-hover class="mainmenu__item" to="/">Biographie</nuxt-link>
-              <nuxt-link data-hover class="mainmenu__item" to="/blog/">Actualités</nuxt-link>
-							<nuxt-link data-hover class="mainmenu__item" to="/artworks/">Artworks</nuxt-link>
-							<nuxt-link data-hover class="mainmenu__item shake" to="/tattoos/">Tattoos</nuxt-link>
+              <nuxt-link data-hover class="mainmenu__item" to="/">Programmation</nuxt-link>
+              <nuxt-link data-hover class="mainmenu__item" to="/">Billeterie</nuxt-link>
+              <nuxt-link data-hover class="mainmenu__item" to="/blog/">Infos pratique</nuxt-link>
+							<nuxt-link data-hover class="mainmenu__item" to="/artworks/">Partenaires</nuxt-link>
+							<nuxt-link data-hover class="mainmenu__item shake" to="/tattoos/">espace press</nuxt-link>
 							<nuxt-link data-hover class="mainmenu__item" to="/contact/">Contact</nuxt-link>
 						</div>
 						<p class="label label--topleft label--vert-mirror">menu</p>
-						<p class="label label--bottomright label--vert">www.sebastien-odd.tattoo<strong>{{this.$route.path}}</strong></p>
+						<p class="label label--bottomright label--vert">www.electrobotikinvasion.com<strong>{{this.$route.path}}</strong></p>
 					</div>
 				</div>
 				<div class="menu__item menu__item--2" data-direction="lr">
@@ -30,17 +30,16 @@
 				<div class="menu__item menu__item--3" data-direction="bt">
 					<div class="menu__item-inner">
 						<div class="sidemenu">
-							<a target="_blank" href="https://www.facebook.com/sebastienoddtattoo/" class="sidemenu__item"><span class="sidemenu__item-inner"><i class="fab fa-facebook-f"></i>Facebook</span></a>
-							<a target="_blank" href="https://twitter.com/sebastienodd" class="sidemenu__item"><span class="sidemenu__item-inner"><i class="fab fa-twitter"></i>Twitter</span></a>
-							<a target="_blank" href="https://www.instagram.com/sebastien_odd_tattoo/" class="sidemenu__item"><span class="sidemenu__item-inner"><i class="fab fa-instagram"></i>Instagram</span></a>
-							<a target="_blank" href="https://www.youtube.com/channel/UCH8hl7gSMTr4TcBSIF8PiwA" class="sidemenu__item"><span class="sidemenu__item-inner"><i class="fab fa-youtube"></i>Youtube</span></a>
+							<a target="_blank" href="https://fr-fr.facebook.com/ElectrobotikInvasion" class="sidemenu__item"><span class="sidemenu__item-inner"><i class="fab fa-facebook-f"></i>Facebook</span></a>
+							<a target="_blank" href="https://www.instagram.com/electrobotik_invasion/" class="sidemenu__item"><span class="sidemenu__item-inner"><i class="fab fa-instagram"></i>Instagram</span></a>
+							<a target="_blank" href="https://www.youtube.com/watch?v=R6pwv67zQtU" class="sidemenu__item"><span class="sidemenu__item-inner"><i class="fab fa-youtube"></i>Youtube</span></a>
 						</div>
 					</div>
 				</div>
 				<div class="menu__item menu__item--4" data-direction="rl">
 					<div class="menu__item-inner">
-						<p class="label label--topleft label--line">Me rejoindre</p>
-						<a target="_blank" data-hover href="https://fr-fr.facebook.com/greengalerieexpo/" class="menu__item-link">Tatoueur on the road !</a>
+						<p class="label label--topleft label--line">Billeterie</p>
+						<a target="_blank" data-hover href="#" class="menu__item-link">Obtenir mon bille !</a>
 					</div>
 				</div>
 				<div class="menu__item menu__item--5" data-direction="tb">
