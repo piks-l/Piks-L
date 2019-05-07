@@ -19,8 +19,7 @@
     </section>
         
     <section class="no-padding">
-      <influx-carouselartworks class="caroublog"/>
-      <influx-carouseltattoos class="caroublog"/>
+      <influx-carouselartistes class="caroublog"/>
     </section>
     
     <section>
@@ -37,14 +36,12 @@
 <script>
   import $ from 'jquery'
   // import plugins
-  import influxCarouselartworks from '~/components/plugins/carousel-artworks.vue'
-  import influxCarouseltattoos from '~/components/plugins/carousel-tattoos.vue'
+  import influxCarouselartistes from '~/components/plugins/carousel-artistes.vue'
   // export
   export default {
     layout: 'default',
     components: {
-        influxCarouselartworks,
-        influxCarouseltattoos
+        influxCarouselartistes
     },
     head() {
       return {
