@@ -29,8 +29,7 @@ import influxMaps from '~/components/plugins/maps.vue'
 import influxCursor from '~/components/ui/cursor.vue'
 export default {
   components: {
-      influxMaps,
-      influxCursor
+      influxMaps
   }
 }
 </script>
