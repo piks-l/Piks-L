@@ -29,12 +29,12 @@
 <script>
   export default {
     data() {
-      const context = require.context('~/content/tattoos/page/', false, /\.json$/);
+      const context = require.context('~/content/artistes/page/', false, /\.json$/);
       const posts = context.keys().map(key => ({
         ...context(key),
-        _path: `/tattoos/${key.replace('.json', '').replace('./', '')}`
+        _path: `/artistes/${key.replace('.json', '').replace('./', '')}`
       }));
-      return { posts };
+      return { artistes };
     },
     mounted: function () {
       $('.carousel-tattoos .carousel-item').eq(0).addClass('active');
