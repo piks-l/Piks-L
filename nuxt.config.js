@@ -8,13 +8,13 @@ var dynamicRoutes = getDynamicPaths({
 });
 module.exports = {
   head: {
-    title: 'Je suis le titre du site',
+    title: 'Electrobotik Invasion - le 2 & 3 Août 2019',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
-      { hid: 'description', name: 'description', content: 'Je suis la meta description' },
-      { 'property': 'og:title', 'content': 'Je suis le titre facebook', 'vmid': 'og:title' },
-      { 'property': 'og:description', 'content': 'Je suis la description facebook' },
+      { hid: 'description', name: 'description', content: 'Electrobotik Invasion Festival, le 2 & 3 Août 2019, Circuit Paul Ricard - Le Castelet (83).' },
+      { 'property': 'og:title', 'content': 'Electrobotik Invasion - le 2 & 3 Août 2019', 'vmid': 'og:title' },
+      { 'property': 'og:description', 'content': 'Electrobotik Invasion Festival, le 2 & 3 Août 2019, Circuit Paul Ricard - Le Castelet (83).' },
       { 'property': 'og:image', 'content': 'images/uploads/link_share.jpg', 'vmid': 'og:image' }
     ],
     link: [
