@@ -8,13 +8,13 @@ var dynamicRoutes = getDynamicPaths({
 });
 module.exports = {
   head: {
-    title: 'SEBASTIEN ODD',
+    title: 'Je suis le titre du site',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
-      { hid: 'description', name: 'description', content: 'Sébastien Odd est tatoueur chez Artcore Tattoos à Toulouse. Il travaille le tatouage réaliste, le newschool, le néo-trad et l’illustration.' },
-      { 'property': 'og:title', 'content': 'SEBASTIEN ODD', 'vmid': 'og:title' },
-      { 'property': 'og:description', 'content': 'Sébastien Odd est tatoueur chez Artcore Tattoos à Toulouse. Il travaille le tatouage réaliste, le newschool, le néo-trad et l’illustration.' },
+      { hid: 'description', name: 'description', content: 'Je suis la meta description' },
+      { 'property': 'og:title', 'content': 'Je suis le titre facebook', 'vmid': 'og:title' },
+      { 'property': 'og:description', 'content': 'Je suis la description facebook' },
       { 'property': 'og:image', 'content': 'images/uploads/link_share.jpg', 'vmid': 'og:image' }
     ],
     link: [
