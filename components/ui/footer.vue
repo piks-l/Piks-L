@@ -21,7 +21,6 @@
     <div class="copyright">
       <p>© <a data-hover href="https://sebastien-odd.tattoo">SEBASTIEN ODD</a> - Tous droits réservés</p>
     </div>
-    <influx-cursor/>
   </footer>
 </template>
 
