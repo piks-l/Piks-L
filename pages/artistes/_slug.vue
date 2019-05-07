@@ -6,14 +6,6 @@
           <vue-markdown>{{description}}</vue-markdown>
       </div>
     </div>
-    <div class="portfolio">
-      <div class="work" v-for="(img, i) in galerie.slice().reverse()" :key="galerie.i">
-          <div class="center" >
-            <img class="fontblur" v-lazy="img">
-            <img class="artist-img" v-lazy="img">
-          </div>  
-      </div>
-    </div>
     <div class="full-width">
         <div class="container">
             <nuxt-link to="/tattoos/"><p>Voir les autres tattoos.</p></nuxt-link>
