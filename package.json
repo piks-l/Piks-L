@@ -1,8 +1,8 @@
 {
-  "name": "influx",
+  "name": "Piks-L",
   "version": "1.0.0",
-  "description": "Nuxt.js + Netlify CMS project",
-  "author": "",
+  "description": "Template par Piks-L",
+  "author": "IAMSAILOR - ZYMETH - PUXIAN",
   "private": true,
   "scripts": {
     "dev": "nuxt",
