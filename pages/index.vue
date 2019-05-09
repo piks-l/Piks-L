@@ -2,54 +2,41 @@
   <div class="page">
     <section class="blend-mode" id="biographie">
       <div class="container">
-<div>
+        <div>
 
-<div id="filters">
-  <input type="checkbox" name="red" value=".red" id="red"><label for="red">red</label>
-  <input type="checkbox" name="blue" value=".blue" id="blue"><label for="blue">blue</label>
-  <input type="checkbox" name="green" value=".green" id="green"><label for="green">green</label>
-  <input type="checkbox" name="yellow" value=".yellow" id="yellow"><label for="yellow">yellow</label>
-</div>
+        <div id="filters">
+          <input type="checkbox" name="red" value=".red" id="red"><label for="red">red</label>
+          <input type="checkbox" name="blue" value=".blue" id="blue"><label for="blue">blue</label>
+          <input type="checkbox" name="green" value=".green" id="green"><label for="green">green</label>
+          <input type="checkbox" name="yellow" value=".yellow" id="yellow"><label for="yellow">yellow</label>
+        </div>
 
-<p><button id="shuffle">Shuffle</button></p>
+        <p><button id="shuffle">Shuffle</button></p>
 
-<div id="container">
-  <div class="item red"></div>
-  <div class="item blue"></div>
-  <div class="item green"></div>
-  <div class="item yellow"></div>
-  <div class="item red"></div>
-  <div class="item blue"></div>
-  <div class="item green"></div>
-  <div class="item yellow"></div>
-  <div class="item red"></div>
-  <div class="item blue"></div>
-  <div class="item green"></div>
-  <div class="item yellow"></div>
-  <div class="item red"></div>
-  <div class="item blue"></div>
-  <div class="item green"></div>
-  <div class="item yellow"></div>
-  <div class="item red"></div>
-  <div class="item blue"></div>
-  <div class="item green"></div>
-  <div class="item yellow"></div>
-</div>
-  
-</div>
+        <div id="container">
+          <div class="item red"></div>
+          <div class="item blue"></div>
+          <div class="item green"></div>
+          <div class="item yellow"></div>
+          <div class="item red"></div>
+          <div class="item blue"></div>
+          <div class="item green"></div>
+          <div class="item yellow"></div>
+          <div class="item red"></div>
+          <div class="item blue"></div>
+          <div class="item green"></div>
+          <div class="item yellow"></div>
+          <div class="item red"></div>
+          <div class="item blue"></div>
+          <div class="item green"></div>
+          <div class="item yellow"></div>
+          <div class="item red"></div>
+          <div class="item blue"></div>
+          <div class="item green"></div>
+          <div class="item yellow"></div>
+        </div>
 
-<div id="change">
-  <button @click="add">Add</button>
-  <button @click="replace">Replace</button>
-</div>
-
-<div>
-  <div v-if="selected" class="item">
-    <input type="text" name="" v-model="selected.name">
-    <br>
-    <input type="text" name="" v-model="selected.id">
-  </div>
-</div>
+        </div>
        
       </div>
     </section>
