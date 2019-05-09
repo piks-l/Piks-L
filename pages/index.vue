@@ -81,6 +81,23 @@
         }
       }
     },
+    asyncData (context) {
+      return { 
+        list: [
+          {name: "John", id: 25 }, 
+          {name: "Joao", id: 7}, 
+          {name: "Albert", id: 12},
+          {name: "Jean", id: 100}
+        ],
+        selected: null,
+        option: {
+          getSortData: {
+            id: "id"
+          },
+          sortBy : "id"
+        } 
+      }
+    },
     components: {
         influxCarouselartistes
     },
