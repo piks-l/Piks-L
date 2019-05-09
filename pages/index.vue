@@ -4,11 +4,37 @@
       <div class="container">
 <div>
 
-  <isotope :options='option' :list="list" @filter="filterOption=arguments[0]" @sort="sortOption=arguments[0]">
-    <div v-for="element in list" :key="element.id">
-      {{element.name}} - {{element.id}}
-    </div>
-  </isotope>
+<div id="filters">
+  <input type="checkbox" name="red" value=".red" id="red"><label for="red">red</label>
+  <input type="checkbox" name="blue" value=".blue" id="blue"><label for="blue">blue</label>
+  <input type="checkbox" name="green" value=".green" id="green"><label for="green">green</label>
+  <input type="checkbox" name="yellow" value=".yellow" id="yellow"><label for="yellow">yellow</label>
+</div>
+
+<p><button id="shuffle">Shuffle</button></p>
+
+<div id="container">
+  <div class="item red"></div>
+  <div class="item blue"></div>
+  <div class="item green"></div>
+  <div class="item yellow"></div>
+  <div class="item red"></div>
+  <div class="item blue"></div>
+  <div class="item green"></div>
+  <div class="item yellow"></div>
+  <div class="item red"></div>
+  <div class="item blue"></div>
+  <div class="item green"></div>
+  <div class="item yellow"></div>
+  <div class="item red"></div>
+  <div class="item blue"></div>
+  <div class="item green"></div>
+  <div class="item yellow"></div>
+  <div class="item red"></div>
+  <div class="item blue"></div>
+  <div class="item green"></div>
+  <div class="item yellow"></div>
+</div>
   
 </div>
 
@@ -78,38 +104,38 @@
         ]
       }
     },
-    async asyncData ({ req, res }) {
-      if (process.server) {
-        return { 
-          list: [
-            {name: "John", id: 25 }, 
-            {name: "Joao", id: 7}, 
-            {name: "Albert", id: 12},
-            {name: "Jean", id: 100}
-          ],
-          selected: null,
-          option: {
-            getSortData: {
-              id: "id"
-            },
-            sortBy : "id"
-          } 
-        }
-      }
-      return { 
-      }
-    },
-    methods: {
-      add: function() {
-        list.push({ name: 'Juan', id: count++ });
-      },
-      replace: function() {
-        list = [{ name: 'Edgard', id: count++ }, 
-                { name: 'James',  id: count++  }];
-      }
-    },
     mounted () {
-      var count = 0;
+      $(function(){
+  
+  var $container = $('#container'),
+      $checkboxes = $('#filters input');
+  
+  $container.isotope({
+    itemSelector: '.item'
+  });
+  
+  $checkboxes.change(function(){
+    var filters = [];
+    // get checked checkboxes values
+    $checkboxes.filter(':checked').each(function(){
+      filters.push( this.value );
+    });
+    // ['.red', '.blue'] -> '.red, .blue'
+    filters = filters.join(', ');
+    $container.isotope({ filter: filters });
+  });
+    
+  $('#shuffle').click(function(){
+    $container.isotope('shuffle');
+  });
+  
+  var $items = $container.children();
+  
+  $items.click( function() {
+    $(this).toggleClass('large');
+    $container.isotope('reLayout');
+  });
+});
     }
   }
 </script>
