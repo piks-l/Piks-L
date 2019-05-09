@@ -80,7 +80,8 @@
       }
     },
     asyncData (context) {
-      return.then((res) => {
+      return()
+      .then((res) => {
           return { 
                   list: [
                   {name: "John", id: 25 }, 
