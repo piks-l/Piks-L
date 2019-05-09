@@ -79,14 +79,6 @@
         ]
       }
     },
-    export default {
-      asyncData ({ params }) {
-        return axios.get(`https://my-api/posts/${params.id}`)
-        .then((res) => {
-          return { title: res.data.title }
-        })
-      }
-    }
     asyncData (context) {
       return.then((res) => {
           return { 
