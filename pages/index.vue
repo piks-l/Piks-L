@@ -2,42 +2,29 @@
   <div class="page">
     <section class="blend-mode" id="biographie">
       <div class="container">
-        <div>
+      <div id="main">
+      <div>
+        <isotope :list="list" id="root_isotope" class="isoDefault" :options='option' >
+          <div v-for="element in list" @click="selected=element"  :key="element.id">
+            {{element.name}}
+            <br> {{element.id}}
+          </div>
+        </isotope>
+      </div>
 
-        <div id="filters">
-          <input type="checkbox" name="red" value=".red" id="red"><label for="red">red</label>
-          <input type="checkbox" name="blue" value=".blue" id="blue"><label for="blue">blue</label>
-          <input type="checkbox" name="green" value=".green" id="green"><label for="green">green</label>
-          <input type="checkbox" name="yellow" value=".yellow" id="yellow"><label for="yellow">yellow</label>
+      <div id="change">
+        <button @click="add">Add</button>
+        <button @click="replace">Replace</button>
+      </div>
+
+      <div>
+        <div v-if="selected" class="item">
+          <input type="text" name="" v-model="selected.name">
+          <br>
+          <input type="text" name="" v-model="selected.id">
         </div>
-
-        <p><button id="shuffle">Shuffle</button></p>
-
-        <div id="container">
-          <div class="item red"></div>
-          <div class="item blue"></div>
-          <div class="item green"></div>
-          <div class="item yellow"></div>
-          <div class="item red"></div>
-          <div class="item blue"></div>
-          <div class="item green"></div>
-          <div class="item yellow"></div>
-          <div class="item red"></div>
-          <div class="item blue"></div>
-          <div class="item green"></div>
-          <div class="item yellow"></div>
-          <div class="item red"></div>
-          <div class="item blue"></div>
-          <div class="item green"></div>
-          <div class="item yellow"></div>
-          <div class="item red"></div>
-          <div class="item blue"></div>
-          <div class="item green"></div>
-          <div class="item yellow"></div>
-        </div>
-
-        </div>
-       
+      </div>
+      </div>
       </div>
     </section>
     <section class="blend-mode-2">
@@ -77,6 +64,23 @@
   // export
   export default {
     layout: 'default',
+    data() { // Define data
+      return {
+        list: [
+          {name: "John", id: 25 }, 
+          {name: "Joao", id: 7}, 
+          {name: "Albert", id: 12},
+          {name: "Jean", id: 100}
+        ],
+        selected: null,
+        option: {
+          getSortData: {
+            id: "id"
+          },
+          sortBy : "id"
+        }
+      }
+    },
     components: {
         influxCarouselartistes
     },
@@ -92,37 +96,7 @@
       }
     },
     mounted () {
-      $(function(){
-  
-  var $container = $('#container'),
-      $checkboxes = $('#filters input');
-  
-  $container.isotope({
-    itemSelector: '.item'
-  });
-  
-  $checkboxes.change(function(){
-    var filters = [];
-    // get checked checkboxes values
-    $checkboxes.filter(':checked').each(function(){
-      filters.push( this.value );
-    });
-    // ['.red', '.blue'] -> '.red, .blue'
-    filters = filters.join(', ');
-    $container.isotope({ filter: filters });
-  });
-    
-  $('#shuffle').click(function(){
-    $container.isotope('shuffle');
-  });
-  
-  var $items = $container.children();
-  
-  $items.click( function() {
-    $(this).toggleClass('large');
-    $container.isotope('reLayout');
-  });
-});
+      
     }
   }
 </script>
