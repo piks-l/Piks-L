@@ -162,20 +162,73 @@
       max-height: 100%;
       position: relative;
   }
-.item {
-  background-color: #eee;
-  padding: 10px;
-  width: 200px;
-  height: 200px;
-  margin-bottom: 10px;
-  box-sizing: border-box;
-  font-family: monospace;
-  color: #333;
+#container {
+  border: 1px solid;
+  padding: 3px;
 }
 
-.isoDefault {
-  min-height: 210px;
+.item {
+  width: 70px;
+  height: 70px;
+  margin: 3px;
+  float: left;
 }
+
+.item.large {
+  width: 146px;
+  height: 146px;
+}
+
+.red { background: red; }
+.blue { background: blue; }
+.green { background: green; }
+.yellow { background: yellow; }
+
+/* Start: Recommended Isotope styles */
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/* End: Recommended Isotope styles */
 
   @media only screen and (min-width:960px) and (max-width:1264px){
 
