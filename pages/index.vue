@@ -54,9 +54,9 @@
 
 <script>
   import $ from 'jquery'
-  //import Isotope from 'isotope-layout'
+  import isotope from 'vueisotope'
   if (process.BROWSER_BUILD) {
-     const isotope = require('isotope-layout')
+     const isotope = require('vueisotope')
      Vue.use(isotope)
   }
   // import plugins
