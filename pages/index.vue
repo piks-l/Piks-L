@@ -4,7 +4,7 @@
       <div class="container">
 <div>
 
-  <isotope :options='getOptions()' :list="list" @filter="filterOption=arguments[0]" @sort="sortOption=arguments[0]">
+  <isotope :options='option' :list="list" @filter="filterOption=arguments[0]" @sort="sortOption=arguments[0]">
     <div v-for="element in list" :key="element.id">
       {{element.name}} - {{element.id}}
     </div>
