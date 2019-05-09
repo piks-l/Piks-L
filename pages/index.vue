@@ -73,10 +73,12 @@
       }
     },
     data: {
-      list: [{name: "John", id: 25 }, 
-      {name: "Joao", id: 7}, 
-      {name: "Albert", id: 12},
-      {name: "Jean", id: 100}],
+      list: [
+        {name: "John", id: 25 }, 
+        {name: "Joao", id: 7}, 
+        {name: "Albert", id: 12},
+        {name: "Jean", id: 100}
+      ],
       selected: null,
       option: {
         getSortData: {
@@ -95,7 +97,7 @@
       }
     },
     mounted () {
-    
+      var count = 0;
     }
   }
 </script>
