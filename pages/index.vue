@@ -4,13 +4,12 @@
       <div class="container">
 <div>
 
-  <isotope :list="list" id="root_isotope" class="isoDefault" :options='option' >
-    <div v-for="element in list" @click="selected=element"  :key="element.id">
-      {{element.name}}
-      <br> {{element.id}}
+  <isotope :options='getOptions()' :list="list" @filter="filterOption=arguments[0]" @sort="sortOption=arguments[0]">
+    <div v-for="element in list" :key="element.id">
+      {{element.name}} - {{element.id}}
     </div>
   </isotope>
-
+  
 </div>
 
 <div id="change">
