@@ -79,24 +79,33 @@
         ]
       }
     },
-    asyncData (context) {
-      return { 
-        list: [
-          {name: "John", id: 25 }, 
-          {name: "Joao", id: 7}, 
-          {name: "Albert", id: 12},
-          {name: "Jean", id: 100}
-        ],
-        selected: null,
-        option: {
-          getSortData: {
-            id: "id"
-          },
-          sortBy : "id"
-        } 
+    export default {
+      asyncData ({ params }) {
+        return axios.get(`https://my-api/posts/${params.id}`)
+        .then((res) => {
+          return { title: res.data.title }
+        })
       }
+    }
+    asyncData (context) {
+      return.then((res) => {
+          return { 
+                  list: [
+                  {name: "John", id: 25 }, 
+                  {name: "Joao", id: 7}, 
+                  {name: "Albert", id: 12},
+                  {name: "Jean", id: 100}
+                ],
+                selected: null,
+                option: {
+                  getSortData: {
+                    id: "id"
+                  },
+                  sortBy : "id"
+                } 
+          }
+        })
     },
-
     methods: {
       add: function() {
         list.push({ name: 'Juan', id: count++ });
