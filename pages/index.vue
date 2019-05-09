@@ -89,11 +89,11 @@
     },
     methods: {
       add: function() {
-        this.list.push({ name: 'Juan', id: count++ });
+        list.push({ name: 'Juan', id: count++ });
       },
       replace: function() {
-        this.list = [{ name: 'Edgard', id: count++ }, 
-                     { name: 'James',  id: count++  }];
+        list = [{ name: 'Edgard', id: count++ }, 
+                { name: 'James',  id: count++  }];
       }
     },
     mounted () {
