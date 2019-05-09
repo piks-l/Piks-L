@@ -55,9 +55,9 @@
 
 <script>
   import $ from 'jquery'
-  import isotope from '~/plugins/vue_isotope.js'
-  if (process.client) {
-    require('isotope-layout')
+  if (process.BROWSER_BUILD) {
+     const isotope = require('~plugins/vue_isotope')
+     Vue.use(isotope)
   }
   // import plugins
   import influxCarouselartistes from '~/components/plugins/carousel-artistes.vue'
@@ -65,8 +65,7 @@
   export default {
     layout: 'default',
     components: {
-        influxCarouselartistes,
-        isotope
+        influxCarouselartistes
     },
     head() {
       return {
