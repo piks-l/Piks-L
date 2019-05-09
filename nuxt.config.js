@@ -28,7 +28,7 @@ module.exports = {
   router: {
     scrollBehavior: function (to, from, savedPosition) { return { x: 0, y: 0 } }
   },
-  plugins: [{src: '~/plugins/vue-lazyload', ssr: false},{src: 'js/isotope.pkgd.min.js', ssr: false}],
+  plugins: [{src: '~/plugins/vue-lazyload', ssr: false}],
   loading: {
     color: '#FFB413',
     height: '5px'
