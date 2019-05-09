@@ -3,12 +3,14 @@
     <section class="blend-mode" id="biographie">
       <div class="container">
 <div>
+<no-ssr>
   <isotope :list="list" id="root_isotope" class="isoDefault" :options='option' >
     <div v-for="element in list" @click="selected=element"  :key="element.id">
       {{element.name}}
       <br> {{element.id}}
     </div>
   </isotope>
+ </no-ssr>
 </div>
 
 <div id="change">
