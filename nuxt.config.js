@@ -21,14 +21,16 @@ module.exports = {
       { rel: 'stylesheet', integrity: 'sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz', href: 'https://use.fontawesome.com/releases/v5.4.1/css/all.css', crossorigin: 'anonymous' }
     ],
     script: [
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js', ssr: false },
-      { src: 'js/isotope.pkgd.min.js', ssr: false }
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js', ssr: false }
     ]
   },
   router: {
     scrollBehavior: function (to, from, savedPosition) { return { x: 0, y: 0 } }
   },
-  plugins: [{src: '~/plugins/vue-lazyload', ssr: false}],
+  plugins: [
+    {src: '~/plugins/vue-lazyload', ssr: false},
+    {src: '~/plugins/vue_isotope.js', ssr: false}
+  ],
   loading: {
     color: '#FFB413',
     height: '5px'
