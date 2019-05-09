@@ -93,7 +93,7 @@
         this.list = [{ name: 'Edgard', id: count++ }, 
                      { name: 'James',  id: count++  }];
       }
-    }
+    },
     mounted () {
     
     }
