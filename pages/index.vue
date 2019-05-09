@@ -55,7 +55,7 @@
 
 <script>
   import $ from 'jquery'
-  import isotope from 'isotope-layout'
+  // import isotope from 'isotope-layout'
   if (process.client) {
     require('isotope-layout')
   }
