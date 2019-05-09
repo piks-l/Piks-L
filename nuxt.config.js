@@ -29,7 +29,7 @@ module.exports = {
   },
   plugins: [
     {src: '~/plugins/vue-lazyload', ssr: false},
-    {src: '~/plugins/vue_isotope', ssr: false}
+    {src: '~/plugins/vue-isotope', ssr: false}
   ],
   loading: {
     color: '#FFB413',
