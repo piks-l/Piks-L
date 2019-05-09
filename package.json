@@ -14,9 +14,11 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "isotope": "^1.0.0-alpha.3",
     "isotope-layout": "^3.0.6",
     "jquery": "^3.3.1",
     "nuxt": "^1.0.0",
+    "vue-isotope": "^0.1.0",
     "vue-markdown": "^2.2.4",
     "vueisotope": "^3.1.2"
   },
