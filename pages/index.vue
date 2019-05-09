@@ -54,7 +54,11 @@
 <script>
   import $ from 'jquery'
   import isotope from 'isotope-layout'
-  
+  if (process.browser) {
+    window.onNuxtReady(() => {
+      const isotope = require('isotope-layout')
+    })
+  }
   // import plugins
   import influxCarouselartistes from '~/components/plugins/carousel-artistes.vue'
   // export
