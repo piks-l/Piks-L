@@ -54,7 +54,7 @@
 
 <script>
   import $ from 'jquery'
-  import isotope from 'vueisotope'
+  //import isotope from 'vueisotope'
   if (process.BROWSER_BUILD) {
      const isotope = require('vueisotope')
      Vue.use(isotope)
