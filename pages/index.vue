@@ -53,7 +53,7 @@
 
 <script>
   import $ from 'jquery'
-  import isotope from 'vue_isotope'
+  import isotope from 'vue-isotope'
   
   // import plugins
   import influxCarouselartistes from '~/components/plugins/carousel-artistes.vue'
