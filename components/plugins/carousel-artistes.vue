@@ -12,12 +12,12 @@
         </svg>    
       </span>
     </div>
-   <div v-for="post in posts.slice().reverse().slice(0, 3)" :key="post.date" class="carousel-item carousel-item--1">
+   <div v-for="post in artistes.slice().reverse().slice(0, 3)" :key="post.date" class="carousel-item carousel-item--1">
       <div class="carousel-item__info">
         <div class="carousel-item__container">
-          <h2 class="carousel-item__subtitle">{{ post.date }}</h2>
+          <h2 class="carousel-item__subtitle">{{ post.dateshow }}</h2>
           <h1 class="carousel-item__title">{{ post.title }}</h1>
-          <p class="carousel-item__description">{{ post.description }}</p>
+          <p class="carousel-item__description">{{ post.stage }}</p>
           <nuxt-link :to="post._path" class="carousel-item__btn">En savoir plus</nuxt-link>
         </div>
       </div>
@@ -30,7 +30,7 @@
   export default {
     data() {
       const context = require.context('~/content/artistes/page/', false, /\.json$/);
-      const posts = context.keys().map(key => ({
+      const artistes = context.keys().map(key => ({
         ...context(key),
         _path: `/artistes/${key.replace('.json', '').replace('./', '')}`
       }));
