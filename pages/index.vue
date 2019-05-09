@@ -4,12 +4,12 @@
       <div class="container">
       <div id="main">
       <div>
-        <isotope :list="list" id="root_isotope" class="isoDefault" :options='option' >
+        <div :list="list" id="root_isotope" class="isoDefault" :options='option' >
           <div v-for="element in list" @click="selected=element"  :key="element.id">
             {{element.name}}
             <br> {{element.id}}
           </div>
-        </isotope>
+        </div>
       </div>
 
       <div id="change">
@@ -96,7 +96,7 @@
       }
     },
     mounted () {
-      
+      var count = 0;
     }
   }
 </script>
