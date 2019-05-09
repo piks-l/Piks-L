@@ -162,7 +162,6 @@
 </template>
 
 <script>
-  import isotope from 'js/isotope.pkgd.min.js'
   import $ from 'jquery'
   // import plugins
   import influxCarouselartistes from '~/components/plugins/carousel-artistes.vue'
