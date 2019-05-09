@@ -49,6 +49,7 @@ module.exports = {
     ],
     extend(config, { isDev, isClient }) {
       const vueLoader = config.module.rules.find((rule) => rule.loader === 'vue-loader')
+      config.resolve.alias['isotope'] = 'isotope-layout';
       vueLoader.options.transformToRequire['img'] = ['src', 'data-src'];
       if (isDev && isClient) {
         config.module.rules.push({
