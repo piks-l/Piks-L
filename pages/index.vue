@@ -134,6 +134,20 @@
       max-height: 100%;
       position: relative;
   }
+.item {
+  background-color: #eee;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  font-family: monospace;
+  color: #333;
+}
+
+.isoDefault {
+  min-height: 210px;
+}
 
   @media only screen and (min-width:960px) and (max-width:1264px){
 
