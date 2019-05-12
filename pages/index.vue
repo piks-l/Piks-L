@@ -1,13 +1,13 @@
 <template>
   <div class="container">
-      <no-ssr>
+      
         <isotope :options="options" :list="list">
           <div v-for="(item, index) in items" :key="index" class="list-item">
             <h2>{{item.title}}</h2>
           </div>
         </isotope>
         <button @click="filter('something')">filter</button>
-      </no-ssr>
+      
 
      </div>
 
