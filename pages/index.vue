@@ -23,6 +23,11 @@ export default {
         { title: 'Donner Lake Remodel' }, 
         { title: 'Havenwood' }
       ],
+      items: [
+        { title: 'A' }, 
+        { title: 'B' }, 
+        { title: 'C' }
+      ],
       options: {
         itemSelector: '.list-item',
         layout: 'fitRows',
