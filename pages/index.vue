@@ -7,7 +7,7 @@
           
             <div @click="filter(key)" class="col-md-8 d-flex">
              <no-ssr>
-                <isotope  ref="projects" :options="option" :list="projects">
+                <isotope ref="projects" :options="option" :list="projects">
                   <div v-for="(item, index) in projects" :key="index" class="text-white thumbnail">
                       {{ item.title }}
                   </div>
@@ -43,28 +43,27 @@ export default {
           },
           'Land Planning'(itemElem) {
             return itemElem.categories.map(x => x === 'Land Planning').includes(true);
-          },
-        },
+          }
+        }
       },
-
       projects: [
         {
           title: 'Natomas Meadows Clubhouse',
           id: '0',
           thumbnail: 'natomas-meadows-clubhouse.png',
-          categories: ['Commercial Buildings', 'Land Planning'],
+          categories: ['Commercial Buildings', 'Land Planning']
         }, {
           title: 'Donner Lake Remodel',
           id: '1',
           thumbnail: 'donner-lake-remodel.png',
-          categories: ['Remodel Design'],
+          categories: ['Remodel Design']
         }, {
           title: 'Havenwood',
           id: '2',
           thumbnail: 'havenwood.png',
-          categories: ['Production Housing'],
-        },
-      ],
+          categories: ['Production Housing']
+        }
+      ]
     };
   },
 
