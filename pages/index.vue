@@ -76,6 +76,9 @@ export default {
 };
 </script>
 <style>
+.projects .thumbnail { width: 243px; height: 149px; }
+.projects .thumbnail .thumbnail-overlay { opacity: 0; background-color: rgba(black, 0.8);  transition: opacity 0.25s ease-in-out;}
+.projects .thumbnail:hover .thumbnail-overlay { opacity: 1; }
   #biographie {
     height: 90vh;
     display: table;
