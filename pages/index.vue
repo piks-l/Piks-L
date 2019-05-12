@@ -18,7 +18,24 @@ export default {
   name: 'SectionProjects',
   data() {
     return {
-      list: [...],
+      list: 
+        {
+          title: 'Natomas Meadows Clubhouse',
+          id: '0',
+          thumbnail: 'natomas-meadows-clubhouse.png',
+          categories: ['Commercial Buildings', 'Land Planning']
+        }, {
+          title: 'Donner Lake Remodel',
+          id: '1',
+          thumbnail: 'donner-lake-remodel.png',
+          categories: ['Remodel Design']
+        }, {
+          title: 'Havenwood',
+          id: '2',
+          thumbnail: 'havenwood.png',
+          categories: ['Production Housing']
+        }
+      ],
       options: {
         itemSelector: '.list-item',
         layout: 'fitRows',
