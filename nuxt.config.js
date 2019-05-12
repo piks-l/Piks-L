@@ -29,8 +29,8 @@ module.exports = {
     scrollBehavior: function (to, from, savedPosition) { return { x: 0, y: 0 } }
   },
   plugins: [
-    {src: '~/plugins/vue-lazyload', ssr: false},
-    { src: '~/plugins/vue-isotope', ssr: false },
+    { src: '~/plugins/vue-lazyload', ssr: false }, 
+    { src: '~/plugins/vue-isotope', ssr: false }, 
     { src: '~/plugins/vue-imagesLoaded', ssr: false }
   ],
   loading: {
