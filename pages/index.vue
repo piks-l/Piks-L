@@ -1,7 +1,7 @@
 <template>
   <div class="container">
       
-        <isotope :options="options" :list="list">
+        <isotope @options="options" @list="list">
           <div v-for="(item, index) in items" :key="index" class="list-item">
             <h2>{{item.title}}</h2>
           </div>
