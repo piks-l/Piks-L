@@ -1,27 +1,23 @@
-<template lang="pug">
-  .container
-    .row
-      .col-md-4.py-5
-        ul.list-unstyled.mb-0
-          li(v-for="(val, key) in option.getFilterData" ).mb-3
-            div(
-              :class="[key === filterOption ? 'text-success' : 'text-white']"
-              @click="filter(key)",
-            ).cursore-pointer {{ key }}
-
-      .col-md-8.d-flex
-        .m-auto.w-100
-          no-ssr
-            isotope(
-              ref='projects'
-              :options="option",
-              :list="projects"
-            )
-              div(v-for="(item, index) in projects", :key="index").text-white.thumbnail
-                div.cursore-pointer.d-block.pos-r.p-1
-                  img(:src="require(`../assets/images/project-thumbnails/${item.thumbnail}`)").w-100
-                  .pin.pin-xy.d-flex.text-white.thumbnail-overlay
-                    .m-auto.fs-16.text-center {{ item.title }}
+<template>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 py-5">
+        <ul class="list-unstyled mb-0">
+          <li v-for="(val, key) in option.getFilterData" class=".mb-3">
+            <div :class="[key === filterOption ? 'text-success' : 'text-white']" @click="filter(key)" class="col-md-8 d-flex">
+              <no-ssr>
+                <isotope  ref='projects' :options="option" :list="projects">
+                  <div v-for="(item, index) in projects" :key="index" class="text-white thumbnail">
+                      {{ item.title }}
+                  </div>
+                </isotope>
+              </no-ssr>
+            </div>
+          <li>
+        </ul>
+        </div>
+        </div>
+        </div>
 </template>
 
 <script>
