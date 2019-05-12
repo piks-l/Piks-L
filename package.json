@@ -18,11 +18,12 @@
     "bootstrap": "^4.0.0-beta.2",
     "bootstrap-vue": "^1.0.2",
     "isotope": "^1.0.0-alpha.3",
+    "jquery": "^3.4.1",
     "nuxt": "^1.4.0",
     "vue-isotope": "^0.1.0",
+    "vue-markdown": "^2.2.4",
     "vue-scrollto": "^2.11.0",
-    "vueisotope": "^3.1.1",
-    "vue-markdown": "^2.2.4"
+    "vueisotope": "^3.1.1"
   },
   "devDependencies": {
     "cross-env": "^5.0.1",
