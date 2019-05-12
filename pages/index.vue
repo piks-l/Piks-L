@@ -1,8 +1,8 @@
 <template>
   <div class="container">
       
-        <isotope @options="options" @list="list">
-          <div v-for="(item, index) in items" :key="index" class="list-item">
+        <isotope :options="options" :list="list">
+          <div v-for="(item, index) in items" v-bind:key="index" class="list-item">
             <h2>{{item.title}}</h2>
           </div>
         </isotope>
