@@ -1,18 +1,13 @@
 <template>
   <div class="container">
-        <ul class="list-unstyled mb-0">
-          <li v-for="(val, key) in option.getFilterData" class="mb-3">
-          </li>
-        </ul> 
-        <div @click="filter(key)" class="col-md-8 d-flex">
-         <no-ssr placeholder="Loading...">
-            <isotope ref="projects" :options="option" :list="projects">
-              <div v-for="(item, index) in projects" :key="projects.id" class="text-white thumbnail">
-                  {{ item.title }}
-              </div>
-            </isotope>
-          </no-ssr>
-        </div>
+      <no-ssr>
+        <isotope :options="options" :list="list">
+          <div v-for="(item, index) in items" :key="index" class="list-item">
+            <h2>{{item.title}}</h2>
+          </div>
+        </isotope>
+        <button @click="filter('something')">filter</button>
+      </no-ssr>
 
      </div>
 
@@ -23,55 +18,18 @@ export default {
   name: 'SectionProjects',
   data() {
     return {
-      filterOption: 'Show All',
-      option: {
-        getFilterData: {
-          'Show All'() {
-            return true;
-          },
-          'Production Housing'(itemElem) {
-            return itemElem.categories.map(x => x === 'Production Housing').includes(true);
-          },
-          'Remodel Design'(itemElem) {
-            return itemElem.categories.map(x => x === 'Remodel Design').includes(true);
-          },
-          'Commercial Buildings'(itemElem) {
-            return itemElem.categories.map(x => x === 'Commercial Buildings').includes(true);
-          },
-          'Land Planning'(itemElem) {
-            return itemElem.categories.map(x => x === 'Land Planning').includes(true);
-          }
-        }
+      list: [...],
+      options: {
+        itemSelector: '.list-item',
+        layout: 'fitRows',
       },
-      projects: [
-        {
-          title: 'Natomas Meadows Clubhouse',
-          id: '0',
-          thumbnail: 'natomas-meadows-clubhouse.png',
-          categories: ['Commercial Buildings', 'Land Planning']
-        }, {
-          title: 'Donner Lake Remodel',
-          id: '1',
-          thumbnail: 'donner-lake-remodel.png',
-          categories: ['Remodel Design']
-        }, {
-          title: 'Havenwood',
-          id: '2',
-          thumbnail: 'havenwood.png',
-          categories: ['Production Housing']
-        }
-      ]
     };
   },
-
   methods: {
-    filter(key) {
-      if (this.filterOption !== key) {
-        this.$refs.projects.filter(key);
-        this.filterOption = key;
-      }
+    filter(key) => {
+      this.filter(key);
     },
-  },
+  }
 };
 </script>
 <style>
