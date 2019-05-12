@@ -1,88 +1,83 @@
-<template>
-  <div class="page">
-    <div class="filters">
-        <a @click="filterItems('selectorA')">filter A</a>
-        <a @click="filterItems('selectorB')">filter B</a>
-        <a @click="filterItems('selectorC')">filter C</a>
-    </div>
-    <div class="items">
-      <no-ssr>
-        <nuxt-link
-          v-for="(item, index) in items"
-          :key="index"
-          :to="item.url"
-          class="item"
-        >
-        </nuxt-link>
-      </no-ssr>
-    </div>
-  </div>
+<<template lang="pug">
+  .container
+    .row
+      .col-md-4.py-5
+        ul.list-unstyled.mb-0
+          li(v-for="(val, key) in option.getFilterData" ).mb-3
+            div(
+              :class="[key === filterOption ? 'text-success' : 'text-white']"
+              @click="filter(key)",
+            ).cursore-pointer {{ key }}
+
+      .col-md-8.d-flex
+        .m-auto.w-100
+          no-ssr
+            isotope(
+              ref='projects'
+              :options="option",
+              :list="projects"
+            )
+              div(v-for="(item, index) in projects", :key="index").text-white.thumbnail
+                div.cursore-pointer.d-block.pos-r.p-1
+                  img(:src="require(`../assets/images/project-thumbnails/${item.thumbnail}`)").w-100
+                  .pin.pin-xy.d-flex.text-white.thumbnail-overlay
+                    .m-auto.fs-16.text-center {{ item.title }}
 </template>
 
 <script>
-  import $ from 'jquery'
-  //import Isotope from 'isotope-layout'
-  if (process.browser) {
-    Isotope = require('isotope-layout');
-  }
-  // import plugins
-  import influxCarouselartistes from '~/components/plugins/carousel-artistes.vue'
-  // export
-  export default {
-    layout: 'default',
-    data() {
-      return {
-        items: [],
-        iso: null,
-      };
-    },
-    created() {
-      const that = this;
-      this.$axios
-        .get('/items')
-        .then(response => {
-          const items = response.data;
-          items.forEach(item => {
-            that.items.push(item);
-          });
-        })
-        .then(() => {
-          that.isotope();
-        })
-        .catch(error => {
-          console.warn('❌:', error.message);
-        });
-    },
-    methods: {
-      isotope() {
-        this.iso = new Isotope('.items', {
-          itemSelector: '.item',
-          layout: 'fitRows',
-        });
-        this.iso.layout();
+export default {
+  name: 'SectionProjects',
+  data() {
+    return {
+      filterOption: 'Show All',
+
+      option: {
+        getFilterData: {
+          'Show All'() {
+            return true;
+          },
+          'Production Housing'(itemElem) {
+            return itemElem.categories.map(x => x === 'Production Housing').includes(true);
+          },
+          'Remodel Design'(itemElem) {
+            return itemElem.categories.map(x => x === 'Remodel Design').includes(true);
+          },
+          'Commercial Buildings'(itemElem) {
+            return itemElem.categories.map(x => x === 'Commercial Buildings').includes(true);
+          },
+          'Land Planning'(itemElem) {
+            return itemElem.categories.map(x => x === 'Land Planning').includes(true);
+          },
+        },
       },
-      filterItems(selector) {
-        this.iso.arrange({ filter: `${selector}` });
-      },
-    },
-    components: {
-        influxCarouselartistes
-    },
-    head() {
-      return {
-        title: 'Electrobotik Invasion - le 2 & 3 Août 2019',
-        meta: [
-          { hid: 'description', name: 'description', content: 'Electrobotik Invasion Festival, le 2 & 3 Août 2019, Circuit Paul Ricard - Le Castelet (83).' },
-          { 'property': 'og:title', 'content': 'Electrobotik Invasion - le 2 & 3 Août 2019', 'vmid': 'og:title' },
-          { 'property': 'og:description', 'content': 'Electrobotik Invasion Festival, le 2 & 3 Août 2019, Circuit Paul Ricard - Le Castelet (83).' },
-          { 'property': 'og:image', 'content': 'images/uploads/link_share.jpg', 'vmid': 'og:image' }
-        ]
+
+      projects: [
+        {
+          title: 'Natomas Meadows Clubhouse',
+          thumbnail: 'natomas-meadows-clubhouse.png',
+          categories: ['Commercial Buildings', 'Land Planning'],
+        }, {
+          title: 'Donner Lake Remodel',
+          thumbnail: 'donner-lake-remodel.png',
+          categories: ['Remodel Design'],
+        }, {
+          title: 'Havenwood',
+          thumbnail: 'havenwood.png',
+          categories: ['Production Housing'],
+        },
+      ],
+    };
+  },
+
+  methods: {
+    filter(key) {
+      if (this.filterOption !== key) {
+        this.$refs.projects.filter(key);
+        this.filterOption = key;
       }
     },
-    mounted () {
-      var count = 0;
-    }
-  }
+  },
+};
 </script>
 <style>
   #biographie {
