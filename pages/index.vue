@@ -21,7 +21,7 @@
 
 <script>
   import $ from 'jquery'
-  let Isotope;
+  import Isotope from 'isotope-layout'
   if (process.browser) {
     Isotope = require('isotope-layout');
   }
