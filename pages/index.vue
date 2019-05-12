@@ -12,7 +12,7 @@
                       {{ item.title }}
                   </div>
                 </isotope>
-              <no-ssr>
+              </no-ssr>
             </div>
           </li>
         </ul>
