@@ -21,9 +21,9 @@
 
 <script>
   import $ from 'jquery'
-  import Isotope from 'isotope-layout'
+  //import Isotope from 'isotope-layout'
   if (process.browser) {
-    //Isotope = require('isotope-layout');
+    Isotope = require('isotope-layout');
   }
   // import plugins
   import influxCarouselartistes from '~/components/plugins/carousel-artistes.vue'
