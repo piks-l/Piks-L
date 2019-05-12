@@ -1,102 +1,71 @@
 <template>
   <div class="page">
-    <section class="blend-mode" id="biographie">
-      <div class="container">
-      <div id="main">
-      <div>
-        <div :list="list" id="root_isotope" class="isoDefault" :options='option' >
-          <div v-for="element in list" @click="selected=element"  :key="element.id">
-            {{element.name}}
-            <br> {{element.id}}
-          </div>
-        </div>
-      </div>
-
-      <div id="change">
-        <button @click="add">Add</button>
-        <button @click="replace">Replace</button>
-      </div>
-
-      <div>
-        <div v-if="selected" class="item">
-          <input type="text" name="" v-model="selected.name">
-          <br>
-          <input type="text" name="" v-model="selected.id">
-        </div>
-      </div>
-      </div>
-      </div>
-    </section>
-    <section class="blend-mode-2">
-      <div class="container">
-        <p data-900="transform:translatex(200px);opacity:0;" data-1200="transform:translatex(0px);opacity:.9;">
-          Il travaille plusieurs styles notamment le style <strong>réaliste</strong> pour lequel il est souvent demandé.<br>
-          Il adore aussi l’univers des <strong>comics</strong>, du <strong>jeu vidéo</strong> et du <strong>dessin</strong> en général et <em>tatoue</em> également beaucoup de pièces ,en <em>newschool</em> et en <em>néo-trad</em>, aux <strong>illustrations de qualité</strong> et au <strong>dessin maîtrisé</strong>.
-          </p>
-        <p  data-960="transform:translatex(-200px);opacity:0;" data-1260="transform:translatex(0px);opacity:.9;"><b>Pour aborder vos projets et prendre rendez-vous, veuillez m'envoyer un mail en précisant l'emplacement, les dimensions et l'inspirations en y joignant éventuellement 2 ou 3 photos</b></p>
-      </div>
-    </section>
-        
-    <section class="no-padding">
-      <influx-carouselartistes class="caroublog"/>
-    </section>
-    
-    <section>
-      <div class="container">
-        <h2>Actualités</h2>
-      </div>
-      <div class="container">
-          <nuxt-link to="/blog/"><p>Voir les autres actualités !</p></nuxt-link>
-      </div>
-    </section>
+    <div class="filters">
+        <a @click="filterItems('selectorA')">filter A</a>
+        <a @click="filterItems('selectorB')">filter B</a>
+        <a @click="filterItems('selectorC')">filter C</a>
+    </div>
+    <div class="items">
+      <no-ssr>
+        <nuxt-link
+          v-for="(item, index) in items"
+          :key="index"
+          :to="item.url"
+          class="item"
+        >
+        </nuxt-link>
+      </no-ssr>
+    </div>
   </div>
 </template>
 
 <script>
   import $ from 'jquery'
+  import Isotope
   //import isotope from 'vueisotope'
   if (process.BROWSER_BUILD) {
-     const isotope = require('vueisotope')
-     Vue.use(isotope)
+     const isotope = require('isotope-layout')
+     Vue.use(isotope-layout)
   }
   // import plugins
   import influxCarouselartistes from '~/components/plugins/carousel-artistes.vue'
   // export
   export default {
     layout: 'default',
-    data() { // Define data
+    data() {
       return {
-        list: [
-          {name: "John", id: 25 }, 
-          {name: "Joao", id: 7}, 
-          {name: "Albert", id: 12},
-          {name: "Jean", id: 100}
-        ],
-        selected: null,
-        option: {
-          getSortData: {
-            id: "id"
-          },
-          sortBy : "id"
-        }
-      }
+        items: [],
+        iso: null,
+      };
     },
-    asyncData (context) {
-      return { 
-        list: [
-          {name: "John", id: 25 }, 
-          {name: "Joao", id: 7}, 
-          {name: "Albert", id: 12},
-          {name: "Jean", id: 100}
-        ],
-        selected: null,
-        option: {
-          getSortData: {
-            id: "id"
-          },
-          sortBy : "id"
-        } 
-      }
+    created() {
+      const that = this;
+      this.$axios
+        .get('/items')
+        .then(response => {
+          const items = response.data;
+          items.forEach(item => {
+            that.items.push(item);
+          });
+        })
+        .then(() => {
+          that.isotope();
+        })
+        .catch(error => {
+          console.warn('❌:', error.message);
+        });
+    },
+    methods: {
+      isotope() {
+        this.iso = new Isotope('.items', {
+          itemSelector: '.item',
+          layout: 'fitRows',
+        });
+        this.iso.layout();
+      },
+      filterItems(selector) {
+        this.iso.arrange({ filter: `${selector}` });
+      },
     },
     components: {
         influxCarouselartistes
