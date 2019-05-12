@@ -24,7 +24,7 @@
   import Isotope
   //import isotope from 'vueisotope'
   if (process.BROWSER_BUILD) {
-     const isotope = require('isotope-layout')
+     const isotope = require('isotope-layout');
      Vue.use(isotope-layout)
   }
   // import plugins
