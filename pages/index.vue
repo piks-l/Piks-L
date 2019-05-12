@@ -6,7 +6,7 @@
           <li v-for="(val, key) in option.getFilterData" class="mb-3">
           
             <div @click="filter(key)" class="col-md-8 d-flex">
-             <no-ssr>
+             <no-ssr placeholder="Loading...">
                 <isotope ref="projects" :options="option" :list="projects">
                   <div v-for="(item, index) in projects" :key="index" class="text-white thumbnail">
                       {{ item.title }}
