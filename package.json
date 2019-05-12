@@ -14,19 +14,26 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "axios": "^0.17.1",
     "isotope": "^1.0.0-alpha.3",
     "isotope-layout": "^3.0.6",
     "jquery": "^3.3.1",
-    "nuxt": "^1.0.0",
+    "nuxt": "^1.4.0",
     "vue-isotope": "^0.1.0",
     "vue-markdown": "^2.2.4",
     "vueisotope": "^3.1.2"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.1",
-    "eslint": "^4.15.0",
-    "eslint-friendly-formatter": "^3.0.0",
-    "eslint-loader": "^1.7.1",
+    "cross-env": "^5.0.1",
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.3.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-html": "^3.1.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
     "eslint-plugin-vue": "^4.0.0",
     "glob": "^7.1.2",
     "vue-lazyload": "^1.2.6"
