@@ -1,4 +1,4 @@
-<<template lang="pug">
+<template lang="pug">
   .container
     .row
       .col-md-4.py-5
