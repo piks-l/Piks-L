@@ -13,7 +13,7 @@
                 </isotope>
               </no-ssr>
             </div>
-          <li>
+          </li>
         </ul>
         </div>
         </div>
