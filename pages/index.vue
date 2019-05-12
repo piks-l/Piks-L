@@ -5,10 +5,10 @@
         <ul class="list-unstyled mb-0">
           <li v-for="(val, key) in option.getFilterData" class="mb-3">
           
-            <div :class="[key === filterOption ? 'text-success' : 'text-white']" @click="filter(key)" class="col-md-8 d-flex">
+            <div @click="filter(key)" class="col-md-8 d-flex">
              <no-ssr>
                 <isotope  ref="projects" :options="option" :list="projects">
-                  <div v-for="(item, index) in projects" :key="index.id" class="text-white thumbnail">
+                  <div v-for="(item, index) in projects" :key="index" class="text-white thumbnail">
                       {{ item.title }}
                   </div>
                 </isotope>
