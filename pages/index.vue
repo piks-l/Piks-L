@@ -7,7 +7,7 @@
         <div @click="filter(key)" class="col-md-8 d-flex">
          <no-ssr placeholder="Loading...">
             <isotope ref="projects" :options="option" :list="projects">
-              <div v-for="(item, index) in projects" :key="id" class="text-white thumbnail">
+              <div v-for="(item, index) in projects" :key="projects.id" class="text-white thumbnail">
                   {{ item.title }}
               </div>
             </isotope>
