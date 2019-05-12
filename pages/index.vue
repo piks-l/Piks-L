@@ -30,9 +30,9 @@ export default {
     };
   },
   methods: {
-    filter(key) => {
+    filter(key) {
       this.filter(key);
-    },
+    }
   }
 };
 </script>
