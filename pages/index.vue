@@ -1,24 +1,21 @@
 <template>
   <div class="container">
-    <div class="row">
-      <div class="col-md-4 py-5">
         <ul class="list-unstyled mb-0">
           <li v-for="(val, key) in option.getFilterData" class="mb-3">
-          
-            <div @click="filter(key)" class="col-md-8 d-flex">
-             <no-ssr placeholder="Loading...">
-                <isotope ref="projects" :options="option" :list="projects">
-                  <div v-for="(item, index) in projects" :key="index" class="text-white thumbnail">
-                      {{ item.title }}
-                  </div>
-                </isotope>
-              </no-ssr>
-            </div>
           </li>
-        </ul>
+        </ul> 
+        <div @click="filter(key)" class="col-md-8 d-flex">
+         <no-ssr placeholder="Loading...">
+            <isotope ref="projects" :options="option" :list="projects">
+              <div v-for="(item, index) in projects" :key="index" class="text-white thumbnail">
+                  {{ item.title }}
+              </div>
+            </isotope>
+          </no-ssr>
         </div>
-        </div>
-        </div>
+
+     </div>
+
 </template>
 
 <script>
