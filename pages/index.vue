@@ -14,6 +14,7 @@
         <p class="stage">{{element.stage}}</p>
       </div>
     </div>
+     <iframe src="https://piks-l.com/beta/"></iframe> 
     </no-ssr>
   </div>
 </template>
