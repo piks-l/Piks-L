@@ -82,6 +82,7 @@ export default {
 };
 </script>
 <style>
+
 .projects .thumbnail { width: 243px; height: 149px; }
 .projects .thumbnail .thumbnail-overlay { opacity: 0; background-color: rgba(black, 0.8);  transition: opacity 0.25s ease-in-out;}
 .projects .thumbnail:hover .thumbnail-overlay { opacity: 1; }
@@ -111,7 +112,10 @@ export default {
   border: 1px solid;
   padding: 3px;
 }
-
+.container {
+  position: relative;
+  background:white;
+}
 .item {
   width: 70px;
   height: 70px;
