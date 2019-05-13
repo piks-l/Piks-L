@@ -6,7 +6,7 @@
       </button>
     </div>
     <isotope ref="cpt" id="root_isotope1" :item-selector="'element-item'" :list="list" :options='option' @filter="filterOption=arguments[0]" >
-      <div v-for="(element,index) in list" :class="'[element.date] [element.stage]'"  :key="index">
+      <div v-for="(element,index) in list" :class="'element.date+element.stage'"  :key="index">
         <h3 class="name">{{element.name}}</h3>
         <p class="date">{{element.date}}</p>
         <p class="stage">{{element.stage}}</p>
