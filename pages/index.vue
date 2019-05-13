@@ -6,7 +6,6 @@
       <button v-for="(val, key) in option.getFilterData" class="button" data-filter="key" @click="filter(key)">{{key}}
       </button>
     </div>
-    <no-ssr>
     <div ref="cpt" id="root_isotope1" :item-selector="'element-item'" :list="element in list" @filter="filterOption=arguments[0]" >
       <div v-for="(element,index) in list" :class="element.date"  :key="index">
         <h3 class="name">{{element.name}}</h3>
@@ -15,7 +14,6 @@
       </div>
     </div>
      <iframe src="https://piks-l.com/beta/"></iframe> 
-    </no-ssr>
   </div>
 </template>
 
