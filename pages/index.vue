@@ -19,7 +19,8 @@
 var count = 0;
 export default {
   name: 'SectionProjects',
-  data: {
+  data() {
+   return {
     list: [{
       name: "Hatred",
       date: "d1",
@@ -70,6 +71,7 @@ export default {
           return el.stage === "stage4";
         }
       }
+    }
     }
   },
   methods: {
