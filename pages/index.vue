@@ -2,7 +2,8 @@
   <div class="container">
     <h2>Stage</h2>
     <div class="button-group">
-      <button v-for="(val, key) in option.getFilterData" class="button" data-filter="filter(key)" @click="filter(key)">{{key}}
+      <button data-filter=".d1">Date 1</button>
+      <button v-for="(val, key) in option.getFilterData" class="button" data-filter="key" @click="filter(key)">{{key}}
       </button>
     </div>
     <div ref="cpt" id="root_isotope1" :item-selector="'element-item'" :list="element in list" @filter="filterOption=arguments[0]" >
