@@ -1,42 +1,80 @@
 <template>
   <div class="container">
-      
-        <isotope :options="options" :list="list">
-          <div v-for="(item, index) in items" v-bind:key="index" class="list-item">
-            <h2>{{item.title}}</h2>
-          </div>
-        </isotope>
-        <button @click="filter('something')">filter</button>
-      
-
-     </div>
-
+    <h2>Stage</h2>
+    <div class="button-group">
+      <button v-for="(val, key) in option.getFilterData" class="button" :class="[key===filterOption? 'is-checked' : '']" @click="filter(key)">{{key}}
+      </button>
+    </div>
+    <isotope ref="cpt" id="root_isotope1" :item-selector="'element-item'" :list="list" :options='option' @filter="filterOption=arguments[0]" >
+      <div v-for="(element,index) in list" :class="'[element.date] [element.stage]'"  :key="index">
+        <h3 class="name">{{element.name}}</h3>
+        <p class="date">{{element.date}}</p>
+        <p class="stage">{{element.stage}}</p>
+      </div>
+    </isotope>
+  </div>
 </template>
 
 <script>
+var count = 0;
 export default {
   name: 'SectionProjects',
-  data() {
-    return {
-      list: [
-        { title: 'Natomas Meadows Clubhouse' }, 
-        { title: 'Donner Lake Remodel' }, 
-        { title: 'Havenwood' }
-      ],
-      items: [
-        { title: 'A' }, 
-        { title: 'B' }, 
-        { title: 'C' }
-      ],
-      options: {
-        itemSelector: '.list-item',
-        layout: 'fitRows',
-      },
-    };
+  data: {
+    list: [{
+      name: "Hatred",
+      date: "d1",
+      stage: "stage3"
+    }, {
+      name: "Svinkels",
+      date: "d1",
+      stage: "stage4"
+    }, {
+      name: "Iore",
+      date: "d2",
+      stage: "stage1"
+    }, {
+      name: "Patouf",
+      date: "d2",
+      stage: "stage2"
+    }],
+    currentLayout: 'masonry',
+    selected: null,
+    sortOption: "original-order",
+    filterOption: "Show all stage",
+    filter2Option: "Show all date",
+    option: {
+      itemSelector: ".element-item",
+      getFilterData: {
+        "show all date": function(el) {
+          return el.date === "d1" || el.date === "d2";
+        },
+        date1: function(el) {
+          return el.date === "d1";
+        },
+        date2: function(el) {
+          return el.date === "d2";
+        },
+        "show all stage": function(el) {
+          return el.stage === "stage1" || el.stage === "stage2" || el.stage === "stage3" || el.stage === "stage4";
+        },
+        stage1: function(el) {
+          return el.stage === "stage1";
+        },
+        stage2: function(el) {
+          return el.stage === "stage2";
+        },
+        stage3: function(el) {
+          return el.stage === "stage3";
+        },
+        stage4: function(el) {
+          return el.stage === "stage4";
+        }
+      }
+    }
   },
   methods: {
-    filter(key) {
-      this.filter(key);
+    filter: function(key) {
+    	this.$refs.cpt.filter(key);
     }
   }
 };
