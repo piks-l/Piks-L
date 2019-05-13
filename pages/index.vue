@@ -5,7 +5,7 @@
       <button v-for="(val, key) in option.getFilterData" class="button" :class="[key===filterOption? 'is-checked' : '']" @click="filter(key)">{{key}}
       </button>
     </div>
-    <isotope ref="cpt" id="root_isotope1" :item-selector="'element-item'" :list="element in list" :options="option" @filter="filterOption=arguments[0]" >
+    <isotope ref="cpt" id="root_isotope1" :item-selector="'element-item'" :list="element in list" @filter="filterOption=arguments[0]" >
       <div v-for="(element,index) in list" :class="element.date"  :key="index">
         <h3 class="name">{{element.name}}</h3>
         <p class="date">{{element.date}}</p>
