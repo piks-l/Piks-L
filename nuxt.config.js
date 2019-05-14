@@ -6,7 +6,6 @@ var dynamicRoutes = getDynamicPaths({
   '/artistes': 'artistes/page/*.json'
 });
 module.exports = {
-  mode: 'universal',
   head: {
     title: 'Electrobotik Invasion - le 2 & 3 Août 2019',
     meta: [
