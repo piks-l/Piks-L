@@ -136,70 +136,24 @@
 </template>
 
 <script>
-var count = 0;
-export default {
-  name: 'SectionProjects',
-  data() {
-   return {
-    list: [{
-      name: "Hatred",
-      date: "d1",
-      stage: "stage3"
-    }, {
-      name: "Svinkels",
-      date: "d1",
-      stage: "stage4"
-    }, {
-      name: "Iore",
-      date: "d2",
-      stage: "stage1"
-    }, {
-      name: "Patouf",
-      date: "d2",
-      stage: "stage2"
-    }],
-    currentLayout: 'masonry',
-    selected: null,
-    sortOption: "original-order",
-    filterOption: "Show all stage",
-    filter2Option: "Show all date",
-    option: {
-      itemSelector: ".element-item",
-      getFilterData: {
-        "show all date": function(el) {
-          return el.date === "d1" || el.date === "d2";
-        },
-        date1: function(el) {
-          return el.date === "d1";
-        },
-        date2: function(el) {
-          return el.date === "d2";
-        },
-        "show all stage": function(el) {
-          return el.stage === "stage1" || el.stage === "stage2" || el.stage === "stage3" || el.stage === "stage4";
-        },
-        stage1: function(el) {
-          return el.stage === "stage1";
-        },
-        stage2: function(el) {
-          return el.stage === "stage2";
-        },
-        stage3: function(el) {
-          return el.stage === "stage3";
-        },
-        stage4: function(el) {
-          return el.stage === "stage4";
-        }
-      }
-    }
-    }
-  },
-  methods: {
-    filter: function(key) {
-    	this.$refs.cpt.filter(key);
+  import $ from 'jquery'
+  import VueLazyload from 'vue-lazyload'
+  // export
+  export default {
+    layout: 'default',
+    components: { VueLazyload },
+    data() {
+      const context = require.context('~/content/artistes/page/', false, /\.json$/);
+      const artistes = context.keys().map(key => ({
+        ...context(key),
+        _path: `/artistes/${key.replace('.json', '').replace('./', '')}`
+      }));
+      return { artistes };
+    },
+    mounted: () => {
+      	console.log('document ready 2!')
     }
   }
-};
 </script>
 <style>
 
