@@ -1,6 +1,14 @@
 <template>
   <div class="container">
     <h1>Isotope - filtering &amp; sorting</h1>
+    <article v-for="artiste in artistes.slice().reverse()" :key="artiste.date" class="works">
+        <nuxt-link class="title" :to="artiste._path">
+          <div class="centrer" >
+            <img class="fontblur" v-lazy="artiste.thumbnail" :alt="artiste.title">
+            <img class="artists-img" v-lazy="artiste.thumbnail" :alt="artiste.title">
+          </div>  
+        </nuxt-link>
+    </article>
 <h2>Filter</h2>
 <div id="filters" class="button-group">  <button class="button is-checked" data-filter="*">show all</button>
   <button class="button" data-filter=".metal">metal</button>
