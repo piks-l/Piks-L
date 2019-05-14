@@ -1,16 +1,10 @@
 <template>
   <div class="container">
     <h1>Isotope - filtering &amp; sorting</h1>
-    <article v-for="artiste in artistes.slice().reverse()" :key="artiste.date" class="works">
-        <nuxt-link class="title" :to="artiste._path">
-          <div class="centrer" >
-            <img class="fontblur" v-lazy="artiste.thumbnail" :alt="artiste.title">
-            <img class="artists-img" v-lazy="artiste.thumbnail" :alt="artiste.title">
-          </div>  
-        </nuxt-link>
-    </article>
+
 <h2>Filter</h2>
-<div id="filters" class="button-group">  <button class="button is-checked" data-filter="*">show all</button>
+<div id="filters" class="button-group">  
+  <button class="button is-checked" data-filter="*">show all</button>
   <button class="button" data-filter=".metal">metal</button>
   <button class="button" data-filter=".transition">transition</button>
   <button class="button" data-filter=".alkali, .alkaline-earth">alkali and alkaline-earth</button>
@@ -21,7 +15,8 @@
 </div>
 
 <h2>Sort</h2>
-<div id="sorts" class="button-group">  <button class="button is-checked" data-sort-by="original-order">original order</button>
+<div id="sorts" class="button-group">  
+  <button class="button is-checked" data-sort-by="original-order">original order</button>
   <button class="button" data-sort-by="name">name</button>
   <button class="button" data-sort-by="symbol">symbol</button>
   <button class="button" data-sort-by="number">number</button>
@@ -30,6 +25,14 @@
 </div>
 
 <div class="grid">
+    <article v-for="artiste in artistes.slice().reverse()" :key="artiste.date" data-category="transition" class="element-item transition metal">
+        <nuxt-link class="title" :to="artiste._path">
+          <div class="centrer" >
+            <img class="fontblur" v-lazy="artiste.thumbnail" :alt="artiste.title">
+            <img class="artists-img" v-lazy="artiste.thumbnail" :alt="artiste.title">
+          </div>  
+        </nuxt-link>
+    </article>
   <div class="element-item transition metal " data-category="transition">
     <h3 class="name">Mercury</h3>
     <p class="symbol">Hg</p>
