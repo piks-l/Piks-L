@@ -150,7 +150,7 @@
       }));
       return { artistes };
     },
-    mounted: () => {
+    mounted() {
       	console.log('document ready 2!')
     }
   }
