@@ -25,7 +25,7 @@
 </div>
 
 <div class="grid">
-    <article v-for="artiste in artistes" :key="artiste.date"  data-category="transition" :class="artiste.stage" class="element-item">
+    <article v-for="artiste in artistes" :key="artiste.date"  data-category="transition" :class="artiste.stage" :class="artiste.dateshow" class="element-item">
         <nuxt-link class="title" :to="artiste._path">
           <div class="centrer" >
             <h3 class="name">{{artiste.title}}</h3>
