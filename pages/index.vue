@@ -6,7 +6,7 @@
 <div id="filters" class="button-group">  
   <button class="button is-checked" data-filter="*">show all</button>
   <button class="button" data-filter=".vendredi">Vendredi</button>
-  <button class="button" data-filter=".vendredi">Samedi</button>
+  <button class="button" data-filter=".samedi">Samedi</button>
 </div>
 <div id="filters2" class="button-group">  
   <button class="button is-checked" data-filter="*">show all</button>
