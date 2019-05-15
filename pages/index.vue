@@ -25,9 +25,10 @@
 </div>
 
 <div class="grid">
-    <article v-for="artiste in artistes.slice().reverse()" :key="artiste.date" data-category="transition" class="element-item transition metal">
+    <article v-for="artiste in artistes" :key="artiste.date" data-category="transition" class="element-item transition metal">
         <nuxt-link class="title" :to="artiste._path">
           <div class="centrer" >
+            <h3 class="name">{{artiste.title}}</h3>
             <img class="fontblur" v-lazy="artiste.thumbnail" :alt="artiste.title">
             <img class="artists-img" v-lazy="artiste.thumbnail" :alt="artiste.title">
           </div>  
