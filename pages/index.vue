@@ -7,7 +7,7 @@
   <button class="button is-checked" data-filter="*">show all</button>
   <button class="button" data-filter=".metal">metal</button>
   <button class="button" data-filter=".transition">transition</button>
-  <button class="button" data-filter=".alkali, .alkaline-earth">alkali and alkaline-earth</button>
+  <button class="button" data-filter=".vendredi">Vendredi</button>
   <button class="button" data-filter=":not(.transition)">not transition</button>
   <button class="button" data-filter=".metal:not(.transition)">metal but not transition</button>
   <button class="button" data-filter="numberGreaterThan50">number > 50</button>
@@ -25,7 +25,7 @@
 </div>
 
 <div class="grid">
-    <article v-for="artiste in artistes" :key="artiste.date"  data-category="transition" :class="artiste.dateshow+' '+artiste.stage" class="element-item">
+    <article v-for="artiste in artistes" :key="artiste.date" :data-category="artiste.dateshow+' '+artiste.stage" :class="artiste.dateshow+' '+artiste.stage" class="element-item">
         <nuxt-link class="title" :to="artiste._path">
           <div class="centrer" >
             <h3 class="name">{{artiste.title}}</h3>
