@@ -5,11 +5,9 @@
 </template>
 
 <script>
-  import $ from 'jquery'
   // export
   export default {
     layout: 'default',
-    components: { },
     head() {
       return {
         title: 'Electrobotik Invasion - le 2 & 3 Août 2019',
