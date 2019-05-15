@@ -16,7 +16,12 @@ collections:
       - {label: "Nom", name: "title", widget: "string", tagname: "h1", required: true}
       - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Iframe", name: "iframe", widget: "markdown"}
-      - {label: "Date", name: "dateshow", widget: "select", options: ["02/08", "03/08"]}
+      - label: "Date"
+        name: "dateshow"
+        widget: "select"
+        options:
+          - { label: "02/08", value: "vendredi" }
+          - { label: "03/08", value: "samedi" }
       - label: "Stages"
         name: "stage"
         widget: "select"
