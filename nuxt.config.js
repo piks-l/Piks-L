@@ -29,8 +29,8 @@ module.exports = {
   },
   plugins: [
     { src: '~/plugins/vue-lazyload', ssr: false }, 
-    { src: '~/plugins/vue-isotope'}, 
-    { src: '~/plugins/vue-imagesLoaded'}
+    { src: '~/plugins/vue-isotope', ssr: false }, 
+    { src: '~/plugins/vue-imagesLoaded', ssr: false }
   ],
   loading: {
     color: '#FFB413',
