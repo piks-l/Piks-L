@@ -29,8 +29,8 @@ module.exports = {
   },
   plugins: [
     { src: '~/plugins/vue-lazyload', ssr: false }, 
-    { src: '~/plugins/vue-isotope', ssr: false }, 
-    { src: '~/plugins/vue-imagesLoaded', ssr: false }
+    { src: '~/plugins/vue-isotope'}, 
+    { src: '~/plugins/vue-imagesLoaded'}
   ],
   loading: {
     color: '#FFB413',
@@ -45,8 +45,7 @@ module.exports = {
       new webpack.ProvidePlugin({
         $: 'jquery',
         jQuery: 'jquery',
-        'window.jQuery': 'jquery',
-        window: 'jquery'
+        'window.jQuery': 'jquery'
       })
     ],
     extend(config, { isDev, isClient }) {
