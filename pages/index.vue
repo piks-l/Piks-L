@@ -4,8 +4,8 @@
 
 <h2>Filter</h2>
 <div id="filters" class="button-group">  
-  <button class="button is-checked" data-filter="*">show all</button>
-  <button class="button" data-filter=".metal">metal</button>
+  <button class="button is-checked" data-filter="*">Show all</button>
+  <button class="button" data-filter=".d">metal</button>
   <button class="button" data-filter=".transition">transition</button>
   <button class="button" data-filter=".alkali, .alkaline-earth">alkali and alkaline-earth</button>
   <button class="button" data-filter=":not(.transition)">not transition</button>
@@ -17,15 +17,10 @@
 <h2>Sort</h2>
 <div id="sorts" class="button-group">  
   <button class="button is-checked" data-sort-by="original-order">original order</button>
-  <button class="button" data-sort-by="name">name</button>
-  <button class="button" data-sort-by="symbol">symbol</button>
-  <button class="button" data-sort-by="number">number</button>
-  <button class="button" data-sort-by="weight">weight</button>
-  <button class="button" data-sort-by="category">category</button>
 </div>
 
 <div class="grid">
-    <article v-for="artiste in artistes" :key="artiste.date" data-category="transition" class="element-item transition metal">
+    <article v-for="artiste in artistes" :key="artiste.date" :class="artiste.dateshow" :class="artiste.stage" class="element-item">
         <nuxt-link class="title" :to="artiste._path">
           <div class="centrer" >
             <h3 class="name">{{artiste.title}}</h3>
