@@ -5,8 +5,8 @@
       <div class="slash2"></div>
       <div class="menu-content">
           <div class="big-logo">
-              <img class="logo large-logo" src="assets/images/logo.svg"  alt="logo">
-              <img class="logo small-logo" src="assets/images/logo-horizontal.svg"  alt="logo">
+              <img class="logo large-logo" src="images/logo.svg"  alt="logo">
+              <img class="logo small-logo" src="images/logo-horizontal.svg"  alt="logo">
           </div>
           <div class="menu-info">
               <div class="circuit">
@@ -15,18 +15,18 @@
               <div class="pagination">
                   <div class="date">
                       <div class="date-circle">
-                          <img src="assets/images/test.svg"/>
+                          <img src="images/circle.svg"/>
                           <div class="content-date">
-                              <p class="big-date">02<small>lol</small>03</p>
+                              <p class="big-date">02<small>&amp;</small>03</p>
                               <p class="month">AOÛT 2019</p>
                           </div>
                       </div>
                   </div>
                   <div class="navigation">
                       <ul class="nav">
-                          <li><a href="index.html" >PROGRAMMATION</a></li>
+                          <li><a href="index.html">PROGRAMMATION</a></li>
                           <li><a href="billetterie.html">BILLETTERIE</a></li>
-                          <li><a href="#" >LE FESTIVAL</a></li>
+                          <li><nuxt-link to="festival">LE FESTIVAL</nuxt-link></li>
                           <li><a href="#" >INFOS-PRATIQUES</a></li>
                           <li><a href="#" >PARTENAIRES</a></li>
                       </ul>
