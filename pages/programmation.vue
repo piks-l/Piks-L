@@ -28,6 +28,8 @@
 </template>
 <script>
   // import
+  let Isotope;
+  if (process.browser) { Isotope = require("isotope-layout"); }
   import $ from 'jquery'
   import VueLazyload from 'vue-lazyload'
   // export
@@ -51,7 +53,12 @@
         ...context(key),
         _path: `/artistes/${key.replace('.json', '').replace('./', '')}`
       }));
-      return { artistes };
+      return {
+        artistes,
+        iso: null,
+        items: [],
+        itemsOccurences: {}
+      };
     },
     asyncData() {
       return new Promise((resolve) => {
@@ -62,13 +69,46 @@
 
       })
     },
-     mounted() {
-        setTimeout(() => {
-          // Extend loader for an additional 5s
-          this.$nuxt.$loading.finish()
-        }, 5000)
-        console.log('document ready 3!')
+  mounted() {
+    this.isotope();
+  },
+
+  methods: {
+    isotope() {
+      this.iso = new Isotope(".grid", {
+        itemSelector: ".grid-item",
+        percentPosition: true,
+        masonry: {
+          columnWidth: ".grid-sizer"
+        }
+      });
+
+      this.iso.layout();
+    },
+    formatSlug: function(data) {
+      return data ? data.replace(/ /g, "-").replace(/\./, "_") : "";
+    },
+    occurrences: function(slug) {
+      return this.itemsOccurences[slug];
+    },
+    filter: function(slug) {
+      let oldActive = $("#filters .btn-primary").first();
+
+      if (slug === oldActive.data("filter")) {
+        return;
       }
+
+      let currentActive = $("#filters button" + slug).first();
+
+      currentActive.removeClass("btn-default").addClass("btn-primary");
+
+      oldActive.removeClass("btn-primary").addClass("btn-default");
+
+      this.iso.arrange({
+        filter: slug
+      });
+    }
+  }
   }
 </script>
 <style>
