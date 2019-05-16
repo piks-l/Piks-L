@@ -59,15 +59,7 @@
           resolve({})
         }, 1000)
         console.log('document ready 2!')
-      })
-    },
-     mounted() {
-        setTimeout(() => {
-          // Extend loader for an additional 5s
-          this.$nuxt.$loading.finish()
-        }, 5000)
-        console.log('document ready 3!')
-        var $grid = $('.grid').isotope({
+                var $grid = $('.grid').isotope({
     itemSelector: '.element-item',
     layoutMode: 'fitRows'
   });
@@ -88,6 +80,14 @@
           $( this ).addClass('is-checked');
       });
 });
+      })
+    },
+     mounted() {
+        setTimeout(() => {
+          // Extend loader for an additional 5s
+          this.$nuxt.$loading.finish()
+        }, 5000)
+        console.log('document ready 3!')
       }
   }
 </script>
