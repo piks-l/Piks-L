@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
+/* Global */
 body {
     margin: 0;
     background:#000;
@@ -10,6 +12,7 @@ a, a:hover{
   text-decoration: none;
   outline: none;
 }
+/* Typography */
 h1 {
     text-align: center;
     font-size: 7em;
@@ -21,7 +24,7 @@ h1 {
     width: calc(100% - 30px);
     display: inline-block;
 }
-
+/* Menu */
 .open-menu {
     background: -webkit-linear-gradient(left, #0079ff, #b24576);
     background: linear-gradient(0.25turn, #0079ff, #b24576);
