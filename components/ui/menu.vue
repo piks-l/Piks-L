@@ -55,7 +55,7 @@
   import $ from 'jquery'
   export default {
     mounted: () => {
-     
+     console.log("Menu mounted");
     } // Mounted end
   } // Export end 
 </script>
