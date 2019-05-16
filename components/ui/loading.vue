@@ -25,11 +25,10 @@ export default {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.8);
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 1);
     text-align: center;
-    padding-top: 200px;
     font-size: 30px;
     font-family: sans-serif;
   }
