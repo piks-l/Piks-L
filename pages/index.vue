@@ -20,7 +20,7 @@
         setTimeout(() => {
           // Extend loader for an additional 5s
           this.$nuxt.$loading.finish()
-        }, 10000)
+        }, 0)
         console.log('document ready index 2!')
       }
   }
