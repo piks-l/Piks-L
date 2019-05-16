@@ -1,22 +1,22 @@
 <template>
-  <div class="layout-influx">
-    <influx-menu/>
-    <influx-header/>
+  <div class="layout-electrobotik">
+    <electrobotik-menu/>
+    <electrobotik-header/>
     <nuxt/>
-    <influx-footer/>
+    <electrobotik-footer/>
   </div>
 </template>
 <script>
   import $ from 'jquery'
-  import influxMenu from '~/components/ui/menu.vue'
-  import influxHeader from '~/components/ui/header.vue'
-  import influxFooter from '~/components/ui/footer.vue'
+  import electrobotikMenu from '~/components/ui/menu.vue'
+  import electrobotikHeader from '~/components/ui/header.vue'
+  import electrobotikFooter from '~/components/ui/footer.vue'
   export default {
       transition: 'page',
       components: {
-          influxMenu,
-          influxHeader,
-          influxFooter,
+          electrobotikMenu,
+          electrobotikHeader,
+          electrobotikFooter,
       },
       mounted: () => {
           
