@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
+.page-enter-active, .page-leave-active {
+  transition: opacity .5s
+}
+.page-enter, .page-leave-active {
+  opacity: 0
+}
 /* Global */
 body {
     margin: 0;
