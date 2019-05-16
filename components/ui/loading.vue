@@ -15,7 +15,7 @@ export default {
         resolve({})
       }, 1000)
     })
-  }
+  },
   data: () => ({
     loading: false
   }),
