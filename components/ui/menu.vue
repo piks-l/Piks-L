@@ -5,8 +5,8 @@
       <div class="slash2"></div>
       <div class="menu-content">
           <div class="big-logo">
-              <nuxt-link to="/"><img class="logo large-logo" src="images/logo.svg"  alt="logo"></nuxt-link>
-              <nuxt-link to="/"><img class="logo small-logo" src="images/logo-horizontal.svg"  alt="logo"></nuxt-link>
+              <nuxt-link to="/"><img class="logo large-logo" src="https://electrobotik.netlify.com/images/logo.svg"  alt="logo"></nuxt-link>
+              <nuxt-link to="/"><img class="logo small-logo" src="https://electrobotik.netlify.com/images/logo-horizontal.svg"  alt="logo"></nuxt-link>
           </div>
           <div class="menu-info">
               <div class="circuit">
@@ -15,7 +15,7 @@
               <div class="pagination">
                   <div class="date">
                       <div class="date-circle">
-                          <img src="images/circle.svg"/>
+                          <img src="https://electrobotik.netlify.com/images/circle.svg"/>
                           <div class="content-date">
                               <p class="big-date">02<small>&amp;</small>03</p>
                               <p class="month">AOÛT 2019</p>
