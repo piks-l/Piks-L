@@ -32,7 +32,7 @@
     import VueLazyload from 'vue-lazyload'
   // export
   export default {
-    layout: 'pages',
+    layout: 'default',
     components: { VueLazyload },
     head() {
       return {
