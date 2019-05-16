@@ -53,7 +53,13 @@
         }, 1000)
         console.log('document ready 2!')
       })
-    }
+    },
+     mounted() {
+        setTimeout(() => {
+          // Extend loader for an additional 5s
+          this.$nuxt.$loading.finish()
+        }, 5000)
+      }
   }
 </script>
 <style>
