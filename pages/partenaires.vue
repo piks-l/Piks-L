@@ -1,13 +1,14 @@
 <template>
   <div class="page">
-    <h1></h1>
+    <h2>PARTENAIRES</h2>
   </div>
 </template>
-
 <script>
+  import $ from 'jquery'
   // export
   export default {
     layout: 'default',
+    components: { },
     head() {
       return {
         title: 'Electrobotik Invasion - le 2 & 3 Août 2019',
@@ -19,8 +20,7 @@
         ]
       }
     },
-    mounted () {
-      	
+    mounted () {	
     }
   }
 </script>
