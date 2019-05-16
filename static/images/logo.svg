@@ -5,7 +5,7 @@
     fill:#FFFFFF;
   }
 	.st0{ 
-		filter: none;
+		filter: url(#filter);
 		fill: white;
     	font-family: 'Share Tech Mono', sans-serif;
     	font-size: 100px;
@@ -13,7 +13,7 @@
 		-moz-osx-font-smoothing: grayscale;
    }
    .st0:hover{
-    filter: url(#filter);
+    filter: none!important;
   }
 
 </style>
