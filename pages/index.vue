@@ -46,8 +46,13 @@
       }));
       return { artistes };
     },
-    mounted() {
-      	console.log('document ready 2!')
+    asyncData() {
+      return new Promise((resolve) => {
+        setTimeout(function () {
+          resolve({})
+        }, 1000)
+        console.log('document ready 2!')
+      })
     }
   }
 </script>
