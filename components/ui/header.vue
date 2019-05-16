@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <div class="header">
     <div class="center-logo">
       <video autoplay muted loop playsinline id="animation">
          <source src="https://electrobotik.frb.io/site/themes/electrobotik/video/EI2019_TEASER01_NOTEXT_converted.mp4" type="video/mp4">
@@ -7,7 +7,7 @@
       <!-- <img class="logo" src="https://influx-002.netlify.com/images/uploads/00000000050.png" alt=""> --> 
       <div class="smog"></div>
     </div>
-  </header>
+  </div>
 </template>
 <script>
 export default {
