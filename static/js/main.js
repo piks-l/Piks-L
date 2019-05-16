@@ -38,7 +38,6 @@ $(function () {
       $buttonGroup.on( 'click', 'button', function() {
           $buttonGroup.find('.is-checked').removeClass('is-checked');
           $( this ).addClass('is-checked');
-
       });
   });
 })
