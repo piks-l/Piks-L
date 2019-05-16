@@ -12,7 +12,7 @@
       return new Promise((resolve) => {
         setTimeout(function () {
           resolve({})
-        }, 10000)
+        }, 5000)
         console.log('document ready index 1!')
       })
     },
