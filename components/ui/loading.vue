@@ -33,6 +33,7 @@ export default {
 
 <style>
   .loading-page {
+    z-index:666;
     position: fixed;
     top: 0;
     left: 0;
@@ -41,6 +42,5 @@ export default {
     background: rgba(0, 0, 0, 1);
     text-align: center;
     font-size: 30px;
-    font-family: sans-serif;
   }
 </style>
