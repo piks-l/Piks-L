@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "jquery": "^3.4.1",
-    "nuxt": "latest",
+    "nuxt": "^1.0.0",
     "vue-images-loaded": "^1.1.2",
     "vue-markdown": "^2.2.4",
     "vueisotope": "^3.1.2"
