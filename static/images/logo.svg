@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 430.83 628.25" style="enable-background:new 0 0 430.83 628.25;" xml:space="preserve">
 <style type="text/css">
-  .st0{fill:#FFFFFF;}
+  .st0{
+    fill:#FFFFFF;
+  }
 	.st0{ 
-		filter: url(#filter);
+		filter: none;
 		fill: white;
     	font-family: 'Share Tech Mono', sans-serif;
     	font-size: 100px;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
-     		}
+   }
+   .st0:hover{
+    filter: url(#filter);
+  }
 
 </style>
 	<defs>
