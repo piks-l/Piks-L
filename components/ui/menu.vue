@@ -17,7 +17,7 @@
                       <div class="date-circle">
                           <img src="assets/images/test.svg"/>
                           <div class="content-date">
-                              <p class="big-date">02<small>&</small>03</p>
+                              <p class="big-date">02<small>lol</small>03</p>
                               <p class="month">AOÛT 2019</p>
                           </div>
                       </div>
