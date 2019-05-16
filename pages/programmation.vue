@@ -3,7 +3,6 @@
     <h2>PROGRAMMATION</h2>
   </div>
 </template>
-
 <script>
   import $ from 'jquery'
   // export
@@ -21,8 +20,7 @@
         ]
       }
     },
-    mounted () {
-      	
+    mounted () {	
     }
   }
 </script>
