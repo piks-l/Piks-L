@@ -5,8 +5,8 @@
       <div class="slash2"></div>
       <div class="menu-content">
           <div class="big-logo">
-              <NuxtLink to="/"><img class="logo large-logo" src="https://electrobotik.netlify.com/images/logo.svg"  alt="logo"></NuxtLink>
-              <NuxtLink to="/"><img class="logo small-logo" src="https://electrobotik.netlify.com/images/logo-horizontal.svg"  alt="logo"></NuxtLink>
+              <nuxt-link to="/"><img class="logo large-logo" src="https://electrobotik.netlify.com/images/logo.svg"  alt="logo"></nuxt-link>
+              <nuxt-link to="/"><img class="logo small-logo" src="https://electrobotik.netlify.com/images/logo-horizontal.svg"  alt="logo"></nuxt-link>
           </div>
           <div class="menu-info">
               <div class="circuit">
@@ -24,11 +24,11 @@
                   </div>
                   <div class="navigation">
                       <ul class="nav">
-                          <li><nuxt-link to="programmation">PROGRAMMATION</nuxt-link></li>
-                          <li><nuxt-link to="billetterie">BILLETTERIE</nuxt-link></li>
-                          <li><nuxt-link to="festival">LE FESTIVAL</nuxt-link></li>
-                          <li><nuxt-link to="infos-pratiques">INFOS-PRATIQUES</nuxt-link></li>
-                          <li><nuxt-link to="partenaires">PARTENAIRES</nuxt-link></li>
+                          <li><nuxt-link to="/programmation/">PROGRAMMATION</nuxt-link></li>
+                          <li><nuxt-link to="/billetterie/">BILLETTERIE</nuxt-link></li>
+                          <li><nuxt-link to="/festival/">LE FESTIVAL</nuxt-link></li>
+                          <li><nuxt-link to="/infos-pratiques/">INFOS-PRATIQUES</nuxt-link></li>
+                          <li><nuxt-link to="/partenaires/">PARTENAIRES</nuxt-link></li>
                       </ul>
                   </div>
               </div>
