@@ -15,7 +15,8 @@
   "dependencies": {
     "jquery": "^3.4.1",
     "nuxt": "^1.0.0",
-    "vue-markdown": "^2.2.4"
+    "vue-markdown": "^2.2.4",
+    "vueisotope": "3.1.2"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
