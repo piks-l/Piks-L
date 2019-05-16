@@ -12,7 +12,7 @@
       return new Promise((resolve) => {
         setTimeout(function () {
           resolve({})
-        }, 1000)
+        }, 10000)
         console.log('document ready index 1!')
       })
     },
@@ -20,7 +20,7 @@
         setTimeout(() => {
           // Extend loader for an additional 5s
           this.$nuxt.$loading.finish()
-        }, 5000)
+        }, 10000)
         console.log('document ready index 2!')
       }
   }
