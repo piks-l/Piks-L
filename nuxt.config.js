@@ -32,7 +32,7 @@ module.exports = {
     { src: '~/plugins/vue-isotope', ssr: false }, 
     { src: '~/plugins/vue-imagesLoaded', ssr: false }
   ],
-  loading: {src: '~/components/ui/loading.vue'},
+  loading: '~/components/ui/loading.vue',
   generate: {
     routes: dynamicRoutes
   },
