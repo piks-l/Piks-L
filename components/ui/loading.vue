@@ -9,10 +9,18 @@
 
 <script>
 export default {
+  asyncData() {
+    return new Promise((resolve) => {
+      setTimeout(function () {
+        resolve({})
+      }, 1000)
+    })
+  }
   data: () => ({
     loading: false
   }),
   methods: {
+  
     start() {
       this.loading = true
     },
