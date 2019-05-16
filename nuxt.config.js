@@ -28,9 +28,7 @@ module.exports = {
     scrollBehavior: function (to, from, savedPosition) { return { x: 0, y: 0 } }
   },
   plugins: [
-    { src: '~/plugins/vue-lazyload', ssr: false }, 
-    { src: '~/plugins/vue-isotope', ssr: false }, 
-    { src: '~/plugins/vue-imagesLoaded', ssr: false }
+    { src: '~/plugins/vue-lazyload', ssr: false }
   ],
   loading: '~/components/ui/loading.vue',
   generate: {
@@ -42,15 +40,12 @@ module.exports = {
       new webpack.ProvidePlugin({
         $: 'jquery',
         jQuery: 'jquery',
-        'window.jQuery': 'jquery',
-        window: 'jquery',
+        'window.jQuery': 'jquery'
       })
     ],
     extend(config, { isDev, isClient }) {
-      /*
       const vueLoader = config.module.rules.find((rule) => rule.loader === 'vue-loader')
       vueLoader.options.transformToRequire['img'] = ['src', 'data-src'];
-      */
       if (isDev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
