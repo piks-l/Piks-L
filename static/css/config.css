@@ -127,6 +127,7 @@ h1 {
       top: 50%;
       -webkit-transform: translatey(-50%);
               transform: translatey(-50%);
+      left: 0;
     }
     .small-logo{
         display:none;
