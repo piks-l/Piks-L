@@ -59,6 +59,7 @@
           // Extend loader for an additional 5s
           this.$nuxt.$loading.finish()
         }, 5000)
+        console.log('document ready 3!')
       }
   }
 </script>
