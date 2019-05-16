@@ -8,7 +8,7 @@
   import $ from 'jquery'
   // export
   export default {
-    layout: 'default',
+    layout: 'pages',
     components: { },
     head() {
       return {
