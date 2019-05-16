@@ -17,7 +17,8 @@
     "nuxt": "^1.4.0",
     "vue-images-loaded": "^1.1.2",
     "vue-markdown": "^2.2.4",
-    "vueisotope": "^3.1.2"
+    "vueisotope": "^3.1.2",
+    "vue-loader": "https://github.com/graux/vue-loader#a0d6b77"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
