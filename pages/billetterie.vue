@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <h1></h1>
+    <h2>billetterie</h2>
   </div>
 </template>
 
