@@ -47,8 +47,10 @@ module.exports = {
       })
     ],
     extend(config, { isDev, isClient }) {
+      /*
       const vueLoader = config.module.rules.find((rule) => rule.loader === 'vue-loader')
       vueLoader.options.transformToRequire['img'] = ['src', 'data-src'];
+      */
       if (isDev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
