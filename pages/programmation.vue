@@ -166,17 +166,16 @@
       return this.itemsOccurences[slug];
     },
     filter: function(slug) {
-      let oldActive = $("#filters .btn-primary").first();
-
-      if (slug === oldActive.data("filter")) {
-        return;
-      }
-
-      let currentActive = $("#filters button" + slug).first();
-
-      currentActive.removeClass("btn-default").addClass("btn-primary");
-
-      oldActive.removeClass("btn-primary").addClass("btn-default");
+      var $button = $( event.currentTarget );
+      // get group key
+      var $buttonGroup = $button.parents('.button-group');
+      var filterGroup = $buttonGroup.attr('data-filter-group');
+      // set filter for group
+      filters[ filterGroup ] = $button.attr('data-filter');
+      // combine filters
+      var filterValue = concatValues( filters );
+      // set filter for Isotope
+      // this.iso({ filter: filterValue });
 
       this.iso.arrange({
         filter: filterValue
