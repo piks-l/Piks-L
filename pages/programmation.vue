@@ -143,14 +143,8 @@
     },
     filter: function(message, i, event) {
     alert(message)
- // store filter for each group
     var filters = {};
             
-    var $this = $(this);
-    //var selectGroup = $this.parents('.button-group');
-    var filterGroup = $this.attr('data-filter-group');
-
-    filters[ filterGroup ] = $this.val();
 
     var filterValue = concatValues( message );
     console.log(filterValue);
