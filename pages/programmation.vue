@@ -141,9 +141,9 @@
     occurrences: function(slug) {
       return this.itemsOccurences[slug];
     },
-    filter: function(event) {
+    filter: function(i, event) {
  // store filter for each group
-            var filters = {};
+    var filters = {};
             
     var $this = $(this);
     //var selectGroup = $this.parents('.button-group');
@@ -152,7 +152,7 @@
     filters[ filterGroup ] = $this.val();
 
     var filterValue = concatValues( filters );
-  console.log(filterGroup, filterValue);
+    console.log(filterGroup, filterValue);
 
             function concatValues( obj ) {
                 var value = '';
