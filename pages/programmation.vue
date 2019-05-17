@@ -2,9 +2,9 @@
   <div class="page">
     <h2>PROGRAMMATION</h2>
     <div id="filters" class="button-group">  
-      <button class="button is-checked" data-filter="*">show all</button>
-      <button class="button" data-filter=".vendredi">Vendredi</button>
-      <button class="button" data-filter=".samedi">Samedi</button>
+      <button class="button btn btn-primary is-checked" @click="filter('*')" data-filter="*">show all</button>
+      <button class="button btn btn-primary" @click="filter('.vendredi')" data-filter=".vendredi">Vendredi</button>
+      <button class="button btn btn-primary" @click="filter('.samedi')" data-filter=".samedi">Samedi</button>
     </div>
     <div id="filters2" class="button-group">  
       <button class="button is-checked" data-filter="*">show all</button>
