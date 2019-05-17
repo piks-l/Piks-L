@@ -144,7 +144,7 @@
                 filters[ filterGroup ] = $button.attr('data-filter');
                 // combine filters
                 var filterValue = concatValues( filters );
-                this.isotope({
+                isotope({
                   filter: filterValue
                 });
             });
