@@ -63,11 +63,4 @@
   } // Export end 
 </script>
 <style>
-.button-group {
-
-    display: block;
-    position: relative;
-    margin-left: 20%;
-
-}
 </style>
