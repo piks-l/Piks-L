@@ -827,7 +827,7 @@ header.sticky{
   height: 300px;
   margin: 1%;
   padding: 10px;
-  background: transparent;
+  background: #151515;
   color: #262524;
   overflow: hidden;
 }
