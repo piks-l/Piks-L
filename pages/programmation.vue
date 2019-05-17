@@ -131,11 +131,11 @@
     occurrences: function(slug) {
       return this.itemsOccurences[slug];
     },
-    filter: function(slug) {
+    filter: function(slug, isotope) {
                 // store filter for each group
             var filters = {};
 
-            $('#filters').on( 'click', '.button', function( event ) {
+            $('#filters').on( 'click', '.button', function( event, isotope ) {
                 var $button = $( event.currentTarget );
                 // get group key
                 var $buttonGroup = $button.parents('.button-group');
