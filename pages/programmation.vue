@@ -116,23 +116,7 @@
         });
     };
     this.isotope();
-  },
-
-  methods: {
-    isotope() {
-        this.iso = new Isotope(".grid", {
-          itemSelector: '.element-item'
-        });
-      this.iso.layout();
-    },
-    formatSlug: function(data) {
-      return data ? data.replace(/ /g, "-").replace(/\./, "_") : "";
-    },
-    occurrences: function(slug) {
-      return this.itemsOccurences[slug];
-    },
-    filter: function(slug) {
-                // store filter for each group
+         // store filter for each group
             var filters = {};
 
             $('#filters').on( 'click', '.button', function( event, isotope ) {
@@ -167,6 +151,23 @@
                 }
                 return value;
             }
+  },
+
+  methods: {
+    isotope() {
+        this.iso = new Isotope(".grid", {
+          itemSelector: '.element-item'
+        });
+      this.iso.layout();
+    },
+    formatSlug: function(data) {
+      return data ? data.replace(/ /g, "-").replace(/\./, "_") : "";
+    },
+    occurrences: function(slug) {
+      return this.itemsOccurences[slug];
+    },
+    filter: function(slug) {
+           
 
     }
   }
