@@ -24,11 +24,11 @@
                       </div>
                       <div class="navigation">
                           <ul class="nav">
-                            <li><nuxt-link to="/programmation/">PROGRAMMATION</nuxt-link></li>
-                            <li><nuxt-link to="/billetterie/">BILLETTERIE</nuxt-link></li>
-                            <li><nuxt-link to="/festival/">LE FESTIVAL</nuxt-link></li>
-                            <li><nuxt-link to="/infos-pratiques/">INFOS-PRATIQUES</nuxt-link></li>
-                            <li><nuxt-link to="/partenaires/">PARTENAIRES</nuxt-link></li>
+                            <li><nuxt-link class="menu-link" to="/programmation/">PROGRAMMATION</nuxt-link></li>
+                            <li><nuxt-link class="menu-link" to="/billetterie/">BILLETTERIE</nuxt-link></li>
+                            <li><nuxt-link class="menu-link" to="/festival/">LE FESTIVAL</nuxt-link></li>
+                            <li><nuxt-link class="menu-link" to="/infos-pratiques/">INFOS-PRATIQUES</nuxt-link></li>
+                            <li><nuxt-link class="menu-link" to="/partenaires/">PARTENAIRES</nuxt-link></li>
                           </ul>
                       </div>
                   </div>
