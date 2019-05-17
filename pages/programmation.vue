@@ -142,14 +142,14 @@
       return this.itemsOccurences[slug];
     },
     filter: function(message, event) {
-                var $button = $( event.currentTarget );
+                let $button = $( event.currentTarget );
                 // get group key
-                var $buttonGroup = $button.parents('.button-group');
-                var filterGroup = $buttonGroup.attr('data-filter-group');
+                let $buttonGroup = $button.parents('.button-group');
+                let filterGroup = $buttonGroup.attr('data-filter-group');
                 // set filter for group
                 filters[ filterGroup ] = message;
                 // combine filters
-                var filterValue = concatValues( filters );
+                let filterValue = concatValues( filters );
 
             function concatValues( obj ) {
                 var value = '';
