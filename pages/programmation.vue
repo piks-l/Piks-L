@@ -141,12 +141,12 @@
     occurrences: function(slug) {
       return this.itemsOccurences[slug];
     },
-    filter: function(message, i, event) {
+    filter: function(message, event) {
     var filters = {};
             
-
+    var filterGroup = this.attr('data-filter-group');
     var filterValue = concatValues( message );
-    console.log(filterValue);
+    console.log(filterGroup, filterValue);
 
             function concatValues( obj ) {
                 var value = '';
