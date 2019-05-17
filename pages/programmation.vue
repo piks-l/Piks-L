@@ -101,8 +101,8 @@
     },
   mounted() {
     this.$Lazyload.$on('loaded', function ({ el, src, $parent }) {
-      console.log(el, src);
-      $parent('.volet1').parent('.effect').addClass("loaded");
+      console.log(src);
+      el.parent('.volet1').parent('.effect').addClass("loaded");
     });
     if ($(window).width() > 599) {
        $('.button-stage button, .other-stage button').each( function() {
