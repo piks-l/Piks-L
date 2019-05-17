@@ -120,9 +120,9 @@
 
   methods: {
     isotope() {
-            this.iso = new Isotope(".grid", {
-              itemSelector: '.element-item'
-            });
+        this.iso = new Isotope(".grid", {
+          itemSelector: '.element-item'
+        });
       this.iso.layout();
     },
     formatSlug: function(data) {
@@ -131,7 +131,7 @@
     occurrences: function(slug) {
       return this.itemsOccurences[slug];
     },
-    filter: function(slug) {
+    filter: function(isotope) {
                 // store filter for each group
             var filters = {};
 
