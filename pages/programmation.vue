@@ -143,6 +143,10 @@
                 // set filter for group
                 filters[ filterGroup ] = $button.attr('data-filter');
                 // combine filters
+                var filterValue = concatValues( filters );
+                this.iso.arrange({
+                    filter: filterValue
+                  });
                 
             });
 
@@ -164,10 +168,7 @@
                 }
                 return value;
             }
-            var filterValue = concatValues( filters );
-            this.iso.arrange({
-                filter: filterValue
-              });
+      
     }
   }
   }
