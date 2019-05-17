@@ -46,6 +46,7 @@
                               <div class="boxshadow"></div>
                               <div class="circle"><img src="https://electrobotik.netlify.com/images/circle.svg"/></div>
                               <h3 class="name small">{{artiste.title}}</h3>
+                              <p>class="name small">{{artiste.dateshow}}</p>
                           </div>
                           <div class="volet2"></div>
                           <div class="border-bot"></div>
