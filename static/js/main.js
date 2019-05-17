@@ -25,7 +25,7 @@ $(function () {
             $( ".open-menu" ).click(function() {
               $( ".menu" ).addClass( "open" );
             });
-            $( ".close" ).click(function() {
+            $( ".close, .menu-link" ).click(function() {
               $( ".menu" ).removeClass( "open" );
             });
             if ($(window).width() > 599) {
