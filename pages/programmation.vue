@@ -121,7 +121,7 @@
                 // combine filters
                 var filterValue = concatValues( filters );
                 // set filter for Isotope
-                $grid.isotope({ filter: filterValue });
+                this.iso.isotope({ filter: filterValue });
             });
 
             // change is-checked class on buttons
