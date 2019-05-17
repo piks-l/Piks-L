@@ -152,8 +152,8 @@
 
     filters[ filterGroup ] = $this.val();
 
-    var filterValue = concatValues( filters );
-    console.log(filterGroup, filterValue);
+    var filterValue = concatValues( message );
+    console.log(filterValue);
 
             function concatValues( obj ) {
                 var value = '';
@@ -165,7 +165,7 @@
             this.iso.arrange({
               filter: filterValue
             });
-            console.log(filterss);
+           
              
     }
   }
