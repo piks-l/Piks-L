@@ -131,7 +131,7 @@
     occurrences: function(slug) {
       return this.itemsOccurences[slug];
     },
-    filter: function(slug, isotope) {
+    filter: function(slug) {
                 // store filter for each group
             var filters = {};
 
@@ -144,7 +144,7 @@
                 filters[ filterGroup ] = $button.attr('data-filter');
                 // combine filters
                 var filterValue = concatValues( filters );
-                this.iso.isotope({
+                this.iso.arrange({
                   filter: filterValue
                 });
             });
@@ -167,7 +167,7 @@
                 }
                 return value;
             }
-      
+
     }
   }
   }
