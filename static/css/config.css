@@ -875,14 +875,14 @@ header.sticky{
     transition:left .35s cubic-bezier(0.785,.135,.15,.86) .40s , width .35s cubic-bezier(0.785,.135,.15,.86) .55s;
     z-index:2;
 }
-.hardcore .effect{background: #0079ff ;}
-.hardcore .volet1, .hardcore .volet2{background: #b24576 ;}
-.electro .effect{background: #b24576 ;}
-.electro .volet1, .electro .volet2{background: #fdfdfd ;}
-.trance .effect{background: #fdfdfd ;}
-.trance .volet1, .trance .volet2{background: #0079ff;}
-.hip-hop .effect{background: #cc93a5;}
-.hip-hop .volet1, .hip-hop .volet2{background: #0079ff ;}
+.HARDCORE .effect{background: #0079ff ;}
+.HARDCORE .volet1, .HARDCORE .volet2{background: #b24576 ;}
+.TECHNO .effect{background: #b24576 ;}
+.TECHNO .volet1, .TECHNO .volet2{background: #fdfdfd ;}
+.TRANCE .effect{background: #fdfdfd ;}
+.TRANCE .volet1, .TRANCE .volet2{background: #0079ff;}
+.HIPHOP .effect{background: #cc93a5;}
+.HIPHOP .volet1, .HIPHOP .volet2{background: #0079ff ;}
 
 
 
