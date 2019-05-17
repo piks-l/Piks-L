@@ -144,6 +144,10 @@
                 filters[ filterGroup ] = $button.attr('data-filter');
                 // combine filters
                 var filterValue = concatValues( filters );
+                
+      this.iso.arrange({
+        filter: filterValue
+      });
             });
 
             // change is-checked class on buttons
@@ -165,9 +169,6 @@
                 return value;
             }
 
-      this.iso.arrange({
-        filter: filterValue
-      });
     }
   }
   }
