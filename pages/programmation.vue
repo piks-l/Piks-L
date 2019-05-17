@@ -165,7 +165,7 @@
                 return value;
             }
             var filterValue = concatValues( filters );
-            this.iso({
+            this.iso.arrange({
                 filter: filterValue
               });
     }
