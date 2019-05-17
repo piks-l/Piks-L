@@ -14,6 +14,7 @@
       <button class="button" data-filter=".HIPHOP">Hip Hop</button>
     </div>
     <div class="grid">
+      <div class="grid-sizer"></div>
       <article v-for="artiste in artistes" :key="artiste.date" :data-category="artiste.dateshow+' '+artiste.stage" :class="artiste.dateshow+' '+artiste.stage" class="element-item">
           <nuxt-link class="title" :to="artiste._path">
             <div class="centrer" >
