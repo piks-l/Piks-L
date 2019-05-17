@@ -76,7 +76,7 @@
   methods: {
     isotope() {
       this.iso = new Isotope(".grid", {
-        itemSelector: ".grid-item",
+        itemSelector: ".element-item",
         percentPosition: true,
         masonry: {
           columnWidth: ".grid-sizer"
