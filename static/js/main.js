@@ -1,4 +1,10 @@
 $(function () {
+    $('.lazy').lazy({
+    threshold:100,
+    afterLoad: function(element) {
+        element.parent('.volet1').parent('.effect').addClass("loaded");
+    }
+  });
   // Menu
   $( ".button-date button" ).click(function() {
     $( ".button-stage .any" ).click();
