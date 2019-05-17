@@ -163,7 +163,7 @@
             this.iso.arrange({
               filter: filterValue
             });
-            console.log(filters);
+            console.log(filters[ filterGroup ]);
     }
   }
   }
