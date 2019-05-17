@@ -5,8 +5,8 @@
           <div class="slash2"></div>
           <div class="menu-content">
               <div class="big-logo">
-                  <img class="logo large-logo" src="assets/images/logo.svg"  alt="logo">
-                  <img class="logo small-logo" src="assets/images/logo-horizontal.svg"  alt="logo">
+                  <img class="logo large-logo" src="https://electrobotik.netlify.com/images/logo.svg"  alt="logo">
+                  <img class="logo small-logo" src="https://electrobotik.netlify.com/images/logo-horizontal.svg"  alt="logo">
               </div>
               <div class="menu-info">
                   <div class="circuit">
@@ -15,9 +15,9 @@
                   <div class="pagination">
                       <div class="date">
                           <div class="date-circle">
-                              <img src="assets/images/test.svg"/>
+                              <img src="https://electrobotik.netlify.com/images/circle.svg"/>
                               <div class="content-date">
-                                  <p class="big-date">02<small>&</small>03</p>
+                                  <p class="big-date">02<small>&amp;</small>03</p>
                                   <p class="month">AOÛT 2019</p>
                               </div>
                           </div>
