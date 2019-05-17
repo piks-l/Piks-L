@@ -142,7 +142,23 @@
                 }
                 return value;
             }
-
+            $('.lazy').lazy({
+              threshold:100,
+              afterLoad: function(element) {
+                  element.parent('.volet1').parent('.effect').addClass("loaded");
+              }
+            });
+            var el = $(this);
+            if ($(window).width() > 599) {
+               $('.button-stage button, .other-stage button').each( function() {
+                    var search = $(this).html();
+                    var replace = '<div class="mini-circle"><div class="center-circle"></div></div>' + search ;
+                    var el = $(this);
+                    var text = el.html();
+                    text = text.split(search).join(replace);
+                    el.html(text);
+                });
+            };
       this.iso.layout();
     },
     formatSlug: function(data) {
