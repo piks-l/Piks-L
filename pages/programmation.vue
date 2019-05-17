@@ -135,7 +135,7 @@
                 // store filter for each group
             var filters = {};
 
-            $('#filters').on( 'click', '.button', function( event ) {
+            $('#filters').on( 'click', '.button', function( event, slug ) {
                 var $button = $( event.currentTarget );
                 // get group key
                 var $buttonGroup = $button.parents('.button-group');
@@ -144,10 +144,9 @@
                 filters[ filterGroup ] = $button.attr('data-filter');
                 // combine filters
                 var filterValue = concatValues( filters );
-                
-      this.iso.arrange({
-        filter: filterValue
-      });
+                this.iso.arrange({
+                  filter: filterValue
+                });
             });
 
             // change is-checked class on buttons
