@@ -1,10 +1,10 @@
 <template>
   <div id="main-container">
       <div  class="container scene_element scene_element--fadein ">
-        <img id="logo" src="assets/images/logo.svg" alt="logo">
+        <img id="logo" src="https://electrobotik.netlify.com/images/logo-basic.svg" alt="logo">
         <header id="header">
           <div class="sticky-container">
-              <img id="sticky-logo" class="logo" src="assets/images/logo-horizontal.svg"  alt="logo">
+              <img id="sticky-logo" class="logo" src="https://electrobotik.netlify.com/images/logo-horizontal.svg"  alt="logo">
               <div id="filters">
                 <h1>PROGRAMMATION</h1>
                 <div class="button-date button-group"  data-filter-group="date">
@@ -36,7 +36,7 @@
               <div class="separator"></div>
           </div>
       </header>
-      <div class="deco-top"><div id="parallax1" class="parallax" data-image-src="assets/images/crop.jpg"></div></div>
+      <div class="deco-top"><div id="parallax1" class="parallax" data-image-src="https://electrobotik.netlify.com/images/crop.jpg"></div></div>
           <div class="grid">
               <div v-for="artiste in artistes" :key="artiste.date" :data-category="artiste.dateshow+' '+artiste.stage" :class="artiste.dateshow+' '+artiste.stage" class="element-item">
                    <nuxt-link class="title" :to="artiste._path">
