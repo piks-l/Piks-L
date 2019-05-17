@@ -141,7 +141,8 @@
     occurrences: function(slug) {
       return this.itemsOccurences[slug];
     },
-    filter: function(i, event) {
+    filter: function(message, i, event) {
+    alert(message)
  // store filter for each group
     var filters = {};
             
