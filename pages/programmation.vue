@@ -144,16 +144,16 @@
     filter: function(event) {
  // store filter for each group
             var filters = {};
-            var $button = $( event.currentTarget );
-            // get group key
-            var $buttonGroup = $button.parents('.button-group');
-            var filterGroup = $buttonGroup.attr('data-filter-group');
-            // set filter for group
-            filters[ filterGroup ] = $button.attr('data-filter');
-            var filterss = $(event.currentTarget).attr('data-filter');
-            // combine filters
-            var filterValue = concatValues( filters );
-            // flatten object by concatting values
+            
+    var $this = $(this);
+    //var selectGroup = $this.parents('.button-group');
+    var filterGroup = $this.attr('data-filter-group');
+
+    filters[ filterGroup ] = $this.val();
+
+    var filterValue = concatValues( filters );
+  console.log(filterGroup, filterValue);
+
             function concatValues( obj ) {
                 var value = '';
                 for ( var prop in obj ) {
