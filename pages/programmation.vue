@@ -131,11 +131,11 @@
     occurrences: function(slug) {
       return this.itemsOccurences[slug];
     },
-    filter: function(isotope) {
+    filter: function(slug) {
                 // store filter for each group
             var filters = {};
 
-            $('#filters').on( 'click', '.button', function( event, slug ) {
+            $('#filters').on( 'click', '.button', function( event ) {
                 var $button = $( event.currentTarget );
                 // get group key
                 var $buttonGroup = $button.parents('.button-group');
@@ -144,8 +144,7 @@
                 filters[ filterGroup ] = $button.attr('data-filter');
                 // combine filters
                 var filterValue = concatValues( filters );
-                this.iso = new Isotope(".grid", {
-                  itemSelector: '.element-item',
+                this.iso.isotope({
                   filter: filterValue
                 });
             });
