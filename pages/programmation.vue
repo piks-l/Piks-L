@@ -1,30 +1,59 @@
 <template>
-  <div class="page">
-    <h2>PROGRAMMATION</h2>
-    <div id="filters" class="button-group">  
-      <button class="button btn btn-primary is-checked" @click="filter('*')" data-filter="*">show all</button>
-      <button class="button btn btn-primary" @click="filter('.vendredi')" data-filter=".vendredi">Vendredi</button>
-      <button class="button btn btn-primary" @click="filter('.samedi')" data-filter=".samedi">Samedi</button>
-    </div>
-    <div id="filters2" class="button-group">  
-      <button class="button is-checked" data-filter="*">show all</button>
-      <button class="button" data-filter=".HARDCORE">Hardcore</button>
-      <button class="button" data-filter=".TECHNO">Techno</button>
-      <button class="button" data-filter=".TRANCE">Trance</button>
-      <button class="button" data-filter=".HIPHOP">Hip Hop</button>
-    </div>
-    <div class="grid">
-      <div class="grid-sizer"></div>
-      <article v-for="artiste in artistes" :key="artiste.date" :data-category="artiste.dateshow+' '+artiste.stage" :class="artiste.dateshow+' '+artiste.stage" class="element-item">
-          <nuxt-link class="title" :to="artiste._path">
-            <div class="centrer" >
-              <h3 class="name">{{artiste.title}}</h3>
-              <img class="fontblur" v-lazy="artiste.thumbnail" :alt="artiste.title">
-              <img class="artists-img" v-lazy="artiste.thumbnail" :alt="artiste.title">
-            </div>  
-          </nuxt-link>
-      </article>
-    </div>
+  <div id="main-container">
+      <div  class="container scene_element scene_element--fadein ">
+        <img id="logo" src="assets/images/logo.svg" alt="logo">
+        <header id="header">
+          <div class="sticky-container">
+              <img id="sticky-logo" class="logo" src="assets/images/logo-horizontal.svg"  alt="logo">
+              <div id="filters">
+                <h1>PROGRAMMATION</h1>
+                <div class="button-date button-group"  data-filter-group="date">
+                    <div class="center">
+                        <button class="button is-checked" @click="filter('*')" data-filter="*">FULL LINE-UP</button>
+                        <span>/</span>
+                        <button class="button" @click="filter('.vendredi')" data-filter=".vendredi">VEN. 02 AOÛT</button>
+                        <span>/</span>
+                        <button class="button" @click="filter('.samedi')" data-filter=".samedi">SAM. 03 AOÛT</button>
+                    </div>
+                </div>
+                <div class="stage">
+                  <div class="center">
+                    <div class="button-stage button-group"  data-filter-group="stage">
+                        <button class="button active" @click="filter('.HARDCORE')" data-filter=".HARDCORE"><span>T-800 -</span> HARDCORE STAGE</button>
+                        <button class="button active" @click="filter('.ELECTRO')" data-filter=".ELECTRO"><span>R2-D2 -</span> ELECTRO STAGE</button>
+                        <button class="button active" @click="filter('.TRANCE')" data-filter=".TRANCE"><span>WALL-E -</span> TRANCE STAGE</button>
+                        <button class="button active" @click="filter('.HIPHOP')" data-filter=".HIPHOP"><span>C-3PO -</span> HIP-HOP STAGE</button>
+                        <button class="button any" data-filter=""></button>
+                    </div>
+                    <div class="other-stage">
+                        <button class="buton active">SECRET STAGE</button>
+                        <button class="buton active">LONDON BUS STAGE</button>
+                        <button class="buton active">CAMPING STAGE</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="separator"></div>
+          </div>
+      </header>
+      <div class="deco-top"><div id="parallax1" class="parallax" data-image-src="assets/images/crop.jpg"></div></div>
+          <div class="grid">
+              <div v-for="artiste in artistes" :key="artiste.date" :data-category="artiste.dateshow+' '+artiste.stage" :class="artiste.dateshow+' '+artiste.stage" class="element-item">
+                   <nuxt-link class="title" :to="artiste._path">
+                      <div class="effect">
+                          <div class="volet1">
+                              <img v-lazy="artiste.thumbnail" :alt="artiste.title">
+                              <div class="boxshadow"></div>
+                              <div class="circle"><img src="assets/images/test.svg"/></div>
+                              <h3 class="name small">{{artiste.title}}</h3>
+                          </div>
+                          <div class="volet2"></div>
+                          <div class="border-bot"></div>
+                      </div>
+                  </nuxt-link>
+              </div>
+          </div>
+      </div>
   </div>
 </template>
 <script>
@@ -76,11 +105,44 @@
 
   methods: {
     isotope() {
-      this.iso = new Isotope(".grid", {
-        itemSelector: ".element-item",
-        percentPosition: true,
-        layoutMode: 'fitRows'
-      });
+            var $grid = $('.grid').isotope({
+              itemSelector: '.element-item'
+            });
+
+            // store filter for each group
+            var filters = {};
+
+            $('#filters').on( 'click', '.button', function( event ) {
+                var $button = $( event.currentTarget );
+                // get group key
+                var $buttonGroup = $button.parents('.button-group');
+                var filterGroup = $buttonGroup.attr('data-filter-group');
+                // set filter for group
+                filters[ filterGroup ] = $button.attr('data-filter');
+                // combine filters
+                var filterValue = concatValues( filters );
+                // set filter for Isotope
+                $grid.isotope({ filter: filterValue });
+            });
+
+            // change is-checked class on buttons
+            $('.button-group').each( function( i, buttonGroup ) {
+                var $buttonGroup = $( buttonGroup );
+                $buttonGroup.on( 'click', 'button', function( event ) {
+                  $buttonGroup.find('.is-checked').removeClass('is-checked');
+                  var $button = $( event.currentTarget );
+                  $button.addClass('is-checked');
+                });
+            });
+
+            // flatten object by concatting values
+            function concatValues( obj ) {
+                var value = '';
+                for ( var prop in obj ) {
+                  value += obj[ prop ];
+                }
+                return value;
+            }
 
       this.iso.layout();
     },
