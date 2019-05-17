@@ -142,7 +142,6 @@
       return this.itemsOccurences[slug];
     },
     filter: function(message, i, event) {
-    alert(message)
     var filters = {};
             
 
