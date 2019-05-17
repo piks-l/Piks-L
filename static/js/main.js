@@ -28,7 +28,16 @@ $(function () {
   $( ".close, .menu-link" ).click(function() {
     $( ".menu" ).removeClass( "open" );
   });
+  var el = $(this);
   if ($(window).width() > 599) {
+     $('.button-stage button, .other-stage button').each( function() {
+          var search = $(this).html();
+          var replace = '<div class="mini-circle"><div class="center-circle"></div></div>' + search ;
+          var el = $(this);
+          var text = el.html();
+          text = text.split(search).join(replace);
+          el.html(text);
+      });
     if(document.getElementById("header") === null){}else{
         window.onscroll = function() {scrollfunction()};
         var header = document.getElementById("header");
