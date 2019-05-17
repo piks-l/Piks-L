@@ -123,7 +123,16 @@
             this.iso = new Isotope(".grid", {
               itemSelector: '.element-item'
             });
-            // store filter for each group
+      this.iso.layout();
+    },
+    formatSlug: function(data) {
+      return data ? data.replace(/ /g, "-").replace(/\./, "_") : "";
+    },
+    occurrences: function(slug) {
+      return this.itemsOccurences[slug];
+    },
+    filter: function(slug) {
+                // store filter for each group
             var filters = {};
 
             $('#filters').on( 'click', '.button', function( event ) {
@@ -157,15 +166,6 @@
                 }
                 return value;
             }
-      this.iso.layout();
-    },
-    formatSlug: function(data) {
-      return data ? data.replace(/ /g, "-").replace(/\./, "_") : "";
-    },
-    occurrences: function(slug) {
-      return this.itemsOccurences[slug];
-    },
-    filter: function(slug) {
       var $button = $( event.currentTarget );
       // get group key
       var $buttonGroup = $button.parents('.button-group');
