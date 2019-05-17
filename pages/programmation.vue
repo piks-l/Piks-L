@@ -144,7 +144,7 @@
             }
             this.$Lazyload.$once('loaded', function ({ el, src }) {
               console.log(el, src);
-              element.parent('.volet1').parent('.effect').addClass("loaded");
+              this.parent('.volet1').parent('.effect').addClass("loaded");
             })
             var el = $(this);
             if ($(window).width() > 599) {
