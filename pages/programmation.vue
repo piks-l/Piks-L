@@ -143,10 +143,7 @@
                 // set filter for group
                 filters[ filterGroup ] = $button.attr('data-filter');
                 // combine filters
-                var filterValue = concatValues( filters );
-                isotope({
-                  filter: filterValue
-                });
+                
             });
 
             // change is-checked class on buttons
@@ -167,7 +164,10 @@
                 }
                 return value;
             }
-
+            var filterValue = concatValues( filters );
+            isotope({
+                filter: filterValue
+              });
     }
   }
   }
