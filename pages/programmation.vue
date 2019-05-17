@@ -142,11 +142,11 @@
                 }
                 return value;
             }
+            var el = $(this);
             this.$Lazyload.$on('loaded', function ({ el, src }) {
               console.log(el, src);
               el.parent('.volet1').parent('.effect').addClass("loaded");
             })
-            var el = $(this);
             if ($(window).width() > 599) {
                $('.button-stage button, .other-stage button').each( function() {
                     var search = $(this).html();
