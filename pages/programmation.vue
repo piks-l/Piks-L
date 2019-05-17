@@ -44,7 +44,7 @@
                           <div class="volet1">
                               <img class="lazy" v-lazy="artiste.thumbnail" :alt="artiste.title">
                               <div class="boxshadow"></div>
-                              <div class="circle"><img src="assets/images/test.svg"/></div>
+                              <div class="circle"><img src="https://electrobotik.netlify.com/images/circle.svg"/></div>
                               <h3 class="name small">{{artiste.title}}</h3>
                           </div>
                           <div class="volet2"></div>
