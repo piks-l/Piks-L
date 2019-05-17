@@ -144,8 +144,6 @@
                 filters[ filterGroup ] = $button.attr('data-filter');
                 // combine filters
                 var filterValue = concatValues( filters );
-                // set filter for Isotope
-                this.iso({ filter: filterValue });
             });
 
             // change is-checked class on buttons
@@ -166,16 +164,6 @@
                 }
                 return value;
             }
-      var $button = $( event.currentTarget );
-      // get group key
-      var $buttonGroup = $button.parents('.button-group');
-      var filterGroup = $buttonGroup.attr('data-filter-group');
-      // set filter for group
-      filters[ filterGroup ] = $button.attr('data-filter');
-      // combine filters
-      var filterValue = concatValues( filters );
-      // set filter for Isotope
-      // this.iso({ filter: filterValue });
 
       this.iso.arrange({
         filter: filterValue
