@@ -150,7 +150,7 @@
             var filterGroup = $buttonGroup.attr('data-filter-group');
             // set filter for group
             filters[ filterGroup ] = $button.attr('data-filter');
-            filterss = $( event.currentTarget ).attr('data-filter');
+            var filterss = $(this).attr('data-filter');
             // combine filters
             var filterValue = concatValues( filters );
             // flatten object by concatting values
@@ -165,6 +165,7 @@
               filter: filterValue
             });
             console.log(filterss);
+             
     }
   }
   }
