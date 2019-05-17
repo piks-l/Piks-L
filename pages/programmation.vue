@@ -142,12 +142,10 @@
                 }
                 return value;
             }
-            $('.lazy').lazy({
-              threshold:100,
-              afterLoad: function(element) {
-                  element.parent('.volet1').parent('.effect').addClass("loaded");
-              }
-            });
+            vm.$Lazyload.$once('loaded', function ({ el, src }) {
+              console.log(el, src);
+              element.parent('.volet1').parent('.effect').addClass("loaded");
+            })
             var el = $(this);
             if ($(window).width() > 599) {
                $('.button-stage button, .other-stage button').each( function() {
