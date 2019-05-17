@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900%27');
 .page-enter-active, .page-leave-active {
   transition: opacity .5s
 }
@@ -7,12 +7,15 @@
 }
 body {
     margin: 0;
-    background:#000;
+    background: #000;
     color:#fff;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
     max-height: 100vh;
     max-width: 100vw;
+}
+.index{
+    background:url(../images/fond.jpg) #000;
 }
 a, a:hover{
   color:#fff;
@@ -827,7 +830,7 @@ header.sticky{
   height: 300px;
   margin: 1%;
   padding: 10px;
-  background: #151515;
+  background: transparent;
   color: #262524;
   overflow: hidden;
 }
@@ -978,38 +981,7 @@ header.sticky{
 .border-bot.loaded {
     height:3px;
 }
-.deco-top {
-    position: absolute;
-    height: 100vh;
-    width: 115vw;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0%) rotate(-13deg);
-            transform: translate(-50%, 0%) rotate(-13deg);
-    overflow: hidden;
-    z-index: -1;
-}
-.deco-bot {
-    position: absolute;
-    height: 100vh;
-    width: 115vw;
-    bottom: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0%) rotate(-13deg);
-            transform: translate(-50%, 0%) rotate(-13deg);
-    overflow: hidden;
-    z-index: -1;
-}
-.parallax {
-    width: 110vw;
-    height: 2700px;
-    -webkit-transform: translate(-60%, -10%) rotate(13deg);
-            transform: translate(-60%, -10%) rotate(13deg);
-    left: 52.5%;
-    top: 0;
-    position: absolute;
-    z-index: 0;
-}
+
 .element-item:hover .name{
     bottom:50%;
 }
@@ -1031,6 +1003,12 @@ header.sticky{
 }
 .any{
     display:none !important;
+}
+footer p {
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 0;
+    line-height: 50px;
 }
 @media only screen and (min-width: 0px) and (max-width: 599px) {
   header {
@@ -1597,7 +1575,7 @@ header.sticky{
     }
     .button-stage .button,
     .other-stage .buton{
-        font-size: 18px;
+        font-size: 14px;
     }
     .separator {
         bottom: 0;
@@ -1658,6 +1636,9 @@ header.sticky{
     }
 }
 @media only screen and (min-width: 1264px) and (max-width: 1904px) {
+  #main-container {
+      padding-top: 335px;
+  }
   .button-stage, .other-stage {
       display: block;
       text-align: center;
@@ -1713,6 +1694,7 @@ header.sticky{
     }
   header {
     left: 0;
+    height: 335px;
   }
   .container{
       min-width: 90%;
@@ -1721,7 +1703,10 @@ header.sticky{
       max-width: 90%;
   }
   h1 {
-      font-size: 6em;
+    font-size: 4.5em;
+    line-height: 1.7em;
+    padding: 15px 15px 0;
+    margin: 0;
   }
   .sticky h1 {
       font-size: 28px;
@@ -1729,7 +1714,7 @@ header.sticky{
   }
   .button-stage .button,
   .other-stage .buton {
-      font-size: 16px;
+      font-size: 14px;
   }
   .sticky .button-stage .button,
   .sticky .other-stage .buton {
@@ -1748,15 +1733,15 @@ header.sticky{
     margin: 1.6666%;
   }
   .deco-top {
-      -webkit-transform: translate(-50%, 0%) rotate(-11deg);
-              transform: translate(-50%, 0%) rotate(-11deg);
+
   }
   #logo {
-      top: 72px;
+      top: 50px;
       left: 50px;
-      max-width: 115px;
+      max-width: 110px;
   }
   #logo.grab {
       left: 15px;
   }
+
 }
