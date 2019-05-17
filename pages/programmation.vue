@@ -79,9 +79,7 @@
       this.iso = new Isotope(".grid", {
         itemSelector: ".element-item",
         percentPosition: true,
-        masonry: {
-          columnWidth: ".grid-sizer"
-        }
+        layoutMode: 'fitRows'
       });
 
       this.iso.layout();
