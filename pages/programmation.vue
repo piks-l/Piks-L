@@ -145,6 +145,7 @@
                 // combine filters
                 var filterValue = concatValues( filters );
                 this.iso = new Isotope(".grid", {
+                  itemSelector: '.element-item',
                   filter: filterValue
                 });
             });
