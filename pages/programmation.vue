@@ -42,7 +42,7 @@
                    <nuxt-link class="title" :to="artiste._path">
                       <div class="effect">
                           <div class="volet1">
-                              <img v-lazy="artiste.thumbnail" :alt="artiste.title">
+                              <img class="lazy" v-lazy="artiste.thumbnail" :alt="artiste.title">
                               <div class="boxshadow"></div>
                               <div class="circle"><img src="assets/images/test.svg"/></div>
                               <h3 class="name small">{{artiste.title}}</h3>
