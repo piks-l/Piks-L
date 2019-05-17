@@ -142,7 +142,7 @@
                 }
                 return value;
             }
-            vm.$Lazyload.$once('loaded', function ({ el, src }) {
+            this.$Lazyload.$once('loaded', function ({ el, src }) {
               console.log(el, src);
               element.parent('.volet1').parent('.effect').addClass("loaded");
             })
