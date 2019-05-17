@@ -116,22 +116,6 @@
         });
     };
     this.isotope();
-         // store filter for each group
-            var filters = {};
-
-            $('#filters').on( 'click', '.button', function( event, isotope ) {
-                var $button = $( event.currentTarget );
-                // get group key
-                var $buttonGroup = $button.parents('.button-group');
-                var filterGroup = $buttonGroup.attr('data-filter-group');
-                // set filter for group
-                filters[ filterGroup ] = $button.attr('data-filter');
-                // combine filters
-                var filterValue = concatValues( filters );
-                this.iso.arrange({
-                  filter: filterValue
-                });
-            });
 
             // change is-checked class on buttons
             $('.button-group').each( function( i, buttonGroup ) {
@@ -142,15 +126,6 @@
                   $button.addClass('is-checked');
                 });
             });
-
-            // flatten object by concatting values
-            function concatValues( obj ) {
-                var value = '';
-                for ( var prop in obj ) {
-                  value += obj[ prop ];
-                }
-                return value;
-            }
   },
 
   methods: {
@@ -167,7 +142,31 @@
       return this.itemsOccurences[slug];
     },
     filter: function(slug) {
-           
+ // store filter for each group
+            var filters = {};
+
+
+                var $button = $( event.currentTarget );
+                // get group key
+                var $buttonGroup = $button.parents('.button-group');
+                var filterGroup = $buttonGroup.attr('data-filter-group');
+                // set filter for group
+                filters[ filterGroup ] = $button.attr('data-filter');
+                // combine filters
+                var filterValue = concatValues( filters );
+                this.iso.arrange({
+                  filter: filterValue
+                });
+
+
+            // flatten object by concatting values
+            function concatValues( obj ) {
+                var value = '';
+                for ( var prop in obj ) {
+                  value += obj[ prop ];
+                }
+                return value;
+            }           
 
     }
   }
