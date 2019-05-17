@@ -121,7 +121,7 @@
                 // combine filters
                 var filterValue = concatValues( filters );
                 // set filter for Isotope
-                this.iso({ filter: filterValue });
+                //this.iso({ filter: filterValue });
             });
 
             // change is-checked class on buttons
