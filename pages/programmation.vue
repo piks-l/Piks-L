@@ -165,7 +165,7 @@
                 return value;
             }
             var filterValue = concatValues( filters );
-            isotope({
+            this.iso({
                 filter: filterValue
               });
     }
