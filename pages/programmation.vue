@@ -144,21 +144,14 @@
     filter: function(event) {
  // store filter for each group
             var filters = {};
-
-
-                var $button = $( event.currentTarget );
-                // get group key
-                var $buttonGroup = $button.parents('.button-group');
-                var filterGroup = $buttonGroup.attr('data-filter-group');
-                // set filter for group
-                filters[ filterGroup ] = $button.attr('data-filter');
-                // combine filters
-                var filterValue = concatValues( filters );
-                this.iso.arrange({
-                  filter: filterValue
-                });
-
-
+            var $button = $( event.currentTarget );
+            // get group key
+            var $buttonGroup = $button.parents('.button-group');
+            var filterGroup = $buttonGroup.attr('data-filter-group');
+            // set filter for group
+            filters[ filterGroup ] = $button.attr('data-filter');
+            // combine filters
+            var filterValue = concatValues( filters );
             // flatten object by concatting values
             function concatValues( obj ) {
                 var value = '';
@@ -167,7 +160,9 @@
                 }
                 return value;
             }           
-
+            this.iso.arrange({
+              filter: filterValue
+            });
     }
   }
   }
