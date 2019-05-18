@@ -22,7 +22,7 @@
                     <p>{{ stage }}</p>
                 </div>
                 <div class="artiste-date">
-                    <p>{{ dateshows }}</p>
+                    <p>{{ dateshow }}</p>
                 </div>
                 <div class="content">
                   <vue-markdown>{{description}}</vue-markdown>
