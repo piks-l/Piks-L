@@ -472,7 +472,7 @@ h1 {
 
 }
 #main-container{
-    padding-top: 385px;
+
 }
 #main-container.artiste {
     padding: 0;
@@ -580,7 +580,6 @@ header.sticky{
 }
 .container{
   margin: 0 auto;
-
   min-height: 100vh;
   width: 80vw;
   overflow: hidden;
