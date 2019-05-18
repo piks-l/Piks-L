@@ -1,7 +1,7 @@
 <template> 
   <div class="page artist">
     <div class="decoration">
-      <img class="fond" src=""  alt="Pattern">
+      <img class="fond" :src"'https://electrobotik.netlify.com/images/scene-'+stage+'.jpg'" alt="Pattern">
       <div class="volet-artist"></div>
     </div>
     <div id="main-container" class="artiste">
