@@ -36,7 +36,6 @@ export default {
 }
 
 /* FOOTER GENERAL */
-#footer .navigation, 
 #footer .reseaux,
 #footer .copyright {
   display: block;
@@ -50,10 +49,10 @@ export default {
   background: #000;
 }
 #footer .copyright a {
-  color: #000;
+  color: #FFFFFF;
 }
 #footer .copyright a:hover {
-  color: #FFB413;
+  color: #FCFCFC;
 }
 #footer a {
   color: #525252;
@@ -67,33 +66,7 @@ export default {
 }
 
 /* FOOTER NAVIGATION */
-#footer .navigation a.nuxt-link-active {
-    color: #525252 !important;
-}
-#footer .navigation a::after {
-    content: "";
-    width: 100%;
-    top: 50%;
-    height: 6px;
-    background: linear-gradient(0.25turn, #0079ff, #b24576);
-    position: absolute;
-    left: 0;
-    opacity: 0;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: opacity .3s,-webkit-transform .3s;
-    transition: opacity .3s,-webkit-transform .3s;
-    transition: transform .3s,opacity .3s;
-    transition: transform .3s,opacity .3s,-webkit-transform .3s;
-    -webkit-transform-origin: 100% 50%;
-    transform-origin: 100% 50%;
-}
-#footer .navigation a:hover::after {
-    opacity: 1;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-    color: #ffb413; 
-}
+
 
 /* FOOTER RESEAUX */
 #footer .reseaux a {
