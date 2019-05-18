@@ -140,7 +140,7 @@ export default {
                 // combine filters
                 var filterValue = concatValues( filters );
                 // set filter for Isotope
-                $grid.isotope({ filter: filterValue });
+                this.iso.arrange({ filter: filterValue });
             });
 
             // change is-checked class on buttons
