@@ -134,7 +134,7 @@
             // set filter for group
             filters[ filterGroup ] = $this.attr('data-filter');
             // arrange, and use filter fn
-            $grid.isotope();
+            this.isotope();
           });
   },
 
@@ -153,12 +153,9 @@
     },
     filter: function(message, event) {
                 let $button = $( event.currentTarget );
-                // get group key
                 let $buttonGroup = $button.parents('.button-group');
                 let filterGroup = $buttonGroup.attr('data-filter-group');
-                // set filter for group
-                filters[ filterGroup ] = message;
-                // combine filters
+                filters[ filterGroup ] = $button.attr('data-filter');
                 let filterValue = concatValues( filters );
 
             function concatValues( obj ) {
