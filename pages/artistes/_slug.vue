@@ -44,7 +44,7 @@ import $ from 'jquery'
 import VueMarkdown from 'vue-markdown'
 import VueLazyload from 'vue-lazyload'
 export default {
-  layout: 'artistes',
+  layout: 'default',
   components: { VueMarkdown, VueLazyload },
   async asyncData({ params }) {
     let page = await import('~/content/artistes/page/' + params.slug + '.json');
