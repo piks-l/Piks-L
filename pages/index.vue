@@ -5,6 +5,7 @@
        <source src="https://electrobotik.frb.io/site/themes/electrobotik/video/EI2019_TEASER01_NOTEXT_converted.WebM" type="video/webm">
     </video>
      <img class="logo-electrobotik" src="https://electrobotik.netlify.com/images/logo-horizontal.svg" alt="ELECTROBOTIK INVASION">
+     <nuxt-link class="billetterie" to="/billetterie/"><i class="fas fa-ticket-alt"></i></nuxt-link>
 </div>
 </template>
 
@@ -29,6 +30,9 @@
   }
 </script>
 <style>
+.billetterie{
+  font-siez:100px;
+}
   video#animation {
       position: fixed;
       left: 50%;
