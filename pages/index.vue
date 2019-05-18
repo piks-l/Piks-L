@@ -30,7 +30,7 @@
 </script>
 <style>
   video#animation {
-      position: absolute;
+      position: fixed;
       left: 50%;
       top: 50%;
       min-width: 100%;
