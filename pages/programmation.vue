@@ -39,7 +39,7 @@
       <div class="deco-top"><div id="parallax1" class="parallax" data-image-src="https://electrobotik.netlify.com/images/crop.jpg"></div></div>
           <div class="grid">
               <div v-for="artiste in artistes" :key="artiste.date"  :class="artiste.dateshow+' '+artiste.stage" class="element-item">
-                   <nuxt-link class="title" :to="artiste._path">
+                   <nuxt-link :to="artiste._path">
                       <div class="effect">
                           <div class="volet1">
                               <img class="lazy" v-lazy="artiste.thumbnail" :alt="artiste.title">
