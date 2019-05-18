@@ -31,7 +31,7 @@ module.exports = {
     { src: '~/plugins/vue-lazyload', ssr: false },
     { src: "~plugins/isotope.js", ssr: false }
   ],
-  /*loading: '~/components/ui/loading.vue',*/
+  loading: '~/components/ui/loading.vue',
   generate: {
     routes: dynamicRoutes
   },
