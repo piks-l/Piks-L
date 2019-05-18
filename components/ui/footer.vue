@@ -15,7 +15,7 @@
       <nuxt-link to="/billeterie/"><i class="fas fa-ticket-alt"></i></nuxt-link>
     </div>
     <div class="copyright">
-      <p>© <nuxt-link data-hover href="www.electrobotikinvasion.com">ELECTROBOTIK INVASION</nuxt-link> - Tous droits réservés</p>
+      <p>© <nuxt-link data-hover to="www.electrobotikinvasion.com">ELECTROBOTIK INVASION</nuxt-link> - Tous droits réservés</p>
     </div>
   </footer>
 </template>
