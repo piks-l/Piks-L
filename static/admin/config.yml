@@ -20,8 +20,8 @@ collections:
         name: "dateshow"
         widget: "select"
         options:
-          - { label: "02/08", value: "vendredi" }
-          - { label: "03/08", value: "samedi" }
+          - { label: "VEN. 02 AOÛT", value: "vendredi" }
+          - { label: "SAM. 03 AOÛT", value: "samedi" }
       - label: "Stages"
         name: "stage"
         widget: "select"
@@ -31,4 +31,4 @@ collections:
           - { label: "WALL-E / TRANCE", value: "TRANCE" }
           - { label: "C3-PO / HIP HOP", value: "HIPHOP" }
       - {label: "Date de publication", name: "date", widget: "date", format: "DD/MM/YYYY"}
-      - {label: "Miniature", name: "thumbnail", widget: "image", required: true}
+      - {label: "Miniature", name: "thumbnail", widget: "image"}
