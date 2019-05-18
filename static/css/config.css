@@ -1034,6 +1034,7 @@ footer p {
               transform: translatey(-50%);
       position: relative;
       font-size: 5em;
+      text-transform: uppercase;
   }
 .content-artiste,
 .artiste-stage {
@@ -1090,6 +1091,7 @@ footer p {
     display: inline-block;
     width: 50%;
     text-align: right;
+    text-transform: uppercase;
 }
     .video iframe {
         height: auto;
