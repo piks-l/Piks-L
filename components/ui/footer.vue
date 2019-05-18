@@ -1,18 +1,10 @@
 <template>
   <footer id="footer">
-    <div class="navigation">
-      <nuxt-link data-hover to="/programmation/">PROGRAMMATION</nuxt-link>
-      <nuxt-link data-hover to="/billeterie/">BILLETTERIE</nuxt-link>
-      <nuxt-link data-hover to="/festival/">FESTIVAL</nuxt-link>
-      <nuxt-link data-hover to="/infos-pratiques/">INFOS PRATIQUES</nuxt-link>
-      <nuxt-link data-hover to="/partenaires/">PARTENAIRES</nuxt-link> 
-    </div>
     <div class="reseaux">
       <a target="_blank" href="https://www.facebook.com/ElectrobotikInvasion"><i class="fab fa-facebook-f"></i></a>
       <a target="_blank" href="https://www.instagram.com/electrobotik_invasion/"><i class="fab fa-instagram"></i></a>
       <a target="_blank" href="https://www.youtube.com/channel/UCin2oNXJUVgk7jYliy-dg5A"><i class="fab fa-youtube"></i></a>
-      - 
-      <nuxt-link to="/billeterie/"><i class="fas fa-ticket-alt"></i></nuxt-link>
+      <nuxt-link to="/billetterie/"><i class="fas fa-ticket-alt"></i></nuxt-link>
     </div>
     <div class="copyright">
       <p>© <nuxt-link data-hover to="www.electrobotikinvasion.com">ELECTROBOTIK INVASION</nuxt-link> - Tous droits réservés</p>
