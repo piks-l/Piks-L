@@ -30,8 +30,20 @@
   }
 </script>
 <style>
-.billetterie{
-  font-siez:100px;
+.billetterie:hover {
+
+    color: blue;
+
+}
+.billetterie {
+
+    font-size: 6vw;
+    position: fixed;
+    right: 15%;
+    transform: translatey(-50%);
+    display: block;
+    transition: all 0.2s ease;
+
 }
   video#animation {
       position: fixed;
