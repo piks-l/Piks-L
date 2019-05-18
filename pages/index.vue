@@ -4,7 +4,7 @@
        <source src="https://electrobotik.frb.io/site/themes/electrobotik/video/EI2019_TEASER01_NOTEXT_converted.mp4" type="video/mp4">
        <source src="https://electrobotik.frb.io/site/themes/electrobotik/video/EI2019_TEASER01_NOTEXT_converted.WebM" type="video/webm">
     </video>
-     <img class="logo" src="https://electrobotik.netlify.com/images/logo.svg" alt="">
+     <img class="logo" src="https://electrobotik.netlify.com/images/logo-horizontal.svg" alt="ELECTROBOTIK INVASION">
 </div>
 </template>
 
