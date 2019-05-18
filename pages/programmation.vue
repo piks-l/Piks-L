@@ -124,7 +124,7 @@ export default {
   },
   methods: {
     isotope() {
-            grid = new Isotope(".grid", {
+            var grid = new Isotope(".grid", {
               itemSelector: ".grid-item"
             });
             // store filter for each group
