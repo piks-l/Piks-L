@@ -1,24 +1,21 @@
 <template>
   <footer id="footer">
     <div class="navigation">
-      <nuxt-link data-hover to="/">Accueil</nuxt-link>
-      <nuxt-link data-hover to="/biographie/">Biographie</nuxt-link>
-      <nuxt-link data-hover to="/blog/">Actualités</nuxt-link>
-      <nuxt-link data-hover to="/artworks/">Artworks</nuxt-link>
-      <nuxt-link data-hover to="/tattoos/">Tattoos</nuxt-link>
-      <nuxt-link data-hover to="/contact/">Contact</nuxt-link> 
+      <nuxt-link data-hover to="/programmation/">PROGRAMMATION</nuxt-link>
+      <nuxt-link data-hover to="/billeterie/">BILLETTERIE</nuxt-link>
+      <nuxt-link data-hover to="/festival/">FESTIVAL</nuxt-link>
+      <nuxt-link data-hover to="/infos-pratiques/">INFOS PRATIQUES</nuxt-link>
+      <nuxt-link data-hover to="/partenaires/">PARTENAIRES</nuxt-link> 
     </div>
     <div class="reseaux">
-      <a target="_blank" href="https://www.facebook.com/sebastienoddtattoo/"><i class="fab fa-facebook-f"></i></a>
-      <a target="_blank" href="https://twitter.com/sebastienodd"><i class="fab fa-twitter"></i></a>
-      <a target="_blank" href="https://www.instagram.com/sebastien_odd_tattoo/"><i class="fab fa-instagram"></i></a>
-      <a target="_blank" href="https://www.youtube.com/channel/UCH8hl7gSMTr4TcBSIF8PiwA"><i class="fab fa-youtube"></i></a>
+      <a target="_blank" href="https://www.facebook.com/ElectrobotikInvasion"><i class="fab fa-facebook-f"></i></a>
+      <a target="_blank" href="https://www.instagram.com/electrobotik_invasion/"><i class="fab fa-instagram"></i></a>
+      <a target="_blank" href="https://www.youtube.com/channel/UCin2oNXJUVgk7jYliy-dg5A"><i class="fab fa-youtube"></i></a>
       - 
-      <a target="_blank" href="mailto:sebastienoddtattoos@gmail.com"><i class="fas fa-at"></i></a>
-      <a target="_blank" href="tel:+33641850394"><i class="fas fa-phone"></i></a>
+      <nuxt-link to="/billeterie/"><i class="fas fa-ticket-alt"></i></nuxt-link>
     </div>
     <div class="copyright">
-      <p>© <a data-hover href="https://sebastien-odd.tattoo">SEBASTIEN ODD</a> - Tous droits réservés</p>
+      <p>© <nuxt-link data-hover href="www.electrobotikinvasion.com">ELECTROBOTIK INVASION</nuxt-link> - Tous droits réservés</p>
     </div>
   </footer>
 </template>
@@ -47,10 +44,10 @@ export default {
   text-align: center;
 }
 #footer .reseaux {
-  background: #dedede;
+  background: #151515;
 }
 #footer .copyright {
-  background: #ccc;
+  background: #000;
 }
 #footer .copyright a {
   color: #000;
@@ -77,8 +74,8 @@ export default {
     content: "";
     width: 100%;
     top: 50%;
-    height: 3px;
-    background: #ffb413;
+    height: 6px;
+    background: linear-gradient(0.25turn, #0079ff, #b24576);
     position: absolute;
     left: 0;
     opacity: 0;
