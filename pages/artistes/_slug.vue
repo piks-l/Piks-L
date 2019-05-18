@@ -1,17 +1,14 @@
 <template> 
   <div class="page artist">
-    <div class="decoration">
-      <img class="fond" :src"stage">
+    <div class="'decoration decoration-'+stage">
       <div class="volet-artist"></div>
     </div>
     <div id="main-container" class="artiste">
       <div  class="container scene_element scene_element--fadein ">
-
         <nuxt-link to="/programmation/" class="fake-close">
             <div class="left"></div>
             <div class="right"></div>
         </nuxt-link>
-
         <div class="title">
             <div class="background"></div>
             <h2>{{ title }}</h2>
@@ -38,7 +35,6 @@
         <div class="video">
             <vue-markdown>{{iframe}}</vue-markdown>
         </div>
-
       </div>
     </div>  
   </div>
@@ -70,4 +66,8 @@ export default {
 };
 </script>
 <style>
+.decoration-TECHNO {background-image: url('https://electrobotik.netlify.com/images/scene-TECHNO.jpg');}
+.decoration-TRANCE {background-image: url('https://electrobotik.netlify.com/images/scene-TRANCE.jpg');}
+.decoration-HIPHOP {background-image: url('https://electrobotik.netlify.com/images/scene-HIPHOP.jpg');}
+.decoration-HARDCORE {background-image: url('https://electrobotik.netlify.com/images/scene-HARDCORE.jpg');}
 </style>
