@@ -7,7 +7,7 @@
     <div id="main-container" class="artiste">
       <div  class="container scene_element scene_element--fadein ">
 
-        <nuxt-link to="/" class="fake-close">
+        <nuxt-link to="/programmation/" class="fake-close">
             <div class="left"></div>
             <div class="right"></div>
         </nuxt-link>
