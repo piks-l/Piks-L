@@ -126,6 +126,16 @@
                   $button.addClass('is-checked');
                 });
             });
+          $('#filters').on( 'click', '.button', function() {
+            var $this = $(this);
+            // get group key
+            var $buttonGroup = $this.parents('.button-group');
+            var filterGroup = $buttonGroup.attr('data-filter-group');
+            // set filter for group
+            filters[ filterGroup ] = $this.attr('data-filter');
+            // arrange, and use filter fn
+            $grid.isotope();
+          });
   },
 
   methods: {
