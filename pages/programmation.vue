@@ -124,10 +124,9 @@ export default {
   },
   methods: {
     isotope() {
-var $grid = $('.grid').isotope({
-              itemSelector: '.element-item'
+            this.iso = new Isotope(".grid", {
+              itemSelector: ".grid-item"
             });
-
             // store filter for each group
             var filters = {};
 
