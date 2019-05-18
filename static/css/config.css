@@ -922,6 +922,7 @@ header.sticky{
             transform: translatey(50%);
     -webkit-transition: all .25s ease;
     transition:all .25s ease;
+    text-transform: uppercase;
 }
 .name.small {
     font-size: 1.5em;
