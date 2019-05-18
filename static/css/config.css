@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900%27');
 .page-enter-active, .page-leave-active {
+  -webkit-transition: opacity .5s;
   transition: opacity .5s
 }
 .page-enter, .page-leave-active {
-  opacity: 0
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
 }
 body {
     margin: 0;
@@ -51,10 +53,6 @@ h1 {
     z-index: 1;
     border:none;
 }
-.open-menu.artiste {
-    border: 20px solid #000;
-    box-shadow: 0 0 0 1px #fff;
-}
 .open-menu span {
     padding: 0 5px;
     text-transform: uppercase;
@@ -67,9 +65,7 @@ h1 {
     font-weight: bold;
     color: #fff;
 }
-.open-menu.artiste span {
-    background: #000;
-}
+
 /* Menu */
 .menu {
     position: fixed;
@@ -500,10 +496,10 @@ h1 {
 #sticky-logo.grab {
     position: absolute;
     left: 15px;
-    height: auto;
+    height: 80%;
     width: auto;
     display: block;
-    max-width: 10vw;
+    max-height: 80%;
     -webkit-animation-name: grab;
             animation-name: grab;
     -webkit-animation-duration: .25s;
@@ -549,24 +545,12 @@ header.sticky{
             animation-duration: .25s;
 }
 .sticky h1 {
-    font-size: 34px;
-    line-height: 48px;
-    padding: 10px 15px 0;
-    width: calc(35% - 30px);
-    margin: 0;
-    float: left;
-    color:#b24576;
-    text-align: right;
+    display:none;
 }
 .sticky .button-date {
-    left: 0;
-    -webkit-transform: translatex(0);
-            transform: translatex(0);
-    width: calc(65% - 35px);
+    width: auto;
     margin: 0;
     padding: 10px 15px 0;
-    display: inline-block;
-    float: left;
 }
 .sticky .separator {
     height: 0;
@@ -584,16 +568,15 @@ header.sticky{
 .sticky .other-stage{
     line-height: 30px;
     margin-bottom: 2px;
+    display: block;
+    text-align: center;
 }
 .sticky .button-stage button,
 .sticky .other-stage button{
-    font-size: 16px;
+    font-size: 14px;
 }
 .padding {
   padding-top: 385px;
-}
-.parallax {
-
 }
 .container{
   margin: 0 auto;
@@ -687,12 +670,12 @@ header.sticky{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.button-date .button::before,
-.button-date .button::after,
-.button-stage .button::after,
-.other-stage .buton::after,
-.mobile-active .button::before,
-.mobile-active .buton::before{
+.button-date .button:before,
+.button-date .button:after,
+.button-stage .button:after,
+.other-stage .buton:after,
+.mobile-active .button:before,
+.mobile-active .buton:before{
     content: '';
     position: absolute;
     left: 0;
@@ -703,41 +686,43 @@ header.sticky{
     -webkit-transform: scale3d(0, 1, 1);
     transform: scale3d(0, 1, 1);
     -webkit-transition: -webkit-transform 0.25s ease;
+    transition: -webkit-transform 0.25s ease;
     transition: transform 0.25s ease;
+    transition: transform 0.25s ease, -webkit-transform 0.25s ease;
 }
-.button-date .button::before,
-.button-date .button::after{
+.button-date .button:before,
+.button-date .button:after{
     height: 4px;
 }
-.button-stage .button::after,
-.other-stage .buton::after{
+.button-stage .button:after,
+.other-stage .buton:after{
     left: 15px;
     width:calc(100% - 15px);
-    bottom: -2px !important;
+    bottom: -5px !important;
 }
-.button-date .button::before,
-.mobile-active .button::before,
-.mobile-active .buton::before {
+.button-date .button:before,
+.mobile-active .button:before,
+.mobile-active .buton:before {
     top: 0;
     -webkit-transform-origin: 0 50%;
     transform-origin: 0 50%;
 }
-.button-date .button::after,
-.button-stage .button::after,
-.other-stage .buton::after {
+.button-date .button:after,
+.button-stage .button:after,
+.other-stage .buton:after {
     bottom: 0;
     -webkit-transform-origin: 100% 50%;
     transform-origin: 100% 50%;
 }
-.button-date .button:hover::after,
-.button-stage .button:hover::after,
-.other-stage .buton:hover::after,
-.button-date .button.is-checked::before,
-.button-date .button.is-checked::after,
-.mobile-active .button.is-checked::before,
-.mobile-active .buton.is-checked::before,
-.mobile-active .button.is-checked::after,
-.mobile-active .buton.is-checked::after {
+.button-date .button:hover:after,
+.button-stage .button:hover:after,
+.other-stage .buton:hover:after,
+.button-date .button.is-checked:before,
+.button-date .button.is-checked:after,
+.mobile-active .button.is-checked:before,
+.mobile-active .buton.is-checked:before,
+.mobile-active .button.is-checked:after,
+.mobile-active .buton.is-checked:after {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
     -webkit-transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
@@ -774,6 +759,7 @@ header.sticky{
     font-weight: 600;
 }
 .mini-circle {
+    background: -webkit-linear-gradient(left, #0079ff, #b24576);
     background: linear-gradient(0.25turn, #0079ff, #b24576);
     height: 22px;
     width: 22px;
@@ -793,7 +779,8 @@ header.sticky{
     background: #000;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     position: relative;
     border-radius: 50%;
     border:0px solid #fff;
@@ -838,9 +825,6 @@ header.sticky{
   margin: 0;
   padding: 0;
 }
-.any {
-    display: none;
-}
 .effect {
     position: absolute;
     top: 0;
@@ -848,11 +832,12 @@ header.sticky{
     overflow: hidden;
     height: 100%;
     width: 0;
-    -webkit-transition: all .25s cubic-bezier(0.785,.135,.15,.86) .25s;
-    transition:all .25s cubic-bezier(0.785,.135,.15,.86) .25s;
+    -webkit-transition: all .25s cubic-bezier(0.785,.135,.15,.86) .25s, background 0s ease .50s;
+    transition:all .25s cubic-bezier(0.785,.135,.15,.86) .25s, background 0s ease .50s;
 }
 .effect.loaded {
     width: 100%;
+    background:transparent !important;
 }
 .volet1 {
     height: 100%;
@@ -861,8 +846,8 @@ header.sticky{
     top: 0;
     left: -100%;
     overflow: hidden;
-    -webkit-transition: all .25s cubic-bezier(0.785,.135,.15,.86) .40s;
-    transition:all .25s cubic-bezier(0.785,.135,.15,.86) .40s;
+    -webkit-transition: width .25s cubic-bezier(0.785,.135,.15,.86) .40s, background 0s ease .65s;
+    transition:width .25s cubic-bezier(0.785,.135,.15,.86) .40s, background 0s ease .65s;
 }
 .volet2 {
     height: 100%;
@@ -871,27 +856,29 @@ header.sticky{
     top: 0;
     left: -100%;
     overflow: hidden;
-    -webkit-transition: left .35s cubic-bezier(0.785,.135,.15,.86) .40s , width .35s cubic-bezier(0.785,.135,.15,.86) .55s;
-    transition:left .35s cubic-bezier(0.785,.135,.15,.86) .40s , width .35s cubic-bezier(0.785,.135,.15,.86) .55s;
+    -webkit-transition: left .35s cubic-bezier(0.785,.135,.15,.86) .40s , width .35s cubic-bezier(0.785,.135,.15,.86) .55s, background 0s ease .90s;
+    transition:left .35s cubic-bezier(0.785,.135,.15,.86) .40s , width .35s cubic-bezier(0.785,.135,.15,.86) .55s, background 0s ease .90s;
     z-index:2;
 }
-.HARDCORE .effect{background: #0079ff ;}
-.HARDCORE .volet1, .HARDCORE .volet2{background: #b24576 ;}
-.TECHNO .effect{background: #b24576 ;}
-.TECHNO .volet1, .TECHNO .volet2{background: #fdfdfd ;}
-.TRANCE .effect{background: #fdfdfd ;}
-.TRANCE .volet1, .TRANCE .volet2{background: #0079ff;}
-.HIPHOP .effect{background: #cc93a5;}
-.HIPHOP .volet1, .HIPHOP .volet2{background: #0079ff ;}
+.hardcore .effect{background: #0079ff ;}
+.hardcore .volet1, .hardcore .volet2{background: #b24576 ;}
+.techno .effect{background: #b24576 ;}
+.techno .volet1, .techno .volet2{background: #fdfdfd ;}
+.trance .effect{background: #fdfdfd ;}
+.trance .volet1, .trance .volet2{background: #0079ff;}
+.hiphop .effect{background: #cc93a5;}
+.hiphop .volet1, .hiphop .volet2{background: #0079ff ;}
 
 
 
 .loaded .volet1{
     left: 0;
+    background:transparent;
 }
 .loaded .volet2 {
     left: 0;
     width:0;
+    background:transparent;
 }
 .element-item .lazy {
     position: absolute;
@@ -1004,744 +991,199 @@ header.sticky{
 .any{
     display:none !important;
 }
+footer{
+    background:#000;
+    position: relative;
+    padding: 0 15px;
+}
 footer p {
     letter-spacing: 1px;
     text-align: center;
     margin: 0;
     line-height: 50px;
+    font-size: 10px;
 }
-@media only screen and (min-width: 0px) and (max-width: 599px) {
-  header {
-      height: 200px;
-      width: 100%;
-      left: 0;
-  }
-  .mini-circle {
-      display: none;
-  }
-  .deco-top, .deco-bot {
-      display:none;
-  }
-  #filters {
-      margin-top: 20px;
-  }
-  h1 {
-      font-size: 24px;
-      padding: 0 15px 0;
-      margin: 0;
-      line-height: 120px;
-      background: url(../images/test.svg) no-repeat center center / contain;
-      position: relative;
-      top: 42px;
-  }
-  .separator {
-      position: absolute;
-      top: 105px;
-      left: 15px;
-      z-index: -1;
-      height: 5px;
-  }
-  #logo{
-    display:none;
-  }
-  #main-container {
-      padding-top: 200px;
-  }
-  .sticky-container {
-      margin: 0 auto;
-      max-width: none;
-  }
-  .menu-content {
-      width: calc(100% - 30px);
-      height: auto;
-      padding: 50px 15px;
-  }
-  .big-logo {
-      height: auto;
-      width: 100%;
-      float: none;
-  }
-  .small-logo {
-      display: block;
-      top: 0;
-      -webkit-transform: none;
-              transform: none;
-  }
-  .large-logo {
-      display: none;
-      top: 0;
-  }
 
-  .menu-info {
-      width: 100%;
-      height: auto;
-  }
-  .circuit {
-      border-top: 2px solid #fff;
-      border-bottom: 2px solid #fff;
-  }
-  .circuit h3 {
-      letter-spacing: 0px;
-      line-height: 15px;
-      font-size: 10px;
-  }
-  .date {
-      display: none;
-  }
-  .navigation {
-      width: 100%;
-      display: inline-block;
-      height: auto;
-      padding: 0;
-      margin: 15px 0;
-  }
-  .navigation:before {
-      height: 0;
-      width: 100%;
-      top: calc(100% - 2px);
-      left: 0;
-      position:absolute;
-  }
-  .nav {
-      top: 0;
-      -webkit-transform: none;
-              transform: none;
-  }
-  .nav li a {
-      font-size: 28px;
-      line-height: 50px;
-      text-align: center;
-  }
-  .social {
-      width: 100%;
-      float: none;
-  }
-  .social i {
-      border: 2px solid gray;
-      width: 35px;
-      line-height: 35px;
-      font-size: 20px;
-      top: 0;
-      left: 50%;
-      -webkit-transform: translatex(-50%);
-              transform: translatex(-50%);
-  }
-  .social a:hover i {
-      border: 2px solid #fff;
-  }
-  .news {
-      width: 100%;
-      padding: 0;
-      height:auto;
-  }
-  .presse {
-      float: none;
-  }
-  .newsletter, .presse {
-      font-size: 18px;
-      width: 50%;
-      display: inline-block;
-      position: relative;
-      float: left;
-      font-size: 17px;
-      text-align: center;
-  }
-  .newsletter::before, .presse::before {
-      content: none;
-  }
-  .close, .fake-close {
-      width: 50px;
-      height: 50px;
-  }
-  .left, .right {
-      height: 5px;
-  }
-  .container {
-      min-width: 85%;
-  }
-  .element-item {
-      width: 98%;
-      padding:0;
-      margin-bottom: 15px;
-  }
-  .open-menu {
-      width: 100%;
-      top: 0;
-      left: 0;
-      z-index: 1;
-      border: none;
-      transform:none;
-      -webkit-transform:none;
-  }
-  .select-date, .select-stage {
-      display: block;
-      position: fixed;
-      width: 50%;
-      height: 42px;
-      bottom: 0;
-      z-index: 3;
-      border: none;
-      color: #fff;
-      background: linear-gradient(0.25turn, #0079ff, #b24576);
-      font-weight: bold;
-      font-size: 18px;
-  }
-  .select-date {
-      left:0;
-      background:#0079ff;
-  }
-  .select-stage {
-      right:0;
-      background:#b24576;
-  }
-  .button-stage {
-      margin-bottom: 0;
-  }
-  .button-date,
-  .stage {
-      position: fixed;
-      width: 100%;
-      z-index: 2;
-      bottom: 100%;
-      left: 0;
-      transform:none;
-      background:rgba(0,0,0,.9);
-      height:calc(100% - 82px);
-      opacity:0;
-      transition:opacity .5s cubic-bezier(0.785,.135,.15,.86), bottom 0s ease .5s;
-      margin: 0;
-  }
-  .sticky .button-date {
-      width: 100%;
-      padding: 0;
-  }
-  .button-date.mobile-active,
-  .stage.mobile-active {
-      opacity:1;
-      bottom: 42px;
-      transition:opacity .5s cubic-bezier(0.785,.135,.15,.86);
-      width: 100%;
-      padding: 0;
-  }
-  .center{
-      position:relative;
-      top: 50%;
-      transform:translatey(-50%);
-      padding: 0 15px;
-  }
-  .button-date .button,
-  .stage .button,
-  .other-stage .buton {
-      margin: 0;
-      position: relative;
-      left: 50%;
-      transform: translatex(-50%);
-      font-size: 17px;
-      line-height: 22px;
-      margin: 5px 0;
-      padding: 0;
-  }
-  .button-stage .button,
-  .other-stage .buton {
-      padding:10px 0;
-      display:block;
-  }
-  .button-stage .button::after,
-  .other-stage .buton::after {
-      left: 0;
-      width: 100%;
-      bottom: 0;
-  }
-  .button-date .button {
-      display: block;
-      float: none;
-      line-height: 80px;
-      font-size: 28px;
-  }
-  .button-date span {
-      display: none;
-  }
-  .sticky {
-      position: relative;
-  }
+/******************** Artistes pages *******************/
+.title{
+    height:24vh;
+    position:relative;
 }
-@media only screen and (min-width: 600px) and (max-width: 959px) {
-  .open-menu {
-        height: 6vw;
-        left: -68px;
-    }
-    .big-logo {
-        width: 25%;
-    }
-    #main-container{
-        padding-top: 325px;
-    }
-    #logo{
-        left:6vw
-    }
-    .menu-info {
-        padding-left: 5%;
-        width: 70%;
-    }
-    .circuit {
-        border-top: 3px solid #fff;
-        border-bottom: 3px solid #fff;
-    }
-    .date {
-        width: 35%;
-    }
-    .big-date {
-        font-size: 2em;
-        letter-spacing: 0px;
-    }
-    .month {
-        font-size: 1em;
-    }
-    .big-date small {
-        top: -5px;
-    }
-    .pagination {
-        height: calc(100% - 60px);
-    }
-    .navigation {
-        width: 60%;
-        padding-left: 0;
-        margin-left: 5%;
-    }
-    .navigation:before {
-        width: 100%;
-        left: 0;
-        top: calc(100% - 3px);
-        height: 3px;
-    }
-    .circuit h3 {
-        font-size: 10px;
-        line-height: 30px;
-    }
-    .nav li a {
-        font-size: 22px;
-    }
-    .newsletter, .presse {
-        font-size: 12px;
-        line-height: 40px;
-        letter-spacing: 0;
-    }
-    .newsletter, .presse {
-        font-size: 12px;
-        line-height: 40px;
-        letter-spacing: 0;
-    }
-    .newsletter:before, .presse:before {
-        top: 14px;
-        margin-right: 5px;
-        width: 5px;
-        height: 5px;
-    }
-    .newsletter:before {
-        border: 3px solid #0079ff;
-        box-shadow: 0 0 0 0px #000, 0 0 0 0px #000;
-    }
-    .newsletter:hover:before {
-        border: 3px solid #fff;
-        box-shadow: 0 0 0 0px #000, 0 0 0 3px #0079ff;
-    }
-    .presse:before {
-        border: 3px solid #b24576;
-        box-shadow: 0 0 0 0px #000, 0 0 0 0px #000;
-    }
-    .presse:hover:before {
-        border: 3px solid #fff;
-        box-shadow: 0 0 0 0px #000, 0 0 0 3px #b24576;
-    }
-    .social i {
-        width: 30px;
-        line-height: 30px;
-        top: -15px;
-        font-size: 20px;
-        border-width: 3px;
-    }
-    .social {
-        width: 40%;
-    }
-    .news{
-        width:60%;
-        padding: 0;
-    }
-    .left, .right {
-        height: 4px;
-    }
-    .container {
-        min-width: 85%;
-    }
-    .element-item {
-        width: 48%;
-        padding:0;
-    }
-    header {
-        width: calc(100% - 150px - 10vw);
-        left: calc(5vw + 150px);
-        height: 325px;
-    }
-    .date {
-        width: 35%;
-    }
-    h1 {
-        font-size: 2em;
-        padding: 30px 15px 0;
-    }
-    .sticky h1 {
-        display: none;
-    }
-    #filters {
-        padding-left: 15px;
-    }
-    .button-date,
-    .button-stage,
-    .other-stage {
-        text-align: center;
-        margin-bottom: 15px;
-    }
-    .button-stage {
-        margin-bottom: 0;
-    }
-    .button-stage .button {
-        padding: 0;
-    }
-    .button-stage .button, .other-stage .buton {
-        font-size: 12px;
-        margin: 0;
-        letter-spacing: 1px;
-        line-height: 30px;
-        padding: 0 7px;
-    }
-    .button-stage .button::after,
-    .other-stage .buton::after {
-        left: 7px;
-        width: calc(100% - 14px);
-    }
-    .separator {
-        bottom: 0;
-        position: absolute;
-        width: 90vw;
-        right: 0;
-        float: right;
-        height: 10px;
-    }
-    .sticky .sticky-container {
-        max-width: none;
-    }
-    .sticky #filters {
-        width: calc(70% - 15px);
-        left: 27%;
-        position: relative;
-    }
-    .sticky .button-date {
-        width: auto;
-        left: 50%;
-        transform: translatex(-50%);
-    }
-    .sticky .button-date button {
-        font-size: 14px;
-        margin: 0 4px;
-        line-height: 30px;
-        letter-spacing: 0;
-    }
-    .button-date .button::before,
-    .button-date .button::after {
-        height: 2px;
-    }
-    .sticky .button-date span {
-        line-height: 30px;
-        font-weight: 500;
-        font-size: 20px;
-    }
-    #sticky-logo.grab {
-        max-width: 25%;
-        max-height: 100%;
-    }
-    .sticky .button-stage .button,
-    .sticky .other-stage .buton {
-        margin: 0 5px;
-        padding: 0px;
-        font-size: 14px;
-        line-height: 20px;
-    }
-    .sticky .other-stage{
-        display:none
-    }
-    .sticky .button-stage .button:hover::after {
-        left: 0;
-        width: 100%;
-    }
-    .container {
-        min-width: 90%;
-    }
-    .element-item {
-        width: 48%;
-        padding:0;
-    }
-    .button-date .button {
-      font-size: 14px;
-      margin: 0 5px;
-    }
-    .button-date span {
-      font-size: 14px;
-    }
-    .mini-circle{
-        display: none;
-    }
-    header.sticky {
-        height: 110px;
-    }
-}
-@media only screen and (min-width: 960px) and (max-width: 1263px) {
-    .big-logo {
-        width: 30%;
-    }
-    header {
-        width: calc(100% - 150px - 10vw);
-        left: calc(5vw + 150px);
-    }
-    .menu-info {
-        padding-left: 5%;
-        width: 65%;
-    }
-    .date {
-        width: 35%;
-    }
-    .big-date {
-        font-size: 3em;
-    }
-    .month {
-        font-size: 1.5em;
-    }
-    .big-date small {
-        top: -10px;
-    }
-    .navigation {
-        width: 60%;
-        padding-left: 0;
-        margin-left: 5%;
-    }
-    .navigation:before {
-        width: 100%;
-        left: 0;
-    }
-    .circuit h3 {
-        font-size: .9em;
-    }
-    .nav li a {
-        font-size: 34px;
-    }
-    .newsletter, .presse {
-        font-size: 1em;
-    }
-    .newsletter:before, .presse:before {
-        top: 14px;
-        margin-right: 5px;
-    }
-    .social i {
-        width: 40px;
-        line-height: 40px;
-        top: -15px;
-        font-size: 25px;
-    }
-    .social {
-        width: 40%;
-    }
-    .news{
-        width:60%;
-        padding: 0;
-    }
-    h1 {
-        font-size: 4em;
-    }
-    .sticky h1 {
-        display: none;
-    }
-    #filters {
-        padding-left: 15px;
-    }
-    .button-date,
-    .button-stage,
-    .other-stage {
-        text-align: center;
-    }
-    .button-stage {
-        margin-bottom: 0;
-    }
-    .button-stage .button {
-        margin-bottom: 15px;
-    }
-    .button-stage .button,
-    .other-stage .buton{
-        font-size: 14px;
-    }
-    .separator {
-        bottom: 0;
-        position: absolute;
-        width: 90vw;
-        right: 0;
-        float: right;
-    }
-    .sticky .sticky-container {
-        max-width: none;
-    }
-    .sticky #filters {
-        width: calc(65% - 15px);
-        left: 35%;
-        position: relative;
-    }
-    .sticky .button-date {
-        width: auto;
-        left: 50%;
-        transform: translatex(-50%);
-    }
-    .sticky .button-date button {
-        font-size: 20px;
-        margin: 0 5px;
-        line-height: 40px;
-    }
-    .sticky .button-date span {
-        line-height: 40px;
-        font-weight: 500;
-        font-size: 20px;
-    }
-    #sticky-logo.grab {
-        max-width: 35%;
-        max-height: 100%;
-    }
-    .sticky .mini-circle {
-        display: none;
-    }
-    .sticky .button-stage .button,
-    .sticky .other-stage .buton {
-        margin: 0 15px;
-        padding: 0px;
-        font-size: 14px;
-        line-height: 35px;
-    }
-    .sticky .other-stage{
-        display:none
-    }
-    .container {
-        min-width: 90%;
-    }
-    .element-item {
-        width: 48%;
-        padding:0;
-    }
-    .button-date .button {
-        font-size: 1.5em;
-    }
-}
-@media only screen and (min-width: 1264px) and (max-width: 1904px) {
-  #main-container {
-      padding-top: 335px;
-  }
-  .button-stage, .other-stage {
-      display: block;
-      text-align: center;
-  }
-  .big-logo {
-      width: 30%;
-  }
-  .menu-info {
-      padding-left: 5%;
-      width: 65%;
-  }
-    .circuit h3 {
-        font-size: 1.2em;
-    }
-    .date {
-        width: 35%;
-    }
-    .big-date small {
-        top: -10px;
-    }
-    .navigation {
-        width: 60%;
-        padding-left: 0;
-        margin-left: 5%;
-    }
-    .navigation:before {
-        width: 100%;
-        left: 0;
-    }
-    .nav li a {
-        font-size: 46px;
-    }
-    .social {
-        width: 40%;
-    }
-    .social i {
-        width: 55px;
-        line-height: 55px;
-        top: -25px;
-    }
-    .news{
-        width:60%;
-        padding: 0;
-    }
-    .newsletter, .presse {
-        font-size: 1.3em;
-    }
-    .big-date {
-        font-size: 3em;
-    }
-    .month {
-        font-size: 1.5em;
-    }
-  header {
-    left: 0;
-    height: 335px;
-  }
-  .container{
-      min-width: 90%;
-  }
-  .sticky-container {
-      max-width: 90%;
-  }
-  h1 {
-    font-size: 4.5em;
-    line-height: 1.7em;
-    padding: 15px 15px 0;
+.title:after {
+    content: '';
     margin: 0;
+    width: 100%;
+    height: 15px;
+    background: -webkit-linear-gradient(left, #0079ff, #b24576, #fdfdfd);
+    background: linear-gradient(0.25turn, #0079ff, #b24576, #fdfdfd);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+  .title h2 {
+      text-align: left;
+      padding: 0;
+      margin: 0;
+      left: 0;
+      top: 50%;
+      -webkit-transform: translatey(-50%);
+              transform: translatey(-50%);
+      position: relative;
+      font-size: 5em;
   }
-  .sticky h1 {
-      font-size: 28px;
-      line-height: 44px;
-  }
-  .button-stage .button,
-  .other-stage .buton {
-      font-size: 14px;
-  }
-  .sticky .button-stage .button,
-  .sticky .other-stage .buton {
-      font-size: 14px;
-  }
-  .button-date .button,
-  .button-date span {
-      font-size: 1.5em;
-  }
-  .sticky .button-date button{
+.content-artiste,
+.artiste-stage {
+    position: relative;
+    display: block;
+    width: 50%;
+    float: left;
+}
+.content-artiste{
+    height: 54vh;
+    display: table;
+}
+.vertical-align {
+    display: table-cell;
+    vertical-align: middle;
+}
+    .artiste-stage p,
+    .artiste-date p {
+        font-size: 22px;
+        letter-spacing: 2px;
+        font-weight: 900;
+    }
+    .artiste-stage p{
+        color:gray;
+    }
+    .artiste-stage g{
+        color:#fff;
+    }
+    .content {
+        padding: 25px 0;
+        border-top: 5px solid gray;
+        border-bottom: 5px solid gray;
+    }
+      .content p {
+          margin: 0;
+          font-size: 22px;
+          line-height: 35px;
+          text-align: justify;
+          letter-spacing: 1px;
+      }
+  .social-artiste a {
+      display: inline-block;
+      font-size: 25px;
       line-height: 40px;
+      width: 40px;
+      text-align: center;
+      border: 3px solid #fff;
+      border-radius: 50%;
+      margin: 20px 5px;
   }
-  .element-item {
+.video,
+.artiste-date {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+}
+    .video iframe {
+        height: auto;
+        width: 80%;
+        height: 45vh;
+        padding-top: 25px;
+    }
+.fond {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+.background {
+    position: absolute;
+    width: 100vw;
+    height: 22vh;
+    background: url(../images/liseret-artiste.png) repeat 0 center / cover;
+    top: 8vh;
+    -webkit-transform: translatey(-50%);
+            transform: translatey(-50%);
+    overflow: hidden;
+    z-index: -1;
+    left: -6vw;
+}
+
+.volet-artist {
+    width: 300vw;
+    height: 175vh;
+    position: absolute;
+    background: #000;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    bottom: 50vw;
+    left: -155vh;
+}
+.decoration {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.fake-close {
+    top: 2vh;
+    position: fixed;
+    z-index: 1;
+}
+.fake-close .left,
+.fake-close .right{
+    background:#fff;
+    height:10px;
+}
+.fake-close:hover div {
+    background:#000;
+}
+
+
+/******************** Partenaires pages *******************/
+.container-grid {
+    max-width: 1264px;
+    margin: 0 auto;
+    position: relative;
+    padding: 50px 15px 0;
+}
+.container-grid h2 {
+    text-align: center;
+    font-size: 4em;
+    margin: 0 0 1em;
+    line-height: 1em;
+}
+.container-grid .background {
+    width: 100%;
+    left: 0;
+    top: 80px;
+    transform: none;
+}
+.container-grid .content {
     padding: 0;
-    width: 30%;
-    margin: 1.6666%;
-  }
-  .deco-top {
-
-  }
-  #logo {
-      top: 50px;
-      left: 50px;
-      max-width: 110px;
-  }
-  #logo.grab {
-      left: 15px;
-  }
-
+    border: none;
+}
+.partenaire {
+    width: calc(25% - 3px);
+    position: relative;
+    height: 200px;
+    display: inline-block;
+    background: #000;
+}
+.partenaire img {
+    position: absolute;
+    max-width: 90%;
+    max-height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
