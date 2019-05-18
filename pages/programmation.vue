@@ -133,8 +133,9 @@
             var filterGroup = $buttonGroup.attr('data-filter-group');
             // set filter for group
             filters[ filterGroup ] = $this.attr('data-filter');
-            // arrange, and use filter fn
-            this.isotope();
+            this.iso.arrange({
+              filter: filterValue
+            });
           });
   },
 
