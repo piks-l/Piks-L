@@ -64,7 +64,7 @@
   import $ from 'jquery'
   import VueLazyload from 'vue-lazyload'
   // export
-  export default {
+export default {
     layout: 'default',
     components: { VueLazyload },
     head() {
@@ -96,8 +96,6 @@
         setTimeout(function () {
           resolve({})
         }, 1000)
-        console.log('document ready 2!')
-
       })
     },
   mounted() {
@@ -115,65 +113,42 @@
             el.html(text);
         });
     };
+    $('.button-group').each( function( i, buttonGroup ) {
+        var $buttonGroup = $( buttonGroup );
+        $buttonGroup.on( 'click', 'button', function( event ) {
+          $buttonGroup.find('.is-checked').removeClass('is-checked');
+          var $button = $( event.currentTarget );
+          $button.addClass('is-checked');
+        });
+    });
     this.isotope();
-
-            // change is-checked class on buttons
-            $('.button-group').each( function( i, buttonGroup ) {
-                var $buttonGroup = $( buttonGroup );
-                $buttonGroup.on( 'click', 'button', function( event ) {
-                  $buttonGroup.find('.is-checked').removeClass('is-checked');
-                  var $button = $( event.currentTarget );
-                  $button.addClass('is-checked');
-                });
-            });
-          $('#filters').on( 'click', '.button', function() {
-            var $this = $(this);
-            // get group key
-            var $buttonGroup = $this.parents('.button-group');
-            var filterGroup = $buttonGroup.attr('data-filter-group');
-            // set filter for group
-            filters[ filterGroup ] = $this.attr('data-filter');
-            this.isotope.arrange({
-              filter: filterValue
-            });
-          });
   },
-
   methods: {
     isotope() {
-        this.iso = new Isotope(".grid", {
-          itemSelector: '.element-item'
-        });
+      this.iso = new Isotope(".grid", {
+        itemSelector: '.element-item'
+      });
       this.iso.layout();
     },
-    formatSlug: function(data) {
-      return data ? data.replace(/ /g, "-").replace(/\./, "_") : "";
-    },
-    occurrences: function(slug) {
-      return this.itemsOccurences[slug];
-    },
     filter: function(message, event) {
-                let $button = $( event.currentTarget );
-                let $buttonGroup = $button.parents('.button-group');
-                let filterGroup = $buttonGroup.attr('data-filter-group');
-                filters[ filterGroup ] = $button.attr('data-filter');
-                let filterValue = concatValues( filters );
-
-            function concatValues( obj ) {
-                var value = '';
-                for ( var prop in obj ) {
-                  value += obj[ prop ];
-                }
-                return value;
-            }           
-            this.iso.arrange({
-              filter: filterValue
-            });
-           
-             
+      let $button = $(event.currentTarget);
+      let $buttonGroup = $button.parents('.button-group');
+      let filterGroup = $buttonGroup.attr('data-filter-group');
+      filters[ filterGroup ] = $button.attr('data-filter');
+      let filterValue = concatValues( filters );
+      function concatValues( obj ) {
+          var value = '';
+          for ( var prop in obj ) {
+            value += obj[ prop ];
+          }
+          return value;
+      }           
+      this.iso.arrange({
+        filter: filterValue
+      });   
     }
   }
-  }
+}
 </script>
 <style>
   @media only screen and (min-width:960px) and (max-width:1264px){}
