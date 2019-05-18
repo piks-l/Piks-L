@@ -1,7 +1,7 @@
 <template> 
   <div class="page artist">
     <div class="decoration">
-      <img class="fond" :src"stage" alt="Pattern">
+      <img class="fond" :src"stage">
       <div class="volet-artist"></div>
     </div>
     <div id="main-container" class="artiste">
