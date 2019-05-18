@@ -102,7 +102,6 @@ export default {
     },
   mounted() {
     this.$Lazyload.$on('loaded', function ({ el, src, $parent }) {
-      console.log(src);
       $(el).parent('.volet1').parent('.effect').addClass("loaded");
     });
     if ($(window).width() > 599) {
@@ -133,10 +132,10 @@ export default {
       this.iso.layout();
     },
     filter: function(message, event) {
-      let $button = $(event.currentTarget);
-      let $buttonGroup = $button.parents('.button-group');
-      let filterGroup = $buttonGroup.attr('data-filter-group');
-      filters[ filterGroup ] = $button.attr('data-filter');
+      let button = $(event.currentTarget);
+      let buttonGroup = button.parents('.button-group');
+      let filterGroup = buttonGroup.attr('data-filter-group');
+      filters[ filterGroup ] = button.attr('data-filter');
       let filterValue = concatValues( filters );
       function concatValues( obj ) {
           var value = '';
