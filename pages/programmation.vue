@@ -124,7 +124,7 @@ export default {
   },
   methods: {
     isotope() {
-            this.iso = new Isotope(".grid", {
+            grid = new Isotope(".grid", {
               itemSelector: ".grid-item"
             });
             // store filter for each group
@@ -140,7 +140,7 @@ export default {
                 // combine filters
                 var filterValue = concatValues( filters );
                 // set filter for Isotope
-                this.iso.arrange({ filter: filterValue });
+                grid.arrange({ filter: filterValue });
             });
 
             // change is-checked class on buttons
@@ -161,7 +161,7 @@ export default {
                 }
                 return value;
             }
-      this.iso.layout();
+      grid.layout();
     },
     filter: function(message, event) { 
     }
