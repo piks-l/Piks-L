@@ -4,7 +4,7 @@
        <source src="https://electrobotik.frb.io/site/themes/electrobotik/video/EI2019_TEASER01_NOTEXT_converted.mp4" type="video/mp4">
        <source src="https://electrobotik.frb.io/site/themes/electrobotik/video/EI2019_TEASER01_NOTEXT_converted.WebM" type="video/webm">
     </video>
-     <img class="logo" src="https://electrobotik.netlify.com/images/logo-horizontal.svg" alt="ELECTROBOTIK INVASION">
+     <img class="logo-electrobotik" src="https://electrobotik.netlify.com/images/logo-horizontal.svg" alt="ELECTROBOTIK INVASION">
 </div>
 </template>
 
@@ -37,5 +37,13 @@
       min-height: 100%;
       transform: translate(-50%, -50%);
       transition:1s all ease;
+  }
+  .logo-electrobotik {
+    width: 50%;
+    margin: 0 auto;
+    top: 0%;
+    position: relative;
+    display: block;
+    transform: translatey(50%);
   }
 </style>
