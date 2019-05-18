@@ -145,14 +145,27 @@ export default {
                   $button.addClass('is-checked');
                 });
             });
-    $('.button-group').each( function( i, buttonGroup ) {
-        var $buttonGroup = $( buttonGroup );
-        $buttonGroup.on( 'click', 'button', function( event ) {
-          $buttonGroup.find('.is-checked').removeClass('is-checked');
-          var $button = $( event.currentTarget );
-          $button.addClass('is-checked');
-        });
-    });
+            $('.button-group').each( function( i, buttonGroup ) {
+                var $buttonGroup = $( buttonGroup );
+                $buttonGroup.on( 'click', 'button', function( event ) {
+                  $buttonGroup.find('.is-checked').removeClass('is-checked');
+                  var $button = $( event.currentTarget );
+                  $button.addClass('is-checked');
+                });
+            });
+            $( ".button-date button" ).click(function() {
+              $( ".button-stage .any" ).click();
+              $('.button-stage button, .other-stage button').each( function() {
+                  $( this ).addClass( "active" );
+                  $( ".button-date" ).removeClass( "mobile-active" );
+              });
+            });
+            $( ".button-stage button, .other-stage button" ).click(function() {
+              $('.button-stage button, .other-stage button').each( function() {
+                  $( this ).removeClass( "active" );
+                  $( ".stage" ).removeClass( "mobile-active" );
+              });
+            });
             // flatten object by concatting values
             function concatValues( obj ) {
                 var value = '';
