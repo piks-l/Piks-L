@@ -3,7 +3,6 @@
     <electrobotik-menu/>
     <electrobotik-header/>
     <nuxt/>
-    <electrobotik-footer/>
   </div>
 </template>
 <script>
@@ -15,11 +14,9 @@
       transition: 'page',
       components: {
           electrobotikMenu,
-          electrobotikHeader,
-          electrobotikFooter,
+          electrobotikHeader
       },
       mounted: () => {
-          
       }
   }
 </script>
