@@ -88,7 +88,7 @@ export default {
       }));
       return {
         artistes,
-        iso: null
+        grid: null
       };
     },
     asyncData() {
