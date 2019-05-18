@@ -55,6 +55,7 @@
               </div>
           </div>
       </div>
+      <electrobotik-footer/>
   </div>
 </template>
 <script>
@@ -63,13 +64,14 @@
   if (process.browser) { Isotope = require("isotope-layout"); }
   import $ from 'jquery'
   import VueLazyload from 'vue-lazyload'
+  import electrobotikFooter from '~/components/ui/footer.vue'
   // export
 export default {
     layout: 'default',
-    components: { VueLazyload },
+    components: { VueLazyload, electrobotikFooter },
     head() {
       return {
-        title: 'Electrobotik Invasion - le 2 & 3 Août 2019',
+        title: 'Programmation | Electrobotik Invasion - le 2 & 3 Août 2019',
         meta: [
           { hid: 'description', name: 'description', content: 'Electrobotik Invasion Festival, le 2 & 3 Août 2019, Circuit Paul Ricard - Le Castelet (83).' },
           { 'property': 'og:title', 'content': 'Electrobotik Invasion - le 2 & 3 Août 2019', 'vmid': 'og:title' },
