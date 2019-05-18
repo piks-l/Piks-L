@@ -1,5 +1,9 @@
 <template>
-  <h2>Accueil</h2>
+    <video autoplay muted loop playsinline id="animation">
+       <source src="https://electrobotik.frb.io/site/themes/electrobotik/video/EI2019_TEASER01_NOTEXT_converted.mp4" type="video/mp4">
+       <source src="https://electrobotik.frb.io/site/themes/electrobotik/video/EI2019_TEASER01_NOTEXT_converted.WebM" type="video/webm">
+    </video>
+     <img class="logo" src="https://electrobotik.netlify.com/images/logo.svg" alt="">
 </template>
 
 <script>
@@ -8,6 +12,11 @@
   export default {
     layout: 'default',
     components: { },
+    data() {
+      return {
+        changed: false
+      }
+    },
     asyncData() {
       return new Promise((resolve) => {
         setTimeout(function () {
@@ -26,4 +35,13 @@
   }
 </script>
 <style>
+  video#animation {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translate(-50%, -50%);
+      transition:1s all ease;
+  }
 </style>
