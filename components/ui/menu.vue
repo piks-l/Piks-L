@@ -33,9 +33,9 @@
                       </div>
                   </div>
                   <div class="social">
-                      <a href="#" alt="FB"><i class="fab fa-facebook-f"></i></a>
-                      <a href="#" alt="IT"><i class="fab fa-instagram"></i></a>
-                      <a href="#" alt="YT"><i class="fab fa-youtube"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/ElectrobotikInvasion"><i class="fab fa-facebook-f"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/electrobotik_invasion/"><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCin2oNXJUVgk7jYliy-dg5A"><i class="fab fa-youtube"></i></a>
                   </div>
                   <div class="news">
                       <a href="#" class="newsletter" alt="">NEWSLETTER</a>
