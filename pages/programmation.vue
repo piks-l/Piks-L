@@ -112,14 +112,7 @@ export default {
             el.html(text);
         });
     };
-    $('.button-group').each( function( i, buttonGroup ) {
-        var $buttonGroup = $( buttonGroup );
-        $buttonGroup.on( 'click', 'button', function( event ) {
-          $buttonGroup.find('.is-checked').removeClass('is-checked');
-          var $button = $( event.currentTarget );
-          $button.addClass('is-checked');
-        });
-    });
+
     this.isotope();
   },
   methods: {
@@ -152,7 +145,14 @@ export default {
                   $button.addClass('is-checked');
                 });
             });
-
+    $('.button-group').each( function( i, buttonGroup ) {
+        var $buttonGroup = $( buttonGroup );
+        $buttonGroup.on( 'click', 'button', function( event ) {
+          $buttonGroup.find('.is-checked').removeClass('is-checked');
+          var $button = $( event.currentTarget );
+          $button.addClass('is-checked');
+        });
+    });
             // flatten object by concatting values
             function concatValues( obj ) {
                 var value = '';
