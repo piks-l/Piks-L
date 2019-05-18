@@ -88,9 +88,7 @@ export default {
       }));
       return {
         artistes,
-        iso: null,
-        items: [],
-        itemsOccurences: {}
+        iso: null
       };
     },
     asyncData() {
@@ -126,27 +124,47 @@ export default {
   },
   methods: {
     isotope() {
-      this.iso = new Isotope(".grid", {
-        itemSelector: '.element-item'
-      });
+var $grid = $('.grid').isotope({
+              itemSelector: '.element-item'
+            });
+
+            // store filter for each group
+            var filters = {};
+
+            $('#filters').on( 'click', '.button', function( event ) {
+                var $button = $( event.currentTarget );
+                // get group key
+                var $buttonGroup = $button.parents('.button-group');
+                var filterGroup = $buttonGroup.attr('data-filter-group');
+                // set filter for group
+                filters[ filterGroup ] = $button.attr('data-filter');
+                // combine filters
+                var filterValue = concatValues( filters );
+                // set filter for Isotope
+                $grid.isotope({ filter: filterValue });
+            });
+
+            // change is-checked class on buttons
+            $('.button-group').each( function( i, buttonGroup ) {
+                var $buttonGroup = $( buttonGroup );
+                $buttonGroup.on( 'click', 'button', function( event ) {
+                  $buttonGroup.find('.is-checked').removeClass('is-checked');
+                  var $button = $( event.currentTarget );
+                  $button.addClass('is-checked');
+                });
+            });
+
+            // flatten object by concatting values
+            function concatValues( obj ) {
+                var value = '';
+                for ( var prop in obj ) {
+                  value += obj[ prop ];
+                }
+                return value;
+            }
       this.iso.layout();
     },
-    filter: function(message, event) {
-      let button = $(event.currentTarget);
-      let buttonGroup = button.parents('.button-group');
-      let filterGroup = buttonGroup.attr('data-filter-group');
-      filters[ filterGroup ] = button.attr('data-filter');
-      let filterValue = concatValues( filters );
-      function concatValues( obj ) {
-          var value = '';
-          for ( var prop in obj ) {
-            value += obj[ prop ];
-          }
-          return value;
-      }           
-      this.iso.arrange({
-        filter: filterValue
-      });   
+    filter: function(message, event) { 
     }
   }
 }
