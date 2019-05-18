@@ -825,6 +825,9 @@ header.sticky{
   margin: 0;
   padding: 0;
 }
+.element-item a {
+  display: block;
+}
 .effect {
     position: absolute;
     top: 0;
