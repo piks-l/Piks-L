@@ -1,6 +1,6 @@
 <template> 
   <div class="page artist">
-    <div class="'decoration decoration-'+stage">
+    <div :class="'decoration decoration-'+stage">
       <div class="volet-artist"></div>
     </div>
     <div id="main-container" class="artiste">
