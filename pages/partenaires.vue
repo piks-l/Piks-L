@@ -70,7 +70,7 @@
             --><div class="partenaire">
                 <div class="effect">
                     <div class="volet1">
-                        <img class="lazy" v-lazy="'https://electrobotik.netlify.com/assets/images/logos/9.png'">
+                        <img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/9.png'">
                     </div>
                     <div class="volet2"></div>
                 </div>
