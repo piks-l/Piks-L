@@ -211,7 +211,9 @@
       this.$Lazyload.$on('loaded', function ({ el, src, $parent }) {
         $(el).parent('.volet1').parent('.effect').addClass("loaded");
       });
-      $('#parallax').each(function(index) {
+          // Populate images from data attributes.
+          var scrolled = $(window).scrollTop()
+          $('#parallax').each(function(index) {
               var imageSrc = $(this).data('image-src')
               var imageHeight = $(this).data('height')
               $(this).css('background-image','url(' + imageSrc + ')')
@@ -243,6 +245,21 @@
                 $(this).css('background-position','center ' + parseInt(-(ratio * 3.5)) + 'px')
               }
             })
+          })
+          function isInViewport(node) {
+            // Am I visible? Height and Width are not explicitly necessary in visibility
+            // detection, the bottom, right, top and left are the essential checks. If an
+            // image is 0x0, it is technically not visible, so it should not be marked as
+            // such. That is why either width or height have to be > 0.
+            var rect = node.getBoundingClientRect()
+            return (
+              (rect.height > 0 || rect.width > 0) &&
+              rect.bottom >= 0 &&
+              rect.right >= 0 &&
+              rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+              rect.left <= (window.innerWidth || document.documentElement.clientWidth)
+            )
+          }      
     }
   }
 </script>
