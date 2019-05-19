@@ -1,9 +1,9 @@
 <template>
   <div class="page">
           <div class="decoration">
-          <img class="select-fond acces active" src="./images/fondcircuit.jpg"  alt="">
-          <img class="select-fond camping" src="./images/fondcamping.jpg"  alt="">
-          <img class="select-fond faq" src="./images/fondfaq.jpg"  alt="">
+          <img class="select-fond acces active" src="https://electrobotik.netlify.com/images/fondcircuit.jpg"  alt="">
+          <img class="select-fond camping" src="https://electrobotik.netlify.com/images/fondcamping.jpg"  alt="">
+          <img class="select-fond faq" src="https://electrobotik.netlify.com/images/fondfaq.jpg"  alt="">
         </div>
             <div class="button-date select-infos mobile-menu">
           <button class="button is-checked" data-class="acces">ACCÈS</button><!--
