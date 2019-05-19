@@ -6,7 +6,7 @@
             <div class="partenaire">
                 <div class="effect">
                     <div class="volet1">
-                        <img class="lazy" v-lazy="'//electrobotik.netlify.com/images/logos/1.jpg'" >
+                        <img class="lazy" src="https://electrobotik.netlify.com/images/logos/1.jpg">
                     </div>
                     <div class="volet2"></div>
                 </div>
@@ -14,7 +14,7 @@
             --><div class="partenaire">
                 <div class="effect">
                     <div class="volet1">
-                        <img class="lazy" data-src="https://electrobotik.netlify.com/images/logos/2.png" alt="">
+                        <img class="lazy" src="https://electrobotik.netlify.com/images/logos/2.png" alt="">
                     </div>
                     <div class="volet2"></div>
                 </div>
@@ -22,7 +22,7 @@
             --><div class="partenaire">
                 <div class="effect">
                     <div class="volet1">
-                        <img class="lazy" data-src="https://electrobotik.netlify.com/images/logos/3.png" alt="">
+                        <img class="lazy" src="https://electrobotik.netlify.com/images/logos/3.png" alt="">
                     </div>
                     <div class="volet2"></div>
                 </div>
