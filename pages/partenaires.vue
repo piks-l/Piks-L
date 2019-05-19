@@ -6,7 +6,8 @@
             <div class="partenaire">
                 <div class="effect">
                     <div class="volet1">
-                        <img class="lazy" data-src="https://electrobotik.netlify.com/images/logos/2.png" >
+                        <img class="lazy" v-lazy="https://electrobotik.netlify.com/images/logos/1.png" >
+                        <img class="lazy" data-src="https://electrobotik.netlify.com/images/logos/1.png" >
                     </div>
                     <div class="volet2"></div>
                 </div>
