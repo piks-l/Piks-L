@@ -1,5 +1,10 @@
 <template>
   <div class="page">
+          <div class="decoration">
+          <img class="select-fond acces active" src="assets/images/fondcircuit.jpg"  alt="">
+          <img class="select-fond camping" src="assets/images/fondcamping.jpg"  alt="">
+          <img class="select-fond faq" src="assets/images/fondfaq.jpg"  alt="">
+        </div>
             <div class="button-date select-infos mobile-menu">
           <button class="button is-checked" data-class="acces">ACCÈS</button><!--
           --><span>/</span><!--
