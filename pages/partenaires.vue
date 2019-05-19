@@ -211,11 +211,40 @@
       this.$Lazyload.$on('loaded', function ({ el, src, $parent }) {
         $(el).parent('.volet1').parent('.effect').addClass("loaded");
       });
+      $('#parallax').each(function(index) {
+              var imageSrc = $(this).data('image-src')
+              var imageHeight = $(this).data('height')
+              $(this).css('background-image','url(' + imageSrc + ')')
+              $(this).css('height', imageHeight)
+
+              // Adjust the background position.
+              var initY = $(this).offset().top
+              var height = $(this).height()
+              var diff = scrolled - initY
+              var ratio = Math.round((diff / height) * 100)
+              $(this).css('background-position','center ' + parseInt(-(ratio * 3.5)) + 'px')
+          })
+
+          // Attach scroll event to window. Calculate the scroll ratio of each element
+          // and change the image position with that ratio.
+          // https://codepen.io/lemagus/pen/RWxEYz
+          $(window).scroll(function() {
+            var scrolled = $(window).scrollTop()
+            $('#parallax').each(function(index, element) {
+              var initY = $(this).offset().top
+              var height = $(this).height()
+              var endY  = initY + $(this).height()
+
+              // Check if the element is in the viewport.
+              var visible = isInViewport(this)
+              if(visible) {
+                var diff = scrolled - initY
+                var ratio = Math.round((diff / height) * 100)
+                $(this).css('background-position','center ' + parseInt(-(ratio * 3.5)) + 'px')
+              }
+            })
     }
   }
 </script>
 <style>
-  @media only screen and (min-width:960px) and (max-width:1264px){}
-  @media only screen and (min-width:600px) and (max-width:959px){}
-  @media only screen and (max-width:599px){}
 </style>
