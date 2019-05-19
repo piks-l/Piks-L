@@ -6,7 +6,7 @@
             <div class="partenaire">
                 <div class="effect">
                     <div class="volet1">
-                        <img class="lazy" data-src="assets/images/logos/1.jpg" alt="">
+                        <img class="lazy" v-lazy="https://electrobotik.netlify.com/images/logos/2.png" >
                     </div>
                     <div class="volet2"></div>
                 </div>
@@ -190,10 +190,11 @@
 </template>
 <script>
   import $ from 'jquery'
+  import VueLazyload from 'vue-lazyload'
   // export
   export default {
     layout: 'default',
-    components: { },
+    components: { VueLazyload },
     head() {
       return {
         title: 'Electrobotik Invasion - le 2 & 3 Août 2019',
@@ -206,6 +207,9 @@
       }
     },
     mounted () {	
+      this.$Lazyload.$on('loaded', function ({ el, src, $parent }) {
+        $(el).parent('.volet1').parent('.effect').addClass("loaded");
+      });
     }
   }
 </script>
