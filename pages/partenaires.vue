@@ -1,7 +1,192 @@
 <template>
-  <div class="page">
-    <h2>PARTENAIRES</h2>
-  </div>
+  <div class="container-grid scene_element scene_element--fadein">
+          <div class="background"></div>
+          <h2>PARTENAIRES</h2>
+          <div class="content">
+            <div class="partenaire">
+                <div class="effect">
+                    <div class="volet1">
+                        <img class="lazy" data-src="assets/images/logos/1.jpg" alt="">
+                    </div>
+                    <div class="volet2"></div>
+                </div>
+            </div><!--
+            --><div class="partenaire">
+                <div class="effect">
+                    <div class="volet1">
+                        <img class="lazy" data-src="assets/images/logos/2.png" alt="">
+                    </div>
+                    <div class="volet2"></div>
+                </div>
+            </div><!--
+            --><div class="partenaire">
+                <div class="effect">
+                    <div class="volet1">
+                        <img class="lazy" data-src="assets/images/logos/3.png" alt="">
+                    </div>
+                    <div class="volet2"></div>
+                </div>
+            </div><!--
+            --><div class="partenaire">
+                <div class="effect">
+                    <div class="volet1">
+                        <img class="lazy" data-src="assets/images/logos/4.png" alt="">
+                    </div>
+                    <div class="volet2"></div>
+                </div>
+            </div><!--
+            --><div class="partenaire">
+                <div class="effect">
+                    <div class="volet1">
+                        <img class="lazy" data-src="assets/images/logos/5.png" alt="">
+                    </div>
+                    <div class="volet2"></div>
+                </div>
+            </div><!--
+            --><div class="partenaire">
+                <div class="effect">
+                    <div class="volet1">
+                        <img class="lazy" data-src="assets/images/logos/6.png" alt="">
+                    </div>
+                    <div class="volet2"></div>
+                </div>
+            </div><!--
+            --><div class="partenaire">
+                <div class="effect">
+                    <div class="volet1">
+                        <img class="lazy" data-src="assets/images/logos/7.png" alt="">
+                    </div>
+                    <div class="volet2"></div>
+                </div>
+            </div><!--
+            --><div class="partenaire">
+                <div class="effect">
+                    <div class="volet1">
+                        <img class="lazy" data-src="assets/images/logos/8.png" alt="">
+                    </div>
+                    <div class="volet2"></div>
+                </div>
+            </div><!--
+            --><div class="partenaire">
+                <div class="effect">
+                    <div class="volet1">
+                        <img class="lazy" data-src="assets/images/logos/9.png" alt="">
+                    </div>
+                    <div class="volet2"></div>
+                </div>
+            </div><!--
+            --><div class="partenaire">
+                <div class="effect">
+                    <div class="volet1">
+                        <img class="lazy" data-src="assets/images/logos/10.png" alt="">
+                    </div>
+                    <div class="volet2"></div>
+                </div>
+            </div><!--
+            --><div class="partenaire">
+                <div class="effect">
+                    <div class="volet1">
+                        <img class="lazy" data-src="assets/images/logos/11.png" alt="">
+                    </div>
+                    <div class="volet2"></div>
+                </div>
+            </div><!--
+            --><div class="partenaire">
+                <div class="effect">
+                    <div class="volet1">
+                        <img class="lazy" data-src="assets/images/logos/12.png" alt="">
+                    </div>
+                    <div class="volet2"></div>
+                </div>
+            </div><!--
+            --><div class="partenaire">
+                <div class="effect">
+                    <div class="volet1">
+                        <img class="lazy" data-src="assets/images/logos/13.png" alt="">
+                    </div>
+                    <div class="volet2"></div>
+                </div>
+            </div><!--
+            --><div class="partenaire">
+                <div class="effect">
+                    <div class="volet1">
+                        <img class="lazy" data-src="assets/images/logos/14.png" alt="">
+                    </div>
+                    <div class="volet2"></div>
+                </div>
+            </div><!--
+            --><div class="partenaire">
+                <div class="effect">
+                    <div class="volet1">
+                        <img class="lazy" data-src="assets/images/logos/15.png" alt="">
+                    </div>
+                    <div class="volet2"></div>
+                </div>
+            </div><!--
+            --><div class="partenaire">
+                <div class="effect">
+                    <div class="volet1">
+                        <img class="lazy" data-src="assets/images/logos/16.png" alt="">
+                    </div>
+                    <div class="volet2"></div>
+                </div>
+            </div><!--
+            --><div class="partenaire">
+                <div class="effect">
+                    <div class="volet1">
+                        <img class="lazy" data-src="assets/images/logos/17.png" alt="">
+                    </div>
+                    <div class="volet2"></div>
+                </div>
+            </div><!--
+            --><div class="partenaire">
+                <div class="effect">
+                    <div class="volet1">
+                        <img class="lazy" data-src="assets/images/logos/18.png" alt="">
+                    </div>
+                    <div class="volet2"></div>
+                </div>
+            </div><!--
+            --><div class="partenaire">
+                <div class="effect">
+                    <div class="volet1">
+                        <img class="lazy" data-src="assets/images/logos/19.png" alt="">
+                    </div>
+                    <div class="volet2"></div>
+                </div>
+            </div><!--
+            --><div class="partenaire">
+                <div class="effect">
+                    <div class="volet1">
+                        <img class="lazy" data-src="assets/images/logos/20.png" alt="">
+                    </div>
+                    <div class="volet2"></div>
+                </div>
+            </div><!--
+            --><div class="partenaire sneaky-partenaire">
+            </div><!--
+            --><div class="partenaire">
+                <div class="effect">
+                    <div class="volet1">
+                        <img class="lazy" data-src="assets/images/logos/21.png" alt="">
+                    </div>
+                    <div class="volet2"></div>
+                </div>
+            </div><!--
+            --><div class="partenaire sneaky-partenaire-impaire">
+            </div><!--
+            --><div class="partenaire">
+                <div class="effect">
+                    <div class="volet1">
+                        <img class="lazy" data-src="assets/images/logos/22.png" alt="">
+                    </div>
+                    <div class="volet2"></div>
+                </div>
+            </div>
+
+          </div>
+        </div>
+      
 </template>
 <script>
   import $ from 'jquery'
