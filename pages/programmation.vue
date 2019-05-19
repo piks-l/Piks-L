@@ -93,13 +93,6 @@ export default {
         grid: null
       };
     },
-    asyncData() {
-      return new Promise((resolve) => {
-        setTimeout(function () {
-          resolve({})
-        }, 1000)
-      })
-    },
   mounted() {
     this.$Lazyload.$on('loaded', function ({ el, src, $parent }) {
       $(el).parent('.volet1').parent('.effect').addClass("loaded");
