@@ -1,4 +1,5 @@
 <template>
+<div id="parallax" data-image-src="https://electrobotik.netlify.com/images/crop.jpg">
   <div class="container-grid scene_element scene_element--fadein">
           <div class="background"></div>
           <h2>PARTENAIRES</h2>
@@ -186,7 +187,7 @@
 
           </div>
         </div>
-      
+   </div>     
 </template>
 <script>
   import $ from 'jquery'
