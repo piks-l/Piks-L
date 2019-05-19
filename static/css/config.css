@@ -1155,8 +1155,11 @@ footer p {
 
 
 /******************** Partenaires pages *******************/
+.small-partenaires {
+    display: none;
+}
 .container-grid {
-    max-width: 1264px;
+    max-width: 70%;
     margin: 0 auto;
     position: relative;
     padding: 50px 15px 0;
@@ -1171,18 +1174,29 @@ footer p {
     width: 100%;
     left: 0;
     top: 80px;
-    transform: none;
+    -webkit-transform: none;
+            transform: none;
 }
 .container-grid .content {
     padding: 0;
     border: none;
 }
 .partenaire {
-    width: calc(25% - 3px);
+    width: 16%;
     position: relative;
     height: 200px;
     display: inline-block;
     background: #000;
+    padding:1%;
+    margin:1%;
+}
+.sneaky-partenaire {
+    height: 0;
+    background: transparent;
+    width: 26%;
+}
+.sneaky-partenaire-impaire{
+    display:none;
 }
 .partenaire img {
     position: absolute;
@@ -1190,5 +1204,269 @@ footer p {
     max-height: 90%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
+.partenaire .volet2 {
+    background: #0079ff;
+    -webkit-transition: left .35s cubic-bezier(0.785,.135,.15,.86), width .35s cubic-bezier(0.785,.135,.15,.86) .60s, background 0s ease .90s;
+    transition: left .35s cubic-bezier(0.785,.135,.15,.86), width .35s cubic-bezier(0.785,.135,.15,.86) .60s, background 0s ease .90s
+}
+.partenaire .volet1 {
+    background: #000;
+}
+
+
+/******************** INFOS PRATIQUES pages *******************/
+.select-infos.mobile-menu{
+    display:none;
+}
+.container-infos {
+    max-width: 70%;
+    margin: 0 auto;
+    position: relative;
+    padding: 50px 15px 0;
+}
+  .container-infos h2 {
+      font-size: 3em;
+      margin: 0 0 25px;
+      text-align: center;
+      line-height: .8em;
+  }
+.content-large {
+    width: 300vw;
+    position: relative;
+    transition: all .5s ease;
+    display: flex;
+    padding-bottom: 50px;
+}
+.select-fond {
+    width: 100%;
+    opacity: 0;
+    transition: all .5s ease;
+    position: absolute;
+}
+  .select-fond.active {
+      opacity: 1;
+  }
+#acces{
+  transform:translatex(0);
+}
+#camping{
+  transform:translatex(-100vw);
+}
+#faq{
+  transform:translatex(-200vw);
+}
+  .slide {
+      width: 100vw;
+      position: relative;
+      display: inline-block;
+      max-height: 100vh;
+  }
+  .slide.active{
+      max-height: none;
+  }
+    .slide .container {
+        max-width: 50%;
+        min-height: 0;
+        min-width: auto;
+    }
+      .color {
+          padding: 25px 50px;
+          background: -webkit-linear-gradient(left, #0079ff, #b24576);
+          background: linear-gradient(0.25turn, #0079ff, #b24576);
+      }
+        .color p {
+            font-size: 22px;
+            font-weight: 600;
+            margin: 0;
+            line-height: 30px;
+            text-align: justify;
+        }
+      .no-color {
+          background: #fff;
+          padding: 30px 50px;
+          position: relative;
+          margin-bottom: 50px;
+      }
+      .no-color::before {
+          content: '';
+          height: calc(100% - 50px);
+          width: 7px;
+          background: linear-gradient(90turn, #0079ff, #b24576);
+          position: absolute;
+          top: 25px;
+          left: 28px;
+          z-index: 1;
+      }
+        .no-color p {
+            color: #000;
+            font-size: 16px;
+            font-weight: 500;
+            margin: 0;
+            line-height: 25px;
+            text-align: justify;
+            letter-spacing: 1px;
+        }
+        .lien {
+            position: absolute;
+            right: 40px;
+            bottom: 0;
+            transform: translatey(50%);
+        }
+          .lien a {
+              position: relative;
+              display: block;
+              width: 50px;
+              line-height: 50px;
+              background: #000;
+              display: inline-block;
+              margin: 0 10px;
+              text-align: center;
+              border-radius: 50%;
+              font-size: 30px;
+          }
+    .vignette {
+        position: relative;
+        display: inline-table;
+        width: calc(32% - 50px);
+        padding: 50px 25px;
+        margin: 25px 0 15px;
+        height:125px;
+    }
+    .voiture {
+        background: linear-gradient(-45deg, #0079ff, #b24576);
+    }
+    .avion {
+        margin: 25px 2% 25px;
+        background: linear-gradient(0deg, #0079ff, #b24576);
+    }
+    .train {
+        background: linear-gradient(45deg, #0079ff, #b24576);
+    }
+      .vignette i {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 50px;
+      }
+      .vignette .center {
+          position: absolute;
+          top: 50%;
+          transform: translatey(-50%);
+          left: 25px;
+          max-width: calc(100% - 50px);
+      }
+          .vignette p {
+              margin: 0;
+              line-height: 25px;
+              font-size: 18px;
+          }
+          .gras {
+              font-weight: 600;
+              text-transform: uppercase;
+              font-size: 20px;
+          }
+    .reservez {
+          background: #222;
+          padding: 10px 50px 10px 85px;
+          position:relative;
+    }
+      .reservez i {
+          position: absolute;
+          top: 50%;
+          left: 25px;
+          transform: translatey(-50%);
+          font-size: 40px;
+      }
+      .reservez p {
+          margin: 0;
+          line-height: 25px;
+          font-size: 18px;
+      }
+      .reservez .gras {
+          font-size: 20px;
+          text-transform: none;
+          letter-spacing: 1px;
+      }
+        .reservez a {
+            color: #b24576;
+            font-weight: 900;
+            font-size: 22px;
+        }
+        .tabs {
+            overflow: hidden;
+        }
+        .tab {
+          width: 100%;
+          color: #fff;
+          overflow: hidden;
+        }
+          .tab-label {
+              display: flex;
+              justify-content: space-between;
+              padding: 15px 50px;
+              background: rgba(0,0,0,.9);
+              font-weight: bold;
+              cursor: pointer;
+              font-size: 22px;
+              text-transform: uppercase;
+          }
+          .tab-label:hover {
+              background: linear-gradient(45deg, #0079ff, #b24576);
+          }
+          .tab-label::after {
+              content: "\276F";
+              width: 1em;
+              height: 1em;
+              text-align: center;
+              transition: all .35s cubic-bezier(0.22, 0.61, 0.36, 1);
+          }
+            .tab-content {
+                max-height: 0;
+                color: #fff;
+                background: rgba(0,0,0,.9);
+                transition: all .35s cubic-bezier(0.22, 0.61, 0.36, 1);
+                position: relative;
+                padding: 0 50px;
+            }
+            .tab-content::before {
+                content: '';
+                height: 7px;
+                width: calc(100% - 100px);
+                position: absolute;
+                top: 0;
+                left: 50px;
+                background: linear-gradient(45deg, #0079ff, #b24576);
+            }
+              .tab input {
+                  opacity: 0;
+              }
+              input:checked + .tab-label {
+                  background: rgba(0,0,0,.9);
+              }
+              input:checked + .tab-label::after {
+                  -webkit-transform: rotate(90deg);
+                          transform: rotate(90deg);
+              }
+              input:checked ~ .tab-content {
+                  max-height: 100vh;
+                  padding: 25px 50px;
+              }
+              .tab-content p {
+                  margin: 0;
+                  font-size: 16px;
+                  line-height:25px;
+              }
+              .tab-content ul {
+                  list-style: square;
+                  padding-left: 15px;
+                  margin:0;
+              }
+              .tab-content li {
+                  font-size: 16px;
+                  line-height:25px;
+              }
+
