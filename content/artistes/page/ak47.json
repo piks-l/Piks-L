@@ -5,11 +5,11 @@
   "social": [
     {
       "lien": "https://soundcloud.com/ak47_budburnerz",
-      "awesome": "fa fa-soundcloud"
+      "awesome": "fab fa-soundcloud"
     },
     {
       "lien": "https://www.facebook.com/AK47.BudBurNerZ/",
-      "awesome": "fa fa-facebook"
+      "awesome": "fab fa-facebook-f"
     }
   ],
   "couverture": "/images/uploads/ak47.jpg",
