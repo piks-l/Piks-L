@@ -3,8 +3,14 @@
   "dateshow": "samedi",
   "thumbnail": "/images/uploads/andy-vs-lady.jpg",
   "social": [
-    "https://soundcloud.com/andythecore",
-    "https://www.facebook.com/ladydammage/"
+    {
+      "lien": "https://www.facebook.com/ladydammage/",
+      "awesome": "fab fa-facebook-f"
+    },
+    {
+      "lien": "https://soundcloud.com/andythecore",
+      "awesome": "fab fa-soundcloud"
+    }
   ],
   "couverture": "/images/uploads/andy-vs-lady.jpg",
   "date": "20/05/2019",
