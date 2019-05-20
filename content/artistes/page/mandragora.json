@@ -1,0 +1,16 @@
+{
+  "iframe": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/csOZutpHDyc\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+  "dateshow": "vendredi",
+  "thumbnail": "/images/uploads/mandragora.jpg",
+  "social": [
+    {
+      "lien": "https://www.facebook.com/mandragoralive/",
+      "awesome": "fab fa-facebook-f"
+    }
+  ],
+  "couverture": "/images/uploads/mandragora.jpg",
+  "date": "20/05/2019",
+  "title": "MANDRAGORA",
+  "description": "Formé dans un Conservatoire de musique classique au Mexique, Neto alias Mandragora s’impose aujourd’hui comme acteur majeur de la scène trance progressive.Multi-instrumentiste dans plusieurs groupes de métal, il apporte dans sa musique des influences diverses et témoigne d’une vraie maîtrise dans l’art de la composition de morceaux. Véritable homme de scène, Mandragora transcende les foules, avec une signature futureprog largement reconnaissable et toujours surprenante.",
+  "stage": "TRANCE"
+}
