@@ -1,8 +1,8 @@
 <template>
 <div>
         <video autoplay="autoplay" id="video" class="scene_element scene_element--fadein" loop="loop" muted="muted" playsinline="">
-            <source src="/video/EI2019_TEASER01_NOTEXT_converted.mp4" type="video/mp4">
-            <source src="/video/EI2019_TEASER01_NOTEXT_converted.WebM" type="video/webm">
+            <source src="/videos/EI2019_TEASER01_NOTEXT_converted.mp4" type="video/mp4">
+            <source src="/videos/EI2019_TEASER01_NOTEXT_converted.WebM" type="video/webm">
         </video>
         <div  class="container accueil scene_element scene_element--fadein">
             <div class="header">
