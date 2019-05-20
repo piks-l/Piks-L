@@ -19,9 +19,9 @@ collections:
       - label: "Social"
         name: "social"
         widget: "list"
-        field:
-          - { label: Lien, name: lien, widget: string, default: " Lien facebook" }
-          - { label: awesome, name: awesome, widget: string, default: "facebook" }
+        fields:
+          - { label: Lien, name: lien, widget: string }
+          - { label: awesome, name: awesome, widget: string }
       - label: "Date"
         name: "dateshow"
         widget: "select"
