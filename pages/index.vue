@@ -7,13 +7,13 @@
         <div  class="container accueil scene_element scene_element--fadein">
             <div class="header">
                 <div class="big-logo">
-                    <img class="logo small-logo" src="assets/images/logo-horizontal.svg"  alt="logo">
+                    <img class="logo small-logo" src="/images/logo-horizontal.svg"  alt="logo">
                     <div class="circuit">
                         <h3>CIRCUIT PAUL RICARD - OPEN AIR FESTIVAL</h3>
                     </div>
                     <div class="date">
                         <div class="date-circle">
-                            <img src="assets/images/circle.svg"/>
+                            <img src="/images/circle.svg"/>
                             <div class="content-date">
                                 <p class="big-date">02<small>&</small>03</p>
                                 <p class="month">AOÛT 2019</p>
