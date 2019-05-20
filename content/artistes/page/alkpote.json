@@ -3,8 +3,14 @@
   "dateshow": "samedi",
   "thumbnail": "/images/uploads/alkapote.jpg",
   "social": [
-    "https://soundcloud.com/alkpote91",
-    "https://www.facebook.com/AlkpoteLeVrai/"
+    {
+      "lien": "https://www.facebook.com/AlkpoteLeVrai/",
+      "awesome": "fab fa-facebook-f"
+    },
+    {
+      "lien": "https://soundcloud.com/alkpote91",
+      "awesome": "fab fa-soundcloud"
+    }
   ],
   "couverture": "/images/uploads/alkapote.jpg",
   "date": "20/05/2019",
