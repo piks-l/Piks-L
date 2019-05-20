@@ -25,10 +25,7 @@
                   <vue-markdown>{{description}}</vue-markdown>
                 </div>
                 <div class="social-artiste">
-                  <a href="#" alt="FB"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#" alt="IT"><i class="fab fa-instagram"></i></a>
-                  <a href="#" alt="YT"><i class="fab fa-youtube"></i></a>
-                  <a href="#" alt="link"><i class="fas fa-link"></i></a>
+                  <a :href="facebook" alt="FB"><i class="fab fa-facebook-f"></i></a>
                 </div>
             </div>
         </div>
