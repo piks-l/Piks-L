@@ -5,8 +5,8 @@
           <div class="slash2"></div>
           <div class="menu-content">
               <div class="big-logo">
-                <nuxt-link to="/"><img class="logo large-logo" src="https://electrobotik.netlify.com/images/logo-basic.svg"  alt="logo"></nuxt-link>
-                <nuxt-link to="/"><img class="logo small-logo" src="https://electrobotik.netlify.com/images/logo-horizontal.svg" alt="logo"></nuxt-link>
+                <nuxt-link to="/" class="menu-link" ><img class="logo large-logo" src="https://electrobotik.netlify.com/images/logo-basic.svg"  alt="logo"></nuxt-link>
+                <nuxt-link to="/" class="menu-link" ><img class="logo small-logo" src="https://electrobotik.netlify.com/images/logo-horizontal.svg" alt="logo"></nuxt-link>
               </div>
               <div class="menu-info">
                   <div class="circuit">
