@@ -1,0 +1,16 @@
+{
+  "iframe": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/JCDGJv7RX1g\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+  "dateshow": "vendredi",
+  "thumbnail": "/images/uploads/gonzi.jpg",
+  "social": [
+    {
+      "lien": "https://www.youtube.com/channel/UCXdVtgy9XEHWqSz3n2ivluQ",
+      "awesome": "fab fa-youtube"
+    }
+  ],
+  "couverture": "/images/uploads/gonzi.jpg",
+  "date": "20/05/2019",
+  "title": "GONZI",
+  "description": "Gonzi est un jeune producteur italien, considéré comme un véritable démon la scène trance progressive. Il apporte avec lui un style peu commun et sans égal avec ses productions insensées et ses mélanges entre de nombreux genres musicaux.",
+  "stage": "TRANCE"
+}
