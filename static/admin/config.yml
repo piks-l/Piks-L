@@ -12,17 +12,12 @@ collections:
     slug: "{{slug}}"
     format: 'json'
     fields:
-      - label: "Testimonials"
-        name: "testimonials"
+      - label: "Social"
+        name: "social"
         widget: "list"
         fields:
-          - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
-          - label: Author
-            name: author
-            widget: object
-            fields:
-              - {label: Name, name: name, widget: string, default: "Emmet"}
-              - {label: Avatar, name: avatar, widget: image, default: "/img/emmet.jpg"}
+          - {label: Lien, name: lien, widget: string, default: " Lien facebook"}
+          - {label: Social, name: social, widget: string, default: "facebook"}
       - {label: "Image de couverture", name: "couverture", widget: "image", required: true}
       - {label: "Nom", name: "title", widget: "string", tagname: "h1", required: true}
       - {label: "Description", name: "description", widget: "markdown"}
