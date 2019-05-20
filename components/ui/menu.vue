@@ -39,10 +39,8 @@
                   </div>
                   <div class="news">
                       <data id="mj-w-res-data" data-token="8132db2e5e0cdb0d17c4b487de416468" class="mj-w-data" data-apikey="130o" data-w-id="huJ" data-lang="fr_FR" data-base="https://app.mailjet.com" data-width="640" data-height="542" data-statics="statics"></data>
-                      <div class="mj-w-button mj-w-btn" data-token="8132db2e5e0cdb0d17c4b487de416468"">
-                        <div class="mj-w-button-content" style="font-family: Ubuntu, Helvetica; display: inline-block; text-align: center; font-size: 13px; vertical-align: middle; color: rgb(0, 0, 0);">
+                      <div data-token="8132db2e5e0cdb0d17c4b487de416468">
                           <a href="#" class="newsletter" alt="">NEWSLETTER</a>
-                        </div>
                       </div>
                       <nuxt-link to="partenaires" class="presse">ESPACE PRESSE</nuxt-link>
                   </div>
