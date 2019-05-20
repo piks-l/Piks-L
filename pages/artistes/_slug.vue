@@ -25,7 +25,7 @@
                   <vue-markdown>{{description}}</vue-markdown>
                 </div>
                 <div class="social-artiste">
-                  <a target="_blank" v-for="(i) in social" :key="social?awesome" :href="social.lien"><i :class="social.awesome"></i></a>
+                  <a target="_blank" v-for="(i) in social" :key="social.awesome" :href="social.lien"><i :class="social.awesome"></i></a>
                 </div>
             </div>
         </div>
