@@ -24,7 +24,7 @@
                 <div class="content">
                   <vue-markdown>{{description}}</vue-markdown>
                 </div>
-                <div class="social-artiste" v-for="(index in social" :key="social">
+                <div class="social-artiste" v-for="index in social" :key="social">
                 
                   <a target="_blank"  :href="lien"><i :class="awesome"></i></a>
                 </div>
