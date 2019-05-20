@@ -7,7 +7,6 @@
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
 }
-.page { overflow: hidden; }
 body {
     margin: 0;
     background: #000;
@@ -19,6 +18,18 @@ body {
 }
 .index{
     background:url(../images/fond.jpg) #000;
+}
+.page {
+    overflow: hidden;
+}
+button,
+button:hover,
+button:active{
+  outline:none;
+  border:0;
+}
+a:hover, a:active, a:focus {
+  outline:none;
 }
 a, a:hover{
   color:#fff;
@@ -68,7 +79,7 @@ h1 {
 }
 
 /* Menu */
-.menu {
+.menu{
     position: fixed;
     background: #000;
     width: 100%;
@@ -79,20 +90,22 @@ h1 {
     display: block;
     -webkit-transition: all 0.25s cubic-bezier(0.785,.135,.15,.86);
     transition:all 0.25s cubic-bezier(0.785,.135,.15,.86);
-    z-index: 10;
-
+    z-index: 100;
 }
 .menu.open {
     left: 0;
     -webkit-transition: all 0.25s cubic-bezier(0.785,.135,.15,.86) .35s;
     transition:all 0.25s cubic-bezier(0.785,.135,.15,.86) .35s;
 }
-
-.slash1, .slash2 {
+.is-exiting .menu.open {
+    left: -100vw;
+}
+#main .menu .slash1,
+#main .menu .slash2 {
     height: 300%;
     width: 300%;
     position: absolute;
-    bottom: 110vh;
+    bottom: 120vh;
     right: 0;
     -webkit-transform: translatex(50%) rotate(-14deg);
             transform: translatex(50%) rotate(-14deg);
@@ -102,18 +115,24 @@ h1 {
     transition:all 0.35s cubic-bezier(0.785,.135,.15,.86) .35s;
     background:#fff;
 }
+
 .slash2 {
     -webkit-transition: all 0.35s cubic-bezier(0.785,.135,.15,.86) .10s;
     transition:all 0.35s cubic-bezier(0.785,.135,.15,.86) .10s;
     background:#000;
+    overflow:hidden
 }
-.menu.open .slash1{
-    bottom: -100vh;
+.is-exiting .slash1,
+.menu.open .slash1,
+.menu.open .slash1.active{
+    bottom: -100vh !important;
     -webkit-transition: all 0.35s cubic-bezier(0.785,.135,.15,.86) ;
     transition:all 0.35s cubic-bezier(0.785,.135,.15,.86) ;
 }
-.menu.open .slash2{
-    bottom: -100vh;
+.is-exiting .slash2,
+.menu.open .slash2,
+.menu.open .slash2.active{
+    bottom: -100vh !important;
     -webkit-transition: all 0.35s cubic-bezier(0.785,.135,.15,.86).15s;
     transition:all 0.35s cubic-bezier(0.785,.135,.15,.86).15s;
 }
@@ -469,11 +488,15 @@ h1 {
 }
 
 /* Content Programmation*/
+#parallax {
+    background-size: cover;
+}
 #main {
-
+    background-size: cover;
+    overflow: hidden;
 }
 #main-container{
-
+    padding-top: 385px;
 }
 #main-container.artiste {
     padding: 0;
@@ -581,6 +604,7 @@ header.sticky{
 }
 .container{
   margin: 0 auto;
+
   min-height: 100vh;
   width: 80vw;
   overflow: hidden;
@@ -629,8 +653,9 @@ header.sticky{
 .button.is-checked {
   color: white ;
 }
-.button:active {
-
+.button-stage, .other-stage {
+    display: block;
+    text-align: center;
 }
 .button-date,
 .button-stage,
@@ -825,9 +850,6 @@ header.sticky{
   margin: 0;
   padding: 0;
 }
-.element-item a {
-  display: block;
-}
 .effect {
     position: absolute;
     top: 0;
@@ -835,12 +857,11 @@ header.sticky{
     overflow: hidden;
     height: 100%;
     width: 0;
-    -webkit-transition: all .25s cubic-bezier(0.785,.135,.15,.86) .25s, background 0s ease .50s;
-    transition:all .25s cubic-bezier(0.785,.135,.15,.86) .25s, background 0s ease .50s;
+    -webkit-transition: all .25s cubic-bezier(0.785,.135,.15,.86);
+    transition:all .25s cubic-bezier(0.785,.135,.15,.86);
 }
 .effect.loaded {
     width: 100%;
-    background:transparent !important;
 }
 .volet1 {
     height: 100%;
@@ -849,8 +870,11 @@ header.sticky{
     top: 0;
     left: -100%;
     overflow: hidden;
-    -webkit-transition: width .25s cubic-bezier(0.785,.135,.15,.86) .40s, background 0s ease .65s;
-    transition:width .25s cubic-bezier(0.785,.135,.15,.86) .40s, background 0s ease .65s;
+    -webkit-transition: left .25s cubic-bezier(0.785,.135,.15,.86) .15s;
+    transition:left .25s cubic-bezier(0.785,.135,.15,.86) .15s;
+}
+.loaded .volet1{
+    left: 0;
 }
 .volet2 {
     height: 100%;
@@ -859,9 +883,13 @@ header.sticky{
     top: 0;
     left: -100%;
     overflow: hidden;
-    -webkit-transition: left .35s cubic-bezier(0.785,.135,.15,.86) .40s , width .35s cubic-bezier(0.785,.135,.15,.86) .55s, background 0s ease .90s;
-    transition:left .35s cubic-bezier(0.785,.135,.15,.86) .40s , width .35s cubic-bezier(0.785,.135,.15,.86) .55s, background 0s ease .90s;
+    -webkit-transition: left .25s cubic-bezier(0.785,.135,.15,.86) .30s , width .15s cubic-bezier(0.785,.135,.15,.86) .55s;
+    transition:left .25s cubic-bezier(0.785,.135,.15,.86) .30s , width .15s cubic-bezier(0.785,.135,.15,.86) .55s;
     z-index:2;
+}
+.loaded .volet2 {
+    left: 0;
+    width:0;
 }
 .HARDCORE .effect{background: #0079ff ;}
 .HARDCORE .volet1, .HARDCORE .volet2{background: #b24576 ;}
@@ -872,17 +900,6 @@ header.sticky{
 .HIPHOP .effect{background: #cc93a5;}
 .HIPHOP .volet1, .HIPHOP .volet2{background: #0079ff ;}
 
-
-
-.loaded .volet1{
-    left: 0;
-    background:transparent;
-}
-.loaded .volet2 {
-    left: 0;
-    width:0;
-    background:transparent;
-}
 .element-item .lazy {
     position: absolute;
     top: 50%;
@@ -922,7 +939,7 @@ header.sticky{
             transform: translatey(50%);
     -webkit-transition: all .25s ease;
     transition:all .25s ease;
-    text-transform: uppercase;
+    text-transform:uppercase;
 }
 .name.small {
     font-size: 1.5em;
@@ -1034,7 +1051,7 @@ footer p {
               transform: translatey(-50%);
       position: relative;
       font-size: 5em;
-      text-transform: uppercase;
+      text-transform:uppercase;
   }
 .content-artiste,
 .artiste-stage {
@@ -1091,7 +1108,7 @@ footer p {
     display: inline-block;
     width: 50%;
     text-align: right;
-    text-transform: uppercase;
+    text-transform:uppercase;
 }
     .video iframe {
         height: auto;
@@ -1119,6 +1136,7 @@ footer p {
     overflow: hidden;
     z-index: -1;
     left: -6vw;
+    mix-blend-mode: difference;
 }
 
 .volet-artist {
@@ -1139,6 +1157,10 @@ footer p {
     height: 100vh;
     overflow: hidden;
 }
+.decoration-TECHNO{background-image:url("https://electrobotik.netlify.com/images/scene-TECHNO.jpg") no-repeat;}
+.decoration-TRANCE{background-image:url("https://electrobotik.netlify.com/images/scene-TRANCE.jpg") no-repeat;}
+.decoration-HIPHOP{background-image:url("https://electrobotik.netlify.com/images/scene-HIPHOP.jpg") no-repeat;}
+.decoration-HARDCORE{background-image:url("https://electrobotik.netlify.com/images/scene-HARDCORE.jpg") no-repeat;}
 
 .fake-close {
     top: 2vh;
@@ -1237,27 +1259,36 @@ footer p {
 .content-large {
     width: 300vw;
     position: relative;
+    -webkit-transition: all .5s ease;
     transition: all .5s ease;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-bottom: 50px;
 }
 .select-fond {
     width: 100%;
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all .5s ease;
     transition: all .5s ease;
     position: absolute;
 }
   .select-fond.active {
       opacity: 1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   }
 #acces{
-  transform:translatex(0);
+  -webkit-transform:translatex(0);
+          transform:translatex(0);
 }
 #camping{
-  transform:translatex(-100vw);
+  -webkit-transform:translatex(-100vw);
+          transform:translatex(-100vw);
 }
 #faq{
-  transform:translatex(-200vw);
+  -webkit-transform:translatex(-200vw);
+          transform:translatex(-200vw);
 }
   .slide {
       width: 100vw;
@@ -1291,10 +1322,11 @@ footer p {
           position: relative;
           margin-bottom: 50px;
       }
-      .no-color::before {
+      .no-color:before {
           content: '';
           height: calc(100% - 50px);
           width: 7px;
+          background: -webkit-linear-gradient(270deg, #0079ff, #b24576);
           background: linear-gradient(90turn, #0079ff, #b24576);
           position: absolute;
           top: 25px;
@@ -1314,7 +1346,8 @@ footer p {
             position: absolute;
             right: 40px;
             bottom: 0;
-            transform: translatey(50%);
+            -webkit-transform: translatey(50%);
+                    transform: translatey(50%);
         }
           .lien a {
               position: relative;
@@ -1337,26 +1370,31 @@ footer p {
         height:125px;
     }
     .voiture {
+        background: -webkit-linear-gradient(135deg, #0079ff, #b24576);
         background: linear-gradient(-45deg, #0079ff, #b24576);
     }
     .avion {
         margin: 25px 2% 25px;
+        background: -webkit-linear-gradient(bottom, #0079ff, #b24576);
         background: linear-gradient(0deg, #0079ff, #b24576);
     }
     .train {
+        background: -webkit-linear-gradient(45deg, #0079ff, #b24576);
         background: linear-gradient(45deg, #0079ff, #b24576);
     }
       .vignette i {
           position: absolute;
           top: 0;
           left: 50%;
-          transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%);
           font-size: 50px;
       }
       .vignette .center {
           position: absolute;
           top: 50%;
-          transform: translatey(-50%);
+          -webkit-transform: translatey(-50%);
+                  transform: translatey(-50%);
           left: 25px;
           max-width: calc(100% - 50px);
       }
@@ -1379,7 +1417,8 @@ footer p {
           position: absolute;
           top: 50%;
           left: 25px;
-          transform: translatey(-50%);
+          -webkit-transform: translatey(-50%);
+                  transform: translatey(-50%);
           font-size: 40px;
       }
       .reservez p {
@@ -1406,8 +1445,12 @@ footer p {
           overflow: hidden;
         }
           .tab-label {
+              display: -webkit-box;
+              display: -ms-flexbox;
               display: flex;
-              justify-content: space-between;
+              -webkit-box-pack: justify;
+                  -ms-flex-pack: justify;
+                      justify-content: space-between;
               padding: 15px 50px;
               background: rgba(0,0,0,.9);
               font-weight: bold;
@@ -1416,39 +1459,44 @@ footer p {
               text-transform: uppercase;
           }
           .tab-label:hover {
+              background: -webkit-linear-gradient(45deg, #0079ff, #b24576);
               background: linear-gradient(45deg, #0079ff, #b24576);
           }
-          .tab-label::after {
+          .tab-label:after {
               content: "\276F";
               width: 1em;
               height: 1em;
               text-align: center;
+              -webkit-transition: all .35s cubic-bezier(0.22, 0.61, 0.36, 1);
               transition: all .35s cubic-bezier(0.22, 0.61, 0.36, 1);
           }
             .tab-content {
                 max-height: 0;
                 color: #fff;
                 background: rgba(0,0,0,.9);
+                -webkit-transition: all .35s cubic-bezier(0.22, 0.61, 0.36, 1);
                 transition: all .35s cubic-bezier(0.22, 0.61, 0.36, 1);
                 position: relative;
                 padding: 0 50px;
             }
-            .tab-content::before {
+            .tab-content:before {
                 content: '';
                 height: 7px;
                 width: calc(100% - 100px);
                 position: absolute;
                 top: 0;
                 left: 50px;
+                background: -webkit-linear-gradient(45deg, #0079ff, #b24576);
                 background: linear-gradient(45deg, #0079ff, #b24576);
             }
               .tab input {
                   opacity: 0;
+                  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
               }
               input:checked + .tab-label {
                   background: rgba(0,0,0,.9);
               }
-              input:checked + .tab-label::after {
+              input:checked + .tab-label:after {
                   -webkit-transform: rotate(90deg);
                           transform: rotate(90deg);
               }
@@ -1471,3 +1519,116 @@ footer p {
                   line-height:25px;
               }
 
+
+/******************** ACCUEIL pages *******************/
+
+#video {
+    position: fixed;
+    min-width: 100%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    min-height: 100%;
+    left: 50%;
+    opacity: .8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+.header {
+    padding-top: 5vh;
+    position: relative;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+  .header .big-logo {
+      width: 75%;
+      height: auto;
+      float: none;
+      display: inline-block;
+  }
+    .header .small-logo {
+        display: block;
+        top: 0;
+        -webkit-transform: none;
+                transform: none;
+        width: 75%;
+    }
+    .header .circuit {
+        border: none;
+        width: 75%;
+    }
+      .header h3 {
+          font-size: 2em;
+          font-weight: 900;
+      }
+    .header .date {
+        width: calc(25% - 50px);
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        -webkit-transform: translatey(-50%);
+                transform: translatey(-50%);
+        padding: 0 25px;
+        height: 100%;
+    }
+  .billetterie {
+      display: inline-block;
+      width: 25%;
+      position: relative;
+      min-height: 100%;
+  }
+  .billetterie:hover i {
+      color:#0079ff;
+  }
+    .billetterie i {
+        font-size: 12em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color:#fff;
+        -webkit-transition: all .25s ease;
+        transition:all .25s ease;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+    }
+.colonne {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    float: left;
+}
+  .block-scene {
+      padding: 15px 15px 0;
+      text-align: center;
+      text-transform: uppercase;
+  }
+    .block-scene h3,
+    .block-scene h4,
+    .block-scene p {
+        margin: 0;
+    }
+    .block-scene h3{
+        font-size: 2.5em;
+    }
+    .block-scene h4 {
+        font-size: 1em;
+        letter-spacing: 2px;
+        line-height: 1.5em;
+        margin-bottom:15px;
+    }
+    .block-scene p {
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: 900;
+        line-height: 25px;
+    }
+    .block-scene a:hover {
+      background: -webkit-linear-gradient(0.40turn,#dfdfdf , #b24576, #0079ff);
+      background-clip: border-box;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
