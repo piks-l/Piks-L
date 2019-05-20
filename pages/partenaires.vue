@@ -1,8 +1,8 @@
 <template>
 <div id="parallax" data-image-src="https://electrobotik.netlify.com/images/crop.jpg">
 
-  <nuxt-link to="/" class="menu-link" ><img class="logo" src="https://electrobotik.netlify.com/images/logo-basic.svg"  alt="logo"></nuxt-link>
-<nuxt-link to="/" class="menu-link" ><img class="logo small-logo" src="https://electrobotik.netlify.com/images/logo-horizontal.svg" alt="logo"></nuxt-link>
+  <nuxt-link to="/" class="header-link" ><img class="logo" src="https://electrobotik.netlify.com/images/logo-basic.svg"  alt="logo"></nuxt-link>
+  <nuxt-link to="/" class="header-link" ><img class="logo small-logo" src="https://electrobotik.netlify.com/images/logo-horizontal.svg" alt="logo"></nuxt-link>
   <div class="container-grid scene_element scene_element--fadein">
           <div class="background"></div>
           <h2>PARTENAIRES</h2>
