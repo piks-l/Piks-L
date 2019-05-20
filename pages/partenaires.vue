@@ -1,8 +1,8 @@
 <template>
 <div id="parallax" data-image-src="https://electrobotik.netlify.com/images/crop.jpg">
 
-  <img id="logo" src="assets/images/logo.svg" alt="logo">
-  <img class="small-logo" src="assets/images/logo-horizontal.svg" alt="logo">
+  <img id="logo" src="images/logo.svg" alt="logo">
+  <img class="small-logo" src="images/logo-horizontal.svg" alt="logo">
 
   <div class="container-grid scene_element scene_element--fadein">
           <div class="background"></div>
