@@ -1224,7 +1224,6 @@ footer p {
     position: relative;
     height: 200px;
     display: inline-block;
-    background: #000;
     padding:1%;
     margin:1%;
 }
@@ -1246,12 +1245,12 @@ footer p {
             transform: translate(-50%, -50%);
 }
 .partenaire .volet2 {
-    background: #0079ff;
+    background: #000000;
     -webkit-transition: left .35s cubic-bezier(0.785,.135,.15,.86), width .35s cubic-bezier(0.785,.135,.15,.86) .60s, background 0s ease .90s;
     transition: left .35s cubic-bezier(0.785,.135,.15,.86), width .35s cubic-bezier(0.785,.135,.15,.86) .60s, background 0s ease .90s
 }
 .partenaire .volet1 {
-    background: #000;
+    background: transparent;
 }
 
 
