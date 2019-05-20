@@ -1,0 +1,20 @@
+{
+  "iframe": "![AK47](/images/uploads/ak47.jpg)",
+  "dateshow": "samedi",
+  "thumbnail": "/images/uploads/ak47.jpg",
+  "social": [
+    {
+      "lien": "https://soundcloud.com/ak47_budburnerz",
+      "awesome": "fa fa-soundcloud"
+    },
+    {
+      "lien": "https://www.facebook.com/AK47.BudBurNerZ/",
+      "awesome": "fa fa-facebook"
+    }
+  ],
+  "couverture": "/images/uploads/ak47.jpg",
+  "date": "20/05/2019",
+  "title": "AK47",
+  "description": "AK47 secoue les dancefloors du monde entier avec une technique de mix et une intensité hors du commun. Il s'évertue à conter une histoire différente à chacune de ses prestations pour emmener le public avec lui dans un voyage musical puissant et hypnotique. Alchimiste de la musique dure, il mélange d'une manière unique les morceaux joués afin que ceux-ci ne fassent qu'un. Adepte du djing sans étiquette des années 90, ses 25 ans d'expérience lui permettent de délivrer des mixs variés allant du hardcore downtempo au speedcore, en passant par le breakcore ou la drum and bass. Également producteur avec son groupe BudBurNerZ, il a sorti 6 albums et près de 20 EP's.",
+  "stage": "HARDCORE"
+}
