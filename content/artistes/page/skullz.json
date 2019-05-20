@@ -1,0 +1,16 @@
+{
+  "iframe": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/NlIJvBPyXus\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+  "dateshow": "samedi",
+  "thumbnail": "/images/uploads/skullz.jpg",
+  "social": [
+    {
+      "lien": "https://soundcloud.com/skullzmusic/",
+      "awesome": "fab fa-soundcloud"
+    }
+  ],
+  "couverture": "/images/uploads/skullz.jpg",
+  "date": "20/05/2019",
+  "title": "SKULLZ",
+  "description": "Edgar aka « Skullz » emprunte la voie du djing en 2009 à l’aide de ses premières platines cd. Ce n’est non pas dans un monastère reculé qu’il fait ses armes mais bel et bien dans des champs à vaches en Bretagne. Évoluant parallèlement sur les scènes rave, club et trance, son paysage musical à donc les fondations propices au mélange des styles. Oscillant entre une techno progressive groovy et une trance progressive percutante pouvant parfois aller jusqu’à de la psytrance, le fil rouge de ce projet se base donc sur l’ambiance positive que la sélection musicale procure sur le dancefloor et l’énergie qu’elle engendre.\n\nPrésent sur les labels NBM Records et Ethereal Decibel Records, sur l’écurie d’USN Agency, mais également président et fondateur de l’association Mood Krafterz.",
+  "stage": "TRANCE"
+}
