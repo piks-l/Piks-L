@@ -1,5 +1,8 @@
 $(function () {
- // animation header page programme
+          $('#main').addClass('is-exiting');
+          setTimeout(function(){ $('#main').removeClass('is-exiting'); }, 100);
+
+            // animation header page programme
             $( ".button-date button" ).click(function() {
               $( ".button-stage .any" ).click();
               $('.button-stage button, .other-stage button').each( function() {
@@ -48,6 +51,8 @@ $(function () {
             $( ".close, .menu-link" ).click(function() {
               $( ".menu" ).removeClass( "open" );
             });
+
+
 
             // sticky header
             if ($(window).width() > 599) {
