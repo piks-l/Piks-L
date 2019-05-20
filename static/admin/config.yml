@@ -3,7 +3,7 @@ backend:
   branch: master
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
-display_url: https://www.sebastien-odd.tattoo/
+display_url: https://electrobotik.netlify.com/
 collections:
   - name: "artistes"
     label: "Artistes" 
