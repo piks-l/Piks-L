@@ -1192,11 +1192,13 @@ footer p {
     font-size: 4em;
     margin: 0 0 1em;
     line-height: 1em;
+    position:relative;
 }
 .container-grid .background {
     width: 100%;
     left: 0;
     top: 80px;
+    z-index: 0;
     -webkit-transform: none;
             transform: none;
 }
