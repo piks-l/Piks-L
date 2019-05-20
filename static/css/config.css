@@ -9,6 +9,14 @@ body {
     max-height: 100vh;
     max-width: 100vw;
 }
+.page-enter-active, .page-leave-active {
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s
+}
+.page-enter, .page-leave-active {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+}
 .index{
     background:url(../images/fond.jpg) #000;
 }
