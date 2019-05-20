@@ -2,10 +2,16 @@
   "iframe": "<iframe width=\"409\" height=\"230\" src=\"https://www.youtube.com/embed/0kF1k0lOFXA\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
   "dateshow": "samedi",
   "thumbnail": "/images/uploads/altarba.jpeg",
-  "social": [
-    "https://www.facebook.com/altarbabeats/",
-    "https://www.facebook.com/altarbabeats/"
-  ],
+    "social": [
+    {
+      "lien": "https://www.facebook.com/altarbabeats/",
+      "awesome": "fab fa-facebook-f"
+    },
+    {
+      "lien": "https://soundcloud.com/altarba",
+      "awesome": "fab fa-soundcloud"
+    }
+],
   "couverture": "/images/uploads/altarba.jpeg",
   "date": "20/05/2019",
   "title": " AL'TARBA X SENBEÏ ",
