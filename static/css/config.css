@@ -1127,7 +1127,6 @@ footer p {
     -webkit-transform: translatey(-50%);
             transform: translatey(-50%);
     overflow: hidden;
-    z-index: -1;
     left: -6vw;
     mix-blend-mode: difference;
 }
