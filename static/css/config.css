@@ -90,7 +90,12 @@ h1 {
     -webkit-transition: all 0.25s cubic-bezier(0.785,.135,.15,.86) .35s;
     transition:all 0.25s cubic-bezier(0.785,.135,.15,.86) .35s;
 }
-.is-exiting .menu.open {
+
+.page-enter-active, .page-leave-active {
+
+}
+.page-enter .menu.open, 
+.page-leave-active .menu.open{
     left: -100vw;
 }
 #main .menu .slash1,
