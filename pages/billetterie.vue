@@ -3,7 +3,6 @@
     <h2>billetterie</h2>
   </div>
 </template>
-
 <script>
   import $ from 'jquery'
   // export
@@ -22,12 +21,6 @@
       }
     },
     mounted () {
-      	
     }
   }
 </script>
-<style>
-  @media only screen and (min-width:960px) and (max-width:1264px){}
-  @media only screen and (min-width:600px) and (max-width:959px){}
-  @media only screen and (max-width:599px){}
-</style>
