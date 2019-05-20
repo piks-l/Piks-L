@@ -13,11 +13,7 @@
           electrobotikMenu
       },
       mounted () {
-        this.$nextTick(() => {
-          $('#main').addClass('is-exiting');
-          setTimeout(function(){ $('#main').removeClass('is-exiting'); }, 5000);
-        })
-     }
+      }
   }
   
 </script>
