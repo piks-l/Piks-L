@@ -1,6 +1,7 @@
 <template>
   <div class="page">
-        <nuxt-link to="/"><img id="logo" src="https://electrobotik.netlify.com/images/logo-basic.svg" alt="logo"></nuxt-link>
+        <nuxt-link to="/" class="header-link" ><img id="logo" class="partenaires" src="https://electrobotik.netlify.com/images/logo-basic.svg"  alt="logo"></nuxt-link>
+<nuxt-link to="/" class="header-link" ><img class="small-logo partenaires" src="https://electrobotik.netlify.com/images/logo-horizontal.svg" alt="logo"></nuxt-link>
         <div class="decoration">
           <img class="select-fond acces active" src="https://electrobotik.netlify.com/images/fondcircuit.jpg"  alt="">
           <img class="select-fond camping" src="https://electrobotik.netlify.com/images/fondcamping.jpg"  alt="">
