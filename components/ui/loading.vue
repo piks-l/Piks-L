@@ -14,8 +14,7 @@ export default {
   }),
   methods: {
     start() {
-      setTimeout(function () { this.loading = true }.bind(this), 5000)
-      
+      this.loading = true
     },
     finish() {
       setTimeout(function () { this.loading = false }.bind(this), 5000)
