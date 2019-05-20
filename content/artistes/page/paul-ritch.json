@@ -1,0 +1,16 @@
+{
+  "iframe": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/L7sllWyZ5Sg\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+  "dateshow": "samedi",
+  "thumbnail": "/images/uploads/paulritch.jpg",
+  "social": [
+    {
+      "lien": "http://paulritch.com/",
+      "awesome": "fas fa-link"
+    }
+  ],
+  "couverture": "/images/uploads/paulritch.jpg",
+  "date": "20/05/2019",
+  "title": "PAUL RITCH",
+  "description": "Paul Ritch a littéralement pris d'assaut la scène techno à la fois derrière les platines et en tant que producteur. Sa techno puissante et harmonique s’est imposée sur les plus grandes scènes mondiales, marquant les foules par son univers musical et sa créativité.",
+  "stage": "TECHNO"
+}
