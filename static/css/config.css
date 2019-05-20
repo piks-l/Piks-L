@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900%27');
-.page-enter-active, .page-leave-active {
-  -webkit-transition: opacity .5s;
-  transition: opacity .5s
-}
-.page-enter, .page-leave-active {
-  opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
-}
+
 body {
     margin: 0;
     background: #000;
