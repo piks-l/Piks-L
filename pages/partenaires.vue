@@ -1,6 +1,7 @@
 <template>
 <div id="parallax" data-image-src="https://electrobotik.netlify.com/images/crop.jpg">
   <div class="container-grid scene_element scene_element--fadein">
+          <nuxt-link to="/"><img id="logo" src="https://electrobotik.netlify.com/images/logo-basic.svg" alt="logo"></nuxt-link>
           <div class="background"></div>
           <h2>PARTENAIRES</h2>
           <div class="content">
