@@ -12,6 +12,17 @@ collections:
     slug: "{{slug}}"
     format: 'json'
     fields:
+      - label: "Testimonials"
+        name: "testimonials"
+        widget: "list"
+        fields:
+          - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
+          - label: Author
+            name: author
+            widget: object
+            fields:
+              - {label: Name, name: name, widget: string, default: "Emmet"}
+              - {label: Avatar, name: avatar, widget: image, default: "/img/emmet.jpg"}
       - {label: "Image de couverture", name: "couverture", widget: "image", required: true}
       - {label: "Nom", name: "title", widget: "string", tagname: "h1", required: true}
       - {label: "Description", name: "description", widget: "markdown"}
@@ -33,3 +44,4 @@ collections:
           - { label: "C3-PO / HIP HOP", value: "HIPHOP" } 
       - {label: "Date de publication", name: "date", widget: "date", format: "DD/MM/YYYY"}
       - {label: "Miniature", name: "thumbnail", widget: "image"}
+      
