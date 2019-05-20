@@ -1,0 +1,20 @@
+{
+  "iframe": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/P8Fa1pQFRwE\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+  "dateshow": "vendredi",
+  "thumbnail": "/images/uploads/chicksluvus.jpg",
+  "social": [
+    {
+      "lien": "https://soundcloud.com/chicksluvus",
+      "awesome": "fab fa-soundcloud"
+    },
+    {
+      "lien": "https://www.facebook.com/chicksluvus1/",
+      "awesome": "fab fa-facebook-f"
+    }
+  ],
+  "couverture": "/images/uploads/chicksluvus.jpg",
+  "date": "20/05/2019",
+  "title": "CHICKS LUV US",
+  "description": "Nouvelles valeurs sûres de la scène deep et tech house dans le sud de la France, Chicks Luv Us est avant tout une histoire d’amitié entre deux jeunes dj / producteurs et résidents du club Spartacus, haut lieu de la musique électronique marseillaise. En moins de trois ans, les Chicks Luv Us ont installé leurs platines dans les meilleurs clubs d'Europe, tels que Ministry Of Sound (Londres) ou Sankeys (Ibiza)... Côté production, les deux acolytes ont déjà signés chez Material, CUFF, Get Physical... Préparez-vous, les 2 amis ont l’habitude de tout dévaster sur leur passage.",
+  "stage": "TECHNO"
+}
