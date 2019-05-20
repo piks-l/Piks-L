@@ -25,7 +25,8 @@
                   <vue-markdown>{{description}}</vue-markdown>
                 </div>
                 <div class="social-artiste">
-                  <a :href="facebook" alt="FB"><i class="fab fa-facebook-f"></i></a>
+                
+                  <a target="_blank" v-for="social in artistes" :key="social" :href="lien"><i :class="awesome"></i></a>
                 </div>
             </div>
         </div>
