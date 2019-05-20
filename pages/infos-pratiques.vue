@@ -1,19 +1,17 @@
 <template>
   <div class="page">
-          <div class="decoration">
+        <div class="decoration">
           <img class="select-fond acces active" src="https://electrobotik.netlify.com/images/fondcircuit.jpg"  alt="">
           <img class="select-fond camping" src="https://electrobotik.netlify.com/images/fondcamping.jpg"  alt="">
           <img class="select-fond faq" src="https://electrobotik.netlify.com/images/fondfaq.jpg"  alt="">
         </div>
-            <div class="button-date select-infos mobile-menu">
+        <div class="button-date select-infos mobile-menu">
           <button class="button is-checked" data-class="acces">ACCÈS</button><!--
           --><span>/</span><!--
           --><button class="button" data-class="camping">CAMPING</button><!--
           --><span>/</span><!--
           --><button class="button" data-class="faq">F.A.Q</button>
         </div>
-
-
         <div class="container-infos scene_element scene_element--fadein">
           <h2>INFOS PRATIQUES</h2>
           <div class="button-date select-infos">
@@ -423,11 +421,9 @@
                     </div>
                 </div>
             </div>
-        </div>
-
+        </div>  
   </div>
 </template>
-
 <script>
   import $ from 'jquery'
   // export
@@ -446,27 +442,22 @@
       }
     },
     mounted () {
-              // menu page info pratiques
-            $( ".select-infos button" ).click(function() {
-              var info =   $( this ).attr('data-class');
-              $('.select-fond').each( function() {
-                  $( this ).removeClass( "active" );
-              });
-              $('.slide').each( function() {
-                  $( this ).removeClass( "active" );
-              });
-              $( "." + info ).addClass( "active" );
-              $('.select-infos button').each( function() {
-                  $( this ).removeClass( "is-checked" );
-              });
-              $( this ).addClass( "is-checked" );
-              $('.content-large').removeAttr( "id" ).attr('id', info);
-});    	
+      // menu page info pratiques
+      $( ".select-infos button" ).click(function() {
+        var info =   $( this ).attr('data-class');
+        $('.select-fond').each( function() {
+            $( this ).removeClass( "active" );
+        });
+        $('.slide').each( function() {
+            $( this ).removeClass( "active" );
+        });
+        $( "." + info ).addClass( "active" );
+        $('.select-infos button').each( function() {
+            $( this ).removeClass( "is-checked" );
+        });
+        $( this ).addClass( "is-checked" );
+        $('.content-large').removeAttr( "id" ).attr('id', info);
+      });    	
     }
   }
 </script>
-<style>
-  @media only screen and (min-width:960px) and (max-width:1264px){}
-  @media only screen and (min-width:600px) and (max-width:959px){}
-  @media only screen and (max-width:599px){}
-</style>
