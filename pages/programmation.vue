@@ -2,7 +2,7 @@
   <div id="main-container">
     <div id="parallax" data-image-src="https://electrobotik.netlify.com/images/crop.jpg">
       <div  class="container scene_element scene_element--fadein padding">
-        <nuxt-link to="/"><img id="logo" src="https://electrobotik.netlify.com/images/logo-basic.svg" alt="logo"></nuxt-link>
+        
         <header id="header">
           <div class="sticky-container">
               <nuxt-link to="/"><img id="sticky-logo" class="logo" src="https://electrobotik.netlify.com/images/logo-horizontal.svg"  alt="logo"></nuxt-link>
@@ -36,25 +36,25 @@
               </div>
               <div class="separator"></div>
           </div>
-      </header>
-      <div class="deco-top"><div id="parallax1" class="parallax" data-image-src="https://electrobotik.netlify.com/images/crop.jpg"></div></div>
-          <div class="grid">
-              <div v-for="artiste in artistes" :key="artiste.date"  :class="artiste.dateshow+' '+artiste.stage" class="element-item">
-                   <nuxt-link :to="artiste._path+'/'">
-                      <div class="effect">
-                          <div class="volet1">
-                              <img class="lazy" v-lazy="artiste.thumbnail" :alt="artiste.title">
-                              <div class="boxshadow"></div>
-                              <div class="circle"><img src="https://electrobotik.netlify.com/images/circle.svg"/></div>
-                              <h3 class="name small">{{artiste.title}}</h3>
-                              <p>class="name small">{{artiste.dateshow}}</p>
-                          </div>
-                          <div class="volet2"></div>
-                          <div class="border-bot"></div>
-                      </div>
-                  </nuxt-link>
-              </div>
-          </div>
+        </header>
+        <nuxt-link to="/"><img id="logo" src="https://electrobotik.netlify.com/images/logo-basic.svg" alt="logo"></nuxt-link>
+        <div class="grid">
+            <div v-for="artiste in artistes" :key="artiste.date"  :class="artiste.dateshow+' '+artiste.stage" class="element-item">
+                 <nuxt-link :to="artiste._path+'/'">
+                    <div class="effect">
+                        <div class="volet1">
+                            <img class="lazy" v-lazy="artiste.thumbnail" :alt="artiste.title">
+                            <div class="boxshadow"></div>
+                            <div class="circle"><img src="https://electrobotik.netlify.com/images/circle.svg"/></div>
+                            <h3 class="name small">{{artiste.title}}</h3>
+                            <p>class="name small">{{artiste.dateshow}}</p>
+                        </div>
+                        <div class="volet2"></div>
+                        <div class="border-bot"></div>
+                    </div>
+                </nuxt-link>
+            </div>
+        </div>
       </div>
       <electrobotik-footer/>
      </div>
