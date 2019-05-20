@@ -91,9 +91,7 @@ h1 {
     transition:all 0.25s cubic-bezier(0.785,.135,.15,.86) .35s;
 }
 
-.page-enter-active, .page-leave-active {
 
-}
 .page-enter .menu.open, 
 .page-leave-active .menu.open{
     left: -100vw;
@@ -120,14 +118,16 @@ h1 {
     background:#000;
     overflow:hidden
 }
-.is-exiting .slash1,
+.page-enter-active .slash1, 
+.page-leave-active .slash1,
 .menu.open .slash1,
 .menu.open .slash1.active{
     bottom: -100vh !important;
     -webkit-transition: all 0.35s cubic-bezier(0.785,.135,.15,.86) ;
     transition:all 0.35s cubic-bezier(0.785,.135,.15,.86) ;
 }
-.is-exiting .slash2,
+.page-enter-active .slash2, 
+.page-leave-active .slash2,
 .menu.open .slash2,
 .menu.open .slash2.active{
     bottom: -100vh !important;
