@@ -18,7 +18,7 @@ collections:
         default: true
         fields:
           - {label: Lien, name: lien, widget: string, default: " Lien facebook"}
-          - {label: Social, name: social, widget: string, default: "facebook"}
+          - {label: awesome, name: awesome, widget: string, default: "facebook"}
       - {label: "Image de couverture", name: "couverture", widget: "image", required: true}
       - {label: "Nom", name: "title", widget: "string", tagname: "h1", required: true}
       - {label: "Description", name: "description", widget: "markdown"}
