@@ -13,12 +13,12 @@ export default {
     loading: false
   }),
   methods: {
-  
     start() {
-      this.loading = true
+      setTimeout(function () { this.loading = true }.bind(this), 5000)
+      
     },
     finish() {
-      this.loading = false
+      setTimeout(function () { this.loading = false }.bind(this), 5000)
     }
   }
 }
