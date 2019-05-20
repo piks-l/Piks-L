@@ -12,6 +12,9 @@ collections:
     slug: "{{slug}}"
     format: 'json'
     fields:
+      - {label: "Image de couverture", name: "couverture", widget: "image", required: true}
+      - {label: "Nom", name: "title", widget: "string", tagname: "h1", required: true}
+      - {label: "Description", name: "description", widget: "markdown"}
       - label: "Social"
         name: "social"
         widget: "list"
@@ -19,10 +22,6 @@ collections:
         fields:
           - {label: Lien, name: lien, widget: string, default: " Lien facebook"}
           - {label: awesome, name: awesome, widget: string, default: "facebook"}
-      - {label: "Image de couverture", name: "couverture", widget: "image", required: true}
-      - {label: "Nom", name: "title", widget: "string", tagname: "h1", required: true}
-      - {label: "Description", name: "description", widget: "markdown"}
-      - {label: "Lien FB", name: "facebook", widget: "string"}
       - {label: "Iframe", name: "iframe", widget: "markdown"}
       - label: "Date"
         name: "dateshow"
