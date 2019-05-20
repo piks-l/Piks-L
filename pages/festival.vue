@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <h2>PROGRAMMATION</h2>
+    <h2>FESTIVAL</h2>
   </div>
 </template>
 <script>
