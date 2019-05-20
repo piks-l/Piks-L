@@ -400,8 +400,14 @@ h1 {
         color:gray;
         -webkit-transition: all .25s ease;
         transition: all .25s ease;
+        display: inline-block;
     }
-    .newsletter:hover, .presse:hover{
+    .newsletter a{
+        color:gray;
+        -webkit-transition: all .25s ease;
+        transition: all .25s ease;
+    }
+    .newsletter:hover a, .presse:hover{
         color:#fff;
     }
     .presse{
