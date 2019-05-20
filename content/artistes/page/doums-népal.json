@@ -1,0 +1,16 @@
+{
+  "iframe": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/9h1FtVcBlN8\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+  "dateshow": "samedi",
+  "thumbnail": "/images/uploads/doumsnepal.jpg",
+  "social": [
+    {
+      "lien": "https://www.instagram.com/doumslentourage/?hl=en",
+      "awesome": "fab fa-instagram"
+    }
+  ],
+  "couverture": "/images/uploads/doumsnepal.jpg",
+  "date": "20/05/2019",
+  "title": "DOUMS & NÉPAL",
+  "description": "**DOUMS**\nDoums est un rappeur parisien membre de L’Entourage et de la 75e Session, il forme avec Népal le duo 2Fingz. Backeur sur scène de Nekfeu, petit frère du rappeur Dr Bériz, Doums multiplie depuis 10 ans freestyles, featurings, apparitions dans des clips et tournées pour finalement sortir son premier projet solo intitulé Pilote en novembre 2017.\n\n**NÉPAL**\nRappeur, beatmaker, producteur, membre de la 75e Session, Népal est un rappeur parisien aussi mystérieux que talentueux. Connu également sous les pseudonymes KLM et Grandmaster Splinter, il a sorti un double EP nommé 444 Nuits version rouge et version bleue en juillet 2016 limitées à 444 exemplaires. 444 nuits plus tard, Népal sort son dernier projet en date 445e Nuit...\n\nIls défendront sur scène des morceaux issus de leurs multiples projets solos.",
+  "stage": "HIPHOP"
+}
