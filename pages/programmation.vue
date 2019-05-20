@@ -2,7 +2,7 @@
   <div id="main-container">
     <div id="parallax" data-image-src="https://electrobotik.netlify.com/images/crop.jpg">
       <div  class="container scene_element scene_element--fadein padding">
-        <img id="logo" src="https://electrobotik.netlify.com/images/logo-basic.svg" alt="logo">
+        <nuxt-link to="/"><img id="logo" src="https://electrobotik.netlify.com/images/logo-basic.svg" alt="logo"></nuxt-link>
         <header id="header">
           <div class="sticky-container">
               <img id="sticky-logo" class="logo" src="https://electrobotik.netlify.com/images/logo-horizontal.svg"  alt="logo">
