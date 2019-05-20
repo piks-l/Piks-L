@@ -18,6 +18,6 @@
           setTimeout(function(){ $('#main').removeClass('is-exiting'); }, 100);
           }
         }
-
+  }
   
 </script>
