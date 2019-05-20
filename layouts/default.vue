@@ -12,7 +12,15 @@
       components: {
           electrobotikMenu
       },
-      mounted: () => {
+      mounted () {
+        this.$nextTick(() => {
+          this.$nuxt.$loading.start()
+          $('#main').addClass('is-exiting');
+              setTimeout(function(){ $('#main').removeClass('is-exiting'); }, 100);
+              setTimeout(() => this.$nuxt.$loading.finish(), 500)
+          }
+        })
       }
-  }
+
+  
 </script>
