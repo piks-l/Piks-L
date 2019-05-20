@@ -1,5 +1,5 @@
 <template>
-  <div class="layout-electrobotik">
+  <div id="main" class="layout-electrobotik">
     <electrobotik-menu/>
     <nuxt/>
   </div>
