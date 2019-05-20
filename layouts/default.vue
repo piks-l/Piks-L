@@ -1,9 +1,9 @@
 <template>
   <div id="main" class="layout-electrobotik">
-  <transition name="page">
+  <transition-group name="page">
     <electrobotik-menu/>
     <nuxt/>
-  </transition>
+  </transition-group>
   </div>
 </template>
 <script>
