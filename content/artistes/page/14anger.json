@@ -3,6 +3,12 @@
   "facebook": "https://www.facebook.com/14anger/",
   "dateshow": "vendredi",
   "thumbnail": "/images/uploads/14anger.jpg",
+  "social": [
+    {
+      "lien": "https://www.facebook.com/14anger/",
+      "social": "facebook"
+    }
+  ],
   "couverture": "/images/uploads/14anger.jpg",
   "date": "15/05/2019",
   "title": "14Anger",
