@@ -1,5 +1,6 @@
 <template>
   <div class="page">
+        <nuxt-link to="/"><img id="logo" src="https://electrobotik.netlify.com/images/logo-basic.svg" alt="logo"></nuxt-link>
         <div class="decoration">
           <img class="select-fond acces active" src="https://electrobotik.netlify.com/images/fondcircuit.jpg"  alt="">
           <img class="select-fond camping" src="https://electrobotik.netlify.com/images/fondcamping.jpg"  alt="">
