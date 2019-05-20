@@ -651,10 +651,7 @@ header.sticky{
 .button.is-checked {
   color: white ;
 }
-.button-stage, .other-stage {
-    display: block;
-    text-align: center;
-}
+
 .button-date,
 .button-stage,
 .other-stage {
@@ -665,6 +662,10 @@ header.sticky{
     left: 50%;
     -webkit-transform: translatex(-50%);
             transform: translatex(-50%);
+}
+.button-stage, .other-stage {
+    display: block;
+    text-align: center;
 }
 .button-stage {
     margin-bottom: 15px;
