@@ -1,5 +1,8 @@
 
 @media only screen and (min-width: 0px) and (max-width: 599px) {
+  #parallax {
+      background-size: auto;
+  }
   header {
       height: 200px;
       width: 100%;
@@ -156,7 +159,7 @@
       width: 100%;
       top: 0;
       left: 0;
-      z-index: 1;
+      z-index: 10;
       border: none;
       transform:none;
       -webkit-transform:none;
@@ -185,6 +188,7 @@
   }
   .button-stage {
       margin-bottom: 0;
+      width: 100%;
   }
   .button-date,
   .stage {
@@ -323,11 +327,272 @@
   footer p {
       line-height: 20px;
   }
+  #logo.partenaires{
+       display:none;
+  }
+  .menu .small-logo {
+      padding-top: 15px;
+  }
+  .small-logo {
+      display: block;
+      max-width: 90%;
+      left: 50%;
+      position: relative;
+      -webkit-transform: translatex(-50%);
+              transform: translatex(-50%);
+      padding-top: 57px;
+  }
+  .container-grid {
+      max-width: 100%;
+      padding: 42px 15px;
+  }
+  .container-grid h2 {
+      font-size: 2.5em;
+      margin: 0 0 .5em;
+  }
+  .partenaire {
+      height: 115px;
+      width: 46%;
+  }
+  .sneaky-partenaire {
+      display: none;
+  }
+  .container-grid .background {
+      top: 21px;
+  }
+
+  .select-fond {
+      width: auto;
+      opacity: 0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+      -webkit-transition: all .5s ease;
+      transition: all .5s ease;
+      position: absolute;
+      height: auto;
+      min-width: 100%;
+      min-height: 100%;
+      max-height: 120%;
+  }
+  .container-infos {
+    max-width: 100%;
+    z-index: 1;
+    padding-top: 25px;
+  }
+  .container-infos h2 {
+    font-size: 34px;
+  }
+  .select-fond.active {
+      opacity: .5;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  }
+  .container-infos .select-infos {
+      display: none;
+  }
+  .select-infos.mobile-menu {
+      display: block;
+      bottom: 0;
+      z-index: 72;
+      background: -webkit-linear-gradient(left, #0079ff, #b24576);
+      background: linear-gradient(0.25turn, #0079ff, #b24576);
+      position: fixed;
+      -webkit-transform: none;
+              transform: none;
+      opacity: 1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+      height: auto;
+      text-align: center;
+  }
+  .select-infos.mobile-menu button {
+      display: block;
+      left: auto;
+      -webkit-transform: none;
+              transform: none;
+      display: inline-block;
+      font-size: 16px;
+      line-height: 42px;
+      margin: 0;
+      padding: 0;
+      color: #000;
+      width: 33.3333%;
+  }
+  .select-infos.mobile-menu button:before,
+  .select-infos.mobile-menu button:after{
+      background:#fff
+  }
+  .select-infos.mobile-menu button.is-checked {
+    -webkit-text-fill-color:#fff;
+  }
+  .slide .container {
+      max-width: 100%;
+      width: calc(100% - 30px);
+  }
+  .color {
+      padding: 30px 15px;
+  }
+  .color p {
+      font-size: 14px;
+      line-height: 22px;
+  }
+  .no-color {
+      padding: 30px 15px 30px 30px;
+  }
+  .no-color:before {
+      height: calc(100% - 60px);
+      top: 30px;
+      left: 12px;
+      width:4px;
+  }
+  .no-color p {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0;
+  }
+  .lien {
+      right: 0;
+      -webkit-transform: translatey(50%);
+              transform: translatey(50%);
+      width: 100%;
+      text-align: center;
+  }
+  .lien a {
+      margin: 0px 25px;
+  }
+  .vignette {
+      width: 100%;
+      margin: 25px 0 15px;
+      padding:50px 0;
+      text-align: center;
+  }
+  .vignette .center {
+      left: 0;
+      width: calc(100% - 30px);
+      padding: 15px;
+      max-width:100%;
+  }
+  .vignette p {
+      font-size: 14px;
+  }
+  p.gras {
+      font-size: 18px;
+  }
+  .reservez {
+      padding: 10px 30px 10px 70px;
+  }
+  .reservez i {
+      left: 15px;
+  }
+  .reservez p {
+      font-size: 14px;
+      letter-spacing: 1px;
+  }
+  .reservez .gras {
+      font-size: 16px;
+  }
+  .reservez a {
+      font-size: 16px;
+  }
+  .tab-label {
+      padding: 15px 15px;
+      font-size: 16px;
+  }
+  .tabs input:checked ~ .tab-content{
+      padding: 25px 15px;
+  }
+  .tab-content {
+      padding: 0 15px;
+  }
+  .tab-content:before {
+      width: calc(100% - 30px);
+      left: 15px;
+  }
+
+
+  .accueil{
+    padding-bottom: 5vh;
+    min-width: calc(100% - 30px);
+  }
+  .header {
+      display: block;
+      padding-top: 57px;
+  }
+  .header .big-logo {
+      width: 100%;
+  }
+  .header .small-logo {
+      max-width: none;
+      left: 0;
+      -webkit-transition: none;
+      transition: none;
+      padding: 0;
+      width: 100%;
+  }
+  .header .circuit {
+      width: 100%;
+  }
+  .header .circuit h3 {
+      font-size: .8em;
+  }
+  .header .date {
+      width: calc(50% - 30px);
+      padding: 0 15px;
+      position: relative;
+      -webkit-transform: none;
+              transform: none;
+      margin-top: 25px;
+  }
+  .header .date-circle {
+      top: 0;
+      -webkit-transform: none;
+              transform: none;
+      max-height: 115px;
+      width: 115px;
+      margin: 0 auto;
+  }
+  .header .date-circle img {
+      width: auto;
+      height: 115px;
+  }
+  .header .big-date {
+      font-size: 1.75em;
+  }
+  .header .big-date small {
+      top: -5px;
+  }
+  .header .month {
+      font-size: .8em;
+  }
+  .billetterie {
+      width: 50%;
+      height: 115px;
+      float: right;
+      margin-top: -115px;
+  }
+  .billetterie i {
+    font-size: 6em;
+  }
+  .colonne {
+      width: 100%;
+  }
+  .block-scene {
+      padding: 15px 0 0;
+  }
+  .block-scene h3 {
+      font-size: 2em;
+  }
+  .block-scene p {
+      font-size: 14px;
+      letter-spacing: 1px;
+      font-weight: 900;
+      line-height: 22px;
+  }
 }
 @media only screen and (min-width: 600px) and (max-width: 959px) {
+  #parallax {
+      background-size: auto;
+  }
   .open-menu {
-        height: 6vw;
-        left: -68px;
+      height: 42px;
+      left: -64px;
     }
     .big-logo {
         width: 25%;
@@ -603,8 +868,174 @@
         width: 100%;
         padding-top: 0;
     }
+    #logo.partenaires{
+         display:none;
+    }
+    .small-logo {
+        display: block;
+        max-width: 40%;
+        left: 50%;
+        position: relative;
+        -webkit-transform: translatex(-50%);
+                transform: translatex(-50%);
+        padding-top: 42px;
+    }
+    .container-grid {
+        max-width: 80%;
+        padding-top: 42px;
+    }
+    .container-grid h2 {
+        font-size: 3em;
+        margin: 0 0 .5em;
+    }
+    .partenaire {
+        height: 115px;
+        width: 29.3%;
+    }
+    .sneaky-partenaire {
+        display: none;
+    }
+    .sneaky-partenaire-impaire {
+        display:inline-block;
+    }
+    .container-grid .background {
+        top: 21px;
+    }
+
+    .select-fond.active {
+        opacity: .5;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    }
+    .select-infos .button {
+        color: #fff;
+        font-size: 19px;
+    }
+    .slide .container {
+        max-width: 80%;
+    }
+    .color {
+        padding: 50px 20px;
+    }
+    .color p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .no-color {
+        padding: 50px 30px;
+    }
+    .no-color:before {
+        height: calc(100% - 100px);
+        top: 50px;
+        left: 12px;
+    }
+    .no-color p {
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: 0;
+    }
+    .vignette {
+        width: 100%;
+        margin: 25px 0 15px;
+        padding:50px 0;
+        text-align: center;
+    }
+    .vignette .center {
+        left: 25px;
+        width: 100%;
+    }
+    .vignette p {
+        font-size: 14px;
+    }
+    p.gras {
+        font-size: 18px;
+    }
+    .reservez {
+        padding: 10px 30px 10px 70px;
+    }
+    .reservez i {
+        left: 15px;
+    }
+    .reservez p {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    .reservez .gras {
+        font-size: 16px;
+    }
+    .reservez a {
+        font-size: 16px;
+    }
+    .tab-label {
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+    .tabs input:checked ~ .tab-content{
+        padding: 25px 30px;
+    }
+    .tab-content {
+        padding: 0 30px;
+    }
+    .tab-content:before {
+        width: calc(100% - 60px);
+        left: 30px;
+    }
+
+    .accueil{
+      padding-bottom: 5vh;
+    }
+    .header {
+        display: block;
+    }
+    .header .big-logo {
+        width: 100%;
+    }
+    .header .small-logo {
+        max-width: none;
+        left: 0;
+        -webkit-transition: none;
+        transition: none;
+        padding: 0;
+    }
+    .header .circuit h3 {
+        font-size: 1em;
+    }
+    .header .date {
+        width: calc(25% - 30px);
+        padding: 0 15px;
+    }
+    .header .big-date {
+        font-size: 1.75em;
+    }
+    .header .big-date small {
+        top: -5px;
+    }
+    .header .month {
+        font-size: .8em;
+    }
+    .billetterie {
+        width: 100%;
+        height: 100px;
+    }
+    .billetterie i {
+      font-size: 6em;
+    }
+    .colonne {
+        width: 100%;
+    }
+    .block-scene h3 {
+        font-size: 2em;
+    }
+    .block-scene p {
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-weight: 900;
+        line-height: 20px;
+    }
 }
 @media only screen and (min-width: 960px) and (max-width: 1263px) {
+  #parallax {
+    background-size: auto;
+  }
     .big-logo {
         width: 30%;
     }
@@ -784,6 +1215,109 @@
     .video iframe {
         width: 90%;
     }
+    #logo.partenaires{
+         max-width:100px;
+         top: 42px;
+         left:42px;
+    }
+    .container-grid {
+        max-width: 65%;
+        padding-top: 42px;
+    }
+    .container-grid h2 {
+        font-size: 3.5em;
+        margin: 0 0 .5em;
+    }
+    .partenaire {
+        height: 115px;
+        width: 21%;
+    }
+    .sneaky-partenaire {
+        width: 21%;
+    }
+
+
+    .select-fond.active {
+        opacity: .5;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    }
+    .select-infos .button {
+        color: #fff;
+    }
+    .slide .container {
+        max-width: 60%;
+    }
+    .color {
+        padding: 20px 40px;
+    }
+    .color p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .no-color {
+        padding: 40px 50px;
+    }
+    .no-color:before {
+        height: calc(100% - 80px);
+        top: 40px;
+    }
+    .no-color p {
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0;
+    }
+    .vignette .center {
+        left: 10px;
+        max-width: calc(100% - 20px);
+    }
+    .vignette p {
+        font-size: 14px;
+    }
+    p.gras {
+        font-size: 18px;
+    }
+    .reservez {
+        padding: 10px 30px 10px 70px;
+    }
+    .reservez i {
+        left: 15px;
+    }
+    .reservez p {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    .reservez .gras {
+        font-size: 16px;
+    }
+    .reservez a {
+        font-size: 16px;
+    }
+
+    .billetterie i {
+      font-size: 6em;
+    }
+    .header .date {
+        width: calc(25% - 30px);
+        padding: 0 15px;
+    }
+    .header .big-date {
+        font-size: 2em;
+    }
+    .header .big-date small {
+        top: -5px;
+    }
+    .header .month {
+        font-size: 1em;
+    }
+    .block-scene h3 {
+        font-size: 2em;
+    }
+    .block-scene p {
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-weight: 900;
+        line-height: 20px;
+    }
 }
 @media only screen and (min-width: 1264px) and (max-width: 1904px) {
   #main-container {
@@ -915,5 +1449,58 @@
   }
   .volet-artist {
     bottom: 50vw;
+  }
+  .partenaire {
+      height: 150px;
+  }
+
+  .slide .container {
+      max-width: 60%;
+  }
+  .color p {
+      font-size: 20px;
+      line-height: 25px;
+  }
+  .no-color {
+      padding: 40px 50px;
+  }
+  .no-color:before {
+      height: calc(100% - 80px);
+      top: 40px;
+  }
+  .no-color p {
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 0;
+  }
+  .vignette p {
+      font-size: 14px;
+  }
+  p.gras {
+      font-size: 18px;
+  }
+  .reservez {
+      padding: 10px 30px 10px 70px;
+  }
+  .reservez i {
+      left: 15px;
+  }
+  .reservez p {
+      font-size: 14px;
+      letter-spacing: 1px;
+  }
+  .reservez .gras {
+      font-size: 16px;
+  }
+  .reservez a {
+      font-size: 16px;
+  }
+
+  .billetterie i {
+    font-size: 8em;
+  }
+  .block-scene p {
+      font-size: 18px;
+      line-height: 22px;
   }
 }
