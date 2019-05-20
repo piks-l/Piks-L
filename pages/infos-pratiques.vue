@@ -56,7 +56,7 @@
                         </div>
                     </div><!--
                     --><div class="vignette avion">
-                        <i class="fas fa-fighter-jet"></i>
+                        <i class="fas fa-plane"></i>
                         <div class="center">
                             <p class="gras">aeroports &#62;</p>
                             <p>Marseille Provence (66 km)</p>
