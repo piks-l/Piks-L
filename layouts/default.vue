@@ -1,7 +1,7 @@
 <template>
   <div class="layout-electrobotik">
     <electrobotik-menu/>
-    <nuxt/>
+    <nuxt id="main"/>
   </div>
 </template>
 <script>
