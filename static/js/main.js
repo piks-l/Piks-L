@@ -1,7 +1,4 @@
 $(function () {
-          $('#main').addClass('is-exiting');
-          setTimeout(function(){ $('#main').removeClass('is-exiting'); }, 100);
-
             // animation header page programme
             $( ".button-date button" ).click(function() {
               $( ".button-stage .any" ).click();
