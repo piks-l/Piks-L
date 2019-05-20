@@ -3,8 +3,11 @@
   "dateshow": "samedi",
   "thumbnail": "/images/uploads/maissouille.jpg",
   "social": [
-    "https://www.facebook.com/Maissouille/"
-  ],
+    {
+      "lien": "https://www.facebook.com/Maissouille/",
+      "awesome": "fab fa-facebook-f"
+    }
+],
   "couverture": "/images/uploads/maissouille.jpg",
   "date": "20/05/2019",
   "title": "MAISSOUILLE",
