@@ -170,7 +170,25 @@ export default {
                 return value;
             }
             grid.layout();
-                    function parallax() {
+                        // sticky header
+            if ($(window).width() > 599) {
+              if(document.getElementById("header") === null){}else{
+                  window.onscroll = function() {scrollfunction()};
+                  var header = document.getElementById("header");
+                  var logo = document.getElementById("sticky-logo");
+                  var sticky = header.offsetHeight;
+                  function scrollfunction() {
+                      if (window.pageYOffset > sticky) {
+                        header.classList.add("sticky");
+                        logo.classList.add("grab");
+                      } else {
+                        header.classList.remove("sticky");
+                        logo.classList.remove("grab");
+                      }
+                  }
+              }
+            }
+     function parallax() {
           // Populate images from data attributes.
           var scrolled = $(window).scrollTop()
           $('#parallax').each(function(index) {
