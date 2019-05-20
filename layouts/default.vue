@@ -19,8 +19,7 @@
               setTimeout(function(){ $('#main').removeClass('is-exiting'); }, 100);
               setTimeout(() => this.$nuxt.$loading.finish(), 500)
           }
-        })
-      }
+        }
 
   
 </script>
