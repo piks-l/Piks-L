@@ -1,0 +1,20 @@
+{
+  "iframe": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/h0tzBpYnEdc\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+  "dateshow": "samedi",
+  "thumbnail": "/images/uploads/cleric.jpg",
+  "social": [
+    {
+      "lien": "https://soundcloud.com/Cleric",
+      "awesome": "fab fa-soundcloud"
+    },
+    {
+      "lien": "https://www.facebook.com/Cleric",
+      "awesome": "fab fa-facebook-f"
+    }
+  ],
+  "couverture": "/images/uploads/cleric.jpg",
+  "date": "20/05/2019",
+  "title": "CLERIC",
+  "description": "Mystérieux artiste connu sous le nom de Cleric et actif depuis 2012, il fait partie des producteurs anglais les plus prolifiques du moment. Reconnu pour son travail claire et atmosphérique, ses productions ont atterri sur des labels tels que Arts, Figure et sa propre empreinte, Clergy.",
+  "stage": "TECHNO"
+}
