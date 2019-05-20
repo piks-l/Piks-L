@@ -29,7 +29,8 @@ module.exports = {
   },
   plugins: [
     { src: '~/plugins/vue-lazyload', ssr: false },
-    { src: "~plugins/isotope.js", ssr: false }
+    { src: "~plugins/isotope.js", ssr: false },
+    { src: '~plugins/ga.js', ssr: false }
   ],
   /*loading: '~/components/ui/loading.vue',*/
   generate: {
