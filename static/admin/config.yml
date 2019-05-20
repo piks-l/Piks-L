@@ -15,14 +15,13 @@ collections:
       - {label: "Image de couverture", name: "couverture", widget: "image", required: true}
       - {label: "Nom", name: "title", widget: "string", tagname: "h1", required: true}
       - {label: "Description", name: "description", widget: "markdown"}
+      - {label: "Iframe", name: "iframe", widget: "markdown"}
       - label: "Social"
         name: "social"
         widget: "list"
-        default: true
         fields:
-          - {label: Lien, name: lien, widget: string, default: " Lien facebook"}
-          - {label: awesome, name: awesome, widget: string, default: "facebook"}
-      - {label: "Iframe", name: "iframe", widget: "markdown"}
+          - { label: Lien, name: lien, widget: string, default: " Lien facebook" }
+          - { label: awesome, name: awesome, widget: string, default: "facebook" }
       - label: "Date"
         name: "dateshow"
         widget: "select"
@@ -39,4 +38,3 @@ collections:
           - { label: "C3-PO / HIP HOP", value: "HIPHOP" } 
       - {label: "Date de publication", name: "date", widget: "date", format: "DD/MM/YYYY"}
       - {label: "Miniature", name: "thumbnail", widget: "image"}
-      
