@@ -22,15 +22,15 @@
                     </div>
                 </div>
 
-                <a href="billetterie.html" title="BILLETTERIE" class="billetterie">
+                <nuxt-link to="/billetterie/" title="BILLETTERIE" class="billetterie">
                   <i class="fas fa-ticket-alt"></i>
-                </a>
+                </nuxt-link>
             </div>
             <div class="colonne">
               <div class="block-scene">
                   <h3>T-800</h3>
                   <h4>- HARCORE STAGE -</h4>
-                  <p><a href="artiste/ak47.html" alt="">AK47</a> . <a href="#" alt="">ANDY THE CORE VS LADY DAMMAGE</a></p>
+                  <p><nuxt-link to="/artiste/ak47/" alt="AK47">AK47</nuxt-link > . <a href="#" alt="">ANDY THE CORE VS LADY DAMMAGE</a></p>
                   <p><a href="#" alt="">ASPHALT PIRATES</a> . <a href="#" alt="">CASUAL GABBERZ</a></p>
                   <p><a href="#" alt="">EVIL GRIMACE</a> . <a href="#" alt="">HARD EFFECTZ VS VANDAL!SM</a></p>
                   <p><a href="#" alt="">HATRED</a> . <a href="#" alt="">INNOMINATE</a> . <a href="#" alt="">MAISSOUILLE</a></p>
