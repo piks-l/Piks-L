@@ -1654,3 +1654,11 @@ footer p {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+
+/*******************Page  billetterie **********/
+.ticket .vignette {
+    text-align: right;
+}
+.ticket .vignette .center{
+    width: calc(100% - 50px);
+}
