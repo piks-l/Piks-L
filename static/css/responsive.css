@@ -1320,6 +1320,9 @@
     }
 }
 @media only screen and (min-width: 1264px) and (max-width: 1904px) {
+  .accueil{
+      .max-width:auto;
+  }
   #main-container {
       padding-top: 335px;
   }
