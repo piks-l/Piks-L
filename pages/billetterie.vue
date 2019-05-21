@@ -38,7 +38,7 @@
                 </div>
             </div>
             <div class="no-color">
-                <p class="gras">ZONE CAMPING : BAR, ANIMATION & SCENE AVEC <nuxt-link to="/" class="artiste-link2" >TALOWA DUB CLUB</nuxt-link></p>
+                <p class="gras">ZONE CAMPING : BAR, ANIMATION &#38; SCENE AVEC <nuxt-link to="/" class="artiste-link2" >TALOWA DUB CLUB</nuxt-link></p>
             </div>
             <a title="Billetterie Festik" href="https://electrobotik.festik.net/electrobotik-invasion" class="festik-module" target="_blank"
             data-src="https://engine.festik.net/module/electrobotik/1/*"
@@ -61,7 +61,7 @@
     components: { },
     head() {
       return {
-        title: 'Electrobotik Invasion - le 2 &#38; 3 Août 2019',
+        title: 'Electrobotik Invasion - le 2 & 3 Août 2019',
         meta: [
           { hid: 'description', name: 'description', content: 'Electrobotik Invasion Festival, le 2 & 3 Août 2019, Circuit Paul Ricard - Le Castelet (83).' },
           { 'property': 'og:title', 'content': 'Electrobotik Invasion - le 2 & 3 Août 2019', 'vmid': 'og:title' },
