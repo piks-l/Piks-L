@@ -1,8 +1,8 @@
 <template>
   <div class="loading-page">
     <div class="big-logo">
-      <img class="logo large-logo" src="https://electrobotik.netlify.com/images/logo.svg"  alt="Logo Electrobotik Invasion">
-      <img class="logo small-logo" src="https://electrobotik.netlify.com/images/logo-horizontal.svg"  alt="Logo Electrobotik Invasion">
+      <img class="logo" src="https://electrobotik.netlify.com/images/logo-horizontal.svg"  alt="Logo Electrobotik Invasion">
+      <div class="circle"><img src="https://electrobotik.netlify.com/images/circle.svg"/></div>
     </div>
   </div>
 </template>
