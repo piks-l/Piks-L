@@ -15,25 +15,25 @@
             </div>
             <div class="vignette voiture">
                 <div class="center">
-                    <p class="gras">pass 2 jours</p>
-                    <p class="gras">avec camping</p>
-                    <p class="gras price">85€</p>
+                    <p class="gras price">PASS 2 JOURS</p>
+                    <p class="gras">AVEC CAMPING</p>
+                    <p class="gras">85€</p>
                     <p class="loc">Frais de loc inclus</p>
                 </div>
             </div><!--
             --><div class="vignette avion">
                 <div class="center">
-                    <p class="gras">pass 2 jours</p>
-                    <p class="gras">sans camping</p>
-                    <p class="gras price">75€</p>
+                    <p class="gras price">PASS 2 JOURS</p>
+                    <p class="gras">SANS CAMPING</p>
+                    <p class="gras">75€</p>
                     <p class="loc">Frais de loc inclus</p>
                 </div>
             </div><!--
             --><div class="vignette train">
                 <div class="center">
-                    <p class="gras">ticket 1 jour</p>
-                    <p class="gras">ven. ou sam.</p>
-                    <p class="gras price">40€</p>
+                    <p class="gras price">TICKET 1 JOUR</p>
+                    <p class="gras">VEN. ou SAM.</p>
+                    <p class="gras">40€</p>
                     <p class="loc">Frais de loc inclus</p>
                 </div>
             </div>
