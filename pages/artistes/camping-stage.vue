@@ -26,7 +26,7 @@
                   Toute la journée viens t'enivrer aux rythmes de basses lourdes, sur des sonorités dub reggae steppas 
                   aux côtés de légendes du milieu : le talentueux mc <strong>RAS TWEED</strong> dont la réputation n'est 
                   plus à faire et le warrior <strong>BUNNY DREAD</strong> à la sélection musicale pointue.</p>
-                  Le tout sera sonorisé par le puissant <strong>WELDERS HI FI SOUND SYSTEM.</strong></p>
+                 <p> Le tout sera sonorisé par le puissant <strong>WELDERS HI FI SOUND SYSTEM.</strong></p>
                 </div>
             </div>
         </div>
