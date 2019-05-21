@@ -50,8 +50,9 @@
                 Achetez vos billets directement sur festik.net...
             </a>
             <div class="no-color">
-                <p class="gras large"></p>
-                <p class="large"></p>
+                <p class="gras large">VOUS NE TROUVEZ PAS VOTRE VILLETS DANS VOS MAILS ?</p>
+                <p class="large">regardez dans vos SPAMS, il peut arriver que les billets s'y retrouvent.</p>
+                <p> Où puis-je avoir des informations sur l'impression de mon billet ? Le renommage de mon billet ? Des renseignements sur le transport des bus ? La garantie annulation etc... ? Merci de consulter l'onglet <nuxt-link to="/infos-pratique">FAQ</nuxt-link> de notre site web !</p>
             </div>
          </div>
       </div>
