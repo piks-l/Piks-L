@@ -1,5 +1,5 @@
 <template>
-  <div v-if="loading" class="loading-page">
+  <div class="loading-page">
     <div class="big-logo">
       <img class="logo large-logo" src="https://electrobotik.netlify.com/images/logo.svg"  alt="Logo Electrobotik Invasion">
       <img class="logo small-logo" src="https://electrobotik.netlify.com/images/logo-horizontal.svg"  alt="Logo Electrobotik Invasion">
