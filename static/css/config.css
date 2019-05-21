@@ -1690,11 +1690,28 @@ footer p {
 }
 .vignette .loc {
     font-size: 12px;
-    display: list-item;
+    display: inline-block;
+    width: auto;
+    position: relative;
+}
+.vignette .loc:before {
+    content:'';
+    height:3px;
+    width:3px;
+    position:absolute;
+    left:10px;
+    top:5px;
+    border-radius:50%
+    background:#fff;
 }
 .ticket .artiste-link2 {
     font-size: 24px;
 }
 .artiste-link2:hover {
     color: gray;
+}
+.no-color .medium {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
 }
