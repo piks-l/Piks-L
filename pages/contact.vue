@@ -1,26 +1,38 @@
 <template>
-  <div class="page">
-    <h1></h1>
+  <div v-if="loading" class="loading-page">
+    <div class="big-logo">
+      <img class="logo large-logo" src="https://electrobotik.netlify.com/images/logo.svg"  alt="Logo Electrobotik Invasion">
+      <img class="logo small-logo" src="https://electrobotik.netlify.com/images/logo-horizontal.svg"  alt="Logo Electrobotik Invasion">
+    </div>
   </div>
 </template>
+
 <script>
-  import $ from 'jquery'
-  // export
-  export default {
-    layout: 'default',
-    components: { },
-    head() {
-      return {
-        title: 'Electrobotik Invasion - le 2 & 3 Août 2019',
-        meta: [
-          { hid: 'description', name: 'description', content: 'Electrobotik Invasion Festival, le 2 & 3 Août 2019, Circuit Paul Ricard - Le Castelet (83).' },
-          { 'property': 'og:title', 'content': 'Electrobotik Invasion - le 2 & 3 Août 2019', 'vmid': 'og:title' },
-          { 'property': 'og:description', 'content': 'Electrobotik Invasion Festival, le 2 & 3 Août 2019, Circuit Paul Ricard - Le Castelet (83).' },
-          { 'property': 'og:image', 'content': 'images/uploads/link_share.jpg', 'vmid': 'og:image' }
-        ]
-      }
+export default {
+  data: () => ({
+    loading: false
+  }),
+  methods: {
+    start() {
+      this.loading = true
     },
-    mounted () {	
+    finish() {
+      setTimeout(function () { this.loading = false }.bind(this), 5000)
     }
   }
+}
 </script>
+
+<style>
+  .loading-page {
+    z-index:666;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 1);
+    text-align: center;
+    font-size: 30px;
+  }
+</style>
