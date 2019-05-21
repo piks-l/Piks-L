@@ -1,5 +1,7 @@
 <template>
   <div class="page">
+<div id="parallax" data-image-src="https://electrobotik.netlify.com/images/fondbilletterie.jpg">
+
     <h2>FESTIVAL</h2>
   </div>
 </template>
