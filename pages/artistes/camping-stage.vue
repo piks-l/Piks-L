@@ -1,6 +1,6 @@
 <template> 
   <div class="page artist">
-    <div :class="'decoration decoration-CAMPING">
+    <div :class="decoration decoration-CAMPING">
       <div class="volet-artist"></div>
     </div>
     <div id="main-container" class="artiste">
