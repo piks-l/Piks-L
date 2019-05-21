@@ -19,10 +19,14 @@
                     <p>CAMPING STAGE</p>
                 </div>
                 <div class="artiste-date">
-                    <p>VENDREDI ET SAMEDI</p>
+                    <p>VENDREDI &amp; SAMEDI</p>
                 </div>
                 <div class="content">
-                  <p>lol</p>
+                  <p><strong>TALOWA DUB CLUB</strong> présente un week-end Dub a Dub Style au camping de l'ELECTROBOTIK !
+                  Toute la journée viens t'enivrer aux rythmes de basses lourdes, sur des sonorités dub reggae steppas 
+                  aux côtés de légendes du milieu : le talentueux mc <strong>RAS TWEED</strong> dont la réputation n'est 
+                  plus à faire et le warrior <strong>BUNNY DREAD</strong> à la sélection musicale pointue.</p>
+                  Le tout sera sonorisé par le puissant <strong>WELDERS HI FI SOUND SYSTEM.</strong></p>
                 </div>
             </div>
         </div>
@@ -45,5 +49,5 @@ export default {
 };
 </script>
 <style>
-.decoration-CAMPING {background-image: url('https://electrobotik.netlify.com/images/scene-TECHNO.jpg');}
+.decoration-CAMPING {background-image: url('https://electrobotik.netlify.com/images/scene-CAMPING.jpg');}
 </style>
