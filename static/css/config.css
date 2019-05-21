@@ -169,6 +169,18 @@ h1 {
     .small-logo{
         display:none;
     }
+  .header-link {
+      z-index: 1;
+      position: absolute;
+      top: 50px;
+      left: 50px;
+  }
+      .header-link .partenaires {
+          position: relative !important;
+          top: 0 !important;
+          left: 0 !important;
+          width: 150px;
+      }
 
   .menu-info {
       position: relative;
