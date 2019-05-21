@@ -346,7 +346,7 @@
       -webkit-transform: translatex(-50%);
               transform: translatex(-50%);
       padding-top: 57px;
-      width:auto;
+      width:auto !important;
   }
   .container-grid {
       max-width: 100%;
