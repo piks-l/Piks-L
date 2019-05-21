@@ -6,7 +6,7 @@
   <div class="container-grid scene_element scene_element--fadein">
           <div class="background"></div>
     <h2>FESTIVAL</h2>
-  </div>
+  </div></div></div>
 </template>
 <script>
   import $ from 'jquery'
