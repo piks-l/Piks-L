@@ -30,7 +30,7 @@
               <div class="block-scene">
                   <h3>T-800</h3>
                   <h4>- HARCORE STAGE -</h4>
-                  <p><nuxt-link to="/artiste/ak47/" alt="AK47">AK47</nuxt-link > . <nuxt-link to="/" alt="">ANDY THE CORE VS LADY DAMMAGE</nuxt-link></p>
+                  <p><nuxt-link to="/artistes/ak47/" alt="AK47">AK47</nuxt-link > . <nuxt-link to="/" alt="">ANDY THE CORE VS LADY DAMMAGE</nuxt-link></p>
                   <p><nuxt-link to="/" alt="">ASPHALT PIRATES</nuxt-link> . <nuxt-link to="/" alt="">CASUAL GABBERZ</nuxt-link></p>
                   <p><nuxt-link to="/" alt="">EVIL GRIMACE</nuxt-link> . <nuxt-link to="/" alt="">HARD EFFECTZ VS VANDAL!SM</nuxt-link></p>
                   <p><nuxt-link to="/" alt="">HATRED</nuxt-link> . <nuxt-link to="/" alt="">INNOMINATE</nuxt-link> . <nuxt-link to="/" alt="">MAISSOUILLE</nuxt-link></p>
