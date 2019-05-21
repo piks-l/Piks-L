@@ -1,10 +1,10 @@
 <template> 
   <div class="page artist">
-    <div :class="decoration decoration-CAMPING">
+    <div class="decoration decoration-CAMPING">
       <div class="volet-artist"></div>
     </div>
     <div id="main-container" class="artiste">
-      <div  class="container scene_element scene_element--fadein ">
+      <div class="container scene_element scene_element--fadein ">
         <nuxt-link to="/programmation/" class="fake-close">
             <div class="left"></div>
             <div class="right"></div>
