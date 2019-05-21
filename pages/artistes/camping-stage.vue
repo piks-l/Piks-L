@@ -32,7 +32,7 @@
                  DIMANCHE : Selecta by Bunny Dread<br/> </p>
                 </div>
                 <div class="social-artiste">
-                  <a target="_blank" href=""><i class=""></i></a>
+                  <a target="_blank" href="https://www.talowa.fr/tdc-en/"><i class="fas fa-link"></i></a>
                 </div>
             </div>
         </div>
