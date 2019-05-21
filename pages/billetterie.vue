@@ -38,7 +38,7 @@
                 </div>
             </div>
             <div class="no-color">
-                <p class="gras">ZONE CAMPING : BAR, ANIMATION &#38; SCENE AVEC <nuxt-link to="/" class="artiste-link2" >TALOWA DUB CLUB</nuxt-link></p>
+                <p class="gras">ZONE CAMPING : BAR, ANIMATION &#38; SCENE AVEC <a src="http://www.talowa.fr/tdc-fr/" class="artiste-link2" >TALOWA DUB CLUB</a></p>
             </div>
             <a title="Billetterie Festik" href="https://electrobotik.festik.net/electrobotik-invasion" class="festik-module" target="_blank"
             data-src="https://engine.festik.net/module/electrobotik/1/*"
