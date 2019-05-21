@@ -15,9 +15,13 @@ export default {
   methods: {
     start() {
       this.loading = true
+      console.log("Loading true")
     },
     finish() {
-      setTimeout(function () { this.loading = false }.bind(this), 5000)
+      setTimeout(function () { 
+        this.loading = false
+        console.log("Loading false")
+      }.bind(this), 5000)
     }
   }
 }
