@@ -1,0 +1,16 @@
+{
+  "iframe": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/wg4HBrtEmoE\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+  "dateshow": "samedi",
+  "thumbnail": "/images/uploads/davodka.jpg",
+  "social": [
+    {
+      "lien": "https://www.facebook.com/davodkalevers2trop/",
+      "awesome": "fab fa-facebook-f"
+    }
+  ],
+  "couverture": "/images/uploads/davodka.jpg",
+  "date": "21/05/2019",
+  "title": "DAVODKA",
+  "description": "Bercé par les influences rap du 18ème arrondissement où il a grandi, Davodka s’est imposé comme une figure emblématique du rap conscient. La totale maîtrise de son flow éclectique et ses punchlines percutantes lui ont valu une indiscutable reconnaissance dans l’art de rapper.",
+  "stage": "HIPHOP"
+}
