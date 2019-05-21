@@ -1663,9 +1663,8 @@ footer p {
 .ticket .vignette .center{
     width: calc(100% - 50px);
 }
-.ticket .vignette .gras {
+.ticket .gras {
     font-size: 24px;
-    margin-bottom:15px;
 }
 .ticket .vignette .large {
     font-size: 32px;
@@ -1674,9 +1673,12 @@ footer p {
 .ticket .vignette .price {
     border-top: 3px solid #b24576;
     padding-top: 15px;
-    margin-bottom: 0;
+    margin: 15px 0 0;
 }
 .vignette .loc {
     font-size: 12px;
     display: list-item;
+}
+.artiste-link2:hover {
+    color: gray;
 }
