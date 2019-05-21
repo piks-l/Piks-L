@@ -327,6 +327,11 @@
   footer p {
       line-height: 20px;
   }
+  .header-link {
+      position: relative;
+      top: 0;
+      left: 50%;
+  }
   #logo.partenaires{
        display:none;
   }
@@ -341,6 +346,7 @@
       -webkit-transform: translatex(-50%);
               transform: translatex(-50%);
       padding-top: 57px;
+      width:auto;
   }
   .container-grid {
       max-width: 100%;
