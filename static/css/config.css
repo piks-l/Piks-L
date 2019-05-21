@@ -175,10 +175,11 @@ h1 {
       top: 50px;
       left: 50px;
   }
+      .header-link #logo.partenaires, 
       .header-link .partenaires {
-          position: relative !important;
-          top: 0 !important;
-          left: 0 !important;
+          position: relative;
+          top: 0;
+          left: 0;
           width: 150px;
       }
 
