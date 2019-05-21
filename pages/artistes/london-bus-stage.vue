@@ -22,12 +22,14 @@
                     <p>VENDREDI ET SAMEDI</p>
                 </div>
                 <div class="content">
-                  <p>lol</p>
+                  <p><strong>Quoi de mieux qu’une scène sur roue ? Une scène sur un bus ! </strong><br/>
+                  Pendant les deux jours du festival vous pourrez vous balader au cœur 
+                  du festival et danser sur le toit d’un bus londonien aux rythmes du collectif <strong>Encasa</strong>.</p>
                 </div>
             </div>
         </div>
         <div class="video">
-            <p>test</p>
+            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/TiT1ZGMtlss" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
         </div>
       </div>
     </div>  
@@ -45,5 +47,5 @@ export default {
 };
 </script>
 <style>
-.decoration-CAMPING {background-image: url('https://electrobotik.netlify.com/images/scene-TECHNO.jpg');}
+.decoration-CAMPING {background-image: url('https://electrobotik.netlify.com/images/scene-LONDONBUS.jpg');}
 </style>
