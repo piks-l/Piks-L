@@ -61,7 +61,7 @@
     components: { },
     head() {
       return {
-        title: 'Electrobotik Invasion - le 2 & 3 Août 2019',
+        title: 'Electrobotik Invasion - le 2 &#38; 3 Août 2019',
         meta: [
           { hid: 'description', name: 'description', content: 'Electrobotik Invasion Festival, le 2 & 3 Août 2019, Circuit Paul Ricard - Le Castelet (83).' },
           { 'property': 'og:title', 'content': 'Electrobotik Invasion - le 2 & 3 Août 2019', 'vmid': 'og:title' },
