@@ -27,9 +27,9 @@
                         <button class="button any" data-filter=""></button>
                     </div>
                     <div class="other-stage">
-                        <button class="buton active">SECRET STAGE</button>
-                        <button class="buton active">LONDON BUS STAGE</button>
-                        <button class="buton active">CAMPING STAGE</button>
+                        <button class="buton active"><nuxt-link to="/artistes/secret-stage/">SECRET STAGE</nuxt-link></button>
+                        <button class="buton active"><nuxt-link to="/artistes/london-bus-stage/">LONDON BUS STAGE</nuxt-link></button>
+                        <button class="buton active"><nuxt-link to="/artistes/camping-stage/">CAMPING STAGE</nuxt-link></button>
                     </div>
                   </div>
                 </div>
