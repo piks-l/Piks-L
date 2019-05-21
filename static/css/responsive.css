@@ -1384,7 +1384,7 @@
       min-width: 90%;
   }
   .accueil{
-      max-width:auto;
+      min-width:auto;
   }
   .sticky-container {
       max-width: 90%;
