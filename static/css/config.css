@@ -1453,7 +1453,8 @@ footer p {
           text-transform: none;
           letter-spacing: 1px;
       }
-        .reservez a {
+        .reservez a,
+        .artiste-link2{
             color: #b24576;
             font-weight: 900;
             font-size: 22px;
@@ -1668,7 +1669,14 @@ footer p {
 }
 .ticket .vignette .large {
     font-size: 32px;
+    margin:0;
 }
 .ticket .vignette .price {
     border-top: 3px solid #b24576;
+    padding-top: 15px;
+    margin-bottom: 0;
+}
+.vignette .loc {
+    font-size: 12px;
+    display: list-item;
 }
