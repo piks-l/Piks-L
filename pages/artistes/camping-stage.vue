@@ -22,6 +22,7 @@
                     <p>VENDREDI &amp; SAMEDI</p>
                 </div>
                 <div class="content">
+                <img src="https://electrobotik.netlify.com/images/uploads/campingiframe.jpg">
                   <p><strong>TALOWA DUB CLUB</strong> présente un week-end Dub a Dub Style au camping de l'ELECTROBOTIK !
                   Toute la journée viens t'enivrer aux rythmes de basses lourdes, sur des sonorités dub reggae steppas 
                   aux côtés de légendes du milieu : le talentueux mc <strong>RAS TWEED</strong> dont la réputation n'est 
