@@ -1,0 +1,20 @@
+{
+  "iframe": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/CtXpEpFOXpI\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+  "dateshow": "vendredi",
+  "thumbnail": "/images/uploads/warface.jpg",
+  "social": [
+    {
+      "lien": "https://www.facebook.com/WarfacegameFR/?brand_redir=204791119579107",
+      "awesome": "fab fa-facebook-f"
+    },
+    {
+      "lien": "https://soundcloud.com/warfaceofficial",
+      "awesome": "fab fa-soundcloud "
+    }
+  ],
+  "couverture": "/images/uploads/warface.jpg",
+  "date": "21/05/2019",
+  "title": "WARFACE",
+  "description": "Warface fait parti de ces artistes ayant un but bien précis : conduire ses auditeurs à travers un voyage de pure sauvagerie sonore. Le phénomène Warface est sans aucun doute l’un des succès hardstyle les plus impressionnants de sa génération.",
+  "stage": "HARDCORE"
+}
