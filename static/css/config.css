@@ -1662,3 +1662,13 @@ footer p {
 .ticket .vignette .center{
     width: calc(100% - 50px);
 }
+.ticket .vignette .gras {
+    font-size: 24px;
+    margin-bottom:15px;
+}
+.ticket .vignette .large {
+    font-size: 32px;
+}
+.ticket .vignette .price {
+    border-top: 3px solid #b24576;
+}
