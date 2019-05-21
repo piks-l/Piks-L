@@ -1319,10 +1319,7 @@
         line-height: 20px;
     }
 }
-@media only screen and (min-width: 1264px) and (max-width: 1904px) {
-  .accueil{
-      .max-width:auto;
-  }
+@media only screen and (min-width: 1264px) and (max-width: 1904px) { 
   #main-container {
       padding-top: 335px;
   }
@@ -1385,6 +1382,9 @@
   }
   .container{
       min-width: 90%;
+  }
+  .accueil{
+      .max-width:auto;
   }
   .sticky-container {
       max-width: 90%;
