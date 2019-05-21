@@ -27,7 +27,7 @@
                   du festival et danser sur le toit d’un bus londonien aux rythmes du collectif <strong>Encasa</strong>.</p>
                 </div>
                 <div class="social-artiste">
-                  <a target="_blank" href=""><i class=""></i></a>
+                  <a target="_blank" href="https://www.youtube.com/channel/UC10mvuac5L-ojcz7FH5Hyuw"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
         </div>
