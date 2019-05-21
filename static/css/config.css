@@ -1395,6 +1395,12 @@ footer p {
               text-align: center;
               border-radius: 50%;
               font-size: 30px;
+              --webkit-transition:all .25s ease;
+                       transition:all .25s ease;
+          }
+          .lien a:hover {
+              background: -webkit-linear-gradient(270deg, #0079ff, #b24576);
+              background: linear-gradient(90turn, #0079ff, #b24576);  
           }
     .vignette {
         position: relative;
@@ -1471,6 +1477,11 @@ footer p {
             color: #b24576;
             font-weight: 900;
             font-size: 22px;
+            --webkit-transition:all .25s ease;
+                     transition:all .25s ease;
+        }
+        .reservez a:hover {
+            color: gray;
         }
         .tabs {
             overflow: hidden;
