@@ -19,7 +19,7 @@
                     <p>SECRET STAGE</p>
                 </div>
                 <div class="artiste-date">
-                    <p>VENDREDI ET SAMEDI</p>
+                    <p>VENDREDI &amp; SAMEDI</p>
                 </div>
                 <div class="content">
                   <p><strong>Cette année, un scène sera caché à l’intérieur du festival ! </strong><br/><br/>
