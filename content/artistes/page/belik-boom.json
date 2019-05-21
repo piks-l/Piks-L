@@ -1,0 +1,20 @@
+{
+  "iframe": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/WixYoRTwqrU\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+  "dateshow": "samedi",
+  "thumbnail": "/images/uploads/belikboom.jpg",
+  "social": [
+    {
+      "lien": "https://www.facebook.com/guybelikboom/",
+      "awesome": "fab fa-facebook-f "
+    },
+    {
+      "lien": "https://soundcloud.com/belikboom",
+      "awesome": " fab fa-soundcloud "
+    }
+  ],
+  "couverture": "/images/uploads/belikboom.jpg",
+  "date": "21/05/2019",
+  "title": "BELIK BOOM",
+  "description": "Guy Belik, originaire de Jérusalem, est le porteur du projet Belik Boom. L'artiste derrière \"Avada Kadabra\" ou encore \"Pagalpana\" connait un vif succès. Il a depuis exporté ses sonorités ethniques et colorées sur la plupart des grandes scènes internationales où il se produit.",
+  "stage": "TRANCE"
+}
