@@ -868,17 +868,23 @@
         width: 100%;
         padding-top: 0;
     }
+    .header-link {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
     #logo.partenaires{
          display:none;
     }
     .small-logo {
         display: block;
         max-width: 40%;
-        left: 50%;
+        left: 50% !important;
         position: relative;
         -webkit-transform: translatex(-50%);
                 transform: translatex(-50%);
         padding-top: 42px;
+        width: auto;
     }
     .container-grid {
         max-width: 80%;
