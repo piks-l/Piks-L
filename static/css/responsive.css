@@ -890,7 +890,7 @@
         -webkit-transform: translatex(-50%);
                 transform: translatex(-50%);
         padding-top: 42px;
-        width: auto;
+        width: auto !important;
     }
     .container-grid {
         max-width: 80%;
