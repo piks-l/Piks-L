@@ -30,48 +30,48 @@
               <div class="block-scene">
                   <h3>T-800</h3>
                   <h4>- HARCORE STAGE -</h4>
-                  <p><nuxt-link to="/artiste/ak47/" alt="AK47">AK47</nuxt-link > . <a href="#" alt="">ANDY THE CORE VS LADY DAMMAGE</a></p>
-                  <p><a href="#" alt="">ASPHALT PIRATES</a> . <a href="#" alt="">CASUAL GABBERZ</a></p>
-                  <p><a href="#" alt="">EVIL GRIMACE</a> . <a href="#" alt="">HARD EFFECTZ VS VANDAL!SM</a></p>
-                  <p><a href="#" alt="">HATRED</a> . <a href="#" alt="">INNOMINATE</a> . <a href="#" alt="">MAISSOUILLE</a></p>
-                  <p><a href="#" alt="">MALICE VS DELETE</a> . <a href="#" alt="">MANU LE MALIN</a></p>
-                  <p><a href="#" alt="">REBELION</a> . <a href="#" alt="">STREIKS & KRATCHS</a></p>
-                  <p><a href="#" alt="">THANOS VS THE CLAMPS</a> . <a href="#" alt="">THE DJ PRODUCER</a></p>
-                  <p><a href="#" alt="">THE SICKEST SQUAD</a> . <a href="#" alt="">THRASHER VS SATAN</a></p>
-                  <p><a href="#" alt="">WARFACE</a></p>
+                  <p><nuxt-link to="/artiste/ak47/" alt="AK47">AK47</nuxt-link > . <nuxt-link to="/" alt="">ANDY THE CORE VS LADY DAMMAGE</nuxt-link></p>
+                  <p><nuxt-link to="/" alt="">ASPHALT PIRATES</nuxt-link> . <nuxt-link to="/" alt="">CASUAL GABBERZ</nuxt-link></p>
+                  <p><nuxt-link to="/" alt="">EVIL GRIMACE</nuxt-link> . <nuxt-link to="/" alt="">HARD EFFECTZ VS VANDAL!SM</nuxt-link></p>
+                  <p><nuxt-link to="/" alt="">HATRED</nuxt-link> . <nuxt-link to="/" alt="">INNOMINATE</nuxt-link> . <nuxt-link to="/" alt="">MAISSOUILLE</nuxt-link></p>
+                  <p><nuxt-link to="/" alt="">MALICE VS DELETE</nuxt-link> . <nuxt-link to="/" alt="">MANU LE MALIN</nuxt-link></p>
+                  <p><nuxt-link to="/" alt="">REBELION</nuxt-link> . <nuxt-link to="/" alt="">STREIKS & KRATCHS</nuxt-link></p>
+                  <p><nuxt-link to="/" alt="">THANOS VS THE CLAMPS</nuxt-link> . <nuxt-link to="/" alt="">THE DJ PRODUCER</nuxt-link></p>
+                  <p><nuxt-link to="/" alt="">THE SICKEST SQUAD</nuxt-link> . <nuxt-link to="/" alt="">THRASHER VS SATAN</nuxt-link></p>
+                  <p><nuxt-link to="/" alt="">WARFACE</nuxt-link></p>
               </div>
               <div class="block-scene">
                   <h3>C-3PO</h3>
                   <h4>- HIP-HOP STAGE -</h4>
-                  <p><a href="#" alt="">ALKPOTE</a> . <a href="#" alt="">AL’TARBA X SENBEÏ</a></p>
-                  <p><a href="#" alt="">ANTON SERRA & OSTER LAPWASS</a> . <a href="#" alt="">DAVODKA</a></p>
-                  <p><a href="#" alt="">DJ DEL & DJ DAZ</a> . <a href="#" alt="">DJ FLY</a> . <a href="#" alt="">DOUMS & NÉPAL</a></p>
-                  <p><a href="#" alt="">HERETIK SYSTEM PRÉSENTE MAD MAXX SHOW</a></p>
-                  <p><a href="#" alt="">SVINKELS</a></p>
+                  <p><nuxt-link to="/" alt="">ALKPOTE</nuxt-link> . <nuxt-link to="/" alt="">AL’TARBA X SENBEÏ</nuxt-link></p>
+                  <p><nuxt-link to="/" alt="">ANTON SERRA & OSTER LAPWASS</nuxt-link> . <nuxt-link to="/" alt="">DAVODKA</nuxt-link></p>
+                  <p><nuxt-link to="/" alt="">DJ DEL & DJ DAZ</nuxt-link> . <nuxt-link to="/" alt="">DJ FLY</nuxt-link> . <nuxt-link to="/" alt="">DOUMS & NÉPAL</nuxt-link></p>
+                  <p><nuxt-link to="/" alt="">HERETIK SYSTEM PRÉSENTE MAD MAXX SHOW</nuxt-link></p>
+                  <p><nuxt-link to="/" alt="">SVINKELS</nuxt-link></p>
               </div>
             </div>
             <div class="colonne">
               <div class="block-scene">
                   <h3>WALL-E</h3>
                   <h4>- TRANCE STAGE -</h4>
-                  <p><a href="#" alt="">BELIK BOOM</a> . <a href="#" alt="">BERG</a> . <a href="#" alt="">COMING SOON</a></p>
-                  <p><a href="#" alt="">DJ H.P VS HANBLECEYA</a> . <a href="#" alt="">GONZI</a></p>
-                  <p><a href="#" alt="">ITCHY & SCRATCHY</a></p>
-                  <p><a href="#" alt="">JUNO REACTOR VS UNDERCOVER</a></p>
-                  <p><a href="#" alt="">KOKMOK</a> . <a href="#" alt="">LA P’TITE FUMÉE</a> . <a href="#" alt="">MAITIKA</a></p>
-                  <p><a href="#" alt="">MAJOR 7</a> . <a href="#" alt="">MANDRAGORA</a> . <a href="#" alt="">MISS TEKIX VS OÏKIA</a></p>
-                  <p><a href="#" alt="">NELIO</a> . <a href="#" alt="">RANJI VS GHOST RIDER</a> . <a href="#" alt="">SKULLZ</a></p>
-                  <p><a href="#" alt="">STRYKER</a> . <a href="#" alt="">X-NOIZE</a></p>
+                  <p><nuxt-link to="/" alt="">BELIK BOOM</nuxt-link> . <nuxt-link to="/" alt="">BERG</nuxt-link> . <nuxt-link to="/" alt="">COMING SOON</nuxt-link></p>
+                  <p><nuxt-link to="/" alt="">DJ H.P VS HANBLECEYA</nuxt-link> . <nuxt-link to="/" alt="">GONZI</nuxt-link></p>
+                  <p><nuxt-link to="/" alt="">ITCHY & SCRATCHY</nuxt-link></p>
+                  <p><nuxt-link to="/" alt="">JUNO REACTOR VS UNDERCOVER</nuxt-link></p>
+                  <p><nuxt-link to="/" alt="">KOKMOK</nuxt-link> . <nuxt-link to="/" alt="">LA P’TITE FUMÉE</nuxt-link> . <nuxt-link to="/" alt="">MAITIKA</nuxt-link></p>
+                  <p><nuxt-link to="/" alt="">MAJOR 7</nuxt-link> . <nuxt-link to="/" alt="">MANDRAGORA</nuxt-link> . <nuxt-link to="/" alt="">MISS TEKIX VS OÏKIA</nuxt-link></p>
+                  <p><nuxt-link to="/" alt="">NELIO</nuxt-link> . <nuxt-link to="/" alt="">RANJI VS GHOST RIDER</nuxt-link> . <nuxt-link to="/" alt="">SKULLZ</nuxt-link></p>
+                  <p><nuxt-link to="/" alt="">STRYKER</nuxt-link> . <nuxt-link to="/" alt="">X-NOIZE</nuxt-link></p>
               </div>
               <div class="block-scene">
                   <h3>R2-D2</h3>
                   <h4>- TECHNO STAGE -</h4>
-                  <p><a href="#" alt="">14ANGER</a> . <a href="#" alt="">999999999</a> . <a href="#" alt="">BEN SIMS</a></p>
-                  <p><a href="#" alt="">CHICKS LUV US</a> . <a href="#" alt="">CLERIC</a> . <a href="#" alt="">ESTHER</a></p>
-                  <p><a href="#" alt="">I HATE MODELS</a> . <a href="#" alt="">JACID0REX</a> . <a href="#" alt="">LEXLAY</a></p>
-                  <p><a href="#" alt="">MARTIN BOOKS</a> . <a href="#" alt="">MINIMUM SYNDICAT</a></p>
-                  <p><a href="#" alt="">OCTAVE ONE</a> . <a href="#" alt="">PAUL DAMY</a> . <a href="#" alt="">PAUL RITCH</a></p>
-                  <p><a href="#" alt="">SHLØMO</a> . <a href="#" alt="">TIMMO</a></p>
+                  <p><nuxt-link to="/" alt="">14ANGER</nuxt-link> . <nuxt-link to="/" alt="">999999999</nuxt-link> . <nuxt-link to="/" alt="">BEN SIMS</nuxt-link></p>
+                  <p><nuxt-link to="/" alt="">CHICKS LUV US</nuxt-link> . <nuxt-link to="/" alt="">CLERIC</nuxt-link> . <nuxt-link to="/" alt="">ESTHER</nuxt-link></p>
+                  <p><nuxt-link to="/" alt="">I HATE MODELS</nuxt-link> . <nuxt-link to="/" alt="">JACID0REX</nuxt-link> . <nuxt-link to="/" alt="">LEXLAY</nuxt-link></p>
+                  <p><nuxt-link to="/" alt="">MARTIN BOOKS</nuxt-link> . <nuxt-link to="/" alt="">MINIMUM SYNDICAT</nuxt-link></p>
+                  <p><nuxt-link to="/" alt="">OCTAVE ONE</nuxt-link> . <nuxt-link to="/" alt="">PAUL DAMY</nuxt-link> . <nuxt-link to="/" alt="">PAUL RITCH</nuxt-link></p>
+                  <p><nuxt-link to="/" alt="">SHLØMO</nuxt-link> . <nuxt-link to="/" alt="">TIMMO</nuxt-link></p>
               </div>
             </div>
         </div>
