@@ -1356,6 +1356,14 @@ footer p {
             text-align: justify;
             letter-spacing: 1px;
         }
+        .artiste-link {
+            color: #000;
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+        .artiste-link:hover {
+            color: gray;
+        }
         .lien {
             position: absolute;
             right: 40px;
