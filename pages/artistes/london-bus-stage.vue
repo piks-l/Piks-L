@@ -26,6 +26,9 @@
                   Pendant les deux jours du festival vous pourrez vous balader au cœur 
                   du festival et danser sur le toit d’un bus londonien aux rythmes du collectif <strong>Encasa</strong>.</p>
                 </div>
+                <div class="social-artiste">
+                  <a target="_blank" href=""><i class=""></i></a>
+                </div>
             </div>
         </div>
         <div class="video">
