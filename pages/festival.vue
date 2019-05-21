@@ -1,7 +1,10 @@
 <template>
   <div class="page">
 <div id="parallax" data-image-src="https://electrobotik.netlify.com/images/fondbilletterie.jpg">
-
+  <nuxt-link to="/" class="header-link" ><img id="logo" class="partenaires" src="https://electrobotik.netlify.com/images/logo.svg"  alt="logo"></nuxt-link>
+  <nuxt-link to="/" class="header-link" ><img class="small-logo partenaires" src="https://electrobotik.netlify.com/images/logo-horizontal.svg" alt="logo"></nuxt-link>
+  <div class="container-grid scene_element scene_element--fadein">
+          <div class="background"></div>
     <h2>FESTIVAL</h2>
   </div>
 </template>
