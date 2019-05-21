@@ -18,7 +18,7 @@
                     <p class="gras large">PASS 2 JOURS</p>
                     <p class="gras">AVEC CAMPING</p>
                     <p class="gras price">85€</p>
-                    <p class="loc">Frais de loc inclus</p>
+                    <p class="loc">Frais de loc. non inclus</p>
                 </div>
             </div><!--
             --><div class="vignette avion">
@@ -26,7 +26,7 @@
                     <p class="gras large">PASS 2 JOURS</p>
                     <p class="gras">SANS CAMPING</p>
                     <p class="gras price">75€</p>
-                    <p class="loc">Frais de loc inclus</p>
+                    <p class="loc">Frais de loc. non inclus</p>
                 </div>
             </div><!--
             --><div class="vignette train">
@@ -34,7 +34,7 @@
                     <p class="gras large">TICKET 1 JOUR</p>
                     <p class="gras">VEN. ou SAM.</p>
                     <p class="gras price">40€</p>
-                    <p class="loc">Frais de loc inclus</p>
+                    <p class="loc">Frais de loc. non inclus</p>
                 </div>
             </div>
             <div class="no-color">
