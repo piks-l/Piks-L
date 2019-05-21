@@ -31,6 +31,9 @@
                  SAMEDI : Ras Tweed <br/>
                  DIMANCHE : Selecta by Bunny Dread<br/> </p>
                 </div>
+                <div class="social-artiste">
+                  <a target="_blank" href=""><i class=""></i></a>
+                </div>
             </div>
         </div>
         <div class="video">
