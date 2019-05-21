@@ -3,7 +3,7 @@
      <nuxt-link to="/" class="header-link" ><img id="logo" class="partenaires" src="https://electrobotik.netlify.com/images/logo.svg"  alt="logo"></nuxt-link>
      <nuxt-link to="/" class="header-link" ><img class="small-logo partenaires" src="https://electrobotik.netlify.com/images/logo-horizontal.svg" alt="logo"></nuxt-link>
      <div class="container-infos scene_element scene_element--fadein">
-        <h2>billetterie</h2>
+        <h2>BILLETTERIE</h2>
      </div>
      <div class="slide">
          <div class="container">
@@ -13,29 +13,32 @@
                 de billet, utilisez les plateformes sécurisées de revente pour être certains de ne pas acquérir une cntrefaçon ! 
                 Méfiez-vous également du marché noir !</p>
             </div>
-            <div class="vignette">
+            <div class="vignette voiture">
                 <div class="center">
                     <p class="gras">pass 2 jours</p>
                     <p class="gras">avec camping</p>
                     <p class="gras price">85€</p>
-                    <p>Frais de loc inclus</p>
+                    <p class="loc">Frais de loc inclus</p>
                 </div>
             </div><!--
-            --><div class="vignette">
+            --><div class="vignette avion">
                 <div class="center">
                     <p class="gras">pass 2 jours</p>
                     <p class="gras">sans camping</p>
                     <p class="gras price">75€</p>
-                    <p>Frais de loc inclus</p>
+                    <p class="loc">Frais de loc inclus</p>
                 </div>
             </div><!--
-            --><div class="vignette">
+            --><div class="vignette train">
                 <div class="center">
                     <p class="gras">ticket 1 jour</p>
                     <p class="gras">ven. ou sam.</p>
                     <p class="gras price">40€</p>
-                    <p>Frais de loc inclus</p>
+                    <p class="loc">Frais de loc inclus</p>
                 </div>
+            </div>
+            <div class="no-color">
+                <p class="gras">ZONE CAMPING : BAR, ANIMATION & SCENE AVEC <nuxt-link to="/" class="artiste-link2" >TALOWA DUB CLUB</nuxt-link></p>
             </div>
          </div>
       </div>
