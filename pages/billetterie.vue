@@ -11,7 +11,7 @@
               <div class="color">
                   <p>Electrobotik Invasion utilise une billeterie dématérialisée en coopération avec notre nouveau partenaire Festik. 
                   Ne dévoilez jamais votre code barre sur les réseaux au risque de vous faire pirater votre billet. En cas de rachat 
-                  de billet, utilisez les plateformes sécurisées de revente pour être certains de ne pas acquérir une cntrefaçon ! 
+                  de billet, utilisez les plateformes sécurisées de revente pour être certains de ne pas acquérir une contrefaçon ! 
                   Méfiez-vous également du marché noir !</p>
               </div>
               <div class="vignette voiture">
