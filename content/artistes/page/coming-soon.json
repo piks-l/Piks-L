@@ -1,0 +1,20 @@
+{
+  "iframe": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/g4pak0WvQoY?start=473\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+  "dateshow": "vendredi",
+  "thumbnail": "/images/uploads/comingsoon.jpg",
+  "social": [
+    {
+      "lien": "https://www.facebook.com/ComingSoonMusic/",
+      "awesome": "fab fa-facebook-f"
+    },
+    {
+      "lien": "https://soundcloud.com/comingsoonband",
+      "awesome": " fab fa-soundcloud "
+    }
+  ],
+  "couverture": "/images/uploads/comingsoon.jpg",
+  "date": "21/05/2019",
+  "title": "COMING SOON",
+  "description": "Coming Soon est le projet trance progressive des producteurs Irad Brant & Dui Bitton qui a vu le jour en 2012. Les deux artistes sont actifs sur la scène psytrance internationale depuis une décennie, ayant chacun une carrière solo pleine de succès. Rythmiques massives, énormes kicks, bass puissantes, les Coming Soon sont prêts à éclater les dance-floors !",
+  "stage": "TRANCE"
+}
