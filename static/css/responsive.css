@@ -1330,6 +1330,15 @@
         font-weight: 900;
         line-height: 20px;
     }
+    .ticket .vignette .large {
+        font-size: 26px;
+    }
+    .ticket .gras {
+        font-size: 22px;
+    }
+    .ticket .artiste-link2 {
+        font-size: 22px;
+    }
 }
 @media only screen and (min-width: 1264px) and (max-width: 1904px) { 
   #main-container {
@@ -1517,5 +1526,14 @@
   .block-scene p {
       font-size: 18px;
       line-height: 25px;
+  }
+  .ticket .vignette .large {
+      font-size: 26px;
+  }
+  .ticket .gras {
+      font-size: 22px;
+  }
+  .ticket .artiste-link2 {
+      font-size: 22px;
   }
 }
