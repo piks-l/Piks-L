@@ -24,10 +24,7 @@
                 <div class="content">
                   <p><strong>Cette année, un scène sera caché à l’intérieur du festival ! </strong><br/><br/>
                   Aucun indice ne sera dévoilé, seul les festivaliers les plus curieux pourront trouver la scène secrète 
-                  et auront la chance de profiter des sets du crew <strong>1RDT</strong> avec <strong>Charlotte (RA+RE )</strong>,
-                  <strong>D-Mood Records</strong>,
-               <strong>Def. Raw Music Concept</strong>, <strong>GetDub</strong>, <strong>IN' OUBLIABLES</strong> , <strong>Key Horses</strong>, 
-                  <strong>LES MULES</strong>, <strong>MendelBoy (Live)</strong>, <strong>Missing No</strong>, <strong>Thibaut Garenq</strong>.
+                  et auront la chance de profiter des sets du crew <strong>1RDT</strong> avec <strong>Charlotte (RA+RE )</strong>, <strong>D-Mood Records</strong>, <strong>Def. Raw Music Concept</strong>, <strong>GetDub</strong>, <strong>IN' OUBLIABLES</strong>, <strong>Key Horses</strong>, <strong>LES MULES</strong>, <strong>MendelBoy (Live)</strong>, <strong>Missing No</strong>, <strong>Thibaut Garenq</strong>.
 <br/><br/>
 <strong>Sortez vos boussoles, prenez la carte du festival et lancez-vous à sa recherche !!</strong></p>
                 </div>
