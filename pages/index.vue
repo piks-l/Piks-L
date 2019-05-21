@@ -15,7 +15,7 @@
                         <div class="date-circle">
                             <img src="/images/circle.svg"/>
                             <div class="content-date">
-                                <p class="big-date">02<small>&</small>03</p>
+                                <p class="big-date">02<small>&amp;</small>03</p>
                                 <p class="month">AOÛT 2019</p>
                             </div>
                         </div>
@@ -26,7 +26,7 @@
                   <i class="fas fa-ticket-alt"></i>
                 </nuxt-link>
             </div>
-            <div class="colonne">
+            <div class="colonne"><br/>
               <div class="block-scene">
                   <h3>T-800</h3>
                   <h4>- HARCORE STAGE -</h4>
@@ -50,7 +50,7 @@
                   <p><nuxt-link to="/" alt="artistes/svinkels/">SVINKELS</nuxt-link></p>
               </div>
             </div>
-            <div class="colonne">
+            <div class="colonne"><br/>
               <div class="block-scene">
                   <h3>WALL-E</h3>
                   <h4>- TRANCE STAGE -</h4>
