@@ -32,7 +32,7 @@
 <strong>Sortez vos boussoles, prenez la carte du festival et lancez-vous à sa recherche !!</strong></p>
                 </div>
                 <div class="social-artiste">
-                  <a target="_blank" href=""><i class=""></i></a>
+                  <a target="_blank" href="https://soundcloud.com/1rdtofficial"><i class="fab fa-soundcloud"></i></a>
                 </div>
             </div>
         </div>
