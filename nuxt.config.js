@@ -38,6 +38,10 @@ module.exports = {
       track: 'PageView',
       pixelId: '1123850124447093',
       disabled: false
+    }],
+    ['@nuxtjs/robots', {
+      UserAgent: 'Googlebot',
+      Disallow: '/'
     }]
   ],
   generate: {
