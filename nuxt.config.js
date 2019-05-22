@@ -41,7 +41,7 @@ module.exports = {
     }],
     ['@nuxtjs/robots', {
       UserAgent: 'Googlebot',
-      Disallow: '/admin'
+      Disallow: '/admin*'
     }]
   ],
   generate: {
