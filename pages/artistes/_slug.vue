@@ -11,7 +11,7 @@
         </nuxt-link>
         <div class="title">
             <div class="background"></div>
-            <h2>{{ title }}</h2>
+            <h1>{{ title }}</h1>
         </div>
         <div class="content-artiste">
             <div class="vertical-align">
