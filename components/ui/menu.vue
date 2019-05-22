@@ -42,7 +42,7 @@
                       <div class="newsletter mj-w-button mj-w-btn" data-token="8132db2e5e0cdb0d17c4b487de416468">
                           <a href="#" class="mj-w-button-content" alt="">NEWSLETTER</a>
                       </div>
-                      <nuxt-link to="/contact/" class="presse">CONTACTS</nuxt-link>
+                      <nuxt-link to="/contact/" class="presse menu-link">CONTACTS</nuxt-link>
                   </div>
               </div>
           </div>
