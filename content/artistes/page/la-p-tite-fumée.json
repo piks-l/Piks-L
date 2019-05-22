@@ -1,0 +1,20 @@
+{
+  "iframe": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/Ty9tjKvku7k\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+  "dateshow": "samedi",
+  "thumbnail": "/images/uploads/lapetitefumee.jpg",
+  "social": [
+    {
+      "lien": "https://www.facebook.com/laptitefumee",
+      "awesome": "fab fa-facebook-f"
+    },
+    {
+      "lien": "https://soundcloud.com/laptitefumee",
+      "awesome": "fab fa-soundcloud "
+    }
+  ],
+  "couverture": "/images/uploads/lapetitefumee.jpg",
+  "date": "22/05/2019",
+  "title": "LA P'TITE FUMÉE",
+  "description": "Entre world music, techno et trance La P'tite Fumée distille une musique actuelle énergique aux accents tribaux et s'impose peu à peu comme l'un des groupes incontournables de la scène « natural trance ».\n\n\n\nSur scène, les quatre acolytes proposent un show explosif et festif dans lequel les harmonies du didgeridoo, de la guitare classique et de la flûte traversière accompagnent un lourd et puissant trio percu-basse-batterie.",
+  "stage": "TRANCE"
+}
