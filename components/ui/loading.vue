@@ -37,7 +37,7 @@ export default {
   background:black;
   z-index:1;
 }
-eletrobotik-loading .logo {
+.eletrobotik-loading .logo {
   position: relative;
   max-width: auto;
   max-height: auto;
