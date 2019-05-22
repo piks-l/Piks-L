@@ -17,6 +17,7 @@ body {
     position:fixed;
     z-index:10;
     background:#000;
+    width: 100%;
 }
 .page-enter-active, .page-leave-active {
     -webkit-transition: all .5s;
