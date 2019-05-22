@@ -1,0 +1,20 @@
+{
+  "iframe": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/xUg6rJ39E64\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+  "dateshow": "samedi",
+  "thumbnail": "/images/uploads/xnoize.jpg",
+  "social": [
+    {
+      "lien": "https://www.facebook.com/XnoizeOfficial/",
+      "awesome": "fab fa-facebook-f"
+    },
+    {
+      "lien": "https://soundcloud.com/xnoize?fbclid=IwAR2_BiyN30A7rIm6HOHpQaBZT_HkesD_2y-mzM7W3-GlK0uO4WdBKVplmD4",
+      "awesome": "fab fa-soundcloud "
+    }
+  ],
+  "couverture": "/images/uploads/xnoize.jpg",
+  "date": "22/05/2019",
+  "title": "X-NOIZE",
+  "description": "X-noiZe, c'est Barak Argaman & Nadav Bonen (Major7), tous deux originaires de Tel-Aviv en Israel. Considéré comme l'un des projets les plus frais de la Psytranse moderne, leurs productions sonores uniques sont devenues une ligne directrice pour la nouvelle génération psy.",
+  "stage": "TRANCE"
+}
