@@ -615,6 +615,7 @@
   .page-contact.container{
       min-width: auto;
       width: calc(100% - 30px);
+      margin-bottom: 15px;
   }
   .content-image {
       display: none;
