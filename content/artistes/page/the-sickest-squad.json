@@ -1,0 +1,20 @@
+{
+  "iframe": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/0jX5R3cfdg8\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+  "dateshow": "samedi",
+  "thumbnail": "/images/uploads/sickest-squad.jpg",
+  "social": [
+    {
+      "lien": "https://www.facebook.com/thesickestsquad/",
+      "awesome": "fab fa-facebook-f"
+    },
+    {
+      "lien": "https://soundcloud.com/thesickestsquad",
+      "awesome": "fab fa-soundcloud "
+    }
+  ],
+  "couverture": "/images/uploads/sickest-squad.jpg",
+  "date": "22/05/2019",
+  "title": "THE SICKEST SQUAD",
+  "description": "Les deux italiens de The Sickest Squad déplacent les foules et font vibrer les amateurs de Hardmusic depuis ces dix dernières années au rythme de leur style unique : le « Sickcore ». Découverts par le grand public grâce à des titres comme Boomshakalaka, ils sont aujourd’hui connus de la sphère électronique pour avoir travaillé avec les meilleurs labels du genre et pour avoir joué dans les plus grands festivals Hardcore. Aujourd’hui encore très actifs grâce à leur label Brutale et à leurs nombreuses dates de représentations, ils continuent depuis près de 20 ans de dédier leur vie à la musique.",
+  "stage": "HARDCORE"
+}
