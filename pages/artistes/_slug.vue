@@ -60,7 +60,7 @@ export default {
   },
   mounted() {
     $('#date-vendredi').each( function() {
-        var search = 'VENDREDI';
+        var search = 'vendredi';
         var replace = 'VENDREDI 02 AOÛT'
         var el = $(this);
         var text = el.html();
@@ -69,7 +69,7 @@ export default {
         console.log(text);
     });
     $('#date-samedi').each( function() {
-        var search = 'SAMEDI';
+        var search = 'samedi';
         var replace = 'SAMEDI 03 AOÛT'
         var el = $(this);
         var text = el.html();
