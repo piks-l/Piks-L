@@ -35,10 +35,17 @@ export default {
 <style>
 .eletrobotik-loading{
   width:100%;
-  height:100%;
+  height:100vh;
   display:flex;
   justify-content:center;
   align-items:center;
+}
+eletrobotik-loading .logo {
+  position: relative;
+  max-width: auto;
+  max-height: auto;
+  top: 0px;
+  transform: none;
 }
 .eletrobotik-loading .box{
   width:500px;
