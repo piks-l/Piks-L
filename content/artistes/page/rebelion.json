@@ -1,0 +1,20 @@
+{
+  "iframe": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/FRSLC2jP520\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+  "dateshow": "vendredi",
+  "thumbnail": "/images/uploads/rebellion.jpg",
+  "social": [
+    {
+      "lien": "https://www.facebook.com/officialrebelion/",
+      "awesome": "fab fa-facebook-f"
+    },
+    {
+      "lien": "https://soundcloud.com/officialrebelion",
+      "awesome": "fab fa-soundcloud "
+    }
+  ],
+  "couverture": "/images/uploads/rebellion.jpg",
+  "date": "22/05/2019",
+  "title": "REBELION",
+  "description": "Rebelion est un duo écossais basé en Hollande. Leur but :  détruire toutes les scènes qui se présentent devant eux. Et ils ont déjà réussi à de nombreuses reprises comme au Hardbass, au Qapital ou encore au Brabanthallen, pour en nommer que quelques-uns !  Véritables showmens, ils travaillent dur en studio pour créer sur scène une véritable atmosphère futuriste et intense.",
+  "stage": "HARDCORE"
+}
