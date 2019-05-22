@@ -13,9 +13,14 @@ body {
     position: relative;
     z-index: 0;
 }
+.loading{
+    position:relative;
+    z-index:10;
+    background:#000;
+}
 .page-enter-active, .page-leave-active {
-  -webkit-transition: all .5s;
-  transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
 }
 .page-enter, .page-leave-active {
   opacity: 0;
