@@ -35,11 +35,16 @@ export default {
 </script>
 
 <style>
+.loading{
+  position:relative;
+  z-index:10;
+}
 .eletrobotik-loading{
   width:100vw;
   height:100vh;
-  display:block;
-  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 eletrobotik-loading .logo {
   position: relative;
