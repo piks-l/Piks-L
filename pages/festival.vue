@@ -11,7 +11,7 @@
               <div class="color margin-bottom">
                   <p>Le rendez-vous musical incontournable de l'été, ELECTROBOTIK INVASION, fait son grand retour au circuit Paul Ricard pour fêter son dixième anniversaire les 2 et 3 août 2019.
                    Par l'originalité de son concept et sa sélection musical, il est l'exception dans l'uniformisation du paysage des événements électroniques.
-                   L'espace de deux nuits, le festival s'installera des pieds dans l'herbe sur une zone verte et ombragée au bord de la piste du circuit Paul Ricard pour 
+                   L'espace de deux nuits, le festival s'installera les pieds dans l'herbe sur une zone verte et ombragée au bord de la piste du circuit Paul Ricard pour 
                    créer un village éphémère où se mêleront l'univers des fêtes foraines, les nouvelles technologies &amp; les arts de la rue.</p>
               </div>
               <div class="content-festival">
@@ -24,7 +24,7 @@
                           <p>L'une des particularités du festival est de s'approprier totalement le site dans lequel il s'implante pour le transformer 
                           fondamentalement.</p><br>
                           <p>Cette année, les festivaliers seront plongés dans ambiance toute particulère, entre village rétro-futuriste et fête 
-                          foraine. De nombreuses attractions seront proposées aux festicaliers qui pourront retourner en enfance grâce aux auto-temponneuses 
+                          foraine. De nombreuses attractions seront proposées aux festivaliers qui pourront retourner en enfance grâce aux auto-temponneuses 
                           ou faire le plein d'adrénaline en faisant du saut à l'élastique !</p>
                       </div>  
                    </div>
@@ -37,16 +37,16 @@
                       </div> 
                       <div class="no-color">
                           <h3>L'implantation du festival</h3>
-                          <p>Pour cette édition anniverssaire, le festival s'installera au frais, sur une large zone d'herbe au bord de la piste et proposera un camping à l'ombre.</p>
+                          <p>Pour cette édition anniversaire, le festival s'installera au frais, sur une large zone d'herbe au bord de la piste et proposera un camping à l'ombre.</p>
                       </div> 
                   </div>
                   <div class="content-image  content-right">
-                      <img src="https://electrobotik.netlify.com/images/camping.jpg" alt="">
+                      <img src="https://electrobotik.netlify.com/images/deamb.jpg" alt="">
                   </div>
               </div>
               <div class="content-festival">
                   <div class="content-image">
-                      <img src="https://electrobotik.netlify.com/images/deamb.jpg" alt="">
+                      <img src="https://electrobotik.netlify.com/images/camping.jpg" alt="">                      
                   </div>
                   <div class="content-text  content-right">
                       <div class="color">
