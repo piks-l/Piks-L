@@ -5,8 +5,7 @@
   }
   .eletrobotik-loading .box {
       width: auto;
-  }
-  
+  }  
   header {
       height: 200px;
       width: 100%;
@@ -35,7 +34,8 @@
       left: 15px;
       z-index: -1;
       height: 5px;
-  }
+  } 
+  .test{}
   #logo{
     display:none;
   }
