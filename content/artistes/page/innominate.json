@@ -1,0 +1,20 @@
+{
+  "iframe": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/P82NKmAzJTw\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+  "dateshow": "vendredi",
+  "thumbnail": "/images/uploads/innominiate.jpg",
+  "social": [
+    {
+      "lien": "https://www.facebook.com/innominate.official.page/",
+      "awesome": "fab fa-facebook-f"
+    },
+    {
+      "lien": "https://soundcloud.com/innominatehardcore",
+      "awesome": "fab fa-soundcloud "
+    }
+  ],
+  "couverture": "/images/uploads/innominiate.jpg",
+  "date": "22/05/2019",
+  "title": "INNOMINATE",
+  "description": "Collectif issu de l’association d’I:Gor et Igneon System. Après de nombreux b2b et plusieurs années à donner le ton sur la scène hardcore mondiale, ils se sont naturellement rejoint sur un projet commun. Innominate est né !",
+  "stage": "HARDCORE"
+}
