@@ -9,6 +9,10 @@ body {
     max-height: 100vh;
     max-width: 100vw;
 }
+#__layout {
+    position: relative;
+    z-index: 0;
+}
 .page-enter-active, .page-leave-active {
   -webkit-transition: all .5s;
   transition: all .5s;
