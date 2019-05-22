@@ -29,14 +29,20 @@ export default {
 
 <style>
   .loading-page {
-    z-index:666;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 1);
     text-align: center;
     font-size: 30px;
+  }
+  .loading-page .circle {
+    position: fixed;
+    z-index: -1;
+    display: block;
+    opacity: 1;
+    width: 350px;
+    height: 350px;
   }
 </style>
