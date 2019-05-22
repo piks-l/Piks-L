@@ -14,19 +14,51 @@
                    L'espace de deux nuits, le festival s'installera des pieds dans l'herbe sur une zone verte et ombragée au bord de la piste du circuit Paul Ricard pour 
                    créer un village éphémère où se mêleront l'univers des fêtes foraines, les nouvelles technologies &amp; les arts de la rue.</p>
               </div>
-              <div class="content">
+              <div class="content-festival">
                   <div class="content-image">
                       <img src="" alt="">
                   </div>
-                  <div class="no-color">
-                      <h3>Les manèges à sensations</h3>
-                      <p>L'une des particularités du festival est de s'approprier totalement le site dans lequel il s'implante pour le transformer 
-                      fondamentalement.</p><br>
-                      <p>Cette année, les festivaliers seront plongés dans ambiance toute particulère, entre village rétro-futuriste et fête 
-                      foraine. De nombreuses attractions seront proposées aux festicaliers qui pourront retourner en enfance grâce aux auto-temponneuses 
-                      ou faire leplein d'adrénaline en faisant du saut à l'élastique !</p>
-                  </div>              
+                  <div class="content-text">
+                      <div class="no-color">
+                          <h3>Les manèges à sensations</h3>
+                          <p>L'une des particularités du festival est de s'approprier totalement le site dans lequel il s'implante pour le transformer 
+                          fondamentalement.</p><br>
+                          <p>Cette année, les festivaliers seront plongés dans ambiance toute particulère, entre village rétro-futuriste et fête 
+                          foraine. De nombreuses attractions seront proposées aux festicaliers qui pourront retourner en enfance grâce aux auto-temponneuses 
+                          ou faire leplein d'adrénaline en faisant du saut à l'élastique !</p>
+                      </div>  
+                   </div>
               </div>
+              <div class="content">
+                  <div class="content-text">
+                      <div class="no-color">
+                          <h3>Les déambulations</h3>
+                          <p>Comme chaque année, le festival proposera également des performances artistiques uniques, des déambulations exceptionnelles qui vous plongeront dans un univers irréel.</p>
+                      </div> 
+                      <div class="no-color">
+                          <h3>L'implantation du festival</h3>
+                          <p>Pour cette édition anniverssaire, le festival s'installera au frais, sur une large zone d'herbe au bord de la piste et proposera un camping à l'ombre.</p>
+                      </div> 
+                  </div>
+                  <div class="content-image">
+                      <img src="" alt="">
+                  </div>
+              </div>
+              <div class="content-festival">
+                  <div class="content-image">
+                      <img src="" alt="">
+                  </div>
+                  <div class="content-text">
+                      <div class="color">
+                          <h3>Le camping</h3>
+                          <p>idéalement situé, le camping Electrobotik invasion offrira cette année aux campeurs une expérience unique. Installé dans une zone entièrement ombragée, le camping bénéficiera de douches, WC, de jeux d'eau, d'un bar et même d'un soundsystem !</p><br>
+                          <p class="gras large">TALOWA DUB CLUB Powered by WELDERS HI FI SOUND SYSTEM</p>
+                          <p class="gras">Guest Samedi: <nuxt-link to="/" class="artiste-link" >RAS TWEED</nuxt-link></p>
+                          <p class="gras">Guest Dimanche: Selecta by <nuxt-link to="/" class="artiste-link" >BUNNY DREAD</nuxt-link></p>
+                      </div>  
+                   </div>
+              </div>
+              
            </div>
         </div>
      </div>
