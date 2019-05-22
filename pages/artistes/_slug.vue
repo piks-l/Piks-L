@@ -59,11 +59,15 @@ export default {
     }
   },
   mounted() {
-    var str = document.getElementById("stage").innerHTML; 
-    var res = str.replace("samedi", "SAMEDI 03 AOÛT");
-    var res2 = str.replace("vendredi", "VENDREDI 02 AOÛT");
-    document.getElementById("stage").innerHTML = res;
-    document.getElementById("stage").innerHTML = res2;
+    $('#stage).each( function() {
+        var search = 'samedi';
+        var replace = '<small>' + search + 'LOL</small>'
+        var el = $(this);
+        var text = el.html();
+        text = text.split(search).join(replace);
+        el.html(text);
+        console.log(text):
+    });
   }
 };
 </script>
