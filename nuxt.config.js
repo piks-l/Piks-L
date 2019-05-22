@@ -32,7 +32,7 @@ module.exports = {
     { src: "~plugins/isotope.js", ssr: false },
     { src: '~plugins/ga.js', ssr: false }
   ],
-  loading: '~/components/ui/loading.vue',
+  /*loading: '~/components/ui/loading.vue',*/
   modules: [
      ['nuxt-facebook-pixel-module', {
       track: 'PageView',
