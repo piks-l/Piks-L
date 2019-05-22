@@ -5,7 +5,7 @@
         
         <header id="header">
           <div class="sticky-container">
-              <nuxt-link to="/"><img id="sticky-logo" class="logo" src="https://electrobotik.netlify.com/images/logo-basic.svg"  alt="logo"></nuxt-link>
+              <nuxt-link to="/"><img id="sticky-logo" class="logo" src="https://electrobotik.netlify.com/images/logo-basic.svg" alt="Logo Electrobotik Invasion"></nuxt-link>
               <div id="filters">
                 <h1>PROGRAMMATION</h1>
                 <div class="button-date button-group"  data-filter-group="date">
@@ -37,7 +37,7 @@
               <div class="separator"></div>
           </div>
         </header>
-        <nuxt-link to="/"><img id="logo" src="https://electrobotik.netlify.com/images/logo-basic.svg" alt="logo"></nuxt-link>
+        <nuxt-link to="/"><img id="logo" src="https://electrobotik.netlify.com/images/logo-basic.svg" alt="Logo Electrobotik Invasion"></nuxt-link>
         <div class="grid">
             <div v-for="artiste in artistes" :key="artiste.date"  :class="artiste.dateshow+' '+artiste.stage" class="element-item">
                  <nuxt-link :to="artiste._path+'/'">
@@ -45,7 +45,7 @@
                         <div class="volet1">
                             <img class="lazy" v-lazy="artiste.thumbnail" :alt="artiste.title">
                             <div class="boxshadow"></div>
-                            <div class="circle"><img src="https://electrobotik.netlify.com/images/circle.svg"/></div>
+                            <div class="circle"><img src="https://electrobotik.netlify.com/images/circle.svg" alt="Electrobotik Invasion Cercle"/></div>
                             <h3 class="name small">{{artiste.title}}</h3>
                             <p>class="name small">{{artiste.dateshow}}</p>
                         </div>
