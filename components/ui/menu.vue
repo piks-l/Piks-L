@@ -53,8 +53,6 @@
   				</div>
       </div>
       <button class="open-menu"><span>Menu</span></button>
-      <button class="select-date"><span>DATES</span></button>
-      <button class="select-stage"><span>STAGES</span></button>
 </div>
 </template>
 <script>
