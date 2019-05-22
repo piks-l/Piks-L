@@ -35,7 +35,7 @@
   #logo{
     display:none;
   }
-  #main-container {
+  .padding {
       padding-top: 200px;
   }
   .sticky-container {
@@ -619,7 +619,7 @@
     .big-logo {
         width: 25%;
     }
-    #main-container{
+    .padding{
         padding-top: 325px;
     }
     #logo{
@@ -1361,7 +1361,7 @@
     }
 }
 @media only screen and (min-width: 1264px) and (max-width: 1904px) { 
-  #main-container {
+  .padding {
       padding-top: 335px;
   }
   .button-stage, .other-stage {
