@@ -1,0 +1,20 @@
+{
+  "iframe": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/bPq1AsPy5nA\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+  "dateshow": "samedi",
+  "thumbnail": "/images/uploads/martin-books.jpg",
+  "social": [
+    {
+      "lien": "https://www.facebook.com/Martin.Books.official/",
+      "awesome": "fab fa-facebook-f"
+    },
+    {
+      "lien": "https://soundcloud.com/martin-books",
+      "awesome": "fab fa-soundcloud "
+    }
+  ],
+  "couverture": "/images/uploads/martin-books.jpg",
+  "date": "22/05/2019",
+  "title": "MARTIN BOOKS",
+  "description": "Martin Books débute sa carrière dans la musique électronique de manière très classique. Il a grandi dans une famille de musiciens (son père était batteur dans un groupe et sa mère, pianiste passionnée) il a été fortement influencé par la Synth-Pop du début des années 90 et s'est retrouvé dans la musique électronique au plus fort de Rave au milieu des années 90. Après quelques années de DJ en solo dans plusieurs festivals, Martin Books est aujourd'hui un acteur important de la scène techno Allemande.",
+  "stage": "TECHNO"
+}
