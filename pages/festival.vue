@@ -29,7 +29,7 @@
                       </div>  
                    </div>
               </div>
-              <div class="content">
+              <div class="content-festival">
                   <div class="content-text">
                       <div class="no-color">
                           <h3>Les déambulations</h3>
