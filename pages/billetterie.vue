@@ -51,6 +51,8 @@
               data-representation-numero="*">
                   Achetez vos billets directement sur festik.net...
               </a>
+              <script type="text/javascript"
+src="https://engine.festik.net/assets/js/festik.module.js"></script>
               <div class="no-color">
                   <p class="gras large">VOUS NE TROUVEZ PAS VOTRE BILLETS DANS VOS MAILS ?</p>
                   <p class="medium">Regardez dans vos SPAMS, il peut arriver que les billets s'y retrouvent.</p>
