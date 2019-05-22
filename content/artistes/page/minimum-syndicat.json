@@ -1,0 +1,20 @@
+{
+  "iframe": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/2h5xT2Yhplg\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+  "dateshow": "samedi",
+  "thumbnail": "/images/uploads/minimum.jpg",
+  "social": [
+    {
+      "lien": "https://www.facebook.com/minimumsyndicat/",
+      "awesome": "fab fa-facebook-f"
+    },
+    {
+      "lien": "https://soundcloud.com/minimumsyndicat",
+      "awesome": "fab fa-soundcloud "
+    }
+  ],
+  "couverture": "/images/uploads/minimum.jpg",
+  "date": "22/05/2019",
+  "title": "MINIMUM SYNDICAT",
+  "description": "Minimum Syndicat est à la fois un label et un duo formé en 2008, en plein creux de la vague minimale. C'est le fruit de la rencontre entre Jmi et David, deux amoureux de la musique de rave et de la techno maximale, celle où les kicks massifs semblent étudiés pour causer le plus de dégâts dans des hangars moites, où les lignes acidulées et nappes stupéfiantes sont sublimées par les lasers, où les samples de breakbeat semblent être taillés pour mettre les corps en mouvement. Evoluant longtemps dans le réseau parallèle d’un underground loin des sentiers battus, tissant des liens entre activistes au quatre coin de l’Europe, le duo connait enfin depuis quelques années le succès qu’il mérite.",
+  "stage": "TECHNO"
+}
