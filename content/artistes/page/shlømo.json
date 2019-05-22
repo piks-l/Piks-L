@@ -1,0 +1,20 @@
+{
+  "iframe": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/qB-FFednKkY\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+  "dateshow": "samedi",
+  "thumbnail": "/images/uploads/schlomo.jpg",
+  "social": [
+    {
+      "lien": "https://www.facebook.com/shlomotaapion/",
+      "awesome": "fab fa-facebook-f"
+    },
+    {
+      "lien": "https://soundcloud.com/shl-mo?fbclid=IwAR2-ZValLlG1bAuybaqFWVeuL0HAWu9mtsqg5DnjRGrYe0Bcvn9ke1d9Qr8",
+      "awesome": "fab fa-soundcloud "
+    }
+  ],
+  "couverture": "/images/uploads/schlomo.jpg",
+  "date": "22/05/2019",
+  "title": "SHLØMO",
+  "description": "Shlømo est au cœur de la techno underground française. En quelques années, il a rapidement émergé avec son propre son distinctif, principalement sur son propre label Taapion Records mais aussi sur des labels influents comme Delsin, Singular Records et Arts Collective. Son oreille et sa sensibilité musicale lui permettent d'allier un design sonore hypnotique à un groove unique, rendant ses performances lives aussi captivantes que ses albums studios.",
+  "stage": "TECHNO"
+}
