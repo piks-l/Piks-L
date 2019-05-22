@@ -59,7 +59,7 @@ export default {
     }
   },
   mounted() {
-    $('#stage).each( function() {
+    $('#stage').each( function() {
         var search = 'samedi';
         var replace = '<small>' + search + 'LOL</small>'
         var el = $(this);
