@@ -34,6 +34,8 @@ export default {
   display:flex;
   justify-content:center;
   align-items:center;
+  background:black;
+  z-index:1;
 }
 eletrobotik-loading .logo {
   position: relative;
@@ -45,7 +47,7 @@ eletrobotik-loading .logo {
 .eletrobotik-loading .box{
   width:500px;
   height:auto;
-  z-index:1!important;
+  z-index:2!important;
 }
 .eletrobotik-loading h3 {
   color:white; 
