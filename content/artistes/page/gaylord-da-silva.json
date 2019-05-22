@@ -1,0 +1,20 @@
+{
+  "iframe": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/yl5sjl6VWY0\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+  "dateshow": "samedi",
+  "thumbnail": "/images/uploads/gaylord-good.jpg",
+  "social": [
+    {
+      "lien": "https://www.facebook.com/ElectrobotikInvasion/",
+      "awesome": "fab fa-facebook-f"
+    },
+    {
+      "lien": "https://soundcloud.com/gaylord-da-silva",
+      "awesome": "fab fa-soundcloud "
+    }
+  ],
+  "couverture": "/images/uploads/gaylord-good.jpg",
+  "date": "22/05/2019",
+  "title": "GAYLORD DA SILVA",
+  "description": "Dj, organisateur de free parties et activiste culturel depuis plus de 10 ans, Gaylord Da Silva est également le directeur du festival Electrobotik Invasion. Passionné depuis tout petit par les musiques électroniques, il délivre des sets techno puissants et taillés pour les festivals.",
+  "stage": "TECHNO"
+}
