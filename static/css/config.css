@@ -1791,3 +1791,6 @@ footer p {
         .festival .artiste-link2 {
             color: #fff;
         }
+        .festival .artiste-link2:hover {
+            color: gray;
+        }
