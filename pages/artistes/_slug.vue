@@ -16,7 +16,7 @@
         <div class="content-artiste">
             <div class="vertical-align">
                 <div class="artiste-stage">
-                    <p>{{ stage }}</p>
+                    <p :id="'stage-'+stage">{{ stage }}</p>
                 </div>
                 <div class="artiste-date">
                     <p :id="'date-'+dateshow">{{ dateshow }}</p>
@@ -66,7 +66,6 @@ export default {
         var text = el.html();
         text = text.split(search).join(replace);
         el.html(text);
-        console.log(text);
     });
     $('#date-samedi').each( function() {
         var search = 'samedi';
@@ -75,7 +74,38 @@ export default {
         var text = el.html();
         text = text.split(search).join(replace);
         el.html(text);
-        console.log(text);
+    });
+    $('#stage-TECHNO').each( function() {
+        var search = 'TECHNO';
+        var replace = '<g>R2-D2</g> / TECHNO STAGE'
+        var el = $(this);
+        var text = el.html();
+        text = text.split(search).join(replace);
+        el.html(text);
+    });
+    $('#stage-HIPHOP').each( function() {
+        var search = 'HIPHOP';
+        var replace = '<g>C3-PO</g> / HIPHOP STAGE'
+        var el = $(this);
+        var text = el.html();
+        text = text.split(search).join(replace);
+        el.html(text);
+    });
+    $('#stage-TRANCE').each( function() {
+        var search = 'TRANCE';
+        var replace = '<g>WALL-E</g> / TRANCE STAGE'
+        var el = $(this);
+        var text = el.html();
+        text = text.split(search).join(replace);
+        el.html(text);
+    });
+     $('#stage-HARDCORE').each( function() {
+        var search = 'HARDCORE';
+        var replace = '<g>T-800</g> / HARDCORE STAGE'
+        var el = $(this);
+        var text = el.html();
+        text = text.split(search).join(replace);
+        el.html(text);
     });
   }
 };
