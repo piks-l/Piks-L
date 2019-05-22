@@ -16,10 +16,10 @@
         <div class="content-artiste">
             <div class="vertical-align">
                 <div class="artiste-stage">
-                    <p id="stage">{{ stage }}</p>
+                    <p>{{ stage }}</p>
                 </div>
                 <div class="artiste-date">
-                    <p id="dateshow">{{ dateshow }}</p>
+                    <p :id="'date-'+dateshow">{{ dateshow }}</p>
                 </div>
                 <div class="content">
                   <vue-markdown>{{description}}</vue-markdown>
@@ -59,9 +59,18 @@ export default {
     }
   },
   mounted() {
-    $('#stage').each( function() {
-        var search = 'samedi';
-        var replace = '<small>' + search + 'LOL</small>'
+    $('#date-vendredi').each( function() {
+        var search = 'VENDREDI';
+        var replace = 'VENDREDI 02 AOÛT'
+        var el = $(this);
+        var text = el.html();
+        text = text.split(search).join(replace);
+        el.html(text);
+        console.log(text);
+    });
+    $('#date-samedi').each( function() {
+        var search = 'SAMEDI';
+        var replace = 'SAMEDI 03 AOÛT'
         var el = $(this);
         var text = el.html();
         text = text.split(search).join(replace);
