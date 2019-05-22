@@ -22,7 +22,7 @@
                     <p>SAMEDI &amp; DIMANCHE</p>
                 </div>
                 <div class="content">
-                  <p><strong>Quoi de mieux qu’une scène sur roue ? Une scène sur un bus ! </strong><br/>
+                  <p><strong>Cette année, sillonnez le festival sur le toit d'un bus !!</strong><br/>
                   Pendant les deux jours du festival vous pourrez vous balader au cœur 
                   du festival et danser sur le toit d’un bus londonien aux rythmes du collectif <strong>Encasa</strong>.</p>
                 </div>
