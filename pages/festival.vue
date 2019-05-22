@@ -25,7 +25,7 @@
                           fondamentalement.</p><br>
                           <p>Cette année, les festivaliers seront plongés dans ambiance toute particulère, entre village rétro-futuriste et fête 
                           foraine. De nombreuses attractions seront proposées aux festicaliers qui pourront retourner en enfance grâce aux auto-temponneuses 
-                          ou faire leplein d'adrénaline en faisant du saut à l'élastique !</p>
+                          ou faire le plein d'adrénaline en faisant du saut à l'élastique !</p>
                       </div>  
                    </div>
               </div>
