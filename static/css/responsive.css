@@ -1556,4 +1556,11 @@
   .ticket .artiste-link2 {
       font-size: 22px;
   }
+  
+  .content-text p.large {
+      font-size: 20px;
+  }
+  .festival .artiste-link2 {
+      font-size: 20px;
+  }
 }
