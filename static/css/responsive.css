@@ -611,6 +611,11 @@
       width: calc(100% - 30px);
   }
   
+  
+  .page-contact.container{
+      min-width: auto;
+      width: calc(100% - 30px);
+  }
   .content-image {
       display: none;
   }
@@ -630,10 +635,6 @@
   }
   .content-text h3 {
       font-size: 28px;
-  }
-  .page-contact .container{
-      min-width: auto;
-      width: calc(100% - 30px);
   }
   .container-contact {
       margin: 0;
