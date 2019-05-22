@@ -34,7 +34,7 @@
       z-index: -1;
       height: 5px;
   } 
-  .test{}
+
   #logo{
     display:none;
   }
@@ -635,7 +635,7 @@
   .container-contact {
       margin: 0 10vh;
       padding: 15px;
-      top: 025px;
+      top: 25px;
       transform: none;
   }
   .press .circle-contact {
@@ -1153,7 +1153,7 @@
     .container-contact {
         margin: 0 10vh;
         padding: 15px;
-        top: 025px;
+        top: 25px;
         transform: none;
     }
     .press .circle-contact {
