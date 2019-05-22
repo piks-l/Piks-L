@@ -16,7 +16,7 @@
               </div>
               <div class="content-festival">
                   <div class="content-image">
-                      <img src="" alt="">
+                      <img src="https://electrobotik.netlify.com/images/fondbilletterie.jpg" alt="">
                   </div>
                   <div class="content-text">
                       <div class="no-color">
@@ -41,12 +41,12 @@
                       </div> 
                   </div>
                   <div class="content-image">
-                      <img src="" alt="">
+                      <img src="https://electrobotik.netlify.com/images/fondbilletterie.jpg" alt="">
                   </div>
               </div>
               <div class="content-festival">
                   <div class="content-image">
-                      <img src="" alt="">
+                      <img src="https://electrobotik.netlify.com/images/fondbilletterie.jpg" alt="">
                   </div>
                   <div class="content-text">
                       <div class="color">
