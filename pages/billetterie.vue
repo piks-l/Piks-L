@@ -41,13 +41,14 @@
               <div class="no-color">
                   <p class="gras">ZONE CAMPING : BAR, ANIMATION &#38; SCENE AVEC <a src="http://www.talowa.fr/tdc-fr/" class="artiste-link2" >TALOWA DUB CLUB</a></p>
               </div>
-              <a title="Billetterie Festik" href="https://electrobotik.festik.net/electrobotik-invasion" class="festik-module" target="_blank"
+              <a title="Billetterie Festik" 
+              href="https://electrobotik.festik.net/electrobotik-invasion" 
+              class="festik-module" target="_blank"
               data-src="https://engine.festik.net/module/electrobotik/1/*"
               data-iframe-id="iframe-festik-electrobotik-1-*"
               data-billetterie-slug="electrobotik"
               data-spectacle-numero="1"
-              data-representation-numero="*"
-              >
+              data-representation-numero="*">
                   Achetez vos billets directement sur festik.net...
               </a>
               <div class="no-color">
