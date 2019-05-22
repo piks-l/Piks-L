@@ -66,7 +66,7 @@ export default {
         var text = el.html();
         text = text.split(search).join(replace);
         el.html(text);
-        console.log(text):
+        console.log(text);
     });
   }
 };
