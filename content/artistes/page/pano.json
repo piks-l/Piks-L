@@ -1,0 +1,20 @@
+{
+  "iframe": "<iframe width=\"100%\" height=\"300\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/171772543&color=%2338343c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+  "dateshow": "samedi",
+  "thumbnail": "/images/uploads/pano.jpg",
+  "social": [
+    {
+      "lien": "https://www.facebook.com/pano.bdk",
+      "awesome": "fab fa-facebook-f"
+    },
+    {
+      "lien": "https://soundcloud.com/pano-opsygen",
+      "awesome": "fab fa-soundcloud "
+    }
+  ],
+  "couverture": "/images/uploads/pano.jpg",
+  "date": "22/05/2019",
+  "title": "PANO",
+  "description": "Dj et producteur reconnu à travers l'hexagone, Pano délivre des sets puissants et énergiques !",
+  "stage": "HARDCORE"
+}
