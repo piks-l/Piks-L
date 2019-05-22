@@ -19,7 +19,7 @@
                     <p>LONDON BUS STAGE</p>
                 </div>
                 <div class="artiste-date">
-                    <p>VENDREDI &amp; SAMEDI</p>
+                    <p>SAMEDI &amp; DIMANCHE</p>
                 </div>
                 <div class="content">
                   <p><strong>Quoi de mieux qu’une scène sur roue ? Une scène sur un bus ! </strong><br/>
