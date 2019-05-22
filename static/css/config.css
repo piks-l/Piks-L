@@ -1805,3 +1805,38 @@ footer p {
         .festival .artiste-link2:hover {
             color: gray;
         }
+
+/***********************Page contact **********************/
+.container-contact {
+    margin: 10vh;
+    position: relative;
+    background: -webkit-linear-gradient(45deg, #0079ff, #b24576);
+    background: linear-gradient(45deg, #0079ff, #b24576);
+    padding: 50px;
+}
+.press {
+    position: absolute;
+    display: block;
+    width: calc(50% - 50px);
+    height: 100%;
+    top: 50px;
+    left: 50px;
+}
+    .press .circle {
+        display: block;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        width: 250px;
+        height: 250px;
+        background: #fff;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        padding: 50px;
+    }
+.contact-info {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    left: 50%;
+}
