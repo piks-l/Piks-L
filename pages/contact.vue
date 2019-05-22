@@ -25,10 +25,10 @@ export default {
       console.log("Loading true")
     },
     finish() {
-      setTimeout(function () { 
-        this.loading = false
-        console.log("Loading false")
-      }.bind(this), 200)
+      
+        this.loading = false;
+        console.log("Loading false");
+      
     }
   }
 }
