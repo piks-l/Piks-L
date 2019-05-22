@@ -23,7 +23,7 @@
                         <button class="button active" @click="filter('.HARDCORE')" data-filter=".HARDCORE"><span>T-800 -</span> HARDCORE STAGE</button>
                         <button class="button active" @click="filter('.TECHNO')" data-filter=".TECHNO"><span>R2-D2 -</span> TECHNO STAGE</button>
                         <button class="button active" @click="filter('.TRANCE')" data-filter=".TRANCE"><span>WALL-E -</span> TRANCE STAGE</button>
-                        <button class="button active" @click="filter('.HIPHOP')" data-filter=".HIPHOP"><span>C-3PO -</span> HIP-HOP STAGE</button>
+                        <button class="button active" @click="filter('.HIPHOP')" data-filter=".HIPHOP"><span>C3-PO -</span> HIP-HOP STAGE</button>
                         <button class="button any" data-filter=""></button>
                     </div>
                     <div class="other-stage">
