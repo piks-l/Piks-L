@@ -1,0 +1,28 @@
+{
+  "iframe": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/9Yyc5Jd4mHA\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+  "dateshow": "vendredi",
+  "thumbnail": "/images/uploads/malice.jpg",
+  "social": [
+    {
+      "lien": "https://www.facebook.com/pg/MaliceRaw/about/?ref=page_internal",
+      "awesome": "fab fa-facebook-f"
+    },
+    {
+      "lien": "https://soundcloud.com/maliceraw",
+      "awesome": "fab fa-soundcloud "
+    },
+    {
+      "lien": "https://www.facebook.com/deletedj/",
+      "awesome": "fab fa-facebook-f"
+    },
+    {
+      "lien": "https://soundcloud.com/delete_dj",
+      "awesome": "fab fa-soundcloud "
+    }
+  ],
+  "couverture": "/images/uploads/malice.jpg",
+  "date": "22/05/2019",
+  "title": "MALICE vs DELETE",
+  "description": "Malice est l’explosif duo raw italien composé d’Aleandro Bollino & Davide Guernieri. Fondé en 2013, leur son complexe et puissant a déjà soufflé les foules de plusieurs grandes scènes internationales.\n\nDelete est un producteur révolutionnaire qui a été propulsé dans la stratosphère hardstyle par des succès tels que Formula, Syndrome ou encore Ghetto. Il a déjà retourné les foules du monde entier lors de ses nombreuses représentations.",
+  "stage": "HARDCORE"
+}
