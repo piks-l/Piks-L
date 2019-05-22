@@ -1106,6 +1106,28 @@
     .content-text h3 {
         font-size: 28px;
     }
+  
+  
+    .container-contact {
+        margin: 0 15vh;
+        padding: 25px;
+    }
+    .press .circle-contact {
+        width: 150px;
+        height: 150px;
+    }
+    .circle-contact a {
+        font-size: 26px;
+    }
+    .contact-info {
+        padding-left: 15px;
+    }
+    .contact-info p, .contact-info a {
+        font-size: 16px;
+    }
+    .contact-info .title-contact {
+        font-size: 24px;
+    }
 }
 @media only screen and (min-width: 960px) and (max-width: 1263px) {
   #parallax {
@@ -1418,6 +1440,27 @@
     .festival .artiste-link2 {
         font-size: 20px;
     }
+  
+    .container-contact {
+        margin: 0 15vh;
+        padding: 25px;
+    }
+    .press .circle-contact {
+        width: 150px;
+        height: 150px;
+    }
+    .circle-contact a {
+        font-size: 26px;
+    }
+    .contact-info {
+        padding-left: 15px;
+    }
+    .contact-info p, .contact-info a {
+        font-size: 16px;
+    }
+    .contact-info .title-contact {
+        font-size: 24px;
+    }
 }
 @media only screen and (min-width: 1264px) and (max-width: 1904px) { 
   .padding {
@@ -1621,5 +1664,9 @@
   }
   .festival .artiste-link2 {
       font-size: 20px;
+  }
+  
+  .container-contact {
+     margin: 0 15vh;
   }
 }
