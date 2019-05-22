@@ -28,7 +28,7 @@ export default {
       setTimeout(function () { 
         this.loading = false
         console.log("Loading false")
-      }.bind(this), 5000)
+      }.bind(this), 200)
     }
   }
 }
