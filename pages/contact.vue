@@ -2,7 +2,7 @@
 <div class="loading">
 <div class="eletrobotik-loading">
  <div class="box">
-   <img class="logo" src="https://electrobotik.netlify.com/images/logo-horizontal.svg" alt="Logo Electrobotik Invasion">
+   <nuxt-link to="/"><img class="logo" src="https://electrobotik.netlify.com/images/logo-horizontal.svg" alt="Logo Electrobotik Invasion"></nuxt-link>
    <h3>02&amp;03 AOÛT 2019 / CIRCUIT PAUL-RICARD</h3>
  </div>
 </div>
