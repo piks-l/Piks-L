@@ -1,0 +1,20 @@
+{
+  "iframe": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/0ctKQJyCzKI\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+  "dateshow": "samedi",
+  "thumbnail": "/images/uploads/jacidorex.jpg",
+  "social": [
+    {
+      "lien": "https://www.facebook.com/Jacidorex/",
+      "awesome": "fab fa-facebook-f"
+    },
+    {
+      "lien": "https://soundcloud.com/jacidorex",
+      "awesome": "fab fa-soundcloud "
+    }
+  ],
+  "couverture": "/images/uploads/jacidorex.jpg",
+  "date": "22/05/2019",
+  "title": "JACID0REX",
+  "description": "Simon Jadot a.k.a Jacid0rex est un producteur bruxellois qui a littéralement pris d’assaut la scène électronique mondiale. Ses différentes collaborations et son projet Neoacid font de lui un des forts représentants d’une nouvelle génération d’artistes.\n\nProducteur et dj prolifique, il vise un son techno progressif et structuré, avec des influences dures etsombres venant de l’Acid (core).",
+  "stage": "TECHNO"
+}
