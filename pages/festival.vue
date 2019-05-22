@@ -18,7 +18,7 @@
                   <div class="content-image">
                       <img src="https://electrobotik.netlify.com/images/fondbilletterie.jpg" alt="">
                   </div>
-                  <div class="content-text">
+                  <div class="content-text content-right">
                       <div class="no-color">
                           <h3>Les manèges à sensations</h3>
                           <p>L'une des particularités du festival est de s'approprier totalement le site dans lequel il s'implante pour le transformer 
@@ -40,7 +40,7 @@
                           <p>Pour cette édition anniverssaire, le festival s'installera au frais, sur une large zone d'herbe au bord de la piste et proposera un camping à l'ombre.</p>
                       </div> 
                   </div>
-                  <div class="content-image">
+                  <div class="content-image  content-right">
                       <img src="https://electrobotik.netlify.com/images/fondbilletterie.jpg" alt="">
                   </div>
               </div>
@@ -48,7 +48,7 @@
                   <div class="content-image">
                       <img src="https://electrobotik.netlify.com/images/fondbilletterie.jpg" alt="">
                   </div>
-                  <div class="content-text">
+                  <div class="content-text  content-right">
                       <div class="color">
                           <h3>Le camping</h3>
                           <p>idéalement situé, le camping Electrobotik invasion offrira cette année aux campeurs une expérience unique. Installé dans une zone entièrement ombragée, le camping bénéficiera de douches, WC, de jeux d'eau, d'un bar et même d'un soundsystem !</p><br>
