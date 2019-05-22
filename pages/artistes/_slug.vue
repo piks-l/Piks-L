@@ -16,10 +16,10 @@
         <div class="content-artiste">
             <div class="vertical-align">
                 <div class="artiste-stage">
-                    <p>{{ stage }}</p>
+                    <p id="stage">{{ stage }}</p>
                 </div>
                 <div class="artiste-date">
-                    <p>{{ dateshow }}</p>
+                    <p id="dateshow">{{ dateshow }}</p>
                 </div>
                 <div class="content">
                   <vue-markdown>{{description}}</vue-markdown>
@@ -59,6 +59,11 @@ export default {
     }
   },
   mounted() {
+    var str = document.getElementById("stage").innerHTML; 
+    var res = str.replace("samedi", "SAMEDI 03 AOÛT");
+    var res2 = str.replace("vendredi", "VENDREDI 02 AOÛT");
+    document.getElementById("stage").innerHTML = res;
+    document.getElementById("stage").innerHTML = res2;
   }
 };
 </script>
