@@ -1808,11 +1808,14 @@ footer p {
 
 /***********************Page contact **********************/
 .container-contact {
-    margin: 10vh;
+    margin: 0 10vh;
     position: relative;
     background: -webkit-linear-gradient(45deg, #0079ff, #b24576);
     background: linear-gradient(45deg, #0079ff, #b24576);
     padding: 50px;
+    top: 50vh;
+    display: block;
+    transform: translatey(-50%);
 }
 .press {
     position: absolute;
