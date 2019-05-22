@@ -53,8 +53,8 @@
                           <h3>Le camping</h3>
                           <p>idéalement situé, le camping Electrobotik invasion offrira cette année aux campeurs une expérience unique. Installé dans une zone entièrement ombragée, le camping bénéficiera de douches, WC, de jeux d'eau, d'un bar et même d'un soundsystem !</p><br>
                           <p class="gras large">TALOWA DUB CLUB Powered by WELDERS HI FI SOUND SYSTEM</p>
-                          <p class="gras">Guest Samedi: <nuxt-link to="/" class="artiste-link" >RAS TWEED</nuxt-link></p>
-                          <p class="gras">Guest Dimanche: Selecta by <nuxt-link to="/" class="artiste-link" >BUNNY DREAD</nuxt-link></p>
+                          <p class="gras">Guest Samedi: <nuxt-link to="/" class="artiste-link2" >RAS TWEED</nuxt-link></p>
+                          <p class="gras">Guest Dimanche: Selecta by <nuxt-link to="/" class="artiste-link2" >BUNNY DREAD</nuxt-link></p>
                       </div>  
                    </div>
               </div>
