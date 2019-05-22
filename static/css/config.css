@@ -1738,7 +1738,7 @@ footer p {
 }
 
 /***********************Page festival **********************/
-.page.festival {
+.page.festival #parralax {
     padding-bottom: 5vh;
 }
   .content-festival {
