@@ -264,18 +264,6 @@
                             </div>
                         </div>
                         <div class="tab">
-                            <input type="radio" id="question21" name="question">
-                            <label class="tab-label" for="question21">Quel est l’âge limite pour venir à ELK ?</label>
-                            <div class="tab-content">
-                              <p>Interdit aux - de 16 ans non accompagnés.<br>
-                                L’accès au festival est autorisé aux mineurs de -16 ans accompagnés d’un responsable légal.</p>
-                              <p>Les mineurs de +16 ans non accompagnés d’un responsable légal devront apporter avec elles une
-                                dérogation signée d’un responsable légal les déchargeant sur l'accompagnateur. Ce document devra
-                                être accompagné d'une copie de pièce d'identité en cours de validité du responsable légal signataire,
-                                à présenter obligatoirement devant un agent d'état civil dûment habilité à l’entrée du festival.</p>
-                            </div>
-                        </div>
-                        <div class="tab">
                             <input type="radio" id="question22" name="question">
                             <label class="tab-label" for="question22">Quels sont les moyens mis à disposition pour collecter mes ordures ?</label>
                             <div class="tab-content">
@@ -283,6 +271,18 @@
                                 au respect des lieux et au tri des déchets</p>
                             </div>
                         </div>
+                        <div class="tab">
+                            <input type="radio" id="question21" name="question">
+                            <label class="tab-label" for="question21">Quel est l’âge limite pour venir à ELK ?</label>
+                            <div class="tab-content">
+                              <p>Interdit aux - de 16 ans non accompagnés.<br>
+                                L’accès au festival est autorisé aux mineurs de -16 ans accompagnés d’un responsable légal.</p>
+                              <p>Les mineurs de +16 ans non accompagnés d’un responsable légal devront apporter avec eux une
+                                dérogation signée d’un responsable légal les déchargeant sur l'accompagnateur. Ce document devra
+                                être accompagné d'une copie de pièce d'identité en cours de validité du responsable légal signataire,
+                                à présenter obligatoirement devant un agent d'état civil dûment habilité à l’entrée du festival.</p>
+                            </div>
+                        </div>                        
                         <div class="tab">
                             <input type="radio" id="question23" name="question">
                             <label class="tab-label" for="question23">À partir de quel âge les billets pour ELK sont-ils payants ?</label>
@@ -322,7 +322,7 @@
                             <input type="radio" id="question28" name="question">
                             <label class="tab-label" for="question28">Puis je distribuer des flyers, affiches ou autres outils promotionnels ?</label>
                             <div class="tab-content">
-                              <p>AFFICHAGE UNIQUEMENT SUR LES POINTS INDIQUES AFIN DE RESPECTER L’ENVIRONNEMENT</p>
+                              <p>Affichage uniquement sur les points indiqués afin de respecter l’environnement</p>
                             </div>
                         </div>
                         <div class="tab">
