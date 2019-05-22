@@ -1,0 +1,24 @@
+{
+  "iframe": "<iframe width=\"100%\" height=\"300\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/346706980&color=%23848c84&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+  "dateshow": "samedi",
+  "thumbnail": "/images/uploads/strez-taz.jpg",
+  "social": [
+    {
+      "lien": "http://www.facebook.com/strezhpf",
+      "awesome": "fab fa-facebook-f"
+    },
+    {
+      "lien": "https://soundcloud.com/strez?fbclid=IwAR0J1bR2yhwVMIdO2W3hbAUBeMEHdWGRMOP7CPmT3bT0zFX4-6aWLc6hQmc",
+      "awesome": "fab fa-soundcloud "
+    },
+    {
+      "lien": "https://www.facebook.com/pg/taz.hpf.live/about/?ref=page_internal",
+      "awesome": "fab fa-facebook-f"
+    }
+  ],
+  "couverture": "/images/uploads/strez-taz.jpg",
+  "date": "22/05/2019",
+  "title": "STREZ vs TAZ",
+  "description": "STREZ\\\nStrez a commencé à jouer en 2006 en créant son propre label et soundsystem \"Happy Family\". Grâce a son style happyhardtek , il trouve rapidement son public et se fait une place importante dans la scène free française.\\\nAvec plus de 45 vinyls et plus de 85 tracks a son actif, il est devenu l'un des artistes les plus demandé en Europe.\\\n\\\nTAZ \\\nAvec bientôt plus de 30 ans de communion avec la musique au sens large, Julien est aujourd'hui un Artiste a part entière, un musicien confirmé, véritable homme orchestre à lui tout seul, à la fois compositeur, remixer, Dj, liveur, producteur, arrangeur, etc..... Musicien de génie, Julien est aussi membre historique du célèbre Sound Système HPF (Happy Familly). Il fait ainsi partie de cette génération de précurseurs, de rebelles et de passionnés, qui ont marqués l'histoire en faisant connaitre et rayonner la musique électronique française à travers le monde.",
+  "stage": "HARDCORE"
+}
