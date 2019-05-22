@@ -38,6 +38,7 @@ export default {
 .loading{
   position:relative;
   z-index:10;
+  background:#000;
 }
 .eletrobotik-loading{
   width:100vw;
