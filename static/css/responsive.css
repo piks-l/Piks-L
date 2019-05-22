@@ -600,9 +600,11 @@
   }
   .ticket .gras {
       font-size: 22px;
+      line-height: 25px;
   }
   .ticket .artiste-link2 {
       font-size: 22px;
+      line-height: 22px;
   }
   .ticket .vignette {
       text-align: center;
