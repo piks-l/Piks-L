@@ -11,7 +11,21 @@
               <div class="color">
                   <p>Le rendez-vous musical incontournable de l'été, ELECTROBOTIK INVASION, fait son grand retour au circuit Paul Ricard pour fêter son dixième anniversaire les 2 et 3 août 2019.
                    Par l'originalité de son concept et sa sélection musical, il est l'exception dans l'uniformisation du paysage des événements électroniques.
-                   L'espace de deux nuits, le festival s'installera des pieds dans l'herbe sur une zone verte et ombragée au bord de la piste du circuit Paul Ricard pour créer un village éphémère où se mêleront l'univers des fêtes foraines, les nouvelles technologies &amp; les arts de la rue.</p>
+                   L'espace de deux nuits, le festival s'installera des pieds dans l'herbe sur une zone verte et ombragée au bord de la piste du circuit Paul Ricard pour 
+                   créer un village éphémère où se mêleront l'univers des fêtes foraines, les nouvelles technologies &amp; les arts de la rue.</p>
+              </div>
+              <div class="content">
+                  <div class="content-image">
+                      <img src="" alt="">
+                  </div>
+                  <div class="no-color">
+                      <h3>Les manèges à sensations</h3>
+                      <p>L'une des particularités du festival est de s'approprier totalement le site dans lequel il s'implante pour le transformer 
+                      fondamentalement.</p><br>
+                      <p>Cette année, les festivaliers seront plongés dans ambiance toute particulère, entre village rétro-futuriste et fête 
+                      foraine. De nombreuses attractions seront proposées aux festicaliers qui pourront retourner en enfance grâce aux auto-temponneuses 
+                      ou faire leplein d'adrénaline en faisant du saut à l'élastique !</p>
+                  </div>              
               </div>
            </div>
         </div>
