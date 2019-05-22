@@ -1728,38 +1728,48 @@ footer p {
 }
 
 /***********************Page festival **********************/
-.content-image {
+.content-festival {
     position: relative;
-    display: inline-block;
-    width: 45%;
 }
-.content-text {
-    position: relative;
-    display: inline-block;
-    width: 55%;
-}
-  .content-text .no-color {
-      margin: 0;
+  .content-image {
+      position: absolute;
+      display: inline-block;
+      width: 45%;
+      overflow: hidden;
+      height: 100%;
   }
-    .content-text h3 {
-        text-transform: uppercase;
-        font-size: 33px;
-        margin: 0 0 15px;
+    .content-image img {
+        display: block;
+        max-width: 100%;
+        position: absolute;
     }
-    .content-text .no-color h3 {
-        color: #000;
+  .content-text {
+      position: relative;
+      display: inline-block;
+      width: 55%;
+  }
+    .content-text .no-color {
+        margin: 0;
     }
-    .content-text .color p {
-        line-height: 25px;
-        font-size: 16px;
-        font-weight: 300;
-    }
-    .content-text p.gras {
-        font-weight: 600;
-        text-transform: none;
-        font-size: 18px;
-        line-height: 30px;
-    }
-    .content-text p.large {
-        font-size: 22px;
-    }
+      .content-text h3 {
+          text-transform: uppercase;
+          font-size: 33px;
+          margin: 0 0 15px;
+      }
+      .content-text .no-color h3 {
+          color: #000;
+      }
+      .content-text .color p {
+          line-height: 25px;
+          font-size: 16px;
+          font-weight: 300;
+      }
+      .content-text p.gras {
+          font-weight: 600;
+          text-transform: none;
+          font-size: 18px;
+          line-height: 30px;
+      }
+      .content-text p.large {
+          font-size: 22px;
+      }
