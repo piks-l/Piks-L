@@ -1,15 +1,17 @@
 <template>
-<div class="loading">
-<div class="eletrobotik-loading">
- <div class="box">
-   <nuxt-link to="/"><img class="logo" src="https://electrobotik.netlify.com/images/logo-horizontal.svg" alt="Logo Electrobotik Invasion"></nuxt-link>
-   <h3>02&amp;03 AOÛT 2019 / CIRCUIT PAUL-RICARD</h3>
- </div>
-</div>
- <div class="circle-loading" >
-  <img src="https://electrobotik.netlify.com/images/circle.svg">
- </div>
- </div>
+  <div class="loading">
+    <div class="eletrobotik-loading">
+      <div class="full-page">
+         <div class="box">
+             <nuxt-link to="/"><img class="logo" src="https://electrobotik.netlify.com/images/logo-horizontal.svg" alt="Logo Electrobotik Invasion"></nuxt-link>
+             <h3>02&amp;03 AOÛT 2019 / CIRCUIT PAUL-RICARD</h3>
+         </div>
+      </div>
+    </div>
+    <div class="circle-loading" >
+       <img src="https://electrobotik.netlify.com/images/circle.svg">
+    </div>
+  </div>
 </template>
 
 <script>
