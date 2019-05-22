@@ -631,9 +631,12 @@
   .content-text h3 {
       font-size: 28px;
   }
-  
+  .page-contact .container{
+      min-width: auto;
+      width: calc(100% - 30px);
+  }
   .container-contact {
-      margin: 0 10vh;
+      margin: 0;
       padding: 15px;
       top: 25px;
       transform: none;
@@ -649,7 +652,8 @@
       padding-left: 15px;
   }
   .contact-info p, .contact-info a {
-      font-size: 16px;
+      font-size: 14px;
+    
   }
   .contact-info .title-contact {
       font-size: 24px;
