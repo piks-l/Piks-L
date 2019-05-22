@@ -1,0 +1,20 @@
+{
+  "iframe": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/bKQcGV8IO9c\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+  "dateshow": "vendredi",
+  "thumbnail": "/images/uploads/itchy.jpg",
+  "social": [
+    {
+      "lien": "https://www.facebook.com/itchyscratchyhadra/",
+      "awesome": "fab fa-facebook-f"
+    },
+    {
+      "lien": "https://soundcloud.com/itchy-and-scratchy?fbclid=IwAR0ViexqNm-5X4Tams37-CHn-6TP1OsQC9vyJL2Y5XF4-1rHcsk5HeQFVB4",
+      "awesome": "fab fa-soundcloud "
+    }
+  ],
+  "couverture": "/images/uploads/itchy.jpg",
+  "date": "22/05/2019",
+  "title": "ITCHY & SCRATCHY",
+  "description": "De la bass music à la techno, Itchy & Scratchy n'ont pas cessé de faire évoluer leur style. \n\nIls finalisent aujourd'hui leur premier album chez Hadra records.\n\nInspirés par l'univers de la Dark Progressive et celui de la Forest, leur live vous plonge dans un voyage cosmique à multiples rebondissements.\n\nA contre courant de la Progressive lumineuse, ils ont cherché du coté d'un son noir, groovy, malicieux, sans concession et qui ne cesse d'évoluer.\n\nJust feel the power !",
+  "stage": "TRANCE"
+}
