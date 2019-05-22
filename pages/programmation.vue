@@ -57,6 +57,8 @@
         </div>
       </div>
       <electrobotik-footer/>
+      <button class="select-date"><span>DATES</span></button>
+      <button class="select-stage"><span>STAGES</span></button>
      </div>
   </div>
 </template>
