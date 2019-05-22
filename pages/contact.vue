@@ -1,12 +1,12 @@
 <template>
   <div class="loading">
     <div class="eletrobotik-loading">
-      <div class="full-page">
+
          <div class="box">
              <nuxt-link to="/"><img class="logo" src="https://electrobotik.netlify.com/images/logo-horizontal.svg" alt="Logo Electrobotik Invasion"></nuxt-link>
              <h3>02&amp;03 AOÛT 2019 / CIRCUIT PAUL-RICARD</h3>
          </div>
-      </div>
+
     </div>
     <div class="circle-loading" >
        <img src="https://electrobotik.netlify.com/images/circle.svg">
@@ -36,11 +36,10 @@ export default {
 
 <style>
 .eletrobotik-loading{
-  width:100%;
+  width:100vw;
   height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  display:block;
+  position:relative;
 }
 eletrobotik-loading .logo {
   position: relative;
