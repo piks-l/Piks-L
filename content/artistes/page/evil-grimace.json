@@ -1,0 +1,20 @@
+{
+  "iframe": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/r-N--0KPwvs\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+  "dateshow": "samedi",
+  "thumbnail": "/images/uploads/evilgrimace.jpg",
+  "social": [
+    {
+      "lien": "https://www.facebook.com/evilgrimacepper",
+      "awesome": "fab fa-facebook-f"
+    },
+    {
+      "lien": "https://soundcloud.com/evilgrimace",
+      "awesome": "fab fa-soundcloud "
+    }
+  ],
+  "couverture": "/images/uploads/evilgrimace.jpg",
+  "date": "22/05/2019",
+  "title": "EVIL GRIMACE",
+  "description": "Evil grimace est le père du Frapcore, un style de musique qu'il a inventé et qui mélange ses trois inspirations principales : Rap Français et le Hardcore !",
+  "stage": "HARDCORE"
+}
