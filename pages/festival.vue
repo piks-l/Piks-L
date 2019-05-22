@@ -14,7 +14,8 @@
                    L'espace de deux nuits, le festival s'installera des pieds dans l'herbe sur une zone verte et ombragée au bord de la piste du circuit Paul Ricard pour créer un village éphémère où se mêleront l'univers des fêtes foraines, les nouvelles technologies &amp; les arts de la rue.</p>
               </div>
            </div>
-       </div>
+        </div>
+     </div>
   </div>
 </template>
 <script>
