@@ -5,7 +5,9 @@
       <nuxt-link to="/" class="header-link" ><img class="small-logo partenaires" src="https://electrobotik.netlify.com/images/logo-horizontal.svg" alt="logo"></nuxt-link>
       <div class="container-contact">
           <div class="press">
-              <a href="#" alt="">DOWNLOAD PRESS KIT</a>
+              <div class="circle">
+                  <a href="#" alt="">DOWNLOAD PRESS KIT</a>
+              </div>
           </div>
           <div class="contact-info">
               <div class="margin-bottom">
