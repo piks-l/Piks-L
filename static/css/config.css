@@ -531,7 +531,7 @@ h1 {
     overflow: hidden;
 }
 #main-container{
-    padding-top: 385px;
+   
 }
 #main-container.artiste {
     padding: 0;
@@ -635,7 +635,7 @@ header.sticky{
     font-size: 14px;
 }
 .padding {
-  
+    padding-top:385px;
 }
 .container{
   margin: 0 auto;
