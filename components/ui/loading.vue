@@ -21,7 +21,7 @@ export default {
       this.loading = true
     },
     finish() {
-      setTimeout(function () { this.loading = false }.bind(this), 5000)
+      this.loading = false 
     }
   }
 }
