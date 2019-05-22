@@ -9,24 +9,24 @@
           </div>
           <div class="contact-info">
               <div class="margin-bottom">
-                  <p class="title">informations :</p>
+                  <p class="title-contact">informations :</p>
                   <a href="mailto:contact@electrobotikinvasion.com">contact@electrobotikinvasion.com</a>
               </div>
               <div class="margin-bottom">
-                  <p class="title">partenariat :</p>
+                  <p class="title-contact">partenariat :</p>
                   <a href="mailto:Remi.marandola@gmail.com">Remi.marandola@gmail.com</a>
               </div>
               <div class="margin-bottom">
-                  <p class="title">stands :</p>
+                  <p class="title-contact">stands :</p>
                   <a href="mailto:anna.electrobotik@gmail.com">anna.electrobotik@gmail.com</a>
               </div>
               <div class="margin-bottom">
-                  <p class="title">communication :</p>
+                  <p class="title-contact">communication :</p>
                   <p>Thibault Ducom</p>
                   <a href="mailto:thibault@asso-regarts.com">thibault@asso-regarts.com</a>
               </div>
               <div class="margin-bottom">
-                  <p class="title">relations presse :</p>
+                  <p class="title-contact">relations presse :</p>
                   <p>Mina Forouhar</p>
                   <a href="mailto:mina@asso-regarts.com">mina@asso-regarts.com</a>
               </div>
