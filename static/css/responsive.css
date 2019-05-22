@@ -959,7 +959,8 @@
     .color {
         padding: 50px 20px;
     }
-    .color p {
+    .color p,
+    .content-text .color p{
         font-size: 16px;
         line-height: 25px;
     }
@@ -971,7 +972,8 @@
         top: 50px;
         left: 12px;
     }
-    .no-color p {
+    .no-color p,
+    .content-text .no-color p{
         font-size: 16px;
         line-height: 25px;
         letter-spacing: 0;
@@ -1091,6 +1093,9 @@
     }
     .festival .artiste-link2 {
         font-size: 18px;
+    }
+    .content-text h3 {
+        font-size: 28px;
     }
 }
 @media only screen and (min-width: 960px) and (max-width: 1263px) {
