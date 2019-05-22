@@ -119,7 +119,15 @@ export default {
             });
             // store filter for each group
             var filters = {};
-
+            // menu mobile date et stage
+            $( ".select-date" ).click(function() {
+              $( ".button-date" ).toggleClass( "mobile-active" );
+              $( ".stage" ).removeClass( "mobile-active" );
+            });
+            $( ".select-stage" ).click(function() {
+              $( ".stage" ).toggleClass( "mobile-active" );
+              $( ".button-date" ).removeClass( "mobile-active" );
+            });
             $('#filters').on( 'click', '.button', function( event ) {
                 var $button = $( event.currentTarget );
                 // get group key
