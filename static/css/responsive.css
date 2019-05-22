@@ -632,6 +632,48 @@
   .content-text h3 {
       font-size: 28px;
   }
+  
+  .container-contact {
+      margin: 0 10vh;
+      padding: 15px;
+      top: 025px;
+      transform: none;
+  }
+  .press .circle-contact {
+      width: 150px;
+      height: 150px;
+  }
+  .circle-contact a {
+      font-size: 26px;
+  }
+  .contact-info {
+      padding-left: 15px;
+  }
+  .contact-info p, .contact-info a {
+      font-size: 16px;
+  }
+  .contact-info .title-contact {
+      font-size: 24px;
+  }
+  .press {
+      position: relative;
+      width: 100%;
+      top: 0;
+      left: 0;
+      margin-bottom: 25px;
+  }
+  .press .circle-contact {
+      width: 150px;
+      height: 150px;
+      transform: translatex(-50%);
+      top: 0;
+  }
+  .contact-info {
+      padding-left: 0;
+      width: 100%;
+      left: 0;
+      text-align: center;
+  }
 }
 @media only screen and (min-width: 600px) and (max-width: 959px) {
   #parallax {
@@ -1110,8 +1152,10 @@
   
   
     .container-contact {
-        margin: 0 15vh;
-        padding: 25px;
+        margin: 0 10vh;
+        padding: 15px;
+        top: 025px;
+        transform: none;
     }
     .press .circle-contact {
         width: 150px;
@@ -1128,6 +1172,25 @@
     }
     .contact-info .title-contact {
         font-size: 24px;
+    }
+    .press {
+        position: relative;
+        width: 100%;
+        top: 0;
+        left: 0;
+        margin-bottom: 25px;
+    }
+    .press .circle-contact {
+        width: 150px;
+        height: 150px;
+        transform: translatex(-50%);
+        top: 0;
+    }
+    .contact-info {
+        padding-left: 0;
+        width: 100%;
+        left: 0;
+        text-align: center;
     }
 }
 @media only screen and (min-width: 960px) and (max-width: 1263px) {
