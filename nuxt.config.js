@@ -41,7 +41,8 @@ module.exports = {
     }],
     ['@nuxtjs/robots', {
       UserAgent: 'Googlebot',
-      Disallow: '/admin*'
+      Disallow: '/admin*',
+      Sitemap: 'https://electrobotik.netlify.com/sitemap.xml'
     }]
   ],
   generate: {
