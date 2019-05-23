@@ -78,10 +78,30 @@
                 </a>
             </div><!--
             --><div class="partenaire">
-            <a target="_blank" href="">
+            <a target="_blank" href="https://www.pwfm.fr/">
                 <div class="effect">
                     <div class="volet1">
-                        <a target="_blank" href="https://www.pwfm.fr/"><img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/8.png'">
+                        <img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/8.png'">
+                    </div>
+                    <div class="volet2"></div>
+                </div>
+                </a>
+            </div><!--
+            --><div class="partenaire">
+            <a target="_blank" href="https://www.opnminded.com/2019/03/22/electrobotik-invasion-fete-son-10eme-anniversaire-les-2-et-3-aout-prochains.html">
+                <div class="effect">
+                    <div class="volet1">
+                        <img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/9.png'">
+                    </div>
+                    <div class="volet2"></div>
+                </div>
+                </a>
+            </div><!--
+            --><div class="partenaire">
+            <a target="_blank" href="http://www.magmalemag.com/">
+                <div class="effect">
+                    <div class="volet1">
+                        <img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/10.png'">
                     </div>
                     <div class="volet2"></div>
                 </div>
@@ -91,27 +111,7 @@
             <a target="_blank" href="">
                 <div class="effect">
                     <div class="volet1">
-                        <a target="_blank" href="https://www.opnminded.com/2019/03/22/electrobotik-invasion-fete-son-10eme-anniversaire-les-2-et-3-aout-prochains.html"><img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/9.png'">
-                    </div>
-                    <div class="volet2"></div>
-                </div>
-                </a>
-            </div><!--
-            --><div class="partenaire">
-            <a target="_blank" href="">
-                <div class="effect">
-                    <div class="volet1">
-                        <a target="_blank" href="http://www.magmalemag.com/"><img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/10.png'">
-                    </div>
-                    <div class="volet2"></div>
-                </div>
-                </a>
-            </div><!--
-            --><div class="partenaire">
-            <a target="_blank" href="">
-                <div class="effect">
-                    <div class="volet1">
-                        <a target="_blank" href=""><img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/11.png'">
+                        <img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/11.png'">
                     </div>
                     <div class="volet2"></div>
                 </div>
