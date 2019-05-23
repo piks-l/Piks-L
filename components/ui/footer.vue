@@ -38,10 +38,7 @@ export default {
 #footer .reseaux {
     background: linear-gradient(0.25turn, #0079ff, #b24576);
 }
-#footer .reseaux a {
- color: #FFF;
- font-size: 23px;
-}
+
 #footer .copyright {
   background: #000;
 }
@@ -68,10 +65,11 @@ export default {
 
 /* FOOTER RESEAUX */
 #footer .reseaux a {
-  color: #525252;
+ color: #FFF;
+ font-size: 23px;
 }
 #footer .reseaux a:hover {
-  color: #FFFFFF;
+  color: #000000;
 }
 
 /* FOOTER COPYRIGHT */
