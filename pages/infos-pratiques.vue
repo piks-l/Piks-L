@@ -76,7 +76,7 @@
                     </div>
                     <div class="reservez">
                         <i class="far fa-thumbs-up"></i>
-                        <p class="gras">Réservez votre trajet en train sur la plateforme de cotrainage <a href="https://www.allonsbontrain.fr/" target="_blank" alt="AllonsBonTrain">AllonsBonTrain</a> !</p>
+                        <p class="gras">Réservez votre trajet en train sur la plateforme de cotrainage <a href="https://www.allonsbontrain.fr/event/electrobotik-invasion-festival" target="_blank" alt="AllonsBonTrain">AllonsBonTrain</a> !</p>
                         <p>Petit plus, vous voyagez avec d'autres festivaliers et vous réduisez votre empreinte carbone</p>
                     </div>
                 </div>
@@ -89,9 +89,9 @@
                     <div class="no-color">
                         <p>Le samedi et le dimanche TALOWA DUB CLUB présente un week-end Dub a Dub Style au camping de l'ELECTROBOTIK INVASION !
                           Toute la journée viens t'enivrer aux rythmes de basses lourdes, sur des sonorités dub reggae steppas aux côtés de légendes
-                          du milieu : le talentueux mc <nuxt-link to="/" class="artiste-link" >Ras Tweed</nuxt-link> dont la réputation n'est plus à faire et le warrior  <nuxt-link to="/" class="artiste-link" >Bunny Dread</nuxt-link> à la sélection musicale
+                          du milieu : le talentueux mc <nuxt-link to="/artistes/ras-tweed/" class="artiste-link" >Ras Tweed</nuxt-link> dont la réputation n'est plus à faire et le warrior  <nuxt-link to="/artistes/bunny-dread/" class="artiste-link" >Bunny Dread</nuxt-link> à la sélection musicale
                           pointue ! Le tout sera sonorisé par le puissant Welders Hi Fi Sound System.</p><br>
-                        <p>Grosse ambiance 'heavy style' au Camping du samedi au dimanche signé Talowa Productions x ELECTROBOTIK INVASION.</p>
+                        <p>Grosse ambiance '<i>Heavy style<i>' au Camping du samedi au dimanche signé <strong>Talowa Productions</strong> x <strong>ELECTROBOTIK INVASION</strong>.</p>
                     </div>
                     <div class="tabs">
                         <div class="tab">
