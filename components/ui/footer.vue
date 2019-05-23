@@ -25,6 +25,7 @@ export default {
   /*position: relative;*/
   bottom: 0;
   width: 100%;
+  padding:0px;
 }
 
 /* FOOTER GENERAL */
@@ -35,7 +36,11 @@ export default {
   text-align: center;
 }
 #footer .reseaux {
-  background: #151515;
+    background: linear-gradient(0.25turn, #0079ff, #b24576);
+}
+#footer .reseaux a {
+ color: #FFF;
+ font-size: 23px;
 }
 #footer .copyright {
   background: #000;
@@ -46,8 +51,9 @@ export default {
 #footer .copyright a:hover {
   color: #FCFCFC;
 }
+
 #footer a {
-  color: #525252;
+  color: #FFFFFF;
   padding: 15px;
   text-decoration: none;
   display: inline-block;
