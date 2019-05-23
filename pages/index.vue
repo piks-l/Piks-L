@@ -32,12 +32,14 @@
                   <h4>- HARCORE STAGE -</h4>
                   <p><nuxt-link to="/artistes/ak47/" alt="AK47">AK47</nuxt-link > . <nuxt-link to="/artistes/andy-the-core-lady-dammage/" alt="">ANDY THE CORE VS LADY DAMMAGE</nuxt-link></p>
                   <p><nuxt-link to="/artistes/asphalt-pirates/" alt="">ASPHALT PIRATES</nuxt-link> . <nuxt-link to="/artistes/casual-gabberz/" alt="">CASUAL GABBERZ</nuxt-link></p>
-                  <p><nuxt-link to="/" alt="">EVIL GRIMACE</nuxt-link> . <nuxt-link to="/" alt="">HARD EFFECTZ VS VANDAL!SM</nuxt-link></p>
-                  <p><nuxt-link to="/artistes/hatred/" alt="">HATRED</nuxt-link> . <nuxt-link to="/" alt="">INNOMINATE</nuxt-link> . <nuxt-link to="/" alt="">MAISSOUILLE</nuxt-link></p>
-                  <p><nuxt-link to="/" alt="">MALICE VS DELETE</nuxt-link> . <nuxt-link to="/" alt="">MANU LE MALIN</nuxt-link></p>
-                  <p><nuxt-link to="/" alt="">REBELION</nuxt-link> . <nuxt-link to="/" alt="">STREIKS & KRATCHS</nuxt-link></p>
-                  <p><nuxt-link to="/" alt="">THANOS VS THE CLAMPS</nuxt-link> . <nuxt-link to="/" alt="">THE DJ PRODUCER</nuxt-link></p>
-                  <p><nuxt-link to="/" alt="">THE SICKEST SQUAD</nuxt-link> . <nuxt-link to="/" alt="">THRASHER VS SATAN</nuxt-link></p>
+                  <p><nuxt-link to="/artistes/evil-grimace/" alt="">EVIL GRIMACE</nuxt-link> . <nuxt-link to="/artistes/hard-effectz-vs-vandal-sm/" alt="">HARD EFFECTZ VS VANDAL!SM</nuxt-link></p>
+                  <p><nuxt-link to="/artistes/hatred/" alt="">HATRED</nuxt-link> . <nuxt-link to="/artistes/innominate/" alt="">INNOMINATE</nuxt-link> . <nuxt-link to="/artistes/massouille/" alt="">MAISSOUILLE</nuxt-link></p>
+                  <p><nuxt-link to="/artistes/malice-vs-delete/" alt="">MALICE VS DELETE</nuxt-link> . <nuxt-link to="/artistes/manu-le-malin/" alt="">MANU LE MALIN</nuxt-link></p>
+                  <p><nuxt-link to="/artistes/ornorm-adri1/" alt="">ORNORM ADRI1</nuxt-link> . <nuxt-link to="/artistes/pano/" alt="">PANO</nuxt-link></p>
+                  <p><nuxt-link to="/artistes/rebelion/" alt="">REBELION</nuxt-link> . <nuxt-link to="/artistes/streiks-skratchs" alt="">STREIKS & KRATCHS</nuxt-link></p>
+                  <p><nuxt-link to="/artistes/strez-vs-taz/" alt="">STREZ vs TAZ</nuxt-link> . <nuxt-link to="/artistes/tom-vs-dam-s/" alt="">TOM vs DAM’S</nuxt-link></p>
+                  <p><nuxt-link to="/artistes/thanos-vs-the-clamps/" alt="">THANOS VS THE CLAMPS</nuxt-link> . <nuxt-link to="/artistes/the-dj-producer/" alt="">THE DJ PRODUCER</nuxt-link></p>
+                  <p><nuxt-link to="/artistes/the-sickest-squad/" alt="">THE SICKEST SQUAD</nuxt-link> . <nuxt-link to="/artistes/trasher-vs-satan/" alt="">THRASHER VS SATAN</nuxt-link></p>
                   <p><nuxt-link to="/artistes/warface/" alt="">WARFACE</nuxt-link></p>
               </div>
               <div class="block-scene">
@@ -47,7 +49,7 @@
                   <p><nuxt-link to="/" alt="">ANTON SERRA & OSTER LAPWASS</nuxt-link> . <nuxt-link to="/" alt="">DAVODKA</nuxt-link></p>
                   <p><nuxt-link to="/" alt="">DJ DEL & DJ DAZ</nuxt-link> . <nuxt-link to="/" alt="">DJ FLY</nuxt-link> . <nuxt-link to="/" alt="">DOUMS & NÉPAL</nuxt-link></p>
                   <p><nuxt-link to="/" alt="">HERETIK SYSTEM PRÉSENTE MAD MAXX SHOW</nuxt-link></p>
-                  <p><nuxt-link to="/" alt="artistes/svinkels/">SVINKELS</nuxt-link></p>
+                  <p><nuxt-link to="/artistes/svinkels/" alt="">SVINKELS</nuxt-link></p>
               </div>
             </div>
             <div class="colonne"><br/>
