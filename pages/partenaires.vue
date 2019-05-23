@@ -48,7 +48,7 @@
                 </a>
             </div><!--
             --><div class="partenaire">
-            <a target="_blank" href="http://fr.traxmag.com/article/42283-marseille-les-maitres-du-hardcore-reunis-pour-une-soiree-de-soutien-au-festival-electrobotik-invasion">
+            <a target="_blank" href="fr.traxmag.com/article/50503-var-un-circuit-automobile-va-se-transformer-en-dancefloor-techno-trance-et-hardcore">
                 <div class="effect">
                     <div class="volet1">
                         <img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/5.png'">
