@@ -89,7 +89,7 @@
                     <div class="no-color">
                         <p>Le samedi et le dimanche TALOWA DUB CLUB présente un week-end Dub a Dub Style au camping de l'ELECTROBOTIK INVASION !
                           Toute la journée viens t'enivrer aux rythmes de basses lourdes, sur des sonorités dub reggae steppas aux côtés de légendes
-                          du milieu : le talentueux mc <nuxt-link to="/artistes/ras-tweed/" class="artiste-link" >Ras Tweed</nuxt-link> dont la réputation n'est plus à faire et le warrior  <nuxt-link to="/artistes/bunny-dread/" class="artiste-link" >Bunny Dread</nuxt-link> à la sélection musicale
+                          du milieu : le talentueux mc <nuxt-link to="/artistes/camping-stage/" class="artiste-link" >Ras Tweed</nuxt-link> dont la réputation n'est plus à faire et le warrior  <nuxt-link to="/artistes/camping-stage/" class="artiste-link" >Bunny Dread</nuxt-link> à la sélection musicale
                           pointue ! Le tout sera sonorisé par le puissant Welders Hi Fi Sound System.</p><br>
                         <p>Grosse ambiance '<i>Heavy style</i>' au Camping du samedi au dimanche signé <strong>Talowa Productions</strong> x <strong>ELECTROBOTIK INVASION</strong>.</p>
                     </div>
