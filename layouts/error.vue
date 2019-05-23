@@ -30,6 +30,9 @@ export default {
   background:black;
   z-index:1;
 }
+.layout-electrobotik h1 {
+    font-size: 27px;
+}
 .eletrobotik-loading .logo {
   position: relative;
   max-width: auto;
