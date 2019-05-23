@@ -4,7 +4,7 @@
    <div class="box">
      <nuxt-link to="/"><img class="logo" src="https://electrobotik.netlify.com/images/logo-horizontal.svg" alt="Logo Electrobotik Invasion"></nuxt-link>
       <h3>02&amp;03 AOÛT 2019 / CIRCUIT PAUL-RICARD</h3>
-      <nuxt-link to="/"><h1 v-if="error.statusCode === 404">Page non trouvée</h1></nuxt-link>
+      <h1 v-if="error.statusCode === 404">Page non trouvée</h1>
       <h1 v-else>Une erreur est survenue !</h1>
    </div>
   </div>
