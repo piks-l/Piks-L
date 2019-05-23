@@ -45,10 +45,10 @@
               <div class="block-scene">
                   <h3>C-3PO</h3>
                   <h4>- HIP-HOP STAGE -</h4>
-                  <p><nuxt-link to="artistes/alkpote/" alt="">ALKPOTE</nuxt-link> . <nuxt-link to="/" alt="">AL’TARBA X SENBEÏ</nuxt-link></p>
-                  <p><nuxt-link to="/" alt="">ANTON SERRA & OSTER LAPWASS</nuxt-link> . <nuxt-link to="/" alt="">DAVODKA</nuxt-link></p>
-                  <p><nuxt-link to="/" alt="">DJ DEL & DJ DAZ</nuxt-link> . <nuxt-link to="/" alt="">DJ FLY</nuxt-link> . <nuxt-link to="/" alt="">DOUMS & NÉPAL</nuxt-link></p>
-                  <p><nuxt-link to="/" alt="">HERETIK SYSTEM PRÉSENTE MAD MAXX SHOW</nuxt-link></p>
+                  <p><nuxt-link to="/artistes/alkpote/" alt="">ALKPOTE</nuxt-link> . <nuxt-link to="/artistes/al-tarba-x-senbeï/" alt="">AL’TARBA X SENBEÏ</nuxt-link></p>
+                  <p><nuxt-link to="/artistes/anton-serra-oster-lapwass/" alt="">ANTON SERRA & OSTER LAPWASS</nuxt-link> . <nuxt-link to="/artistes/davodka/" alt="">DAVODKA</nuxt-link></p>
+                  <p><nuxt-link to="/artistes/dj-djel-dj-daz/" alt="">DJ DEL & DJ DAZ</nuxt-link> . <nuxt-link to="/artistes/dj-fly/" alt="">DJ FLY</nuxt-link> . <nuxt-link to="/artistes/doums-népal/" alt="">DOUMS & NÉPAL</nuxt-link></p>
+                  <p><nuxt-link to="/artistes/heretik-system-présente-mad-maxx-show/" alt="">HERETIK SYSTEM PRÉSENTE MAD MAXX SHOW</nuxt-link></p>
                   <p><nuxt-link to="/artistes/svinkels/" alt="">SVINKELS</nuxt-link></p>
               </div>
             </div>
@@ -56,14 +56,14 @@
               <div class="block-scene">
                   <h3>WALL-E</h3>
                   <h4>- TRANCE STAGE -</h4>
-                  <p><nuxt-link to="/" alt="">BELIK BOOM</nuxt-link> . <nuxt-link to="/" alt="">BERG</nuxt-link> . <nuxt-link to="/" alt="">COMING SOON</nuxt-link></p>
-                  <p><nuxt-link to="/" alt="">DJ H.P VS HANBLECEYA</nuxt-link> . <nuxt-link to="/" alt="">GONZI</nuxt-link></p>
-                  <p><nuxt-link to="/" alt="">ITCHY & SCRATCHY</nuxt-link></p>
-                  <p><nuxt-link to="/" alt="">JUNO REACTOR VS UNDERCOVER</nuxt-link></p>
-                  <p><nuxt-link to="/" alt="">KOKMOK</nuxt-link> . <nuxt-link to="/" alt="">LA P’TITE FUMÉE</nuxt-link> . <nuxt-link to="/" alt="">MAITIKA</nuxt-link></p>
-                  <p><nuxt-link to="/" alt="artistes/major7/">MAJOR 7</nuxt-link> . <nuxt-link to="/" alt="">MANDRAGORA</nuxt-link> . <nuxt-link to="/" alt="">MISS TEKIX VS OÏKIA</nuxt-link></p>
-                  <p><nuxt-link to="/" alt="">NELIO</nuxt-link> . <nuxt-link to="/" alt="">RANJI VS GHOST RIDER</nuxt-link> . <nuxt-link to="/" alt="">SKULLZ</nuxt-link></p>
-                  <p><nuxt-link to="/" alt="">STRYKER</nuxt-link> . <nuxt-link to="/" alt="">X-NOIZE</nuxt-link></p>
+                  <p><nuxt-link to="/artistes/belik-boom/" alt="">BELIK BOOM</nuxt-link> . <nuxt-link to="/artistes/berg/" alt="">BERG</nuxt-link> . <nuxt-link to="/artistes/coming-soon/" alt="">COMING SOON</nuxt-link></p>
+                  <p><nuxt-link to="/artistes/dj-h-p-vs-hanbleceya/" alt="">DJ H.P VS HANBLECEYA</nuxt-link> . <nuxt-link to="/artistes/gonzi/" alt="">GONZI</nuxt-link></p>
+                  <p><nuxt-link to="/artistes/itchy-scratchy/" alt="">ITCHY & SCRATCHY</nuxt-link></p>
+                  <p><nuxt-link to="/artistes/juno-reactor-vs-undercover/" alt="">JUNO REACTOR VS UNDERCOVER</nuxt-link></p>
+                  <p><nuxt-link to="/artistes/kokmok/" alt="">KOKMOK</nuxt-link> . <nuxt-link to="/artistes/la-p-tite-fumée/" alt="">LA P’TITE FUMÉE</nuxt-link> . <nuxt-link to="/artistes/maitika/" alt="">MAITIKA</nuxt-link></p>
+                  <p><nuxt-link to="/artistes/major-7/" alt="artistes/major7/">MAJOR 7</nuxt-link> . <nuxt-link to="/artistes/mandragora/" alt="">MANDRAGORA</nuxt-link> . <nuxt-link to="/artistes/miss-tekix-vs-oïkia/" alt="">MISS TEKIX VS OÏKIA</nuxt-link></p>
+                  <p><nuxt-link to="/artistes/nelio/" alt="">NELIO</nuxt-link> . <nuxt-link to="/artistes/ranji-vs-ghost-rider/" alt="">RANJI VS GHOST RIDER</nuxt-link> . <nuxt-link to="/artistes/skullz/" alt="">SKULLZ</nuxt-link></p>
+                  <p><nuxt-link to="/artistes/stryker/" alt="">STRYKER</nuxt-link> . <nuxt-link to="/artistes/x-noize/" alt="">X-NOIZE</nuxt-link></p>
               </div>
               <div class="block-scene">
                   <h3>R2-D2</h3>
