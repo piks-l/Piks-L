@@ -1,6 +1,6 @@
 <template>
   <div class="page festival">
-    <div id="parallax" data-image-src="https://electrobotik.netlify.com/images/fondbilletterie.jpg">
+    <div id="parallax" data-image-src="https://electrobotik.netlify.com/images/fondfestival.jpg">
         <nuxt-link to="/" class="header-link" ><img id="logo" class="partenaires" src="https://electrobotik.netlify.com/images/logo.svg"  alt="logo"></nuxt-link>
        <nuxt-link to="/" class="header-link" ><img class="small-logo partenaires" src="https://electrobotik.netlify.com/images/logo-horizontal.svg" alt="logo"></nuxt-link>
        <div class="container-infos scene_element scene_element--fadein">
