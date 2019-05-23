@@ -47,7 +47,7 @@
                   <h4>- HIP-HOP STAGE -</h4>
                   <p><nuxt-link to="/artistes/alkpote/" alt="">ALKPOTE</nuxt-link> . <nuxt-link to="/artistes/al-tarba-x-senbeï/" alt="">AL’TARBA X SENBEÏ</nuxt-link></p>
                   <p><nuxt-link to="/artistes/anton-serra-oster-lapwass/" alt="">ANTON SERRA & OSTER LAPWASS</nuxt-link> . <nuxt-link to="/artistes/davodka/" alt="">DAVODKA</nuxt-link></p>
-                  <p><nuxt-link to="/artistes/dj-djel-dj-daz/" alt="">DJ DEL & DJ DAZ</nuxt-link> . <nuxt-link to="/artistes/dj-fly/" alt="">DJ FLY</nuxt-link> . <nuxt-link to="/artistes/doums-népal/" alt="">DOUMS & NÉPAL</nuxt-link></p>
+                  <p><nuxt-link to="/artistes/dj-djel-dj-daz/" alt="">DJ DJEL & DJ DAZ</nuxt-link> . <nuxt-link to="/artistes/dj-fly/" alt="">DJ FLY</nuxt-link> . <nuxt-link to="/artistes/doums-népal/" alt="">DOUMS & NÉPAL</nuxt-link></p>
                   <p><nuxt-link to="/artistes/heretik-system-présente-mad-maxx-show/" alt="">HERETIK SYSTEM PRÉSENTE MAD MAXX SHOW</nuxt-link></p>
                   <p><nuxt-link to="/artistes/svinkels/" alt="">SVINKELS</nuxt-link></p>
               </div>
@@ -61,19 +61,20 @@
                   <p><nuxt-link to="/artistes/itchy-scratchy/" alt="">ITCHY & SCRATCHY</nuxt-link></p>
                   <p><nuxt-link to="/artistes/juno-reactor-vs-undercover/" alt="">JUNO REACTOR VS UNDERCOVER</nuxt-link></p>
                   <p><nuxt-link to="/artistes/kokmok/" alt="">KOKMOK</nuxt-link> . <nuxt-link to="/artistes/la-p-tite-fumée/" alt="">LA P’TITE FUMÉE</nuxt-link> . <nuxt-link to="/artistes/maitika/" alt="">MAITIKA</nuxt-link></p>
-                  <p><nuxt-link to="/artistes/major-7/" alt="artistes/major7/">MAJOR 7</nuxt-link> . <nuxt-link to="/artistes/mandragora/" alt="">MANDRAGORA</nuxt-link> . <nuxt-link to="/artistes/miss-tekix-vs-oïkia/" alt="">MISS TEKIX VS OÏKIA</nuxt-link></p>
-                  <p><nuxt-link to="/artistes/nelio/" alt="">NELIO</nuxt-link> . <nuxt-link to="/artistes/ranji-vs-ghost-rider/" alt="">RANJI VS GHOST RIDER</nuxt-link> . <nuxt-link to="/artistes/skullz/" alt="">SKULLZ</nuxt-link></p>
+                  <p><nuxt-link to="/artistes/major7/" alt="">MAJOR7</nuxt-link> . <nuxt-link to="/artistes/mandragora/" alt="">MANDRAGORA</nuxt-link> . <nuxt-link to="/artistes/miss-tekix-vs-oïkia/" alt="">MISS TEKIX VS OÏKIA</nuxt-link></p>
+                  <p><nuxt-link to="/artistes/nelio/" alt="">NELIO</nuxt-link> . <nuxt-link to="/artistes/ranji-vs-ghost-rider/" alt="">GHOST RIDER vs RANJI</nuxt-link> . <nuxt-link to="/artistes/skullz/" alt="">SKULLZ</nuxt-link></p>
                   <p><nuxt-link to="/artistes/stryker/" alt="">STRYKER</nuxt-link> . <nuxt-link to="/artistes/x-noize/" alt="">X-NOIZE</nuxt-link></p>
               </div>
               <div class="block-scene">
                   <h3>R2-D2</h3>
                   <h4>- TECHNO STAGE -</h4>
-                  <p><nuxt-link to="/" alt="artistes/14anger/">14ANGER</nuxt-link> . <nuxt-link to="/" alt="">999999999</nuxt-link> . <nuxt-link to="/" alt="">BEN SIMS</nuxt-link></p>
-                  <p><nuxt-link to="/" alt="">CHICKS LUV US</nuxt-link> . <nuxt-link to="/" alt="">CLERIC</nuxt-link> . <nuxt-link to="/" alt="">ESTHER</nuxt-link></p>
-                  <p><nuxt-link to="/" alt="">I HATE MODELS</nuxt-link> . <nuxt-link to="/" alt="">JACID0REX</nuxt-link> . <nuxt-link to="/" alt="">LEXLAY</nuxt-link></p>
-                  <p><nuxt-link to="/" alt="">MARTIN BOOKS</nuxt-link> . <nuxt-link to="/" alt="">MINIMUM SYNDICAT</nuxt-link></p>
-                  <p><nuxt-link to="/" alt="artistes/octave-one/">OCTAVE ONE</nuxt-link> . <nuxt-link to="/" alt="">PAUL DAMY</nuxt-link> . <nuxt-link to="/" alt="">PAUL RITCH</nuxt-link></p>
-                  <p><nuxt-link to="/" alt="">SHLØMO</nuxt-link> . <nuxt-link to="/" alt="">TIMMO</nuxt-link></p>
+
+                  <p><nuxt-link to="/artistes/14anger/" alt="">14ANGER</nuxt-link> . <nuxt-link to="/artistes/999999999/" alt="">999999999</nuxt-link> . <nuxt-link to="/artistes/ben-sims/" alt="">BEN SIMS</nuxt-link></p>
+                  <p><nuxt-link to="/artistes/chicks-luv-us/" alt="">CHICKS LUV US</nuxt-link> . <nuxt-link to="/artistes/cleric/" alt="">CLERIC</nuxt-link> . <nuxt-link to="/artistes/esther/" alt="">ESTHER</nuxt-link> . <nuxt-link to="/artistes/eikon/" alt="">EIKON</nuxt-link></p>
+                  <p><nuxt-link to="/artistes/gaylord-da-silva/" alt="">GAYLORD DA SILVA</nuxt-link> . <nuxt-link to="/artistes/i-hate-models/" alt="">I HATE MODELS</nuxt-link> . <nuxt-link to="/artistes/jacidørex/" alt="">JACID0REX</nuxt-link> . <nuxt-link to="/artistes/lexlay/" alt="">LEXLAY</nuxt-link></p>
+                  <p><nuxt-link to="/artistes/martin-books/" alt="">MARTIN BOOKS</nuxt-link> . <nuxt-link to="/artistes/minimum-syndicat/" alt="">MINIMUM SYNDICAT</nuxt-link></p>
+                  <p><nuxt-link to="/artistes/octave-one/" alt="artistes/octave-one/">OCTAVE ONE</nuxt-link> . <nuxt-link to="/artistes/paul-damy/" alt="">PAUL DAMY</nuxt-link> . <nuxt-link to="/artistes/paul-ritch/" alt="">PAUL RITCH</nuxt-link></p>
+                  <p><nuxt-link to="/artistes/shlømo/" alt="">SHLØMO</nuxt-link> . <nuxt-link to="/artistes/timmo/" alt="">TIMMO</nuxt-link></p>
               </div>
             </div>
         </div>
