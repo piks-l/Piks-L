@@ -43,8 +43,8 @@
                           automobile, moto, camion, karting, vélos, course à obstacles, festivals de musique ainsi que des présentations presse,
                           soirées etc...</p>
                         <div class="lien">
-                          <a href="#" alt="map"><i class="fas fa-map-marker-alt"></i></a><!--
-                          --><a href="#" alt="link"><i class="fas fa-link"></i></a>
+                          <a target="_blank" href="https://www.google.com/maps/place/Circuit+Automobile+Paul+Ricard/@43.2515762,5.7923989,15z/data=!4m2!3m1!1s0x0:0xa3a8d46380222f0f?sa=X&ved=2ahUKEwjX2drQurHiAhWMx4UKHZtwApMQ_BIwH3oECAwQCA" alt="Google map"><i class="fas fa-map-marker-alt"></i></a><!--
+                          --><a target="_blank" href="https://www.circuitpaulricard.com/" alt="Circuit Paul Ricard"><i class="fas fa-link"></i></a>
                         </div>
                     </div>
                     <div class="vignette voiture">
