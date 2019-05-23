@@ -19,7 +19,7 @@
                     <p>LONDON BUS STAGE</p>
                 </div>
                 <div class="artiste-date">
-                    <p>SAMEDI &amp; DIMANCHE</p>
+                    <p>VENDREDI &amp; SAMEDI</p>
                 </div>
                 <div class="content">
                   <p><strong>Cette année, sillonnez le festival sur le toit d'un bus !!</strong><br/>
