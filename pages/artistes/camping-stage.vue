@@ -19,7 +19,7 @@
                     <p>CAMPING STAGE</p>
                 </div>
                 <div class="artiste-date">
-                    <p>VENDREDI &amp; SAMEDI</p>
+                    <p>SAMEDI &amp; DIMANCHE</p>
                 </div>
                 <div class="content">
                   <p><strong>TALOWA DUB CLUB</strong> présente un week-end Dub a Dub Style au camping de l'ELECTROBOTIK !
