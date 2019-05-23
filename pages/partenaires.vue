@@ -8,12 +8,14 @@
           <h2>PARTENAIRES</h2>
           <div class="content">
             <div class="partenaire">
+                <a target="_blank" href="https://www.circuitpaulricard.com/">
                 <div class="effect">
                     <div class="volet1">
-                        <a target="_blank" href="https://www.circuitpaulricard.com/"><img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/1.jpg'"></a>
+                        <img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/1.jpg'">
                     </div>
                     <div class="volet2"></div>
                 </div>
+                </a>
             </div><!--
             --><div class="partenaire">
                 <div class="effect">
