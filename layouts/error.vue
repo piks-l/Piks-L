@@ -1,23 +1,23 @@
 <template>
-<div class="loading">
-<div class="eletrobotik-loading">
- <div class="box">
-   <nuxt-link to="/"><img class="logo" src="https://electrobotik.netlify.com/images/logo-horizontal.svg" alt="Logo Electrobotik Invasion"></nuxt-link>
-    <h3>02&amp;03 AOÛT 2019 / CIRCUIT PAUL-RICARD</h3>
-    <nuxt-link to="/"><h1 v-if="error.statusCode === 404">Page non trouvée</h1></nuxt-link>
-    <h1 v-else>Une erreur est survenue !</h1>
- </div>
-</div>
- <div class="circle-loading" >
-  <img src="https://electrobotik.netlify.com/images/circle.svg">
- </div>
+<div class="error">
+  <div class="eletrobotik-loading">
+   <div class="box">
+     <nuxt-link to="/"><img class="logo" src="https://electrobotik.netlify.com/images/logo-horizontal.svg" alt="Logo Electrobotik Invasion"></nuxt-link>
+      <h3>02&amp;03 AOÛT 2019 / CIRCUIT PAUL-RICARD</h3>
+      <nuxt-link to="/"><h1 v-if="error.statusCode === 404">Page non trouvée</h1></nuxt-link>
+      <h1 v-else>Une erreur est survenue !</h1>
+   </div>
+  </div>
+  <div class="circle-loading" >
+    <img src="https://electrobotik.netlify.com/images/circle.svg">
+  </div>
  </div>
 </template>
 
 <script>
 export default {
   props: ['error'],
-  layout: 'default' // you can set a custom layout for the error page
+  layout: 'default'
 }
 </script>
 <style>
