@@ -108,7 +108,7 @@
                 </a>
             </div><!--
             --><div class="partenaire">
-            <a target="_blank" href="">
+            <a target="_blank" href="https://valliue.com/">
                 <div class="effect">
                     <div class="volet1">
                         <img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/11.png'">
@@ -118,96 +118,118 @@
                 </a>
             </div><!--
             --><div class="partenaire">
+            <a target="_blank" href="http://ihh-magazine.com/">
                 <div class="effect">
                     <div class="volet1">
-                        <a target="_blank" href=""><img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/12.png'"></a>
+                        <img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/12.png'">
                     </div>
                     <div class="volet2"></div>
                 </div>
+                </a>
             </div><!--
             --><div class="partenaire">
+            <a target="_blank" href="http://www.letsmotiv.fr/">
                 <div class="effect">
                     <div class="volet1">
-                        <a target="_blank" href=""><img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/13.png'"></a>
+                        <img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/13.png'">
                     </div>
                     <div class="volet2"></div>
                 </div>
+                </a>
             </div><!--
             --><div class="partenaire">
+            <a target="_blank" href="https://hiphopcorner.fr/">
                 <div class="effect">
                     <div class="volet1">
-                        <a target="_blank" href=""><img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/14.png'"></a>
+                        <img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/14.png'">
                     </div>
                     <div class="volet2"></div>
                 </div>
+                </a>
             </div><!--
             --><div class="partenaire">
+            <a target="_blank" href="http://www.clubbinghouse.com/fr/">
                 <div class="effect">
                     <div class="volet1">
-                        <a target="_blank" href=""><img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/15.png'"></a>
+                        <img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/15.png'">
                     </div>
                     <div class="volet2"></div>
                 </div>
+                </a>
             </div><!--
             --><div class="partenaire">
+            <a target="_blank" href="https://www.lofi.media/2019/05/21/electrobotik-invasion-2019/">
                 <div class="effect">
                     <div class="volet1">
-                        <a target="_blank" href=""><img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/16.png'"></a>
+                      <img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/16.png'">
                     </div>
                     <div class="volet2"></div>
                 </div>
+                </a>
             </div><!--
             --><div class="partenaire">
+            <a target="_blank" href="https://www.raprnb.com/">
                 <div class="effect">
                     <div class="volet1">
-                        <a target="_blank" href=""><img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/17.png'"></a>
+                        <img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/17.png'">
                     </div>
                     <div class="volet2"></div>
                 </div>
+                </a>
             </div><!--
             --><div class="partenaire">
+            <a target="_blank" href="https://www.facebook.com/pages/category/Company/BoucheMan-1684623415165466/">
                 <div class="effect">
                     <div class="volet1">
-                        <a target="_blank" href=""><img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/18.png'"></a>
+                        <img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/18.png'">
                     </div>
                     <div class="volet2"></div>
                 </div>
+                </a>
             </div><!--
             --><div class="partenaire">
+            <a target="_blank" href="http://electro-news.eu/sud-electrobotik-invasion-annonce-1-2019/">
                 <div class="effect">
                     <div class="volet1">
-                        <a target="_blank" href=""><img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/19.png'"></a>
+                        <img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/19.png'">
                     </div>
                     <div class="volet2"></div>
                 </div>
+                </a>
             </div><!--
             --><div class="partenaire">
+            <a target="_blank" href="https://www.facebook.com/pages/category/Arts---Entertainment/London-Tattoo-Bus-332329057231646/">
                 <div class="effect">
                     <div class="volet1">
-                        <a target="_blank" href=""><img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/20.png'"></a>
+                        <img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/20.png'">
                     </div>
                     <div class="volet2"></div>
                 </div>
+                </a>
             </div><!--
             --><div class="partenaire sneaky-partenaire">
             </div><!--
             --><div class="partenaire">
+            <a target="_blank" href="http://durevie.paris/">
                 <div class="effect">
                     <div class="volet1">
-                        <a target="_blank" href=""><img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/21.png'"></a>
+                        <img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/21.png'">
                     </div>
                     <div class="volet2"></div>
                 </div>
+                </a>
             </div><!--
             --><div class="partenaire sneaky-partenaire-impaire">
             </div><!--
             --><div class="partenaire">
+            <a target="_blank" href="https://www.regarts.eu/">
                 <div class="effect">
                     <div class="volet1">
-                        <a target="_blank" href=""><img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/22.png'"></a>
+                        <img class="lazy" v-lazy="'https://electrobotik.netlify.com/images/logos/22.png'">
                     </div>
                     <div class="volet2"></div>
                 </div>
+                </a>
             </div>
 
           </div>
@@ -225,7 +247,7 @@
       return {
         title: 'Electrobotik Invasion - le 2 & 3 Août 2019',
         meta: [
-          { hid: 'description', name: 'description', content: 'Electrobotik Invasion Festival, le 2 & 3 Août 2019, Circuit Paul Ricard - Le Castelet (83).' },
+          { hid: 'description', name: 'description', content: 'Partenaires - Electrobotik Invasion Festival, le 2 & 3 Août 2019, Circuit Paul Ricard - Le Castelet (83).' },
           { 'property': 'og:title', 'content': 'Electrobotik Invasion - le 2 & 3 Août 2019', 'vmid': 'og:title' },
           { 'property': 'og:description', 'content': 'Electrobotik Invasion Festival, le 2 & 3 Août 2019, Circuit Paul Ricard - Le Castelet (83).' },
           { 'property': 'og:image', 'content': 'images/uploads/link_share.jpg', 'vmid': 'og:image' }
