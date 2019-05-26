@@ -1,0 +1,16 @@
+{
+  "couverture": "/images/uploads/bikini.jpg",
+  "title": "LE BIKINI",
+  "iframe": "Iframe",
+  "description": "Situé en bords de Canal du Midi, Le Bikini s'impose aujourd'hui comme une salle de concert mythique, reconnue dans toute l’Europe : sound-system et acoustique d'exception, cadre idyllique avec piscine et palmiers.\n\nTemple toulousain des musiques actuelles, Le Bikini est devenu un lieu de référence pour les artistes.",
+  "gmap": [
+    {
+      "awesome": "fas fa-map-marker-alt fa-2x",
+      "texte": "Rue Théodore Monod - Parc Technologique du Canal - 31520 Ramonville St Agne",
+      "lien": "https://www.google.fr/maps/place/Le+Bikini/@43.5480028,1.4834872,17z/data=!3m1!4b1!4m5!3m4!1s0x12aebe7ee871a669:0xb149601aacc445fd!8m2!3d43.5480028!4d1.4856759"
+    }
+  ],
+  "direction": "Métro Ramonville (Ligne B) + 20 mn. de marche (1,6 km)",
+  "date": "26/05/2019",
+  "thumbnail": "/images/uploads/bikini.jpg"
+}
