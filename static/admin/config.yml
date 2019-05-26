@@ -59,12 +59,24 @@ collections:
       - {label: "Nom", name: "title", widget: "string", tagname: "h1", required: true}
       - {label: "Iframe", name: "iframe", widget: "markdown"}
       - {label: "Description", name: "description", widget: "markdown"}
+      - label: "Social"
+        name: "social"
+        widget: "list"
+        fields:
+          - label: "Artiste"
+            name: "artiste"
+            widget: "relation"
+            collection: "artistes"
+            searchFields: ["title"]
+            valueField: "url"
+            displayFields: ["title"]
+            multiple: "true"
       - label: "Artiste"
         name: "artiste"
         widget: "relation"
         collection: "artistes"
         searchFields: ["title"]
-        valueField: "title"
+        valueField: "url"
         displayFields: ["title"]
         multiple: "true"
       - label: "Lieu"
@@ -72,7 +84,7 @@ collections:
         widget: "relation"
         collection: "lieux"
         searchFields: ["title"]
-        valueField: "title"
+        valueField: "url"
         displayFields: ["title"]
         multiple: "true"
       - {label: "Date de publication", name: "date", widget: "date", format: "DD/MM/YYYY"}
