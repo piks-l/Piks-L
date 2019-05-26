@@ -6,7 +6,7 @@ public_folder: "/images/uploads"
 display_url: https://electro-alternativ-2019.netlify.com/
 collections:
   - name: "artistes"
-    label: "Artistes" 
+    label: "Artistes"
     folder: "content/artistes/page"
     create: true
     slug: "{{slug}}"
@@ -16,25 +16,72 @@ collections:
       - {label: "Nom", name: "title", widget: "string", tagname: "h1", required: true}
       - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Iframe", name: "iframe", widget: "markdown"}
+      - {label: "Langue", name: "langue", widget: "string"}
+      - {label: "Label", name: "label", widget: "string"}
+      - {label: "Url", name: "url", widget: "string"}
       - label: "Social"
         name: "social"
         widget: "list"
         fields:
           - { label: Lien, name: lien, widget: string }
           - { label: awesome, name: awesome, widget: string }
-      - label: "Date"
-        name: "dateshow"
-        widget: "select"
-        options:
-          - { label: "VEN. 02 AOÛT", value: "vendredi" }
-          - { label: "SAM. 03 AOÛT", value: "samedi" }
-      - label: "Stages"
-        name: "stage"
-        widget: "select"
-        options:
-          - { label: "R2-D2 / TECHNO", value: "TECHNO" }
-          - { label: "T-800 / HARDCORE", value: "HARDCORE" }
-          - { label: "WALL-E / TRANCE", value: "TRANCE" }
-          - { label: "C3-PO / HIP HOP", value: "HIPHOP" } 
+  - name: "lieux"
+    label: "Lieux"
+    folder: "content/lieux/page"
+    create: true
+    slug: "{{slug}}"
+    format: 'json'
+    fields:
+      - {label: "Image de couverture", name: "couverture", widget: "image", required: true}
+      - {label: "Nom", name: "title", widget: "string", tagname: "h1", required: true}
+      - {label: "Iframe", name: "iframe", widget: "markdown"}
+      - {label: "Description", name: "description", widget: "markdown"}
+      - label: "GMAP"
+        name: "gmap"
+        widget: "list"
+        fields:
+          - { label: awesome, name: awesome, widget: string }
+          - { label: Texte, name: texte, widget: string }
+          - { label: Lien, name: lien, widget: string }
+      - {label: "Direction", name: "direction", widget: "string"}
       - {label: "Date de publication", name: "date", widget: "date", format: "DD/MM/YYYY"}
       - {label: "Miniature", name: "thumbnail", widget: "image"}
+  - name: "event"
+    label: "Evenements"
+    folder: "content/evenements/page"
+    create: true
+    slug: "{{slug}}"
+    format: 'json'
+    fields:
+      - {label: "Image de couverture", name: "couverture", widget: "image", required: true}
+      - {label: "Galerie", name: "galerie", widget: "list", field: {label: Image, name: image, widget: image}}
+      - {label: "Nom", name: "title", widget: "string", tagname: "h1", required: true}
+      - {label: "Iframe", name: "iframe", widget: "markdown"}
+      - {label: "Description", name: "description", widget: "markdown"}
+      - label: "Artistes"
+        name: "artistes"
+        widget: "relation"
+        collection: "artistes"
+        searchFields: ["title"]
+        valueField: "name"
+        displayFields: ["url"]
+      - {label: "Direction", name: "direction", widget: "string"}
+      - {label: "Date de publication", name: "date", widget: "date", format: "DD/MM/YYYY"}
+      - {label: "Miniature", name: "thumbnail", widget: "image"}
+  - name: "articles"
+    label: "Articles"
+    folder: "content/articles/page"
+    create: true
+    slug: "{{slug}}"
+    format: 'json'
+    fields:
+      - {label: "Image de couverture", name: "couverture", widget: "image", required: true}
+      - {label: "Nom", name: "title", widget: "string", tagname: "h1", required: true}
+      - {label: "Intro", name: "intro", widget: "markdown"}
+      - {label: "Article", name: "article", widget: "markdown"}
+      - label: "Liens"
+        name: "liens"
+        widget: "list"
+        fields:
+          - { label: Lien, name: lien, widget: string }
+          - { label: awesome, name: awesome, widget: string }
