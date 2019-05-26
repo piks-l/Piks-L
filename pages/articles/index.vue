@@ -2,10 +2,10 @@
   <div id="main-container">
     <div id="parallax" data-image-src="https://electrobotik.netlify.com/images/crop.jpg">
       <div  class="container scene_element scene_element--fadein padding">
-        
+        <img id="logo" src="https://electrobotik.netlify.com/images/logo-basic.svg" alt="logo">
         <header id="header">
           <div class="sticky-container">
-              <nuxt-link to="/"><img id="sticky-logo" class="logo" src="https://electrobotik.netlify.com/images/logo-basic.svg" alt="Logo Electrobotik Invasion"></nuxt-link>
+              <img id="sticky-logo" class="logo" src="https://electrobotik.netlify.com/images/logo-horizontal.svg"  alt="logo">
               <div id="filters">
                 <h1>PROGRAMMATION</h1>
                 <div class="button-date button-group"  data-filter-group="date">
@@ -23,7 +23,7 @@
                         <button class="button active" @click="filter('.HARDCORE')" data-filter=".HARDCORE"><span>T-800 -</span> HARDCORE STAGE</button>
                         <button class="button active" @click="filter('.TECHNO')" data-filter=".TECHNO"><span>R2-D2 -</span> TECHNO STAGE</button>
                         <button class="button active" @click="filter('.TRANCE')" data-filter=".TRANCE"><span>WALL-E -</span> TRANCE STAGE</button>
-                        <button class="button active" @click="filter('.HIPHOP')" data-filter=".HIPHOP"><span>C3-PO -</span> HIP-HOP STAGE</button>
+                        <button class="button active" @click="filter('.HIPHOP')" data-filter=".HIPHOP"><span>C-3PO -</span> HIP-HOP STAGE</button>
                         <button class="button any" data-filter=""></button>
                     </div>
                     <div class="other-stage">
@@ -36,29 +36,26 @@
               </div>
               <div class="separator"></div>
           </div>
-        </header>
-        <nuxt-link to="/"><img id="logo" src="https://electrobotik.netlify.com/images/logo-basic.svg" alt="Logo Electrobotik Invasion"></nuxt-link>
-        <div class="grid">
-            <div v-for="artiste in artistes" :key="artiste.date"  :class="artiste.dateshow+' '+artiste.stage" class="element-item">
-                 <nuxt-link :to="artiste._path+'/'">
-                    <div class="effect">
-                        <div class="volet1">
-                            <img class="lazy" v-lazy="artiste.thumbnail" :alt="artiste.title">
-                            <div class="boxshadow"></div>
-                            <div class="circle"><img src="https://electrobotik.netlify.com/images/circle.svg" alt="Electrobotik Invasion Cercle"/></div>
-                            <h3 class="name small">{{artiste.title}}</h3>
-                            <p>class="name small">{{artiste.dateshow}}</p>
-                        </div>
-                        <div class="volet2"></div>
-                        <div class="border-bot"></div>
-                    </div>
-                </nuxt-link>
-            </div>
-        </div>
+      </header>
+      <div class="deco-top"><div id="parallax1" class="parallax" data-image-src="https://electrobotik.netlify.com/images/crop.jpg"></div></div>
+          <div class="grid">
+              <div v-for="artiste in artistes" :key="artiste.date"  :class="artiste.dateshow+' '+artiste.stage" class="element-item">
+                   <nuxt-link :to="artiste._path+'/'">
+                      <div class="effect">
+                          <div class="volet1">
+                              <img class="lazy" v-lazy="artiste.thumbnail" :alt="artiste.title">
+                              <div class="boxshadow"></div>
+                              <div class="circle"><img src="https://electrobotik.netlify.com/images/circle.svg"/></div>
+                              <h3 class="name small">{{artiste.title}}</h3>
+                          </div>
+                          <div class="volet2"></div>
+                          <div class="border-bot"></div>
+                      </div>
+                  </nuxt-link>
+              </div>
+          </div>
       </div>
       <electrobotik-footer/>
-      <button class="select-date"><span>DATES</span></button>
-      <button class="select-stage"><span>STAGES</span></button>
      </div>
   </div>
 </template>
@@ -119,15 +116,7 @@ export default {
             });
             // store filter for each group
             var filters = {};
-            // menu mobile date et stage
-            $( ".select-date" ).click(function() {
-              $( ".button-date" ).toggleClass( "mobile-active" );
-              $( ".stage" ).removeClass( "mobile-active" );
-            });
-            $( ".select-stage" ).click(function() {
-              $( ".stage" ).toggleClass( "mobile-active" );
-              $( ".button-date" ).removeClass( "mobile-active" );
-            });
+
             $('#filters').on( 'click', '.button', function( event ) {
                 var $button = $( event.currentTarget );
                 // get group key
@@ -180,25 +169,7 @@ export default {
                 return value;
             }
             grid.layout();
-                        // sticky header
-            if ($(window).width() > 599) {
-              if(document.getElementById("header") === null){}else{
-                  window.onscroll = function() {scrollfunction()};
-                  var header = document.getElementById("header");
-                  var logo = document.getElementById("sticky-logo");
-                  var sticky = header.offsetHeight;
-                  function scrollfunction() {
-                      if (window.pageYOffset > sticky) {
-                        header.classList.add("sticky");
-                        logo.classList.add("grab");
-                      } else {
-                        header.classList.remove("sticky");
-                        logo.classList.remove("grab");
-                      }
-                  }
-              }
-            }
-     function parallax() {
+                    function parallax() {
           // Populate images from data attributes.
           var scrolled = $(window).scrollTop()
           $('#parallax').each(function(index) {
