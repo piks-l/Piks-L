@@ -72,8 +72,9 @@ collections:
         widget: "relation"
         collection: "lieux"
         searchFields: ["title"]
-        valueField: "name"
+        valueField: "title"
         displayFields: ["title", "url"]
+        multiple: "true"
       - {label: "Date de publication", name: "date", widget: "date", format: "DD/MM/YYYY"}
       - {label: "Miniature", name: "thumbnail", widget: "image"}
   - name: "articles"
