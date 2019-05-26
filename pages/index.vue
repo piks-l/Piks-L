@@ -47,6 +47,11 @@
   width: 100vw;
   height: 100vh;
   position: fixed;
+  top: -50%;
+
+transform: translate(-50%);
+
+left: 50%;
 }
 svg image{
   width:100vw;
