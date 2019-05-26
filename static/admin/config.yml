@@ -44,6 +44,7 @@ collections:
           - { label: Texte, name: texte, widget: string }
           - { label: Lien, name: lien, widget: string }
       - {label: "Direction", name: "direction", widget: "string"}
+      - {label: "Url", name: "url", widget: "string"}
       - {label: "Date de publication", name: "date", widget: "date", format: "DD/MM/YYYY"}
       - {label: "Miniature", name: "thumbnail", widget: "image"}
   - name: "event"
@@ -58,14 +59,20 @@ collections:
       - {label: "Nom", name: "title", widget: "string", tagname: "h1", required: true}
       - {label: "Iframe", name: "iframe", widget: "markdown"}
       - {label: "Description", name: "description", widget: "markdown"}
-      - label: "Artistes"
-        name: "artistes"
+      - label: "Artiste"
+        name: "artiste"
         widget: "relation"
         collection: "artistes"
         searchFields: ["title"]
         valueField: "name"
-        displayFields: ["url"]
-      - {label: "Direction", name: "direction", widget: "string"}
+        displayFields: ["title", "url"]
+      - label: "Lieu"
+        name: "lieu"
+        widget: "relation"
+        collection: "lieux"
+        searchFields: ["title"]
+        valueField: "name"
+        displayFields: ["title", "url"]
       - {label: "Date de publication", name: "date", widget: "date", format: "DD/MM/YYYY"}
       - {label: "Miniature", name: "thumbnail", widget: "image"}
   - name: "articles"
