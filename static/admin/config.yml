@@ -47,6 +47,18 @@ collections:
       - {label: "Url", name: "url", widget: "string"}
       - {label: "Date de publication", name: "date", widget: "date", format: "DD/MM/YYYY"}
       - {label: "Miniature", name: "thumbnail", widget: "image"}
+      - label: "Evenement"
+        name: "Evenement"
+        widget: "list"
+        fields:
+          - label: "Events"
+            name: "events"
+            widget: "relation"
+            collection: "event"
+            searchFields: ["title"]
+            valueField: "title"
+            displayFields: ["title"]
+            multiple: "true"
   - name: "event"
     label: "Evenements"
     folder: "content/evenements/page"
