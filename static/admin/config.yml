@@ -64,8 +64,9 @@ collections:
         widget: "relation"
         collection: "artistes"
         searchFields: ["title"]
-        valueField: "name"
+        valueField: "title"
         displayFields: ["title", "url"]
+        multiple: "true"
       - label: "Lieu"
         name: "lieu"
         widget: "relation"
