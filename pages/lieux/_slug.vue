@@ -5,7 +5,7 @@
         <div class="title">
             <h2>{{ title }}</h2>
             <vue-markdown>{{description}}</vue-markdown>
-            <p target="_blank" v-for="Evenements in Evenement" :key="Evenements.events">{{Evenements.event}}</p>
+            <p v-for="Evenements in pageLieux" :key="Evenements.events" >{{Evenements.event}}</p>
         </div>
         <div class="video">
             <vue-markdown>{{iframe}}</vue-markdown>
@@ -37,60 +37,6 @@ export default {
     }
   },
   mounted() {
-    $('#date-vendredi').each( function() {
-        var search = 'vendredi';
-        var replace = 'VENDREDI 02 AOÛT'
-        var el = $(this);
-        var text = el.html();
-        text = text.split(search).join(replace);
-        el.html(text);
-    });
-    $('#date-samedi').each( function() {
-        var search = 'samedi';
-        var replace = 'SAMEDI 03 AOÛT'
-        var el = $(this);
-        var text = el.html();
-        text = text.split(search).join(replace);
-        el.html(text);
-    });
-    $('#stage-TECHNO').each( function() {
-        var search = 'TECHNO';
-        var replace = '<g>R2-D2</g> / TECHNO STAGE'
-        var el = $(this);
-        var text = el.html();
-        text = text.split(search).join(replace);
-        el.html(text);
-    });
-    $('#stage-HIPHOP').each( function() {
-        var search = 'HIPHOP';
-        var replace = '<g>C3-PO</g> / HIPHOP STAGE'
-        var el = $(this);
-        var text = el.html();
-        text = text.split(search).join(replace);
-        el.html(text);
-    });
-    $('#stage-TRANCE').each( function() {
-        var search = 'TRANCE';
-        var replace = '<g>WALL-E</g> / TRANCE STAGE'
-        var el = $(this);
-        var text = el.html();
-        text = text.split(search).join(replace);
-        el.html(text);
-    });
-     $('#stage-HARDCORE').each( function() {
-        var search = 'HARDCORE';
-        var replace = '<g>T-800</g> / HARDCORE STAGE'
-        var el = $(this);
-        var text = el.html();
-        text = text.split(search).join(replace);
-        el.html(text);
-    });
   }
 };
 </script>
-<style>
-.decoration-TECHNO {background-image: url('https://electrobotik.netlify.com/images/scene-TECHNO.jpg');}
-.decoration-TRANCE {background-image: url('https://electrobotik.netlify.com/images/scene-TRANCE.jpg');}
-.decoration-HIPHOP {background-image: url('https://electrobotik.netlify.com/images/scene-HIPHOP.jpg');}
-.decoration-HARDCORE {background-image: url('https://electrobotik.netlify.com/images/scene-HARDCORE.jpg');}
-</style>
