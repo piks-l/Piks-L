@@ -65,7 +65,7 @@ collections:
         collection: "artistes"
         searchFields: ["title"]
         valueField: "title"
-        displayFields: ["title", "url"]
+        displayFields: ["title"]
         multiple: "true"
       - label: "Lieu"
         name: "lieu"
@@ -73,7 +73,7 @@ collections:
         collection: "lieux"
         searchFields: ["title"]
         valueField: "title"
-        displayFields: ["title", "url"]
+        displayFields: ["title"]
         multiple: "true"
       - {label: "Date de publication", name: "date", widget: "date", format: "DD/MM/YYYY"}
       - {label: "Miniature", name: "thumbnail", widget: "image"}
