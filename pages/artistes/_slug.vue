@@ -1,4 +1,4 @@
-<template> 
+<template>
   <div class="page artist">
     <div :class="'decoration decoration-'+stage">
       <div class="volet-artist"></div>
@@ -15,12 +15,6 @@
         </div>
         <div class="content-artiste">
             <div class="vertical-align">
-                <div class="artiste-stage">
-                    <p :id="'stage-'+stage">{{ stage }}</p>
-                </div>
-                <div class="artiste-date">
-                    <p :id="'date-'+dateshow">{{ dateshow }}</p>
-                </div>
                 <div class="content">
                   <vue-markdown>{{description}}</vue-markdown>
                 </div>
@@ -33,7 +27,7 @@
             <vue-markdown>{{iframe}}</vue-markdown>
         </div>
       </div>
-    </div>  
+    </div>
   </div>
 </template>
 <script>
