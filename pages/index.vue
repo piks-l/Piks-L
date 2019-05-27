@@ -41,17 +41,14 @@
   -webkit-filter: url("#glitch");
   filter: url("#glitch");
 }
-
 .fond-principal {
   background: #FFFFFF;
   width: 100vw;
   height: 100vh;
   position: fixed;
-  top: -50%;
-
-transform: translate(-50%);
-
-left: 50%;
+  top: 0%;
+  transform: translate(-50%);
+  left: 50%;
 }
 svg image{
   width:100vw;
