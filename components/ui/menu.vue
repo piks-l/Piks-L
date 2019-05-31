@@ -59,7 +59,9 @@
   import $ from 'jquery'
   export default {
     mounted: () => {
-     console.log("Menu mounted");
+        $( ".open-menu" ).click(function() { $( ".menu" ).addClass( "open" ); });
+        $( ".close, .menu-link" ).click(function() { $( ".menu" ).removeClass( "open" ); });
+        console.log('Menu ready!')
     } // Mounted end
   } // Export end 
 </script>
