@@ -1,9 +1,9 @@
 <template>
   <div id="main" class="layout-ea">
+    <ea-background/>
     <ea-logo/>
     <ea-menu/>
     <nuxt/>
-    <ea-background/>
   </div>
 </template>
 <script>
