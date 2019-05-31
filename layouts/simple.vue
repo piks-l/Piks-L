@@ -19,87 +19,67 @@
       }
   }
 </script>
-<style lang="scss">
-$t-duration: 800ms;
-$t-delay: 300ms;
-
+<style>
 .intro-enter-active,
 .intro-leave-active {
-  transition-duration: $t-duration * 2;
-
-  &::before,
-  &::after {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    display: block;
-    width: 100%;
-    height: 50%;
-    transition-property: opacity, transform;
-    transition-timing-function: ease-in-out;
-  }
-
-  &::before {
-    background-color: #2e2e2e;
-  }
-
-  &::after {
-    top: 50%;
-    background-color: #2e2e2e;
-  }
+  transition-duration: 1600ms;
+}
+.intro-enter-active::before, .intro-enter-active::after,
+.intro-leave-active::before,
+.intro-leave-active::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  height: 50%;
+  transition-property: opacity, transform;
+  transition-timing-function: ease-in-out;
+}
+.intro-enter-active::before,
+.intro-leave-active::before {
+  background-color: #2e2e2e;
+}
+.intro-enter-active::after,
+.intro-leave-active::after {
+  top: 50%;
+  background-color: #2e2e2e;
 }
 
-.intro-leave {
-  &::before,
-  &::after {
-    transform: scaleX(0);
-  }
+.intro-leave::before, .intro-leave::after {
+  transform: scaleX(0);
 }
 
-.intro-leave-active {
-  &::before {
-    transition-duration: $t-duration;
-  }
-
-  &::after {
-    transition-duration: $t-duration - $t-delay;
-    transition-delay: $t-delay;
-  }
+.intro-leave-active::before {
+  transition-duration: 800ms;
+}
+.intro-leave-active::after {
+  transition-duration: 500ms;
+  transition-delay: 300ms;
 }
 
-.intro-leave-to {
-  &::before,
-  &::after {
-    transform: scale(1);
-    transform-origin: left;
-  }
+.intro-leave-to::before, .intro-leave-to::after {
+  transform: scale(1);
+  transform-origin: left;
 }
 
-.intro-enter {
-  &::before,
-  &::after {
-    transform: scaleX(1);
-  }
+.intro-enter::before, .intro-enter::after {
+  transform: scaleX(1);
 }
 
-.intro-enter-active {
-  &::before {
-    transition-duration: $t-duration;
-  }
-
-  &::after {
-    transition-duration: $t-duration - $t-delay;
-    transition-delay: $t-delay;
-  }
+.intro-enter-active::before {
+  transition-duration: 800ms;
+}
+.intro-enter-active::after {
+  transition-duration: 500ms;
+  transition-delay: 300ms;
 }
 
-.intro-enter-to {
-  &::before,
-  &::after {
-    transform: scaleX(0);
-    transform-origin: right;
-  }
+.intro-enter-to::before, .intro-enter-to::after {
+  transform: scaleX(0);
+  transform-origin: right;
 }
+
 </style>
