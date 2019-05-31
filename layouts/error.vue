@@ -1,5 +1,6 @@
 <template>
  <div class="error">
+  <ea-logo/>
   <div v-if="error.statusCode === 404">
     <h3>404</h3>
     <h2>La page que vous cherchez n'existe pas.</h2>
@@ -12,15 +13,13 @@
   </div>
  </div>   
 </template>
-
 <script>
+import eaLogo from '~/components/ui/logo.vue'
 export default {
   props: ['error'],
-  layout: 'simple'
+  layout: 'simple',
+  components: {
+    eaLogo
+  }
 }
 </script>
-<style>
-  .error{
-    background:blue;
-  }
-</style>
