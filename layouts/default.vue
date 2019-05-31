@@ -1,16 +1,19 @@
 <template>
   <div id="main" class="layout-electrobotik">
-    <electrobotik-menu/>
+    <ea-menu/>
     <nuxt/>
+    <ea-background/>
   </div>
 </template>
 <script>
   import $ from 'jquery'
-  import electrobotikMenu from '~/components/ui/menu.vue'
+  import eaMenu from '~/components/ui/menu.vue'
+  import eaBackground from '~/components/ui/background.vue'
   export default {
       transition: 'page',
       components: {
-          electrobotikMenu
+          eaMenu,
+          eaBackground
       },
       mounted () {
       }
