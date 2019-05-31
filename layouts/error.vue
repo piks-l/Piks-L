@@ -21,7 +21,7 @@ export default {
     mode: 'out-in'
   },
   props: ['error'],
-  layout: 'simple',
+  layout: 'default',
   components: {
     eaLogo
   }
