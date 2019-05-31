@@ -1,5 +1,5 @@
 <template>
-<div  class="fond-principal ">
+<header class="fond-principal">
   <img class="seconde-background" src="https://piks-l.com/codepen/background-1-electro-alternativ.jpg">
 	<div class="mirror anim-filter" >
 		<div class="mirror__source mirror__source--solid ">
@@ -19,7 +19,7 @@
 			</filter>
 		</defs>
 	</svg>
-</div>
+</header>
 </template>
 
 <script>
