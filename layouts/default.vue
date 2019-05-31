@@ -1,5 +1,5 @@
 <template>
-  <div id="main" class="layout-electrobotik">
+  <div id="main" class="layout-ea">
     <ea-menu/>
     <nuxt/>
     <ea-background/>
