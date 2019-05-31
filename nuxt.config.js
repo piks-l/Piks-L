@@ -38,18 +38,6 @@ module.exports = {
     { src: '~/plugins/ga.js', ssr: false }
   ],
   loading: '~/components/ui/loading.vue',
-  modules: [
-     ['nuxt-facebook-pixel-module', {
-      track: 'PageView',
-      pixelId: '',
-      disabled: false
-    }],
-    ['@nuxtjs/robots', {
-      UserAgent: 'Googlebot',
-      Disallow: '/admin*',
-      Sitemap: '/sitemap.xml'
-    }]
-  ],
   generate: {
     routes: dynamicRoutes
   },
