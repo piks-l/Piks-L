@@ -1,6 +1,8 @@
 <template>
-  <h1>ACCUEIL</h1>
-  <nuxt-link to="/programmations/"></nuxt-link>
+  <main>
+    <h1>ACCUEIL</h1>
+    <nuxt-link to="/programmations/"></nuxt-link>
+  </main>
 </template>
 
 <script>
