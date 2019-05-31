@@ -8,7 +8,10 @@
   import $ from 'jquery'
   import eaMenu from '~/components/ui/menu.vue'
   export default {
-      transition: 'page',
+      transition: {
+        name: 'page',
+        mode: 'out-in'
+      },
       components: {
           eaMenu
       },
