@@ -41,13 +41,6 @@ $(function () {
               $('.content-large').removeAttr( "id" ).attr('id', info);
             });
 
-            // menu principal
-            $( ".open-menu" ).click(function() {
-              $( ".menu" ).addClass( "open" );
-            });
-            $( ".close, .menu-link" ).click(function() {
-              $( ".menu" ).removeClass( "open" );
-            });
 
   console.log('Main.js ready!')
 })
