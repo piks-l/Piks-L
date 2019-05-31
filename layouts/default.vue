@@ -12,7 +12,10 @@
   import eaMenu from '~/components/ui/menu.vue'
   import eaBackground from '~/components/ui/background.vue'
   export default {
-      transition: 'page',
+      transition: {
+        name: 'page',
+        mode: 'out-in'
+      },
       components: {
           eaLogo,
           eaMenu,
