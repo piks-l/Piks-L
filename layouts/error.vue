@@ -1,9 +1,9 @@
 <template>
  <div class="error">
   <div v-if="error.statusCode === 404">
-  <h3>404</h3>
-  <h2>La page que vous cherchez n'existe pas.</h2>
-  <nuxt-link to="/">Retour au site !</nuxt-link>
+    <h3>404</h3>
+    <h2>La page que vous cherchez n'existe pas.</h2>
+    <nuxt-link to="/">Retour au site !</nuxt-link>
   </div>
   <div v-else>
     <h3>@&7/*-Q</h3>
@@ -16,11 +16,11 @@
 <script>
 export default {
   props: ['error'],
-  layout: 'default'
+  layout: 'simple'
 }
 </script>
 <style>
-.error{
-background:blue;
-}
+  .error{
+    background:blue;
+  }
 </style>
