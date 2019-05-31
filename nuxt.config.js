@@ -3,17 +3,19 @@ var glob = require('glob');
 var path = require('path');
 var dynamicRoutes = getDynamicPaths({
   '/blog': 'blog/posts/*.json',
-  '/artistes': 'artistes/page/*.json'
+  '/artistes': 'artistes/page/*.json',
+  '/lieux': 'lieux/page/*.json',
+  '/evenements': 'evenements/page/*.json'
 });
 module.exports = {
   head: {
-    title: 'Electrobotik Invasion - le 2 & 3 Août 2019',
+    title: 'Electro Alternativ',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
-      { hid: 'description', name: 'description', content: 'Electrobotik Invasion Festival, le 2 & 3 Août 2019, Circuit Paul Ricard - Le Castelet (83).' },
-      { 'property': 'og:title', 'content': 'Electrobotik Invasion - le 2 & 3 Août 2019', 'vmid': 'og:title' },
-      { 'property': 'og:description', 'content': 'Electrobotik Invasion Festival, le 2 & 3 Août 2019, Circuit Paul Ricard - Le Castelet (83).' },
+      { hid: 'description', name: 'description', content: '' },
+      { 'property': 'og:title', 'content': '', 'vmid': 'og:title' },
+      { 'property': 'og:description', 'content': '' },
       { 'property': 'og:image', 'content': 'images/uploads/link_share.jpg', 'vmid': 'og:image' }
     ],
     link: [
@@ -29,20 +31,20 @@ module.exports = {
   },
   plugins: [
     { src: '~/plugins/vue-lazyload', ssr: false },
-    { src: "~plugins/isotope.js", ssr: false },
-    { src: '~plugins/ga.js', ssr: false }
+    { src: "~/plugins/isotope.js", ssr: false },
+    { src: '~/plugins/ga.js', ssr: false }
   ],
   loading: '~/components/ui/loading.vue',
   modules: [
      ['nuxt-facebook-pixel-module', {
       track: 'PageView',
-      pixelId: '1123850124447093',
+      pixelId: '',
       disabled: false
     }],
     ['@nuxtjs/robots', {
       UserAgent: 'Googlebot',
       Disallow: '/admin*',
-      Sitemap: 'https://electrobotik.netlify.com/sitemap.xml'
+      Sitemap: '/sitemap.xml'
     }]
   ],
   generate: {
