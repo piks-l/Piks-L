@@ -2,7 +2,7 @@
   "start": "23:00 ",
   "dateevents": "21/08/2019",
   "thumbnail": "/images/uploads/bikini.jpg",
-  "lieu": "/lieux/le-bikini/",
+  "lieu": "le-bikini",
   "groupes": [
     {
       "artiste": "https://www.facebook.com/14anger/"
@@ -10,7 +10,7 @@
   ],
   "background": "/images/background-2-electro-alternativ.jpg",
   "date": "26/05/2019",
-  "title": "soirée-1",
+  "title": "soiree-1",
   "semaine": "semaine2",
   "type": "nuit",
   "galerie": [
