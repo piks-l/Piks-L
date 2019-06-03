@@ -32,12 +32,12 @@
       </header>
           <div class="grid">
               <div v-for="event in evenements" :key="event.date"  :class="event.type+' '+event.semaine" class="element-item">
-                   <nuxt-link :to="event._path+'/'">
+                   <nuxt-link :to="'/programmation/'+event.title+'/'">
                       <div class="effect">
                           <div class="volet1">
                               <img class="lazy" v-lazy="event.thumbnail" :alt="event.title">
                               <div class="boxshadow"></div>
-                              <h3 class="name small">{{event.title}}</h3>
+                              <h3 class="name small">{{event.dateevents}} - {{event.start}} à {{event.end}} </h3>
                           </div>
                           <div class="volet2"></div>
                           <div class="border-bot"></div>
