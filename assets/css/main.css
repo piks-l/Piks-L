@@ -49,6 +49,7 @@ main {
         position: relative;
         width: 300px;
         overflow: visible;
+        mix-blend-mode: normal;
     }
 
 /* LOGO */
