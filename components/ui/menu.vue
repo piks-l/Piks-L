@@ -40,5 +40,4 @@
     } // Mounted end
   } // Export end 
 </script>
-<style>
-</style>
+
