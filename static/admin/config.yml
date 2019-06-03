@@ -71,6 +71,14 @@ collections:
       - {label: "Date", name: "dateevents", widget: "date", format: "DD/MM/YYYY"}
       - {label: "Heure de début", name: "start", widget: "string"}
       - {label: "Heure de fin", name: "end", widget: "string"}
+      - label: "Semaine"
+        name: "background"
+        widget: "select"
+        options:
+          - { label: "Semaine 1", value: "semaine1" }
+          - { label: "Semaine 2", value: "semaine2" }
+          - { label: "Semaine 3", value: "semaine3" }
+          - { label: "Semaine 4", value: "semaine4" }
       - label: "Groupes"
         name: "groupes"
         widget: "list"
@@ -83,6 +91,7 @@ collections:
             valueField: "url"
             displayFields: ["title"]
             multiple: "true"
+      - {label: "Galerie", name: "galerie", widget: "list", field: {label: Image, name: image, widget: image}}
       - label: "Lieu"
         name: "lieu"
         widget: "relation"
@@ -101,7 +110,6 @@ collections:
           - { label: "Background 3", value: "/images/background-3-electro-alternativ.jpg" }
           - { label: "Background 4", value: "/images/background-4-electro-alternativ.jpg" }
           - { label: "Background 5", value: "/images/background-5-electro-alternativ.jpg" }
-      - {label: "Galerie", name: "galerie", widget: "list", field: {label: Image, name: image, widget: image}}
       - {label: "Miniature", name: "thumbnail", widget: "image"}
   - name: "articles"
     label: "Articles"
