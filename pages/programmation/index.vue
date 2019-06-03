@@ -7,22 +7,22 @@
                 <h1>SOIREES</h1>
                 <div class="button-date button-group"  data-filter-group="date">
                     <div class="center">
-                        <button class="button is-checked" @click="filter('*')" data-filter="*">ALL</button>
+                        <button class="button is-checked" data-filter="*">ALL</button>
                         <span>/</span>
-                        <button class="button" @click="filter('.vendredi')" data-filter=".vendredi">Jours</button>
+                        <button class="button" data-filter=".jour">Jour</button>
                         <span>/</span>
-                        <button class="button" @click="filter('.samedi')" data-filter=".samedi">Soirées</button>
+                        <button class="button" data-filter=".soiree">Soirée</button>
                         <span>/</span>
-                        <button class="button" @click="filter('.samedi')" data-filter=".samedi">Nuits</button>
+                        <button class="button" data-filter=".nuit">Nuit</button>
                     </div>
                 </div>
                 <div class="stage">
                   <div class="center">
                     <div class="button-stage button-group"  data-filter-group="stage">
-                        <button class="button active" @click="filter('.HARDCORE')" data-filter=".HARDCORE"><span>T-800 -</span> SEMAINE 1</button>
-                        <button class="button active" @click="filter('.TECHNO')" data-filter=".TECHNO"><span>R2-D2 -</span> SEMAINE 2</button>
-                        <button class="button active" @click="filter('.TRANCE')" data-filter=".TRANCE"><span>WALL-E -</span> SEMAINE 3</button>
-                        <button class="button active" @click="filter('.HIPHOP')" data-filter=".HIPHOP"><span>C-3PO -</span> SEMAINE 4</button>
+                        <button class="button active" data-filter=".semaine1"><span>Semaine</span> 1</button>
+                        <button class="button active" data-filter=".semaine2"><span>Semaine</span> 2</button>
+                        <button class="button active" data-filter=".semaine3"><span>Semaine</span> 3</button>
+                        <button class="button active" data-filter=".semaine4"><span>Semaine</span> 4</button>
                         <button class="button any" data-filter=""></button>
                     </div>
                   </div>
