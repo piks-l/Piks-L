@@ -1,10 +1,6 @@
 <template>
   <main class="page artist">
-     <h2>{{ title }}</h2>
-     <p>{{ semaine }}</p>
-     <p>{{ type }}</p>
-     <p>{{ start }} > {{ end }}</p>    
-      <header class="fond-principal">
+        <header class="fond-principal">
         <img class="seconde-background" :src="background">
         <div class="mirror anim-filter" >
           <div class="mirror__source mirror__source--solid ">
@@ -25,7 +21,10 @@
           </defs>
         </svg>
       </header>
-     <img style="display:none" id="background-image-event" :src="background" />
+     <h2>{{ title }}</h2>
+     <p>{{ semaine }}</p>
+     <p>{{ type }}</p>
+     <p>{{ start }} > {{ end }}</p>    
   </main>
 </template>
 <script>
