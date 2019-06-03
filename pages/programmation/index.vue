@@ -57,7 +57,7 @@
   // export
 export default {
     layout: 'default',
-    transition: { name: 'intro' },
+    transition: { name: 'intro', mode: 'in-out' },
     components: { VueLazyload},
     head() {
       return {
