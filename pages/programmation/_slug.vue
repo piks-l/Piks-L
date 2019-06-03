@@ -37,8 +37,8 @@ export default {
   transition: { name: 'intro', mode: 'out-in' },
   components: { VueMarkdown, VueLazyload },
   async asyncData({ params }) {
-    const { data } = await import('~/content/programmation/page/' + params.slug + '.json')
-    return { page: data }
+    let page = await import('~/content/programmation/page/' + params.slug + '.json');
+    return page;
   },
   head() {
     return {
