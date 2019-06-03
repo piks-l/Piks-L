@@ -1,3 +1,4 @@
+/* MAIN CSS */
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -11,7 +12,6 @@
 	 --stroke-color: black;
    --blue-color: #0635aa;
 }
-
 body {
   background: var(--blue-color);
   text-align: center;
@@ -23,7 +23,9 @@ body {
   left: 0;
   font-family: 'Roboto';
 }
-
+main {
+  position: absolute;
+}
 
 /* LOGO */
 #logo-ea{
