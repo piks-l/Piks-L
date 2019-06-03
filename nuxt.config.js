@@ -5,7 +5,7 @@ var dynamicRoutes = getDynamicPaths({
   '/blog': 'blog/posts/*.json',
   '/artistes': 'artistes/page/*.json',
   '/lieux': 'lieux/page/*.json',
-  '/programmation': 'evenements/page/*.json'
+  '/programmation': 'programmation/page/*.json'
 });
 module.exports = {
   head: {
