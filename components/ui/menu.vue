@@ -1,8 +1,6 @@
 <template>
   <div>
-          <div class="menu scene_element scene_element--fadeindown">
-          <div class="slash1"></div>
-          <div class="slash2"></div>
+     <div class="menu">
           <div class="menu-content">
               <nuxt-link class="menu-link" to="/"><ea-logo/></nuxt-link>
               <div class="menu-info">
@@ -27,7 +25,7 @@
   				</div>
       </div>
       <button class="open-menu"><span>Menu</span></button>
-</div>
+  </div>
 </template>
 <script>
   import $ from 'jquery'
