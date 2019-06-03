@@ -18,7 +18,6 @@ export default {
   async asyncData({ params }) {
     let page = await import('~/content/programmation/page/' + params.slug + '.json');
     return page;
-    return console.log(page);
   },
   head() {
     return {
