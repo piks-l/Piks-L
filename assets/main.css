@@ -137,6 +137,42 @@ svg image{
     bottom: 10vh;
     left: 6vw;
 }
-
+.left,
+.right{
+    height:7px;
+    width: 60%;
+    background:gray;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%) rotate(0deg);
+            transform:translate(-50%, -50%) rotate(0deg);
+    -webkit-transition: background .25s ease, -webkit-transform .25s ease;
+    transition: background .25s ease, -webkit-transform .25s ease;
+    transition: transform .25s ease, background .25s ease;
+    transition:transform .25s ease, background .25s ease, -webkit-transform .25s ease;
+}
+.close:hover div,
+.fake-close:hover div {
+    background:#fff;
+}
+.fake-close .right,
+.menu.open .right{
+    -webkit-transform:translate(-50%, -50%) rotate(45deg);
+            transform:translate(-50%, -50%) rotate(45deg);
+    -webkit-transition: background .45s ease, -webkit-transform .25s ease .65s;
+    transition: background .45s ease, -webkit-transform .25s ease .65s;
+    transition: transform .25s ease .65s, background .45s ease;
+    transition:transform .25s ease .65s, background .45s ease, -webkit-transform .25s ease .65s;
+}
+.fake-close .left,
+.menu.open .left{
+    -webkit-transform:translate(-50%, -50%) rotate(-45deg);
+            transform:translate(-50%, -50%) rotate(-45deg);
+    -webkit-transition: background .45s ease, -webkit-transform .25s ease .65s;
+    transition: background .45s ease, -webkit-transform .25s ease .65s;
+    transition: transform .25s ease .65s, background .45s ease;
+    transition:transform .25s ease .65s, background .45s ease, -webkit-transform .25s ease .65s;
+}
 
 
