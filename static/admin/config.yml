@@ -71,8 +71,6 @@ collections:
       - {label: "Date", name: "dateevents", widget: "date", format: "DD/MM/YYYY"}
       - {label: "Heure de début", name: "start", widget: "string"}
       - {label: "Heure de fin", name: "end", widget: "string"}
-<<<<<<< HEAD
-=======
       - label: "Semaine"
         name: "background"
         widget: "select"
@@ -81,7 +79,6 @@ collections:
           - { label: "Semaine 2", value: "semaine2" }
           - { label: "Semaine 3", value: "semaine3" }
           - { label: "Semaine 4", value: "semaine4" }
->>>>>>> b6fa6323564df891d3a99c1b024c5e7725b8feae
       - label: "Groupes"
         name: "groupes"
         widget: "list"
