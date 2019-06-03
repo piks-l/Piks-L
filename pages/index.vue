@@ -1,7 +1,7 @@
 <template>
   <main>
     <h1>ACCUEIL</h1>
-    <nuxt-link to="/programmations/">TEST</nuxt-link>
+    <nuxt-link to="/programmation/">PROGRAMMATION</nuxt-link>
   </main>
 </template>
 <script>
