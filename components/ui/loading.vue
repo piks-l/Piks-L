@@ -24,15 +24,10 @@ export default {
       this.loading = true
     },
     finish() {
-      this.loading = false 
+      setTimeout(() => {
+        this.loading = false
+      }, 4000)
     }
-  },
-  mounted () {
-    this.$nextTick(() => {
-      this.$nuxt.$loading.start()
-
-      setTimeout(() => this.$nuxt.$loading.finish(), 500)
-    })
   }
 }
 </script>
