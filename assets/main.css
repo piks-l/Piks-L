@@ -5,9 +5,15 @@
   src: local('Roboto'), local('Roboto-Regular'), url(../assets/roboto.woff2) format('woff2');
   unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
 }
+:root{
+	 --none-color: none;
+	 --path-color: white;
+	 --stroke-color: black;
+   --blue-color: #0635aa;
+}
 
 body {
-  background: #eee;
+  background: var(--blue-color);
   text-align: center;
   padding-top: 30px;
   height: 100%;
@@ -28,10 +34,10 @@ body {
 	margin:0 auto;
 }
 path.ealogo_a{
-	fill:white;
+	fill:var(--path-color);
 }
 path.ealogo_e{
-	fill:white;
+	fill:var(--path-color);
 }
 /* BACKGROUND */
 svg {
@@ -95,8 +101,6 @@ svg image{
 .seconde-background {
     max-height: 100%;
 }
-
-
 
 /* MENU */
 .open-menu {
