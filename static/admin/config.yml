@@ -59,9 +59,9 @@ collections:
             valueField: "title"
             displayFields: ["title"]
             multiple: "true"
-  - name: "event"
-    label: "Evenements"
-    folder: "content/evenements/page"
+  - name: "programmation"
+    label: "Programmation"
+    folder: "content/programmation/page"
     create: true
     slug: "{{slug}}"
     format: 'json'
