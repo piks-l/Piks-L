@@ -1,11 +1,10 @@
 <template>
-  <div class="page artist">
+  <main class="page artist">
      <h2>{{ title }}</h2>
      <p>{{ semaine }}</p>
      <p>{{ type }}</p>
-     <p>{{ start }} > {{ end }}</p>
-     
-  </div>
+     <p>{{ start }} > {{ end }}</p>    
+  </main
 </template>
 <script>
 import $ from 'jquery'
