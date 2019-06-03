@@ -30,7 +30,7 @@
   					  <div class="left"></div>
               <div class="right"></div>
   				</div>
-          <div class="deco-left"></div>
+          <div class="deco-bot"></div>
       </div>
       <button class="open-menu"><span>Menu</span></button>
     </nav>
