@@ -11,6 +11,8 @@
   "background": "/images/background-2-electro-alternativ.jpg",
   "date": "26/05/2019",
   "title": "soirée-1",
+  "semaine": "semaine2",
+  "type": "nuit",
   "galerie": [
     "/images/uploads/bikini.jpg",
     "/images/uploads/bikini.jpg"
