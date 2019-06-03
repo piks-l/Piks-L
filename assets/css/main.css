@@ -232,3 +232,18 @@ nav{
           .social a:hover i {
               color:gray;
           }
+    .deco-left {
+        position: absolute;
+        left: 6vw;
+        height: 65%;
+        width: 3px;
+        background: #fff;
+        top: 50%;
+        transform: translatey(-50%);
+    }    
+    .menu-logo{
+        z-index:1;
+    }
+        .menu-logo .logo {
+            background: blue;
+        }
