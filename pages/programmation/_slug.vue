@@ -4,6 +4,7 @@
      <p>{{ semaine }}</p>
      <p>{{ type }}</p>
      <p>{{ start }} > {{ end }}</p>    
+     <img id="background-image-event" :src="background" />
   </main>
 </template>
 <script>
@@ -30,7 +31,8 @@ export default {
     }
   },
   mounted() {
-    $('.main-background').attr('href', page.background)
+  var back =  $('#background-image-event').attr('src');
+    $('.main-background').attr('href', back);
   }
 };
 </script>
