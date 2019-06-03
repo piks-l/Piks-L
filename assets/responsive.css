@@ -1,0 +1,1743 @@
+@media only screen and (min-width: 0px) and (max-width: 599px) {
+  #parallax {
+      background-size: auto;
+  }
+  .eletrobotik-loading .box {
+      width: auto;
+  }  
+  header {
+      height: 200px;
+      width: 100%;
+      left: 0;
+  }
+  .mini-circle {
+      display: none;
+  }
+  .deco-top, .deco-bot {
+      display:none;
+  }
+  #filters {
+      margin-top: 20px;
+  }
+  h1 {
+      font-size: 24px;
+      padding: 0 15px 0;
+      margin: 0;
+      line-height: 120px;
+      position: relative;
+      top: 42px;
+  }
+  .separator {
+      position: absolute;
+      top: 105px;
+      left: 15px;
+      z-index: -1;
+      height: 5px;
+  } 
+
+  #logo{
+    display:none;
+  }
+  .padding {
+      padding-top: 200px;
+  }
+  .sticky-container {
+      margin: 0 auto;
+      max-width: none;
+  }
+  .menu-content {
+      width: calc(100% - 30px);
+      height: auto;
+      padding: 50px 15px;
+  }
+  .big-logo {
+      height: auto;
+      width: 100%;
+      float: none;
+  }
+  .small-logo {
+      display: block;
+      top: 0;
+      -webkit-transform: none;
+              transform: none;
+  }
+  .large-logo {
+      display: none;
+      top: 0;
+  }
+
+  .menu-info {
+      width: 100%;
+      height: auto;
+  }
+  .circuit {
+      border-top: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+  }
+  .circuit h3 {
+      letter-spacing: 0px;
+      line-height: 15px;
+      font-size: 10px;
+  }
+  .date {
+      display: none;
+  }
+  .navigation {
+      width: 100%;
+      display: inline-block;
+      height: auto;
+      padding: 0;
+      margin: 15px 0;
+  }
+  .navigation:before {
+      height: 0;
+      width: 100%;
+      top: calc(100% - 2px);
+      left: 0;
+      position:absolute;
+  }
+  .nav {
+      top: 0;
+      -webkit-transform: none;
+              transform: none;
+  }
+  .nav li a {
+      font-size: 28px;
+      line-height: 50px;
+      text-align: center;
+  }
+  .social {
+      width: 100%;
+      float: none;
+  }
+  .social i {
+      border: 2px solid gray;
+      width: 35px;
+      line-height: 35px;
+      font-size: 20px;
+      top: 0;
+      left: 50%;
+      -webkit-transform: translatex(-50%);
+              transform: translatex(-50%);
+  }
+  .social a:hover i {
+      border: 2px solid #fff;
+  }
+  .news {
+      width: 100%;
+      padding: 0;
+      height:auto;
+  }
+  .presse {
+      float: none;
+  }
+  .newsletter, .presse {
+      font-size: 18px;
+      width: 50%;
+      display: inline-block;
+      position: relative;
+      float: left;
+      font-size: 17px;
+      text-align: center;
+  }
+  .newsletter:before, .presse:before {
+      content: none;
+  }
+  .close, .fake-close {
+      width: 50px;
+      height: 50px;
+  }
+  .left, .right {
+      height: 5px;
+  }
+  .container {
+      min-width: 85%;
+  }
+  .element-item {
+      width: 98%;
+      padding:0;
+      margin-bottom: 15px;
+  }
+  .open-menu {
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      border: none;
+      transform:none;
+      -webkit-transform:none;
+  }
+  .select-date, .select-stage {
+      display: block;
+      position: fixed;
+      width: 50%;
+      height: 42px;
+      bottom: 0;
+      z-index: 3;
+      border: none;
+      color: #fff;
+      background: -webkit-linear-gradient(left, #0079ff, #b24576);
+      background: linear-gradient(0.25turn, #0079ff, #b24576);
+      font-weight: bold;
+      font-size: 18px;
+  }
+  .select-date {
+      left:0;
+      background:#0079ff;
+  }
+  .select-stage {
+      right:0;
+      background:#b24576;
+  }
+  .button-stage {
+      margin-bottom: 0;
+      width: 100%;
+  }
+  .button-date,
+  .stage {
+      position: fixed;
+      width: 100%;
+      z-index: 2;
+      bottom: 100%;
+      left: 0;
+      -webkit-transform:none;
+              transform:none;
+      background:rgba(0,0,0,.9);
+      height:calc(100% - 82px);
+      opacity:0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+      -webkit-transition: opacity .5s cubic-bezier(0.785,.135,.15,.86), bottom 0s ease .5s;
+      transition:opacity .5s cubic-bezier(0.785,.135,.15,.86), bottom 0s ease .5s;
+      margin: 0;
+  }
+  .sticky .button-date {
+      width: 100%;
+      padding: 0;
+  }
+  .button-date.mobile-active,
+  .stage.mobile-active {
+      opacity:1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+      bottom: 42px;
+      -webkit-transition: opacity .5s cubic-bezier(0.785,.135,.15,.86);
+      transition:opacity .5s cubic-bezier(0.785,.135,.15,.86);
+      width: 100%;
+      padding: 0;
+  }
+  .center{
+      position:relative;
+      top: 50%;
+      -webkit-transform:translatey(-50%);
+              transform:translatey(-50%);
+      padding: 0 15px;
+  }
+  .button-date .button,
+  .stage .button,
+  .other-stage .buton {
+      margin: 0;
+      position: relative;
+      left: 50%;
+      -webkit-transform: translatex(-50%);
+              transform: translatex(-50%);
+      font-size: 17px;
+      line-height: 22px;
+      margin: 5px 0;
+      padding: 0;
+  }
+  .button-stage .button,
+  .other-stage .buton {
+      padding:10px 0;
+      display:block;
+  }
+  .button-stage .button:after,
+  .other-stage .buton:after {
+      left: 0;
+      width: 100%;
+      bottom: 0;
+  }
+  .button-date .button {
+      display: block;
+      float: none;
+      line-height: 80px;
+      font-size: 28px;
+  }
+  .button-date span {
+      display: none;
+  }
+  .sticky {
+      position: relative;
+  }
+  .index footer {
+      padding-bottom: 42px;
+  }
+  .fake-close {
+      top: 42px;
+      position: absolute;
+  }
+  .fake-close .left, .fake-close .right{
+      background:#fff;
+      height:5px;
+      width: 70%;
+  }
+  .title h2 {
+      font-size: 1.5em;
+      text-align: center;
+  }
+  .artiste-stage p, .artiste-date p {
+      font-size: 16px;
+      letter-spacing: 1px;
+      margin: 10px 0;
+  }
+  .content {
+      padding: 15px 0;
+  }
+  .content-artiste {
+      height: auto;
+      display: block;
+      width: 100%;
+      padding: 15px 0;
+      float: none;
+  }
+  .social-artiste {
+      text-align: center;
+  }
+  .content p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: justify;
+      letter-spacing: 1px;
+  }
+  .volet-artist {
+      bottom: 0vw;
+      -webkit-transform: rotate(-60deg);
+              transform: rotate(-60deg);
+      left: -125vh;
+  }
+  .fond {
+      opacity: 0.4;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  }
+  .video iframe,
+  .video {
+      width: 100%;
+      padding-top: 0;
+  }
+  .artiste-stage, .artiste-date {
+      width: 100%;
+      text-align: center;
+  }
+  footer p {
+      line-height: 20px;
+  }
+  .header-link {
+      position: relative;
+      top: 0;
+      left: 50%;
+  }
+  #logo.partenaires{
+       display:none;
+  }
+  .menu .small-logo {
+      padding-top: 15px;
+  }
+  .small-logo {
+      display: block;
+      max-width: 90%;
+      left: 50%;
+      position: relative;
+      -webkit-transform: translatex(-50%);
+              transform: translatex(-50%);
+      padding-top: 57px;
+      width:auto !important;
+  }
+  .container-grid {
+      max-width: 100%;
+      padding: 42px 15px;
+  }
+  .container-grid h2 {
+      font-size: 2.5em;
+      margin: 0 0 .5em;
+  }
+  .partenaire {
+      height: 115px;
+      width: 46%;
+  }
+  .sneaky-partenaire {
+      display: none;
+  }
+  .container-grid .background {
+      top: 21px;
+  }
+
+  .select-fond {
+      width: auto;
+      opacity: 0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+      -webkit-transition: all .5s ease;
+      transition: all .5s ease;
+      position: absolute;
+      height: auto;
+      min-width: 100%;
+      min-height: 100%;
+      max-height: 120%;
+  }
+  .container-infos {
+    max-width: 100%;
+    z-index: 1;
+    padding-top: 25px;
+  }
+  .container-infos h2 {
+    font-size: 34px;
+  }
+  .select-fond.active {
+      opacity: .5;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  }
+  .container-infos .select-infos {
+      display: none;
+  }
+  .select-infos.mobile-menu {
+      display: block;
+      bottom: 0;
+      z-index: 72;
+      background: -webkit-linear-gradient(left, #0079ff, #b24576);
+      background: linear-gradient(0.25turn, #0079ff, #b24576);
+      position: fixed;
+      -webkit-transform: none;
+              transform: none;
+      opacity: 1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+      height: auto;
+      text-align: center;
+  }
+  .select-infos.mobile-menu button {
+      display: block;
+      left: auto;
+      -webkit-transform: none;
+              transform: none;
+      display: inline-block;
+      font-size: 16px;
+      line-height: 42px;
+      margin: 0;
+      padding: 0;
+      color: #000;
+      width: 33.3333%;
+  }
+  .select-infos.mobile-menu button:before,
+  .select-infos.mobile-menu button:after{
+      background:#fff
+  }
+  .select-infos.mobile-menu button.is-checked {
+    -webkit-text-fill-color:#fff;
+  }
+  .slide .container {
+      max-width: 100%;
+      width: calc(100% - 30px);
+  }
+  .color {
+      padding: 30px 15px;
+  }
+  .color p {
+      font-size: 14px;
+      line-height: 22px;
+  }
+  .no-color {
+      padding: 30px 15px 30px 30px;
+  }
+  .no-color:before {
+      height: calc(100% - 60px);
+      top: 30px;
+      left: 12px;
+      width:4px;
+  }
+  .no-color p {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0;
+  }
+  .lien {
+      right: 0;
+      -webkit-transform: translatey(50%);
+              transform: translatey(50%);
+      width: 100%;
+      text-align: center;
+  }
+  .lien a {
+      margin: 0px 25px;
+  }
+  .vignette {
+      width: 100%;
+      margin: 25px 0 15px;
+      padding:50px 0;
+      text-align: center;
+  }
+  .vignette .center {
+      left: 0;
+      width: calc(100% - 30px);
+      padding: 15px;
+      max-width:100%;
+  }
+  .vignette p {
+      font-size: 14px;
+  }
+  p.gras {
+      font-size: 18px;
+  }
+  .reservez {
+      padding: 10px 30px 10px 70px;
+  }
+  .reservez i {
+      left: 15px;
+  }
+  .reservez p {
+      font-size: 14px;
+      letter-spacing: 1px;
+  }
+  .reservez .gras {
+      font-size: 16px;
+  }
+  .reservez a {
+      font-size: 16px;
+  }
+  .tab-label {
+      padding: 15px 15px;
+      font-size: 16px;
+  }
+  .tabs input:checked ~ .tab-content{
+      padding: 25px 15px;
+  }
+  .tab-content {
+      padding: 0 15px;
+  }
+  .tab-content:before {
+      width: calc(100% - 30px);
+      left: 15px;
+  }
+
+
+  .accueil{
+    padding-bottom: 5vh;
+    min-width: calc(100% - 30px);
+  }
+  .header {
+      display: block;
+      padding-top: 57px;
+  }
+  .header .big-logo {
+      width: 100%;
+  }
+  .header .small-logo {
+      max-width: none;
+      left: 0;
+      -webkit-transition: none;
+      transition: none;
+      padding: 0;
+      width: 100%;
+  }
+  .header .circuit {
+      width: 100%;
+  }
+  .header .circuit h3 {
+      font-size: .8em;
+  }
+  .header .date {
+      width: calc(50% - 30px);
+      padding: 0 15px;
+      position: relative;
+      -webkit-transform: none;
+              transform: none;
+      margin-top: 25px;
+  }
+  .header .date-circle {
+      top: 0;
+      -webkit-transform: none;
+              transform: none;
+      max-height: 115px;
+      width: 115px;
+      margin: 0 auto;
+  }
+  .header .date-circle img {
+      width: auto;
+      height: 115px;
+  }
+  .header .big-date {
+      font-size: 1.75em;
+  }
+  .header .big-date small {
+      top: -5px;
+  }
+  .header .month {
+      font-size: .8em;
+  }
+  .billetterie {
+      width: 50%;
+      height: 115px;
+      float: right;
+      margin-top: -115px;
+  }
+  .billetterie i {
+    font-size: 6em;
+  }
+  .colonne {
+      width: 100%;
+  }
+  .block-scene {
+      padding: 15px 0 0;
+  }
+  .block-scene h3 {
+      font-size: 2em;
+  }
+  .block-scene p {
+      font-size: 14px;
+      letter-spacing: 1px;
+      font-weight: 900;
+      line-height: 22px;
+  }
+  
+  .ticket .vignette .large {
+      font-size: 26px;
+  }
+  .ticket .gras {
+      font-size: 22px;
+      line-height: 25px;
+  }
+  .ticket .artiste-link2 {
+      font-size: 22px;
+      line-height: 22px;
+  }
+  .ticket .vignette {
+      text-align: center;
+  }
+  .ticket .vignette .center {
+      width: calc(100% - 30px);
+  }
+  
+  
+  .page-contact.container{
+      min-width: auto;
+      width: calc(100% - 30px);
+      margin-bottom: 15px;
+  }
+  .content-image {
+      display: none;
+  }
+  .content-text {
+      width: 100%;
+      left: 0 !important;
+      margin-bottom: 25px;
+  }
+  .content-text p.large {
+      font-size: 18px;
+  }
+  .content-text p.gras {
+      font-weight: 500;
+  }
+  .festival .artiste-link2 {
+      font-size: 18px;
+  }
+  .content-text h3 {
+      font-size: 28px;
+  }
+  .container-contact {
+      margin: 0;
+      padding: 15px;
+      top: 25px;
+      transform: none;
+  }
+  .press .circle-contact {
+      width: 150px;
+      height: 150px;
+  }
+  .circle-contact a {
+      font-size: 26px;
+  }
+  .contact-info {
+      padding-left: 15px;
+  }
+  .contact-info p, .contact-info a {
+      font-size: 14px;
+    
+  }
+  .contact-info .title-contact {
+      font-size: 24px;
+  }
+  .press {
+      position: relative;
+      width: 100%;
+      top: 0;
+      left: 0;
+      margin-bottom: 25px;
+  }
+  .press .circle-contact {
+      width: 150px;
+      height: 150px;
+      transform: translatex(-50%);
+      top: 0;
+  }
+  .contact-info {
+      padding-left: 0;
+      width: 100%;
+      left: 0;
+      text-align: center;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 959px) {
+  #parallax {
+      background-size: auto;
+  }
+  .open-menu {
+      height: 42px;
+      left: -64px;
+    }
+    .big-logo {
+        width: 25%;
+    }
+    .padding{
+        padding-top: 325px;
+    }
+    #logo{
+        left:6vw
+    }
+    .menu-info {
+        padding-left: 5%;
+        width: 70%;
+    }
+    .circuit {
+        border-top: 3px solid #fff;
+        border-bottom: 3px solid #fff;
+    }
+    .date {
+        width: 35%;
+    }
+    .big-date {
+        font-size: 2em;
+        letter-spacing: 0px;
+    }
+    .month {
+        font-size: 1em;
+    }
+    .big-date small {
+        top: -5px;
+    }
+    .pagination {
+        height: calc(100% - 60px);
+    }
+    .navigation {
+        width: 60%;
+        padding-left: 0;
+        margin-left: 5%;
+    }
+    .navigation:before {
+        width: 100%;
+        left: 0;
+        top: calc(100% - 3px);
+        height: 3px;
+    }
+    .circuit h3 {
+        font-size: 10px;
+        line-height: 30px;
+    }
+    .nav li a {
+        font-size: 22px;
+    }
+    .newsletter, .presse {
+        font-size: 12px;
+        line-height: 40px;
+        letter-spacing: 0;
+    }
+    .newsletter, .presse {
+        font-size: 12px;
+        line-height: 40px;
+        letter-spacing: 0;
+    }
+    .newsletter:before, .presse:before {
+        top: 14px;
+        margin-right: 5px;
+        width: 5px;
+        height: 5px;
+    }
+    .newsletter:before {
+        border: 3px solid #0079ff;
+        box-shadow: 0 0 0 0px #000, 0 0 0 0px #000;
+    }
+    .newsletter:hover:before {
+        border: 3px solid #fff;
+        box-shadow: 0 0 0 0px #000, 0 0 0 3px #0079ff;
+    }
+    .presse:before {
+        border: 3px solid #b24576;
+        box-shadow: 0 0 0 0px #000, 0 0 0 0px #000;
+    }
+    .presse:hover:before {
+        border: 3px solid #fff;
+        box-shadow: 0 0 0 0px #000, 0 0 0 3px #b24576;
+    }
+    .social i {
+        width: 30px;
+        line-height: 30px;
+        top: -15px;
+        font-size: 20px;
+        border-width: 3px;
+    }
+    .social {
+        width: 40%;
+    }
+    .news{
+        width:60%;
+        padding: 0;
+    }
+    .left, .right {
+        height: 4px;
+    }
+    .container {
+        min-width: 85%;
+    }
+    .element-item {
+        width: 48%;
+        padding:0;
+    }
+    header {
+        width: calc(100% - 150px - 10vw);
+        left: calc(5vw + 150px);
+        height: 325px;
+    }
+    .date {
+        width: 35%;
+    }
+    h1 {
+        font-size: 2em;
+        padding: 30px 15px 0;
+    }
+    .sticky h1 {
+        display: none;
+    }
+    #filters {
+        padding-left: 15px;
+    }
+    .button-date,
+    .button-stage,
+    .other-stage {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .button-stage {
+        margin-bottom: 0;
+    }
+    .button-stage .button {
+        padding: 0;
+    }
+    .button-stage .button, .other-stage .buton {
+        font-size: 12px;
+        margin: 0;
+        letter-spacing: 1px;
+        line-height: 30px;
+        padding: 0 7px;
+    }
+    .button-stage .button:after,
+    .other-stage .buton:after {
+        left: 7px;
+        width: calc(100% - 14px);
+    }
+    .separator {
+        bottom: 0;
+        position: absolute;
+        width: 90vw;
+        right: 0;
+        float: right;
+        height: 10px;
+    }
+    .sticky .sticky-container {
+        max-width: none;
+    }
+    .sticky #filters {
+        width: calc(70% - 15px);
+        left: 50%;
+        position: relative;
+        -webkit-transform: translatex(-50%);
+                transform: translatex(-50%);
+        padding: 0;
+    }
+    .sticky .button-date {
+        width: auto;
+        left: 50%;
+        -webkit-transform: translatex(-50%);
+                transform: translatex(-50%);
+    }
+    .sticky .button-date button {
+        font-size: 14px;
+        margin: 0 4px;
+        line-height: 30px;
+        letter-spacing: 0;
+    }
+    .button-date .button:before,
+    .button-date .button:after {
+        height: 2px;
+    }
+    .sticky .button-date span {
+        line-height: 30px;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    #sticky-logo.grab {
+        max-width: 25%;
+    }
+    .sticky .button-stage .button,
+    .sticky .other-stage .buton {
+        margin: 0 5px;
+        padding: 0px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .sticky .other-stage{
+        display:none
+    }
+    .sticky .button-stage .button:hover:after {
+        left: 0;
+        width: 100%;
+    }
+    .container {
+        min-width: 90%;
+    }
+    .element-item {
+        width: 48%;
+        padding:0;
+    }
+    .button-date .button {
+      font-size: 14px;
+      margin: 0 5px;
+    }
+    .button-date span {
+      font-size: 14px;
+    }
+    .mini-circle{
+        display: none;
+    }
+    header.sticky {
+        height: 110px;
+    }
+    .fake-close .left, .fake-close .right{
+        background:#fff;
+        height:5px;
+        width: 90%;
+    }
+    .title h2 {
+        font-size: 2em;
+        padding:0 15px;
+    }
+    .artiste-stage p, .artiste-date p {
+        font-size: 16px;
+        letter-spacing: 1px;
+        margin: 10px 0;
+    }
+    .content {
+        padding: 15px 0;
+    }
+    .content-artiste {
+        height: auto;
+        display: block;
+        width: calc(100% - 30px);
+        padding: 15px;
+        float: none;
+    }
+    .social-artiste {
+        text-align: center;
+    }
+    .content p {
+        margin: 0;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: justify;
+        letter-spacing: 1px;
+    }
+    .volet-artist {
+      bottom: 30vw;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+    }
+    .fond {
+        opacity: 0.4;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    }
+    .video iframe,
+    .video {
+        width: 100%;
+        padding-top: 0;
+    }
+    .header-link {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    #logo.partenaires{
+         display:none;
+    }
+    .small-logo {
+        display: block;
+        max-width: 40%;
+        left: 50% !important;
+        position: relative;
+        -webkit-transform: translatex(-50%);
+                transform: translatex(-50%);
+        padding-top: 42px;
+        width: auto !important;
+    }
+    .container-grid {
+        max-width: 80%;
+        padding-top: 42px;
+    }
+    .container-grid h2 {
+        font-size: 3em;
+        margin: 0 0 .5em;
+    }
+    .partenaire {
+        height: 115px;
+        width: 29.3%;
+    }
+    .sneaky-partenaire {
+        display: none;
+    }
+    .sneaky-partenaire-impaire {
+        display:inline-block;
+    }
+    .container-grid .background {
+        top: 21px;
+    }
+
+    .select-fond.active {
+        opacity: .5;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    }
+    .select-infos .button {
+        color: #fff;
+        font-size: 19px;
+    }
+    .slide .container {
+        max-width: 80%;
+    }
+    .color {
+        padding: 50px 20px;
+    }
+    .color p,
+    .content-text .color p{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .no-color {
+        padding: 50px 30px;
+    }
+    .no-color:before {
+        height: calc(100% - 100px);
+        top: 50px;
+        left: 12px;
+    }
+    .no-color p,
+    .content-text .no-color p{
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: 0;
+    }
+    .vignette {
+        width: 100%;
+        margin: 25px 0 15px;
+        padding:50px 0;
+        text-align: center;
+    }
+    .vignette .center {
+        left: 25px;
+        width: 100%;
+    }
+    .vignette p {
+        font-size: 14px;
+    }
+    p.gras {
+        font-size: 18px;
+    }
+    .reservez {
+        padding: 10px 30px 10px 70px;
+    }
+    .reservez i {
+        left: 15px;
+    }
+    .reservez p {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    .reservez .gras {
+        font-size: 16px;
+    }
+    .reservez a {
+        font-size: 16px;
+    }
+    .tab-label {
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+    .tabs input:checked ~ .tab-content{
+        padding: 25px 30px;
+    }
+    .tab-content {
+        padding: 0 30px;
+    }
+    .tab-content:before {
+        width: calc(100% - 60px);
+        left: 30px;
+    }
+
+    .accueil{
+      padding-bottom: 5vh;
+    }
+    .header {
+        display: block;
+    }
+    .header .big-logo {
+        width: 100%;
+    }
+    .header .small-logo {
+        max-width: none;
+        left: 0;
+        -webkit-transition: none;
+        transition: none;
+        padding: 0;
+    }
+    .header .circuit h3 {
+        font-size: 1em;
+    }
+    .header .date {
+        width: calc(25% - 30px);
+        padding: 0 15px;
+    }
+    .header .big-date {
+        font-size: 1.75em;
+    }
+    .header .big-date small {
+        top: -5px;
+    }
+    .header .month {
+        font-size: .8em;
+    }
+    .billetterie {
+        width: 100%;
+        height: 100px;
+    }
+    .billetterie i {
+      font-size: 6em;
+    }
+    .colonne {
+        width: 100%;
+    }
+    .block-scene h3 {
+        font-size: 2em;
+    }
+    .block-scene p {
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-weight: 900;
+        line-height: 20px;
+    }
+    .ticket .vignette {
+        text-align: center;
+    }
+  
+    .content-image {
+        display: none;
+    }
+    .content-text {
+        width: 100%;
+        left: 0 !important;
+        margin-bottom: 25px;
+    }
+    .content-text p.large {
+        font-size: 18px;
+    }
+    .festival .artiste-link2 {
+        font-size: 18px;
+    }
+    .content-text h3 {
+        font-size: 28px;
+    }
+  
+  
+    .container-contact {
+        margin: 0 10vh;
+        padding: 15px;
+        top: 25px;
+        transform: none;
+    }
+    .press .circle-contact {
+        width: 150px;
+        height: 150px;
+    }
+    .circle-contact a {
+        font-size: 26px;
+    }
+    .contact-info {
+        padding-left: 15px;
+    }
+    .contact-info p, .contact-info a {
+        font-size: 16px;
+    }
+    .contact-info .title-contact {
+        font-size: 24px;
+    }
+    .press {
+        position: relative;
+        width: 100%;
+        top: 0;
+        left: 0;
+        margin-bottom: 25px;
+    }
+    .press .circle-contact {
+        width: 150px;
+        height: 150px;
+        transform: translatex(-50%);
+        top: 0;
+    }
+    .contact-info {
+        padding-left: 0;
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 960px) and (max-width: 1263px) {
+  #parallax {
+    background-size: auto;
+  }
+    .big-logo {
+        width: 30%;
+    }
+    header {
+        width: calc(100% - 150px - 10vw);
+        left: calc(5vw + 150px);
+    }
+    .menu-info {
+        padding-left: 5%;
+        width: 65%;
+    }
+    .date {
+        width: 35%;
+    }
+    .big-date {
+        font-size: 3em;
+    }
+    .month {
+        font-size: 1.5em;
+    }
+    .big-date small {
+        top: -10px;
+    }
+    .navigation {
+        width: 60%;
+        padding-left: 0;
+        margin-left: 5%;
+    }
+    .navigation:before {
+        width: 100%;
+        left: 0;
+    }
+    .circuit h3 {
+        font-size: .9em;
+    }
+    .nav li a {
+        font-size: 34px;
+    }
+    .newsletter, .presse {
+        font-size: 1em;
+    }
+    .newsletter:before, .presse:before {
+        top: 14px;
+        margin-right: 5px;
+    }
+    .social i {
+        width: 40px;
+        line-height: 40px;
+        top: -15px;
+        font-size: 25px;
+    }
+    .social {
+        width: 40%;
+    }
+    .news{
+        width:60%;
+        padding: 0;
+    }
+    h1 {
+        font-size: 4em;
+    }
+    .sticky h1 {
+        display: none;
+    }
+    #filters {
+        padding-left: 15px;
+    }
+    .button-date,
+    .button-stage,
+    .other-stage {
+        text-align: center;
+    }
+    .button-stage {
+        margin-bottom: 0;
+    }
+    .button-stage .button {
+        margin-bottom: 15px;
+    }
+    .button-stage .button,
+    .other-stage .buton{
+        font-size: 14px;
+    }
+    .separator {
+        bottom: 0;
+        position: absolute;
+        width: 90vw;
+        right: 0;
+        float: right;
+    }
+    .sticky .sticky-container {
+        max-width: none;
+    }
+    .sticky #filters {
+        width: 65%;
+        left: 50%;
+        position: relative;
+        -webkit-transform: translatex(-50%);
+                transform: translatex(-50%);
+        padding: 0;
+    }
+    .sticky .button-date {
+        width: auto;
+        left: 50%;
+        -webkit-transform: translatex(-50%);
+                transform: translatex(-50%);
+    }
+    .sticky .button-date button {
+        font-size: 20px;
+        margin: 0 5px;
+        line-height: 40px;
+    }
+    .sticky .button-date span {
+        line-height: 40px;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    #sticky-logo.grab {
+        max-width: 35%;
+    }
+    .sticky .mini-circle {
+        display: none;
+    }
+    .sticky .button-stage .button,
+    .sticky .other-stage .buton {
+        margin: 0 15px;
+        padding: 0px;
+        font-size: 14px;
+        line-height: 35px;
+    }
+    .sticky .button-stage .button:after,
+    .sticky .other-stage .buton:after {
+        left: 0;
+        width: 100%;
+        bottom: 2px !important;
+    }
+    .sticky .other-stage{
+        display:none;
+    }
+    .container {
+        min-width: 90%;
+    }
+    .element-item {
+        width: 48%;
+        padding:0;
+    }
+    .button-date .button {
+        font-size: 1.5em;
+    }
+    .fake-close .left, .fake-close .right{
+        background:#fff;
+        height:7px;
+        width: 80%;
+    }
+    .title h2 {
+        font-size: 3.5em;
+    }
+    .artiste-stage p, .artiste-date p {
+        font-size: 16px;
+        letter-spacing: 1px;
+        margin: 10px 0;
+    }
+    .content {
+        padding: 15px 0;
+    }
+    .content p {
+        margin: 0;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: justify;
+        letter-spacing: 1px;
+    }
+    .volet-artist {
+      bottom: 35vw;
+      -webkit-transform: rotate(-55deg);
+              transform: rotate(-55deg);
+    }
+    .video iframe {
+        width: 90%;
+    }
+    #logo.partenaires{
+         max-width:100px;
+         top: 42px;
+         left:42px;
+    }
+    .container-grid {
+        max-width: 65%;
+        padding-top: 42px;
+    }
+    .container-grid h2 {
+        font-size: 3.5em;
+        margin: 0 0 .5em;
+    }
+    .partenaire {
+        height: 115px;
+        width: 21%;
+    }
+    .sneaky-partenaire {
+        width: 21%;
+    }
+
+
+    .select-fond.active {
+        opacity: .5;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    }
+    .select-infos .button {
+        color: #fff;
+    }
+    .slide .container {
+        max-width: 60%;
+    }
+    .color {
+        padding: 20px 40px;
+    }
+    .color p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .no-color {
+        padding: 40px 50px;
+    }
+    .no-color:before {
+        height: calc(100% - 80px);
+        top: 40px;
+    }
+    .no-color p {
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0;
+    }
+    .vignette .center {
+        left: 10px;
+        max-width: calc(100% - 20px);
+    }
+    .vignette p {
+        font-size: 14px;
+    }
+    p.gras {
+        font-size: 18px;
+    }
+    .reservez {
+        padding: 10px 30px 10px 70px;
+    }
+    .reservez i {
+        left: 15px;
+    }
+    .reservez p {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    .reservez .gras {
+        font-size: 16px;
+    }
+    .reservez a {
+        font-size: 16px;
+    }
+
+    .billetterie i {
+      font-size: 6em;
+    }
+    .header .date {
+        width: calc(25% - 30px);
+        padding: 0 15px;
+    }
+    .header .big-date {
+        font-size: 2em;
+    }
+    .header .big-date small {
+        top: -5px;
+    }
+    .header .month {
+        font-size: 1em;
+    }
+    .block-scene h3 {
+        font-size: 2em;
+    }
+    .block-scene p {
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-weight: 900;
+        line-height: 20px;
+    }
+  
+    .ticket .vignette .large {
+        font-size: 26px;
+    }
+    .ticket .gras {
+        font-size: 22px;
+    }
+    .ticket .artiste-link2 {
+        font-size: 22px;
+    }
+  
+    .content-image {
+        display: none;
+    }
+    .content-text {
+        width: 100%;
+        left: 0 !important;
+        margin-bottom: 25px;
+    }
+    .content-text p.large {
+        font-size: 20px;
+    }
+    .festival .artiste-link2 {
+        font-size: 20px;
+    }
+  
+    .container-contact {
+        margin: 0 15vh;
+        padding: 25px;
+    }
+    .press .circle-contact {
+        width: 150px;
+        height: 150px;
+    }
+    .circle-contact a {
+        font-size: 26px;
+    }
+    .contact-info {
+        padding-left: 15px;
+    }
+    .contact-info p, .contact-info a {
+        font-size: 16px;
+    }
+    .contact-info .title-contact {
+        font-size: 24px;
+    }
+}
+@media only screen and (min-width: 1264px) and (max-width: 1904px) { 
+  .padding {
+      padding-top: 335px;
+  }
+  .button-stage, .other-stage {
+      display: block;
+      text-align: center;
+  }
+  .big-logo {
+      width: 30%;
+  }
+  .menu-info {
+      padding-left: 5%;
+      width: 65%;
+  }
+    .circuit h3 {
+        font-size: 1.2em;
+    }
+    .date {
+        width: 35%;
+    }
+    .big-date small {
+        top: -10px;
+    }
+    .navigation {
+        width: 60%;
+        padding-left: 0;
+        margin-left: 5%;
+    }
+    .navigation:before {
+        width: 100%;
+        left: 0;
+    }
+    .nav li a {
+        font-size: 46px;
+    }
+    .social {
+        width: 40%;
+    }
+    .social i {
+        width: 55px;
+        line-height: 55px;
+        top: -25px;
+    }
+    .news{
+        width:60%;
+        padding: 0;
+    }
+    .newsletter, .presse {
+        font-size: 1.3em;
+    }
+    .big-date {
+        font-size: 3em;
+    }
+    .month {
+        font-size: 1.5em;
+    }
+  header {
+    left: 0;
+    height: 335px;
+  }
+  .container{
+      min-width: 90%;
+  }
+  .accueil{
+      min-width:auto;
+  }
+  .sticky-container {
+      max-width: 90%;
+  }
+  h1 {
+    font-size: 4.5em;
+    line-height: 1.7em;
+    padding: 15px 15px 0;
+    margin: 0;
+  }
+  .sticky h1 {
+      font-size: 28px;
+      line-height: 44px;
+  }
+  .button-stage .button,
+  .other-stage .buton {
+      font-size: 14px;
+  }
+  .sticky .button-stage .button,
+  .sticky .other-stage .buton {
+      font-size: 14px;
+  }
+  .button-date .button,
+  .button-date span {
+      font-size: 1.5em;
+  }
+  .sticky .button-date button{
+      line-height: 40px;
+  }
+  .element-item {
+    padding: 0;
+    width: 30%;
+    margin: 1.6666%;
+  }
+  #logo {
+      top: 50px;
+      left: 50px;
+      max-width: 110px;
+  }
+  #logo.grab {
+      left: 15px;
+  }
+  .fake-close .left, .fake-close .right{
+      background:#fff;
+      height:7px;
+  }
+  .title h2 {
+      line-height: 1em;
+      font-size:4em;
+  }
+  .artiste-stage p, .artiste-date p {
+      font-size: 18px;
+      letter-spacing: 1px;
+      margin: 10px 0;
+  }
+  .content {
+      padding: 15px 0;
+  }
+  .content p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 28px;
+      text-align: justify;
+      letter-spacing: 1px;
+  }
+  .volet-artist {
+    bottom: 50vw;
+  }
+  .partenaire {
+      height: 150px;
+  }
+
+  .slide .container {
+      max-width: 60%;
+  }
+  .color p {
+      font-size: 20px;
+      line-height: 25px;
+  }
+  .no-color {
+      padding: 40px 50px;
+  }
+  .no-color:before {
+      height: calc(100% - 80px);
+      top: 40px;
+  }
+  .no-color p {
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 0;
+  }
+  .vignette p {
+      font-size: 14px;
+  }
+  p.gras {
+      font-size: 18px;
+  }
+  .reservez {
+      padding: 10px 30px 10px 70px;
+  }
+  .reservez i {
+      left: 15px;
+  }
+  .reservez p {
+      font-size: 14px;
+      letter-spacing: 1px;
+  }
+  .reservez .gras {
+      font-size: 16px;
+  }
+  .reservez a {
+      font-size: 16px;
+  }
+
+  .billetterie i {
+    font-size: 8em;
+  }
+  .block-scene p {
+      font-size: 18px;
+      line-height: 25px;
+  }
+  .ticket .vignette .large {
+      font-size: 26px;
+  }
+  .ticket .gras {
+      font-size: 22px;
+  }
+  .ticket .artiste-link2 {
+      font-size: 22px;
+  }
+  
+  .content-text p.large {
+      font-size: 20px;
+  }
+  .festival .artiste-link2 {
+      font-size: 20px;
+  }
+  
+  .container-contact {
+     margin: 0 15vh;
+  }
+}
