@@ -14,7 +14,7 @@ export default {
   layout: 'default',
   components: { VueMarkdown, VueLazyload },
   async asyncData({ params }) {
-    let page = await import('~/content/evenements/page/' + params.slug + '.json');
+    let page = await import('~/content/programmation/page/' + params.slug + '.json');
     return page;
   },
   head() {
