@@ -5,6 +5,7 @@
      <p>{{ type }}</p>
      <p>{{ start }} > {{ end }}</p>    
      <img style="display:none" id="background-image-event" :src="background" />
+     
   </main>
 </template>
 <script>
@@ -16,8 +17,8 @@ export default {
   transition: { name: 'intro', mode: 'out-in' },
   components: { VueMarkdown, VueLazyload },
   async asyncData({ params }) {
-    let page = await import('~/content/programmation/page/' + params.slug + '.json');
-    return page;
+    const { data } = await import('~/content/programmation/page/' + params.slug + '.json')
+    return { page: data, page2: data.background }
   },
   head() {
     return {
