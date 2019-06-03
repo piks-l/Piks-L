@@ -66,8 +66,6 @@ collections:
     slug: "{{slug}}"
     format: 'json'
     fields:
-      - {label: "Image de couverture", name: "couverture", widget: "image", required: true}
-      - {label: "Galerie", name: "galerie", widget: "list", field: {label: Image, name: image, widget: image}}
       - {label: "Nom", name: "title", widget: "string", tagname: "h1", required: true}
       - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Date", name: "dateevents", widget: "date", format: "DD/MM/YYYY"}
@@ -94,6 +92,16 @@ collections:
         displayFields: ["title"]
         multiple: "true"
       - {label: "Date de publication", name: "date", widget: "date", format: "DD/MM/YYYY"}
+      - label: "Images de fond"
+        name: "background"
+        widget: "select"
+        options:
+          - { label: "Background 1", value: "/images/background-1-electro-alternativ.jpg" }
+          - { label: "Background 2", value: "/images/background-2-electro-alternativ.jpg" }
+          - { label: "Background 3", value: "/images/background-3-electro-alternativ.jpg" }
+          - { label: "Background 4", value: "/images/background-4-electro-alternativ.jpg" }
+          - { label: "Background 5", value: "/images/background-5-electro-alternativ.jpg" }
+      - {label: "Galerie", name: "galerie", widget: "list", field: {label: Image, name: image, widget: image}}
       - {label: "Miniature", name: "thumbnail", widget: "image"}
   - name: "articles"
     label: "Articles"
