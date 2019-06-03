@@ -13,21 +13,11 @@
  </div>   
 </template>
 <script>
-import eaLogo from '~/components/ui/logo.vue'
 export default {
   transition: {
-    name: 'page',
-    mode: 'out-in'
+    name: 'intro'
   },
   props: ['error'],
-  layout: 'default',
-  components: {
-    eaLogo
-  }
+  layout: 'default'
 }
 </script>
-<style>
-.logo{
-opacity:0.5
-}
-</style>
