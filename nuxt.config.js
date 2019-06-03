@@ -5,7 +5,7 @@ var dynamicRoutes = getDynamicPaths({
   '/blog': 'blog/posts/*.json',
   '/artistes': 'artistes/page/*.json',
   '/lieux': 'lieux/page/*.json',
-  '/evenements': 'evenements/page/*.json'
+  '/programmation': 'evenements/page/*.json'
 });
 module.exports = {
   head: {
@@ -27,9 +27,10 @@ module.exports = {
     ]
   },
   css: [
-    '~/assets/main.css',
-    '~/assets/responsive.css',
-    '~/assets/transition.css'
+    '~/assets/css/main.css',
+    '~/assets/css/responsive.css',
+    '~/assets/css/transition.css',
+    '~/assets/css/fonts.css'
   ],
   router: {
     /*scrollBehavior: function (to, from, savedPosition) { return { x: 0, y: 0 } }*/
