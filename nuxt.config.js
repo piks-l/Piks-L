@@ -43,6 +43,13 @@ module.exports = {
   generate: {
     routes: dynamicRoutes
   },
+  render: {
+    bundleRenderer: {
+      shouldPreload: (file, type) => {
+        return ['script', 'style', 'font'].includes(type)
+      }
+    }
+  },
   build: {
     vendor: ['jquery'],
     plugins: [
