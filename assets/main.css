@@ -20,6 +20,10 @@ body {
   font-family: 'Roboto';
   margin:0;
 }
+main {
+    padding: 10vh 6vw;
+    position:relative;
+}
 
 
 /* LOGO */
@@ -133,3 +137,6 @@ svg image{
     bottom: 10vh;
     left: 6vw;
 }
+
+
+
