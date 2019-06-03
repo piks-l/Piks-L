@@ -14,18 +14,3 @@ export default {
   }
 }
 </script>
-<style>
-#logo-ea{
-	position:relative;
-	width:20vw;
-	height:auto;
-	display:flex;
-	margin:0 auto;
-}
-path.ealogo_a{
-	fill:white;
-}
-path.ealogo_e{
-	fill:white;
-}
-</style>
