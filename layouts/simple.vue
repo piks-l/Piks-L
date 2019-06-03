@@ -10,9 +10,7 @@
   import eaLogo from '~/components/ui/logo.vue'
   import eaMenu from '~/components/ui/menu.vue'
   export default {
-      transition: {
-        name: 'intro'
-      },
+      transition: { name: 'intro', mode: 'out-in' },
       components: {
           eaLogo,
           eaMenu
