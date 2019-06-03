@@ -54,7 +54,7 @@ collections:
           - label: "Events"
             name: "events"
             widget: "relation"
-            collection: "event"
+            collection: "programmation"
             searchFields: ["title"]
             valueField: "title"
             displayFields: ["title"]
