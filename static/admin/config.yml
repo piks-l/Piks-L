@@ -71,8 +71,15 @@ collections:
       - {label: "Date", name: "dateevents", widget: "date", format: "DD/MM/YYYY"}
       - {label: "Heure de début", name: "start", widget: "string"}
       - {label: "Heure de fin", name: "end", widget: "string"}
+      - label: "Type"
+        name: "type"
+        widget: "select"
+        options:
+          - { label: "Jour", value: "jour" }
+          - { label: "Soirée", value: "soiree" }
+          - { label: "Nuit", value: "nuit" }
       - label: "Semaine"
-        name: "background"
+        name: "semaine"
         widget: "select"
         options:
           - { label: "Semaine 1", value: "semaine1" }
