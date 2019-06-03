@@ -133,69 +133,105 @@ nav{
     transition: width 0s ease, height 0s ease, opacity .5s ease ;
 }
 
-.close {
-    position: absolute;
-    bottom: 5vh;
-    left: 3vw;
-    height: 10vh;
-    width: 6vw;
-    cursor: pointer;
-}
-.left,
-.right{
-    height:7px;
-    width: 60%;
-    background:#fff;
-    position:absolute;
-    top:50%;
-    left:50%;
-    -webkit-transform:translate(-50%, -50%) rotate(0deg);
-            transform:translate(-50%, -50%) rotate(0deg);
-    -webkit-transition: background .25s ease, -webkit-transform .25s ease;
-    transition: background .25s ease, -webkit-transform .25s ease;
-    transition: transform .25s ease, background .25s ease;
-    transition:transform .25s ease, background .25s ease, -webkit-transform .25s ease;
-}
-.close:hover div,
-.fake-close:hover div {
-    background:gray;
-}
-.fake-close .right,
-.menu.open .right{
-    -webkit-transform:translate(-50%, -50%) rotate(45deg);
-            transform:translate(-50%, -50%) rotate(45deg);
-    -webkit-transition: background .45s ease, -webkit-transform .25s ease .65s;
-    transition: background .45s ease, -webkit-transform .25s ease .65s;
-    transition: transform .25s ease .65s, background .45s ease;
-    transition:transform .25s ease .65s, background .45s ease, -webkit-transform .25s ease .65s;
-}
-.fake-close .left,
-.menu.open .left{
-    -webkit-transform:translate(-50%, -50%) rotate(-45deg);
-            transform:translate(-50%, -50%) rotate(-45deg);
-    -webkit-transition: background .45s ease, -webkit-transform .25s ease .65s;
-    transition: background .45s ease, -webkit-transform .25s ease .65s;
-    transition: transform .25s ease .65s, background .45s ease;
-    transition:transform .25s ease .65s, background .45s ease, -webkit-transform .25s ease .65s;
-}
-
-.nav {
-    margin: 0;
-    padding: 0;
-    top: 50%;
-    position: absolute;
-    left: 50%;
-    list-style: none;
-    transform: translate(-50%, -50%);
-}
-.menu-link {
-    font-size: 3em;
-    font-weight: 900;
-    letter-spacing: 3px;
-    font-family: Archivo-Medium;
-    line-height: 1em;
-}
-.menu a{
-    color: #fff;
-    text-decoration: none;
-}
+    .close {
+        position: absolute;
+        bottom: 5vh;
+        left: 3vw;
+        height: 10vh;
+        width: 6vw;
+        cursor: pointer;
+    }
+    .left,
+    .right{
+        height:7px;
+        width: 60%;
+        background:#fff;
+        position:absolute;
+        top:50%;
+        left:50%;
+        -webkit-transform:translate(-50%, -50%) rotate(0deg);
+                transform:translate(-50%, -50%) rotate(0deg);
+        -webkit-transition: background .25s ease, -webkit-transform .25s ease;
+        transition: background .25s ease, -webkit-transform .25s ease;
+        transition: transform .25s ease, background .25s ease;
+        transition:transform .25s ease, background .25s ease, -webkit-transform .25s ease;
+    }
+    .close:hover div,
+    .fake-close:hover div {
+        background:gray;
+    }
+    .fake-close .right,
+    .menu.open .right{
+        -webkit-transform:translate(-50%, -50%) rotate(45deg);
+                transform:translate(-50%, -50%) rotate(45deg);
+        -webkit-transition: background .45s ease, -webkit-transform .25s ease .65s;
+        transition: background .45s ease, -webkit-transform .25s ease .65s;
+        transition: transform .25s ease .65s, background .45s ease;
+        transition:transform .25s ease .65s, background .45s ease, -webkit-transform .25s ease .65s;
+    }
+    .fake-close .left,
+    .menu.open .left{
+        -webkit-transform:translate(-50%, -50%) rotate(-45deg);
+                transform:translate(-50%, -50%) rotate(-45deg);
+        -webkit-transition: background .45s ease, -webkit-transform .25s ease .65s;
+        transition: background .45s ease, -webkit-transform .25s ease .65s;
+        transition: transform .25s ease .65s, background .45s ease;
+        transition:transform .25s ease .65s, background .45s ease, -webkit-transform .25s ease .65s;
+    }
+    .menu p {
+        font-size: 24px;
+        margin: 0;
+        font-family: 'archivo-medium';
+        letter-spacing: 2px;
+    }
+    .nav {
+        margin: 0;
+        padding: 0;
+        top: 50%;
+        position: absolute;
+        left: 50%;
+        list-style: none;
+        transform: translate(-50%, -50%);
+    }
+    .menu-link {
+        font-size: 3em;
+        font-weight: 900;
+        letter-spacing: 3px;
+        font-family: Archivo-Medium;
+        line-height: 1em;
+    }
+    .menu a{
+        color: #fff;
+        text-decoration: none;
+    }
+    .menu .social {
+        position: absolute;
+        top: 50%;
+        right: 6vw;
+        display: grid;
+        transform: translatey(-50%);
+    }
+      .social a {
+            display: block;
+            width: 50px;
+            margin: 10px 0;
+            padding: 0;
+            height: 50px;
+        }
+          .social i {
+              border: 7px solid #fff;
+              border-radius: 50%;
+              width: 70px;
+              line-height: 70px;
+              text-align: center;
+              font-size: 38px;
+              position: relative;
+              top: -34px;
+              -webkit-transition: all .25s ease;
+              transition:all .25s ease;
+              color:#fff;
+          }
+          .social a:hover i {
+              border: 7px solid gray;
+              color:gray;
+          }
