@@ -28,12 +28,16 @@ main {
 }
 
 /* LOGO */
+.logo {
+  position: fixed;
+  width: 200px;
+  height: auto;
+  left: 15px;
+  top: 15px;
+}
 #logo-ea{
-	position:relative;
-	width:20vw;
+	width:auto;
 	height:auto;
-	display:flex;
-	margin:0 auto;
 }
 path.ealogo_a{
 	fill:var(--path-color);
@@ -41,6 +45,7 @@ path.ealogo_a{
 path.ealogo_e{
 	fill:var(--path-color);
 }
+
 /* BACKGROUND */
 svg {
   height: auto;
