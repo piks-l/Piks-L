@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <nav>
      <div class="menu">
           <div class="menu-content">
               <nuxt-link class="menu-link" to="/"><ea-logo/></nuxt-link>
@@ -25,7 +25,7 @@
   				</div>
       </div>
       <button class="open-menu"><span>Menu</span></button>
-  </div>
+  </nav>
 </template>
 <script>
   import $ from 'jquery'
