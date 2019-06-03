@@ -31,13 +31,13 @@
           </div>
       </header>
           <div class="grid">
-              <div v-for="artiste in artistes" :key="artiste.date"  :class="artiste.dateshow+' '+artiste.stage" class="element-item">
-                   <nuxt-link :to="artiste._path+'/'">
+              <div v-for="event in evenements" :key="event.date"  :class="event.type+' '+event.semaine" class="element-item">
+                   <nuxt-link :to="event._path+'/'">
                       <div class="effect">
                           <div class="volet1">
-                              <img class="lazy" v-lazy="artiste.thumbnail" :alt="artiste.title">
+                              <img class="lazy" v-lazy="event.thumbnail" :alt="event.title">
                               <div class="boxshadow"></div>
-                              <h3 class="name small">{{artiste.title}}</h3>
+                              <h3 class="name small">{{event.title}}</h3>
                           </div>
                           <div class="volet2"></div>
                           <div class="border-bot"></div>
@@ -147,60 +147,6 @@ export default {
                 return value;
             }
             grid.layout();
-                    function parallax() {
-          // Populate images from data attributes.
-          var scrolled = $(window).scrollTop()
-          $('#parallax').each(function(index) {
-              var imageSrc = $(this).data('image-src')
-              var imageHeight = $(this).data('height')
-              $(this).css('background-image','url(' + imageSrc + ')')
-              $(this).css('height', imageHeight)
-
-              // Adjust the background position.
-              var initY = $(this).offset().top
-              var height = $(this).height()
-              var diff = scrolled - initY
-              var ratio = Math.round((diff / height) * 100)
-              $(this).css('background-position','center ' + parseInt(-(ratio * 3.5)) + 'px')
-          })
-
-          // Attach scroll event to window. Calculate the scroll ratio of each element
-          // and change the image position with that ratio.
-          // https://codepen.io/lemagus/pen/RWxEYz
-          $(window).scroll(function() {
-            var scrolled = $(window).scrollTop()
-            $('#parallax').each(function(index, element) {
-              var initY = $(this).offset().top
-              var height = $(this).height()
-              var endY  = initY + $(this).height()
-
-              // Check if the element is in the viewport.
-              var visible = isInViewport(this)
-              if(visible) {
-                var diff = scrolled - initY
-                var ratio = Math.round((diff / height) * 100)
-                $(this).css('background-position','center ' + parseInt(-(ratio * 3.5)) + 'px')
-              }
-            })
-          })
-          function isInViewport(node) {
-            // Am I visible? Height and Width are not explicitly necessary in visibility
-            // detection, the bottom, right, top and left are the essential checks. If an
-            // image is 0x0, it is technically not visible, so it should not be marked as
-            // such. That is why either width or height have to be > 0.
-            var rect = node.getBoundingClientRect()
-            return (
-              (rect.height > 0 || rect.width > 0) &&
-              rect.bottom >= 0 &&
-              rect.right >= 0 &&
-              rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
-              rect.left <= (window.innerWidth || document.documentElement.clientWidth)
-            )
-          }
-      	}
-        parallax();
-    },
-    filter: function(message, event) { 
     }
   }
 }
