@@ -4,7 +4,7 @@
      <p>{{ semaine }}</p>
      <p>{{ type }}</p>
      <p>{{ start }} > {{ end }}</p>    
-     <img id="background-image-event" :src="background" />
+     <img style="display:none" id="background-image-event" :src="background" />
   </main>
 </template>
 <script>
@@ -18,6 +18,9 @@ export default {
   async asyncData({ params }) {
     let page = await import('~/content/programmation/page/' + params.slug + '.json');
     return page;
+    let test = page.background;
+    return test;
+    return $('.main-background').attr('href', etst);
   },
   head() {
     return {
@@ -31,8 +34,8 @@ export default {
     }
   },
   mounted() {
-  var back =  $('#background-image-event').attr('src');
-    $('.main-background').attr('href', back);
+    //var back =  $('#background-image-event').attr('src');
+    //$('.main-background').attr('href', back);
   }
 };
 </script>
