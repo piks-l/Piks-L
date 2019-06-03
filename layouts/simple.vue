@@ -15,8 +15,7 @@
       },
       components: {
           eaLogo,
-          eaMenu,
-          eaBackground
+          eaMenu
       },
       mounted () {
       }
