@@ -36,7 +36,20 @@ main {
       left:50%;
       transform:translate(-50%, -50%);
   }
-
+    .loading .logo {
+        position: relative;
+        left: 0;
+        top: 0;
+        display: block;
+        margin: 0 auto;
+    }
+    .loading .deco-video {
+        top: 0;
+        right: 0;
+        position: relative;
+        width: 300px;
+        overflow: visible;
+    }
 
 /* LOGO */
 .logo {
