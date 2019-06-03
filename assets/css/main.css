@@ -258,7 +258,7 @@ nav{
         position: absolute;
         top: 5vh;
         right: 3vw;
-        mix-blend-mode: color-dodge;
+        mix-blend-mode: lighten;
     }
         .deco-video video {
             width: 100%;
