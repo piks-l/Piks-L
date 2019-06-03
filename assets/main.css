@@ -109,6 +109,9 @@ svg image{
 }
 
 /* MENU */
+nav{
+  display:block;
+}
 .open-menu {
     position: fixed;
     top: 0;
@@ -125,14 +128,14 @@ svg image{
     background: var(--blue-color);
     display: block;
     overflow:hidden;
-    transition: width 0s ease .5s, height 0s ease .5s, opacity 5s ease ;
+    transition: width 0s ease .5s, height 0s ease .5s, opacity .5s ease ;
     opacity:0;
 }
 .menu.open{
     height: 100%;
     width: 100%;
     opacity:1;
-    transition: width 0s ease, height 0s ease, opacity 5s ease ;
+    transition: width 0s ease, height 0s ease, opacity .5s ease ;
 }
 
 .close {
@@ -181,4 +184,19 @@ svg image{
     transition:transform .25s ease .65s, background .45s ease, -webkit-transform .25s ease .65s;
 }
 
-
+.nav {
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    list-style: none;
+    transform: translate(-50%, -50%);
+}
+.menu-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 3em;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
