@@ -125,6 +125,7 @@ svg image{
     background: var(--blue-color);
     display: block;
     overflow:hidden;
+    transition: all 0s ease .5s;
 }
 .menu.open{
     height: 100%;
@@ -137,8 +138,7 @@ svg image{
     transition-timing-function: ease-in;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-    -webkit-animation-delay: 0.25s;
-    animation-delay: 0.25s;
+    transition: all 0s ease;
 }
 @-webkit-keyframes fadeIn {
   0% {
