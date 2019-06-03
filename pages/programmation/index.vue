@@ -32,7 +32,7 @@
       </header>
           <div class="grid">
               <div v-for="event in programmation" :key="event.date"  :class="event.type+' '+event.semaine" class="element-item">
-                   <nuxt-link :to="'/programmation/'+event.title+'/'">
+                   <nuxt-link :to="event._path+'/'">
                       <div class="effect">
                           <div class="volet1">
                               <img class="lazy" v-lazy="event.thumbnail" :alt="event.title">
