@@ -240,7 +240,16 @@ nav{
         background: #fff;
         top: 50%;
         transform: translatey(-50%);
-    }    
+    }
+    .deco-bot {
+        position: absolute;
+        left: 50%;
+        height: 3px;
+        width: 65%;
+        background: #fff;
+        bottom: 10vh;
+        transform: translatex(-50%);
+    } 
     .menu-logo{
         z-index:1;
     }
