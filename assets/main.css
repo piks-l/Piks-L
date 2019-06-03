@@ -115,7 +115,10 @@ svg image{
     background: blue;
     opacity: 0;
     display: none;
+    transition: display 0s ease .5s, opacity .5s ease;
 }
 .menu.open{
-  
+    opacity: 1;
+    display: block;
+    transition: display 0s ease, opacity .5s ease;
 }
