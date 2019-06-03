@@ -71,13 +71,13 @@ export default {
       }
     },
     data() {
-      const context = require.context('~/content/artistes/page/', false, /\.json$/);
-      const artistes = context.keys().map(key => ({
+      const context = require.context('~/content/evenements/page/', false, /\.json$/);
+      const evenements = context.keys().map(key => ({
         ...context(key),
-        _path: `/artistes/${key.replace('.json', '').replace('./', '')}`
+        _path: `/evenements/${key.replace('.json', '').replace('./', '')}`
       }));
       return {
-        artistes,
+        evenements,
         grid: null
       };
     },
@@ -85,17 +85,6 @@ export default {
     this.$Lazyload.$on('loaded', function ({ el, src, $parent }) {
       $(el).parent('.volet1').parent('.effect').addClass("loaded");
     });
-    if ($(window).width() > 599) {
-       $('.button-stage button, .other-stage button').each( function() {
-            var search = $(this).html();
-            var replace = '<div class="mini-circle"><div class="center-circle"></div></div>' + search ;
-            var el = $(this);
-            var text = el.html();
-            text = text.split(search).join(replace);
-            el.html(text);
-        });
-    };
-
     this.isotope();
   },
   methods: {

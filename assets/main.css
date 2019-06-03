@@ -15,18 +15,16 @@
 body {
   background: var(--blue-color);
   text-align: center;
-  padding-top: 30px;
   height: 100%;
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
   font-family: 'Roboto';
   margin:0;
 }
 main {
-  position: absolute;
+    padding: 10vh 6vw;
+    position:relative;
 }
+
 
 /* LOGO */
 .logo {
@@ -111,6 +109,9 @@ svg image{
 }
 
 /* MENU */
+nav{
+  display:block;
+}
 .open-menu {
     position: fixed;
     top: 0;
@@ -120,22 +121,82 @@ svg image{
 .menu {
     position: fixed;
     z-index: 100;
-    width: 100%;
-    height: 100%;
+    width:0;
+    height:0;
     top: 0;
     left: 0;
-    background: blue;
-    opacity: 0;
-    display: none;
-    transition: display 0s ease .5s, opacity .5s ease;
+    background: var(--blue-color);
+    display: block;
+    overflow:hidden;
+    transition: width 0s ease .5s, height 0s ease .5s, opacity .5s ease ;
+    opacity:0;
 }
 .menu.open{
-    opacity: 1;
-    display: block;
-    transition: display 0s ease, opacity .5s ease;
+    height: 100%;
+    width: 100%;
+    opacity:1;
+    transition: width 0s ease, height 0s ease, opacity .5s ease ;
 }
+
 .close {
     position: absolute;
-    bottom: 10vh;
-    left: 6vw;
+    bottom: 5vh;
+    left: 3vw;
+    height: 10vh;
+    width: 6vw;
+    cursor: pointer;
+}
+.left,
+.right{
+    height:7px;
+    width: 60%;
+    background:#fff;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%) rotate(0deg);
+            transform:translate(-50%, -50%) rotate(0deg);
+    -webkit-transition: background .25s ease, -webkit-transform .25s ease;
+    transition: background .25s ease, -webkit-transform .25s ease;
+    transition: transform .25s ease, background .25s ease;
+    transition:transform .25s ease, background .25s ease, -webkit-transform .25s ease;
+}
+.close:hover div,
+.fake-close:hover div {
+    background:gray;
+}
+.fake-close .right,
+.menu.open .right{
+    -webkit-transform:translate(-50%, -50%) rotate(45deg);
+            transform:translate(-50%, -50%) rotate(45deg);
+    -webkit-transition: background .45s ease, -webkit-transform .25s ease .65s;
+    transition: background .45s ease, -webkit-transform .25s ease .65s;
+    transition: transform .25s ease .65s, background .45s ease;
+    transition:transform .25s ease .65s, background .45s ease, -webkit-transform .25s ease .65s;
+}
+.fake-close .left,
+.menu.open .left{
+    -webkit-transform:translate(-50%, -50%) rotate(-45deg);
+            transform:translate(-50%, -50%) rotate(-45deg);
+    -webkit-transition: background .45s ease, -webkit-transform .25s ease .65s;
+    transition: background .45s ease, -webkit-transform .25s ease .65s;
+    transition: transform .25s ease .65s, background .45s ease;
+    transition:transform .25s ease .65s, background .45s ease, -webkit-transform .25s ease .65s;
+}
+
+.nav {
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    list-style: none;
+    transform: translate(-50%, -50%);
+}
+.menu-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 3em;
+    font-weight: 900;
+    letter-spacing: 3px;
 }
