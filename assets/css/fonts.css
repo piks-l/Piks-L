@@ -1,1 +1,7 @@
 
+@font-face {
+    font-family: 'Archivo-Medium';
+    src:url('~assets/fonts/Archivo-Medium.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
