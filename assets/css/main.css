@@ -250,6 +250,19 @@ nav{
         bottom: 10vh;
         transform: translatex(-50%);
     } 
+    .deco-video {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: absolute;
+        top: 5vh;
+        right: 3vw;
+        mix-blend-mode: color-dodge;
+    }
+        .deco-video video {
+            width: 100%;
+        }
     .menu-logo{
         z-index:1;
     }
