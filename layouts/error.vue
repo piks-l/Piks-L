@@ -14,9 +14,6 @@
 </template>
 <script>
 export default {
-  transition: {
-    name: 'intro'
-  },
   props: ['error'],
   layout: 'default'
 }
