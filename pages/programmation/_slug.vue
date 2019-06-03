@@ -18,9 +18,6 @@ export default {
   async asyncData({ params }) {
     let page = await import('~/content/programmation/page/' + params.slug + '.json');
     return page;
-    let test = page.background;
-    return test;
-    return $('.main-background').attr('href', test);
   },
   head() {
     return {
@@ -34,8 +31,9 @@ export default {
     }
   },
   mounted() {
-    //var back =  $('#background-image-event').attr('src');
-    //$('.main-background').attr('href', back);
+    var back =  $('#background-image-event').attr('src');
+    $('.main-background').attr('href', back);
+    $('#background-image-event').remove();
   }
 };
 </script>
