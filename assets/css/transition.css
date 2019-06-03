@@ -18,12 +18,12 @@
 }
 .intro-enter-active::before,
 .intro-leave-active::before {
-  background-color: #2e2e2e;
+  background-color: #0635aa;
 }
 .intro-enter-active::after,
 .intro-leave-active::after {
   top: 50%;
-  background-color: #2e2e2e;
+  background-color: #0635aa;
 }
 .intro-leave::before, .intro-leave::after {
   transform: scaleX(0);
