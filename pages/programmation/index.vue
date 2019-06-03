@@ -31,7 +31,7 @@
           </div>
       </header>
           <div class="grid">
-              <div v-for="event in evenements" :key="event.date"  :class="event.type+' '+event.semaine" class="element-item">
+              <div v-for="event in programmation" :key="event.date"  :class="event.type+' '+event.semaine" class="element-item">
                    <nuxt-link :to="'/programmation/'+event.title+'/'">
                       <div class="effect">
                           <div class="volet1">
@@ -71,13 +71,13 @@ export default {
       }
     },
     data() {
-      const context = require.context('~/content/evenements/page/', false, /\.json$/);
-      const evenements = context.keys().map(key => ({
+      const context = require.context('~/content/programmation/page/', false, /\.json$/);
+      const programmation = context.keys().map(key => ({
         ...context(key),
-        _path: `/evenements/${key.replace('.json', '').replace('./', '')}`
+        _path: `/programmation/${key.replace('.json', '').replace('./', '')}`
       }));
       return {
-        evenements,
+        programmation,
         grid: null
       };
     },
