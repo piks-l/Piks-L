@@ -29,6 +29,7 @@ export default {
     }
   },
   mounted() {
+    $('.main-background').attr('href', page.background)
   }
 };
 </script>
