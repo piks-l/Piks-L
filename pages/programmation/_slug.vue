@@ -31,6 +31,7 @@ export default {
     }
   },
   mounted() {
+    console.log(page)
     var back =  $('#background-image-event').attr('src');
     $('.main-background').attr('href', back);
     $('#background-image-event').remove();
