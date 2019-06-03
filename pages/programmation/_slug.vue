@@ -20,7 +20,7 @@ export default {
     return page;
     let test = page.background;
     return test;
-    return $('.main-background').attr('href', etst);
+    return $('.main-background').attr('href', test);
   },
   head() {
     return {
