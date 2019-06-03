@@ -1,5 +1,5 @@
 <template>
-  <div id="main-container">
+  <main id="main-container">
       <div  class="container scene_element scene_element--fadein padding">
         <header id="header">
           <div class="sticky-container">
@@ -46,7 +46,7 @@
               </div>
           </div>
       </div>
-  </div>
+  </main>
 </template>
 <script>
   // import
@@ -54,12 +54,11 @@
   if (process.browser) { Isotope = require("isotope-layout"); }
   import $ from 'jquery'
   import VueLazyload from 'vue-lazyload'
-  import electrobotikFooter from '~/components/ui/footer.vue'
   // export
 export default {
     layout: 'default',
     transition: { name: 'intro' },
-    components: { VueLazyload, electrobotikFooter },
+    components: { VueLazyload},
     head() {
       return {
         title: 'Programmation | Electrobotik Invasion - le 2 & 3 Août 2019',
