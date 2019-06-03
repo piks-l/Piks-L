@@ -15,18 +15,12 @@
 body {
   background: var(--blue-color);
   text-align: center;
-  padding-top: 30px;
   height: 100%;
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
   font-family: 'Roboto';
   margin:0;
 }
-main {
-  position: absolute;
-}
+
 
 /* LOGO */
 .logo {
@@ -124,7 +118,7 @@ svg image{
     height: 100%;
     top: 0;
     left: 0;
-    background: blue;
+    background: var(--blue-color);
     opacity: 0;
     display: none;
     transition: display 0s ease .5s, opacity .5s ease;
