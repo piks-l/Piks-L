@@ -22,6 +22,7 @@ body {
   top: 0;
   left: 0;
   font-family: 'Roboto';
+  margin:0;
 }
 main {
   position: absolute;
@@ -132,4 +133,9 @@ svg image{
     opacity: 1;
     display: block;
     transition: display 0s ease, opacity .5s ease;
+}
+.close {
+    position: absolute;
+    bottom: 10vh;
+    left: 6vw;
 }
