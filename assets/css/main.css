@@ -121,16 +121,17 @@ nav{
     background: var(--blue-color);
     display: block;
     overflow:hidden;
-    transition: width 0s ease .5s, height 0s ease .5s, opacity .5s ease ;
+    transition: padding 0s ease .5s, width 0s ease .5s, height 0s ease .5s, opacity .5s ease ;
     opacity:0;
-    padding:10vh 6vw;
+    padding:0;
     color: #fff;
 }
 .menu.open{
     height: 80vh;
     width: 88vw;
+    padding:10vh 6vw;
     opacity:1;
-    transition: width 0s ease, height 0s ease, opacity .5s ease ;
+    transition: padding 0s ease, width 0s ease, height 0s ease, opacity .5s ease ;
 }
 
     .close {
