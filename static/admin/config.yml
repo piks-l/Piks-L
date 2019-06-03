@@ -69,8 +69,10 @@ collections:
       - {label: "Image de couverture", name: "couverture", widget: "image", required: true}
       - {label: "Galerie", name: "galerie", widget: "list", field: {label: Image, name: image, widget: image}}
       - {label: "Nom", name: "title", widget: "string", tagname: "h1", required: true}
-      - {label: "Iframe", name: "iframe", widget: "markdown"}
       - {label: "Description", name: "description", widget: "markdown"}
+      - {label: "Date", name: "dateevents", widget: "date", format: "DD/MM/YYYY"}
+      - {label: "Heure de début", name: "start", widget: "string"}
+      - {label: "Heure de fin", name: "end", widget: "string"}
       - label: "Groupes"
         name: "groupes"
         widget: "list"
