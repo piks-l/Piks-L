@@ -11,7 +11,11 @@
   </div>
 </template>
 <script>
+import eaLogo from '~/components/ui/logo.vue'
 export default {
+  components: {
+    eaLogo
+  },
   data: () => ({
     loading: false
   }),
