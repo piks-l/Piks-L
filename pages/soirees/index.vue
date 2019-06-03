@@ -69,6 +69,7 @@
   // export
 export default {
     layout: 'default',
+    transition: { name: 'intro' },
     components: { VueLazyload, electrobotikFooter },
     head() {
       return {
