@@ -24,8 +24,8 @@ main {
   position: fixed;
   width: 200px;
   height: auto;
-  left: 15px;
-  top: 15px;
+  left: 3vw;
+  top: 5vh;
 }
 #logo-ea{
 	width:auto;
@@ -125,6 +125,7 @@ nav{
     opacity:0;
     padding:0;
     color: #fff;
+    z-index: 101;
 }
 .menu.open{
     height: 80vh;
@@ -220,19 +221,14 @@ nav{
             height: 50px;
         }
           .social i {
-              border: 7px solid #fff;
-              border-radius: 50%;
-              width: 70px;
-              line-height: 70px;
+              line-height: 50px;
               text-align: center;
               font-size: 38px;
               position: relative;
-              top: -34px;
               -webkit-transition: all .25s ease;
               transition:all .25s ease;
               color:#fff;
           }
           .social a:hover i {
-              border: 7px solid gray;
               color:gray;
           }
