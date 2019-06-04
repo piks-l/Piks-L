@@ -1,10 +1,10 @@
 <template>
   <div id="main" class="layout-ea">
-    <div class="ui-ea">
+    <header class="ui-ea">
       <ea-background/>
       <ea-logo/>
-      <ea-menu/>
-    </div>
+      <ea-menu class="ea-menu" />
+    </header>
     <nuxt/>
   </div>
 </template>
