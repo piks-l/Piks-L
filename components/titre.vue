@@ -6,15 +6,20 @@
 <script>
 import $ from 'jquery'
 export default {
+  transition: {
+    beforeEnter: function () {
+       console.log("Before enter transition");
+    }
+  }
   updated() {
-    console.log("Update")
+    console.log("Update");
   },
   mounted() {
-    console.log("Mounted")
+    console.log("Mounted");
   },
   methods: {
     title() {
-     console.log("Titre de la page loaded")
+     console.log("Titre de la page loaded");
     },
     beforeEnter(el) {
       console.log("beforeEnter");
