@@ -1,41 +1,29 @@
 <template>
   <main id="main-container">
       <div  class="container scene_element scene_element--fadein padding">
-        <header id="header">
-          <div class="sticky-container">
-              <div id="filters">
-                <h1>SOIREES</h1>
-                <div class="button-date button-group"  data-filter-group="date">
-                    <div class="center">
-                        <button class="button is-checked" data-filter="*">ALL</button>
-                        <span>/</span>
-                        <button class="button" data-filter=".jour">Jour</button>
-                        <span>/</span>
-                        <button class="button" data-filter=".soiree">Soirée</button>
-                        <span>/</span>
-                        <button class="button" data-filter=".nuit">Nuit</button>
-                    </div>
-                </div>
-                <div class="stage">
-                  <div class="center">
-                    <div class="button-stage button-group"  data-filter-group="stage">
-                        <button class="button active" data-filter=".semaine1"><span>Semaine</span> 1</button>
-                        <button class="button active" data-filter=".semaine2"><span>Semaine</span> 2</button>
-                        <button class="button active" data-filter=".semaine3"><span>Semaine</span> 3</button>
-                        <button class="button active" data-filter=".semaine4"><span>Semaine</span> 4</button>
-                        <button class="button any" data-filter=""></button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <h1>SOIREES</h1>
+          <div class="button-type button-group"  data-filter-group="type">
+              <button class="button is-checked" data-filter="*">ALL</button>
+              <button class="button" data-filter=".jour">Jour</button>
+              <button class="button" data-filter=".soiree">Soirée</button>
+              <button class="button" data-filter=".nuit">Nuit</button>
           </div>
-      </header>
+          <div class="button-semaine button-group"  data-filter-group="stage">
+              <button class="button active" data-filter=".semaine1"><span>Semaine</span> 1</button>
+              <button class="button active" data-filter=".semaine2"><span>Semaine</span> 2</button>
+              <button class="button active" data-filter=".semaine3"><span>Semaine</span> 3</button>
+              <button class="button active" data-filter=".semaine4"><span>Semaine</span> 4</button>
+              <button class="button any" data-filter=""></button>
+          </div>
           <div class="grid">
               <div v-for="event in programmation" :key="event.date"  :class="event.type+' '+event.semaine" class="element-item">
                    <nuxt-link :to="event._path+'/'">
                    <p class="date-event"><strong>{{event.dateevents}}</strong></p>
                    <p class="start-to-end">{{event.start}} &rsaquo; {{event.end}}</p>
                    <p class="start-to-end">{{event.lieux}}</p>
+                   <p target="_blank" v-for="artist in groupes" :key="artist.artiste" :href="artist.artiste">
+                    {{artist.artiste}}
+                   </p>
                   </nuxt-link>
               </div>
           </div>
