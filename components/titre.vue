@@ -22,7 +22,7 @@ export default {
   methods: {
     title() {
      console.log("Titre");
-    }
+    },
     beforeEnter: function () {
        console.log("Before enter methods");
     }
