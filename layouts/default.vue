@@ -1,6 +1,6 @@
 <template>
-  <div id="main" class="layout-ea">
-    <header class="ui-ea">
+  <div id="main" class="ea-layout">
+    <header class="ea-ui">
       <ea-background/>
       <ea-logo/>
       <ea-menu class="ea-menu" />
