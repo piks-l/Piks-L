@@ -10,11 +10,16 @@ export default {
   methods: {
     title() {
      console.log("Titre de la page loaded")
+     $(".ea-titre").addClass("turn");
     }
   }
 }
 </script>
 <style>
+.turn {
+  animation: turn 1s linear forwards 1s;
+  transform: rotateX(180deg);
+}
 .ea-titre {
   line-height: 60px;
   position: relative;
@@ -22,8 +27,6 @@ export default {
   text-transform: uppercase;
   color: white;
   text-shadow: 0px 0px 30px rgba(0,0,0,.5);
-  animation: turn 2s linear forwards 1s;
-  transform: rotateX(180deg);
 }
 @keyframes turn {
   100% {
