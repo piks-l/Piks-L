@@ -1,14 +1,20 @@
 <template>
-  <h2 class="ea-titre">{{this.$route.name}}</h2>
+  <transition name="fade" mode="out-in"  @beforeLeave="beforeLeave"  @enter="enter" @afterEnter="afterEnter">
+    <h2 class="ea-titre">{{this.$route.name}}</h2>
+  </transition> 
 </template>
 <script>
 import $ from 'jquery'
 export default {
   updated() {
     this.title();
-    setTimeout(function(){ 
-      $(".ea-titre").removeClass("turn"); 
-     }, 1000);
+    console.log("Update")
+  },
+  beforeLeave() {
+    console.log("Before leave")
+  },
+  mounted() {
+    console.log("Mounted")
   },
   methods: {
     title() {
