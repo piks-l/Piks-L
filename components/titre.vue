@@ -16,11 +16,12 @@ export default {
     title() {
      console.log("Titre de la page loaded")
     },
-    beforeEnter: function () {
+    beforeEnter(el)
       console.log("beforeEnter");
     },
-    enter: function () {
+    enter(el, done) {
       console.log("enter");
+      el.done()
     },
     afterEnter() {
       console.log("afterEnter");
