@@ -82,7 +82,7 @@ svg {
   -webkit-filter: url("#glitch");
   filter: url("#glitch");
 }
-.fond-principal {
+.ea-background {
   background: #0635aa;
   width: 100vw;
   height: 100vh;
