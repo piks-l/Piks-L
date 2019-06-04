@@ -1,5 +1,5 @@
 <template>
-  <transition name="fade" mode="out-in"  @beforeLeave="beforeLeave"  @enter="enter" @afterEnter="afterEnter">
+  <transition :before-enter="beforeEnter" :enter="enter" :after-enter="afterEnter" :before-leave="beforeLeave" :leave="leave" :after-leave="afterLeave" appear>
     <h2 class="ea-titre">{{this.$route.name}}</h2>
   </transition> 
 </template>
@@ -7,11 +7,7 @@
 import $ from 'jquery'
 export default {
   updated() {
-    this.title();
     console.log("Update")
-  },
-  beforeLeave() {
-    console.log("Before leave")
   },
   mounted() {
     console.log("Mounted")
@@ -19,8 +15,25 @@ export default {
   methods: {
     title() {
      console.log("Titre de la page loaded")
-     $(".ea-titre").addClass("turn");
-    }
+    },
+    beforeEnter() {
+      console.log("beforeEnter");
+    },
+    enter() {
+      console.log("enter");
+    },
+    afterEnter() {
+      console.log("afterEnter");
+    },
+    beforeLeave() {
+      console.log("beforeLeave");
+    },
+    leave() {
+      console.log("leave");
+    },
+    afterLeave() {
+      console.log("afterLeave");
+    },
   }
 }
 </script>
