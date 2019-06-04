@@ -5,7 +5,7 @@
       <ea-logo/>
       <ea-menu class="ea-menu" />
     </header>
-    <nuxt :class="this.$route.path"/>
+    <nuxt/>
   </div>
 </template>
 <script>
