@@ -1,5 +1,5 @@
 <template>
-  <transition v-on:beforeEnter="beforeEnter">
+  <transition>
     <h2 class="ea-titre">{{this.$route.name}}</h2>
   </transition> 
 </template>
