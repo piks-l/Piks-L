@@ -16,7 +16,7 @@ export default {
     title() {
      console.log("Titre de la page loaded")
     },
-    beforeEnter(el)
+    beforeEnter(el) {
       console.log("beforeEnter");
     },
     enter(el, done) {
