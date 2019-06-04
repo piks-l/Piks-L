@@ -21,7 +21,7 @@ export default {
     },
     enter(el, done) {
       console.log("enter");
-      el.done()
+      done();
     },
     afterEnter() {
       console.log("afterEnter");
