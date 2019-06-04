@@ -11,11 +11,11 @@
       <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <filter id="glitch">
-            <feTurbulence baseFrequency="0.03 0.01" id="turb" numOctaves="1" result="warp" type="fractalNoise"></feTurbulence>
+            <feTurbulence baseFrequency="0.01 0.01" id="turb" numOctaves="1" result="warp" type="fractalNoise"></feTurbulence>
             <feColorMatrix in="warp" result="huedturb" type="hueRotate" values="90">
               <animate attributeName="values" attributeType="XML" dur="10s" repeatCount="indefinite" values="0;180;360"></animate>
             </feColorMatrix>
-            <feDisplacementMap in="SourceGraphic" in2="huedturb" scale="30" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+            <feDisplacementMap in="SourceGraphic" in2="huedturb" scale="60" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
           </filter>
         </defs>
       </svg>
