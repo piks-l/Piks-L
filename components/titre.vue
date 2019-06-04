@@ -1,5 +1,5 @@
 <template>
-  <transition :before-enter="beforeEnter" :enter="enter" :after-enter="afterEnter" :before-leave="beforeLeave" :leave="leave" :after-leave="afterLeave" appear>
+  <transition v-on:beforeEnter="beforeEnter">
     <h2 class="ea-titre">{{this.$route.name}}</h2>
   </transition> 
 </template>
@@ -12,34 +12,17 @@ export default {
     }
   },
   updated() {
+    this.title();
     console.log("Update");
   },
   mounted() {
+    this.title();
     console.log("Mounted");
   },
   methods: {
     title() {
-     console.log("Titre de la page loaded");
-    },
-    beforeEnter(el) {
-      console.log("beforeEnter");
-    },
-    enter(el, done) {
-      console.log("enter");
-      done();
-    },
-    afterEnter() {
-      console.log("afterEnter");
-    },
-    beforeLeave() {
-      console.log("beforeLeave");
-    },
-    leave() {
-      console.log("leave");
-    },
-    afterLeave() {
-      console.log("afterLeave");
-    },
+     console.log("Titre");
+    }
   }
 }
 </script>
