@@ -33,15 +33,9 @@
           <div class="grid">
               <div v-for="event in programmation" :key="event.date"  :class="event.type+' '+event.semaine" class="element-item">
                    <nuxt-link :to="event._path+'/'">
-                      <div class="effect">
-                          <div class="volet1">
-                              <img class="lazy" v-lazy="event.thumbnail" :alt="event.title">
-                              <div class="boxshadow"></div>
-                              <h3 class="name small">{{event.dateevents}} - {{event.start}} à {{event.end}} </h3>
-                          </div>
-                          <div class="volet2"></div>
-                          <div class="border-bot"></div>
-                      </div>
+                   <p class="date-event"><strong>{{event.dateevents}}</strong></p>
+                   <p class="start-to-end">{{event.start}} &rsaquo; {{event.end}}</p>
+                   <p class="start-to-end">{{event.lieux}}</p>
                   </nuxt-link>
               </div>
           </div>
