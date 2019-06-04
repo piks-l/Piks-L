@@ -6,12 +6,14 @@ import $ from 'jquery'
 export default {
   updated() {
     this.title();
+    setTimeout(function(){ 
+      $(".ea-titre").removeClass("turn"); 
+     }, 1000);
   },
   methods: {
     title() {
      console.log("Titre de la page loaded")
      $(".ea-titre").addClass("turn");
-     setTimeout(function(){ $(".ea-titre").removeClass("turn"); }, 1001);
     }
   }
 }
