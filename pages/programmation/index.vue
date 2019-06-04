@@ -18,12 +18,10 @@
           <div class="grid">
               <div v-for="event in programmation" :key="event.date"  :class="event.type+' '+event.semaine" class="element-item">
                    <nuxt-link :to="event._path+'/'">
-                   <p class="date-event"><strong>{{event.dateevents}}</strong></p>
-                   <p class="start-to-end">{{event.start}} &rsaquo; {{event.end}}</p>
-                   <p class="start-to-end">{{event.lieu}}</p>
-                   <p target="_blank" v-for="artist in groupes" :key="artist.artiste" :href="artist.artiste">
-                    {{artist.artiste}}
-                   </p>
+                     <p class="grid-date"><strong>{{event.dateevents}}</strong></p>
+                     <p class="grid-time">{{event.start}} &rsaquo; {{event.end}}</p>
+                     <p class="grid-artistes" v-for="artist in groupes" :key="artist.artiste">{{artist.artiste}}</p>
+                     <p class="grid-lieu">{{event.lieu}}</p>
                   </nuxt-link>
               </div>
           </div>
