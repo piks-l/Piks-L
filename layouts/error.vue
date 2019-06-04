@@ -2,7 +2,7 @@
  <div class="error">
   <div v-if="error.statusCode === 404">
     <h3>404</h3>
-    <h2>La page www.electro-alternativ.com{{this.$route.path}} n'existe pas.</h2>
+    <h2>La page <u><strong>www.electro-alternativ.com{{this.$route.path}}</strong></u> n'existe pas.</h2>
     <nuxt-link to="/">Retour au site !</nuxt-link>
   </div>
   <div v-else>
