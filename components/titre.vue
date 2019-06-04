@@ -1,5 +1,5 @@
 <template>
-  <transition>
+  <transition :before-enter="beforeEnter">
     <h2 class="ea-titre">{{this.$route.name}}</h2>
   </transition> 
 </template>
@@ -22,6 +22,9 @@ export default {
   methods: {
     title() {
      console.log("Titre");
+    }
+    beforeEnter: function () {
+       console.log("Before enter methods");
     }
   }
 }
