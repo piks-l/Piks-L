@@ -10,7 +10,7 @@ export default {
     beforeEnter: function () {
        console.log("Before enter transition");
     }
-  }
+  },
   updated() {
     console.log("Update");
   },
