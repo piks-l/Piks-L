@@ -1,5 +1,5 @@
 <template>
-    <div class="fond-principal">
+    <div class="ea-background">
       <img class="seconde-background" src="/images/background-1-electro-alternativ.jpg">
       <div class="mirror anim-filter" >
         <div class="mirror__source mirror__source--solid ">
