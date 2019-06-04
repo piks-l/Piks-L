@@ -1,23 +1,26 @@
 <template>
   <div id="main" class="ea-layout">
     <header class="ea-ui">
-      <ea-background/>
-      <ea-logo/>
-      <ea-menu class="ea-menu" />
+      <ui-background/>
+      <ui-logo/>
+      <ui-menu class="ea-menu" />
     </header>
+    <ea-titre/>
     <nuxt/>
   </div>
 </template>
 <script>
   import $ from 'jquery'
-  import eaLogo from '~/components/ui/logo.vue'
-  import eaMenu from '~/components/ui/menu.vue'
-  import eaBackground from '~/components/ui/background.vue'
+  import uiLogo from '~/components/ui/logo.vue'
+  import uiMenu from '~/components/ui/menu.vue'
+  import uiBackground from '~/components/ui/background.vue'
+  import eaTitre from '~/components/titre.vue'
   export default {
       components: {
-          eaLogo,
-          eaMenu,
-          eaBackground
+          uiLogo,
+          uiMenu,
+          uiBackground,
+          eaTitre
       },
       mounted () {
       }
