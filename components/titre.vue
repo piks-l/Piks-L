@@ -4,7 +4,7 @@
 <script>
 import $ from 'jquery'
 export default {
-  mounted() {
+  updated() {
     this.title();
   },
   methods: {
