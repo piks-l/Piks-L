@@ -1,19 +1,21 @@
 <template>
   <main id="main-container">
       <div  class="container scene_element scene_element--fadein padding">
-          <h1>SOIREES</h1>
+          <h2>PROGRAMMATION</h2>
+          <div id="filters">
           <div class="button-type button-group"  data-filter-group="type">
               <button class="button is-checked" data-filter="*">ALL</button>
               <button class="button" data-filter=".jour">Jour</button>
               <button class="button" data-filter=".soiree">Soirée</button>
               <button class="button" data-filter=".nuit">Nuit</button>
           </div>
-          <div class="button-semaine button-group"  data-filter-group="stage">
+          <div class="button-semaine button-group"  data-filter-group="semaine">
               <button class="button active" data-filter=".semaine1"><span>Semaine</span> 1</button>
               <button class="button active" data-filter=".semaine2"><span>Semaine</span> 2</button>
               <button class="button active" data-filter=".semaine3"><span>Semaine</span> 3</button>
               <button class="button active" data-filter=".semaine4"><span>Semaine</span> 4</button>
               <button class="button any" data-filter=""></button>
+          </div>
           </div>
           <div class="grid">
               <div v-for="event in programmation" :key="event.date"  :class="event.type+' '+event.semaine" class="element-item">
@@ -61,13 +63,10 @@ export default {
       };
     },
   mounted() {
-    this.$Lazyload.$on('loaded', function ({ el, src, $parent }) {
-      $(el).parent('.volet1').parent('.effect').addClass("loaded");
-    });
-    this.isotope();
+    this.ea();
   },
   methods: {
-    isotope() {
+    ea() {
             var grid = new Isotope(".grid", {
               itemSelector: ".element-item"
             });
@@ -105,16 +104,16 @@ export default {
                 });
             });
             $( ".button-date button" ).click(function() {
-              $( ".button-stage .any" ).click();
-              $('.button-stage button, .other-stage button').each( function() {
+              $( ".button-semaine .any" ).click();
+              $('.button-semaine button, .other-semaine button').each( function() {
                   $( this ).addClass( "active" );
                   $( ".button-date" ).removeClass( "mobile-active" );
               });
             });
-            $( ".button-stage button, .other-stage button" ).click(function() {
-              $('.button-stage button, .other-stage button').each( function() {
+            $( ".button-semaine button, .other-semaine button" ).click(function() {
+              $('.button-semaine button, .other-semaine button').each( function() {
                   $( this ).removeClass( "active" );
-                  $( ".stage" ).removeClass( "mobile-active" );
+                  $( ".semaine" ).removeClass( "mobile-active" );
               });
             });
             // flatten object by concatting values
