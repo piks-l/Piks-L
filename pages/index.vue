@@ -26,7 +26,7 @@
       transform-origin: 50% 50%;
     }
     .page-enter-active h1, .page-leave-active h1{
-      transition: all 2s ease-out;
+      transition: all .50s ease-out;
     }
     .page-enter h1, .page-leave-active h1{
         opacity: 0;
