@@ -41,6 +41,7 @@ module.exports = {
     { src: '~/plugins/ga.js', ssr: false }
   ],
   /*loading: '~/components/ui/loading.vue',*/
+  loading: false,
   generate: {
     routes: dynamicRoutes
   },
