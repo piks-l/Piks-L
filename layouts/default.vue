@@ -6,7 +6,7 @@
       <ui-logo/>
       <ui-menu class="ea-menu" />
     </header>
-    <transition name="fade" v-on:before-enter="beforeEnter">
+    <transition name="fade">
       <ea-titre/>
     </transition> 
     <nuxt/>
@@ -22,11 +22,6 @@
   import eaTitre from '~/components/titre.vue'
   
   export default {
-      transition: {
-        beforeEnter: function () {
-           console.log("Before enter transition");
-        }
-      },
       components: {
           uiLoading,
           uiLogo,
@@ -35,14 +30,24 @@
           eaTitre
       },
       mounted () {
+      },
+      methods () {
+        beforeEnter: function () {
+           console.log("Before enter transition");
+        }
       }
   }
 </script>
 <style>
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
+.fade-enter-active, 
+.fade-leave-active {
+  transition: all .5s;
+  opacity:1;
+  top:10px;
 }
-.fade-enter, .fade-leave-to {
+.fade-enter, 
+.fade-leave-to {
+  top:0px;
   opacity: 0;
 }
 </style>
