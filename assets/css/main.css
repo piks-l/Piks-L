@@ -355,6 +355,7 @@ nav{
         width: 3px;
         background: #fff;
         bottom: 10vh;
+        right: calc(10% - 1.5px);
     }
     .deco-bot {
         position: absolute;
