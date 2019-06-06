@@ -395,12 +395,31 @@ nav{
         border: 0;
         text-transform: uppercase;
         letter-spacing: 1px;
-        transition: all 0.35s cubic-bezier(0.785,.135,.15,.86);
+        transition: all 0.3s cubic-bezier(0.785,.135,.15,.86);
+        position: relative;
     }
         #filters .button:hover {
             color: rgb(6,53,170);
             transform: scale(1.2);
         }
+    .button-type::before {
+        content: '';
+        width: 70%;
+        height: 3px;
+        background: #000;
+        position: absolute;
+        top: 50px;
+        left: 15%;
+    }
+    .button-type::after {
+        content: '';
+        width: 70%;
+        height: 3px;
+        background: #000;
+        position: absolute;
+        top: 100%;
+        left: 15%;
+    }
     .button-type .button {
         line-height: 50px;
         font-size: 1.5em;
