@@ -161,17 +161,24 @@ nav{
     position:absolute;
     background:#fff;
     height:3px;
+    transition: all 0.35s cubic-bezier(0.785,.135,.15,.86) .10s;
 }
 .open-menu:before{
     top:0;
     left:0;
     width:50%;
 }
+    .open-menu:hover::before {
+        left: 100%;
+    }
 .open-menu:after{
     bottom:0;
     right:0;
     width:50%;
 }
+    .open-menu:hover::after {
+        right: 100%;
+    }
     .open-menu span {
         left: -100%;
         position: relative;
