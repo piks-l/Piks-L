@@ -6,7 +6,6 @@
       <ui-logo/>
       <ui-menu class="ea-menu" />
     </header>
-    <ea-titre/>
     <nuxt/>
   </div>
 </template>
@@ -16,14 +15,12 @@
   import uiLogo from '~/components/ui/logo.vue'
   import uiMenu from '~/components/ui/menu.vue'
   import uiBackground from '~/components/ui/background.vue'
-  import eaTitre from '~/components/titre.vue'
   export default {
       components: {
           uiLoading,
           uiLogo,
           uiMenu,
-          uiBackground,
-          eaTitre
+          uiBackground
       },
       mounted () {
       }
