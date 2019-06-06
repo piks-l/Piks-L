@@ -1,5 +1,4 @@
 /* MAIN CSS */
-
 :root{
 	 --none-color: none;
 	 --path-color: white;
@@ -17,7 +16,6 @@ main {
     margin: 0 20%;
     position:relative;
 }
-
 
 
 /* LOADING */
