@@ -1,0 +1,21 @@
+{
+  "start": "10H",
+  "dateevents": "06/06/2019",
+  "thumbnail": "/images/uploads/test-couverture-site-workshop-jour-.jpg",
+  "lieu": "centre-culturel-bellegarde",
+  "groupes": [
+    {
+      "artiste": "flore"
+    }
+  ],
+  "background": "/images/background-4-electro-alternativ.jpg",
+  "date": "06/06/2019",
+  "title": "soiree-2",
+  "semaine": "semaine3",
+  "type": "jour",
+  "galerie": [
+    "/images/uploads/flore.jpg"
+  ],
+  "end": "18H",
+  "description": "**Electro Alternativ #15 Workshop Ableton**\n\nJe suis une description de soirée !"
+}
