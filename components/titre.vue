@@ -3,32 +3,6 @@
     <h2 class="ea-titre">{{this.$route.name}}</h2>
   </transition> 
 </template>
-<script>
-import $ from 'jquery'
-export default {
-  transition: {
-    beforeEnter: function () {
-       console.log("Before enter transition");
-    }
-  },
-  updated() {
-    this.title();
-    console.log("Update");
-  },
-  mounted() {
-    this.title();
-    console.log("Mounted");
-  },
-  methods: {
-    title() {
-     console.log("Titre");
-    },
-    beforeEnter: function () {
-       console.log("Before enter methods");
-    }
-  }
-}
-</script>
 <style>
 .ea-titre {
   line-height: 60px;
@@ -40,4 +14,13 @@ export default {
   font-family: Archivo-Medium;
   font-weight: 900;
 }
+.page-enter-active .ea-titre, 
+.page-leave-active .ea-titre{
+  transition: all .50s ease-out;
+}
+.page-enter .ea-titre, 
+.page-leave-active .ea-titre{
+    opacity: 0;
+    margin-top: 50px;
+  } 
 </style>
