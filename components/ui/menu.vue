@@ -33,7 +33,7 @@
               <a href="#" alt="SP"><i class="fab fa-spotify"></i></a>
           </div>
           <div class="ea-tv">
-              <a href="#" alt="EATV">#EA<small>TV</small></a>
+              <a href="#" alt="EATV">#EA<span>TV</span></a>
           </div>
           <div class="ea-slider">
               <div class="slider"></div>
