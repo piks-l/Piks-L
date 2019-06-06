@@ -1,0 +1,15 @@
+{
+  "couverture": "/images/uploads/flore.jpg",
+  "title": "FLORE",
+  "description": "L’esthétique musicale de Flore a toujours été guidée par des rythmes complexes et des lignes de basse envoûtantes. En conséquence, sa production montre toujours une énergie brute exprimée dans un groove sexy et sauvage qui lui est propre",
+  "iframe": "iframe",
+  "langue": "FR",
+  "label": "POLAAR",
+  "url": "flore",
+  "social": [
+    {
+      "lien": "https://www.facebook.com/FloreMusic/",
+      "awesome": "fab fa-facebook"
+    }
+  ]
+}
