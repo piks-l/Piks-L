@@ -152,7 +152,6 @@ nav{
     padding: 0;
     overflow: hidden;
     cursor: pointer;
-    line-height: 26px;
 }
 .open-menu:before,
 .open-menu:after,
@@ -187,10 +186,12 @@ nav{
         padding: 3px 15px;
         color: rgba(255,255,255,0);
         transition: all 0.25s cubic-bezier(0.785,.135,.15,.86);
+        line-height: 15px;
     }
       .open-menu:hover span {
           color: rgba(255,255,255,1);
           transition: all 0.25s cubic-bezier(0.785,.135,.15,.86) .10s;
+          line-height: 28px;
       }
           .open-menu span:before {
               width: 50%;
