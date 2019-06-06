@@ -386,6 +386,9 @@ nav{
     max-width: 20%;
     padding: 0 15px;
 }
+  .button-group {
+      position: relative;
+  }
     #filters .button {
         display: block;
         text-align: center;
