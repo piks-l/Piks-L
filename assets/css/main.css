@@ -151,7 +151,7 @@ nav{
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 3px 15px;
+    padding: 0;
     overflow: hidden;
 }
 .open-menu:before,
@@ -175,6 +175,7 @@ nav{
     .open-menu span {
         left: calc(-100% - 15px);
         position: relative;
+        padding: 3px 15px;
     }
     .open-menu span:after {
         width: 100%;
