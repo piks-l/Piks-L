@@ -154,35 +154,34 @@ nav{
     padding: 3px 15px;
     overflow: hidden;
 }
-.open-menu:before{
+.open-menu:before,
+.open-menu:after,
+.open-menu span:after{
     content:'';
     position:absolute;
-    top:0;
-    left:0;
     background:#fff;
     height:3px;
+}
+.open-menu:before{
+    top:0;
+    left:0;
     width:50%;
 }
 .open-menu:after{
-    content:'';
-    position:absolute;
     bottom:0;
     right:0;
-    background:#fff;
-    height:3px;
     width:50%;
 }
-.open-menu span {
-    left: calc(-100% - 15px);
-    position: relative;
-}
-.open-menu span:after {
-    content:'';
-    position: relative;
-    background:#fff;
-    height:3px;
-    width:100%;
-}
+    .open-menu span {
+        left: calc(-100% - 15px);
+        position: relative;
+    }
+    .open-menu span:after {
+        width: 100%;
+        top: calc(50% - 1.5px);
+        left: 100%;
+    }
+
 .menu {
     position: fixed;
     z-index: 100;
