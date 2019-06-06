@@ -186,7 +186,7 @@ nav{
         transition: all 0.25s cubic-bezier(0.785,.135,.15,.86);
     }
       .open-menu:hover span {
-          color: rgba(255,255,255,0);
+          color: rgba(255,255,255,1);
           transition: all 0.25s cubic-bezier(0.785,.135,.15,.86) .10s;
       }
           .open-menu span:before {
@@ -196,7 +196,7 @@ nav{
               transition: all 0.25s cubic-bezier(0.785,.135,.15,.86) .10s;
           }
               .open-menu:hover span:before {
-                  top: 0;
+                  top: calc(100% - 3px);
                   transition: all 0.25s cubic-bezier(0.785,.135,.15,.86);
               }
           .open-menu span:after {
@@ -206,7 +206,7 @@ nav{
               transition: all 0.25s cubic-bezier(0.785,.135,.15,.86) .10s;
           }
               .open-menu:hover span:after {
-                  top: 100%;
+                  top: 3px;
                   transition: all 0.25s cubic-bezier(0.785,.135,.15,.86);
               }
 
