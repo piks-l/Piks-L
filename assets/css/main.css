@@ -319,6 +319,7 @@ nav{
         right: 10%;
         display: grid;
         transform: translate(50%, -50%);
+        background: var(--blue-color);
     }
       .social a {
             display: block;
