@@ -180,14 +180,19 @@ nav{
         right: 100%;
     }
     .open-menu span {
-        left: -100%;
+        left: 0;
         position: relative;
         padding: 3px 15px;
     }
-    .open-menu span:after {
-        width: 100%;
+    .open-menu span:before {
+        width: 50%;
         top: calc(50% - 1.5px);
-        left: 100%;
+        left: 50%;
+    }
+    .open-menu span:after {
+        width: 50%;
+        top: calc(50% - 1.5px);
+        left: 0;
     }
 
 .menu {
