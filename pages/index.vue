@@ -18,11 +18,19 @@
   }
 </script>
 <style>
-    page-enter-active, .page-leave-active {
+    .page-enter-active, .page-leave-active {
       transition: all .30s ease-out;
     }
     .page-enter, .page-leave-active {
       opacity: 0;
       transform-origin: 50% 50%;
     }
+    .page-enter-active h1, .page-leave-active h1{
+      transition: all 2s ease-out;
+    }
+    .page-enter h1, .page-leave-active h1{
+        opacity: 0;
+        transform-origin: 100% 100%;
+      }
+    
 </style>
