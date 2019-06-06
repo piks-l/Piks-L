@@ -151,6 +151,8 @@ nav{
     letter-spacing: 1px;
     padding: 0;
     overflow: hidden;
+    cursor: pointer;
+    line-height: 26px;
 }
 .open-menu:before,
 .open-menu:after,
@@ -181,6 +183,7 @@ nav{
     .open-menu span {
         left: 0;
         position: relative;
+        display:block;
         padding: 3px 15px;
         color: rgba(255,255,255,0);
         transition: all 0.25s cubic-bezier(0.785,.135,.15,.86);
@@ -196,7 +199,7 @@ nav{
               transition: all 0.25s cubic-bezier(0.785,.135,.15,.86) .10s;
           }
               .open-menu:hover span:before {
-                  top: calc(100% - 3px);
+                  top: 0;
                   transition: all 0.25s cubic-bezier(0.785,.135,.15,.86);
               }
           .open-menu span:after {
@@ -205,8 +208,8 @@ nav{
               left: 0;
               transition: all 0.25s cubic-bezier(0.785,.135,.15,.86) .10s;
           }
-              .open-menu:hover span:after {
-                  top: 3px;
+              .open-menu:hover span:after {                  
+                  top: calc(100% - 3px);
                   transition: all 0.25s cubic-bezier(0.785,.135,.15,.86);
               }
 
