@@ -151,6 +151,8 @@ nav{
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    padding: 3px 15px;
+    overflow: hidden;
 }
 .open-menu:before{
     content:'';
