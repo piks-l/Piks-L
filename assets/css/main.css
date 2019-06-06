@@ -401,10 +401,19 @@ nav{
         .ea-tv a span{
             font-weight: 300;
         }
-    .ea-slider{
-        background: var(--blue-color);     
+    .ea-slider {
+        background: #0635aa;
+        position: absolute;
+        bottom: 10vh;
+        right: 10%;
+        transform: translate(50%, 50%);
+        padding: 15px;
     }
-
+        .ea-slider .slider {
+            width: 150px;
+            height: 100px;
+            background: #fff;
+        }
 
 /* Page programmation */
 #filters {
