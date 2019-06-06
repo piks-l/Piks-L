@@ -369,6 +369,6 @@ nav{
     .menu-logo{
         z-index:1;
     }
-        .menu-logo .logo {
+        .menu-logo .ea-logo {
             background: var(--blue-color);
         }
