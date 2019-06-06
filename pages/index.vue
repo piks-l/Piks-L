@@ -30,7 +30,7 @@
     }
     .page-enter h1, .page-leave-active h1{
         opacity: 0;
-        ma: 100% 100%;
+        margin-bottom: -50px;
       }
     
 </style>
