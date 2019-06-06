@@ -103,17 +103,17 @@ export default {
                   $button.addClass('is-checked');
                 });
             });
-            $( ".button-date button" ).click(function() {
+            $( ".button-type button" ).click(function() {
               $( ".button-semaine .any" ).click();
-              $('.button-semaine button, .other-semaine button').each( function() {
+              $('.button-semaine button').each( function() {
                   $( this ).addClass( "active" );
-                  $( ".button-date" ).removeClass( "mobile-active" );
+                  $( ".button-type" ).removeClass( "mobile-active" );
               });
             });
-            $( ".button-semaine button, .other-semaine button" ).click(function() {
-              $('.button-semaine button, .other-semaine button').each( function() {
+            $( ".button-semaine button" ).click(function() {
+              $('.button-semaine button').each( function() {
                   $( this ).removeClass( "active" );
-                  $( ".semaine" ).removeClass( "mobile-active" );
+                  $( ".button-semaine" ).removeClass( "mobile-active" );
               });
             });
             // flatten object by concatting values
