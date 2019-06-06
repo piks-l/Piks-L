@@ -441,8 +441,11 @@ nav{
     }
     
 .element-item {
-    width: 33%;
+    width: calc(33% - 30px);
     background: #000;
     color: #fff;
     padding:15px;
+}
+.element-item a{
+    color:#fff; 
 }
