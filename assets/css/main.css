@@ -477,7 +477,22 @@ nav{
     .button-type button:last-child {
         margin-bottom: 3px;
     }
-    
+  
+.stamp {
+  position: absolute;
+}
+.stamp1 {
+  left: 33.333%;
+  top: 0;
+  width: 33.333%;
+  height: 100px;
+}
+.stamp2 {
+  left: 66.666%;
+  top: 0px;
+  width: 33.333%;
+  height: 200px;
+}
 .element-item {
     width: calc(31% - 30px);
     background: #000;
