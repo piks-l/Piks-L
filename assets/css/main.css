@@ -361,7 +361,8 @@ nav{
         overflow: hidden;
         position: absolute;
         top: 5vh;
-        right: 3vw;
+        right: 10%;
+        transform: translatex(50%);
         mix-blend-mode: lighten;
     }
         .deco-video video {
