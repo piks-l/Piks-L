@@ -18,6 +18,8 @@
           </div>
           </div>
           <div class="grid">
+              <div class="stamp stamp1"></div>
+              <div class="stamp stamp2"></div>
               <div v-for="event in programmation" :key="event.date"  :class="event.type+' '+event.semaine" class="element-item">
                    <nuxt-link :to="event._path+'/'">
                      <p class="grid-date"><strong>{{event.dateevents}}</strong></p>
@@ -69,7 +71,8 @@ export default {
   methods: {
     ea() {
             var grid = new Isotope(".grid", {
-              itemSelector: ".element-item"
+              itemSelector: ".element-item",
+              stamp: $grid.find('.stamp')
             });
             // store filter for each group
             var filters = {};
