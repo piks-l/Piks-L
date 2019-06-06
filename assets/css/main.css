@@ -234,19 +234,21 @@ nav{
 }
 .menu.open{
     height: 80vh;
-    width: 88vw;
-    padding:10vh 6vw;
+    width: 60%;
+    padding:10vh 20%;
     opacity:1;
     transition: padding 0s ease, width 0s ease, height 0s ease, opacity .5s ease ;
 }
 
     .close {
         position: absolute;
-        bottom: 5vh;
-        left: 3vw;
+        top: 50%;
+        left: 10%;
         height: 10vh;
         width: 6vw;
         cursor: pointer;
+        background: var(--blue-color);
+        transform: translate(-50%, -50%);
     }
     .left,
     .right{
@@ -314,9 +316,9 @@ nav{
     .menu .social {
         position: absolute;
         top: 50%;
-        right: 6vw;
+        right: 10%;
         display: grid;
-        transform: translatey(-50%);
+        transform: translate(50%, -50%);
     }
       .social a {
             display: block;
@@ -339,8 +341,17 @@ nav{
           }
     .deco-left {
         position: absolute;
-        left: 6vw;
-        height: 65%;
+        left: calc(10% - 1.5px);
+        height: 80vh;
+        width: 3px;
+        background: #fff;
+        top: 50%;
+        transform: translatey(-50%);
+    }
+    .deco-right {
+        position: absolute;
+        right: calc(10% - 1.5px);
+        height: 80vh;
         width: 3px;
         background: #fff;
         top: 50%;
@@ -350,7 +361,7 @@ nav{
         position: absolute;
         left: 50%;
         height: 3px;
-        width: 75%;
+        width: 80%;
         background: #fff;
         bottom: 10vh;
         transform: translatex(-50%);
