@@ -6,18 +6,27 @@
       <ui-logo/>
       <ui-menu class="ea-menu" />
     </header>
-    <ea-titre/>
+    <transition name="fade" :before-enter="beforeEnter">
+      <ea-titre/>
+    </transition> 
     <nuxt/>
   </div>
 </template>
 <script>
+
   import $ from 'jquery'
   import uiLoading from '~/components/ui/loading.vue'
   import uiLogo from '~/components/ui/logo.vue'
   import uiMenu from '~/components/ui/menu.vue'
   import uiBackground from '~/components/ui/background.vue'
   import eaTitre from '~/components/titre.vue'
+  
   export default {
+      transition: {
+        beforeEnter: function () {
+           console.log("Before enter transition");
+        }
+      },
       components: {
           uiLoading,
           uiLogo,
@@ -29,3 +38,11 @@
       }
   }
 </script>
+<style>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+</style>
