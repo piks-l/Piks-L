@@ -11,6 +11,7 @@ body {
   height: 100%;
   width: 100%;
   margin:0;
+  font-family: Archivo-Medium;
 }
 main {
     margin: 0 20%;
@@ -380,8 +381,26 @@ nav{
 #filters {
     position: fixed;
     top: 50%;
-    transform: translatey(-50%);
-    right: 0;
+    transform: translate(50%, -50%);
+    right: 10%;
     max-width: 20%;
     padding: 0 15px;
 }
+    #filters .button {
+        display: block;
+        text-align: center;
+        width: 100%;
+        color: #fff;
+        background: transparent;
+        border: 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .button-type .button {
+        line-height: 50px;
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+    .button-semaine .button {
+        line-height: 30px;
+    }
