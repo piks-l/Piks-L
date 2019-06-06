@@ -351,12 +351,10 @@ nav{
     }
     .deco-right {
         position: absolute;
-        right: calc(10% - 1.5px);
-        height: 80vh;
+        height: calc(80vh - 125px);
         width: 3px;
         background: #fff;
-        top: 50%;
-        transform: translatey(-50%);
+        bottom: 10vh;
     }
     .deco-bot {
         position: absolute;
