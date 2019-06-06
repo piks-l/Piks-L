@@ -2,6 +2,7 @@
     <nav>
       <div class="menu">
           <div class="deco-left"></div>
+          <div class="deco-right"></div>
           <nuxt-link class="menu-logo menu-link" to="/"><ea-logo/></nuxt-link>
           <p>Évènement des cultures électroniques et digitales</p>
           <div class="deco-video">
