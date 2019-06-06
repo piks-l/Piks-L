@@ -1,7 +1,7 @@
 <template>
-  <main id="main-container">
-      <div  class="container scene_element scene_element--fadein padding">
-          <h2>PROGRAMMATION</h2>
+  <main>
+      <div class="container">
+          <ea-titre/>
           <div id="filters">
           <div class="button-type button-group"  data-filter-group="type">
               <button class="button is-checked" data-filter="*">ALL</button>
@@ -36,10 +36,11 @@
   if (process.browser) { Isotope = require("isotope-layout"); }
   import $ from 'jquery'
   import VueLazyload from 'vue-lazyload'
+  import eaTitre from '~/components/titre.vue'
   // export
 export default {
     layout: 'default',
-    components: { VueLazyload},
+    components: { VueLazyload, eaTitre },
     head() {
       return {
         title: 'Programmation | Electrobotik Invasion - le 2 & 3 Août 2019',
