@@ -14,7 +14,7 @@ body {
   margin:0;
 }
 main {
-    padding: 0 20%;
+    margin: 0 20%;
     position:relative;
 }
 
@@ -139,10 +139,12 @@ nav{
   display:block;
 }
 .open-menu {
-    position: fixed;
-    top: 0;
-    right: 0;
+    top: 50%;
+    display: block;
     z-index: 100;
+    position: fixed;
+    left: 10%;
+    transform: translate(-50%, -50%);
 }
 .menu {
     position: fixed;
