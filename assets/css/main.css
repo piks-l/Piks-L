@@ -182,17 +182,33 @@ nav{
         left: 0;
         position: relative;
         padding: 3px 15px;
+        color: rgba(255,255,255,0);
+        transition: all 0.25s cubic-bezier(0.785,.135,.15,.86);
     }
-    .open-menu span:before {
-        width: 50%;
-        top: calc(50% - 1.5px);
-        left: 50%;
-    }
-    .open-menu span:after {
-        width: 50%;
-        top: calc(50% - 1.5px);
-        left: 0;
-    }
+      .open-menu:hover span {
+          color: rgba(255,255,255,0);
+          transition: all 0.25s cubic-bezier(0.785,.135,.15,.86) .10s;
+      }
+          .open-menu span:before {
+              width: 50%;
+              top: calc(50% - 1.5px);
+              left: 50%;
+              transition: all 0.25s cubic-bezier(0.785,.135,.15,.86) .10s;
+          }
+              .open-menu:hover span:before {
+                  top: 0;
+                  transition: all 0.25s cubic-bezier(0.785,.135,.15,.86);
+              }
+          .open-menu span:after {
+              width: 50%;
+              top: calc(50% - 1.5px);
+              left: 0;
+              transition: all 0.25s cubic-bezier(0.785,.135,.15,.86) .10s;
+          }
+              .open-menu:hover span:after {
+                  top: 100%;
+                  transition: all 0.25s cubic-bezier(0.785,.135,.15,.86);
+              }
 
 .menu {
     position: fixed;
