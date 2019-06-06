@@ -394,6 +394,13 @@ nav{
         padding: 15px;
         background: var(--blue-color);
     }
+        .ea-tv a {
+            font-size: 30px;
+            font-weight: 600;
+        }
+        .ea-tv a span{
+            font-weight: 300;
+        }
     .ea-slider{
         background: var(--blue-color);     
     }
