@@ -6,7 +6,7 @@
       <ui-logo/>
       <ui-menu class="ea-menu" />
     </header>
-    <transition name="fade" :before-enter="beforeEnter">
+    <transition name="fade" v-on:before-enter="beforeEnter">
       <ea-titre/>
     </transition> 
     <nuxt/>
