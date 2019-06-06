@@ -145,6 +145,30 @@ nav{
     position: fixed;
     left: 10%;
     transform: translate(-50%, -50%);
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.open-menu:before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    background:#fff;
+    height:3px;
+    width:50%;
+}
+.open-menu:after{
+    content:'';
+    position:absolute;
+    bottom:0;
+    right:0;
+    background:#fff;
+    height:3px;
+    width:50%;
 }
 .menu {
     position: fixed;
