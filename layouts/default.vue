@@ -30,11 +30,6 @@
           eaTitre
       },
       mounted () {
-      },
-      methods () {
-        beforeEnter: function () {
-           console.log("Before enter transition");
-        }
       }
   }
 </script>
