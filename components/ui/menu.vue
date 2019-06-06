@@ -3,6 +3,7 @@
       <div class="menu">
           <div class="deco-left"></div>
           <div class="deco-right"></div>
+          <div class="deco-bot"></div>
           <nuxt-link class="menu-logo menu-link" to="/"><ea-logo/></nuxt-link>
           <p>Évènement des cultures électroniques et digitales</p>
           <div class="deco-video">
@@ -40,8 +41,7 @@
           <div class="close">
   					  <div class="left"></div>
               <div class="right"></div>
-  				</div>
-          <div class="deco-bot"></div>
+  				</div>          
       </div>
       <button class="open-menu"><span>Menu</span></button>
     </nav>
