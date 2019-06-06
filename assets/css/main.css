@@ -154,6 +154,7 @@ nav{
 }
 .open-menu:before,
 .open-menu:after,
+.open-menu span:before,
 .open-menu span:after{
     content:'';
     position:absolute;
