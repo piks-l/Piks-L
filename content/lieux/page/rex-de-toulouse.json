@@ -10,11 +10,11 @@
   "url": "rex-de-toulouse",
   "gmap": [
     {
-      "texte": "test",
-      "lien": "test"
+      "texte": "15 avenue Honoré Serres 31000 Toulouse",
+      "lien": "https://www.google.com/maps/dir//rex+de+toulouse/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x12aebb5c299b244d:0xe6c77a6fff256b8e?sa=X&ved=2ahUKEwjnu-i2-NfiAhVr8-AKHUt9CjMQ9RcwEnoECAkQEA"
     }
   ],
   "title": "Rex de Toulouse",
   "description": "test",
-  "direction": "test"
+  "direction": "Métro : Compans Caffarelli"
 }
