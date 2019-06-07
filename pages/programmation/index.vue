@@ -108,7 +108,7 @@ export default {
                   $button.addClass('is-checked');
                 });
             });
-            $( ".button-type button" ).click(function() {
+            $( ".button-type .button" ).click(function() {
               $( ".button-semaine .any" ).click();
               $('.button-semaine .button').each( function() {
                   $( this ).addClass( "active" );
