@@ -19,7 +19,7 @@ button:focus,
 a:active,
 a:focus{
     border: none !important;
-    outline: none;
+    outline: none !important;
 }
 main {
     margin: 0 20%;
