@@ -494,7 +494,7 @@ nav{
   height: 200px;
 }
 .element-item {
-    width: calc(31% - 30px);
+    width: calc(30% - 30px);
     background: #000;
     color: #fff;
     padding:15px;
