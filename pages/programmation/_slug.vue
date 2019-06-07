@@ -29,7 +29,14 @@ export default {
       ]
     }
   },
-  mounted() {
+ mounted() {
+    this.switchBackground();
+  },
+  methods: {
+    switchBackground() {
+       var back = $('.main-background').attr('data-back');
+       $('.main-background').attr('href', back)     
+    }
   }
 };
 </script>
