@@ -1,5 +1,5 @@
 <template>
-  <main class="page artist" :data-back="background">
+  <main class="page" :data-back="background">
      <h2>{{ title }}</h2>
      <p>{{ semaine }}</p>
      <p>{{ type }}</p>
@@ -34,10 +34,10 @@ export default {
   },
   methods: {
     switchBackground() {
-       back = $('.main-background').attr('data-back');
+       var back = $('main').attr('data-back');
        $('.main-background').attr('xlink:href', back);
        $('.seconde-background').attr('src', back); 
-       console.log(back)
+       console.log(back);
     }
   }
 };
