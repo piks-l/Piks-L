@@ -48,14 +48,17 @@ export default {
     },
     killBackground() {
       var duo = $('main').attr('data-duo');
-      $('.main-background').fadeOut(100, function(){
-          $('.main-background').attr('xlink:href', '/images/background-1-electro-alternativ.jpg').bind('onreadystatechange load', function(){
-            setTimeout(function(){  
-              $('.anim-filter').removeClass("duotone-"+duo);
-              $('.main-background').fadeIn(100);
-            }, 1000);
-          });
-      });
+      setTimeout(function(){  
+
+        $('.main-background').fadeOut(100, function(){
+            $('.main-background').attr('xlink:href', '/images/background-1-electro-alternativ.jpg').bind('onreadystatechange load', function(){
+
+                $('.anim-filter').removeClass("duotone-"+duo);
+                $('.main-background').fadeIn(100);
+
+            });
+        });
+      }, 1000);
     }
     
   }
