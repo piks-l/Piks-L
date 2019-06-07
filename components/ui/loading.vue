@@ -29,10 +29,10 @@ export default {
     mounted: () => {
          $(window).load(function() {
             setTimeout(() => {
-            this.loading = false
-          }, 4000)
-        });
-        
+                this.loading = false
+                console.log('loading');
+            }, 4000)
+         });        
         console.log('loading');
     }
   }
