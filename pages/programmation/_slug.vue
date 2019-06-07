@@ -29,7 +29,10 @@ export default {
       ]
     }
   },
-  mounted() {
+  created() {
+    this.switchBackground();
+  },
+  updated() {
     this.switchBackground();
   },
   destroyed() {
