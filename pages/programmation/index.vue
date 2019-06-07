@@ -76,7 +76,7 @@ export default {
               itemSelector: ".element-item",
               stamp: '.stamp',
               getSortData : {
-               name : function () {
+               name : function ($elem) {
                 return $elem.find('a').attr('data-time');
                }
               },
