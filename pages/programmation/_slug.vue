@@ -1,5 +1,5 @@
 <template>
-  <main class="page artist" :data-back="backgroundweb">
+  <main class="page artist" :data-back="background">
      <h2>{{ title }}</h2>
      <p>{{ semaine }}</p>
      <p>{{ type }}</p>
@@ -17,11 +17,6 @@ export default {
   async asyncData({ params }) {
     let page = await import('~/content/programmation/page/' + params.slug + '.json');
     return page;
-  },
-  data() {
-    return {
-      backgroundweb: `${this.background}`
-    }
   },
   head() {
     return {
