@@ -432,6 +432,7 @@ nav{
 }
   .button-type {
       margin-bottom: 15px;
+      padding: 10px 0;
   }
   .button-group {
       position: relative;
@@ -458,23 +459,20 @@ nav{
             background: rgba(0,0,0,1);
             color: rgb(255,255,255);
         }
-    .button-type::before {
+    .button-type::before,
+    .button-type::after{
         content: '';
         width: 70%;
         height: 3px;
         background: #000;
-        position: absolute;
-        top: 50px;
+        position: absolute;        
         left: 15%;
     }
+    .button-type::before{
+        top: 60px;
+    }
     .button-type::after {
-        content: '';
-        width: 70%;
-        height: 3px;
-        background: #000;
-        position: absolute;
         top: 100%;
-        left: 15%;
     }
     .button-type .button {
         line-height: 50px;
@@ -487,7 +485,7 @@ nav{
     .button-type button:nth-child(1) {
         font-size: 14px;
         font-weight: 300;
-        margin-bottom: 3px;
+        margin-bottom: 13px;
     }
     .button-type button:last-child {
         margin-bottom: 3px;
