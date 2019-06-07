@@ -32,6 +32,9 @@ export default {
  mounted() {
     this.switchBackground();
   },
+  destroyed() {
+    console.log("destroyed");
+  },
   methods: {
     switchBackground() {
         var back = $('main').attr('data-back');
