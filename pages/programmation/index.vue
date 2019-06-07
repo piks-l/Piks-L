@@ -81,7 +81,7 @@ export default {
                }
               },
               sortBy : 'date',
-              sortAscending : false
+              sortAscending : true
             });
             // store filter for each group
             var filters = {};
