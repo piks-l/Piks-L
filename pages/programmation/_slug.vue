@@ -33,7 +33,7 @@ export default {
     this.switchBackground();
   },
   destroyed() {
-    console.log("destroyed");
+    this.killBackground();
   },
   methods: {
     switchBackground() {
