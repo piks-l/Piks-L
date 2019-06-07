@@ -424,6 +424,9 @@ nav{
     max-width: 20%;
     padding: 0 15px;
 }
+  .button-type {
+      margin-bottom: 15px;
+  }
   .button-group {
       position: relative;
   }
@@ -446,7 +449,7 @@ nav{
             transform: scale(1.2);
         }
         .button-type .is-checked{
-            background: rgba(0,0,0,0);
+            background: rgba(0,0,0,1);
             color: rgb(255,255,255);
         }
     .button-type::before {
