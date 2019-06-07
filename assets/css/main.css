@@ -39,7 +39,8 @@ main {
       position:absolute;
       top:50%;
       left:50%;
-      transform:translate(-50%, -50%);
+      -webkit-transform:translate(-50%, -50%);
+              transform:translate(-50%, -50%);
   }
     .loading .ea-logo {
         position: relative;
@@ -64,7 +65,8 @@ main {
   height: auto;
   left: 10%;
   top: 5vh;
-  transform: translatex(-50%);
+  -webkit-transform: translatex(-50%);
+          transform: translatex(-50%);
 }
 #logo-ea{
 	width:auto;
@@ -82,7 +84,8 @@ svg {
   height: auto;
   width: 100vw;
   left: 0%;
-  transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 .mirror.anim-filter .mirror__source image {
   -webkit-filter: url("#glitch");
@@ -94,7 +97,8 @@ svg {
   height: 100vh;
   position: fixed;
   top: 0%;
-  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
   left: 50%;
 }
 svg image{
@@ -109,18 +113,24 @@ svg image{
   right: 0;
   margin: 0 auto;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .mirror__source {
   display: inline-block;
   overflow: hidden;
   opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   float: left;
   width: 100vw;
   height: 100vh;
   left:0px;
-  transform:translatey(0%) scale(1);
+  -webkit-transform:translatey(0%) scale(1);
+          transform:translatey(0%) scale(1);
 }
 .mirror.anim-filter .mirror__source image {
   -webkit-backface-visibility: hidden;
@@ -130,7 +140,8 @@ svg image{
 .seconde-background {
     position: relative;
     left: 50%;
-    transform: translatex(-50%);
+    -webkit-transform: translatex(-50%);
+            transform: translatex(-50%);
     min-height: 100%;
     min-width: 100%;
     width: auto;
@@ -150,7 +161,8 @@ nav{
     z-index: 100;
     position: fixed;
     left: 10%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     background: transparent;
     border: none;
     color: #fff;
@@ -169,6 +181,7 @@ nav{
     position:absolute;
     background:#fff;
     height:3px;
+    -webkit-transition: all 0.35s cubic-bezier(0.785,.135,.15,.86) .10s;
     transition: all 0.35s cubic-bezier(0.785,.135,.15,.86) .10s;
 }
 .open-menu:before{
@@ -176,7 +189,7 @@ nav{
     left:0;
     width:50%;
 }
-    .open-menu:hover::before {
+    .open-menu:hover:before {
         left: 100%;
     }
 .open-menu:after{
@@ -184,7 +197,7 @@ nav{
     right:0;
     width:50%;
 }
-    .open-menu:hover::after {
+    .open-menu:hover:after {
         right: 100%;
     }
     .open-menu span {
@@ -193,11 +206,13 @@ nav{
         display:block;
         padding: 3px 15px;
         color: rgba(255,255,255,0);
+        -webkit-transition: all 0.25s cubic-bezier(0.785,.135,.15,.86);
         transition: all 0.25s cubic-bezier(0.785,.135,.15,.86);
         line-height: 15px;
     }
       .open-menu:hover span {
           color: rgba(255,255,255,1);
+          -webkit-transition: all 0.25s cubic-bezier(0.785,.135,.15,.86) .10s;
           transition: all 0.25s cubic-bezier(0.785,.135,.15,.86) .10s;
           line-height: 28px;
       }
@@ -205,20 +220,24 @@ nav{
               width: 50%;
               top: calc(50% - 1.5px);
               left: 50%;
+              -webkit-transition: all 0.25s cubic-bezier(0.785,.135,.15,.86) .10s;
               transition: all 0.25s cubic-bezier(0.785,.135,.15,.86) .10s;
           }
               .open-menu:hover span:before {
                   top: 0;
+                  -webkit-transition: all 0.25s cubic-bezier(0.785,.135,.15,.86);
                   transition: all 0.25s cubic-bezier(0.785,.135,.15,.86);
               }
           .open-menu span:after {
               width: 50%;
               top: calc(50% - 1.5px);
               left: 0;
+              -webkit-transition: all 0.25s cubic-bezier(0.785,.135,.15,.86) .10s;
               transition: all 0.25s cubic-bezier(0.785,.135,.15,.86) .10s;
           }
               .open-menu:hover span:after {                  
                   top: calc(100% - 3px);
+                  -webkit-transition: all 0.25s cubic-bezier(0.785,.135,.15,.86);
                   transition: all 0.25s cubic-bezier(0.785,.135,.15,.86);
               }
 
@@ -232,8 +251,10 @@ nav{
     background: var(--blue-color);
     display: block;
     overflow:hidden;
+    -webkit-transition: padding 0s ease .5s, width 0s ease .5s, height 0s ease .5s, opacity .5s ease ;
     transition: padding 0s ease .5s, width 0s ease .5s, height 0s ease .5s, opacity .5s ease ;
     opacity:0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     padding:0;
     color: #fff;
     z-index: 101;
@@ -243,6 +264,8 @@ nav{
     width: 60%;
     padding:10vh 20%;
     opacity:1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transition: padding 0s ease, width 0s ease, height 0s ease, opacity .5s ease ;
     transition: padding 0s ease, width 0s ease, height 0s ease, opacity .5s ease ;
 }
 
@@ -254,7 +277,8 @@ nav{
         width: 6vw;
         cursor: pointer;
         background: var(--blue-color);
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
     }
     .left,
     .right{
@@ -306,7 +330,8 @@ nav{
         position: absolute;
         left: 50%;
         list-style: none;
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
     }
     .menu-link {
         font-size: 3em;
@@ -323,8 +348,10 @@ nav{
         position: absolute;
         top: 50%;
         right: 10%;
+        display: -ms-grid;
         display: grid;
-        transform: translate(50%, -50%);
+        -webkit-transform: translate(50%, -50%);
+                transform: translate(50%, -50%);
         background: var(--blue-color);
     }
       .social a {
@@ -353,7 +380,8 @@ nav{
         width: 3px;
         background: #fff;
         top: 50%;
-        transform: translatey(-50%);
+        -webkit-transform: translatey(-50%);
+                transform: translatey(-50%);
     }
     .deco-right {
         position: absolute;
@@ -370,7 +398,8 @@ nav{
         width: 80%;
         background: #fff;
         bottom: 10vh;
-        transform: translatex(-50%);
+        -webkit-transform: translatex(-50%);
+                transform: translatex(-50%);
     } 
     .deco-video {
         height: 200px;
@@ -380,7 +409,8 @@ nav{
         position: absolute;
         top: 5vh;
         right: 10%;
-        transform: translatex(50%);
+        -webkit-transform: translatex(50%);
+                transform: translatex(50%);
         mix-blend-mode: lighten;
     }
         .deco-video video {
@@ -396,7 +426,8 @@ nav{
         position: absolute;
         bottom: 10vh;
         left: 10%;
-        transform: translate(-50%, 50%);
+        -webkit-transform: translate(-50%, 50%);
+                transform: translate(-50%, 50%);
         padding: 15px;
         background: var(--blue-color);
     }
@@ -412,7 +443,8 @@ nav{
         position: absolute;
         bottom: 10vh;
         right: 10%;
-        transform: translate(50%, 50%);
+        -webkit-transform: translate(50%, 50%);
+                transform: translate(50%, 50%);
         padding: 15px;
     }
         .ea-slider .slider {
@@ -425,7 +457,8 @@ nav{
 #filters {
     position: fixed;
     top: 50%;
-    transform: translate(50%, -50%);
+    -webkit-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
     right: 10%;
     max-width: 20%;
     padding: 0 15px;
@@ -446,6 +479,7 @@ nav{
         border: 0;
         text-transform: uppercase;
         letter-spacing: 1px;
+        -webkit-transition: all 0.3s cubic-bezier(0.785,.135,.15,.86);
         transition: all 0.3s cubic-bezier(0.785,.135,.15,.86);
         position: relative;
     }
@@ -453,14 +487,15 @@ nav{
             color: rgb(6,53,170) !important;
         }
         #filters .button-semaine .button:hover {
-            transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+                    transform: scale(1.2);
         }
         #filters .button-type .is-checked:not(:nth-child(1)){
             background: rgba(0,0,0,1);
             color: rgb(255,255,255);
         }
-    .button-type::before,
-    .button-type::after{
+    .button-type:before,
+    .button-type:after{
         content: '';
         width: 70%;
         height: 3px;
@@ -468,10 +503,10 @@ nav{
         position: absolute;        
         left: 15%;
     }
-    .button-type::before{
+    .button-type:before{
         top: 60px;
     }
-    .button-type::after {
+    .button-type:after {
         top: 100%;
     }
     .button-type .button {
