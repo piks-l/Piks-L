@@ -1,6 +1,5 @@
 <template>
     <div class="ea-background">
-      <img class="seconde-background" src="/images/background-1-electro-alternativ.jpg">
       <div class="mirror anim-filter" >
         <div class="mirror__source mirror__source--solid ">
           <svg id="main-background" version="1.1"  xmlns="http://www.w3.org/2000/svg" style="enable-background:new 0 0 1920 1080" viewBox="0 0 1920 1080" x="0px" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px" preserveAspectRatio="xMidYMid meet">
