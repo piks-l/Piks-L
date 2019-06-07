@@ -77,7 +77,7 @@ export default {
               stamp: '.stamp',
               getSortData : {
                date : function ($elem) {
-                return $($elem).find('.grid-date').attr('data-time');
+                return $($elem).find('.grid-date').attr('data-date');
                }
               },
               sortBy : 'date',
