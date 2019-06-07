@@ -20,8 +20,8 @@
           <div class="grid">
               <div class="stamp stamp1"></div>
               <div class="stamp stamp2"></div>
-              <div v-for="event in programmation" :data-date="event.dateevents" :key="event.date"  :class="event.type+' '+event.semaine" class="element-item">
-                   <nuxt-link :to="event._path+'/'">
+              <div v-for="event in programmation" :key="event.date"  :class="event.type+' '+event.semaine" class="element-item">
+                   <nuxt-link :to="event._path+'/'" :data-date="event.dateevents">
                      <p class="grid-date"><strong>{{event.datehumaine}}</strong></p>
                      <p class="grid-time">{{event.start}} &rsaquo; {{event.end}}</p>
                      <p class="grid-artistes" v-for="artist in event.groupes" :key="artist.artiste">{{artist.artiste}}</p>
@@ -76,8 +76,8 @@ export default {
               itemSelector: ".element-item",
               stamp: '.stamp',
               getSortData : {
-               name : function ( el ) {
-                return el.attr('data-date');
+               name : function () {
+                return $elem.find('a').attr('data-time');
                }
               },
               sortBy : 'name',
