@@ -53,3 +53,62 @@
   transform: scaleX(0);
   transform-origin: right;
 }
+
+
+
+
+.outro-enter-active,
+.outro-leave-active {
+  transition-duration: 1600ms;
+}
+.outro-enter-active::before, .outro-enter-active::after,
+.outro-leave-active::before,
+.outro-leave-active::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  height: 50%;
+  transition-property: opacity, transform;
+  transition-timing-function: ease-in-out;
+}
+.outro-enter-active::before,
+.outro-leave-active::before {
+  background-color: #0635aa;
+}
+.outro-enter-active::after,
+.outro-leave-active::after {
+  top: 50%;
+  background-color: #0635aa;
+}
+.outro-leave::before, .outro-leave::after {
+  transform: scaleX(0);
+}
+.outro-leave-active::before {
+  transition-duration: 800ms;
+}
+.outro-leave-active::after {
+  transition-duration: 500ms;
+  transition-delay: 300ms;
+}
+.outro-leave-to::before, .outro-leave-to::after {
+  transform: scale(1);
+  transform-origin: left;
+}
+.outro-enter::before, .outro-enter::after {
+  transform: scaleX(1);
+}
+.outro-enter-active::before {
+  transition-duration: 800ms;
+}
+.outro-enter-active::after {
+  transition-duration: 500ms;
+  transition-delay: 300ms;
+}
+.outro-enter-to::before, .outro-enter-to::after {
+  transform: scaleX(0);
+  transform-origin: right;
+}
