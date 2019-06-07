@@ -107,6 +107,7 @@ collections:
           - { label: "Background 3", value: "/images/background-3-electro-alternativ.jpg" }
           - { label: "Background 4", value: "/images/background-4-electro-alternativ.jpg" }
           - { label: "Background 5", value: "/images/background-5-electro-alternativ.jpg" }          
+          - { label: "Background 6", value: "/images/background-6-electro-alternativ.jpg" }   
       - label: "Groupes"
         name: "groupes"
         required: false
