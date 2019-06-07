@@ -107,39 +107,38 @@ svg image{
   width:100%;
 }
 .mirror {
-  position: fixed;
-  top: 0%;
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%) scale(1);
-  left:0vw;
-  right: 0;
-  margin: 0 auto;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+    position: fixed;
+    top: 0%;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%) scale(1.1);
+    left:0vw;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .mirror__source {
-  display: inline-block;
-  overflow: hidden;
-  opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  float: left;
-  width: 100vw;
-  height: 100vh;
-  left:0px;
-  -webkit-transform:translatey(0%) scale(1);
-          transform:translatey(0%) scale(1);
+    display: inline-block;
+    overflow: hidden;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    float: left;
+    width: 100vw;
+    height: 100vh;
+    left:0px;
+    -webkit-transform:translatey(0%) scale(1);
+            transform:translatey(0%) scale(1);
 }
 .mirror.anim-filter .mirror__source image {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
-#main-background, 
-.seconde-background {
+#main-background {
     position: relative;
     left: 50%;
     -webkit-transform: translatex(-50%);
@@ -148,9 +147,6 @@ svg image{
     min-width: 100%;
     width: auto;
     height: auto;
-}
-.seconde-background {
-    max-height: 100%;
 }
 
 /* MENU */
