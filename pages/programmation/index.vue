@@ -76,8 +76,8 @@ export default {
               itemSelector: ".element-item",
               stamp: '.stamp',
               getSortData : {
-               name : function ( $elem ) {
-                return $elem.find('.element-item').attr('data-date');
+               name : function ( el ) {
+                return el.attr('data-date');
                }
               },
               sortBy : 'name',
