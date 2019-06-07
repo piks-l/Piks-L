@@ -77,7 +77,7 @@ export default {
               stamp: '.stamp',
               getSortData : {
                name : function ($elem) {
-                return $elem.find('a').attr('data-time');
+                return $($elem).find('a').attr('data-time');
                }
               },
               sortBy : 'name',
