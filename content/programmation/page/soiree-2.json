@@ -1,7 +1,8 @@
 {
-  "start": "10H",
+  "start": "10H00",
   "dateevents": "18/09/2019",
   "thumbnail": "/images/uploads/test-couverture-site-workshop-jour-.jpg",
+  "intro": "ELECTRO HYPE",
   "lieu": "centre-culturel-bellegarde",
   "groupes": [
     {
@@ -10,12 +11,14 @@
   ],
   "background": "/images/background-4-electro-alternativ.jpg",
   "date": "06/06/2019",
-  "title": "soiree-2",
+  "datehumaine": "MERCREDI 18 SEPTEMBRE",
+  "title": "Electro Alternativ #15 Workshop Ableton",
   "semaine": "semaine3",
   "type": "jour",
   "galerie": [
     "/images/uploads/flore.jpg"
   ],
-  "end": "18H",
-  "description": "**Electro Alternativ #15 Workshop Ableton**\n\nJe suis une description de soirée !"
+  "end": "18H00",
+  "id": "02",
+  "description": "Je suis une description de soirée !"
 }
