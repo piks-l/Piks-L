@@ -12,16 +12,17 @@ collections:
     slug: "{{slug}}"
     format: 'json'
     fields:
+      - {label: "Url", name: "url", widget: "string", required: false}
       - {label: "Image de couverture", name: "couverture", widget: "image", required: true}
       - {label: "Nom", name: "title", widget: "string", tagname: "h1", required: true}
-      - {label: "Description", name: "description", widget: "markdown"}
-      - {label: "Iframe", name: "iframe", widget: "markdown"}
-      - {label: "Langue", name: "langue", widget: "string"}
-      - {label: "Label", name: "label", widget: "string"}
-      - {label: "Url", name: "url", widget: "string"}
+      - {label: "Description", name: "description", widget: "markdown", required: false}
+      - {label: "Iframe", name: "iframe", widget: "markdown", required: false}
+      - {label: "Langue", name: "langue", widget: "string", required: false}
+      - {label: "Label", name: "label", widget: "string", required: false}
       - label: "Social"
         name: "social"
         widget: "list"
+        required: false
         fields:
           - { label: Lien, name: lien, widget: string }
           - { label: awesome, name: awesome, widget: string }
@@ -32,24 +33,24 @@ collections:
     slug: "{{slug}}"
     format: 'json'
     fields:
-      - {label: "Image de couverture", name: "couverture", widget: "image", required: true}
+      - {label: "Url", name: "url", widget: "string", required: false}
       - {label: "Nom", name: "title", widget: "string", tagname: "h1", required: true}
-      - {label: "Iframe", name: "iframe", widget: "markdown"}
-      - {label: "Description", name: "description", widget: "markdown"}
+      - {label: "Image de couverture", name: "couverture", widget: "image", required: true}
+      - {label: "Description", name: "description", widget: "markdown", required: false}
       - label: "GMAP"
         name: "gmap"
         widget: "list"
         fields:
-          - { label: awesome, name: awesome, widget: string }
-          - { label: Texte, name: texte, widget: string }
-          - { label: Lien, name: lien, widget: string }
-      - {label: "Direction", name: "direction", widget: "string"}
-      - {label: "Url", name: "url", widget: "string"}
-      - {label: "Date de publication", name: "date", widget: "date", format: "DD/MM/YYYY"}
-      - {label: "Miniature", name: "thumbnail", widget: "image"}
+          - { label: Texte, name: texte, widget: string , required: false}
+          - { label: Lien, name: lien, widget: string , required: false}
+      - {label: "Direction", name: "direction", widget: "string", required: false}
+
+      - {label: "Date de publication", name: "date", widget: "date", format: "DD/MM/YYYY", required: false}
+      - {label: "Miniature", name: "thumbnail", widget: "image", required: false}
       - label: "Evenement"
         name: "Evenement"
         widget: "list"
+        required: false
         fields:
           - label: "Events"
             name: "events"
@@ -57,7 +58,7 @@ collections:
             collection: "programmation"
             searchFields: ["title"]
             valueField: "title"
-            displayFields: ["title"]
+            displayFields: ["titre"]
             multiple: "true"
   - name: "programmation"
     label: "Programmation"
@@ -66,10 +67,15 @@ collections:
     slug: "{{slug}}"
     format: 'json'
     fields:
-      - {label: "Nom", name: "title", widget: "string", required: true}
-      - {label: "id", name: "id", widget: "string", required: true, tagname: "h1"}
+      - {label: "Url", name: "title", widget: "string", required: true}
+      - {label: "Titre", name: "titre", widget: "string", required: true, tagname: "h1"}
+      - label: "Intro"
+        name: "intro"
+        required: true
+        widget: "string"
+        pattern: [".{10,}", "10 caractères maximum !"]
       - {label: "Description", name: "description", widget: "markdown", required: false}
-      - {label: "Intro", name: "intro", widget: "string", required: false}
+      - {label: "Date de publication", name: "date", widget: "date", format: "DD/MM/YYYY", required: true}
       - {label: "Date Robot", name: "dateevents", widget: "date", format: "DD/MM/YYYY", required: false}
       - {label: "Date Humaine", name: "datehumaine", widget: "string", required: false}
       - {label: "Heure de début", name: "start", widget: "string", required: false}
@@ -91,6 +97,16 @@ collections:
           - { label: "Semaine 2", value: "semaine2" }
           - { label: "Semaine 3", value: "semaine3" }
           - { label: "Semaine 4", value: "semaine4" }
+      - label: "Images de fond"
+        required: false
+        name: "background"
+        widget: "select"
+        options:
+          - { label: "Background 1", value: "/images/background-1-electro-alternativ.jpg" }
+          - { label: "Background 2", value: "/images/background-2-electro-alternativ.jpg" }
+          - { label: "Background 3", value: "/images/background-3-electro-alternativ.jpg" }
+          - { label: "Background 4", value: "/images/background-4-electro-alternativ.jpg" }
+          - { label: "Background 5", value: "/images/background-5-electro-alternativ.jpg" }          
       - label: "Groupes"
         name: "groupes"
         required: false
@@ -114,18 +130,7 @@ collections:
         valueField: "url"
         displayFields: ["title"]
         multiple: "true"
-      - {label: "Date de publication", name: "date", widget: "date", format: "DD/MM/YYYY"}
-      - label: "Images de fond"
-        required: false
-        name: "background"
-        widget: "select"
-        options:
-          - { label: "Background 1", value: "/images/background-1-electro-alternativ.jpg" }
-          - { label: "Background 2", value: "/images/background-2-electro-alternativ.jpg" }
-          - { label: "Background 3", value: "/images/background-3-electro-alternativ.jpg" }
-          - { label: "Background 4", value: "/images/background-4-electro-alternativ.jpg" }
-          - { label: "Background 5", value: "/images/background-5-electro-alternativ.jpg" }
-      - {label: "Miniature", name: "thumbnail", widget: "image", required: false}
+      - {label: "Miniature Facebook", name: "thumbnail", widget: "image", required: false}
   - name: "articles"
     label: "Articles"
     folder: "content/articles/page"
