@@ -12,7 +12,7 @@ import VueMarkdown from 'vue-markdown'
 import VueLazyload from 'vue-lazyload'
 export default {
   layout: 'default',
-  transition: { name: 'intro', mode: 'out-in' },
+  transition: { name: 'intro', mode: 'in-out' },
   components: { VueMarkdown, VueLazyload },
   async asyncData({ params }) {
     let page = await import('~/content/programmation/page/' + params.slug + '.json');
@@ -37,34 +37,23 @@ export default {
   },
   methods: {
     switchBackground() {
-        var back = $('main').attr('data-back');
-        var duo = $('main').attr('data-duo');
-        
-        $('.main-background').fadeOut(100, function(){
-            $('.main-background').attr('xlink:href', back).bind('onreadystatechange load', function(){
-              $('.anim-filter').addClass("duotone-"+duo);
-              $('.main-background').fadeIn(100);
-            });
-        });
-        $('.seconde-background').fadeOut(100, function(){
-            $('.seconde-background').attr('src', back).bind('onreadystatechange load', function(){
-              $('.seconde-background').fadeIn(100);
-            });
-        });
+      var back = $('main').attr('data-back');
+      var duo = $('main').attr('data-duo');
+      $('.main-background').fadeOut(100, function(){
+          $('.main-background').attr('xlink:href', back).bind('onreadystatechange load', function(){
+            $('.anim-filter').addClass("duotone-"+duo);
+            $('.main-background').fadeIn(100);
+          });
+      });
     },
     killBackground() {
-        var duo = $('main').attr('data-duo');
-        $('.main-background').fadeOut(100, function(){
-            $('.main-background').attr('xlink:href', '/images/background-1-electro-alternativ.jpg').bind('onreadystatechange load', function(){
-              $('#main-background').removeClass("duotone-"+duo);
-              $('.main-background').fadeIn(100);
-            });
-        });
-        $('.seconde-background').fadeOut(100, function(){
-            $('.seconde-background').attr('src', '/images/background-1-electro-alternativ.jpg').bind('onreadystatechange load', function(){
-              $('.seconde-background').fadeIn(100);
-            });
-        });
+      var duo = $('main').attr('data-duo');
+      $('.main-background').fadeOut(100, function(){
+          $('.main-background').attr('xlink:href', '/images/background-1-electro-alternativ.jpg').bind('onreadystatechange load', function(){
+            $('.anim-filter').removeClass("duotone-"+duo);
+            $('.main-background').fadeIn(100);
+          });
+      });
     }
     
   }
