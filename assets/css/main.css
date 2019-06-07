@@ -13,9 +13,9 @@ body {
   margin:0;
   font-family: Archivo-Medium;
 }
-button::-moz-focus-inner,
-button:active,
-button:focus,
+.button::-moz-focus-inner,
+.button:active,
+.button:focus,
 a:active,
 a:focus{
     border: none !important;
