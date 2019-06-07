@@ -76,7 +76,7 @@ collections:
         pattern: [".{10,}", "10 caractères maximum !"]
       - {label: "Description", name: "description", widget: "markdown", required: false}
       - {label: "Date de publication", name: "date", widget: "date", format: "DD/MM/YYYY", required: true}
-      - {label: "Date Robot", name: "dateevents", widget: "date", format: "DD/MM/YYYY", required: false}
+      - {label: "Date Robot", name: "dateevents", widget: "date", format: "MM/DD/YYYY", required: false}
       - {label: "Date Humaine", name: "datehumaine", widget: "string", required: false}
       - {label: "Heure de début", name: "start", widget: "string", required: false}
       - {label: "Heure de fin", name: "end", widget: "string", required: false}
