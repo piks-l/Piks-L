@@ -43,6 +43,7 @@
 export default {
     layout: 'default',
     components: { VueLazyload, eaTitre },
+    transition: { name: 'intro', mode: 'out-in' },
     head() {
       return {
         title: 'Programmation | Electrobotik Invasion - le 2 & 3 Août 2019',
