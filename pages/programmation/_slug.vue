@@ -51,12 +51,12 @@ export default {
     },
     killBackground() {
         $('.main-background').fadeOut(1000, function(){
-            $('.main-background').attr('xlink:href', '/images/background-4-electro-alternativ.jpg').bind('onreadystatechange load', function(){
+            $('.main-background').attr('xlink:href', '/images/background-1-electro-alternativ.jpg').bind('onreadystatechange load', function(){
               $('.main-background').fadeIn(1000);
             });
         });
         $('.seconde-background').fadeOut(1000, function(){
-            $('.seconde-background').attr('src', '/images/background-4-electro-alternativ.jpg').bind('onreadystatechange load', function(){
+            $('.seconde-background').attr('src', '/images/background-1-electro-alternativ.jpg').bind('onreadystatechange load', function(){
               $('.seconde-background').fadeIn(1000);
             });
         });
