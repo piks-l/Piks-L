@@ -9,7 +9,7 @@
   import eaTitre from '~/components/titre.vue'
   export default {
     layout: 'default',
-    transition: 'page',
+    transition: 'outro',
     components: { eaTitre },
     data() {
       return {
