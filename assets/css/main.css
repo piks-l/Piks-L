@@ -102,7 +102,7 @@ svg {
   left: 50%;
 }
 svg image{
-  width:100vw;
+  width:100%;
 }
 .mirror {
   position: fixed;
