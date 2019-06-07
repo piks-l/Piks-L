@@ -42,7 +42,7 @@ export default {
         
         $('.main-background').fadeOut(100, function(){
             $('.main-background').attr('xlink:href', back).bind('onreadystatechange load', function(){
-              $('#main-background').addClass("duotone-"+duo);
+              $('.anim-filter').addClass("duotone-"+duo);
               $('.main-background').fadeIn(100);
             });
         });
