@@ -29,6 +29,9 @@ export default {
             this.loading = false
           }, 4000)
         });
+        
+    },
+    mounted: () => {
         console.log('loading');
     }
   }
