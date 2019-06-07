@@ -4,17 +4,17 @@
           <ea-titre/>
           <div id="filters">
           <div class="button-type button-group"  data-filter-group="type">
-              <button class="button is-checked" data-filter="*">ALL</button>
-              <button class="button" data-filter=".jour">Jour</button>
-              <button class="button" data-filter=".soiree">Soirée</button>
-              <button class="button" data-filter=".nuit">Nuit</button>
+              <div class="button is-checked" data-filter="*">ALL</div>
+              <div class="button" data-filter=".jour">Jour</div>
+              <div class="button" data-filter=".soiree">Soirée</div>
+              <div class="button" data-filter=".nuit">Nuit</div>
           </div>
           <div class="button-semaine button-group"  data-filter-group="semaine">
-              <button class="button active" data-filter=".semaine1"><span>Semaine</span> 1</button>
-              <button class="button active" data-filter=".semaine2"><span>Semaine</span> 2</button>
-              <button class="button active" data-filter=".semaine3"><span>Semaine</span> 3</button>
-              <button class="button active" data-filter=".semaine4"><span>Semaine</span> 4</button>
-              <button class="button any" data-filter=""></button>
+              <div class="button active" data-filter=".semaine1"><span>Semaine</span> 1</div>
+              <div class="button active" data-filter=".semaine2"><span>Semaine</span> 2</div>
+              <div class="button active" data-filter=".semaine3"><span>Semaine</span> 3</div>
+              <div class="button active" data-filter=".semaine4"><span>Semaine</span> 4</div>
+              <div class="button any" data-filter=""></div>
           </div>
           </div>
           <div class="grid">
