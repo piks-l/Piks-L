@@ -75,11 +75,13 @@ export default {
             var grid = new Isotope(".grid", {
               itemSelector: ".element-item",
               stamp: '.stamp',
-              getSortData: {
-                  date: function ($elem) {
-                      return Date.parse($elem.find('.element-item').attr("data-date"));
-                  }
-              }
+              getSortData : {
+               name : function ( $elem ) {
+                return $elem.find('.element-item').attr('data-date');
+               }
+              },
+              sortBy : 'name',
+              sortAscending : false
             });
             // store filter for each group
             var filters = {};
