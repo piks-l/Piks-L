@@ -24,14 +24,15 @@ export default {
       this.loading = true
     },
     finish() {
-        $(window).load(function() {
+       
+    },
+    mounted: () => {
+         $(window).load(function() {
             setTimeout(() => {
             this.loading = false
           }, 4000)
         });
         
-    },
-    mounted: () => {
         console.log('loading');
     }
   }
