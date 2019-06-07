@@ -110,13 +110,13 @@ export default {
             });
             $( ".button-type button" ).click(function() {
               $( ".button-semaine .any" ).click();
-              $('.button-semaine button').each( function() {
+              $('.button-semaine .button').each( function() {
                   $( this ).addClass( "active" );
                   $( ".button-type" ).removeClass( "mobile-active" );
               });
             });
-            $( ".button-semaine button" ).click(function() {
-              $('.button-semaine button').each( function() {
+            $( ".button-semaine .button" ).click(function() {
+              $('.button-semaine .button').each( function() {
                   $( this ).removeClass( "active" );
                   $( ".button-semaine" ).removeClass( "mobile-active" );
               });
