@@ -70,6 +70,7 @@ export default {
   overflow:            hidden;
   padding:             0px;
   position:            relative;
+  mix-blend-mode: hard-light;
 }
 .duotone-soiree .main-background {
   filter:              grayscale(100%) contrast(1) blur(0px);
@@ -83,7 +84,7 @@ export default {
   width:               100%;
 }
 .duotone-soiree::before {
-  background-color:    #FF0000;
+  background-color:    #0ff;
   bottom:              0;
   content:             '';
   height:              100%;
