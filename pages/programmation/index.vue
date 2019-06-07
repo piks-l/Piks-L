@@ -77,7 +77,7 @@ export default {
               stamp: '.stamp',
               getSortData: {
                   date: function ($elem) {
-                      return Date.parse($elem.find('.date').attr("data-date"));
+                      return Date.parse($elem.find('.element-item').attr("data-date"));
                   }
               }
             });
