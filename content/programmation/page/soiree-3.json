@@ -2,7 +2,7 @@
   "start": "20H00",
   "dateevents": "11/09/2019",
   "thumbnail": "/images/uploads/test-couverture-site-oktober-b-soirée-.jpg",
-  "intro": "TROP COOL",
+  "intro": "TROP COOL YEAH",
   "lieu": "rex-de-toulouse",
   "groupes": [
     {
@@ -15,7 +15,8 @@
   "background": "/images/background-5-electro-alternativ.jpg",
   "date": "06/06/2019",
   "datehumaine": "MERCREDI 11 SEPTEMBRE",
-  "title": "Electro Alternativ #15 w/ Oktober Lieber, Monolithe Noir",
+  "titre": "Electro Alternativ #15 w/ Oktober Lieber, Monolithe Noir",
+  "title": "soiree-05",
   "semaine": "semaine2",
   "type": "nuit",
   "galerie": [
@@ -23,6 +24,5 @@
     "/images/uploads/oktober-lieber_square_credit_titouan_masse.jpg"
   ],
   "end": "00H00",
-  "id": "soiree-04",
   "description": "Je suis la description de la soirée"
 }
