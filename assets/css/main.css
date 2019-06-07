@@ -475,7 +475,6 @@ nav{
     #filters .button {
         display: block;
         text-align: center;
-        width: 100%;
         color: rgb(255,255,255);
         background: rgba(0,0,0,0);
         border: 0;
@@ -483,7 +482,8 @@ nav{
         letter-spacing: 1px;
         -webkit-transition: all 0.3s cubic-bezier(0.785,.135,.15,.86);
         transition: all 0.3s cubic-bezier(0.785,.135,.15,.86);
-        position: relative;
+        position: relative;        
+        padding: 0px 10px;
     }
         #filters .button:hover {
             color: rgb(6,53,170) !important;
