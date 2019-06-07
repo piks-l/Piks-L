@@ -24,9 +24,11 @@ export default {
       this.loading = true
     },
     finish() {
-      setTimeout(() => {
-        this.loading = false
-      }, 4000)
+        $(window).load(function() {
+            setTimeout(() => {
+            this.loading = false
+          }, 4000)
+        })
     }
   }
 }
