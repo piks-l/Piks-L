@@ -1,4 +1,4 @@
-<template>
+r<template>
   <main class="page" :data-back="background" :data-duo="type">
      <h2>{{ title }}</h2>
      <p>{{ semaine }}</p>
@@ -20,10 +20,10 @@ export default {
   },
   head() {
     return {
-      title: `${this.title}`,
+      title: `${this.titre}`,
       meta: [
         { hid: 'description', name: 'description', content: `${this.description}` },
-        { 'property': 'og:title', 'content': `${this.title}`, 'vmid': 'og:title' },
+        { 'property': 'og:title', 'content': `${this.titre}`, 'vmid': 'og:title' },
         { 'property': 'og:description', 'content': `${this.description}` },
         { 'property': 'og:image', 'content': `${this.thumbnail}`, 'vmid': 'og:image' }
       ]
