@@ -72,7 +72,7 @@ export default {
     ea() {
             var grid = new Isotope(".grid", {
               itemSelector: ".element-item",
-              stamp: grid.find('.stamp')
+              stamp: '.stamp'
             });
             // store filter for each group
             var filters = {};
