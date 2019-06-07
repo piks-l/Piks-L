@@ -485,13 +485,13 @@ nav{
   left: 33.333%;
   top: 0;
   width: 33.333%;
-  height: 100px;
+  height: 50px;
 }
 .stamp2 {
   left: 66.666%;
   top: 0px;
   width: 33.333%;
-  height: 200px;
+  height: 100px;
 }
 .element-item {
     width: calc(30% - 30px);
