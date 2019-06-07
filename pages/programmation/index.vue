@@ -20,7 +20,7 @@
           <div class="grid">
               <div class="stamp stamp1"></div>
               <div class="stamp stamp2"></div>
-              <div v-for="event in programmation" :data-date="date.dateevents" :key="event.date"  :class="event.type+' '+event.semaine" class="element-item">
+              <div v-for="event in programmation" :data-date="event.dateevents" :key="event.date"  :class="event.type+' '+event.semaine" class="element-item">
                    <nuxt-link :to="event._path+'/'">
                      <p class="grid-date"><strong>{{event.datehumaine}}</strong></p>
                      <p class="grid-time">{{event.start}} &rsaquo; {{event.end}}</p>
