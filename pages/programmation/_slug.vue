@@ -34,9 +34,16 @@ export default {
   },
   methods: {
     switchBackground() {
-       var back = $('main').attr('data-back');
-       $('.main-background').attr('xlink:href', back);
-       $('.seconde-background').attr('src', back); 
+        var back = $('main').attr('data-back');
+
+        $('.main-background').fadeOut(1000, function(){
+            $('.main-background').attr('xlink:href', back).bind('onreadystatechange load', function(){
+              $('.main-background').fadeIn(1000);
+            });
+        });
+       
+       //$('.main-background').attr('xlink:href', back);
+       //$('.seconde-background').attr('src', back); 
        console.log(back);
     }
   }
