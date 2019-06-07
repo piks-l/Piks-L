@@ -1,12 +1,9 @@
 <template>
-<transition name="intro" mode="out-in">
   <div id="main" class="layout-ea">
     <ea-logo/>
     <ea-menu/>
-    
-    <nuxt/>
+    <nuxt class="main-evenements"/>
   </div>
-</transition>
 </template>
 <script>
   import $ from 'jquery'
