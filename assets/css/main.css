@@ -455,7 +455,7 @@ nav{
         #filters .button-semaine .button:hover {
             transform: scale(1.2);
         }
-        #filters .button-type .is-checked{
+        #filters .button-type .is-checked:not(:nth-child(1)){
             background: rgba(0,0,0,1);
             color: rgb(255,255,255);
         }
