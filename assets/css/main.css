@@ -496,17 +496,15 @@ nav{
   
 .stamp {
   position: absolute;
+  top: 0px;
+  width: 33.333%;
 }
 .stamp1 {
-  left: 33.333%;
-  top: 0;
-  width: 33.333%;
+  left: 33.4%;  
   height: 50px;
 }
 .stamp2 {
   left: 66.666%;
-  top: 0px;
-  width: 33.333%;
   height: 100px;
 }
 .element-item {
