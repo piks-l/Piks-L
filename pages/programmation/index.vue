@@ -21,8 +21,8 @@
               <div class="stamp stamp1"></div>
               <div class="stamp stamp2"></div>
               <div v-for="event in programmation" :key="event.date"  :class="event.type+' '+event.semaine" class="element-item">
-                   <nuxt-link :to="event._path+'/'" :data-date="event.dateevents">
-                     <p class="grid-date"><strong>{{event.datehumaine}}</strong></p>
+                   <nuxt-link :to="event._path+'/'" >
+                     <p class="grid-date" :data-date="event.dateevents"><strong>{{event.datehumaine}}</strong></p>
                      <p class="grid-time">{{event.start}} &rsaquo; {{event.end}}</p>
                      <p class="grid-artistes" v-for="artist in event.groupes" :key="artist.artiste">{{artist.artiste}}</p>
                      <p class="grid-lieu">{{event.lieu}}</p>
@@ -76,11 +76,11 @@ export default {
               itemSelector: ".element-item",
               stamp: '.stamp',
               getSortData : {
-               name : function ($elem) {
-                return $($elem).find('a').attr('data-time');
+               date : function ($elem) {
+                return $($elem).find('.grid-date').attr('data-time');
                }
               },
-              sortBy : 'name',
+              sortBy : 'date',
               sortAscending : false
             });
             // store filter for each group
