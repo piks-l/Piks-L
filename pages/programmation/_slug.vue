@@ -38,26 +38,26 @@ export default {
   methods: {
     switchBackground() {
         var back = $('main').attr('data-back');
-        $('.main-background').fadeOut(250, function(){
+        $('.main-background').fadeOut(100, function(){
             $('.main-background').attr('xlink:href', back).bind('onreadystatechange load', function(){
-              $('.main-background').fadeIn(250);
+              $('.main-background').fadeIn(100);
             });
         });
-        $('.seconde-background').fadeOut(250, function(){
+        $('.seconde-background').fadeOut(100, function(){
             $('.seconde-background').attr('src', back).bind('onreadystatechange load', function(){
-              $('.seconde-background').fadeIn(250);
+              $('.seconde-background').fadeIn(100);
             });
         });
     },
     killBackground() {
         $('.main-background').fadeOut(250, function(){
             $('.main-background').attr('xlink:href', '/images/background-1-electro-alternativ.jpg').bind('onreadystatechange load', function(){
-              $('.main-background').fadeIn(250);
+              $('.main-background').fadeIn(100);
             });
         });
         $('.seconde-background').fadeOut(250, function(){
             $('.seconde-background').attr('src', '/images/background-1-electro-alternativ.jpg').bind('onreadystatechange load', function(){
-              $('.seconde-background').fadeIn(250);
+              $('.seconde-background').fadeIn(100);
             });
         });
     }
