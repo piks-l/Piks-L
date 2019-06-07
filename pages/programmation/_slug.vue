@@ -22,7 +22,7 @@ export default {
     return {
       backgroundweb: `${this.background}`
     }
-  }
+  },
   head() {
     return {
       title: `${this.title}`,
