@@ -25,7 +25,7 @@ main:before{
     background-size: 600px;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center 0vh;
 }
 .intro-enter-active::after,
 .intro-leave-active::after {
@@ -37,7 +37,7 @@ main:after{
     background-size: 600px;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: center 50%;
+    background-position: center -50vh;
 }
 .intro-leave::before, .intro-leave::after {
   transform: translatex(-100%);
