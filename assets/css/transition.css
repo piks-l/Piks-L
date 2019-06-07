@@ -1,6 +1,6 @@
 .intro-enter-active,
 .intro-leave-active {
-  transition-duration: 1600ms;
+  transition-duration: 1000ms;
 }
 .intro-enter-active::before, .intro-enter-active::after,
 .intro-leave-active::before,
@@ -59,7 +59,7 @@
 
 .outro-enter-active,
 .outro-leave-active {
-  transition-duration: 1600ms;
+  transition-duration: 1000ms;
 }
 .outro-enter-active::before, .outro-enter-active::after,
 .outro-leave-active::before,
@@ -77,12 +77,12 @@
 }
 .outro-enter-active::before,
 .outro-leave-active::before {
-  background-color: #0635aa;
+  background-color: #000000;
 }
 .outro-enter-active::after,
 .outro-leave-active::after {
   top: 50%;
-  background-color: #0635aa;
+  background-color: #000000;
 }
 .outro-leave::before, .outro-leave::after {
   transform: scaleX(0);
