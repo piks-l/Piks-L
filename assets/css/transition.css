@@ -23,7 +23,7 @@
     background-size: 600px;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: center 49%;
+    background-position: center center;
 }
 .intro-enter-active::after,
 .intro-leave-active::after {
@@ -60,7 +60,7 @@
   transition-delay: 300ms;
 }
 .intro-enter-to::before, .intro-enter-to::after {
-  transform: translatex(-100%);
+  transform: translatex(100%);
   transform-origin: right;
 }
 
