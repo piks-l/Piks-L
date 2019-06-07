@@ -519,12 +519,12 @@ nav{
     .button-semaine .button {
         line-height: 30px;
     }
-    .button-type button:nth-child(1) {
+    .button-type .button:nth-child(1) {
         font-size: 14px;
         font-weight: 300;
         margin-bottom: 13px;
     }
-    .button-type button:last-child {
+    .button-type .button:last-child {
         margin-bottom: 3px;
     }
   
