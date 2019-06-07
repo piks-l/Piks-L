@@ -1,5 +1,4 @@
 {
-  "iframe": "test",
   "Evenement": [
     {
       "events": "soiree-2"
@@ -11,12 +10,11 @@
   "url": "rex-de-toulouse",
   "gmap": [
     {
-      "awesome": "test",
       "texte": "test",
       "lien": "test"
     }
   ],
-  "title": "REX DE TOULOUSE",
+  "title": "Rex de Toulouse",
   "description": "test",
   "direction": "test"
 }
