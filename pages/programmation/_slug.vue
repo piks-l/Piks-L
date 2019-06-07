@@ -34,9 +34,10 @@ export default {
   },
   methods: {
     switchBackground() {
-       var back = $('.main-background').attr('data-back');
+       back = $('.main-background').attr('data-back');
        $('.main-background').attr('xlink:href', back);
        $('.seconde-background').attr('src', back); 
+       console.log(back)
     }
   }
 };
