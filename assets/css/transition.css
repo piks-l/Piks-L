@@ -43,11 +43,11 @@ main:after{
   transform: translatex(-100%);
 }
 .intro-leave-active::before {
-  transition-duration: 800ms;
+  transition-duration: 500ms;
 }
 .intro-leave-active::after {
-  transition-duration: 500ms;
-  transition-delay: 300ms;
+  transition-duration: 300ms;
+  transition-delay: 200ms;
 }
 .intro-leave-to::before, .intro-leave-to::after {
   transform: translatex(0);
@@ -57,11 +57,11 @@ main:after{
   transform: translatex(0);
 }
 .intro-enter-active::before {
-  transition-duration: 800ms;
+  transition-duration: 500ms;
 }
 .intro-enter-active::after {
-  transition-duration: 500ms;
-  transition-delay: 300ms;
+  transition-duration: 300ms;
+  transition-delay: 200ms;
 }
 .intro-enter-to::before, .intro-enter-to::after {
   transform: translatex(100%);
