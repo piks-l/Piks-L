@@ -70,12 +70,13 @@ export default {
     },
   mounted() {
       this.ea();
-      function myFunction() {
-          var str = document.getElementsByClassName("grid-lieu").innerHTML; 
-          var res = str.replace(/-/g, " ");
-          document.getElementsByClassName("grid-lieu").innerHTML = res;
-      }
-      myFunction();
+      
+      $(".grid-lieu").each(function() {
+          var text = $(this).text();
+          text = text.replace(/-/g, " ");
+          $(this).text(text);
+      });
+      
   },
   methods: {
     ea() {
