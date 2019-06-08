@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="black">
     <ea-titre/>
     <nuxt-link to="/programmation/">PROGRAMMATION</nuxt-link>
   </main>
@@ -9,7 +9,7 @@
   import eaTitre from '~/components/titre.vue'
   export default {
     layout: 'default',
-    transition: 'outro',
+    transition: 'intro',
     components: { eaTitre },
     data() {
       return {
