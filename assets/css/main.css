@@ -580,3 +580,14 @@ nav{
 .grid-artistes strong:last-child::after {
     content: '';
 }
+.grid-lieu {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Archivo-Regular;
+    margin: 5px 0;
+}
+.grid-intro {
+    font-family: archivo-italic;
+    text-transform: lowercase;
+    margin: 0 0 5px;
+}
