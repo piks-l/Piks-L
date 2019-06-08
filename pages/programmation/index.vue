@@ -71,7 +71,7 @@ export default {
   mounted() {
       this.ea();
       
-      $(".grid-lieu").each(function() {
+      $(".grid-lieu, .grid-artistes strong").each(function() {
           var text = $(this).text();
           text = text.replace(/-/g, " ");
           $(this).text(text);
