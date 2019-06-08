@@ -71,9 +71,9 @@ export default {
   mounted() {
       this.ea();
       $( ".grid-lieu" ).each(function() {
-            var str = $( this ).innerHTML; 
+            var str = $( this ).html(); 
             var res = str.replace(/-/g, " ");
-            $( this ).innerHTML = res;
+            $( this ).html() = res;
       });
   },
   methods: {
