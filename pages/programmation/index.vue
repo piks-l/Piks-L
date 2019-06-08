@@ -4,7 +4,7 @@
           <ea-titre/>
           <div id="filters">
           <div class="button-type button-group"  data-filter-group="type">
-              <div class="button is-checked" data-filter="*">ALL</div>
+              <div class="button duoto is-checked" data-duo="jour" data-filter="*">ALL</div>
               <div class="button duoto" data-duo="jour" data-filter=".jour">Jour</div>
               <div class="button duoto" data-duo="soiree" data-filter=".soiree">Soirée</div>
               <div class="button duoto" data-duo="nuit" data-filter=".nuit">Nuit</div>
