@@ -79,9 +79,9 @@ export default {
   },
   methods: {
      switchBackground() {
-      
+      var duo =  $(el).attr('data-duo');
       $('.duoto').click(function(el) {
-          var duo =  $(el).attr('data-duo').value();
+          
           $('.anim-filter').addClass("duotone-"+duo);
           console.log(duo)
        });
