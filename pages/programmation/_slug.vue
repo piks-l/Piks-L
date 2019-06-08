@@ -1,4 +1,4 @@
-r<template>
+<template>
   <main class="page" :data-back="background" :data-duo="type">
      <h2>{{ title }}</h2>
      <p>{{ semaine }}</p>
@@ -61,73 +61,3 @@ export default {
   }
 };
 </script>
-<style>
-.duotone-nuit {
-  background-color:    #f900ff;
-  display:             flex;
-  flex:                1 1 100%;
-  height:              100%;
-  overflow:            hidden;
-  padding:             0px;
-  position:            relative;
-  mix-blend-mode: hard-light;
-}
-.duotone-nuit .main-background {
-  filter:              grayscale(100%) contrast(1) blur(0px);
-  flex:                1 0 100%;
-  height:              100%;
-  max-width:           100%;
-  mix-blend-mode:      hard-light;
-  object-fit:          cover;
-  opacity:             1;
-  position:            relative;
-  width:               100%;
-}
-.duotone-nuit::before {
-  background-color:    #0ff;
-  bottom:              0;
-  content:             '';
-  height:              100%;
-  left:                0;
-  mix-blend-mode:      multiply;
-  position:            absolute;
-  right:               0;
-  top:                 0;
-  width:               100%;
-  z-index:             1;
-}
-
-.duotone-soiree {
-  background-color:    #0000ff;
-  display:             flex;
-  flex:                1 1 100%;
-  height:              100%;
-  overflow:            hidden;
-  padding:             0px;
-  position:            relative;
-}
-.duotone-soiree .main-background {
-  filter:              grayscale(100%) contrast(1) blur(0px);
-  flex:                1 0 100%;
-  height:              100%;
-  max-width:           100%;
-  mix-blend-mode:      hard-light;
-  object-fit:          cover;
-  opacity:             1;
-  position:            relative;
-  width:               100%;
-}
-.duotone-soiree::before {
-  background-color:    #f900ff;
-  bottom:              0;
-  content:             '';
-  height:              100%;
-  left:                0;
-  mix-blend-mode:      multiply;
-  position:            absolute;
-  right:               0;
-  top:                 0;
-  width:               100%;
-  z-index:             1;
-}
-</style>
