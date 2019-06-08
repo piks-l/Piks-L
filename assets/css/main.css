@@ -574,6 +574,9 @@ nav{
 .grid-artistes strong {
     font-size: 1.3em;
 }
-.grid-artistes strong:after:not(:last-child) {
-    content:'+';
+.grid-artistes strong:after{
+    content:' + ';
+}
+.grid-artistes strong:last-child::after {
+    content: '';
 }
