@@ -80,8 +80,8 @@ export default {
   methods: {
      switchBackground() {
       
-      $('.duoto').click(function() {
-          var duo = this.attr('data-duo');
+      $('.duoto').click(function(el) {
+          var duo =  $(el).attr('data-duo');
           $('.anim-filter').addClass("duotone-"+duo);
           console.log(duo)
        });
