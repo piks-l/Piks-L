@@ -3,6 +3,14 @@
   "dateevents": "08/24/2019",
   "intro": "PRE OPENING",
   "lieu": "le-bikini",
+  "groupes": [
+    {
+      "artiste": "camo-&-krooked"
+    },
+    {
+      "artiste": "tba"
+    }
+  ],
   "background": "/images/background-2-electro-alternativ.jpg",
   "date": "07/06/2019",
   "datehumaine": "SAMEDI 24 AOÛT",
@@ -10,6 +18,9 @@
   "title": "soiree-00",
   "semaine": "semaine1",
   "type": "nuit",
+  "galerie": [
+    "/images/uploads/camo_-_krooked_official_press_pic_2017.jpg"
+  ],
   "end": "05H30",
   "description": "Je suis la description"
 }
