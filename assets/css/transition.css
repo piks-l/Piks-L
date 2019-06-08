@@ -1,6 +1,6 @@
 .intro-enter-active,
 .intro-leave-active {
-  transition-duration: 2000ms;
+  transition-duration: 1500ms;
 }
 .intro-enter-active::before, .intro-enter-active::after,
 .intro-leave-active::before,
@@ -66,15 +66,18 @@ main:after{
 .intro-enter-to::before, .intro-enter-to::after {
   transform: translatex(100%);
   transform-origin: right;
-  transition-delay: 1000ms;
+  transition-delay: 500ms;
 }
 
 
 
-
+.black:before,
+.black:after{
+    background-image:none; 
+}
 .outro-enter-active,
 .outro-leave-active {
-  transition-duration: 1000ms;
+  transition-duration: 1500ms;
 }
 .outro-enter-active::before, .outro-enter-active::after,
 .outro-leave-active::before,
@@ -100,30 +103,31 @@ main:after{
   background-color: #000000;
 }
 .outro-leave::before, .outro-leave::after {
-  transform: scaleX(0);
+  transform: translatex(-100%);
 }
 .outro-leave-active::before {
-  transition-duration: 800ms;
+  transition-duration: 500ms;
 }
 .outro-leave-active::after {
-  transition-duration: 500ms;
-  transition-delay: 300ms;
+  transition-duration: 300ms;
+  transition-delay: 200ms;
 }
 .outro-leave-to::before, .outro-leave-to::after {
-  transform: scale(1);
+  transform: translatex(0);
   transform-origin: left;
 }
 .outro-enter::before, .outro-enter::after {
-  transform: scaleX(1);
+  transform: translatex(0);
 }
 .outro-enter-active::before {
-  transition-duration: 800ms;
+  transition-duration: 500ms;
 }
 .outro-enter-active::after {
-  transition-duration: 500ms;
-  transition-delay: 300ms;
+  transition-duration: 300ms;
+  transition-delay: 200ms;
 }
 .outro-enter-to::before, .outro-enter-to::after {
-  transform: scaleX(0);
+  transform: translatex(100%);
   transform-origin: right;
+  transition-delay: 500ms;
 }
