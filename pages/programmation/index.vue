@@ -70,11 +70,10 @@ export default {
     },
   mounted() {
       this.ea();
-      $( ".grid-lieu" ).each(function() {
-            var str = $( this ).html(); 
-            var res = str.replace(/-/g, " ");
-            $( this ).html() = res;
-      });
+      
+      var str = document.getElementsByClassName("grid-lieu").innerHTML; 
+      var res = str.replace(/-/g, " ");
+      document.getElementsByClassName("grid-lieu").innerHTML = res;
   },
   methods: {
     ea() {
