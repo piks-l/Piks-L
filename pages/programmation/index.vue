@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="black">
       <div class="container">
           <ea-titre/>
           <div id="filters">
@@ -45,7 +45,7 @@
 export default {
     layout: 'default',
     components: { VueLazyload, eaTitre },
-    transition: { name: 'outro', mode: 'out-in' },
+    transition: { name: 'intro', mode: 'out-in' },
     head() {
       return {
         title: 'Programmation | Electrobotik Invasion - le 2 & 3 Août 2019',
