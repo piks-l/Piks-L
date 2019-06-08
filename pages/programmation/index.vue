@@ -77,6 +77,9 @@ export default {
           $(this).text(text);
       });
   },
+  destroyed() {
+    this.killBackground();
+  },
   methods: {
      switchBackground() {
       $('.duoto').each( function( i, el ) {
@@ -86,6 +89,11 @@ export default {
             console.log(duo)
          });
       });
+    },
+    killBackground() {
+      setTimeout(function(){  
+        $('.anim-filter').removeClass("duotone-jour duotone-soiree duotone-nuit");
+      }, 900);
     },
     ea() {
             var grid = new Isotope(".grid", {
