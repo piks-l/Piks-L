@@ -5,9 +5,9 @@
           <div id="filters">
           <div class="button-type button-group"  data-filter-group="type">
               <div class="button is-checked" data-filter="*">ALL</div>
-              <div class="button" data-filter=".jour">Jour</div>
-              <div class="button" data-filter=".soiree">Soirée</div>
-              <div class="button" data-filter=".nuit">Nuit</div>
+              <div class="button duoto" :data-duo="jour" data-filter=".jour">Jour</div>
+              <div class="button duoto" :data-duo="soiree" data-filter=".soiree">Soirée</div>
+              <div class="button duoto" :data-duo="nuit" data-filter=".nuit">Nuit</div>
           </div>
           <div class="button-semaine button-group"  data-filter-group="semaine">
               <div class="button active" data-filter=".semaine1"><span>Semaine</span> 1</div>
@@ -70,15 +70,20 @@ export default {
     },
   mounted() {
       this.ea();
-      
+      this.switchBackground();
       $(".grid-lieu, .grid-artistes strong").each(function() {
           var text = $(this).text();
           text = text.replace(/-/g, " ");
           $(this).text(text);
       });
-      
   },
   methods: {
+     switchBackground() {
+      var duo = $('.duoto').attr('data-duo');
+      $('.duoto').click(function() {
+          $('.anim-filter').addClass("duotone-"+duo);
+       });
+    },
     ea() {
             var grid = new Isotope(".grid", {
               itemSelector: ".element-item",
