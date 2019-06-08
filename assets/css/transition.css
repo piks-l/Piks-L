@@ -44,11 +44,11 @@ main:after{
 }
 .intro-leave-active::before {
   transition-duration: 500ms;
-  transition-delay: 500ms;
+  transition-delay: 1000ms;
 }
 .intro-leave-active::after {
   transition-duration: 300ms;
-  transition-delay: 700ms;
+  transition-delay: 1200ms;
 }
 .intro-leave-to::before, .intro-leave-to::after {
   transform: translatex(0);
