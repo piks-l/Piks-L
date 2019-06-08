@@ -557,8 +557,7 @@ nav{
     padding: 0 10px;
     background: #000;
 }
-.grid-time:before{
-    content:'';
+.line{
     height:3px;
     width:80%;
     background:#fff;
