@@ -69,7 +69,12 @@ export default {
       };
     },
   mounted() {
-    this.ea();
+      this.ea();
+      $( ".grid-lieu" ).each(function() {
+            var str = $( this ).innerHTML; 
+            var res = str.replace(/-/g, " ");
+            $( this ).innerHTML = res;
+      });
   },
   methods: {
     ea() {
