@@ -82,7 +82,8 @@ export default {
       $('.duoto').each( function( i, el ) {
         var duo =  $(el).attr('data-duo');
         $(el).click(function(el) {
-            $('.anim-filter').toggleClass("duotone-"+duo);
+            $('.anim-filter').removeClass("duotone-*");
+            $('.anim-filter').addClass("duotone-"+duo);
             console.log(duo)
          });
       });
