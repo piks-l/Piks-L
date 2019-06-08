@@ -81,8 +81,9 @@ export default {
      switchBackground() {
       
       $('.duoto').click(function() {
-          duo = this.attr('data-duo');
+          var duo = this.attr('data-duo');
           $('.anim-filter').addClass("duotone-"+duo);
+          console.log(duo)
        });
     },
     ea() {
