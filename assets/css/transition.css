@@ -1,6 +1,6 @@
 .intro-enter-active,
 .intro-leave-active {
-  transition-duration: 1000ms;
+  transition-duration: 2000ms;
 }
 .intro-enter-active::before, .intro-enter-active::after,
 .intro-leave-active::before,
