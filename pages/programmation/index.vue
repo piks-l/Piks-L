@@ -23,6 +23,7 @@
               <div v-for="event in programmation" :key="event.date"  :class="event.type+' '+event.semaine" class="element-item">
                    <nuxt-link :to="event._path+'/'" >
                      <p class="grid-date" :data-date="event.dateevents"><strong>{{event.datehumaine}}</strong></p>
+                     <div class="line"></div>
                      <p class="grid-time">{{event.start}} &rsaquo; {{event.end}}</p>
                      <p class="grid-artistes"><strong v-for="artist in event.groupes" :key="artist.artiste">{{artist.artiste}}</strong></p>
                      <p class="grid-lieu">{{event.lieu}}</p>
