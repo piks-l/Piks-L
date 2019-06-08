@@ -3,6 +3,17 @@
   "dateevents": "09/06/2019",
   "intro": "TECHNO COOL",
   "lieu": "le-bikini",
+  "groupes": [
+    {
+      "artiste": "karenn"
+    },
+    {
+      "artiste": "14anger"
+    },
+    {
+      "artiste": "tba"
+    }
+  ],
   "background": "/images/background-3-electro-alternativ.jpg",
   "date": "07/06/2019",
   "datehumaine": "VENDREDI 6 SEPTEMBRE",
