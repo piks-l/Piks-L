@@ -549,12 +549,15 @@ nav{
         cursor: pointer;
     }
         #filters .button:hover {
-            color: rgb(6,53,170) !important;
+            color: rgb(0,0,0) !important;
         }
         #filters .button-semaine .button:hover {
             -webkit-transform: scale(1.2);
                     transform: scale(1.2);
         }
+        #filters .button-semaine .is-checked{
+            color: rgb(0,0,0) ;
+        } 
         #filters .button-type .is-checked:not(:nth-child(1)){
             background: rgba(0,0,0,1);
             color: rgb(255,255,255);
@@ -581,6 +584,7 @@ nav{
     }
     .button-semaine .button {
         line-height: 30px;
+        font-family: archivo-semibold;
     }
     .button-type .button:nth-child(1) {
         font-size: 14px;
