@@ -20,12 +20,6 @@
 .intro-leave-active::before {
     background-color: #0635aa;
 }
-.black.intro-enter-active::before,
-.black.intro-leave-active::before,
-.black.intro-enter-active::after,
-.black.intro-leave-active::after {
-    background-color: #000;
-}
 main:before{
     background-image: url(https://electro-alternativ.com/images/ea-15-logo-noms.png);
     background-size: 600px;
