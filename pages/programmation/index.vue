@@ -24,7 +24,7 @@
                    <nuxt-link :to="event._path+'/'" >
                      <p class="grid-date" :data-date="event.dateevents"><strong>{{event.datehumaine}}</strong></p>
                      <p class="grid-time">{{event.start}} &rsaquo; {{event.end}}</p>
-                     <p class="grid-artistes" v-for="artist in event.groupes" :key="artist.artiste">{{artist.artiste}}</p>
+                     <p class="grid-artistes"><strong v-for="artist in event.groupes" :key="artist.artiste">{{artist.artiste}}</strong></p>
                      <p class="grid-lieu">{{event.lieu}}</p>
                      <p class="grid-intro"><small>{{event.intro}}</small></p>
                   </nuxt-link>
