@@ -82,5 +82,6 @@ main:after{
 .black.intro-enter-active::after,
 .black.intro-leave-active::after {
     background-color: #000;
+    background-image: none;
 }
 
