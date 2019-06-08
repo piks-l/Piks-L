@@ -79,11 +79,13 @@ export default {
   },
   methods: {
      switchBackground() {
-      var duo =  $('.duoto').attr('data-duo');
-      $('.duoto').click(function(el) {
-          $('.anim-filter').addClass("duotone-"+duo);
-          console.log(duo)
-       });
+      $('.duoto').each( function( i, el ) {
+        var duo =  $(el).attr('data-duo');
+        $(el).click(function(el) {
+            $('.anim-filter').addClass("duotone-"+duo);
+            console.log(duo)
+         });
+      });
     },
     ea() {
             var grid = new Isotope(".grid", {
