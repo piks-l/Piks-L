@@ -1,6 +1,54 @@
 @media only screen and (min-width: 0px) and (max-width: 599px) {
+  
 }
 @media only screen and (min-width: 600px) and (max-width: 959px) {
+    /**** Page prog ****/
+    .ea-titre {
+        font-size: 3em;
+    }
+    .element-item {
+        width: calc(48% - 20px);
+        padding: 15px 10px;
+    }
+    .grid-artistes strong {
+        font-size: 1em;
+    }
+    .button-type .button {
+        font-size: 1.2em;
+    }
+    .stamp1 {
+        left: 50%;
+        width: 50%;
+    }
+    .stamp2 {
+        display:none;
+    }
+    .deco-video {
+        height: 100px;
+    }
+  
+  
+    /***** Menu *****/
+    .menu-link {
+        font-size: 2em;
+    }
+    .social a {
+        height: 30px;
+    }
+    .social i {
+        line-height: 30px;
+    }
+    .menu p {
+        font-size: 14px;
+    }
+    .ea-tv a {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    .ea-slider .slider {
+        width: 100px;
+        height: 75px;
+    }
 }
 @media only screen and (min-width: 960px) and (max-width: 1263px) {
    svg {
