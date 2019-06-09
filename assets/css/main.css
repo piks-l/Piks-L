@@ -522,6 +522,17 @@ nav{
             background: #fff;
         }
 
+.ea-titre {
+  line-height: 60px;
+  position: relative;
+  font-size: 4em;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 0px 0px 30px rgba(0,0,0,.5);
+  font-family: Archivo-Medium;
+  font-weight: 900;
+}
+
 /* Page programmation */
 #filters {
     position: fixed;
