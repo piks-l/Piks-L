@@ -3,19 +3,19 @@
       <div class="container">
           <ea-titre/>
           <div id="filters">
-          <div class="button-type button-group"  data-filter-group="type">
-              <div class="button duoto is-checked" data-duo="jour" data-filter="*">ALL</div>
-              <div class="button duoto" data-duo="jour" data-filter=".jour">Jour</div>
-              <div class="button duoto" data-duo="soiree" data-filter=".soiree">Soirée</div>
-              <div class="button duoto" data-duo="nuit" data-filter=".nuit">Nuit</div>
-          </div>
-          <div class="button-semaine button-group"  data-filter-group="semaine">
-              <div class="button active" data-filter=".semaine1"><span>Semaine</span> 1</div>
-              <div class="button active" data-filter=".semaine2"><span>Semaine</span> 2</div>
-              <div class="button active" data-filter=".semaine3"><span>Semaine</span> 3</div>
-              <div class="button active" data-filter=".semaine4"><span>Semaine</span> 4</div>
-              <div class="button any" data-filter=""></div>
-          </div>
+              <div class="button-type button-group"  data-filter-group="type">
+                  <div class="button duoto is-checked" data-duo="jour" data-filter="*">ALL</div>
+                  <div class="button duoto" data-duo="jour" data-filter=".jour">Jour</div>
+                  <div class="button duoto" data-duo="soiree" data-filter=".soiree">Soirée</div>
+                  <div class="button duoto" data-duo="nuit" data-filter=".nuit">Nuit</div>
+              </div>
+              <div class="button-semaine button-group"  data-filter-group="semaine">
+                  <div class="button active" data-filter=".semaine1"><span>Semaine</span> 1</div>
+                  <div class="button active" data-filter=".semaine2"><span>Semaine</span> 2</div>
+                  <div class="button active" data-filter=".semaine3"><span>Semaine</span> 3</div>
+                  <div class="button active" data-filter=".semaine4"><span>Semaine</span> 4</div>
+                  <div class="button any" data-filter=""></div>
+              </div>
           </div>
           <div class="grid">
               <div class="stamp stamp1"></div>
@@ -31,6 +31,11 @@
                   </nuxt-link>
               </div>
           </div>
+      </div>
+      <div class="mobile-menu">
+        <div class="select-stage">HORAIRES</div>
+        <div class="select-all"> x </div>
+        <div class="select-semaine">SEMAINES</div>
       </div>
   </main>
 </template>
@@ -71,11 +76,14 @@ export default {
   mounted() {
       this.ea();
       this.switchBackground();
+      
       $(".grid-lieu, .grid-artistes strong").each(function() {
           var text = $(this).text();
           text = text.replace(/-/g, " ");
           $(this).text(text);
       });
+      
+      
   },
   destroyed() {
     this.killBackground();
@@ -153,6 +161,20 @@ export default {
                   $( ".button-semaine" ).removeClass( "mobile-active" );
               });
             });
+            
+            $( ".select-stage" ).click(function() {
+                $( ".button-type" ).toggleClass( "mobile-active" );
+                $( ".button-semaine" ).removeClass( "mobile-active" );
+            });
+            $( ".select-semaine" ).click(function() {
+                $( ".button-semaine" ).toggleClass( "mobile-active" );
+                $( ".button-type" ).removeClass( "mobile-active" );
+            });
+            $( ".select-all" ).click(function() {
+                $( ".button-semaine, .button-type" ).removeClass( "mobile-active" );
+                $( ".button-type .button:first-child" ).click();
+            });
+            
             // flatten object by concatting values
             function concatValues( obj ) {
                 var value = '';
