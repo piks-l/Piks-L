@@ -1,4 +1,24 @@
 @media only screen and (min-width: 0px) and (max-width: 599px) {
+    /**** Page prog ****/
+    .deco-video {
+        display: none;
+    }
+    main {
+        margin: 0 10px;
+    }
+    .ea-titre {
+        font-size: 1.2em;
+        letter-spacing: 2px;
+        margin: 5vh 0;
+    }
+    .ea-logo {
+        width: auto;
+        height: 60px;
+    }
+    #logo-ea {
+        width: auto;
+        height: 100%;
+    }
   
 }
 @media only screen and (min-width: 600px) and (max-width: 959px) {
