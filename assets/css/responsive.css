@@ -19,12 +19,19 @@
         width: auto;
         height: 100%;
     }
+    .stamp {
+        display: none;
+    }
+    .element-item {
+        width: calc(100% - 30px);
+        margin: 0;
+    }
   
 }
 @media only screen and (min-width: 600px) and (max-width: 959px) {
     /**** Page prog ****/
     .ea-titre {
-        font-size: 3em;
+        font-size: 2em;
     }
     .element-item {
         width: calc(48% - 20px);
