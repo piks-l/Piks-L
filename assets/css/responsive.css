@@ -64,10 +64,10 @@
         margin: 0;
         display:none;
     }
-    .mobile-stage, 
-    .mobile-semaine,
-    .mobile-stage .button-type,
-    .mobile-semaine .button-semaine{
+    #filters.mobile-stage, 
+    #filters.mobile-semaine,
+    #filters.mobile-stage .button-type,
+    #filters.mobile-semaine .button-semaine{
         display: block; 
     }
   
