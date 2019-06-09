@@ -11,7 +11,7 @@
 import $ from 'jquery'
 import VueMarkdown from 'vue-markdown'
 import VueLazyload from 'vue-lazyload'
-import eaSidebarevenement from '~/components/eaSidebarevenement.vue'
+import eaSidebarevenement from '~/components/sidebar-evenement.vue'
 export default {
   layout: 'default',
   transition: { name: 'intro', mode: 'out-in' },
