@@ -163,11 +163,11 @@ export default {
             });
             
             $( ".select-stage" ).click(function() {
-                $( "#filters' ).toggleClass( "mobile-stage" );
+                $( "#filters" ).toggleClass( "mobile-stage" );
                 $( "#filters" ).removeClass( "mobile-semaine" );
             });
             $( ".select-semaine" ).click(function() {
-                $( "#filters' ).toggleClass( "mobile-semaine" );
+                $( "#filters" ).toggleClass( "mobile-semaine" );
                 $( "#filters" ).removeClass( "mobile-stage" );
             });
             $( ".select-all" ).click(function() {
