@@ -7,4 +7,16 @@
     height: 100%;
     width: auto;
   }
+  
+  /**** Page prog ****/
+  .ea-titre {
+      font-size: 3em;
+  }
+  .grid-artistes {
+      font-size: 1em;
+  }
+  .deco-video {
+      height: 150px;
+  }
+  
 }
