@@ -468,7 +468,7 @@ nav{
     } 
     .deco-video {
         height: 200px;
-        width: 200px;
+        width: 20%;
         border-radius: 50%;
         overflow: hidden;
         position: absolute;
