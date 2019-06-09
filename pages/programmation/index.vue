@@ -163,15 +163,16 @@ export default {
             });
             
             $( ".select-stage" ).click(function() {
-                $( ".button-type" ).toggleClass( "mobile-active" );
-                $( ".button-semaine" ).removeClass( "mobile-active" );
+                $( "#filters' ).toggleClass( "mobile-stage" );
+                $( "#filters" ).removeClass( "mobile-semaine" );
             });
             $( ".select-semaine" ).click(function() {
-                $( ".button-semaine" ).toggleClass( "mobile-active" );
-                $( ".button-type" ).removeClass( "mobile-active" );
+                $( "#filters' ).toggleClass( "mobile-semaine" );
+                $( "#filters" ).removeClass( "mobile-stage" );
             });
             $( ".select-all" ).click(function() {
-                $( ".button-semaine, .button-type" ).removeClass( "mobile-active" );
+                $( "#filters" ).removeClass( "mobile-semaine" );
+                $( "#filters" ).removeClass( "mobile-stage" );
                 $( ".button-type .button:first-child" ).click();
             });
             
