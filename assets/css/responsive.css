@@ -33,8 +33,7 @@
         display: none;
     }
     .element-item {
-        width: calc(100% - 30px);
-        margin: 0;
+        width: calc(98% - 30px);
     }
   
 }
