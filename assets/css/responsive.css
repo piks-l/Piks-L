@@ -1,4 +1,10 @@
 @media only screen and (min-width: 0px) and (max-width: 599px) {
+    /**** Menu ****/
+    .open-menu {
+        top: 25px;
+        left: 50%;
+    }
+  
     /**** Page prog ****/
     .deco-video {
         display: none;
@@ -7,9 +13,9 @@
         margin: 0 10px;
     }
     .ea-titre {
-        font-size: 1.2em;
+        font-size: 1.5em;
         letter-spacing: 2px;
-        margin: 5vh 0;
+        margin: 50px 0 15px;
     }
     .ea-logo{
         display:none;   
