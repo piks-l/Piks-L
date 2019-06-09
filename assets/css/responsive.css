@@ -11,11 +11,15 @@
         letter-spacing: 2px;
         margin: 5vh 0;
     }
-    .ea-logo {
+    .ea-logo{
+        display:none;   
+    }
+    .menu .ea-logo {
         width: auto;
         height: 60px;
+        display:block;
     }
-    #logo-ea {
+    .menu #logo-ea {
         width: auto;
         height: 100%;
     }
