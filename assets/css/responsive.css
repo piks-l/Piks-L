@@ -52,6 +52,7 @@
         left: 10px;
         height: 50px;
         z-index:10;
+        cursor:pointer;
     }
     .select-stage, .select-semaine {
         line-height: 50px;
