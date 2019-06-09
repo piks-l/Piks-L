@@ -3,17 +3,19 @@
      <h2>{{ title }}</h2>
      <p>{{ semaine }}</p>
      <p>{{ type }}</p>
-     <p>{{ start }} > {{ end }}</p>    
+     <p>{{ start }} > {{ end }}</p>
+     <eaSidebarevenement />
   </main>
 </template>
 <script>
 import $ from 'jquery'
 import VueMarkdown from 'vue-markdown'
 import VueLazyload from 'vue-lazyload'
+import eaSidebarevenement from '~/components/eaSidebarevenement.vue'
 export default {
   layout: 'default',
   transition: { name: 'intro', mode: 'out-in' },
-  components: { VueMarkdown, VueLazyload },
+  components: { VueMarkdown, VueLazyload, eaSidebarevenement },
   async asyncData({ params }) {
     let page = await import('~/content/programmation/page/' + params.slug + '.json');
     return page;
