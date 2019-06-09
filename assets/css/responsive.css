@@ -1,5 +1,14 @@
 @media only screen and (min-width: 0px) and (max-width: 599px) {
     /**** Menu ****/
+    .ea-menu {
+        position: fixed;
+        top: 0;
+        left: 10px;
+        width: calc(100% - 20px);
+        height: 50px;
+        background: #000;
+        z-index: 100;
+    }
     .open-menu {
         top: 25px;
         left: 50%;
@@ -15,7 +24,7 @@
     .ea-titre {
         font-size: 1.5em;
         letter-spacing: 2px;
-        margin: 50px 0 15px;
+        margin: 65px 0 15px;
     }
     .ea-logo{
         display:none;   
