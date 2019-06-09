@@ -4,7 +4,7 @@
      <p>{{ semaine }}</p>
      <p>{{ type }}</p>
      <p>{{ start }} > {{ end }}</p>
-     <eaSidebarevenement />
+     <ea-Sidebarevenement/>
   </main>
 </template>
 <script>
