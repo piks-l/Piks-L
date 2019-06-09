@@ -19,7 +19,7 @@
         display: none;
     }
     main {
-        margin: 0 10px;
+        margin: 0 10px 65px;
     }
     .ea-titre {
         font-size: 1.5em;
@@ -43,6 +43,40 @@
     }
     .element-item {
         width: calc(98% - 30px);
+    }
+  
+    .mobile-menu {
+        position: fixed;
+        bottom: 0;
+        width: calc(100% - 20px);
+        left: 10px;
+        height: 50px;
+        z-index:10;
+    }
+    .select-stage, .select-semaine {
+        line-height: 50px;
+        width: calc(50% - 25px);
+        background: #fff;
+        display: block;
+        font-family: Archivo-Bold;
+    }
+    .select-stage {
+        float: left;
+    }
+    .select-semaine {
+        float: right;
+    }
+    .select-all {
+        line-height: 50px;
+        width: 50px;
+        text-align: center;
+        color: #fff;
+        background: var(--blue-color);
+        position: relative;
+        display: inline-block;
+        text-transform: uppercase;
+        font-family: Archivo-Bold;
+        font-size: 1.5em;
     }
   
 }
