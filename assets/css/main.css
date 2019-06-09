@@ -654,8 +654,8 @@ nav{
     width: 90%;
     background: #fff;
     left: 5%;
-    position: absolute;
-    top: 38px;
+    position: relative;
+    top: 19px;
 }
 .grid-artistes {
     text-transform: uppercase;
