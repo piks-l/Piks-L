@@ -44,6 +44,24 @@
     .element-item {
         width: calc(98% - 30px);
     }
+    #filters {
+        top: 50px;
+        width: calc(100% - 50px);
+        left: 10px;
+        max-width: none;
+        transform: none;
+        height: calc(100vh - 100px);
+        background: #000;
+        z-index: 10;
+    }
+    .button-group {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0;
+        margin: 0;
+    }
   
     .mobile-menu {
         position: fixed;
@@ -72,7 +90,7 @@
         width: 50px;
         text-align: center;
         color: #fff;
-        background: var(--blue-color);
+        background: #0635aa;
         position: relative;
         display: inline-block;
         text-transform: uppercase;
