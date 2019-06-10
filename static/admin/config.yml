@@ -73,7 +73,7 @@ collections:
         name: "intro"
         required: true
         widget: "string"
-        pattern: [".{10,}", "10 caractères maximum !"]
+        pattern: [".{5,}", "5 caractères minimum !"]
       - {label: "Description", name: "description", widget: "markdown", required: false}
       - {label: "Date de publication", name: "date", widget: "date", format: "DD/MM/YYYY", required: true}
       - {label: "Date Robot", name: "dateevents", widget: "date", format: "MM/DD/YYYY", required: false}
