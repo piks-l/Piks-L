@@ -799,3 +799,10 @@ nav{
     font-size: 16px;
     font-weight: 300;
 }
+.description {
+    background: blue;
+    padding:50px;
+    color: #fff;
+    text-align: left;
+    letter-spacing: 1px;
+}
