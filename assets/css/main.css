@@ -723,7 +723,7 @@ nav{
     position: fixed;
     right: 10%;
     top: 50%;
-    max-width: 20%;
+    max-width: calc(20% - 30px);
     -webkit-transform: translateY(-50%);
     transform: translate(50%, -50%);
 }
