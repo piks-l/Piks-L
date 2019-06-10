@@ -6,7 +6,7 @@
       <div v-for="artist in groupes" :key="artist.artiste">
         <h3>{{artist.artiste}}</h3>
       </div>
-      <img v-for="(i, img) in gallerie" :key="img.i" :src="img"/>
+      <img v-for="(i, img) in galerie" :key="img.i" :src="img"/>
       <vue-markdown>{{description}}</vue-markdown>
     </article>
     
