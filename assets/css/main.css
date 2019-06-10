@@ -727,3 +727,28 @@ nav{
     -webkit-transform: translateY(-50%);
     transform: translate(50%, -50%);
 }
+.reserver {
+    position: relative;
+    display: flex;
+    margin: 15px 0;
+}
+.reserver i {
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    font-size: 36px;
+    position: relative;
+    display: inline-block;
+}
+.reserver a {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    line-height: 50px;
+    width: calc(100% - 50px);
+    background: var(--blue-color);
+}
+.ea-sidebar-evenement hr {
+    border: 2px solid #000;
+}
