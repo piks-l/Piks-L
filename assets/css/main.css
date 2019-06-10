@@ -689,3 +689,12 @@ nav{
     color: #fff;
     margin: 0 15px;
 }
+
+
+.ea-sidebar-evenement {
+    color: #fff;
+    position: fixed;
+    right: 0;
+    bottom: 5vh;
+    width: 20%;
+}
