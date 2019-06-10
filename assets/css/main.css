@@ -636,6 +636,7 @@ nav{
     color: #fff;
     padding:15px;
     margin: 1%;
+    transition:.5s;
 }
 .element-item a{
     color:#fff; 
@@ -654,8 +655,12 @@ nav{
     position: relative;
     padding: 0 10px;
     background: #000;
+    transition:.5s;
 }
-.element-item:hover .grid-time {background-color: #0635aa}
+.element-item:hover .grid-time {
+    background-color: #0635aa; 
+    transition:.5s;}
+
 .line {
     height: 2px;
     width: 90%;
