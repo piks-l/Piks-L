@@ -398,6 +398,7 @@ nav{
         -webkit-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
     }
+    .nav li {margin-bottom:5px;}
     .menu-link {
         font-size: 3em;
         font-weight: 900;
@@ -407,6 +408,10 @@ nav{
     }
     .menu a{
         color: #fff;
+        text-decoration: none;
+    }
+      .menu a:hover{
+        color: #CCC;
         text-decoration: none;
     }
     .menu .social {
@@ -467,8 +472,8 @@ nav{
                 transform: translatex(-50%);
     } 
     .deco-video {
-        height: 200px;
-        width: 20%;
+        height: 150px;
+        width: 16%;
         border-radius: 50%;
         overflow: hidden;
         position: absolute;
