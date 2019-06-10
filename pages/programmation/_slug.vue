@@ -22,7 +22,7 @@ export default {
     return {
       page,
       amount: 0
-    };;
+    };
   },
   head() {
     return {
