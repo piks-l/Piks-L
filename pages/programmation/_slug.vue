@@ -1,6 +1,6 @@
 <template>
   <main class="ea-layout-evenement" :data-back="background" :data-duo="type">
-    <h2>ELECTRO ALTERNATIV #15 W/ <nuxt-link :to="'/artistes/'+artist.artiste" v-for="artist in groupes" :key="artist.artiste">{{artist.artiste}}</nuxt-link></h2>
+    <h2 class="ea-titre">ELECTRO ALTERNATIV #15 W/ <nuxt-link :to="'/artistes/'+artist.artiste" v-for="artist in groupes" :key="artist.artiste">{{artist.artiste}}</nuxt-link></h2>
     <article class="ea-article-evenement">
       <img v-for="(img, i) in galerie" :key="img.i" :src="img"/>
       <vue-markdown>{{description}}</vue-markdown>
