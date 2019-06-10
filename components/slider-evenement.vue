@@ -12,8 +12,8 @@
         </svg>    
       </span>
     </div>
-   <div v-for="(img, i) in galerie" :key="img" class="carousel-item carousel-item--1">
-      <div class="carousel-item__image" :style="{ backgroundImage: `url(${img})` }"></div>
+   <div v-for="(img, i) in galerie" :key="img" class="slider-item slider-item--1">
+      <div class="slider-item__image" :style="{ backgroundImage: `url(${img})` }"></div>
     </div>
   </div>
 </template>
