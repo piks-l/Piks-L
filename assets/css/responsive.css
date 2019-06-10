@@ -28,6 +28,14 @@
         font-size: 12px;
         padding: 0 15%;
     }
+    .menu-info {
+        height: calc(100% - 120px);
+    }
+    .navigation {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
     .nav {
         top: 0;
         position: relative;
@@ -42,6 +50,31 @@
     }
     .ea-slider {
         display: none;
+    }
+    .deco-left, .deco-right, .deco-bot {
+        display: none;
+    }
+    .menu .social {
+        position: absolute;
+        display: inline-flex;
+        top: auto;
+        right: auto;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .social a {
+        display: inline-block;
+    }
+    .ea-tv {
+        position: absolute;
+        bottom: 15px;
+        padding: 0;
+        left: 50%;
+        transform: translatex(-50%);
+    }
+    .ea-tv a {
+        line-height: 35px;
     }
   
     /**** Page prog ****/
