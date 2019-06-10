@@ -246,7 +246,8 @@
        font-size: 1.1em;
   }
   .deco-video {
-    width:15%;
+      width:15%;
+      top:3vh;
       height: 100px;
   }
   
