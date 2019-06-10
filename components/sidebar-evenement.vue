@@ -18,8 +18,7 @@ export default {
     'start',
     'end',
     'lieu'
-  ]
-},
+  ],
   mounted() {
      $(".link-map").each(function() {
       var text = $(this).text();
@@ -27,4 +26,5 @@ export default {
       $(this).text(text);
     });
   }
+}
 </script>
