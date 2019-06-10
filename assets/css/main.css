@@ -687,10 +687,18 @@ nav{
 .title-artiste {
     text-decoration: none;
     color: #fff;
-    margin: 0 15px;
+    margin-right: 1em;
+    border-bottom: 3px solid var(--blue-color);
+    transition: all .3s ease;
 }
-.ea-titre a:after{
-    content:' + ';
+.title-artiste {
+    color: 3px solid var(--blue-color);
+    border-bottom: #fff;
+}
+.ea-titre a::after {
+    content: " + ";
+    position: absolute;
+    margin-left: .2em;
 }
 .ea-titre a:last-child::after {
     content: '';
