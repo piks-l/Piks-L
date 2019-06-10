@@ -765,7 +765,7 @@ nav{
     transition: all .3s ease;
 }
 .reserver:hover i,
-.link-map i{
+.link-map:hover i{
   color:  var(--blue-color);
 }
 .reserver:hover a {
