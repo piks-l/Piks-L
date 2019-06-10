@@ -84,10 +84,10 @@
       transition: 0.6s all linear;
   }
   .slider-evenement .slider-item {
-      left: 10%;
+      left: 0%;
   }
   .slider-item__image {
-      width: 60%;
+      width: 100%;
       height: 100%;      
       align-self: flex-end;
       flex-basis: 60%;
@@ -167,7 +167,7 @@
       display: flex;
       visibility:visible;
   }
-  .active .carousel-item__image{ 
+  .active .slider-item__image{ 
       transition: 0.6s all ease-in-out;
       transform: translateX(0);
 }
