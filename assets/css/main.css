@@ -658,12 +658,12 @@ nav{
     display: block;
 }
 .grid-date {
-    margin: 5px 0;
+    margin: 0 0;
     font-size:85%;
     font-family:OPTIVenus-BoldExtended;
 }
 .grid-time {
-    margin: 10px auto;
+    margin: 0 auto;
     font-size: 12px;
     display: inline-block;
     position: relative;
@@ -680,7 +680,7 @@ nav{
     background: #fff;
     left: 5%;
     position: relative;
-    top: 20px;
+    top: 15px;
 }
 .grid-artistes {
     font-family: OPTIVenus-BoldExtended;
@@ -701,7 +701,7 @@ nav{
     text-transform: uppercase;
     font-size: 14px;
     font-family: OPTITomasoBold-Extended;
-    margin: 5px 0;
+    margin: 2px 0 5px 0;
 }
 .grid-intro {
     font-family: archivo-italic;
