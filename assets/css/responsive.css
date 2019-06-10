@@ -233,6 +233,8 @@
     height: 100%;
     width: auto;
   }
+  
+  .ea-logo {top:3vh}
     /**** Menu ****/
 .menu-link {font-size:2.2em;}
   /**** Page prog ****/
@@ -250,6 +252,9 @@
       top:3vh;
       height: 100px;
   }
+  
+   .button-type .button {font-size:1.25em;}
+   .button-type .button:nth-child(1) {font-size:12px;}
   
 }
 
