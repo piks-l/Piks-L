@@ -2,15 +2,17 @@
   <main class="ea-layout-evenement" :data-back="background" :data-duo="type">
   
     <article class="ea-article-evenement">
-      <h2>{{ titre }}</h2>
-      <div v-for="artist in groupes" :key="artist.artiste"><h4>{{artist.artiste}}</h4></div>
+      <h2>ELECTRO ALTERNATIV #15 W/ <nuxt-link :to="'/artistes/'+artist.artiste" v-for="artist in groupes" :key="artist.artiste">{{artist.artiste}}</nuxt-link></h2>
+      <div v-for="artist in groupes" :key="artist.artiste">
+        <h3>{{artist.artiste}}</h3>
+      </div>
       <vue-markdown>{{description}}</vue-markdown>
     </article>
     
     <aside class="ea-sidebar-evenement">
       <p>{{ datehumaine }}</p>
       <p>{{ start }} > {{ end }}</p>
-      <a class="link-lieux" :href="'/lieux/'+lieu" ><i class="fas fa-map-marked-alt"></i> {{ lieu }}</a>
+      <nuxt-link class="link-lieux" :href="'/lieux/'+lieu"><i class="fas fa-map-marked-alt"></i> {{ lieu }}</nuxt-link>
     </aside>
 
      <ea-Sidebarevenement :titre="titre"/>
