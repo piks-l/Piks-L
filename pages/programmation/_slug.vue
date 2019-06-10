@@ -33,12 +33,11 @@ export default {
       ]
     }
   },
+  updated() {
+    this.switchBackground();
+  },
   mounted() {
-     $(".title-artiste").each(function() {
-      var text = $(this).text();
-      text = text.replace(/-/g, " ");
-      $(this).text(text);
-    });
+
     this.switchBackground();
   },
   destroyed() {
@@ -53,6 +52,11 @@ export default {
             $('.anim-filter').addClass("duotone-"+duo);
             $('.main-background').fadeIn(100);
           });
+      });
+      $(".title-artiste").each(function() {
+        var text = $(this).text();
+        text = text.replace(/-/g, " ");
+        $(this).text(text);
       });
     },
     killBackground() {
