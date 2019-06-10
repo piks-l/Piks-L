@@ -689,7 +689,12 @@ nav{
     color: #fff;
     margin: 0 15px;
 }
-
+.ea-titre a:after{
+    content:' + ';
+}
+.ea-titre a:last-child::after {
+    content: '';
+}
 
 .ea-sidebar-evenement {
     color: #fff;
