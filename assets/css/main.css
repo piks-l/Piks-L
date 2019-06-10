@@ -681,3 +681,11 @@ nav{
     text-transform: lowercase;
     margin: 0 0 5px;
 }
+
+
+/* Page event */
+.title-artiste {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+}
