@@ -5,14 +5,7 @@
       <img v-for="(img, i) in galerie" :key="img.i" :src="img"/>
       <vue-markdown>{{description}}</vue-markdown>
     </article>
-    
-    <aside class="ea-sidebar-evenement">
-      <p>{{ datehumaine }}</p>
-      <p>{{ start }} > {{ end }}</p>
-      <nuxt-link class="link-lieux" :to="'/lieux/'+lieu"><i class="fas fa-map-marked-alt"></i> {{ lieu }}</nuxt-link>
-    </aside>
-
-     <ea-Sidebarevenement :titre="titre"/>
+    <ea-Sidebarevenement :datehumaine="datehumaine" :start="start" :end="end" :lieu="lieu"/>
   </main>
 </template>
 <script>
