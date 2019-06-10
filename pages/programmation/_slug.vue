@@ -32,13 +32,15 @@ export default {
       ]
     }
   },
+  created() {
+   $(".title-artiste").each(function() {
+      var text = $(this).text();
+      text = text.replace(/-/g, " ");
+      $(this).text(text);
+    });
+  },
   mounted() {
     this.switchBackground();
-    $(".title-artiste").each(function() {
-        var text = $(this).text();
-        text = text.replace(/-/g, " ");
-        $(this).text(text);
-    });
   },
   destroyed() {
     this.killBackground();
