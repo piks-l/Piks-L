@@ -85,6 +85,7 @@
   }
   .slider-evenement .slider-item {
       left: 0%;
+      background: black;
   }
   .slider-item__image {
       width: 100%;
@@ -118,8 +119,8 @@
       z-index: 2;
       background-color: #0635aa;
       bottom: 0px;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, 0%);
+      transform: translate(-50%, 0%);
   }
   .slider-evenement .slider__nav {
       left:5%;  
