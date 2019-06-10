@@ -5,6 +5,9 @@
       <img v-for="(img, i) in galerie" :key="img.i" :src="img"/>
       <vue-markdown>{{description}}</vue-markdown>
     </article>
+        <p>{{ amount }}</p>
+    <a class="btn" href="#" v-on:click="increaseAmount()">Plus (+)</a>
+    <a class="btn" href="#" v-on:click="decreaseAmount()">Minus (-)</a>
     <ea-Sidebarevenement :datehumaine="datehumaine" :start="start" :end="end" :lieu="lieu"/>
   </main>
 </template>
@@ -64,6 +67,12 @@ export default {
             });
         });
       }, 900);
+    },
+    increaseAmount () {
+      this.amount = this.amount + 1
+    },
+    decreaseAmount () {
+      this.amount = this.amount - 1
     }
     
   }
