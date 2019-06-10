@@ -5,7 +5,7 @@
           <p class="date-time">{{ start }} > {{ end }}</p>
           <div class="reserver"><i class="fas fa-calendar"></i> <a href="#" alt="">PARTICIPER</a></div>
           <hr/>
-          <nuxt-link class="link-map" :to="'/lieux/'+lieu"><i class="fas fa-map-marked-alt"></i> {{ lieu }}</nuxt-link>
+          <nuxt-link class="link-map" :to="'/lieux/'+lieu"><i class="fas fa-map-marked-alt"></i> <p>{{ lieu }}</p></nuxt-link>
           <hr/>        
       </aside>
       <nuxt-link class="retour" to="/programmation/"><b>PROGRAMMATION</b>RETOUR</nuxt-link>
@@ -20,7 +20,7 @@ export default {
     'lieu'
   ],
   mounted() {
-     $(".link-map").each(function() {
+     $(".link-map p").each(function() {
       var text = $(this).text();
       text = text.replace(/-/g, " ");
       $(this).text(text);
