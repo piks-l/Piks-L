@@ -21,7 +21,7 @@ export default {
     let page = await import('~/content/programmation/page/' + params.slug + '.json');
     return {
       page,
-      amount: page.title
+      amount: 0
     };;
   },
   head() {
