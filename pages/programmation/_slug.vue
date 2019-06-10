@@ -2,7 +2,7 @@
   <main class="ea-layout-evenement" :data-back="background" :data-duo="type">
     <h2 class="ea-titre">ELECTRO ALTERNATIV #15 W/ <nuxt-link class="title-artiste" :to="'/artistes/'+artist.artiste" v-for="artist in groupes" :key="artist.artiste">{{artist.artiste}}</nuxt-link></h2>
     <article class="ea-article-evenement">
-      <img :class="img.i" v-for="(img, i) in galerie" :key="img" :src="img"/>
+      <ea-Sliderevenement :galerie="galerie"/>
       <vue-markdown>{{description}}</vue-markdown>
     </article>
     <ea-Sidebarevenement :datehumaine="datehumaine" :start="start" :end="end" :lieu="lieu"/>
@@ -13,10 +13,11 @@ import $ from 'jquery'
 import VueMarkdown from 'vue-markdown'
 import VueLazyload from 'vue-lazyload'
 import eaSidebarevenement from '~/components/sidebar-evenement.vue'
+import eaSliderevenement from '~/components/slider-evenement.vue'
 export default {
   layout: 'default',
   transition: { name: 'intro', mode: 'out-in' },
-  components: { VueMarkdown, VueLazyload, eaSidebarevenement },
+  components: { VueMarkdown, VueLazyload, eaSidebarevenement, eaSliderevenement },
   async asyncData({ params }) {
     let page = await import('~/content/programmation/page/' + params.slug + '.json');
     return page;
