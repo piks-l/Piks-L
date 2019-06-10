@@ -718,3 +718,12 @@ nav{
     text-decoration: none;
     font-size: 26px;
 }
+.ea-sidebar-evenement {
+    color: #fff;
+    position: fixed;
+    right: 10%;
+    top: 50%;
+    max-width: 20%;
+    -webkit-transform: translateY(-50%);
+    transform: translate(50%, -50%);
+}
