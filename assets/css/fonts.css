@@ -1,4 +1,15 @@
-
+@font-face {
+    font-family: 'OPTIVenus-BoldExtended';
+    src:url('~assets/fonts/OPTIVenus-BoldExtended.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OPTITomasoBold-Extended';
+    src:url('~assets/fonts/OPTITomasoBold-Extended.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
 @font-face {
     font-family: 'Archivo-Medium';
     src:url('~assets/fonts/Archivo-Medium.ttf') format('truetype'); 
