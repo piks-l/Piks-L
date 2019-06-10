@@ -10,6 +10,7 @@
 </template>
 <script>
 import $ from 'jquery'
+if (process.browser) { $ = require("jquery"); }
 import VueMarkdown from 'vue-markdown'
 import VueLazyload from 'vue-lazyload'
 import eaSidebarevenement from '~/components/sidebar-evenement.vue'
