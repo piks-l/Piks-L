@@ -765,6 +765,7 @@ nav{
 .link-map i {
     text-align: center;
     line-height: 50px;
+    font-size: 36px;
     width: 50px;
     position: absolute;
     display: revert;
