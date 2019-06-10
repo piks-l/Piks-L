@@ -20,8 +20,7 @@ export default {
   async asyncData({ params }) {
     let page = await import('~/content/programmation/page/' + params.slug + '.json');
     return {
-      page,
-      amount: 0
+      page
     };
   },
   head() {
