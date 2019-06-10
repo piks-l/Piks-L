@@ -752,6 +752,7 @@ nav{
     font-size: 36px;
     position: relative;
     display: inline-block;
+    transition: all .3s ease;
 }
 .reserver a {
     position: relative;
@@ -761,6 +762,14 @@ nav{
     line-height: 50px;
     width: calc(100% - 50px);
     background: var(--blue-color);
+    transition: all .3s ease;
+}
+.reserver:hover i {
+  color: blue;
+}
+reserver:hover a {
+  background: #000;
+  color: #fff;
 }
 .ea-sidebar-evenement hr {
     border: 2px solid #000;
