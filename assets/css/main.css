@@ -695,6 +695,7 @@ nav{
     color: #fff;
     position: fixed;
     right: 0;
-    bottom: 5vh;
+    top:50%;
     width: 20%;
+    transform: translateY(-50%);
 }
