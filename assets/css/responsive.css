@@ -14,22 +14,27 @@
         left: 50%;
     }
     .close {
-        top: 10vh;
+        top: 5vh;
         left: auto;
-        right: -15px;
+        right: 10px;
         width: 15%;
+        position: fixed;
+        height: 60px;
+        transform: none;
     }
     .menu.open {
         height: 86vh;
         width: calc(100% - 30px);
         padding: 7.5vh 15px;
+        overflow-y: scroll;
     }
     .menu p {
         font-size: 12px;
         padding: 0 15%;
     }
     .menu-info {
-        height: calc(100% - 120px);
+        height: calc(100% - 125px);
+        min-height: 245px;
     }
     .navigation {
         position: relative;
@@ -55,11 +60,10 @@
         display: none;
     }
     .menu .social {
-        position: absolute;
-        display: inline-flex;
+        position: relative;
+        display: block;
         top: auto;
         right: auto;
-        bottom: 50px;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -67,11 +71,12 @@
         display: inline-block;
     }
     .ea-tv {
-        position: absolute;
-        bottom: 15px;
+        position: relative;
         padding: 0;
         left: 50%;
         transform: translatex(-50%);
+        bottom: auto;
+        margin-bottom: 15px;
     }
     .ea-tv a {
         line-height: 35px;
