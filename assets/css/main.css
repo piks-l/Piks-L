@@ -645,7 +645,7 @@ nav{
 }
 .grid-date {
     margin: 5px 0;
-    font-size:80%;
+    font-size:70%;
 }
 .grid-time {
     margin: 10px auto;
@@ -664,6 +664,7 @@ nav{
     top: 20px;
 }
 .grid-artistes {
+    font-family: OPTIVenus-BoldExtended;
     text-transform: uppercase;
     font-size: 1.3em;
 }
@@ -671,6 +672,7 @@ nav{
     font-size: 1.2em;
 }
 .grid-artistes strong:after{
+    font-family: OPTITomasoBold-Extended;
     content:' + ';
 }
 .grid-artistes strong:last-child::after {
