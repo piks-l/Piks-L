@@ -5,7 +5,7 @@
           <p class="date-time">{{ start }} > {{ end }}</p>
           <div class="reserver"><i class="fas fa-calendar"></i> <a href="#" alt="">PARTICIPER</a></div>
           <hr/>
-          <nuxt-link class="link-map" :to="'/lieux/'+lieu"><i class="fas fa-map-marked-alt"></i> <p>{{ lieu }}</p></nuxt-link>
+          <div class="link-map"><i class="fas fa-calendar"></i><nuxt-link :to="'/lieux/'+lieu">{ lieu }}</nuxt-link></div>
           <hr/>        
       </aside>
       <nuxt-link class="retour" to="/programmation/"><b>PROGRAMMATION</b>RETOUR</nuxt-link>
