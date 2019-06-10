@@ -611,6 +611,9 @@ nav{
     .button-type .button:last-child {
         margin-bottom: 3px;
     }
+    .mobile-menu {
+        display: none;
+    }
   
 .stamp {
   position: absolute;
