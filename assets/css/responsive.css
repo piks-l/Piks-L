@@ -236,11 +236,11 @@
   
   .ea-logo {top:3vh}
     /**** Menu ****/
-  .menu p {font-size: 18px;}
-  .menu-link {font-size:2.2em;}
+  .menu p {font-size: 14px; letter-spacing:1px}
+  .menu-link {font-size:2em;}
   /**** Page prog ****/
   .ea-titre {
-      font-size: 2.8em;
+      font-size: 2.3em;
   }
   .grid-artistes {
       font-size: 1em;
