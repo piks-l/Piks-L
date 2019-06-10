@@ -20,7 +20,7 @@ export default {
     'lieu'
   ],
   mounted() {
-     $(".link-map p").each(function() {
+     $(".link-map a").each(function() {
       var text = $(this).text();
       text = text.replace(/-/g, " ");
       $(this).text(text);
