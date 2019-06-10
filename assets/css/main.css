@@ -526,7 +526,7 @@ nav{
 .ea-titre {
   line-height: 60px;
   position: relative;
-  font-size: 4em;
+  font-size: 3.2em;
   text-transform: uppercase;
   color: white;
   text-shadow: 0px 0px 30px rgba(0,0,0,.5);
@@ -565,10 +565,14 @@ nav{
         padding: 0px 10px;
         cursor: pointer;
     }
-        #filters .button:hover {
+        #filters .button-type .button:hover {
             color: rgb(0,0,0) !important;
         }
+        #filters .button-type .is-checked .button:hover {
+            color: rgb(255,255,255) !important;
+        }
         #filters .button-semaine .button:hover {
+          color: rgb(0,0,0) !important;
             -webkit-transform: scale(1.2);
                     transform: scale(1.2);
         }
