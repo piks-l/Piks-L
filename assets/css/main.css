@@ -692,8 +692,8 @@ nav{
     transition: all .3s ease;
 }
 .title-artiste {
-    color: 3px solid var(--blue-color);
-    border-bottom: #fff;
+    color:  var(--blue-color);
+    border-bottom:3px solid #fff;
 }
 .ea-titre a::after {
     content: " + ";
