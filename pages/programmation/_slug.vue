@@ -19,9 +19,7 @@ export default {
   components: { VueMarkdown, VueLazyload, eaSidebarevenement },
   async asyncData({ params }) {
     let page = await import('~/content/programmation/page/' + params.slug + '.json');
-    return {
-      page
-    };
+    return page;
   },
   head() {
     return {
