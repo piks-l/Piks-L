@@ -11,7 +11,7 @@ body {
   height: 100%;
   width: 100%;
   margin:0;
-  font-family: Archivo-Medium;
+  font-family: OPTITomasoBold-Extended;
   overflow-x: hidden;
 }
 a:active,
@@ -385,7 +385,7 @@ nav{
     .menu p {
         font-size: 24px;
         margin: 0;
-        font-family: 'archivo-medium';
+        font-family: 'OPTIVenus-BoldExtented';
         letter-spacing: 2px;
     }
     .nav {
@@ -402,7 +402,7 @@ nav{
         font-size: 3em;
         font-weight: 900;
         letter-spacing: 3px;
-        font-family: Archivo-Medium;
+        font-family: OPTIVenus-BoldExtented;
         line-height: 1em;
     }
     .menu a{
@@ -530,7 +530,7 @@ nav{
   text-transform: uppercase;
   color: white;
   text-shadow: 0px 0px 30px rgba(0,0,0,.5);
-  font-family: Archivo-Medium;
+  font-family: OPTIVenus-BoldExtented;
   font-weight: 900;
 }
 
@@ -601,7 +601,7 @@ nav{
     }
     .button-semaine .button {
         line-height: 30px;
-        font-family: archivo-semibold;
+        font-family: OPTITomasoBold-Extended;
     }
     .button-type .button:nth-child(1) {
         font-size: 14px;
@@ -625,6 +625,11 @@ nav{
   left: 66.666%;
   height: 100px;
 }
+.element-item:hover {
+    background: #0635aa;
+    transition:.5s;
+}
+
 .element-item {
     width: calc(31.333% - 30px);
     background: #000;
@@ -640,10 +645,11 @@ nav{
 }
 .grid-date {
     margin: 5px 0;
+    font-size:80%;
 }
 .grid-time {
     margin: 10px auto;
-    font-size: 14px;
+    font-size: 12px;
     display: inline-block;
     position: relative;
     padding: 0 10px;
@@ -655,14 +661,14 @@ nav{
     background: #fff;
     left: 5%;
     position: relative;
-    top: 19px;
+    top: 20px;
 }
 .grid-artistes {
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 .grid-artistes strong {
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 .grid-artistes strong:after{
     content:' + ';
@@ -680,6 +686,7 @@ nav{
     font-family: archivo-italic;
     text-transform: lowercase;
     margin: 0 0 5px;
+    font-size:10px;
 }
 
 
@@ -722,7 +729,7 @@ nav{
     font-size: 26px;
     font-weight: 600;
     margin: 0;
-    font-family: archivo-bold;
+    font-family: OPTIVenus-BoldExtended;
 }
 .link-map {
     display: block;
@@ -817,7 +824,7 @@ nav{
     display: block;
     text-decoration: none;
     font-size: 38px;
-    font-family: archivo-bold;
+    font-family: OPTIVenus-BoldExtended;
     font-weight: 600;
 }
 .retour b {
