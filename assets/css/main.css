@@ -696,6 +696,25 @@ nav{
     position: fixed;
     right: 0;
     top:50%;
-    width: 20%;
+    max-width: 20%;
     transform: translateY(-50%);
+}
+.date-event {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+.date-time {
+    color: #000;
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0;
+    font-family: archivo-bold;
+}
+.link-map {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 26px;
 }
