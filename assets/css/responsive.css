@@ -234,13 +234,16 @@
     width: auto;
   }
     /**** Menu ****/
-.menu-link {font-size:2.6em;}
+.menu-link {font-size:2.2em;}
   /**** Page prog ****/
   .ea-titre {
       font-size: 2.8em;
   }
   .grid-artistes {
       font-size: 1em;
+  }
+  .grid-artistes strong {
+       font-size: 1.1em;
   }
   .deco-video {
     width:15%;
