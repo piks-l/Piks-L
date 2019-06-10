@@ -3,7 +3,7 @@
     <h2 class="ea-titre">ELECTRO ALTERNATIV #15 W/ <nuxt-link class="title-artiste" :to="'/artistes/'+artist.artiste" v-for="artist in groupes" :key="artist.artiste">{{artist.artiste}}</nuxt-link></h2>
     <article class="ea-article-evenement">
       <ea-Sliderevenement :galerie="galerie"/>
-      <vue-markdown>{{description}}</vue-markdown>
+      <vue-markdown class="description">{{description}}</vue-markdown>
     </article>
     <ea-Sidebarevenement :datehumaine="datehumaine" :start="start" :end="end" :lieu="lieu"/>
   </main>
