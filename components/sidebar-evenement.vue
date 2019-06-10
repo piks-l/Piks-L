@@ -19,7 +19,7 @@ export default {
     'end',
     'lieu'
   ],
-  created() {
+  mounted() {
      $(".link-map").each(function() {
       var text = $(this).text();
       text = text.replace(/-/g, " ");
