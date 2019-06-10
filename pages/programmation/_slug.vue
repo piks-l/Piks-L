@@ -34,13 +34,14 @@ export default {
     }
   },
   created() {
-   $(".title-artiste").each(function() {
+
+  },
+  mounted() {
+     $(".title-artiste").each(function() {
       var text = $(this).text();
       text = text.replace(/-/g, " ");
       $(this).text(text);
     });
-  },
-  mounted() {
     this.switchBackground();
   },
   destroyed() {
