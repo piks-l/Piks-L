@@ -36,7 +36,7 @@ export default {
   mounted() {
      $(".title-artiste").each(function() {
       var text = $(this).text();
-      text = text.replace(/-/g, " + ");
+      text = text.replace(/-/g, " ");
       $(this).text(text);
     });
     this.switchBackground();
