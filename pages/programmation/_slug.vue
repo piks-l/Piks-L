@@ -1,9 +1,18 @@
 <template>
-  <main class="page" :data-back="background" :data-duo="type">
-     <h2>{{ title }}</h2>
-     <p>{{ semaine }}</p>
-     <p>{{ type }}</p>
-     <p>{{ start }} > {{ end }}</p>
+  <main class="ea-layout-evenement" :data-back="background" :data-duo="type">
+  
+    <article class="ea-article-evenement">
+      <h2>{{ titre }}</h2>
+      <div v-for="artist in groupes" :key="artist.artiste"><h4>{{artist.artiste}}</h4></div>
+      <vue-markdown>{{description}}</vue-markdown>
+    </article>
+    
+    <aside class="ea-sidebar-evenement">
+      <p>{{ datehumaine }}</p>
+      <p>{{ start }} > {{ end }}</p>
+      <a class="link-lieux" :href="'/lieux/'+lieu" ><i class="fas fa-map-marked-alt"></i> {{ lieu }}</a>
+    </aside>
+
      <ea-Sidebarevenement :titre="titre"/>
   </main>
 </template>
