@@ -754,13 +754,15 @@ nav{
 }
 .link-map {
     display: block;
+    text-align: right;
+    position: relative;
+    height: 50px;
+}
+.link-map a {
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 22px;
-    text-align: right;
-    position: relative;
-    line-height: 50px;
+    font-size: 22px;    
 }
 .link-map i {
     text-align: center;
