@@ -634,10 +634,10 @@ nav{
 }
 
 .element-item {
-    width: calc(31.333% - 30px);
+    width: calc(31.333% - 34px);
     background: #000;
     color: #fff;
-    padding:15px;
+    padding:17px;
     margin: 1%;
     transition:.5s;
 }
@@ -649,7 +649,8 @@ nav{
 }
 .grid-date {
     margin: 5px 0;
-    font-size:70%;
+    font-size:85%;
+    font-family:OPTIVenus-BoldExtended;
 }
 .grid-time {
     margin: 10px auto;
@@ -675,10 +676,10 @@ nav{
 .grid-artistes {
     font-family: OPTIVenus-BoldExtended;
     text-transform: uppercase;
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 .grid-artistes strong {
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 .grid-artistes strong:after{
     font-family: OPTITomasoBold-Extended;
@@ -697,7 +698,7 @@ nav{
     font-family: archivo-italic;
     text-transform: lowercase;
     margin: 0 0 5px;
-    font-size:10px;
+    font-size:12px;
 }
 
 
