@@ -6,7 +6,7 @@
     <hr/>
     <nuxt-link class="link-map" :to="'/lieux/'+lieu"><i class="fas fa-map-marked-alt"></i> {{ lieu }}</nuxt-link>
     <hr/>
-    <nuxt-link class="retour" :to="/programmation/"><b>PROGRAMMATION</b>RETOUR</nuxt-link>
+    <nuxt-link class="retour" to="/programmation/"><b>PROGRAMMATION</b>RETOUR</nuxt-link>
   </aside>
 </template>
 <script>
