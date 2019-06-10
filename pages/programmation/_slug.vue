@@ -2,7 +2,7 @@
   <main class="ea-layout-evenement" :data-back="background" :data-duo="type">
     <h2 class="ea-titre">ELECTRO ALTERNATIV #15 W/ <nuxt-link class="title-artiste" :to="'/artistes/'+artist.artiste" v-for="artist in groupes" :key="artist.artiste">{{artist.artiste}}</nuxt-link></h2>
     <article class="ea-article-evenement">
-      <img v-for="(img, i) in galerie" :key="img.i" :src="img"/>
+      <img v-for="img in galerie" :key="img" :src="img"/>
       <vue-markdown>{{description}}</vue-markdown>
     </article>
     <ea-Sidebarevenement :datehumaine="datehumaine" :start="start" :end="end" :lieu="lieu"/>
@@ -19,12 +19,10 @@ export default {
   components: { VueMarkdown, VueLazyload, eaSidebarevenement },
   async asyncData({ params }) {
     let page = await import('~/content/programmation/page/' + params.slug + '.json');
-    return page;
-  },
-  data () {
     return {
-      amount: 0
-    }
+      page,
+      amount: page.title
+    };;
   },
   head() {
     return {
