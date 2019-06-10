@@ -19,5 +19,12 @@ export default {
     'end',
     'lieu'
   ]
-}
+},
+  mounted() {
+     $(".link-map").each(function() {
+      var text = $(this).text();
+      text = text.replace(/-/g, " + ");
+      $(this).text(text);
+    });
+  }
 </script>
