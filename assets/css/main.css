@@ -568,7 +568,7 @@ nav{
         #filters .button-type .button:hover {
             color: rgb(0,0,0) !important;
         }
-        #filters .button-type .is-checked .button:hover {
+        #filters .button-type .button:hover .is-checked  {
             color: rgb(255,255,255) !important;
         }
         #filters .button-semaine .button:hover {
