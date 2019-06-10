@@ -1,10 +1,17 @@
 <template>
-    <h3 class="ea-sidebar-evenement">Sidebar events {{titre}}</h3>
+  <aside class="ea-sidebar-evenement">
+    <p>{{ datehumaine }}</p>
+    <p>{{ start }} > {{ end }}</p>
+    <nuxt-link class="link-lieux" :to="'/lieux/'+lieu"><i class="fas fa-map-marked-alt"></i> {{ lieu }}</nuxt-link>
+  </aside>
 </template>
 <script>
 export default {
   props: [
-    'titre'
+    'datehumaine',
+    'start',
+    'end',
+    'lieu'
   ]
 }
 </script>
