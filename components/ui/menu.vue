@@ -15,7 +15,7 @@
              <div class="navigation">
                 <ul class="nav">
                   <li><nuxt-link class="menu-link" to="/festival/">LE FESTIVAL</nuxt-link></li>
-                  <li><nuxt-link class="menu-link" to="/">PROGRAMMATION</nuxt-link></li>
+                  <li><nuxt-link class="menu-link" to="/programmation/">PROGRAMMATION</nuxt-link></li>
                   <li><nuxt-link class="menu-link" to="/artistes/">ARTISTES</nuxt-link></li>
                   <li><nuxt-link class="menu-link" to="/">BILLETTERIE</nuxt-link></li>
                   <li><nuxt-link class="menu-link" to="/lieux/">LIEUX</nuxt-link></li>
