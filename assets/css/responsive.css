@@ -147,6 +147,7 @@
         height: 50px;
         z-index:10;
         cursor:pointer;
+        display: block;
     }
     .select-stage, .select-semaine {
         line-height: 50px;
