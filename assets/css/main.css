@@ -691,7 +691,7 @@ nav{
     border-bottom: 3px solid var(--blue-color);
     transition: all .3s ease;
 }
-.title-artiste {
+.title-artiste:hover {
     color:  var(--blue-color);
     border-bottom:3px solid #fff;
 }
