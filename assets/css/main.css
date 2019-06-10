@@ -764,10 +764,11 @@ nav{
     background: var(--blue-color);
     transition: all .3s ease;
 }
-.reserver:hover i {
-  color: blue;
+.reserver:hover i,
+.link-map i{
+  color:  var(--blue-color);
 }
-reserver:hover a {
+.reserver:hover a {
   background: #000;
   color: #fff;
 }
@@ -780,6 +781,9 @@ reserver:hover a {
     position: relative;
     height: 50px;
 }
+.link-map a:hover{
+    color:#000; 
+}
 .link-map a {
     color: #fff;
     text-transform: uppercase;
@@ -791,6 +795,7 @@ reserver:hover a {
     right: 0;
     top: 25px;
     transform: translatey(-50%);
+    transition: all .3s ease;
 }
 .link-map i {
     text-align: center;
@@ -801,6 +806,7 @@ reserver:hover a {
     display: revert;
     left: 0;
     top: 0;
+    transition: all .3s ease;
 }
 .retour {
     position: fixed;
