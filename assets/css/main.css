@@ -785,7 +785,7 @@ nav{
     bottom: 5vh;
     right: 10%;
     transform: translatex(50%);
-    color: blue;
+    color: var(--blue-color);
     display: block;
     text-decoration: none;
     font-size: 38px;
@@ -800,7 +800,7 @@ nav{
     font-weight: 300;
 }
 .description {
-    background: blue;
+    background: var(--blue-color);
     padding:50px;
     color: #fff;
     text-align: left;
