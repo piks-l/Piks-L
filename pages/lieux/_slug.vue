@@ -6,16 +6,13 @@
       <vue-markdown class="description">{{description}}</vue-markdown>
       <div v-for="event in Evenement" :key="event" class="element-item">
         <nuxt-link :to="'/programmation/soiree-'+ event.adresse +'/'" >
-           <p class="grid-date"><strong>{{event.dateh}}</strong></p>
            <div class="line"></div>
+           <p class="grid-date"><strong>{{event.dateh}}</strong></p>
            <p class="grid-artistes"><strong>{{event.titr}}</strong></p>
+           <div class="line"></div>
         </nuxt-link>
       </div>
     </article>
-    <div class="nav-select">
-      <div class="prev-event">&#60;  Soirée précédente</div>
-      <div class="next-event">Soirée suivante  &#62;</div>
-    </div>
   </main>
 </template>
 <script>
@@ -60,5 +57,9 @@ export default {
     height: 280px;
     background-position: center center;
     background-size: cover;
+}
+.ea-article-lieu .element-item {
+    width: calc(100% - 34px);
+    margin: 0;
 }
 </style>
