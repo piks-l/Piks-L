@@ -728,6 +728,9 @@ nav{
     color:  var(--blue-color);
     border-bottom:3px solid var(--blue-color);
 }
+.title-artiste:hover::after {
+    color: #fff;
+}
 .ea-titre a::after {
     content: " + ";
     position: absolute;
