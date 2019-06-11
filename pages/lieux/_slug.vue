@@ -25,10 +25,10 @@ export default {
   },
   head() {
     return {
-      title: `${this.titre}`,
+      title: `${this.title}`,
       meta: [
         { hid: 'description', name: 'description', content: `${this.description}` },
-        { 'property': 'og:title', 'content': `${this.titre}`, 'vmid': 'og:title' },
+        { 'property': 'og:title', 'content': `${this.title}`, 'vmid': 'og:title' },
         { 'property': 'og:description', 'content': `${this.description}` },
         { 'property': 'og:image', 'content': `${this.thumbnail}`, 'vmid': 'og:image' }
       ]
