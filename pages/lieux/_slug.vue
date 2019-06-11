@@ -4,6 +4,7 @@
     <article class="ea-article-lieu">
       <div class="item__image" :style="{ backgroundImage: `url(${thumbnail})` }"></div>
       <vue-markdown class="description">{{description}}</vue-markdown>
+      <p v-for="event in Evenement" :key="event">{{event.events}}</p>
     </article>
     <div class="nav-select">
       <div class="prev-event">&#60;  Soirée précédente</div>
@@ -39,6 +40,18 @@ export default {
   beforeMount(){
   },
   mounted() {
+      var jqxhr = $.getJSON( "example.json", function() {
+        console.log( "success" );
+      }).done(function() {
+        console.log( "second success" );
+      }).fail(function() {
+        console.log( "error" );
+      }).always(function() {
+        console.log( "complete" );
+      });
+      jqxhr.complete(function() {
+        console.log( "second complete" );
+      });
   console.log(this.title)
   },
   destroyed() {
