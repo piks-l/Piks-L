@@ -50,8 +50,10 @@
       eaLogo
     },
     mounted: () => {
-        $( ".open-menu" ).click(function() { $( ".menu" ).addClass( "open" ); });
-        $( ".close, .menu-link" ).click(function() { $( ".menu" ).removeClass( "open" ); });
+        $( ".open-menu" ).click(function() { 
+            $( ".menu, header" ).addClass( "open" ); 
+        });
+        $( ".close, .menu-link" ).click(function() { $( ".menu, header" ).removeClass( "open" ); });
     } // Mounted end
   } // Export end 
 </script>
