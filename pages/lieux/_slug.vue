@@ -2,7 +2,7 @@
   <main class="ea-layout-lieu">
     <h2 class="ea-titre">{{title}}</h2>
     <article class="ea-article-lieu">
-      <div class="item__image" :style="{ backgroundImage: `url(${thumbnail})` }"></div>
+      <div class="lieux-item__image" :style="{ backgroundImage: `url(${thumbnail})` }"></div>
       <vue-markdown class="description">{{description}}</vue-markdown>
       <p v-for="event in Evenement" :key="event">{{event.events}}</p>
     </article>
@@ -61,3 +61,10 @@ export default {
   }
 };
 </script>
+<style>
+.lieux-item__image {
+    height: 280px;
+    background-position: center center;
+    background-size: cover;
+}
+</style>
