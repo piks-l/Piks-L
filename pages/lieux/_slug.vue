@@ -23,7 +23,7 @@ export default {
   async asyncData({ params }) {
     let lieux = await import('~/content/lieux/page/' + params.slug + '.json');
     return { 
-      lieux: data
+      lieux
     };
   },
   head() {
