@@ -12,10 +12,6 @@
         </nuxt-link>
       </div>
     </article>
-        'gmap',
-    'lien',
-    'texte',
-    'direction'
      <ea-Sidebarlieu :gmap="gmap" :lien="lien" :texte="texte" :direction="direction" />
   </main>
 </template>
