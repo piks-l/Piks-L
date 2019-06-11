@@ -1,9 +1,10 @@
 <template>
+<template>
   <div id="main" class="ea-layout">
     <header class="ea-ui">
       <ui-loading/>
       <ui-background/>
-      <nuxt-link to="/"  class="ea-logo"><ui-logo/></nuxt-link>
+      <ui-logo/>
       <div class="deco-video">
           <video autoplay="autoplay" loop="loop" muted="muted">
             <source src="/videos/etiquette-noir.mp4" type="video/mp4">
