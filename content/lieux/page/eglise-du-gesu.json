@@ -1,12 +1,13 @@
 {
   "url": "eglise-du-gesu",
   "title": "Eglise du Gesu",
-  "couverture": "/images/uploads/ea_vignette.jpg",
+  "couverture": "/images/uploads/eglise-du-gesu.jpg",
   "gmap": [
     {
       "texte": "test",
       "lien": "test"
     }
   ],
-  "date": "11/06/2019"
+  "date": "11/06/2019",
+  "thumbnail": "/images/uploads/eglise-du-gesu.jpg"
 }
