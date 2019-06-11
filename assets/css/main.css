@@ -811,7 +811,7 @@ nav{
     }
     .reserver:hover i,
     .link-map:hover i{
-      color:  var(--blue-color);
+      color:  #000;
     }
     .reserver:hover a {
       background: #000;
@@ -880,7 +880,7 @@ nav{
       color: #000;
     }
     .retour:hover {
-      color: #fff;
+      color: #000;
     }
 .description {
     background: var(--blue-color);
