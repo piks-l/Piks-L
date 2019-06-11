@@ -1,7 +1,7 @@
 <template>
   <div class="right-side">
       <aside class="ea-sidebar-evenement">
-          <div class="link-map"><i class="fas fa-map-marked-alt"></i><a target="_blank" :href="lien">{{ texte }}</a></div>
+          <div class="link-map"><i class="fas fa-map-marked-alt"></i><a target="_blank" :href="gmap">{{ adresse }}</a></div>
           <hr/>
           <div class="link-map"><i class="fas fa-walking"></i><p>{{ direction }}</p></div>
           <hr/>
@@ -13,8 +13,8 @@
 <script>
 export default {
   props: [
-    'lien',
-    'texte',
+    'gmap',
+    'adresse',
     'direction'
   ],
   mounted() {
