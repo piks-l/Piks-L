@@ -85,6 +85,7 @@ export default {
           $('.main-background').attr('xlink:href', back).bind('onreadystatechange load', function(){
             $('.anim-filter').addClass("duotone-"+duo);
             $('.main-background').fadeIn(100);
+            console.log("add duotone-"+duo);
           });
       });
       
@@ -127,6 +128,7 @@ export default {
             $('.main-background').attr('xlink:href', '/images/background-1-electro-alternativ.jpg').bind('onreadystatechange load', function(){
                 $('.anim-filter').removeClass("duotone-"+duo);
                 $('.main-background').fadeIn(100);
+                console.log("del duotone-"+duo);
             });
         });
       }, 500);
