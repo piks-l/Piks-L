@@ -389,7 +389,7 @@ nav{
     }
     .close:hover div,
     .fake-close:hover div {
-        background:gray;
+        background:black;
     }
     .fake-close .right,
     .menu.open .right{
@@ -436,10 +436,17 @@ nav{
     .menu a{
         color: #fff;
         text-decoration: none;
+        transition: .5s;
     }
       .menu a:hover{
-        color: #CCC;
+        color: #000;
         text-decoration: none;
+        transition: .5s;
+    }
+     .menu a:active{
+        color: #666;
+        text-decoration: none;
+        transition: .5s;
     }
     .menu .social {
         position: absolute;
@@ -468,7 +475,7 @@ nav{
               color:#fff;
           }
           .social a:hover i {
-              color:gray;
+              color:black;
           }
     .deco-left {
         position: absolute;
