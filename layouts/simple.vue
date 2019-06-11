@@ -1,5 +1,4 @@
 <template>
-<template>
   <div id="main" class="ea-layout">
     <header class="ea-ui">
       <ui-loading/>
