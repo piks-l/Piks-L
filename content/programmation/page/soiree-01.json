@@ -21,6 +21,10 @@
   "title": "soiree-01",
   "semaine": "semaine3",
   "type": "nuit",
+  "galerie": [
+    "/images/uploads/karenn-1200x450.jpg",
+    "/images/uploads/14anger.jpg"
+  ],
   "end": "05H30",
   "description": "Je suis une description"
 }
