@@ -1,8 +1,8 @@
 {
   "start": "20H00 ",
   "dateevents": "09/13/2019",
-  "thumbnail": "/images/uploads/todiefor.jpg",
-  "intro": "CHIPTUNEFAT",
+  "thumbnail": "/images/uploads/cover-facebook.jpg",
+  "intro": "CHIPTUNE FAT",
   "lieu": "le-bikini",
   "groupes": [
     {
@@ -16,11 +16,13 @@
   "date": "26/05/2019",
   "datehumaine": "VENDREDI 13 SEPTEMBRE",
   "titre": "Electro Alternativ #15 w/ Todiefor + TBA",
-  "title": "soiree-03",
+  "idfb": "841155709591733",
+  "title": "03",
   "semaine": "semaine2",
   "type": "soiree",
   "galerie": [
-    "/images/uploads/todiefor-1200x450.jpg"
+    "/images/uploads/todiefor-1200x450.jpg",
+    "/images/uploads/TBA-1200x450.jpg"
   ],
   "end": "23H00",
   "description": "Le jeune belge Todiefor se joint à l’ELECTRO ALTERNATIV pour en finir avec les gimmicks internet et les clichés technos. A l’image de ses nouveaux EP, il nous promet une soirée funky et lumineuse ☀️ "
