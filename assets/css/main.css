@@ -746,10 +746,11 @@ nav{
 .ea-sidebar-evenement {
     color: #fff;
     position: fixed;
-    right: 0;
-    top:50%;
-    max-width: 20%;
-    transform: translateY(-50%);
+    right: 10%;
+    top: 50%;
+    max-width: 225px;
+    -webkit-transform: translateY(-50%);
+    transform: translate(50%, -50%);
 }
 .date-event {
     font-size: 20px;
@@ -764,15 +765,7 @@ nav{
     font-family: OPTIVenus-BoldExtended;
 }
 
-.ea-sidebar-evenement {
-    color: #fff;
-    position: fixed;
-    right: 10%;
-    top: 50%;
-    max-width: 250px;
-    -webkit-transform: translateY(-50%);
-    transform: translate(50%, -50%);
-}
+
 .reserver {
     position: relative;
     display: flex;
