@@ -1,7 +1,7 @@
 {
   "start": "20H00",
   "dateevents": "09/11/2019",
-  "thumbnail": "/images/uploads/test-couverture-site-oktober-b-soirée-.jpg",
+  "thumbnail": "/images/uploads/cover-facebook.jpg",
   "intro": "TROP COOL YEAH",
   "lieu": "rex-de-toulouse",
   "groupes": [
@@ -16,7 +16,8 @@
   "date": "06/06/2019",
   "datehumaine": "MERCREDI 11 SEPTEMBRE",
   "titre": "Electro Alternativ #15 w/ Oktober Lieber, Monolithe Noir",
-  "title": "soiree-05",
+  "idfb": "618067241936438",
+  "title": "02",
   "semaine": "semaine2",
   "type": "soiree",
   "galerie": [
@@ -24,5 +25,5 @@
     "/images/uploads/oktober-lieber-1200x450.jpg"
   ],
   "end": "00H00",
-  "description": "Je suis la description de la soirée"
+  "description": "Pour cette soirée, on plongera la tête la première dans les méandres et la noirceur de l'EBM. Le Rex de Toulouse grondera sous les rythmes envoûtants et parfois obsédants de nos artistes invités... On vous laisse découvrir 💣"
 }
