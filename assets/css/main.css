@@ -62,7 +62,7 @@ main {
 /* EA TV */
 .ea-tv {
     position: fixed;
-    z-index: 122;
+    z-index: 102;
     bottom: 10vh;
     left: 10%;
     -webkit-transform: translate(-50%, 50%);
@@ -738,12 +738,12 @@ nav{
     text-decoration: none;
     color: #fff;
     margin-right: 1.2em;
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid #000;
     transition: all .3s ease;
 }
 .title-artiste:hover {
-    color:  var(--blue-color);
-    border-bottom:3px solid var(--blue-color);
+    color:  #000;
+    border-bottom:3px #FFF;
 }
 .title-artiste:hover::after {
     color: #fff;
@@ -908,7 +908,8 @@ nav{
     padding: 0 50px 0 0;
     cursor:pointer;
 }
-
+.prev-event a, .next-event a {color:#FFF;}
+.prev-event a:hover, .next-event a:hover {color:#CCC;}
 
 /* Page lieu */
 .ea-couverture-lieu {
