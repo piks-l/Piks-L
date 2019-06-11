@@ -16,6 +16,7 @@
 export default {
   props: [
     'datehumaine',
+    'idfb',
     'start',
     'end',
     'lieu'
