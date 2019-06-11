@@ -1,15 +1,20 @@
 {
   "Evenement": [
     {
-      "events": "00"
+      "dateh": "SAMEDI 24 AOÛT",
+      "titr": "Electro Alternativ #15 Pré-Opening w/ Camo & Krooked & TBA",
+      "adresse": "00"
     },
     {
-      "events": "01"
+      "dateh": "VENDREDI 6 SEPTEMBRE",
+      "titr": "Electro Alternativ #15 w/ Karenn, 14anger & TBA",
+      "adresse": "01"
     },
     {
-      "events": "03"
-    },
-    {}
+      "dateh": "VENDREDI 13 SEPTEMBRE",
+      "titr": "Electro Alternativ #15 w/ Todiefor + TBA",
+      "adresse": "03"
+    }
   ],
   "thumbnail": "/images/uploads/le-bikini.jpg",
   "couverture": "/images/uploads/le-bikini.jpg",
