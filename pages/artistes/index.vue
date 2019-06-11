@@ -9,6 +9,7 @@
                   <nuxt-link :to="artiste._path+'/'" >
                      <div class="ea-couverture-lieu" :style="{ backgroundImage: `url(${artiste.couverture})` }"></div>
                      <p class="grid-artistes"><strong>{{artiste.title}}</strong></p>
+                     <p class="grid-intro">{{artiste.label}} <small>{{artiste.langue}}</small></p>
                   </nuxt-link>
               </div>
           </div>
