@@ -55,6 +55,7 @@ export default {
   mounted() {
     this.initSlider();
     this.switchBackground();
+    this.countArtist();
   },
   destroyed() {
     this.killBackground();
