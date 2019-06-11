@@ -64,7 +64,7 @@ collections:
     label: "Programmation"
     folder: "content/programmation/page"
     create: true
-    slug: "{{slug}}"
+    slug: "soiree-{{slug}}"
     format: 'json'
     fields:
       - {label: "Url", name: "title", widget: "string", required: true}
@@ -80,6 +80,7 @@ collections:
       - {label: "Date Humaine", name: "datehumaine", widget: "string", required: false}
       - {label: "Heure de début", name: "start", widget: "string", required: false}
       - {label: "Heure de fin", name: "end", widget: "string", required: false}
+      - {label: "Event ID Facebook", name: "idfb", widget: "string", required: false}
       - label: "Type"
         name: "type"
         required: false
