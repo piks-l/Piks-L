@@ -360,7 +360,7 @@ nav{
 }
 .ea-tv, 
 .ea-logo {
-    transition:background 5s ease;
+    transition:background .5s ease;
 }
 .open .ea-tv, 
 .open .ea-logo {
