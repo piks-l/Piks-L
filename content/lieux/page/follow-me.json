@@ -1,0 +1,12 @@
+{
+  "url": "follow-me",
+  "title": "FOLLOW ME",
+  "couverture": "/images/uploads/ea_vignette.jpg",
+  "gmap": [
+    {
+      "texte": "test",
+      "lien": "test"
+    }
+  ],
+  "date": "11/06/2019"
+}
