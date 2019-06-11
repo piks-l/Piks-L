@@ -58,9 +58,34 @@ main {
         mix-blend-mode: normal;
     }
 
+
+/* EA TV */
+.ea-tv {
+    position: fixed;
+    z-index: 102;
+    bottom: 10vh;
+    left: 10%;
+    -webkit-transform: translate(-50%, 50%);
+            transform: translate(-50%, 50%);
+    padding: 15px;
+}
+    .ea-tv a {
+        font-size: 30px;
+        font-weight: 600;
+        color: #fff;
+        text-decoration: none;
+    }
+    .ea-tv a span{
+        font-weight: 300;
+        font-family: archivo-medium;
+    }
+
+
+
 /* LOGO */
 .ea-logo {
   position: fixed;
+  z-index: 102;
   width: 10%;
   height: auto;
   left: 10%;
@@ -446,10 +471,10 @@ nav{
     .deco-left {
         position: absolute;
         left: calc(10% - 1.5px);
-        height: 80vh;
+        height: calc(80vh - 125px);
+        bottom: 10vh;
         width: 3px;
         background: #fff;
-        top: 50%;
         -webkit-transform: translatey(-50%);
                 transform: translatey(-50%);
     }
@@ -476,7 +501,7 @@ nav{
         width: 16%;
         border-radius: 50%;
         overflow: hidden;
-        position: absolute;
+        position: fixed;
         top: 5vh;
         right: 10%;
         -webkit-transform: translatex(50%);
@@ -496,22 +521,6 @@ nav{
     }
         .menu-logo .ea-logo {
             background: var(--blue-color);
-        }
-    .ea-tv {
-        position: absolute;
-        bottom: 10vh;
-        left: 10%;
-        -webkit-transform: translate(-50%, 50%);
-                transform: translate(-50%, 50%);
-        padding: 15px;
-        background: var(--blue-color);
-    }
-        .ea-tv a {
-            font-size: 30px;
-            font-weight: 600;
-        }
-        .ea-tv a span{
-            font-weight: 300;
         }
     .ea-slider {
         background: #0635aa;
