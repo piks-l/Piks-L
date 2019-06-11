@@ -39,7 +39,7 @@ export default {
   beforeMount(){
   },
   mounted() {
-  console.log(params.slug)
+  console.log(this.title)
   },
   destroyed() {
   },
