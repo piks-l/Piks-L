@@ -228,7 +228,38 @@
         height: 75px;
     }
 }
-@media only screen and (min-width: 960px) and (max-width: 1380px) {
+@media only screen and (min-width: 960px) and (max-width: 1263px) {
+   svg {
+    height: 100%;
+    width: auto;
+  }
+  
+  /**** Page prog ****/
+  .ea-titre {
+      font-size: 3em;
+  }
+  .grid-artistes {
+      font-size: 1em;
+  }
+  .deco-video {
+      height: 150px;
+  }
+  
+  /**** Page event ****/
+  .ea-sidebar-evenement {
+      max-width: calc(20% - 20px);
+  }
+  .reserver i, .link-map i {
+      width: 30px;
+      font-size: 22px;
+  }
+  .reserver a, .link-map a {
+      width: calc(100% - 30px);
+      font-size: 14px;
+  }
+  
+}
+@media only screen and (min-width: 1264px) and (max-width: 1380px) {
    svg {
       height: 100%;
       width: auto;
@@ -268,17 +299,7 @@
       font-size:12px;
   }
     
-  .ea-sidebar-evenement {
-      max-width: calc(20% - 20px);
-  }
-  .reserver i, .link-map i {
-      width: 30px;
-      font-size: 22px;
-  }
-  .reserver a, .link-map a {
-      width: calc(100% - 30px);
-      font-size: 14px;
-  }
+  
 }
 
 
