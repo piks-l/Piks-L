@@ -3,7 +3,7 @@
       <aside class="ea-sidebar-evenement">
           <p class="date-event">{{ datehumaine }}</p>
           <p class="date-time">{{ start }} > {{ end }}</p>
-          <div class="reserver"><i class="fas fa-calendar"></i> <a href="#" alt="">PARTICIPER</a></div>
+          <div class="reserver"><i class="fas fa-calendar"></i> <a :href="idfb" alt="Événement Facebook">PARTICIPER</a></div>
           <hr/>
           <div class="link-map"><i class="fas fa-map-marked-alt"></i><nuxt-link :to="'/lieux/'+lieu">{{ lieu }}</nuxt-link></div>
           <hr/>        
