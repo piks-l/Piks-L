@@ -60,6 +60,13 @@ export default {
     this.killBackground();
   },
   methods: {
+    countArtist() {
+      var count = 0;
+      $(".slider-item__image").each(function() {
+          count+ 1 ;
+      });
+      console.log(count);
+    },
     switchBackground() {
       var back = $('main').attr('data-back');
       var duo = $('main').attr('data-duo');
