@@ -55,9 +55,9 @@
     },
     mounted: () => {
         $( ".open-menu" ).click(function() { 
-            $( ".menu, header" ).addClass( "open" ); 
+            $( ".menu" ).addClass( "open" ); 
         });
-        $( ".close, .menu-link" ).click(function() { $( ".menu, header" ).removeClass( "open" ); });
+        $( ".close, .menu-link" ).click(function() { $( ".menu" ).removeClass( "open" ); });
     } // Mounted end
   } // Export end 
 </script>
