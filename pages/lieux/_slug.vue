@@ -39,6 +39,7 @@ export default {
   beforeMount(){
   },
   mounted() {
+  console.log(params.slug)
   },
   destroyed() {
   },
