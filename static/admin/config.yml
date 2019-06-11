@@ -57,7 +57,7 @@ collections:
             widget: "relation"
             collection: "programmation"
             searchFields: ["title"]
-            valueField: "title"
+            valueField: ["title", "titre"]
             displayFields: ["titre"]
             multiple: "true"
   - name: "programmation"
