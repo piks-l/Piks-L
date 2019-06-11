@@ -37,13 +37,16 @@ collections:
       - {label: "Nom", name: "title", widget: "string", tagname: "h1", required: true}
       - {label: "Image de couverture", name: "couverture", widget: "image", required: true}
       - {label: "Description", name: "description", widget: "markdown", required: false}
-      - label: "GMAP"
-        name: "gmap"
+      - {label: "Adresse", name: "adresse", widget: "string", required: false}
+      - {label: "Lien gmap", name: "gmap", widget: "string", required: false}
+      - {label: "Direction", name: "direction", widget: "string", required: false}
+      - label: "Social"
+        name: "social"
+        required: false
         widget: "list"
         fields:
           - { label: Texte, name: texte, widget: string , required: false}
           - { label: Lien, name: lien, widget: string , required: false}
-      - {label: "Direction", name: "direction", widget: "string", required: false}
       - {label: "Date de publication", name: "date", widget: "date", format: "DD/MM/YYYY", required: false}
       - {label: "Miniature", name: "thumbnail", widget: "image", required: false}
       - label: "Evenement"
