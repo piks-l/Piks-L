@@ -4,7 +4,7 @@
           <div class="deco-left"></div>
           <div class="deco-right"></div>
           <div class="deco-bot"></div>
-          <nuxt-link class="menu-logo menu-link" to="/"><ui-logo/></nuxt-link>
+          <nuxt-link class="menu-logo menu-link" to="/"><ea-logo/></nuxt-link>
           <p>Évènement des cultures électroniques et digitales</p>
           <div class="deco-video">
             <video autoplay="autoplay" loop="loop" muted="muted">
@@ -32,9 +32,6 @@
               <a href="#" alt="IT"><i class="fab fa-instagram"></i></a>
               <a href="#" alt="SP"><i class="fab fa-spotify"></i></a>
           </div>
-          <div class="ea-tv">
-              <a href="#" alt="EATV">#EA<span>TV</span></a>
-          </div>
           <div class="ea-slider">
               <div class="slider"></div>
           </div>
@@ -51,12 +48,10 @@
   import eaLogo from '~/components/ui/logo.vue'
   export default {
     components: {
-      uiLogo
+      eaLogo
     },
     mounted: () => {
-        $( ".open-menu" ).click(function() { 
-            $( ".menu" ).addClass( "open" ); 
-        });
+        $( ".open-menu" ).click(function() { $( ".menu" ).addClass( "open" ); });
         $( ".close, .menu-link" ).click(function() { $( ".menu" ).removeClass( "open" ); });
     } // Mounted end
   } // Export end 
