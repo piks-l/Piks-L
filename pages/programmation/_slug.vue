@@ -72,6 +72,11 @@ export default {
       if(count <= 1){
           $(".slider-evenement").addClass('no-nav');
       };
+      $(".title-artiste").each(function() {
+        var text = $(this).text();
+        text = text.replace(/-/g, " ");
+        $(this).text(text);
+      });
     },
     switchBackground() {
       var back = $('main').attr('data-back');
@@ -82,11 +87,7 @@ export default {
             $('.main-background').fadeIn(100);
           });
       });
-      $(".title-artiste").each(function() {
-        var text = $(this).text();
-        text = text.replace(/-/g, " ");
-        $(this).text(text);
-      });
+      
     },
     initSlider() {
       $('.slider-evenement .slider-item').eq(0).addClass('active');
