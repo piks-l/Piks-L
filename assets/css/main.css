@@ -482,8 +482,6 @@ nav{
         bottom: 10vh;
         width: 3px;
         background: #fff;
-        -webkit-transform: translatey(-50%);
-                transform: translatey(-50%);
     }
     .deco-right {
         position: absolute;
