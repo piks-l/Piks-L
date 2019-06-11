@@ -128,7 +128,7 @@ export default {
                 $('.main-background').fadeIn(100);
             });
         });
-      }, 200);
+      }, 500);
     }
     
   }
