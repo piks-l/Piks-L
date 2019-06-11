@@ -25,7 +25,7 @@
       <div class="prev-event"></div>
       <div class="next-event"></div>
     </div>
-    <ea-Sidebarevenement :datehumaine="datehumaine" :start="start" :end="end" :lieu="lieu"/ :idfb="idfb">
+    <ea-Sidebarevenement :datehumaine="datehumaine" :start="start" :end="end" :lieu="lieu" :idfb="idfb" />
   </main>
 </template>
 <script>
