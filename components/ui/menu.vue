@@ -4,7 +4,6 @@
           <div class="deco-left"></div>
           <div class="deco-right"></div>
           <div class="deco-bot"></div>
-          <nuxt-link class="menu-logo menu-link" to="/"><ea-logo/></nuxt-link>
           <p>Évènement des cultures électroniques et digitales</p>
           <div class="deco-video">
             <video autoplay="autoplay" loop="loop" muted="muted">
