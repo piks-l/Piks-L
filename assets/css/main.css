@@ -760,19 +760,13 @@ nav{
     margin: 0;
     font-family: OPTIVenus-BoldExtended;
 }
-.link-map {
-    display: block;
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 26px;
-}
+
 .ea-sidebar-evenement {
     color: #fff;
     position: fixed;
     right: 10%;
     top: 50%;
-    max-width: calc(20% - 30px);
+    max-width: 250px;
     -webkit-transform: translateY(-50%);
     transform: translate(50%, -50%);
 }
@@ -813,6 +807,11 @@ nav{
 }
 .link-map {
     display: block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 26px;
+    display: block;
     text-align: right;
     position: relative;
     height: 50px;
@@ -824,7 +823,7 @@ nav{
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 14px;
     width: calc(100% - 50px);
     display: block;
     position: absolute;
