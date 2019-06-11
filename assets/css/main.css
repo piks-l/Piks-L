@@ -872,3 +872,12 @@ nav{
     text-align: left;
     letter-spacing: 1px;
 }
+
+
+/* Page lieu */
+.ea-couverture-lieu {
+    height: 200px;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+}
