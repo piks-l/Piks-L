@@ -58,7 +58,7 @@ collections:
             collection: "programmation"
             searchFields: ["title", "titre"]
             valueField: ["title", "titre"]
-            displayFields: ["titre", "titre"]
+            displayFields: ["title", "titre"]
             multiple: "true"
   - name: "programmation"
     label: "Programmation"
