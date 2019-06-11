@@ -29,8 +29,6 @@ collections:
   - name: "lieux"
     label: "Lieux"
     folder: "content/lieux/page"
-    media_folder: "static/images/uploads/lieux/"
-    public_folder: "/images/uploads/lieux/"
     create: true
     slug: "{{slug}}"
     format: 'json'
