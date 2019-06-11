@@ -8,7 +8,7 @@
         <nuxt-link :to="'/programmation/soiree-'+ event.adresse +'/'" >
            <p class="grid-date"><strong>{{event.dateh}}</strong></p>
            <div class="line"></div>
-           <p class="grid-artistes"><strong>{{event.titre}}</strong></p>
+           <p class="grid-artistes"><strong>{{event.titr}}</strong></p>
         </nuxt-link>
       </div>
     </article>
