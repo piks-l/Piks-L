@@ -21,6 +21,10 @@
       </div>
       <vue-markdown class="description">{{description}}</vue-markdown>
     </article>
+    <div class="nav-select">
+      <div class="prev-event"></div>
+      <div class="next-event"></div>
+    </div>
     <ea-Sidebarevenement :datehumaine="datehumaine" :start="start" :end="end" :lieu="lieu"/>
   </main>
 </template>
