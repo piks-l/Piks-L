@@ -12,7 +12,7 @@
         </nuxt-link>
       </div>
     </article>
-     <ea-Sidebarlieu :gmap="gmap" :lien="lien" :texte="texte" :direction="direction" />
+     <ea-Sidebarlieu :lien="gmap.lien" :texte="gmap.texte" :direction="direction" />
   </main>
 </template>
 <script>
