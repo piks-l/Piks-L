@@ -67,8 +67,8 @@ export default {
           count= count + 1 ;
       });
       if(count <= 1){
-          $(".slider-evenement).addClass('no-nav');
-      }
+          $(".slider-evenement").addClass('no-nav');
+      };
     },
     switchBackground() {
       var back = $('main').attr('data-back');
