@@ -1,6 +1,7 @@
 {
   "start": "23H00",
   "dateevents": "09/06/2019",
+  "thumbnail": "/images/uploads/cover-facebook.jpg",
   "intro": "TECHNO COOL",
   "lieu": "le-bikini",
   "groupes": [
@@ -18,13 +19,15 @@
   "date": "07/06/2019",
   "datehumaine": "VENDREDI 6 SEPTEMBRE",
   "titre": "Electro Alternativ #15 w/ Karenn, 14anger & TBA",
-  "title": "soiree-01",
+  "idfb": "351235262402398",
+  "title": "01",
   "semaine": "semaine3",
   "type": "nuit",
   "galerie": [
     "/images/uploads/karenn-1200x450.jpg",
-    "/images/uploads/14anger-1200x450.jpg"
+    "/images/uploads/14anger-1200x450.jpg",
+    "/images/uploads/TBA-1200x450.jpg"
   ],
   "end": "05H30",
-  "description": "Je suis une description"
+  "description": "Pour le premier week-end du festival on a l'honneur de recevoir Karenn, le duo composé de Blawan et Pariah pour un live haut de gamme. Ils seront accompagnés de plusieurs autres pointures techno, bientôt annoncées 👀"
 }
