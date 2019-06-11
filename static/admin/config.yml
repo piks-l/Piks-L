@@ -29,6 +29,8 @@ collections:
   - name: "lieux"
     label: "Lieux"
     folder: "content/lieux/page"
+    media_folder: "static/images/uploads/lieux/"
+    public_folder: "/images/uploads/lieux/"
     create: true
     slug: "{{slug}}"
     format: 'json'
@@ -106,8 +108,8 @@ collections:
           - { label: "Background 2", value: "/images/background-2-electro-alternativ.jpg" }
           - { label: "Background 3", value: "/images/background-3-electro-alternativ.jpg" }
           - { label: "Background 4", value: "/images/background-4-electro-alternativ.jpg" }
-          - { label: "Background 5", value: "/images/background-5-electro-alternativ.jpg" }          
-          - { label: "Background 6", value: "/images/background-6-electro-alternativ.jpg" }   
+          - { label: "Background 5", value: "/images/background-5-electro-alternativ.jpg" }
+          - { label: "Background 6", value: "/images/background-6-electro-alternativ.jpg" }
       - label: "Groupes"
         name: "groupes"
         required: false
