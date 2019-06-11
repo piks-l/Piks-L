@@ -4,7 +4,7 @@
           <div class="deco-left"></div>
           <div class="deco-right"></div>
           <div class="deco-bot"></div>
-          <nuxt-link class="menu-logo menu-link" to="/"><ea-logo/></nuxt-link>
+          <nuxt-link class="menu-logo menu-link" to="/"><ui-logo/></nuxt-link>
           <p>Évènement des cultures électroniques et digitales</p>
           <div class="deco-video">
             <video autoplay="autoplay" loop="loop" muted="muted">
@@ -51,7 +51,7 @@
   import eaLogo from '~/components/ui/logo.vue'
   export default {
     components: {
-      eaLogo
+      uiLogo
     },
     mounted: () => {
         $( ".open-menu" ).click(function() { 
