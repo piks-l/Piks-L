@@ -742,8 +742,8 @@ nav{
     transition: all .3s ease;
 }
 .title-artiste:hover {
-    color:  #000;
-    border-bottom:3px #FFF;
+    color:  #CCC;
+    border-bottom:3px solid var(--blue-color);
 }
 .title-artiste:hover::after {
     color: #fff;
@@ -908,8 +908,7 @@ nav{
     padding: 0 50px 0 0;
     cursor:pointer;
 }
-.prev-event a, .next-event a {color:#FFF;}
-.prev-event a:hover, .next-event a:hover {color:#CCC;}
+
 
 /* Page lieu */
 .ea-couverture-lieu {
