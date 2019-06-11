@@ -101,7 +101,7 @@ export default {
     killBackground() {
       setTimeout(function(){  
         $('.anim-filter').removeClass("duotone-jour duotone-soiree duotone-nuit");
-      }, 900);
+      }, 500);
     },
     ea() {
             var grid = new Isotope(".grid", {
