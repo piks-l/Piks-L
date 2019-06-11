@@ -6,10 +6,9 @@
       <vue-markdown class="description">{{description}}</vue-markdown>
       <div v-for="event in Evenement" :key="event" class="element-item">
         <nuxt-link :to="'/programmation/soiree-'+ event.adresse +'/'" >
-           <div class="line"></div>
            <p class="grid-date"><strong>{{event.dateh}}</strong></p>
-           <p class="grid-artistes"><strong>{{event.titr}}</strong></p>
            <div class="line"></div>
+           <p class="grid-artistes"><strong>{{event.titr}}</strong></p>
         </nuxt-link>
       </div>
     </article>
