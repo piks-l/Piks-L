@@ -1,6 +1,7 @@
 {
   "start": "23H00",
   "dateevents": "08/24/2019",
+  "thumbnail": "/images/uploads/cover-facebook.jpg",
   "intro": "PRE OPENING",
   "lieu": "le-bikini",
   "groupes": [
@@ -15,12 +16,14 @@
   "date": "07/06/2019",
   "datehumaine": "SAMEDI 24 AOÛT",
   "titre": "Electro Alternativ #15 Pré-Opening w/ Camo & Krooked & TBA",
-  "title": "soiree-00",
+  "idfb": "2015029515290241",
+  "title": "00",
   "semaine": "semaine1",
   "type": "nuit",
   "galerie": [
-    "/images/uploads/camo-krooked-1200x450.jpg"
+    "/images/uploads/camo-krooked-1200x450.jpg",
+    "/images/uploads/TBA-1200x450.jpg"
   ],
   "end": "05H30",
-  "description": "Je suis la description"
+  "description": "**ELECTRO ALTERNATIV est de retour pour fêter 15 ans de musiques électroniques à Toulouse 🎈**\n\nComme à notre habitude, on commence les festivités dès le mois d'août avec un pré-opening ! Cette année, on s'échauffe avec un plateau 100% BASS MUSIC au Bikini 🔥"
 }
