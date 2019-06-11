@@ -230,18 +230,20 @@
 }
 @media only screen and (min-width: 960px) and (max-width: 1380px) {
    svg {
-    height: 100%;
-    width: auto;
+      height: 100%;
+      width: auto;
   }
   
-  .ea-logo {top:3vh}
+  .ea-logo {
+      top:3vh
+  }
     /**** Menu ****/
   .menu p {
-    font-size: 14px; letter-spacing:1px
+      font-size: 14px; letter-spacing:1px
   }
   .menu-link {
-     font-size:2em;
-    }
+      font-size:2em;
+  }
   /**** Page prog ****/
   .ea-titre {
       font-size: 2.3em;
@@ -265,7 +267,18 @@
    .button-type .button:nth-child(1) {
       font-size:12px;
   }
-  
+    
+  .ea-sidebar-evenement {
+      max-width: calc(20% - 20px);
+  }
+  .reserver i, .link-map i {
+      width: 30px;
+      font-size: 22px;
+  }
+  .reserver a, .link-map a {
+      width: calc(100% - 30px);
+      font-size: 14px;
+  }
 }
 
 
