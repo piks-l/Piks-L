@@ -1,7 +1,7 @@
 {
   "url": "connexion-live",
   "title": "Connexion Live",
-  "couverture": "/images/uploads/connexion-live-facade.jpg",
+  "couverture": "/images/uploads/connexion-live.jpg",
   "description": "Connexion Live est un lieu culturel de 500 m² basé en plein centre ville de Toulouse.\nC’est un lieu professionnel privé, adapté à l’accueil artistique mais aussi un bar comportant une terrasse fumeur, ombragée et ouverte l'été, couverte et chauffée l'hiver.\nOn y retrouve aujourd’hui une programmation éclectique où la découverte est le point essentiel.\n\nCet espace hybride a mis l’accent sur une ambiance loft new-yorkais/berlinois avec une déco vintage permettant un agencement modulable.\nLa mezzanine abrite les loges des artistes et le bureau de production.\nDe nombreux collectifs investissent régulièrement le lieu autour d’une exposition, d’une performance, d’une projection vidéo, d’un vernissage photo, d’un set DJ, d’un concert…\nLes publics et les musiques se croisent dans cet espace chaleureux et accueillant, dédié aux rencontres, aux échanges et aux différentes cultures musicales.",
   "gmap": [
     {
@@ -11,5 +11,5 @@
   ],
   "direction": "Direction toute mousaillons !",
   "date": "07/06/2019",
-  "thumbnail": "/images/uploads/connexion-live-facade.jpg"
+  "thumbnail": "/images/uploads/connexion-live.jpg"
 }
