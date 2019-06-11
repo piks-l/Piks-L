@@ -62,7 +62,7 @@ main {
 /* EA TV */
 .ea-tv {
     position: fixed;
-    z-index: 102;
+    z-index: 122;
     bottom: 10vh;
     left: 10%;
     -webkit-transform: translate(-50%, 50%);
