@@ -22,7 +22,9 @@ export default {
   components: { VueMarkdown, VueLazyload },
   async asyncData({ params }) {
     let lieux = await import('~/content/lieux/page/' + params.slug + '.json');
-    return lieux;
+    return { 
+      lieux: data
+    };
   },
   head() {
     return {
