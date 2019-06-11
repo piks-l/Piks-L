@@ -50,7 +50,6 @@ export default {
   },
   updated() {
     this.initSlider();
-    this.switchBackground();
   },
   beforeMount(){
     
