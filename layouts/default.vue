@@ -20,7 +20,7 @@
   import uiLoading from '~/components/ui/loading.vue'
   import uiLogo from '~/components/ui/logo.vue'
   import uiMenu from '~/components/ui/menu.vue'
-  import uiMenu from '~/components/ui/footer.vue'
+  import uiFooter from '~/components/ui/footer.vue'
   import uiBackground from '~/components/ui/background.vue'
   export default {
       components: {
