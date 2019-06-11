@@ -747,7 +747,7 @@ nav{
 }
 .date-time {
     color: #000;
-    font-size: 26px;
+    font-size: 18px;
     font-weight: 600;
     margin: 0;
     font-family: OPTIVenus-BoldExtended;
@@ -844,14 +844,13 @@ nav{
     color: var(--blue-color);
     display: block;
     text-decoration: none;
-    font-size: 38px;
+    font-size: 34px;
     font-family: OPTIVenus-BoldExtended;
     font-weight: 600;
 }
 .retour b {
     color: #fff;
     display: block;
-    letter-spacing: 1px;
     font-size: 16px;
     font-weight: 300;
 }
