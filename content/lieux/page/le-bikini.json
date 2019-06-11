@@ -1,7 +1,13 @@
 {
   "Evenement": [
     {
-      "events": "soiree-01"
+      "events": "00"
+    },
+    {
+      "events": "01"
+    },
+    {
+      "events": "03"
     }
   ],
   "thumbnail": "/images/uploads/le-bikini.jpg",
