@@ -1,18 +1,15 @@
 <template>
-  <div class="page artist">
-    <div id="main-container" class="artiste">
-      <div class="container scene_element scene_element--fadein ">
-        <div class="title">
-            <h2>{{ title }}</h2>
-            <vue-markdown>{{description}}</vue-markdown>
-            <p v-for="Evenements in pageLieux" :key="Evenements.events" >{{Evenements.event}}</p>
-        </div>
-        <div class="video">
-            <vue-markdown>{{iframe}}</vue-markdown>
-        </div>
-      </div>
+  <main class="ea-layout-lieu">
+    <h2 class="ea-titre">{{title}}</h2>
+    <article class="ea-article-lieu">
+      <div class="item__image" :style="{ backgroundImage: `url(${thumbnail})` }"></div>
+      <vue-markdown class="description">{{description}}</vue-markdown>
+    </article>
+    <div class="nav-select">
+      <div class="prev-event">&#60;  Soirée précédente</div>
+      <div class="next-event">Soirée suivante  &#62;</div>
     </div>
-  </div>
+  </main>
 </template>
 <script>
 import $ from 'jquery'
@@ -20,23 +17,33 @@ import VueMarkdown from 'vue-markdown'
 import VueLazyload from 'vue-lazyload'
 export default {
   layout: 'default',
+  transition: { name: 'intro', mode: 'out-in' },
   components: { VueMarkdown, VueLazyload },
   async asyncData({ params }) {
-    let pageLieux = await import('~/content/lieux/page/' + params.slug + '.json');
-    return pageLieux;
+    let lieux = await import('~/content/lieux/page/' + params.slug + '.json');
+    return lieux;
   },
   head() {
     return {
-      title: `${this.title}`,
+      title: `${this.titre}`,
       meta: [
         { hid: 'description', name: 'description', content: `${this.description}` },
-        { 'property': 'og:title', 'content': `${this.title}`, 'vmid': 'og:title' },
+        { 'property': 'og:title', 'content': `${this.titre}`, 'vmid': 'og:title' },
         { 'property': 'og:description', 'content': `${this.description}` },
-        { 'property': 'og:image', 'content': `${this.couverture}`, 'vmid': 'og:image' }
+        { 'property': 'og:image', 'content': `${this.thumbnail}`, 'vmid': 'og:image' }
       ]
     }
   },
+  updated() {
+  },
+  beforeMount(){
+  },
   mounted() {
+  },
+  destroyed() {
+  },
+  methods: {
+    
   }
 };
 </script>
