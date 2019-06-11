@@ -877,7 +877,10 @@ nav{
 /* Page lieu */
 .ea-couverture-lieu {
     height: 200px;
-    background-position: center center;
+    background-position: 50%;
     background-size: cover;
-    width: 100%;
+    width: calc(100% + 30px);
+    position: relative;
+    left: -15px;
+    top: -15px;
 }
