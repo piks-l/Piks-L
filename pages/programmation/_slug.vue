@@ -53,11 +53,11 @@ export default {
     this.switchBackground();
   },
   beforeMount(){
-    this.switchBackground();
+    
   },
   mounted() {
     this.initSlider();
-    
+    this.switchBackground();
     this.countArtist();
   },
   destroyed() {
