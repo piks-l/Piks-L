@@ -771,33 +771,33 @@ nav{
     display: flex;
     margin: 15px 0;
 }
-.reserver i {
-    line-height: 50px;
-    width: 50px;
-    height: 50px;
-    font-size: 36px;
-    position: relative;
-    display: inline-block;
-    transition: all .3s ease;
-}
-.reserver a {
-    position: relative;
-    display: inline-block;
-    color: #fff;
-    text-decoration: none;
-    line-height: 50px;
-    width: calc(100% - 50px);
-    background: var(--blue-color);
-    transition: all .3s ease;
-}
-.reserver:hover i,
-.link-map:hover i{
-  color:  var(--blue-color);
-}
-.reserver:hover a {
-  background: #000;
-  color: #fff;
-}
+    .reserver i {
+        line-height: 50px;
+        width: 50px;
+        height: 50px;
+        font-size: 36px;
+        position: relative;
+        display: inline-block;
+        transition: all .3s ease;
+    }
+    .reserver a {
+        position: relative;
+        display: inline-block;
+        color: #fff;
+        text-decoration: none;
+        line-height: 50px;
+        width: calc(100% - 50px);
+        background: var(--blue-color);
+        transition: all .3s ease;
+    }
+    .reserver:hover i,
+    .link-map:hover i{
+      color:  var(--blue-color);
+    }
+    .reserver:hover a {
+      background: #000;
+      color: #fff;
+    }
 .ea-sidebar-evenement hr {
     border: 2px solid #000;
 }
@@ -812,33 +812,33 @@ nav{
     position: relative;
     height: 50px;
 }
-.link-map a:hover{
-    color:#000; 
-}
-.link-map a {
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 14px;
-    width: calc(100% - 50px);
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 25px;
-    transform: translatey(-50%);
-    transition: all .3s ease;
-}
-.link-map i {
-    text-align: center;
-    line-height: 50px;
-    font-size: 36px;
-    width: 50px;
-    position: absolute;
-    display: revert;
-    left: 0;
-    top: 0;
-    transition: all .3s ease;
-}
+    .link-map a:hover{
+        color:#000; 
+    }
+    .link-map a {
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 14px;
+        width: calc(100% - 50px);
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 25px;
+        transform: translatey(-50%);
+        transition: all .3s ease;
+    }
+    .link-map i {
+        text-align: center;
+        line-height: 50px;
+        font-size: 36px;
+        width: 50px;
+        position: absolute;
+        display: revert;
+        left: 0;
+        top: 0;
+        transition: all .3s ease;
+    }
 .retour {
     color: var(--blue-color);
     display: block;
@@ -847,26 +847,42 @@ nav{
     font-family: OPTIVenus-BoldExtended;
     font-weight: 600;
     transition: all .3s ease;
+    text-shadow: 0px 0px 50px #444;
 }
-.retour b {
-    color: #fff;
-    display: block;
-    font-size: 16px;
-    font-weight: 300;
-    transition: all .3s ease;
-}
-.retour:hover b {
-  color: #000;
-}
-.retour:hover {
-  color: #fff;
-}
+    .retour b {
+        color: #fff;
+        display: block;
+        font-size: 16px;
+        font-weight: 300;
+        transition: all .3s ease;
+    }
+    .retour:hover b {
+      color: #000;
+    }
+    .retour:hover {
+      color: #fff;
+    }
 .description {
     background: var(--blue-color);
     padding:50px;
     color: #fff;
     text-align: left;
     letter-spacing: 1px;
+}
+.nav-select {
+    height: 50px;
+    width: 100%;
+    background: #000;
+    position: relative;
+    display: block;
+}
+.prev-event {
+    float: left;
+    padding: 0 0 0 50px;
+}
+.next-event {
+    float: right;
+    padding: 0 50px 0 0;
 }
 
 
