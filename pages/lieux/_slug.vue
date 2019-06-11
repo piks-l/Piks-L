@@ -4,7 +4,13 @@
     <article class="ea-article-lieu">
       <div class="lieux-item__image" :style="{ backgroundImage: `url(${thumbnail})` }"></div>
       <vue-markdown class="description">{{description}}</vue-markdown>
-      <p v-for="event in Evenement" :key="event">{{event.events}}</p>
+      <div v-for="event in Evenement" :key="event" class="element-item">
+        <nuxt-link :to="'/programmation/soiree-'+ event.adresse +'/'" >
+           <p class="grid-date"><strong>{{event.dateh}}</strong></p>
+           <div class="line"></div>
+           <p class="grid-artistes"><strong>{{event.titre}}</strong></p>
+        </nuxt-link>
+      </div>
     </article>
     <div class="nav-select">
       <div class="prev-event">&#60;  Soirée précédente</div>
