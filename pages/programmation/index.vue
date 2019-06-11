@@ -94,7 +94,6 @@ export default {
         var duo =  $(el).attr('data-duo');
         $(el).click(function(el) {
             $('.anim-filter').removeClass("duotone-jour duotone-soiree duotone-nuit").addClass("duotone-"+duo);
-            console.log(duo)
          });
       });
     },
