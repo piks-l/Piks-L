@@ -736,6 +736,9 @@ nav{
 .ea-titre a:last-child::after {
     content: '';
 }
+.no-nav .slider__nav {
+    display: none;
+}
 
 .ea-sidebar-evenement {
     color: #fff;
