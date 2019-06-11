@@ -12,16 +12,22 @@
         </nuxt-link>
       </div>
     </article>
+        'gmap',
+    'lien',
+    'texte',
+    'direction'
+     <ea-Sidebarlieu  :lien="gmap.lien" :texte="gmap.texte" :direction="direction" />
   </main>
 </template>
 <script>
 import $ from 'jquery'
 import VueMarkdown from 'vue-markdown'
 import VueLazyload from 'vue-lazyload'
+import eaSidebarlieu from '~/components/sidebar-lieu.vue'
 export default {
   layout: 'default',
   transition: { name: 'intro', mode: 'out-in' },
-  components: { VueMarkdown, VueLazyload },
+  components: { VueMarkdown, VueLazyload, eaSidebarlieu},
   async asyncData({ params }) {
     let lieux = await import('~/content/lieux/page/' + params.slug + '.json');
     return lieux;
