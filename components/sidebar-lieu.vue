@@ -13,9 +13,8 @@
 <script>
 export default {
   props: [
-    'gmap',
-    'lien',
-    'texte',
+    'gmap.lien',
+    'gmap.texte',
     'direction'
   ],
   mounted() {
