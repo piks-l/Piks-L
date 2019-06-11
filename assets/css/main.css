@@ -840,10 +840,6 @@ nav{
     transition: all .3s ease;
 }
 .retour {
-    position: fixed;
-    bottom: 5vh;
-    right: 10%;
-    transform: translatex(50%);
     color: var(--blue-color);
     display: block;
     text-decoration: none;
