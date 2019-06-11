@@ -3,7 +3,7 @@
     <header class="ea-ui">
       <ui-loading/>
       <ui-background/>
-      <nuxt-link to="/"  class="ea-logo"><ea-logo/></nuxt-link>
+      <nuxt-link to="/"  class="ui-logo"><ea-logo/></nuxt-link>
       <div class="deco-video">
           <video autoplay="autoplay" loop="loop" muted="muted">
             <source src="/videos/etiquette-noir.mp4" type="video/mp4">
