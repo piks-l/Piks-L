@@ -358,7 +358,14 @@ nav{
     -webkit-transition: padding 0s ease, width 0s ease, height 0s ease, opacity .5s ease ;
     transition: padding 0s ease, width 0s ease, height 0s ease, opacity .5s ease ;
 }
-
+.ea-tv, 
+.ea-logo {
+    transition:background 5s ease;
+}
+.open .ea-tv, 
+.open .ea-logo {
+    background: var(--blue-color);
+}
     .close {
         position: absolute;
         top: 50%;
