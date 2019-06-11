@@ -22,9 +22,7 @@ export default {
   components: { VueMarkdown, VueLazyload },
   async asyncData({ params }) {
     let lieux = await import('~/content/lieux/page/' + params.slug + '.json');
-    return { 
-      lieux
-    };
+    return lieux;
   },
   head() {
     return {
@@ -42,19 +40,7 @@ export default {
   beforeMount(){
   },
   mounted() {
-      var jqxhr = $.getJSON( "example.json", function() {
-        console.log( "success" );
-      }).done(function() {
-        console.log( "second success" );
-      }).fail(function() {
-        console.log( "error" );
-      }).always(function() {
-        console.log( "complete" );
-      });
-      jqxhr.complete(function() {
-        console.log( "second complete" );
-      });
-  console.log(this.title)
+    console.log(this.title)
   },
   destroyed() {
   },
