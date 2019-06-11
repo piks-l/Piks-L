@@ -6,9 +6,9 @@
               <div class="stamp stamp1"></div>
               <div class="stamp stamp2"></div>
               <div v-for="lieu in lieux" :key="lieu.url" class="element-item">
-                   <nuxt-link :to="lieu._path+'/'" >
+                  <nuxt-link :to="lieu._path+'/'" >
+                     <div class="ea-couverture-lieu" :style="{ backgroundImage: `url(${lieu.couverture})` }"></div>
                      <p class="grid-artistes"><strong>{{lieu.title}}</strong></p>
-
                   </nuxt-link>
               </div>
           </div>
