@@ -770,16 +770,18 @@ nav{
     transform: translate(50%, -50%);
 }
 .date-event {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     margin: 0;
+        font-family: OPTIVenus-BoldExtended;
+
 }
 .date-time {
     color: #000;
     font-size: 18px;
     font-weight: 600;
     margin: 0;
-    font-family: OPTIVenus-BoldExtended;
+    font-family: OPTITomasoBold-Extended;
 }
 
 
@@ -861,7 +863,7 @@ nav{
     display: block;
     text-decoration: none;
     font-size: 34px;
-    font-family: OPTIVenus-BoldExtended;
+    font-family: OPTITomasoBold-Extended;
     font-weight: 600;
     transition: all .3s ease;
     text-shadow: 0px 0px 50px #444;
@@ -871,6 +873,7 @@ nav{
         display: block;
         font-size: 16px;
         font-weight: 300;
+        font-family: OPTIVenus-BoldExtended;
         transition: all .3s ease;
     }
     .retour:hover b {
