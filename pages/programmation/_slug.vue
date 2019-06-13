@@ -2,6 +2,11 @@
   <main class="ea-layout-evenement" :data-back="background" :data-duo="type">
     <h2 class="ea-titre"><nuxt-link class="title-artiste" :to="'/artistes/'+artist.artiste" v-for="artist in groupes" :key="artist.artiste">{{artist.artiste}}</nuxt-link></h2>
     <article class="ea-article-evenement">
+       <div class="informations">
+          <p class="date-event">{{ datehumaine }}</p>
+          <p class="date-time">{{ start }} > {{ end }}</p>
+          <div class="reserver"><i class="fab fa-facebook-square"></i> <a target="_blank" :href="'https://www.facebook.com/events/'+ idfb +'/'" alt="Événement Facebook">PARTICIPER</a></div>
+       </div>
        <div class="slider-evenement">
           <div class="slider__nav">
            <span id="moveLeft" class="slider__arrow">
@@ -34,7 +39,7 @@ import VueMarkdown from 'vue-markdown'
 import VueLazyload from 'vue-lazyload'
 import eaSidebarevenement from '~/components/sidebar-evenement.vue'
 export default {
-  layout: 'billet',
+  layout: 'default',
   transition: { name: 'intro', mode: 'out-in' },
   components: { VueMarkdown, VueLazyload, eaSidebarevenement },
   async asyncData({ params }) {
