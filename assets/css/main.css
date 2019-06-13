@@ -785,10 +785,10 @@ nav{
     display: block;
     transition:all .5s ease;
 }
-.billeterie:hover{
+.billetterie:hover{
     background: #fff;
 }
-.billeterie:hover a{
+.billetterie:hover a{
     color: #000;
 }
 
