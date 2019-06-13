@@ -3,11 +3,11 @@
     <header class="ea-ui">
       <ui-loading/>
       <ui-background/>
-      <nuxt-link to="/"><ui-logo/></nuxt-link>
+      <nuxt-link to="/"><ui-logo/></nuxt-link>      
+      <ui-menu class="ea-menu" />
       <div class="billetterie">
           <a href="#">acheter vos billets</a>
       </div>
-      <ui-menu class="ea-menu" />
     </header>
     <nuxt/>
     <ui-footer/>
