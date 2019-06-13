@@ -8,7 +8,7 @@
               <div v-for="lieu in lieux" :key="lieu.url" class="element-item">
                   <nuxt-link :to="lieu._path+'/'" >
                      <div class="ea-couverture-lieu" :style="{ backgroundImage: `url(${lieu.couverture})` }"></div>
-                     <p class="grid-artistes"><strong>{{lieu.title}}</strong></p>
+                     <p class="grid-lieu"><strong>{{lieu.title}}</strong></p>
                   </nuxt-link>
               </div>
           </div>
