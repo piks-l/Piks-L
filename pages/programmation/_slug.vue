@@ -4,8 +4,11 @@
     <article class="ea-article-evenement">
        <div class="informations">
           <p class="date-event">{{ datehumaine }}</p>
-          <p class="date-time">{{ start }} > {{ end }}</p>
-          <div class="reserver"><i class="fab fa-facebook-square"></i> <a target="_blank" :href="'https://www.facebook.com/events/'+ idfb +'/'" alt="Événement Facebook">PARTICIPER</a></div>
+          <p class="date-time">de <span>{{ start }}</span> à <span>{{ end }}</span></p>
+          <div class="reserver">
+              <i class="fab fa-facebook-square"></i> 
+              <a target="_blank" :href="'https://www.facebook.com/events/'+ idfb +'/'" alt="Événement Facebook">PARTICIPER</a>
+          </div>
        </div>
        <div class="slider-evenement">
           <div class="slider__nav">
