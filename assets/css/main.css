@@ -59,8 +59,8 @@ main {
     }
 
 
-/* EA TV */
-.ea-tv {
+/* EA Newsletter */
+.ea-newsletter {
     position: fixed;
     z-index: 102;
     bottom: 10vh;
@@ -69,16 +69,16 @@ main {
             transform: translate(-50%, 50%);
      padding: 15px;
 }
- .menu .ea-tv {
+ .menu .ea-newsletter {
      background: var(--blue-color);
 }
-    .ea-tv a {
+    .ea-newsletter a {
         font-size: 30px;
         font-weight: 600;
         color: #fff;
         text-decoration: none;
     }
-    .ea-tv a span{
+    .ea-newsletter a span{
         font-weight: 300;
         font-family: archivo-medium;
     }
@@ -792,63 +792,66 @@ nav{
     color: #000;
 }
 
-.ea-sidebar-evenement {
-    color: #fff;
-    position: fixed;
-    right: 10%;
-    top: 50%;
-    max-width: 225px;
-    -webkit-transform: translateY(-50%);
-    transform: translate(50%, -50%);
+.informations {
+    position: relative;
+    padding: 15px 50px;
+    background: #000;
+    display: block;
+    text-align: left;
 }
-.date-event {
+.date-event, .date-time {
     font-size: 18px;
     font-weight: 600;
     margin: 0;
-        font-family: OPTIVenus-BoldExtended;
-
+    display: inline-block;
+    line-height: 50px;
+    color: #fff;
+    position: relative;
+    left: 0;
+    letter-spacing: 1px;
+    font-family: OPTITomasoBold-Extended;
 }
 .date-time {
-    color: #000;
-    font-size: 18px;
-    font-weight: 600;
-    margin: 0;
-    font-family: OPTITomasoBold-Extended;
-    text-shadow: 0 0 15px #444;
+    padding: 0 30px;
 }
 
 
 .reserver {
     position: relative;
-    display: flex;
-    margin: 15px 0;
+    display: inline-block;
+    margin: 0;
+    float: right;
 }
-    .reserver i {
-        line-height: 50px;
-        width: 50px;
-        height: 50px;
-        font-size: 36px;
-        position: relative;
-        display: inline-block;
-        transition: all .3s ease;
-    }
-    .reserver a {
-        position: relative;
-        display: inline-block;
-        color: #fff;
-        text-decoration: none;
-        line-height: 50px;
-        width: calc(100% - 50px);
-        background: var(--blue-color);
-        transition: all .3s ease;
-    }
+.reserver a, .reserver i {
+    position: relative;
+    display: inline-block;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    color: #fff;
+}
+.reserver i {
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    line-height: 48px;
+    text-align: center;
+    margin: 0 10px;
+}
+.reserver a {
+    color: #fff;
+    line-height: 50px;
+    text-decoration: none;
+    background: var(--blue-color);
+    padding: 0 30px;
+    float: right;
+}
     .reserver:hover i,
     .link-map:hover i{
-      color:  #000;
+      color: var(--blue-color);
     }
     .reserver:hover a {
-      background: #000;
-      color: #fff;
+      background: #fff;
+      color: #000;
     }
 .ea-sidebar-evenement hr {
     border: 2px solid #000;
