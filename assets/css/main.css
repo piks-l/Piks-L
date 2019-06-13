@@ -772,12 +772,15 @@ nav{
     padding: 15px 50px;
 }
 .tarif {
-    position: relative;
     display: inline-block;
     margin: 0;
-    line-height: 50px;
+    font-size: 20px;
     color: #fff;
     float: left;
+    border-bottom: 3px solid #000;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .billetterie, .billetterie a {
     color: #fff;
@@ -862,8 +865,7 @@ nav{
       padding: 0 30px;
       float: right;
   }
-      .reserver:hover i,
-      .link-map:hover i{
+      .reserver:hover i{
         color: var(--blue-color);
       }
       .reserver:hover a {
@@ -901,12 +903,10 @@ nav{
     text-decoration: none;
     font-size: 14px;
     right: 0;
-    
+    float: right;
     padding-left: 15px;
 }
-    .link-map a:hover{
-        color:#000; 
-    }
+
     
 .retour {
     color: var(--blue-color);
