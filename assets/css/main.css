@@ -502,7 +502,7 @@ nav{
         bottom: 10vh;
         -webkit-transform: translatex(-50%);
                 transform: translatex(-50%);
-    } 
+    }    
     .deco-video {
         height: 150px;
         width: 16%;
@@ -514,6 +514,12 @@ nav{
         -webkit-transform: translatex(50%);
                 transform: translatex(50%);
         mix-blend-mode: lighten;
+    }
+    .menu .deco-video {
+        right: -100%;
+    }
+    .menu.open .deco-video {
+        right: 10%;
     }
         .deco-video video {
             width: 100%;
