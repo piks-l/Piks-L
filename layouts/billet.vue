@@ -5,7 +5,7 @@
       <ui-background/>
       <nuxt-link to="/"><ui-logo/></nuxt-link>
       <div class="billetterie">
-          <p>acheter vos billets</p>
+          <a href="#">acheter vos billets</a>
       </div>
       <ui-menu class="ea-menu" />
     </header>
