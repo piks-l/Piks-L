@@ -27,13 +27,22 @@
             <div class="slider-item__image" :style="{ backgroundImage: `url(${img})` }"></div>
           </div>
       </div>
+      <div class="shop">
+          <p class="tarif">TARIF :</p>
+          <div class="billetterie">
+              <a href="#">acheter vos billets</a>
+          </div>
+          <div class="link-map">
+              <i class="fas fa-map-marked-alt"></i>
+              <nuxt-link :to="'/lieux/'+lieu">{{ lieu }}</nuxt-link>
+          </div>
+      </div>
       <vue-markdown class="description">{{description}}</vue-markdown>
     </article>
     <div class="nav-select">
       <div class="prev-event">&#60;  Soirée précédente</div>
       <div class="next-event">Soirée suivante  &#62;</div>
     </div>
-    <ea-Sidebarevenement :datehumaine="datehumaine" :start="start" :end="end" :lieu="lieu" :idfb="idfb" />
   </main>
 </template>
 <script>
