@@ -412,7 +412,7 @@ nav{
     .menu p {
         font-size: 24px;
         margin: 0;
-        font-family: 'OPTIVenus-BoldExtended';
+        font-family: Archivo-medium;
         letter-spacing: 2px;
     }
     .nav {
@@ -884,7 +884,7 @@ nav{
       color: #000;
     }
 .description {
-    background: var(--blue-color);
+    background: #000;
     padding:50px;
     color: #fff;
     text-align: left;
