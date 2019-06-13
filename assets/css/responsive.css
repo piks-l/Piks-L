@@ -180,9 +180,31 @@
   
 }
 @media only screen and (min-width: 600px) and (max-width: 959px) {
+     /***** Menu *****/
+    .menu-link {
+        font-size: 1.5em;
+    }
+    .social a {
+        height: 30px;
+    }
+    .social i {
+        line-height: 30px;
+    }
+    .menu p {
+        font-size: 10px;
+    }
+    .ea-tv a {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    .ea-slider .slider {
+        width: 100px;
+        height: 75px;
+    }
+  
     /**** Page prog ****/
     .ea-titre {
-        font-size: 2em;
+        font-size: 1.5em;
     }
     .element-item {
         width: calc(48% - 20px);
@@ -205,33 +227,53 @@
         height: 100px;
     }
   
-  
-    /***** Menu *****/
-    .menu-link {
-        font-size: 2em;
+    /**** Page event ****/
+    .ea-sidebar-evenement {
+        max-width: calc(20% - 20px);
     }
-    .social a {
-        height: 30px;
+    .date-event {
+        font-size: 10px;
     }
-    .social i {
-        line-height: 30px;
-    }
-    .menu p {
+    .date-time {
         font-size: 14px;
     }
-    .ea-tv a {
-        font-size: 20px;
-        letter-spacing: 1px;
+    .reserver i, .link-map i, retour b {
+        display: none;
     }
-    .ea-slider .slider {
-        width: 100px;
-        height: 75px;
+    .reserver a, .link-map a {
+        width: 100%;
+        font-size: 12px;
+        text-align:center;
+    }
+    .retour {
+        font-size: 18px;
+        line-height: 50px;
+    }
+    .description {
+        padding: 15px 30px;
+    }
+    .nav-select {
+        font-size: 8px;
+    }
+    .prev-event {
+        padding: 0 0 0 15px;
+    }
+    .next-event {
+        padding: 0 15px 0 0;
     }
 }
 @media only screen and (min-width: 960px) and (max-width: 1263px) {
    svg {
     height: 100%;
     width: auto;
+  }
+  
+   /***** Menu *****/
+  .menu-link {
+      font-size: 2em;
+  }
+  .menu p {
+    font-size: 12px;
   }
   
   /**** Page prog ****/
@@ -269,6 +311,9 @@
   }
   .retour b {
       font-size: 12px;
+  }
+  .nav-select {
+      font-size: 10px;
   }
   
 }
