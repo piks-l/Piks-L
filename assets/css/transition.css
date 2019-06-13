@@ -19,7 +19,7 @@
 .intro-leave-active::after {
   content: "";
   position: fixed;
-  z-index:101;
+  z-index:110;
   top: 0;
   left: 0;
   display: block;
@@ -90,7 +90,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 101;
+  z-index: 110;
   display: block;
   width: 100%;
   height: 50%;
