@@ -9,9 +9,6 @@
             <source src="/videos/etiquette-noir.mp4" type="video/mp4">
           </video>
       </div>
-      <div class="ea-tv">
-          <a href="#" alt="EATV">#EA<span>TV</span></a>
-      </div>
       <ui-menu class="ea-menu" />
     </header>
     <nuxt/>
