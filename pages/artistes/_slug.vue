@@ -1,8 +1,8 @@
 <template>
   <main class="ea-layout-lieu">
     <h2 class="ea-titre">{{title}}</h2>
-    <article class="ea-article-lieu">
-      <div class="lieux-item__image" :style="{ backgroundImage: `url(${thumbnail})` }"></div>
+    <article class="ea-article-artistes">
+      <div class="artistes-item__image" :style="{ backgroundImage: `url(${thumbnail})` }"></div>
       <vue-markdown class="description">{{description}}</vue-markdown>
       <vue-markdown class="iframe">{{iframe}}</vue-markdown>
       </div>
@@ -45,3 +45,10 @@ export default {
   }
 };
 </script>
+<style>
+.ea-article-artistes .artistes-item__image {
+    height: 280px;
+    background-position: center center;
+    background-size: cover;
+}
+</style>
