@@ -17,6 +17,35 @@ collections:
       - {label: "Nom", name: "title", widget: "string", tagname: "h1", required: true}
       - {label: "Description", name: "description", widget: "markdown", required: false}
       - {label: "Iframe", name: "iframe", widget: "markdown", required: false}
+      - label: "Evenement"
+        name: "Evenement"
+        widget: "list"
+        required: false
+        fields:
+          - label: "Date"
+            name: "dateh"
+            widget: "relation"
+            collection: "programmation"
+            searchFields: ["datehumaine", "titre"]
+            valueField: "datehumaine"
+            displayFields: ["datehumaine", "titre"]
+            multiple: "true"
+          - label: "Titre"
+            name: "titr"
+            widget: "relation"
+            collection: "programmation"
+            searchFields: ["datehumaine", "titre"]
+            valueField: "titre"
+            displayFields: ["datehumaine", "titre"]
+            multiple: "true"
+          - label: "Url"
+            name: "adresse"
+            widget: "relation"
+            collection: "programmation"
+            searchFields: ["datehumaine", "titre"]
+            valueField: "title"
+            displayFields: ["datehumaine", "titre"]
+            multiple: "true"
       - {label: "Langue", name: "langue", widget: "string", required: false}
       - {label: "Label", name: "label", widget: "string", required: false}
       - label: "Social"
@@ -66,17 +95,17 @@ collections:
             name: "titr"
             widget: "relation"
             collection: "programmation"
-            searchFields: ["title", "titre"]
+            searchFields: ["datehumaine", "titre"]
             valueField: "titre"
-            displayFields: ["title", "titre"]
+            displayFields: ["datehumaine", "titre"]
             multiple: "true"
           - label: "Url"
             name: "adresse"
             widget: "relation"
             collection: "programmation"
-            searchFields: ["title", "titre"]
+            searchFields: ["datehumaine", "titre"]
             valueField: "title"
-            displayFields: ["title", "titre"]
+            displayFields: ["datehumaine", "titre"]
             multiple: "true"
   - name: "programmation"
     label: "Programmation"
