@@ -200,7 +200,7 @@ export default {
   .slider__nav {
       position: absolute;
       z-index: 2;
-      background-color: #0635aa;
+      background-color: #000;
       bottom: 0px;
   }
   .slider-evenement .slider__nav {
