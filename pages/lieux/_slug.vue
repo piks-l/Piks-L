@@ -12,18 +12,29 @@
         </nuxt-link>
       </div>
     </article>
-     <ea-Sidebarlieu :gmap="gmap" :adresse="adresse" :direction="direction" />
+    <div class="right-side">
+      <aside class="ea-sidebar-evenement">
+          <div class=""><i class="fas fa-map-marked-alt"></i><p><a target="_blank" :href="gmap">{{ adresse }}</a></p></div>
+          <hr/>
+          <div class=""><i class="fas fa-walking"></i><p>{{ direction }}</p></div>
+          <hr/>
+          <div class="reserver" v-for="s in social" >
+            <a target="_blank" :href="lien" :alt="texte">{{texte}}</a>
+          </div>
+          <hr/>
+          <nuxt-link class="retour" to="/lieux/"><b>LIEUX</b>RETOUR</nuxt-link>
+      </aside>
+    </div>
   </main>
 </template>
 <script>
 import $ from 'jquery'
 import VueMarkdown from 'vue-markdown'
 import VueLazyload from 'vue-lazyload'
-import eaSidebarlieu from '~/components/sidebar-lieu.vue'
 export default {
   layout: 'default',
   transition: { name: 'intro', mode: 'out-in' },
-  components: { VueMarkdown, VueLazyload, eaSidebarlieu},
+  components: { VueMarkdown, VueLazyload},
   async asyncData({ params }) {
     let lieux = await import('~/content/lieux/page/' + params.slug + '.json');
     return lieux;
@@ -44,7 +55,6 @@ export default {
   beforeMount(){
   },
   mounted() {
-    console.log(this.title)
   },
   destroyed() {
   },
