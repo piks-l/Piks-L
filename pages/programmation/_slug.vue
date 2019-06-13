@@ -28,7 +28,7 @@
           </div>
       </div>
       <div class="shop">
-          <p class="tarif">TARIF :</p>
+          <div class="tarif">TARIF :</div>
           <div class="billetterie">
               <a href="#">acheter vos billets</a>
           </div>
