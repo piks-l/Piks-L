@@ -1,15 +1,22 @@
 {
-  "url": "flore",
-  "thumbnail": "/images/uploads/flore-1200x1200.jpg",
-  "title": "FLORE",
-  "description": "L’esthétique musicale de Flore a toujours été guidée par des rythmes complexes et des lignes de basse envoûtantes. En conséquence, sa production montre toujours une énergie brute exprimée dans un groove sexy et sauvage qui lui est propre.",
   "iframe": "<iframe width=\"100%\" height=\"300\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/21217&color=%232838dc&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
-  "langue": "FR",
-  "label": "POLAAR",
+  "Evenement": [
+    {
+      "dateh": "MER. 18 SEPTEMBRE",
+      "titr": "Electro Alternativ #15 Workshop Ableton",
+      "adresse": "20"
+    }
+  ],
+  "thumbnail": "/images/uploads/flore-1200x1200.jpg",
   "social": [
     {
       "lien": "https://www.facebook.com/FloreMusic/",
       "awesome": "fab fa-facebook"
     }
-  ]
+  ],
+  "url": "flore",
+  "label": "POLAAR",
+  "title": "FLORE",
+  "description": "L’esthétique musicale de Flore a toujours été guidée par des rythmes complexes et des lignes de basse envoûtantes. En conséquence, sa production montre toujours une énergie brute exprimée dans un groove sexy et sauvage qui lui est propre.",
+  "langue": "FR"
 }
