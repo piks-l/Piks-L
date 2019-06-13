@@ -26,6 +26,9 @@
       <div class="next-event">Soirée suivante  &#62;</div>
     </div>
     <ea-Sidebarevenement :datehumaine="datehumaine" :start="start" :end="end" :lieu="lieu" :idfb="idfb" />
+    <div class="mobile-menu">
+        <div class="select-info">INFORMATIONS</div>
+    </div>
   </main>
 </template>
 <script>
