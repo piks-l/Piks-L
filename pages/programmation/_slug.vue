@@ -34,7 +34,7 @@ import VueMarkdown from 'vue-markdown'
 import VueLazyload from 'vue-lazyload'
 import eaSidebarevenement from '~/components/sidebar-evenement.vue'
 export default {
-  layout: 'default',
+  layout: 'billet',
   transition: { name: 'intro', mode: 'out-in' },
   components: { VueMarkdown, VueLazyload, eaSidebarevenement },
   async asyncData({ params }) {
