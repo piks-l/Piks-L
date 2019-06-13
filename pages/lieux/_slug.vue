@@ -19,7 +19,7 @@
           <div class=""><i class="fas fa-walking"></i><p>{{ direction }}</p></div>
           <hr/>
           <div class="reserver" v-for="s in social" >
-            <a target="_blank" :href="lien" :alt="texte">{{texte}}</a>
+            <a target="_blank" :href="s.lien" :alt="s.texte">{{s.texte}}</a>
           </div>
           <hr/>
           <nuxt-link class="retour" to="/lieux/"><b>LIEUX</b>RETOUR</nuxt-link>
