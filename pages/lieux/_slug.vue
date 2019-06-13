@@ -64,7 +64,7 @@ export default {
 };
 </script>
 <style>
-.lieux-item__image {
+.ea-article-lieu .lieux-item__image {
     height: 280px;
     background-position: center center;
     background-size: cover;
@@ -82,5 +82,11 @@ export default {
 }
 .ea-layout-lieu .ea-sidebar-evenement i {
     font-size: 35px;
+}
+.ea-layout-lieu .ea-sidebar-evenement .reserver a {
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    background: #0635aa;
 }
 </style>
