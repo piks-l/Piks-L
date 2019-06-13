@@ -769,6 +769,7 @@ nav{
     transform: translateX(50%);
     background: #000;
     padding: 0 10px;
+    transition:all .5s ease;
 }
 .billetterie a {
     color: #fff;
@@ -776,6 +777,13 @@ nav{
     line-height: 2em;
     padding: 15px 0;
     display: block;
+    transition:all .5s ease;
+}
+.billeterie:hover{
+    background: #fff;
+}
+.billeterie:hover a{
+    color: #000;
 }
 
 .ea-sidebar-evenement {
