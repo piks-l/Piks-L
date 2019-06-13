@@ -813,6 +813,11 @@ nav{
 }
 .date-time {
     padding: 0 30px;
+    text-transform: uppercase;
+    color: var(--blue-color);
+}
+.date-time span {
+    color: #fff;
 }
 
 
