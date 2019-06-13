@@ -71,6 +71,10 @@
         display: inline-block;
     }
     .ea-tv {
+        display: none;
+    }
+    .menu .ea-tv {
+        display: block;
         position: relative;
         padding: 0;
         left: 50%;
