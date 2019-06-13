@@ -73,4 +73,14 @@ export default {
     width: calc(100% - 34px);
     margin: 0;
 }
+.ea-layout-lieu .ea-sidebar-evenement p a:hover {
+    color: #0635aa;
+    text-decoration: none;
+}
+.ea-layout-lieu .ea-sidebar-evenement p a {
+    color: white;
+}
+.ea-layout-lieu .ea-sidebar-evenement i {
+    font-size: 35px;
+}
 </style>
