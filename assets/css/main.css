@@ -660,10 +660,10 @@ nav{
 }
 
 .element-item {
-    width: calc(31.333% - 34px);
+    width: calc(31.333% - 35px);
     background: #000;
     color: #fff;
-    padding:17px;
+    padding:15px;
     margin: 1%;
     overflow: auto;
     transition:all .5s ease;
