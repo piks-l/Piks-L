@@ -65,6 +65,11 @@ export default {
     this.initSlider();
     this.switchBackground();
     this.countArtist();
+    
+    $( ".select-info" ).click(function() {
+        $( ".right-side" ).toggleClass( "mobile-info" );
+    });
+    
   },
   destroyed() {
     this.killBackground();
