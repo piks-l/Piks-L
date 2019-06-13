@@ -237,10 +237,13 @@
     .date-time {
         font-size: 14px;
     }
-    .reserver i, .link-map i, retour b {
+    .reserver i, 
+    .link-map i, 
+    .retour b {
         display: none;
     }
-    .reserver a, .link-map a {
+    .reserver a, 
+    .link-map a {
         width: 100%;
         font-size: 12px;
         text-align:center;
