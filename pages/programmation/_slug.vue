@@ -92,7 +92,7 @@ export default {
       if(count <= 1){
           $(".slider-evenement").addClass('no-nav');
       };
-      $(".title-artiste").each(function() {
+      $(".title-artiste, .link-map a").each(function() {
         var text = $(this).text();
         text = text.replace(/-/g, " ");
         $(this).text(text);
