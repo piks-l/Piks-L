@@ -779,7 +779,7 @@ nav{
     float: left;
     border-bottom: 3px solid #000;
     position: relative;
-    top: 50%;
+    top: 25px;
     transform: translateY(-50%);
 }
 .billetterie, .billetterie a {
@@ -827,7 +827,7 @@ nav{
     font-family: OPTITomasoBold-Extended;
 }
 .date-time {
-    padding: 0 30px;
+    padding: 0 10px;
     text-transform: uppercase;
     color: var(--blue-color);
 }
