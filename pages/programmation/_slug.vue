@@ -40,9 +40,17 @@
       <vue-markdown class="description">{{description}}</vue-markdown>
     </article>
     <div class="nav-select">
-      <div class="prev-event">&#60;  Soirée précédente</div>
-      <div class="next-event">Soirée suivante  &#62;</div>
+        <div class="prev-event">&#60;  Soirée précédente</div>
+        <div class="next-event">Soirée suivante  &#62;</div>
     </div>
+    <div class="social">
+        <a href="#" alt="FB"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" alt="TW"><i class="fab fa-twitter"></i></a>
+        <a href="#" alt="YT"><i class="fab fa-youtube"></i></a>
+        <a href="#" alt="IT"><i class="fab fa-instagram"></i></a>
+        <a href="#" alt="SP"><i class="fab fa-spotify"></i></a>
+    </div>
+    <nuxt-link class="retour" to="/programmation/"><b>PROGRAMMATION</b>RETOUR</nuxt-link>
   </main>
 </template>
 <script>
