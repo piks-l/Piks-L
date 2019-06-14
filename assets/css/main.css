@@ -909,14 +909,16 @@ nav{
 
     
 .retour {
-    color: var(--blue-color);
-    display: block;
+    color: #0635aa;
     text-decoration: none;
     font-size: 34px;
     font-family: OPTITomasoBold-Extended;
     font-weight: 600;
-    transition: all .3s ease;
-    text-shadow: 0px 0px 50px #444;
+    text-shadow: 0 0 50px #444;
+    position: fixed;
+    bottom: 5vh;
+    right: 10%;
+    transform: translatex( 50%);
 }
     .retour b {
         color: #fff;
@@ -961,7 +963,12 @@ nav{
     padding: 0 50px 0 0;
     cursor:pointer;
 }
-
+.ea-layout-evenement .social {
+    position: fixed;
+    right: 10%;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
 
 /* Page lieu */
 .ea-couverture-lieu {
