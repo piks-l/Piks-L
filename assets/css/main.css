@@ -743,7 +743,6 @@ nav{
 .title-artiste {
     text-decoration: none;
     color: #fff;
-    margin-right: 1.2em;
     border-bottom: 3px solid #000;
     transition: all .3s ease;
 }
@@ -758,6 +757,10 @@ nav{
     content: " + ";
     position: absolute;
     margin-left: .2em;
+    
+}
+.ea-titre a:last-child {
+    margin-right: 1.2em;
 }
 .ea-titre a:last-child::after {
     content: '';
