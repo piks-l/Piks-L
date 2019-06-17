@@ -3,29 +3,25 @@
     <p class="date-event">{{ datehumaine }}</p>
     <h2 class="ea-titre"><nuxt-link class="title-artiste" :to="'/artistes/'+artist.artiste" v-for="artist in groupes" :key="artist.artiste">{{artist.artiste}}</nuxt-link></h2>
     <article class="ea-article-evenement">
-       <div class="informations">
-          <p class="date-time">de <span>{{ start }}</span> à <span>{{ end }}</span></p>
-          <div class="link-map">
-              <i class="fas fa-map-marked-alt"></i>
-              <nuxt-link :to="'/lieux/'+lieu">{{ lieu }}</nuxt-link>
-          </div>          
-       </div>
-      <div class="shop">
-          <nuxt-link class="retour" to="/programmation/">RETOUR</nuxt-link>
-          <div class="billetterie">
-              <a href="#">acheter vos billets</a>
-          </div>
-      </div>      
-      <vue-markdown class="description">
-          <div class="tarif">TARIF :</div>
-          <div class="desripton">{{description}}</div>
-      </vue-markdown>
+        <div class="informations">
+           <p class="date-time">de <span>{{ start }}</span> à <span>{{ end }}</span></p>
+           <div class="link-map">
+               <i class="fas fa-map-marked-alt"></i>
+               <nuxt-link :to="'/lieux/'+lieu">{{ lieu }}</nuxt-link>
+           </div>          
+        </div>         
+        <vue-markdown class="description">
+            <div class="tarif">TARIF :</div>
+            <div class="desripton">{{description}}</div>
+        </vue-markdown>
+        <div class="shop">
+            <nuxt-link class="retour" to="/programmation/">RETOUR</nuxt-link>
+            <div class="billetterie">
+                <a href="#">acheter vos billets</a>
+            </div>
+        </div>
     </article>
-    <div class="nav-select">
-        <div class="prev-event">&#60;  Soirée précédente</div>
-        <div class="next-event">Soirée suivante  &#62;</div>
-    </div>
-    <nuxt-link class="retour" to="/programmation/"><b>PROGRAMMATION</b>RETOUR</nuxt-link>
+       
   </main>
 </template>
 <script>
