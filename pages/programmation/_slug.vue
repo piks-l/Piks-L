@@ -9,8 +9,10 @@
                <i class="fas fa-map-marked-alt"></i>
                <nuxt-link :to="'/lieux/'+lieu">{{ lieu }}</nuxt-link>
            </div>          
-        </div>     
+        </div>
+        
         <div class="tarif">TARIF :</div>
+        
         <vue-markdown class="description">{{description}}</vue-markdown>
         <div class="shop">
             <nuxt-link class="retour" to="/programmation/">RETOUR</nuxt-link>
