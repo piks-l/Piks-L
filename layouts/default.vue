@@ -1,5 +1,5 @@
 <template>
-  <div id="main" class="ea-layout">
+  <div id="main" :class="'ea-layout-'+this.$route.path">
     <header class="ea-ui">
       <ui-loading/>
       <ui-background/>
