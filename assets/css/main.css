@@ -802,12 +802,13 @@ nav{
     text-decoration: none;
     line-height: 50px;
     display: block;
-}
-.billetterie:hover{
-    background: #fff;
+    right: -15px;
+    position: relative;
+    padding: 0 15px;
 }
 .billetterie:hover a{
     color: #000;
+    background: #fff;
 }
 
 .informations {
@@ -881,6 +882,17 @@ nav{
     color: #fff;
     position: relative;
     display: inline-block;
+    text-decoration: none;
+}
+.retour a{
+    display: block;
+    right: -15px;
+    position: relative;
+    padding: 0 15px; 
+}
+.retour:hover a{
+    color: #000;
+    background: #fff;
 }
 
 .description {
