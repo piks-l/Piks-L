@@ -43,12 +43,6 @@
         <div class="prev-event">&#60;  Soirée précédente</div>
         <div class="next-event">Soirée suivante  &#62;</div>
     </div>
-    <div class="social">
-        <a target="_blank" href="https://www.facebook.com/electroalternativ" alt="Facebook EA"><i class="fab fa-facebook-f"></i></a>
-        <a target="_blank" href="https://twitter.com/electroalternat" alt="Twitter EA"><i class="fab fa-twitter"></i></a>
-        <a target="_blank" href="https://www.youtube.com/user/electroalternativ" alt="Youtube EA"><i class="fab fa-youtube"></i></a>
-        <a target="_blank" href="https://www.instagram.com/electroalternativ/" alt="Instagram EA"><i class="fab fa-instagram"></i></a>
-    </div>
     <nuxt-link class="retour" to="/programmation/"><b>PROGRAMMATION</b>RETOUR</nuxt-link>
   </main>
 </template>
@@ -56,11 +50,10 @@
 import $ from 'jquery'
 import VueMarkdown from 'vue-markdown'
 import VueLazyload from 'vue-lazyload'
-import eaSidebarevenement from '~/components/sidebar-evenement.vue'
 export default {
   layout: 'default',
   transition: { name: 'intro', mode: 'out-in' },
-  components: { VueMarkdown, VueLazyload, eaSidebarevenement },
+  components: { VueMarkdown, VueLazyload },
   async asyncData({ params }) {
     let page = await import('~/content/programmation/page/' + params.slug + '.json');
     return page;
