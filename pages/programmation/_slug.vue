@@ -1,43 +1,25 @@
 <template>
   <main class="ea-layout-evenement" :data-back="background" :data-duo="type">
+    <p class="date-event">{{ datehumaine }}</p>
     <h2 class="ea-titre"><nuxt-link class="title-artiste" :to="'/artistes/'+artist.artiste" v-for="artist in groupes" :key="artist.artiste">{{artist.artiste}}</nuxt-link></h2>
     <article class="ea-article-evenement">
        <div class="informations">
-          <p class="date-event">{{ datehumaine }}</p>
           <p class="date-time">de <span>{{ start }}</span> à <span>{{ end }}</span></p>
-          <div class="reserver">
-              <i class="fab fa-facebook-square"></i> 
-              <a target="_blank" :href="'https://www.facebook.com/events/'+ idfb +'/'" alt="Événement Facebook">PARTICIPER</a>
-          </div>
-       </div>
-       <div class="slider-evenement">
-          <div class="slider__nav">
-           <span id="moveLeft" class="slider__arrow">
-              <svg class="slider__icon" width="24" height="24" viewBox="0 0 24 24">
-                <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
-              </svg>
-            </span>
-            <span id="moveRight" class="slider__arrow" >
-              <svg class="slider__icon"  width="24" height="24" viewBox="0 0 24 24">
-                <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
-              </svg>    
-            </span>
-          </div>
-         <div v-for="(img, i) in galerie" :key="img" class="slider-item">
-            <div class="slider-item__image" :style="{ backgroundImage: `url(${img})` }"></div>
-          </div>
-      </div>
-      <div class="shop">
-          <div class="tarif">TARIF :</div>
-          <div class="billetterie">
-              <a href="#">acheter vos billets</a>
-          </div>
           <div class="link-map">
               <i class="fas fa-map-marked-alt"></i>
               <nuxt-link :to="'/lieux/'+lieu">{{ lieu }}</nuxt-link>
+          </div>          
+       </div>
+      <div class="shop">
+          <nuxt-link class="retour" to="/programmation/">RETOUR</nuxt-link>
+          <div class="billetterie">
+              <a href="#">acheter vos billets</a>
           </div>
-      </div>
-      <vue-markdown class="description">{{description}}</vue-markdown>
+      </div>      
+      <vue-markdown class="description">
+          <div class="tarif">TARIF :</div>
+          <div class="desripton">{{description}}</div>
+      </vue-markdown>
     </article>
     <div class="nav-select">
         <div class="prev-event">&#60;  Soirée précédente</div>
