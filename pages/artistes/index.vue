@@ -125,3 +125,8 @@ export default {
   }
 }
 </script>
+<style>
+.ea-layout-artistes .element-item {
+    width: auto !important;
+}
+</style>
