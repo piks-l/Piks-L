@@ -228,13 +228,13 @@ export default {
   }
   .slider__arrow:nth-child(1):after {
       content:'';
-      right: -3px;
+      right: 0;
       position: absolute;
       width: 1px;
       background-color: #b0b0b0;
       height: 14px;
       top: 50%;
-      margin-top: -7px;
+      margin-top: -6px;
   }
   .active{
       z-index: 1;
