@@ -944,3 +944,25 @@ nav{
     left: -15px;
     top: -15px;
 }
+
+/* Social UI */
+.ea-layout-programmation .right-side {
+    display: none;
+}
+.right-side {
+    top: 50%;
+    z-index: 100;
+    position: fixed;
+    right: 10%;
+    -webkit-transform: translate(50%,-50%);
+    transform: translate(50%,-50%);
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
