@@ -11,11 +11,12 @@
            </div>          
         </div>
         
-        <div class="tarif">TARIF :</div>
+        
         
         <vue-markdown class="description">{{description}}</vue-markdown>
         <div class="shop">
-            <nuxt-link class="retour" to="/programmation/">RETOUR</nuxt-link>
+            <nuxt-link class="retour" to="/programmation/">&#60; RETOUR</nuxt-link>
+            <div class="tarif">TARIF :</div>
             <div class="billetterie">
                 <a href="#">acheter vos billets</a>
             </div>
