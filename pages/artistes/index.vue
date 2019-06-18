@@ -62,7 +62,9 @@ export default {
             var grid = new Isotope(".grid", {
               itemSelector: ".element-item",
               stamp: '.stamp',
-              layoutMode: 'masonry'
+                masonry: {
+                  columnWidth: 100
+                }
             });
             // store filter for each group
             var filters = {};
