@@ -7,7 +7,12 @@
     opacity: 0;
     margin-top: 50px;
 } 
-
+.ea-layout-lieux .ea-background,
+.ea-layout-lieux-slug .ea-background,
+.ea-layout-artistes .ea-background,
+.ea-layout-artistes-slug .ea-background {
+    display: none;
+}
 
 .intro-enter-active,
 .intro-leave-active {
