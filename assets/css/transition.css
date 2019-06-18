@@ -1,9 +1,10 @@
-.page-enter-active .ea-titre, 
-.page-leave-active .ea-titre{
+.intro-enter-active .ea-titre, 
+.intro-leave-active .ea-titre{
     transition: all .50s ease-out;
+    transition-delay: 600ms;
 }
-.page-enter .ea-titre, 
-.page-leave-active .ea-titre{
+.intro-enter .ea-titre, 
+.intro-leave-active .ea-titre{
     opacity: 0;
     margin-top: 50px;
 } 
