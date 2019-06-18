@@ -947,11 +947,15 @@ nav{
 
 /* Social UI */
 .ea-layout-programmation .right-side {
+    opacity:0;
     transition-delay: 600ms;
     transition: all .50s ease-out;
     display: none;
 }
 .right-side {
+    transition-delay: 600ms;
+    transition: all .50s ease-out;
+    opacity:1;
     top: 50%;
     z-index: 100;
     position: fixed;
