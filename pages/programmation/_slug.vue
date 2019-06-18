@@ -223,6 +223,8 @@ export default {
       display: inline-block;
       padding: 11px 15px;
       position: relative;
+      color: #fff;
+      line-height: 15px;
   }
   .slider__arrow:nth-child(1):after {
       content:'';
