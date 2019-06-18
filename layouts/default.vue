@@ -9,8 +9,9 @@
             <source src="/videos/etiquette-noir.mp4" type="video/mp4">
           </video>
       </div>
-      <ea-social/>
+      
       <ui-menu class="ea-menu" />
+      <ea-social/>
     </header>
     <nuxt/>
     <ui-footer/>
