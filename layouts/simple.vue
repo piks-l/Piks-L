@@ -1,11 +1,11 @@
 <template>
   <div id="main" :class="'ea-layout-'+this.$route.name">
-    <div class="ea_col mobile-menu">
-      MENU
-    </div>
     <div class="ea_col ui-left">
       <nuxt-link to="/"><ui-logo/></nuxt-link>
       <ui-menu class="ea-menu" />
+    </div>
+    <div class="ea_col mobile-menu">
+      MENU
     </div>
     <div class="ea_col ui-content">
       <nuxt/>
