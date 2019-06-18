@@ -900,6 +900,9 @@ nav{
     color: #000;
     background: #fff;
 }
+.retour i {
+    margin-right: 10px;
+}
 
 .description {
     background: #000;
