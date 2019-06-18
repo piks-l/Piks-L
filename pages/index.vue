@@ -1,7 +1,6 @@
 <template>
   <main class="black">
     <ea-titre/>
-    <nuxt-link to="/programmation/">PROGRAMMATION</nuxt-link>
   </main>
 </template>
 <script>
@@ -18,12 +17,3 @@
     }
   }
 </script>
-<style>
-    .page-enter-active, .page-leave-active {
-      transition: all .30s ease-out;
-    }
-    .page-enter, .page-leave-active {
-      opacity: 0;
-      transform-origin: 50% 50%;
-    }   
-</style>
