@@ -2,11 +2,12 @@
 .intro-leave-active .ea-titre{
     transition: all .50s ease-out;
     transition-delay: 600ms;
+    filter: blur(0px);
 }
 .intro-enter .ea-titre, 
 .intro-leave-active .ea-titre{
     opacity: 0;
-    margin-top: 50px;
+    filter: blur(50px);
 } 
 .ea-layout-lieux .ea-background,
 .ea-layout-lieux-slug .ea-background,
