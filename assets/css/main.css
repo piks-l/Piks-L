@@ -947,6 +947,8 @@ nav{
 
 /* Social UI */
 .ea-layout-programmation .right-side {
+    transition-delay: 600ms;
+    transition: all .50s ease-out;
     display: none;
 }
 .right-side {
