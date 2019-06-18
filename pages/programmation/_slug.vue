@@ -10,9 +10,23 @@
                <nuxt-link :to="'/lieux/'+lieu">{{ lieu }}</nuxt-link>
            </div>          
         </div>
-        
-        
-        
+        <div class="slider-evenement">
+            <div class="slider__nav">
+                <span id="moveLeft" class="slider__arrow">
+                  <svg class="slider__icon" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+                  </svg>
+                </span>
+                <span id="moveRight" class="slider__arrow" >
+                  <svg class="slider__icon"  width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+                  </svg>    
+                </span>
+            </div>
+           <div v-for="(img, i) in galerie" :key="img" class="slider-item">
+              <div class="slider-item__image" :style="{ backgroundImage: `url(${img})` }"></div>
+           </div>
+        </div>
         <vue-markdown class="description">{{description}}</vue-markdown>
         <div class="shop">
             <nuxt-link class="retour" to="/programmation/">&#60; RETOUR</nuxt-link>
