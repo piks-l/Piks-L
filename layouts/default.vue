@@ -13,7 +13,10 @@
       <ui-menu class="ea-menu" />
       
     </header>
-    <nuxt/>
+    <transition name="outro" mode="out-in" appear>
+      <router-view :key="$route.fullPath"></router-view>
+    </transition>
+    
     <ui-footer/>
   </div>
 </template>
