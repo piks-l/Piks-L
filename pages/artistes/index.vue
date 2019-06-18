@@ -5,10 +5,8 @@
           <div class="grid">
               <div v-for="artiste in artistes" :key="artiste.url" class="element-item">
                   <nuxt-link :to="artiste._path+'/'" >
-                     <div class="ea-couverture-lieu" :style="{ backgroundImage: `url(${artiste.thumbnail})` }">
                        <p class="grid-artistes"><strong>{{artiste.title}}</strong></p>
                        <p class="grid-intro">{{artiste.label}} <small>{{artiste.langue}}</small></p>
-                     </div>
                   </nuxt-link>
               </div>
           </div>
