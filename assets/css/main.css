@@ -781,12 +781,13 @@ nav{
     text-align: left;
 }
 .tarif {
-    display: block;
+    display: inline-block;
     margin: 0;
     font-size: 20px;
     color: #fff;
-    background: #000;
-    padding: 15px 15px 0;
+    padding: 0 15px;
+    line-height: 50px;
+    position: relative;
 }
 .billetterie, .billetterie a {
     color: #fff;
@@ -887,6 +888,7 @@ nav{
     position: relative;
     display: inline-block;
     text-decoration: none;
+    float: left;
 }
 .retour a{
     display: block;
