@@ -8,7 +8,9 @@
       MENU
     </div>
     <div class="ea_col ui-content">
-      <nuxt/>
+      <transition name="intro" mode="out-in" appear>
+      <router-view :key="$route.fullPath"></router-view>
+      </transition>
     </div>
     <div class="ea_col ui-right">
       <div class="deco-video">
