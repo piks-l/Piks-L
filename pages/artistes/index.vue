@@ -61,7 +61,8 @@ export default {
     ea() {
             var grid = new Isotope(".grid", {
               itemSelector: ".element-item",
-              stamp: '.stamp'
+              stamp: '.stamp',
+              layoutMode: 'masonry'
             });
             // store filter for each group
             var filters = {};
