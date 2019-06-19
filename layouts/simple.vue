@@ -9,7 +9,6 @@
             <source src="/videos/etiquette-noir.mp4" type="video/mp4">
           </video>
       </div>
-      <ea-social/>
       <ui-menu class="ea-menu" />
     </header>
     <transition name="intro" mode="out-in" appear>
@@ -25,15 +24,13 @@
   import uiMenu from '~/components/ui/menu.vue'
   import uiFooter from '~/components/ui/footer.vue'
   import uiBackground from '~/components/ui/background.vue'
-  import eaSocial from '~/components/social.vue'
   export default {
       components: {
           uiLoading,
           uiLogo,
           uiMenu,
           uiFooter,
-          uiBackground,
-          eaSocial
+          uiBackground
       },
       mounted () {
       }
