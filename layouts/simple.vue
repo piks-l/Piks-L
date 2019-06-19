@@ -8,7 +8,7 @@
       MENU
     </div>
     <div class="ea_col ui-content">
-      <transition name="intro" mode="out-in" appear>
+      <transition name="intro" mode="in-out" appear>
       <router-view :key="$route.fullPath"></router-view>
       </transition>
     </div>
