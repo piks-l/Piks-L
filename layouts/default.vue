@@ -13,7 +13,7 @@
       <ui-menu class="ea-menu" />
       
     </header>
-    <transition name="outro" mode="out-in" appear>
+    <transition name="intro" mode="out-in" appear>
       <router-view :key="$route.fullPath"></router-view>
     </transition>
     
