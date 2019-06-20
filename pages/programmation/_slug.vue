@@ -130,8 +130,10 @@ export default {
       setTimeout(function(){
         var next=current;
         current= current+1;
-        setSlide(next, current);
-      },2500);
+        var lol = setSlide(next, current);
+        sliderInterval = setInterval(lol, 4000);
+      },0);
+      
     },
     killBackground() {
       var duo = $('main').attr('data-duo');
