@@ -102,6 +102,7 @@ export default {
       $('.slider-evenement .slider-item').eq(0).addClass('active');
       var total = $('.slider-evenement .slider-item').length;
       var current = 0;
+      var sliderInterval = setInterval(slideNext, 4000);
       $('.slider-evenement #moveRight').on('click', function(){
         var next=current;
         current= current+1;
@@ -139,7 +140,7 @@ export default {
       function slideNext(){
          $('.slider-evenement #moveLeft').click();
       }   
-   sliderInterval = setInterval(slideNext, 4000);
+      sliderInterval = setInterval(slideNext, 4000);
       
     },
     killBackground() {
