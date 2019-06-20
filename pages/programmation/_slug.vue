@@ -99,9 +99,12 @@ export default {
       
     },
     initSlider() {
+    
       $('.slider-evenement .slider-item').eq(0).addClass('active');
       var total = $('.slider-evenement .slider-item').length;
       var current = 0;
+      var sliderInterval = setInterval(slideNext, 4000);
+      
       $('.slider-evenement #moveRight').on('click', function(){
         var next=current;
         current= current+1;
@@ -112,6 +115,7 @@ export default {
         current = current- 1;
         setSlide(prev, current);
       });
+      
       function setSlide(prev, next){
         var slide= current;
         if(next>total-1){
@@ -121,17 +125,15 @@ export default {
         if(next<0){
           slide=total - 1;
           current=total - 1;
-        }
-       $('.slider-evenement .slider-item').eq(prev).removeClass('active');
-       $('.slider-evenement .slider-item').eq(slide).addClass('active');
-        console.log('current '+current);
-        console.log('prev '+prev);
+        }        
+        $('.slider-evenement .slider-item').eq(prev).removeClass('active');
+        $('.slider-evenement .slider-item').eq(slide).addClass('active');
       }
       
       function slideNext(){
          $('.slider-evenement #moveLeft').click();
       }   
-      sliderInterval = setInterval(slideNext, 4000);
+      
       
     },
     killBackground() {
