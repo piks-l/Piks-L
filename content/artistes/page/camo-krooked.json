@@ -1,5 +1,19 @@
 {
   "url": "camo-&-krooked",
   "thumbnail": "/images/uploads/camo-krooked-1200x1200.jpg",
-  "title": "CAMO & KROOKED"
+  "title": "CAMO & KROOKED",
+  "description": "Toujours à la recherche de nouvelles sonorités Camo & Krooked s’est rapidement imposé comme l'un des duos les plus talentueux de la scène drum&bass, n'hésitant pas à s'aventurer sur de nouveaux tempos ou terrains musicaux sans jamais décevoir les fans.",
+  "iframe": "<iframe width=\"1189\" height=\"669\" src=\"https://www.youtube.com/embed/RyzO6jusY1I\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+  "langue": "AT",
+  "label": "Hospital Records",
+  "social": [
+    {
+      "lien": "https://www.facebook.com/CamoKrooked/",
+      "awesome": "Facebook"
+    },
+    {
+      "lien": "https://www.instagram.com/camokrooked/",
+      "awesome": "Instagram"
+    }
+  ]
 }
