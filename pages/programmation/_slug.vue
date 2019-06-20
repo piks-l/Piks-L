@@ -112,6 +112,7 @@ export default {
         setSlide(next, current);
       });
       $('.slider-evenement #moveLeft').on('click', function(){
+        clearInterval(sliderInterval);
         var prev=current;
         current = current- 1;
         setSlide(prev, current);
