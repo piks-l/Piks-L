@@ -1,6 +1,13 @@
 {
   "Evenement": [],
   "thumbnail": "/images/uploads/centre-culturel-bellegarde.jpg",
+  "social": [
+    {
+      "texte": "Facebook",
+      "lien": "https://www.facebook.com/centrebellegarde/"
+    },
+    {}
+  ],
   "couverture": "/images/uploads/centre-culturel-bellegarde.jpg",
   "date": "06/06/2019",
   "url": "centre-culturel-bellegarde",
