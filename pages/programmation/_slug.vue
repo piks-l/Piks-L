@@ -102,11 +102,9 @@ export default {
       $('.slider-evenement .slider-item').eq(0).addClass('active');
       var total = $('.slider-evenement .slider-item').length;
       var current = 0;
-      var sliderInterval = setInterval(slideNext, 4000);
       $('.slider-evenement #moveRight').on('click', function(){
         var next=current;
         current= current+1;
-        clearInterval(sliderInterval);
         setSlide(next, current);
       });
       $('.slider-evenement #moveLeft').on('click', function(){
@@ -129,12 +127,6 @@ export default {
         console.log('current '+current);
         console.log('prev '+prev);
       }
-      setTimeout(function(){
-        var next=current;
-        current= current+1;
-        var lol = setSlide(next, current);
-        sliderInterval = setInterval(lol, 4000);
-      },0);
       
       function slideNext(){
          $('.slider-evenement #moveLeft').click();
