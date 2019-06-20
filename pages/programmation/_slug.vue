@@ -124,14 +124,14 @@ export default {
         }
        $('.slider-evenement .slider-item').eq(prev).removeClass('active');
        $('.slider-evenement .slider-item').eq(slide).addClass('active');
-        setTimeout(function(){
-          var next=current;
-          current= current+1;
-          setSlide(next, current);
-        },800);
         console.log('current '+current);
         console.log('prev '+prev);
       }
+      setTimeout(function(){
+        var next=current;
+        current= current+1;
+        setSlide(next, current);
+      },2500);
     },
     killBackground() {
       var duo = $('main').attr('data-duo');
