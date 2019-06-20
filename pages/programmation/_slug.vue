@@ -105,11 +105,13 @@ export default {
       $('.slider-evenement #moveRight').on('click', function(){
         var next=current;
         current= current+1;
+        clearInterval(sliderInterval);
         setSlide(next, current);
       });
       $('.slider-evenement #moveLeft').on('click', function(){
         var prev=current;
         current = current- 1;
+        clearInterval(sliderInterval);
         setSlide(prev, current);
       });
       function setSlide(prev, next){
