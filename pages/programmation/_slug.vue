@@ -106,6 +106,7 @@ export default {
       var sliderInterval = setInterval(slideNext, 4000);
       
       $('.slider-evenement #moveRight').on('click', function(){
+        clearInterval(sliderInterval);
         var next=current;
         current= current+1;
         setSlide(next, current);
