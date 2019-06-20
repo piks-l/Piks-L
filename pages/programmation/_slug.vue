@@ -134,6 +134,11 @@ export default {
         sliderInterval = setInterval(lol, 4000);
       },0);
       
+      function slideNext(){
+         $('.slider-evenement #moveLeft').click();
+      }   
+   sliderInterval = setInterval(slideNext, 4000);
+      
     },
     killBackground() {
       var duo = $('main').attr('data-duo');
