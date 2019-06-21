@@ -9,12 +9,7 @@
            <p class="grid-date"><strong>{{event.dateh}}</strong></p>
            <div class="line"></div>
            <p class="grid-artistes"><strong>{{event.titr}}</strong></p>
-        </nuxt-link>
-      </div>
-    </article>
-    <div class="right-side">
-      <aside class="ea-sidebar-evenement">
-          <div class=""><i class="fas fa-map-marked-alt"></i><p><a target="_blank" :href="gmap">{{ adresse }}</a></p></div>
+                     <div class=""><i class="fas fa-map-marked-alt"></i><p><a target="_blank" :href="gmap">{{ adresse }}</a></p></div>
           <hr/>
           <div class=""><i class="fas fa-walking"></i><p>{{ direction }}</p></div>
           <hr/>
@@ -22,6 +17,11 @@
             <a target="_blank" :href="s.lien" :alt="s.texte">{{s.texte}}</a>
           </div>
           <hr/>
+        </nuxt-link>
+      </div>
+    </article>
+    <div class="right-side">
+      <aside class="ea-sidebar-evenement">
           <nuxt-link class="retour" to="/lieux/"><b>LIEUX</b>RETOUR</nuxt-link>
       </aside>
     </div>
@@ -32,7 +32,7 @@ import $ from 'jquery'
 import VueMarkdown from 'vue-markdown'
 import VueLazyload from 'vue-lazyload'
 export default {
-  layout: 'default',
+  layout: 'default-mono',
   transition: { name: 'intro', mode: 'out-in' },
   components: { VueMarkdown, VueLazyload},
   async asyncData({ params }) {
