@@ -9,7 +9,7 @@
            <p class="grid-date"><strong>{{event.dateh}}</strong></p>
            <div class="line"></div>
            <p class="grid-artistes"><strong>{{event.titr}}</strong></p>
-                     <div class=""><i class="fas fa-map-marked-alt"></i><p><a target="_blank" :href="gmap">{{ adresse }}</a></p></div>
+          <div class=""><i class="fas fa-map-marked-alt"></i><p><a target="_blank" :href="gmap">{{ adresse }}</a></p></div>
           <hr/>
           <div class=""><i class="fas fa-walking"></i><p>{{ direction }}</p></div>
           <hr/>
@@ -63,30 +63,3 @@ export default {
   }
 };
 </script>
-<style>
-.ea-article-lieu .lieux-item__image {
-    height: 280px;
-    background-position: center center;
-    background-size: cover;
-}
-.ea-article-lieu .element-item {
-    width: calc(100% - 34px);
-    margin: 0;
-}
-.ea-layout-lieu .ea-sidebar-evenement p a:hover {
-    color: #0635aa;
-    text-decoration: none;
-}
-.ea-layout-lieu .ea-sidebar-evenement p a {
-    color: white;
-}
-.ea-layout-lieu .ea-sidebar-evenement i {
-    font-size: 35px;
-}
-.ea-layout-lieu .ea-sidebar-evenement .reserver a {
-    color: #fff;
-    text-decoration: none;
-    width: 100%;
-    background: #0635aa;
-}
-</style>
