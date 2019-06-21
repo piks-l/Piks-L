@@ -49,7 +49,7 @@ export default {
   },
   head() {
     return {
-      title: 'EA#15 / `${this.titre}`',
+      title: 'EA#15 / ${this.titre}',
       meta: [
         { hid: 'description', name: 'description', content: `${this.description}` },
         { 'property': 'og:title', 'content': 'EA#15 /`${this.titre}`', 'vmid': 'og:title' },
