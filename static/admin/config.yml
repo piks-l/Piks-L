@@ -4,6 +4,7 @@ backend:
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 display_url: https://electro-alternativ-2019.netlify.com/
+logo_url: https://electro-alternativ-2019.netlify.com/images/logo.svg
 collections:
   - name: "artistes"
     label: "Artistes"
@@ -55,6 +56,8 @@ collections:
         fields:
           - { label: Lien, name: lien, widget: string }
           - { label: awesome, name: awesome, widget: string }
+      - {label: "Miniature Facebook", name: "thumbnail", widget: "image", required: false}
+
   - name: "lieux"
     label: "Lieux"
     folder: "content/lieux/page"
@@ -107,6 +110,7 @@ collections:
             valueField: "title"
             displayFields: ["datehumaine", "titre"]
             multiple: "true"
+
   - name: "programmation"
     label: "Programmation"
     folder: "content/programmation/page"
@@ -127,6 +131,8 @@ collections:
       - {label: "Date Humaine", name: "datehumaine", widget: "string", required: false}
       - {label: "Heure de début", name: "start", widget: "string", required: false}
       - {label: "Heure de fin", name: "end", widget: "string", required: false}
+      - {label: "Tarif", name: "tarif", widget: "string", required: false}
+      - {label: "Lien billeterie", name: "tarif", widget: "string", required: false}
       - {label: "Event ID Facebook", name: "idfb", widget: "string", required: false}
       - label: "Type"
         name: "type"
