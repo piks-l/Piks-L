@@ -107,9 +107,7 @@ export default {
       
       $('.slider-evenement #moveRight').on('click', function(){
         clearInterval(sliderInterval);
-        var next=current;
-        current= current+1;
-        setSlide(next, current);
+        slideNext();
       });
       $('.slider-evenement #moveLeft').on('click', function(){
         clearInterval(sliderInterval);
@@ -133,7 +131,9 @@ export default {
       }
       
       function slideNext(){
-         $('.slider-evenement #moveLeft').click();
+          var next=current;
+          current= current+1;
+          setSlide(next, current);
       }   
       
       
