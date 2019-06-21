@@ -1,11 +1,13 @@
 {
-  "url": "camo-&-krooked",
-  "thumbnail": "/images/uploads/camo-krooked-1200x1200.jpg",
-  "title": "CAMO & KROOKED",
-  "description": "Toujours à la recherche de nouvelles sonorités Camo & Krooked s’est rapidement imposé comme l'un des duos les plus talentueux de la scène drum&bass, n'hésitant pas à s'aventurer sur de nouveaux tempos ou terrains musicaux sans jamais décevoir les fans.",
   "iframe": "<iframe width=\"1189\" height=\"669\" src=\"https://www.youtube.com/embed/RyzO6jusY1I\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-  "langue": "AT",
-  "label": "Hospital Records",
+  "Evenement": [
+    {
+      "dateh": "SAM. 24 AOÛT",
+      "titr": "Electro Alternativ #15 Pré-Opening w/ Camo & Krooked & TBA",
+      "adresse": "00"
+    }
+  ],
+  "thumbnail": "/images/uploads/camo-krooked-1200x1200.jpg",
   "social": [
     {
       "lien": "https://www.facebook.com/CamoKrooked/",
@@ -15,5 +17,10 @@
       "lien": "https://www.instagram.com/camokrooked/",
       "awesome": "Instagram"
     }
-  ]
+  ],
+  "url": "camo-&-krooked",
+  "label": "Hospital Records",
+  "title": "CAMO & KROOKED",
+  "description": "Toujours à la recherche de nouvelles sonorités Camo & Krooked s’est rapidement imposé comme l'un des duos les plus talentueux de la scène drum&bass, n'hésitant pas à s'aventurer sur de nouveaux tempos ou terrains musicaux sans jamais décevoir les fans.",
+  "langue": "AT"
 }
