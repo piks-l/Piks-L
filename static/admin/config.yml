@@ -132,7 +132,7 @@ collections:
       - {label: "Heure de début", name: "start", widget: "string", required: false}
       - {label: "Heure de fin", name: "end", widget: "string", required: false}
       - {label: "Tarif", name: "tarif", widget: "string", required: false}
-      - {label: "Lien billeterie", name: "tarif", widget: "string", required: false}
+      - {label: "Lien billeterie", name: "billet", widget: "string", required: false}
       - {label: "Event ID Facebook", name: "idfb", widget: "string", required: false}
       - label: "Type"
         name: "type"
