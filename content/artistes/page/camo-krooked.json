@@ -11,11 +11,11 @@
   "social": [
     {
       "lien": "https://www.facebook.com/CamoKrooked/",
-      "awesome": "Facebook"
+      "awesome": "fab fa-facebook-f"
     },
     {
       "lien": "https://www.instagram.com/camokrooked/",
-      "awesome": "Instagram"
+      "awesome": "fab fa-instagram"
     }
   ],
   "url": "camo-&-krooked",
