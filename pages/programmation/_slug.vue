@@ -23,12 +23,12 @@
               <div class="slider-item__image" :style="{ backgroundImage: `url(${img})` }"></div>
            </div>
         </div>
-        <vue-markdown class="description">{{description}}</vue-markdown>
+        <vue-markdown class="description">{{ description }}</vue-markdown>
         <div class="shop">
             <nuxt-link class="retour" to="/programmation/"><i class="fas fa-chevron-left"></i> RETOUR</nuxt-link>
-            <div class="tarif">TARIF :</div>
+            <div class="tarif">TARIF : {{ tarif }}</div>
             <div class="billetterie">
-                <a href="#">acheter vos billets</a>
+                <a :href="billet">acheter vos billets</a>
             </div>
         </div>
     </article>
