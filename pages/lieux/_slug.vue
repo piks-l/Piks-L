@@ -46,16 +46,6 @@ export default {
       ]
     }
   },
-  updated() {
-      this.ea();
-      $(".grid-lieu, .grid-artistes strong").each(function() {
-          var text = $(this).text();
-          text = text.replace(/-/g, " ");
-          $(this).text(text);
-      });
-  },
-  beforeMount(){
-  },
   mounted() {
     this.ea();
     $(".grid-lieu, .grid-artistes strong").each(function() {
