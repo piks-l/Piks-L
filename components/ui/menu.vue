@@ -25,13 +25,7 @@
                 </ul>
             </div>
           </div>
-          <div class="social">
-              <a href="#" alt="FB"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" alt="TW"><i class="fab fa-twitter"></i></a>
-              <a href="#" alt="YT"><i class="fab fa-youtube"></i></a>
-              <a href="#" alt="IT"><i class="fab fa-instagram"></i></a>
-              <a href="#" alt="SP"><i class="fab fa-spotify"></i></a>
-          </div>
+          <ui-social/>
           <div class="ea-slider">
               <div class="slider"></div>
           </div>
@@ -45,10 +39,12 @@
 </template>
 <script>
   import $ from 'jquery'
-  import eaLogo from '~/components/ui/logo.vue'
+  import uiLogo from '~/components/ui/logo.vue'
+  import uiSocial from '~/components/social.vue'
   export default {
     components: {
-      eaLogo
+      uiLogo,
+      uiSocial,
     },
     mounted: () => {
         $( ".open-menu" ).click(function() { $( ".menu" ).addClass( "open" ); });
