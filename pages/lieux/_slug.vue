@@ -47,7 +47,7 @@ export default {
     }
   },
   mounted() {
-    this.ea();
+    this.eal();
     $(".grid-lieu, .grid-artistes strong").each(function() {
         var text = $(this).text();
         text = text.replace(/-/g, " ");
@@ -57,10 +57,9 @@ export default {
   destroyed() {
   },
   methods: {
-    ea() {
+    eal() {
             var grid = new Isotope(".grid", {
-              itemSelector: ".element-item",
-              stamp: '.stamp'
+              itemSelector: ".element-item"
             });
             // store filter for each group
             var filters = {};
@@ -119,5 +118,5 @@ export default {
             grid.layout();
     }
   }
-}
+};
 </script>
