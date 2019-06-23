@@ -13,7 +13,7 @@
       </div>
     </article>
     <div class="grid">
-        <div v-for="e in Evenement" :key="e.adresse" class="element-item>
+        <div v-for="e in Evenement" :key="e.adresse" class="element-item">
           <nuxt-link :to="'/programmation/soiree-'+ e.adresse +'/'" >
              <p class="grid-date"><strong>{{e.dateh}}</strong></p>
              <div class="line"></div>
