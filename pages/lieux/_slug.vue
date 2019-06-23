@@ -47,7 +47,7 @@ export default {
     }
   },
   updated() {
-        this.ea();
+      this.ea();
       $(".grid-lieu, .grid-artistes strong").each(function() {
           var text = $(this).text();
           text = text.replace(/-/g, " ");
@@ -57,6 +57,16 @@ export default {
   beforeMount(){
   },
   mounted() {
+    this.ea();
+    $(".grid-lieu, .grid-artistes strong").each(function() {
+        var text = $(this).text();
+        text = text.replace(/-/g, " ");
+        $(this).text(text);
+    });
+  },
+  destroyed() {
+  },
+  methods() {
   ea() {
             var grid = new Isotope(".grid", {
               itemSelector: ".element-item",
@@ -118,11 +128,6 @@ export default {
             }
             grid.layout();
     }
-  },
-  destroyed() {
-  },
-  methods: {
-    
   }
-};
+}
 </script>
