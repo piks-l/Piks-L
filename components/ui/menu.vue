@@ -25,7 +25,7 @@
                 </ul>
             </div>
           </div>
-          <ui-social/>
+          <ui-social class="social"/>
           <div class="ea-slider">
               <div class="slider"></div>
           </div>
