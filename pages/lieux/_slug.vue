@@ -32,8 +32,8 @@ export default {
   transition: { name: 'intro', mode: 'out-in' },
   components: { VueMarkdown, VueLazyload},
   async asyncData({ params }) {
-    let lieux = await import('~/content/lieux/page/' + params.slug + '.json');
-    return lieux;
+    let page = await import('~/content/lieux/page/' + params.slug + '.json');
+    return page;
   },
   head() {
     return {
