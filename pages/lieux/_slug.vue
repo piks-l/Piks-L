@@ -56,8 +56,8 @@ export default {
   },
   destroyed() {
   },
-  methods() {
-  ea() {
+  methods: {
+    ea() {
             var grid = new Isotope(".grid", {
               itemSelector: ".element-item",
               stamp: '.stamp'
