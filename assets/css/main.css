@@ -115,10 +115,10 @@ svg {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
 }
-.mirror.anim-filter .mirror__source image {
+/*.mirror.anim-filter .mirror__source image {
   -webkit-filter: url("#glitch");
   filter: url("#glitch");
-}
+}*/
 .ea-background {
   background: #0635aa;
   width: 100vw;
