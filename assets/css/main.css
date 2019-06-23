@@ -448,7 +448,7 @@ nav{
         text-decoration: none;
         transition: .5s;
     }
-    .menu .social {
+    .menu .right-side {
         position: absolute;
         top: 50%;
         right: 10%;
