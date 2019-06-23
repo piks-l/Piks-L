@@ -458,6 +458,9 @@ nav{
                 transform: translate(50%, -50%);
         background: var(--blue-color);
     }
+    .right-side.social {
+        overflow: visible!important;
+    }
       .social a {
             display: block;
             width: 50px;
