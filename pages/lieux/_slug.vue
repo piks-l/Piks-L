@@ -12,12 +12,14 @@
         <a target="_blank" :href="s.lien" :alt="s.texte">{{s.texte}}</a>
       </div>
     </article>
-    <div v-for="event in Evenement" :key="event" class="element-item">
-      <nuxt-link :to="'/programmation/soiree-'+ event.adresse +'/'" >
-         <p class="grid-date"><strong>{{event.dateh}}</strong></p>
-         <div class="line"></div>
-         <p class="grid-artistes"><strong>{{event.titr}}</strong></p>
-      </nuxt-link>
+    <div class="grid">
+        <div v-for="event in Evenement" :key="event" class="element-item>
+          <nuxt-link :to="'/programmation/soiree-'+ event.adresse +'/'" >
+             <p class="grid-date"><strong>{{event.dateh}}</strong></p>
+             <div class="line"></div>
+             <p class="grid-artistes"><strong>{{event.titr}}</strong></p>
+          </nuxt-link>
+        </div>
     </div>
   </main>
 </template>
