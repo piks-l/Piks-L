@@ -48,13 +48,6 @@ export default {
   },
   mounted() {
     this.eal();
-    $(".grid-lieu, .grid-artistes strong").each(function() {
-        var text = $(this).text();
-        text = text.replace(/-/g, " ");
-        $(this).text(text);
-    });
-  },
-  destroyed() {
   },
   methods: {
     eal() {
