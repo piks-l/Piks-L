@@ -1,8 +1,9 @@
 .intro-enter-active .ea-titre, 
 .intro-leave-active .ea-titre{
     transition: all .50s ease-out;
-    transition-delay: 600ms;
+    transition-delay: 1000ms;
     filter: blur(0px);
+    opacity: 1;
 }
 .intro-enter .ea-titre, 
 .intro-leave-active .ea-titre{
