@@ -17,6 +17,7 @@
     </article>
     
     <div class="grid">
+        <p class="title-grid">PROGRAMME</p>
         <div v-for="e in Evenement" :key="e.adresse" class="element-item">
           <nuxt-link :to="'/programmation/soiree-'+ e.adresse +'/'" >
              <p class="grid-date"><strong>{{e.dateh}}</strong></p>
