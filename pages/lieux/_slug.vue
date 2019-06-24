@@ -11,12 +11,10 @@
     </div>
     
     <article class="ea-article-lieu">      
-      <vue-markdown class="description">
-          {{description}}
-          <div class="web-site" v-for="s in social" >
-            <a target="_blank" :href="s.lien" :alt="s.texte">&#62; {{s.texte}}</a>
-          </div>
-      </vue-markdown>
+      <vue-markdown class="description">{{description}}</vue-markdown>
+      <div class="web-site" v-for="s in social" >
+        <a target="_blank" :href="s.lien" :alt="s.texte">&#62; {{s.texte}}</a>
+      </div>
       
     </article>
     
