@@ -2,16 +2,20 @@
   <main class="ea-layout-lieu">
     
     <h2 class="ea-titre">{{title}}</h2>
-    <p class="date-event"><i class="fas fa-walking"></i>{{ direction }}</p>
-    <div class=""><i class="fas fa-map-marked-alt"></i><p><a target="_blank" :href="gmap">{{ adresse }}</a></p></div>
-    <article class="ea-article-lieu">
-      <div class="lieux-item__image" :style="{ backgroundImage: `url(${thumbnail})` }"></div>
-      <hr/>
+        
+    <div class="lieu">
+        <div class="lieux-item__image" :style="{ backgroundImage: `url(${thumbnail})` }"></div>
+        <div class="logo-maps"><i class="fas fa-map-marked-alt"></i><p><a target="_blank" :href="gmap">{{ adresse }}</a></p></div>
+        <div class="logo-walk"><i class="fas fa-walking"></i><p><a target="_blank" :href="gmap">{{ direction }}</a></p></div>
+    </div>
+    
+    <article class="ea-article-lieu">      
       <vue-markdown class="description">{{description}}</vue-markdown>
-      <div class="reserver" v-for="s in social" >
+      <div class="web-site" v-for="s in social" >
         <a target="_blank" :href="s.lien" :alt="s.texte">{{s.texte}}</a>
       </div>
     </article>
+    
     <div class="grid">
         <div v-for="e in Evenement" :key="e.adresse" class="element-item">
           <nuxt-link :to="'/programmation/soiree-'+ e.adresse +'/'" >
@@ -21,6 +25,7 @@
           </nuxt-link>
         </div>
     </div>
+    
   </main>
 </template>
 <script>
