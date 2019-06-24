@@ -967,8 +967,9 @@ nav{
 }
 .logo-maps, .logo-walk {
     position: relative;
-    display: inline-block;
+    display: inline-grid;
     width: 50%;
+    vertical-align: middle;
 }
 .logo-maps i, .logo-walk i {
     width: 50px;
