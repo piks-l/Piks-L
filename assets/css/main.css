@@ -948,6 +948,57 @@ nav{
     top: -15px;
 }
 
+/* Page lieu slug */
+.ea-layout-lieux-slug .ea-titre {
+    background: #000;
+    display: inline-block;
+    padding: 0 15px;
+    margin: 50px 0 0;
+    z-index: 1;
+}
+.lieu {
+    background: #000;
+}
+.lieux-item__image {
+    height: 350px;
+    position: relative;
+    margin-top: -40px;
+    z-index: 0;
+}
+.logo-maps, .logo-walk {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+}
+.logo-maps i, .logo-walk i {
+    width: 50px;
+    position: absolute;
+    display: block;
+    line-height: 50px;
+    color: #fff;
+    font-size: 36px;
+    padding: 0 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.logo-maps p, .logo-walk p {
+    display: block;
+    width: 60%;
+    position: relative;
+    left: 110px;
+    line-height: 25px;
+    font-size: 14px;
+    text-align: left;
+    max-width: calc(100% - 110px);
+}
+.logo-maps a, .logo-walk a {
+    color:#fff;
+    text-decoration:none;
+}
+.ea-article-lieu .description {
+    background: transparent;
+}
+
 /* Social UI */
 .ea-layout-programmation .right-side {
     opacity:0;
