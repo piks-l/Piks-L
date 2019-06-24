@@ -998,6 +998,30 @@ nav{
 }
 .ea-article-lieu .description {
     background: transparent;
+    font-size: 20px;
+}
+.web-site {
+    text-align: left;
+}
+.web-site a{
+    color:#fff;
+    text-decoration:none;
+}
+.title-grid {
+    color: #fff;
+    background: #000;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 50px;
+    margin: 0;
+    position: relative;
+    padding: 0 15px;
+}
+.ea-layout-lieux-slug .grid {
+    border-top: 2px solid #000;
+}
+.ea-layout-lieux-slug .element-item {
+    width: calc(32.333% - 35px);
 }
 
 /* Social UI */
