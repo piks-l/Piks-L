@@ -2,9 +2,10 @@
   <main class="ea-layout-lieu">
     
     <h2 class="ea-titre">{{title}}</h2>
+    
+    <div class="lieux-item__image" :style="{ backgroundImage: `url(${thumbnail})` }"></div>
         
-    <div class="lieu">
-        <div class="lieux-item__image" :style="{ backgroundImage: `url(${thumbnail})` }"></div>
+    <div class="lieu">        
         <div class="logo-maps"><i class="fas fa-map-marked-alt"></i><p><a target="_blank" :href="gmap">{{ adresse }}</a></p></div>
         <div class="logo-walk"><i class="fas fa-walking"></i><p><a target="_blank" :href="gmap">{{ direction }}</a></p></div>
     </div>
