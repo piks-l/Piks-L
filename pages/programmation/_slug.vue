@@ -29,7 +29,10 @@
         <vue-markdown class="description">{{ description }}</vue-markdown>
         <div class="shop">
             <nuxt-link class="retour" to="/programmation/"><i class="fas fa-chevron-left"></i> RETOUR</nuxt-link>
-
+            <div class="reserver">
+              <i class="fab fa-facebook-square"></i> 
+              <a target="_blank" :href="'https://www.facebook.com/events/'+ idfb +'/'" alt="Événement Facebook">PARTICIPER</a>
+            </div>
             <div class="billetterie">
                 <a :href="billet">acheter vos billets</a>
             </div>
