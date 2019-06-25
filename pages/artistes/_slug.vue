@@ -1,8 +1,7 @@
 <template>
-  <main class="ea-layout-lieu">
-    <p class="date-event">{{ label }} (<i>{{ langue }})</i></p>
+  <main class="ea-layout-artiste">
     <h2 class="ea-titre">{{title}}</h2>
-    
+    <p class="info-secondaire">{{ label }} (<i>{{ langue }})</i></p>
     <div class="artistes-item__image" :style="{ backgroundImage: `url(${thumbnail})` }"></div>
     <vue-markdown class="iframe">{{iframe}}</vue-markdown>    
     <div class="lieu">  
@@ -122,3 +121,14 @@ export default {
   }
 };
 </script>
+<style>
+.artistes-item__image {
+  height: 350px;
+  position: relative;
+  margin-top: -40px;
+  z-index: 0;
+  background-position: center center;
+  background-size: cover;
+}
+
+</style>
