@@ -509,7 +509,6 @@ nav{
     .deco-video {
         height: 150px;
         width: 16%;
-        border-radius: 50%;
         overflow: hidden;
         position: fixed;
         top: 5vh;
@@ -1004,7 +1003,7 @@ nav{
 .ea-article-lieu .description {
     background: transparent;
     font-size: 20px;
-    padding: 50px 0 0;
+    padding: 50px 0;
 }
 .ea-article-lieu .description p:first-child {
     font-weight: 900;
