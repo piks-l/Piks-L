@@ -33,15 +33,15 @@ module.exports = {
     '~/assets/css/fonts.css'
   ],
   router: {
-    /*scrollBehavior: function (to, from, savedPosition) { return { x: 0, y: 0 } }*/
+    scrollBehavior: function (to, from, savedPosition) { return { x: 0, y: 0 } }
   },
   plugins: [
     { src: '~/plugins/vue-lazyload', ssr: false },
     { src: "~/plugins/isotope.js", ssr: false },
     { src: '~/plugins/ga.js', ssr: false }
   ],
-  /*loading: '~/components/ui/loading.vue',*/
-  loading: false,
+  loading: '~/components/ui/loading.vue',
+  /*loading: false,*/
   generate: {
     routes: dynamicRoutes
   },
