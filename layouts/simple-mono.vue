@@ -1,7 +1,6 @@
 <template>
   <div id="main" :class="'ea-layout-'+this.$route.name">
     <header class="ea-ui">
-      <ui-loading/>
       <nuxt-link to="/"><ui-logo/></nuxt-link>
       <ui-menu class="ea-menu" />
     </header>
@@ -13,13 +12,11 @@
 </template>
 <script>
   import $ from 'jquery'
-  import uiLoading from '~/components/ui/loading.vue'
   import uiLogo from '~/components/ui/logo.vue'
   import uiMenu from '~/components/ui/menu.vue'
   import uiFooter from '~/components/ui/footer.vue'
   export default {
       components: {
-          uiLoading,
           uiLogo,
           uiMenu,
           uiFooter
