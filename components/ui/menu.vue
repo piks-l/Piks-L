@@ -6,11 +6,6 @@
           <div class="deco-bot"></div>
           <nuxt-link class="menu-logo menu-link" to="/"><ea-logo/></nuxt-link>
           <p>Évènement des cultures électroniques et digitales</p>
-          <div class="deco-video">
-            <video autoplay="autoplay" loop="loop" muted="muted">
-              <source src="/videos/etiquette-noir.mp4" type="video/mp4">
-            </video>
-          </div>
           <div class="menu-info">
              <div class="navigation">
                 <ul class="nav">
