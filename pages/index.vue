@@ -7,7 +7,7 @@
   import $ from 'jquery'
   import eaTitre from '~/components/titre.vue'
   export default {
-    layout: 'default',
+    layout: 'intro',
     transition: { name: 'outro', mode: 'out-in' },
     components: { eaTitre },
     data() {
