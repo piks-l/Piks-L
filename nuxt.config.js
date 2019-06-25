@@ -2,14 +2,13 @@ var webpack = require('webpack');
 var glob = require('glob');
 var path = require('path');
 var dynamicRoutes = getDynamicPaths({
-  '/blog': 'blog/posts/*.json',
   '/artistes': 'artistes/page/*.json',
   '/lieux': 'lieux/page/*.json',
   '/programmation': 'programmation/page/*.json'
 });
 module.exports = {
   head: {
-    title: 'Electro Alternativ',
+    title: 'Electro Alternativ #15',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
