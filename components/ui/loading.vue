@@ -19,16 +19,7 @@ export default {
       this.loading = true
     },
     finish() {
-       
-    },
-    mounted: () => {
-         $(window).load(function() {
-            setTimeout(() => {
-                this.loading = false
-                console.log('loading');
-            }, 4000)
-         });        
-        console.log('loading');
+      this.loading = false 
     }
   }
 }
