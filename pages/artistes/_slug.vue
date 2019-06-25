@@ -36,7 +36,7 @@ import $ from 'jquery'
 import VueMarkdown from 'vue-markdown'
 import VueLazyload from 'vue-lazyload'
 export default {
-  layout: 'simple',
+  layout: 'simple-mono',
   transition: { name: 'intro', mode: 'out-in' },
   components: { VueMarkdown, VueLazyload},
   async asyncData({ params }) {
