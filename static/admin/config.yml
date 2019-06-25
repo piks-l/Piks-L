@@ -69,9 +69,9 @@ collections:
       - {label: "Nom", name: "title", widget: "string", tagname: "h1", required: true}
       - {label: "Image de couverture", name: "couverture", widget: "image", required: true}
       - {label: "Description", name: "description", widget: "markdown", required: false}
-      - {label: "Adresse", name: "adresse", widget: "string", required: false}
+      - {label: "Adresse", name: "adresse", widget: "markdown", required: false}
       - {label: "Lien gmap", name: "gmap", widget: "string", required: false}
-      - {label: "Direction", name: "direction", widget: "string", required: false}
+      - {label: "Direction", name: "direction", widget: "markdown", required: false}
       - label: "Social"
         name: "social"
         required: false
