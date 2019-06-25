@@ -1,6 +1,6 @@
 {
   "start": "23H00",
-  "tarif": "20€ - Sur place : 15€",
+  "tarif": "Tarif Early : 17€",
   "dateevents": "08/24/2019",
   "thumbnail": "/images/uploads/cover-facebook.jpg",
   "intro": "PRE OPENING",
@@ -8,9 +8,6 @@
   "groupes": [
     {
       "artiste": "camo-&-krooked"
-    },
-    {
-      "artiste": ""
     }
   ],
   "background": "/images/background-2-electro-alternativ.jpg",
