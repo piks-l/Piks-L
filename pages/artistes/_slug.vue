@@ -130,5 +130,8 @@ export default {
   background-position: center center;
   background-size: cover;
 }
-
+.info-secondaire {
+  top: -100px;
+  position: relative;
+}
 </style>
