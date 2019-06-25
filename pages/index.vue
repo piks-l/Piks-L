@@ -17,9 +17,4 @@
     }
   }
 </script>
-<style>
-.mirror.anim-filter .mirror__source image {
-  -webkit-filter: url("#glitch");
-  filter: url("#glitch");
-}
-</style>
+
