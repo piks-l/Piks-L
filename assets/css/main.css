@@ -460,6 +460,8 @@ nav{
     }
     .left-side.social {
         overflow: visible!important;
+        bottom: auto;
+        left: auto;
     }
       .social a {
             display: block;
