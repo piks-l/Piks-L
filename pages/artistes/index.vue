@@ -21,7 +21,7 @@
   import eaTitre from '~/components/titre.vue'
   // export
 export default {
-    layout: 'default',
+    layout: 'default-mono',
     components: { VueLazyload, eaTitre },
     transition: { name: 'outro', mode: 'out-in' },
     head() {
