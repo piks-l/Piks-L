@@ -14,13 +14,6 @@
     opacity: 0;
     filter: blur(50px);
 } 
-.ea-layout-lieux .ea-background,
-.ea-layout-lieux-slug .ea-background,
-.ea-layout-artistes .ea-background,
-.ea-layout-artistes-slug .ea-background {
-    display: none;
-}
-
 .intro-enter-active,
 .intro-leave-active,
 .layout-enter-active, 
@@ -50,7 +43,7 @@
 .intro-leave-active::before,
 .layout-enter-active::before,
 .layout-leave-active::before {
-    background-color: #0635aa;
+    background-color: #000000;
 /*  background-image: url(https://electro-alternativ.com/images/ea-15-logo-noms.png);
     background-size: 600px;
     background-attachment: fixed;
@@ -62,7 +55,7 @@
 .layout-enter-active::after,
 .layout-leave-active::after{
     top: 50%;
-    background-color: #0635aa;
+    background-color: #000000;
 /*  background-image: url(https://electro-alternativ.com/images/ea-15-logo-noms.png);
     background-size: 600px;
     background-attachment: fixed;
