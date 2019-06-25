@@ -506,36 +506,7 @@ nav{
         -webkit-transform: translatex(-50%);
                 transform: translatex(-50%);
     }    
-    .deco-video {
-        height: 150px;
-        width: 16%;
-        overflow: hidden;
-        position: fixed;
-        top: 5vh;
-        right: 10%;
-        -webkit-transform: translatex(50%);
-                transform: translatex(50%);
-        mix-blend-mode: lighten;
-    }
-        .ea-layout-lieux-slug .deco-video,
-        .ea-layout-lieux .deco-video{
-            background: var(--blue-color);
-        }
-    .menu .deco-video {
-        right: -100%;
-    }
-    .menu.open .deco-video {
-        right: 10%;
-    }
-        .deco-video video {
-            width: 100%;
-            height: auto;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            mix-blend-mode: lighten;
-        }
+
     .menu-logo{
         z-index:1;
     }
