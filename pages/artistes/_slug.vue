@@ -1,9 +1,9 @@
 <template>
   <main class="ea-layout-lieu">
-    <p class="date-event">{{ langue }}</p>
+    <p class="date-event">{{ label }} (<i>{{ langue }})</i></p>
     <h2 class="ea-titre">{{title}}</h2>
     
-    <div class="lieux-item__image" :style="{ backgroundImage: `url(${thumbnail})` }"></div>
+    <div class="artistes-item__image" :style="{ backgroundImage: `url(${thumbnail})` }"></div>
     <vue-markdown class="iframe">{{iframe}}</vue-markdown>    
     <div class="lieu">  
         <div class="logo-maps"><p>{{ label }}</p></div>
