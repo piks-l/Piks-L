@@ -6,8 +6,8 @@
     <div class="lieux-item__image" :style="{ backgroundImage: `url(${thumbnail})` }"></div>
         
     <div class="lieu">        
-        <div class="logo-maps"><i class="fas fa-map-marked-alt"></i><p><a target="_blank" :href="gmap"><vue-markdown>{{ adresse }}</vue-markdown></a></p></div>
-        <div class="logo-walk"><i class="fas fa-walking"></i><p><a target="_blank" :href="gmap"><vue-markdown>{{ direction }}</vue-markdown></a></p></div>
+        <div class="logo-maps"><i class="fas fa-map-marked-alt"></i><a target="_blank" :href="gmap"><vue-markdown>{{ adresse }}</vue-markdown></a></div>
+        <div class="logo-walk"><i class="fas fa-walking"></i><a target="_blank" :href="gmap"><vue-markdown>{{ direction }}</vue-markdown></a></div>
     </div>
     
     <article class="ea-article-lieu">      
