@@ -3,11 +3,6 @@
     <header class="ea-ui">
       <ui-loading/>
       <nuxt-link to="/"><ui-logo/></nuxt-link>
-      <div class="deco-video">
-          <video autoplay="autoplay" loop="loop" muted="muted">
-            <source src="/videos/etiquette-noir.mp4" type="video/mp4">
-          </video>
-      </div>
       <ui-menu class="ea-menu" />
     </header>
     <transition name="intro" mode="out-in" appear>
