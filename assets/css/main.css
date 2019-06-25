@@ -784,7 +784,7 @@ nav{
     text-transform: uppercase;
     background: #000;
     text-align: right;
-    display: inline-block;
+    display: initial;
 }
 .billetterie a {
     text-decoration: none;
@@ -802,7 +802,6 @@ nav{
     position: relative;
     display: inline-block;
     margin: 0;
-    float: right;
 }
 .reserver a, .reserver i {
     position: relative;
