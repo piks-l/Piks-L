@@ -14,7 +14,7 @@
       <vue-markdown class="description">{{description}}</vue-markdown>
       
       <div class="web-site" >
-        <a target="_blank"  v-for="s in social" :href="s.lien" :alt="Social"><i :class="s.awesome"></i></a>
+        <a target="_blank"  v-for="s in social" :href="s.lien"><i :class="s.awesome"></i></a>
       </div>      
     </article>
     
