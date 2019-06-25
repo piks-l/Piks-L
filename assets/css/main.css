@@ -515,8 +515,12 @@ nav{
         right: 10%;
         -webkit-transform: translatex(50%);
                 transform: translatex(50%);
-        
+        mix-blend-mode: lighten;
     }
+        .ea-layout-lieux-slug .deco-video,
+        .ea-layout-lieux .deco-video{
+            background: var(--blue-color);
+        }
     .menu .deco-video {
         right: -100%;
     }
