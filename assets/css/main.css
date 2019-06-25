@@ -999,7 +999,7 @@ nav{
 .ea-article-lieu .description {
     background: transparent;
     font-size: 20px;
-    padding: 50px 50px 0 50px;
+    padding: 50px 0 0;
 }
 .ea-article-lieu .description p:first-child {
     font-weight: 900;
@@ -1014,6 +1014,7 @@ nav{
     background: #000;
     padding: 15px;
     font-size: 12px;
+    margin: 0 15px 0 0;
 }
 .title-grid {
     color: #fff;
