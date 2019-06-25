@@ -4,11 +4,10 @@
     <h2 class="ea-titre">{{title}}</h2>
     
     <div class="lieux-item__image" :style="{ backgroundImage: `url(${thumbnail})` }"></div>
-        
+    <vue-markdown class="iframe">{{iframe}}</vue-markdown>    
     <div class="lieu">  
-        <vue-markdown class="iframe">{{iframe}}</vue-markdown>
-        <div class="logo-maps"><i class="fas fa-map-marked-alt"></i><p>{{ label }}</p></div>
-        <div class="logo-walk"><i class="fas fa-walking"></i><p>{{ langue }}</p></div>
+        <div class="logo-maps"><p>{{ label }}</p></div>
+        <div class="logo-walk"><p>{{ langue }}</p></div>
     </div>
     
     <article class="ea-article-lieu">
@@ -16,7 +15,7 @@
       <vue-markdown class="description">{{description}}</vue-markdown>
       
       <div class="web-site" >
-        <a target="_blank"  v-for="s in social" :href="s.lien" :alt="Social">{{s.awesome}}</a>
+        <a target="_blank"  v-for="s in social" :href="s.lien" :alt="Social"><i :class="s.awesome"></i></a>
       </div>      
     </article>
     
