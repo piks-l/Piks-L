@@ -1,5 +1,5 @@
 <template>
-  <div class="right-side">
+  <div class="left-side">
     <aside class="ea-sidebar">
       <div class="social">
           <a target="_blank" href="https://www.facebook.com/electroalternativ" alt="Facebook EA"><i class="fab fa-facebook-f"></i></a>
