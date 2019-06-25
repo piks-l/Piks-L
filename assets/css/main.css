@@ -753,11 +753,9 @@ nav{
     display: none;
 }
 
-.shop {
-    position: relative;
+
+.head-tarif {
     background: #000;
-    padding: 15px 50px;
-    text-align: right;
 }
 .tarif {
     display: inline-block;
@@ -770,6 +768,12 @@ nav{
     font-size: 16px;
     letter-spacing: 1px;
 }
+.shop {
+    position: relative;
+    background: #000;
+    padding: 15px 50px;
+    text-align: right;
+}
 .billetterie, .billetterie a {
     color: #fff;
     -webkit-transition: all .5s ease;
@@ -781,7 +785,6 @@ nav{
     background: #000;
     text-align: right;
     display: inline-block;
-    float: right;
 }
 .billetterie a {
     text-decoration: none;
