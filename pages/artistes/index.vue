@@ -6,7 +6,6 @@
               <div v-for="artiste in artistes" :key="artiste.url" class="element-item">
                   <nuxt-link :to="artiste._path+'/'" >
                        <p class="grid-artistes"><strong>{{artiste.title}}</strong></p>
-                       <p class="grid-intro">{{artiste.label}} <small>{{artiste.langue}}</small></p>
                   </nuxt-link>
               </div>
           </div>
