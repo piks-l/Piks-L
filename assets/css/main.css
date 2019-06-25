@@ -784,7 +784,8 @@ nav{
     text-transform: uppercase;
     background: #000;
     text-align: right;
-    display: initial;
+    display: inline-block;
+    float: right;
 }
 .billetterie a {
     text-decoration: none;
