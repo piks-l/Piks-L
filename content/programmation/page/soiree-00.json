@@ -8,12 +8,15 @@
   "groupes": [
     {
       "artiste": "camo-&-krooked"
+    },
+    {
+      "artiste": ""
     }
   ],
   "background": "/images/background-2-electro-alternativ.jpg",
   "datehumaine": "SAM. 24 AOÛT",
   "titre": "Camo & Krooked + TBA",
-  "billet": "#",
+  "billet": "https://electro-alternativ.festik.net/Pre-opening/1",
   "idfb": "2015029515290241",
   "title": "00",
   "semaine": "semaine1",
