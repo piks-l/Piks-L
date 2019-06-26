@@ -171,6 +171,63 @@
         display: none;
     }
   
+  /* page event */
+  .date-event {
+      font-size: 12px;
+  }
+  .informations {
+      padding: 15px 0;
+      text-align: center;
+  }
+  .date-time {
+      padding: 0;
+      font-size: 14px;
+  }
+  .link-map {
+      float: none;
+  }
+  .tarif {
+      padding: 15px 15px 0 15px;
+      font-size: 14px;
+  }
+  .description {
+      padding: 1px 15px;
+  }
+  .reserver a,  
+  .billetterie a, 
+  .retour {
+      font-size: 12px;
+  }
+  .reserver {
+      width: 100%;
+  }
+  .reserver a {
+      float: none;
+      padding: 0;
+      width: 100%;
+      text-align: center;
+  }
+  .shop {
+      padding: 15px 15px 65px;
+  }
+  .billetterie {
+      float: none;
+      font-size: 14px;
+      text-align: center;
+      width: 100%;
+  }
+  .billetterie a {
+      right: 0;
+      padding: 0;
+  }
+  .retour {
+      position: absolute;
+      bottom: 15px;
+      float: none;
+      width: 100%;
+      left: 0;
+      text-align: center;
+  }
 }
 @media only screen and (min-width: 600px) and (max-width: 959px) {
     main {
