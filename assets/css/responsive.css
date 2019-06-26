@@ -127,7 +127,8 @@
         z-index: 10;
         display: none;
         opacity:0;
-        transition:opacity .5s ease;
+        visibility: hidden;
+        transition: visibility 0s, opacity 0.5s linear;
     }
     .button-group {
         position: absolute;
@@ -138,7 +139,8 @@
         margin: 0;
         display:none;
         opacity:0;
-        transition:opacity .5s ease;
+        visibility: hidden;
+        transition: visibility 0s, opacity 0.5s linear;
     }
     #filters.mobile-stage, 
     #filters.mobile-semaine,
@@ -146,6 +148,7 @@
     #filters.mobile-semaine .button-semaine{
         display: block; 
         opacity:1;
+        visibility: visible;
     }
   
     .mobile-menu {
