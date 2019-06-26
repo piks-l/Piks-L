@@ -130,6 +130,7 @@
     }
     #filters.mobile-stage, 
     #filters.mobile-semaine {
+        opacity:1;
         top: 50px;
         transition:top 0s ease, opacity 0.5s linear;
     }
