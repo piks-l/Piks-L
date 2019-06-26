@@ -130,7 +130,6 @@
     }
     #filters.mobile-stage, 
     #filters.mobile-semaine {
-        opacity:1;
         top: 50px;
         transition:top 0s ease, opacity 0.5s linear;
     }
@@ -143,7 +142,13 @@
         margin: 0;
         display:block;
     }
-
+    #filters.mobile-stage, 
+    #filters.mobile-semaine,
+    #filters.mobile-stage .button-type,
+    #filters.mobile-semaine .button-semaine{
+        display: block; 
+        opacity:1;
+    }
   
     .mobile-menu {
         position: fixed;
