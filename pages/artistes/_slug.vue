@@ -12,7 +12,13 @@
     <article class="ea-article-lieu">
       
       <vue-markdown class="description">{{description}}</vue-markdown>
-      
+              <div v-for="e in Evenement" :key="e.adresse" class="element-item">
+          <nuxt-link :to="'/programmation/soiree-'+ e.adresse +'/'" >
+             <p class="grid-date"><strong>{{e.dateh}}</strong></p>
+             <div class="line"></div>
+             <p class="grid-artistes"><strong>{{e.titr}}</strong></p>
+          </nuxt-link>
+        </div>
       <div class="web-site" >
         <a target="_blank"  v-for="s in social" :href="s.lien"><i :class="s.awesome"></i></a>
       </div>      
