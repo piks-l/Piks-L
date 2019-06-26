@@ -330,10 +330,30 @@
     .tarif {
         padding: 30px 30px 0;
     }
+  
+    /* page lieu slug */
+  .logo-maps i, .logo-walk i {
+      display: none;
+  }
+  .logo-maps p, .logo-walk p, .logo-walk ul {
+      width: calc(100% - 30px);
+      max-width: none;
+      left: 0;
+      padding: 0 15px;
+      font-size: 12px;
+  }
+  .ea-article-lieu .description {
+      font-size: 16px;
+      padding: 15px 0 ;
+  }
+  .web-site {
+      text-align: center;
+      padding: 0 0 30px;
+  }
 }
 @media only screen and (min-width: 960px) and (max-width: 1263px) {
   main {
-      margin: 0 0 0 20%;
+      margin: 0 15px 0 20%;
   }
   svg {
       height: 100%;
