@@ -141,6 +141,7 @@
         padding: 0;
         margin: 0;
         display:block;
+        opacity: 0;
     }
     #filters.mobile-stage, 
     #filters.mobile-semaine,
