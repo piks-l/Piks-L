@@ -186,7 +186,7 @@
 }
 @media only screen and (min-width: 600px) and (max-width: 959px) {
     main {
-        margin: 0 0 0 20%;
+        margin: 0 15px 0 20%;
     }
      /***** Menu *****/
     .menu-link {
@@ -309,8 +309,10 @@
       width: 50px;
       font-size: 22px;
   }
-  .reserver a, .link-map a {
-      width: calc(100% - 30px);
+  .reserver a, 
+  .link-map a, 
+  .billetterie a, 
+  .retour {
       font-size: 14px;
   }
   .date-event {
@@ -318,10 +320,6 @@
   }
   .date-time {
       font-size: 16px;
-  }
-  .retour {
-      font-size: 30px;
-      line-height: 24px;
   }
   .retour b {
       font-size: 12px;
