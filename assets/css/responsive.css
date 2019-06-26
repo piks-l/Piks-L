@@ -59,6 +59,9 @@
     .deco-left, .deco-right, .deco-bot {
         display: none;
     }
+    .left-side {
+        display: none;
+    }
     .menu .social {
         position: relative;
         display: block;
@@ -69,21 +72,6 @@
     }
     .social a {
         display: inline-block;
-    }
-    .ea-tv {
-        display: none;
-    }
-    .menu .ea-tv {
-        display: block;
-        position: relative;
-        padding: 0;
-        left: 50%;
-        transform: translatex(-50%);
-        bottom: auto;
-        margin-bottom: 15px;
-    }
-    .ea-tv a {
-        line-height: 35px;
     }
   
     /**** Page prog ****/
@@ -240,7 +228,7 @@
         max-width: calc(20% - 20px);
     }
     .date-event {
-        font-size: 10px;
+        font-size: 12px;
     }
     .date-time {
         font-size: 14px;
