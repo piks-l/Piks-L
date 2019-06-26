@@ -1,4 +1,15 @@
+:root{
+	 --none-color: none;
+	 --path-color: white;
+	 --stroke-color: black;
+   --blue-color: #0635aa;
+}
+
 @media only screen and (min-width: 0px) and (max-width: 599px) {
+  
+    main {
+        margin: 55px 10px 65px;
+    }
     /**** Menu ****/
     .ea-menu {
         position: fixed;
@@ -50,7 +61,7 @@
         margin: 25px 0;
     }
     .menu-link {
-        font-size: 1.3em;
+        font-size: 1em;
         line-height: 1.5em;
     }
     .ea-slider {
@@ -170,6 +181,12 @@
     #filters .button-type .button:first-child {
         display: none;
     }
+    #filters .button-type .button:hover {
+        color: var(--blue-color);
+    }
+  .grid-artistes strong {
+      font-size: 1em;
+  }
   
   /* page event */
   .date-event {
@@ -228,6 +245,30 @@
       left: 0;
       text-align: center;
   }
+  
+  /* page lieu slug */
+  .ea-layout-lieux-slug .ea-titre {
+      padding: 20px 10px;
+      min-width: 60%;
+  }
+  .lieux-item__image {
+      height: 250px;
+  }
+  .logo-maps, .logo-walk {
+      width: 100%;
+  }
+  .ea-article-lieu .description {
+      font-size: 16px;
+      padding: 30px 15px;
+  }
+  .web-site {
+      text-align: center;
+      padding: 0 0 30px;
+  }
+  .web-site a:last-child {
+      margin: 0;
+  }
+  
 }
 @media only screen and (min-width: 600px) and (max-width: 959px) {
     main {
@@ -349,6 +390,9 @@
   .web-site {
       text-align: center;
       padding: 0 0 30px;
+  }
+  .web-site a:last-child {
+      margin: 0;
   }
 }
 @media only screen and (min-width: 960px) and (max-width: 1263px) {
