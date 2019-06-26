@@ -126,6 +126,8 @@
         background: #000;
         z-index: 10;
         display: none;
+        opacity:0;
+        transition:opacity .5s ease;
     }
     .button-group {
         position: absolute;
@@ -135,12 +137,15 @@
         padding: 0;
         margin: 0;
         display:none;
+        opacity:0;
+        transition:opacity .5s ease;
     }
     #filters.mobile-stage, 
     #filters.mobile-semaine,
     #filters.mobile-stage .button-type,
     #filters.mobile-semaine .button-semaine{
         display: block; 
+        opacity:1;
     }
   
     .mobile-menu {
@@ -181,8 +186,9 @@
     #filters .button-type .button:first-child {
         display: none;
     }
-    #filters .button-type .button:hover {
-        color: var(--blue-color);
+    #filters .button-type .button:hover,
+    #filters .button-semaine .button:hover{
+        color: var(--blue-color) !important;
     }
   .grid-artistes strong {
       font-size: 1em;
