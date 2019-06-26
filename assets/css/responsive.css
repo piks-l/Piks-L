@@ -245,6 +245,17 @@
     .date-time {
         font-size: 14px;
     }
+    .link-map a {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 12px;
+    }
+    .shop {
+        padding: 15px 30px 30px;
+    }
+    .billetterie a {
+        right: 0;
+    }
     .reserver i, 
     .link-map i, 
     .retour b {
@@ -252,15 +263,12 @@
     }
     .reserver a, 
     .link-map a {
-        width: 100%;
-        font-size: 12px;
         text-align:center;
     }
-    .reserver a, 
-    .link-map a, 
+    .reserver a,  
     .billetterie a, 
     .retour {
-        font-size: 14px;
+        font-size: 10px;
     }
     .description {
         padding: 15px 30px;
