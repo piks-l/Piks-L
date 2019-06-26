@@ -1062,3 +1062,7 @@ nav{
     overflow: hidden;
     cursor: pointer;
 }
+
+#footer {
+    display: none;
+}
