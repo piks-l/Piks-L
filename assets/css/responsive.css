@@ -256,9 +256,11 @@
         font-size: 12px;
         text-align:center;
     }
+    .reserver a, 
+    .link-map a, 
+    .billetterie a, 
     .retour {
-        font-size: 18px;
-        line-height: 50px;
+        font-size: 14px;
     }
     .description {
         padding: 15px 30px;
