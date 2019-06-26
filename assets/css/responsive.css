@@ -117,7 +117,7 @@
         width: calc(98% - 30px);
     }
     #filters {
-        top: 50px;
+        top: -100%;
         width: calc(100% - 50px);
         left: 10px;
         max-width: none;
@@ -125,10 +125,13 @@
         height: calc(100vh - 100px);
         background: #000;
         z-index: 10;
-        display: none;
         opacity:0;
-        visibility: hidden;
-        transition: visibility 0s, opacity 0.5s linear;
+        transition:top 0s ease .5s, opacity 0.5s linear;
+    }
+    #filters.mobile-stage, 
+    #filters.mobile-semaine {
+        top: 50px;
+        transition:top 0s ease, opacity 0.5s linear;
     }
     .button-group {
         position: absolute;
@@ -137,19 +140,9 @@
         transform: translate(-50%, -50%);
         padding: 0;
         margin: 0;
-        display:none;
-        opacity:0;
-        visibility: hidden;
-        transition: visibility 0s, opacity 0.5s linear;
+        display:block;
     }
-    #filters.mobile-stage, 
-    #filters.mobile-semaine,
-    #filters.mobile-stage .button-type,
-    #filters.mobile-semaine .button-semaine{
-        display: block; 
-        opacity:1;
-        visibility: visible;
-    }
+
   
     .mobile-menu {
         position: fixed;
