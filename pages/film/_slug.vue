@@ -66,6 +66,9 @@
         ]
       }
     },
+    data: () => ({
+      slideIndex: 1
+    }),
     updated() {
     },
     beforeMount(){
@@ -80,7 +83,6 @@
     },
     methods: {
 
-        slideIndex = 1;
         // Open the Modal
         openModal() {
           $("#myModal").css('display','block');
