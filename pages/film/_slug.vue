@@ -90,6 +90,10 @@
 
         test() {
           var count=0;
+          var slideIndex = 1;
+          console.log(slideIndex);
+
+
           $('.image').each( function( ) {
               count += 1;
               $(this).find( "img" ).attr('data-slide', count);
@@ -100,7 +104,7 @@
           });
           $('.image').on( 'click', function() {
               $("#myModal").css('display','block');
-              slideIndex = $(this).attr("data-slide");
+              slideIndex = $(this).find( "img" ).attr("data-slide");
               console.log(slideIndex);
           });
 
@@ -113,8 +117,7 @@
           });
 
 
-          var slideIndex = 1;
-          console.log(slideIndex);
+
 
           showSlides(slideIndex);
 
