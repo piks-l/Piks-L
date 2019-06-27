@@ -80,6 +80,7 @@
     },
     mounted() {
 
+      var slideIndex = 1;
       this.showSlides(slideIndex);
       console.log(slideIndex);
 
