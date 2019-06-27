@@ -3,20 +3,16 @@
     <div class="left-side">
         <vue-markdown>{{ iframe }}</vue-markdown>
         <div class="diapo">
-            <div class="image"><img class="selected" onclick="openModal();currentSlide(1)" src="assets/images/scene-c3po.jpg" alt="Residence 1+2 photo"></div>
+            <div v-for="i in galerie" class="image">
+              <img class="selected" onclick="openModal();currentSlide(1)" :src="i.image" :alt="i.alt">
+            </div>
         </div>
         <div id="myModal" class="modal">
             <span class="close-modal cursor" onclick="closeModal()">&times;</span>
             <div class="modal-content">
 
-                <div class="mySlides">
-                    <img src="assets/images/scene-c3po.jpg">
-                </div>
-                <div class="mySlides">
-                    <img src="assets/images/bellenger-factory-2018.jpg">
-                </div>
-                <div class="mySlides">
-                    <img src="assets/images/bellenger-factory-2018-05.jpg">
+                <div v-for="i in galerie" class="mySlides">
+                    <img :src="i.image" :alt="i.alt">
                 </div>
 
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -29,27 +25,13 @@
         </div>
     </div>
     <div class="right-side">
-        <small class="date">2017</small>
-        <h3 class="title-article">Les jours - cahiers photographiques</h3>
-        <p class="description-article">Résidence 1+2 2017</p>
+        <small class="date">{{ date }}</small>
+        <h3 class="title-article">{{ title }}</h3>
+        <p class="description-article">{{ soustitre }}</p>
         <div class="content">
-            <p><b>DOCUMENTAIRE - 26 MINUTES</b></p>
-            <p><b>UN FILM DE CLEMENTINE CARRIE</b></p>
-            <p>avec Israel Arino, Leslie Moquin et Christian Sanna</p>
-            <p>Création musical: Augustin Charnet</p>
-            <p>Direction artistique: Philippe Guionie</p>
+            <vue-markdown>{{ description }}</vue-markdown>
             <br>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-              inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-              fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-              amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim
-              ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum
-              iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-            <br>
-            <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-              laborum.</i></p>
+            <vue-markdown>{{ article }}</vue-markdown>
             <br>
             <p class="read-more">POUR EN SAVOIR PLUS</p>
             <a href="#" class="link">Résidence 2017</a>
@@ -89,6 +71,44 @@
     beforeMount(){
     },
     mounted() {
+      // Open the Modal
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+
+      // Close the Modal
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("selected");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+
+        slides[slideIndex-1].style.display = "block";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+
     },
     destroyed() {
     },
