@@ -1,6 +1,6 @@
 <template>
   <main class="black">
-    <ea-titre/> lol
+    <ea-titre/>
   </main>
 </template>
 <script>
