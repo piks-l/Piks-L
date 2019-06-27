@@ -4,19 +4,19 @@
         <vue-markdown>{{ iframe }}</vue-markdown>
         <div class="diapo">
             <div v-for="i in galerie" class="image">
-              <img class="selected" onclick="openModal();currentSlide(1)" :src="i.image" :alt="i.alt">
+              <img class="selected" :click="openModal();currentSlide(1)" :src="i.image" :alt="i.alt">
             </div>
         </div>
         <div id="myModal" class="modal">
-            <span class="close-modal cursor" onclick="closeModal()">&times;</span>
+            <span class="close-modal cursor" :click="closeModal()">&times;</span>
             <div class="modal-content">
 
                 <div v-for="i in galerie" class="mySlides">
                     <img :src="i.image" :alt="i.alt">
                 </div>
 
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <a class="prev" :click="plusSlides(-1)">&#10094;</a>
+                <a class="next" :click="plusSlides(1)">&#10095;</a>
 
             </div>
             <div class="caption-container">
@@ -71,13 +71,17 @@
     beforeMount(){
     },
     mounted() {
+    },
+    destroyed() {
+    },
+    methods: {
       // Open the Modal
-      function openModal() {
+      openModal: function () {
         document.getElementById("myModal").style.display = "block";
       }
 
       // Close the Modal
-      function closeModal() {
+      closeModal: function () {
         document.getElementById("myModal").style.display = "none";
       }
 
@@ -85,16 +89,16 @@
       showSlides(slideIndex);
 
       // Next/previous controls
-      function plusSlides(n) {
+      plusSlides: function (n) {
         showSlides(slideIndex += n);
       }
 
       // Thumbnail image controls
-      function currentSlide(n) {
+      currentSlide: function (n) {
         showSlides(slideIndex = n);
       }
 
-      function showSlides(n) {
+      showSlides: function (n) {
         var i;
         var slides = document.getElementsByClassName("mySlides");
         var dots = document.getElementsByClassName("selected");
@@ -108,11 +112,6 @@
         slides[slideIndex-1].style.display = "block";
         captionText.innerHTML = dots[slideIndex-1].alt;
       }
-
-    },
-    destroyed() {
-    },
-    methods: {
     }
   };
 </script>
