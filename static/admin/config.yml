@@ -14,7 +14,7 @@ collections:
     fields:
       - {label: "Nom", name: "titre", widget: "string", tagname: "h1", required: true}
       - {label: "Article", name: "description", widget: "markdown", required: false}
-      - {label: "Description SEO", name: "thumbnail", widget: "image", required: false}
+      - {label: "Description SEO", name: "descriptionseo", widget: "text", required: false}
       - {label: "Miniature SEO", name: "thumbnail", widget: "image", required: false}
   - name: "editions"
     label: "Editions"
@@ -25,7 +25,7 @@ collections:
     fields:
       - {label: "Nom", name: "titre", widget: "string", tagname: "h1", required: true}
       - {label: "Article", name: "description", widget: "markdown", required: false}
-      - {label: "Description SEO", name: "thumbnail", widget: "image", required: false}
+      - {label: "Description SEO", name: "descriptionseo", widget: "text", required: false}
       - {label: "Miniature SEO", name: "thumbnail", widget: "image", required: false}
   - name: "factory"
     label: "Factory"
@@ -36,7 +36,7 @@ collections:
     fields:
       - {label: "Nom", name: "titre", widget: "string", tagname: "h1", required: true}
       - {label: "Article", name: "description", widget: "markdown", required: false}
-      - {label: "Description SEO", name: "thumbnail", widget: "image", required: false}
+      - {label: "Description SEO", name: "descriptionseo", widget: "text", required: false}
       - {label: "Miniature SEO", name: "thumbnail", widget: "image", required: false}
   - name: "film"
     label: "Film"
@@ -46,9 +46,11 @@ collections:
     format: 'json'
     fields:
       - {label: "Titre", name: "titre", widget: "string", tagname: "h1", required: true}
+      - {label: "Sous titre", name: "soustitre", widget: "string", required: false}
+      - {label: "Date de publication", name: "date", widget: "date", format: "YYYY", required: false}
       - {label: "Intro", name: "description", widget: "markdown", required: false}
       - {label: "Article", name: "article", widget: "markdown", required: false}
       - {label: "Iframe", name: "iframe", widget: "markdown", required: false}
       - {label: "Galerie", name: "galerie", widget: "list", field: {label: Image, name: image, widget: image}, required: false}
-      - {label: "Description SEO", name: "thumbnail", widget: "image", required: false}
+      - {label: "Description SEO", name: "descriptionseo", widget: "text", required: false}
       - {label: "Miniature SEO", name: "thumbnail", widget: "image", required: false}
