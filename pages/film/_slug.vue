@@ -16,7 +16,7 @@
                 </div>
 
                 <a class="prev">&#10094;</a>
-                <a class="next" @click="plusSlides(1)">&#10095;</a>
+                <a class="next">&#10095;</a>
 
             </div>
             <div class="caption-container">
@@ -105,7 +105,7 @@
           $('.image').on( 'click', function() {
               $("#myModal").css('display','block');
               slideIndex = $(this).find( "img" ).attr("data-slide");
-              console.log(slideIndex);
+              showSlides(slideIndex);
           });
 
           $('.prev').on( 'click', function() {
@@ -116,20 +116,6 @@
               showSlides(slideIndex += 1);
           });
 
-
-
-
-          showSlides(slideIndex);
-
-          // Next/previous controls
-          function plusSlides(n) {
-            showSlides(slideIndex += n);
-          }
-
-          // Thumbnail image controls
-          function currentSlide(n) {
-            showSlides(slideIndex = n);
-          }
 
           function showSlides(n) {
             var i;
