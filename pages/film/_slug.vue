@@ -1,260 +1,98 @@
 <template>
-  <main class="ea-layout-evenement" :data-back="background" :data-duo="type">
-    <p class="date-event">{{ datehumaine }}</p>
-    <h2 class="ea-titre"><nuxt-link class="title-artiste" :to="'/artistes/'+artist.artiste" v-for="artist in groupes" :key="artist.artiste">{{artist.artiste}}</nuxt-link></h2>
-    <article class="ea-article-evenement">
-        <div class="informations">
-           <p class="date-time">de <span>{{ start }}</span> à <span>{{ end }}</span></p>
-           <div class="link-map">
-               <i class="fas fa-map-marked-alt"></i>
-               <nuxt-link :to="'/lieux/'+lieu">{{ lieu }}</nuxt-link>
-           </div>          
+  <main class="1plus2-layout-film">
+    <div class="left-side">
+        <vue-markdown>{{ iframe }}</vue-markdown>
+        <div class="diapo">
+            <div v-for="s in social" class="image"><img class="selected" onclick="openModal();currentSlide(1)" src="assets/images/scene-c3po.jpg" alt="Residence 1+2 photo"></div>
         </div>
-        <div class="slider-evenement">
-            <div class="slider__nav">
-                <span id="moveLeft" class="slider__arrow">
-                  <i class="fas fa-chevron-left"></i>
-                </span>
-                <span id="moveRight" class="slider__arrow" >
-                  <i class="fas fa-chevron-right"></i>   
-                </span>
+        <div id="myModal" class="modal">
+            <span class="close-modal cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <img src="assets/images/scene-c3po.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/images/bellenger-factory-2018.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/images/bellenger-factory-2018-05.jpg">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
             </div>
-           <div v-for="(img, i) in galerie" :key="img" class="slider-item">
-              <div class="slider-item__image" :style="{ backgroundImage: `url(${img})` }"></div>
-           </div>
-        </div>
-        <div class="tarif">{{ tarif }}</div>
-        <vue-markdown class="description">{{ description }}</vue-markdown>
-        <div class="shop">
-            <nuxt-link class="retour" to="/programmation/"><i class="fas fa-chevron-left"></i> RETOUR</nuxt-link>
-            <div class="reserver">
-              <a target="_blank" :href="'https://www.facebook.com/events/'+ idfb +'/'" alt="Événement Facebook">PARTICIPER</a>
-            </div>
-            <div class="billetterie">
-                <a :href="billet">acheter vos billets</a>
+            <div class="caption-container">
+                <p id="caption"></p>
             </div>
         </div>
-    </article>
-       
+    </div>
+    <div class="right-side">
+        <small class="date">2017</small>
+        <h3 class="title-article">Les jours - cahiers photographiques</h3>
+        <p class="description-article">Résidence 1+2 2017</p>
+        <div class="content">
+            <p><b>DOCUMENTAIRE - 26 MINUTES</b></p>
+            <p><b>UN FILM DE CLEMENTINE CARRIE</b></p>
+            <p>avec Israel Arino, Leslie Moquin et Christian Sanna</p>
+            <p>Création musical: Augustin Charnet</p>
+            <p>Direction artistique: Philippe Guionie</p>
+            <br>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+              inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+              fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+              amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim
+              ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum
+              iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            <br>
+            <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum.</i></p>
+            <br>
+            <p class="read-more">POUR EN SAVOIR PLUS</p>
+            <a href="#" class="link">Résidence 2017</a>
+            <p class="no-margin">LIENS &#62;</p>
+            <a href="#" class="more-link">Clémentine Carrié</a>
+            <a href="#" class="more-link">Augustin Charnet</a>
+        </div>
+
+    </div>
   </main>
 </template>
 <script>
-import $ from 'jquery'
-import VueMarkdown from 'vue-markdown'
-import VueLazyload from 'vue-lazyload'
-export default {
-  layout: 'default',
-  transition: { name: 'intro', mode: 'out-in' },
-  components: { VueMarkdown, VueLazyload },
-  async asyncData({ params }) {
-    let page = await import('~/content/programmation/page/' + params.slug + '.json');
-    return page;
-  },
-  head() {
-    return {
-      title: 'EA#15 /w ' +this.titre,
-      meta: [
-        { hid: 'description', name: 'description', content: `${this.description}` },
-        { 'property': 'og:title', 'content': `${this.titre}`, 'vmid': 'og:titre' },
-        { 'property': 'og:description', 'content': `${this.description}` },
-        { 'property': 'og:image', 'content': `${this.thumbnail}`, 'vmid': 'og:image' }
-      ]
-    }
-  },
-  updated() {
-    this.initSlider();
-  },
-  beforeMount(){
-    
-  },
-  mounted() {
-    this.initSlider();
-    this.switchBackground();
-    this.countArtist();    
-  },
-  destroyed() {
-    this.killBackground();
-  },
-  methods: {
-    countArtist() {
-      var count = 0;
-      $(".slider-item__image").each(function() {
-          count= count + 1 ;
-      });
-      if(count <= 1){
-          $(".slider-evenement").addClass('no-nav');
-      };
-      $(".title-artiste, .link-map a").each(function() {
-        var text = $(this).text();
-        text = text.replace(/-/g, " ");
-        $(this).text(text);
-      });
+  import $ from 'jquery'
+  import VueMarkdown from 'vue-markdown'
+  import VueLazyload from 'vue-lazyload'
+  export default {
+    layout: 'default',
+    transition: { name: 'intro', mode: 'out-in' },
+    components: { VueMarkdown, VueLazyload },
+    async asyncData({ params }) {
+      let page = await import('~/content/film/page/' + params.slug + '.json');
+      return page;
     },
-    switchBackground() {
-      var back = $('main').attr('data-back');
-      var duo = $('main').attr('data-duo');
-      $('.main-background').fadeOut(100, function(){
-          $('.main-background').attr('xlink:href', back).bind('onreadystatechange load', function(){
-            $('.anim-filter').addClass("duotone-"+duo);
-            $('.main-background').fadeIn(100);
-          });
-      });
-      
-    },
-    initSlider() {
-    
-      $('.slider-evenement .slider-item').eq(0).addClass('active');
-      var total = $('.slider-evenement .slider-item').length;
-      var current = 0;
-      var sliderInterval = setInterval(slideNext, 4000);
-      
-      $('.slider-evenement #moveRight').on('click', function(){
-        clearInterval(sliderInterval);
-        slideNext();
-      });
-      $('.slider-evenement #moveLeft').on('click', function(){
-        clearInterval(sliderInterval);
-        var prev=current;
-        current = current- 1;
-        setSlide(prev, current);
-      });
-      
-      function setSlide(prev, next){
-        var slide= current;
-        if(next>total-1){
-         slide=0;
-          current=0;
-        }
-        if(next<0){
-          slide=total - 1;
-          current=total - 1;
-        }        
-        $('.slider-evenement .slider-item').eq(prev).removeClass('active');
-        $('.slider-evenement .slider-item').eq(slide).addClass('active');
+    head() {
+      return {
+        title: '1+2 – Photographie & Sciences | ' +this.title,
+        meta: [
+          { hid: 'description', name: 'description', content: `${this.descriptionseo}` },
+          { 'property': 'og:title', 'content': `${this.title}`, 'vmid': 'og:titre' },
+          { 'property': 'og:description', 'content': `${this.descriptionseo}` },
+          { 'property': 'og:image', 'content': `${this.thumbnail}`, 'vmid': 'og:image' }
+        ]
       }
-      
-      function slideNext(){
-          var next=current;
-          current= current+1;
-          setSlide(next, current);
-      }   
-      
-      
     },
-    killBackground() {
-      var duo = $('main').attr('data-duo');
-      setTimeout(function(){  
-        $('.main-background').fadeOut(100, function(){
-            $('.main-background').attr('xlink:href', '/images/background-1-electro-alternativ.jpg').bind('onreadystatechange load', function(){
-                $('.anim-filter').removeClass("duotone-"+duo);
-                $('.main-background').fadeIn(100);
-            });
-        });
-      }, 500);
+    updated() {
+    },
+    beforeMount(){
+    },
+    mounted() {
+    },
+    destroyed() {
+    },
+    methods: {
     }
-    
-  }
-};
+  };
 </script>
-
-<style>
-
-  /*Carousel*/
-  .slider-evenement {
-      height: 350px!important;
-      width: 100%;
-      display: flex;   
-      overflow: hidden;
-      position: relative;
-  }
-  .slider-item {
-      visibility:visible;
-      display: flex;
-      width: 100%;
-      height: 100%;
-      align-items: center;
-      justify-content: flex-end;
-      -webkit-align-items: center;
-      -webkit-justify-content: flex-end;
-      position: relative;
-      background-color: #fff;
-      flex-shrink: 0;
-      -webkit-flex-shrink: 0;
-      position: absolute;
-      z-index: 0;
-      transition: 0.6s all linear;
-  }
-  .slider-evenement .slider-item {
-      left: 0%;
-      background: black;
-  }
-  .slider-item__image {
-      width: 100%;
-      height: 100%;      
-      align-self: flex-end;
-      flex-basis: 100%;
-      order: 1;
-      -webkit-order: 1;    
-      -webkit-align-self: flex-end;
-      -webkit-flex-basis: 100%;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position:relative;
-      transform: translateX(-100%);
-      transition: 0.6s all ease-in-out;
-  }
-  .slider-evenement .slider-item__image {
-      transform: translateX(100%);
-      order: 2;
-  }
-  .slider-item__container {
-      box-shadow: 0 0 0 40px #fff, 4px 0 0 38px #cecece;
-  }
-  .slider-evenement .slider-item__container {
-      border-right: none;
-      box-shadow: 0 0 0 40px #fff, -4px 0 0 38px #cecece;
-  }
-  .slider__nav {
-      position: absolute;
-      z-index: 2;
-      background-color: #000;
-      bottom: 0px;
-  }
-  .slider-evenement .slider__nav {
-      left:0;  
-  }
-  .slider__icon {
-      display: inline-block;
-      vertical-align: middle;
-      width: 16px;
-      fill: #FFFFFF;
-  }
-  .slider__arrow {
-      cursor: pointer;
-      display: inline-block;
-      padding: 11px 15px;
-      position: relative;
-      color: #fff;
-      line-height: 15px;
-  }
-  .slider__arrow:nth-child(1):after {
-      content:'';
-      right: 0;
-      position: absolute;
-      width: 1px;
-      background-color: #b0b0b0;
-      height: 14px;
-      top: 50%;
-      margin-top: -6px;
-  }
-  .active{
-      z-index: 1;
-      display: flex;
-      visibility:visible;
-  }
-  .active .slider-item__image{ 
-      transition: 0.6s all ease-in-out;
-      transform: translateX(0);
-}
-</style>
