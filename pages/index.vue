@@ -1,6 +1,6 @@
 <template>
   <main class="black">
-    <ea-titre/>
+    <ea-titre/> lol
   </main>
 </template>
 <script>
@@ -17,4 +17,3 @@
     }
   }
 </script>
-
