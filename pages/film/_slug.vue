@@ -4,7 +4,7 @@
         <vue-markdown>{{ iframe }}</vue-markdown>
         <div class="diapo">
             <div v-for="i in galerie" class="image">
-              <img class="selected" @click="currentSlide(1);" :src="i.image" :alt="i.alt">
+              <img class="selected" data-slide="1" :src="i.image" :alt="i.alt">
             </div>
         </div>
         <div id="myModal" class="modal">
@@ -95,10 +95,12 @@
           });
           $('.image').on( 'click', function() {
               $("#myModal").css('display','block');
+              slideIndex = $(this).attr("data-slide");
           });
 
 
           var slideIndex = 1;
+
           showSlides(slideIndex);
 
           // Next/previous controls
