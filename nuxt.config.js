@@ -8,7 +8,7 @@ var dynamicRoutes = getDynamicPaths({
 });
 module.exports = {
   head: {
-    title: '1+2 – Photographie & Sciences',
+    title: '1 + 2 – Photographie & Sciences',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
