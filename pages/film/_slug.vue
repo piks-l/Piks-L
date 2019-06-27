@@ -66,25 +66,23 @@
         ]
       }
     },
-    data: () => ({
-      slideIndex: 1
-    }),
     updated() {
+
     },
     beforeMount(){
+
     },
     mounted() {
 
       var slideIndex = 1;
       this.showSlides(slideIndex);
+      console.log(slideIndex);
 
     },
     destroyed() {
     },
     methods: {
-        start () {
-          this.slideIndex = 1
-        },
+
         // Open the Modal
         openModal() {
           $("#myModal").css('display','block');
