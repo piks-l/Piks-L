@@ -4,7 +4,7 @@
         <vue-markdown>{{ iframe }}</vue-markdown>
         <div class="diapo">
             <div v-for="i in galerie" class="image">
-              <img class="selected" data-slide="1" :src="i.image" :alt="i.alt">
+              <img class="selected" :src="i.image" :alt="i.alt">
             </div>
         </div>
         <div id="myModal" class="modal">
@@ -15,7 +15,7 @@
                     <img :src="i.image" :alt="i.alt">
                 </div>
 
-                <a class="prev" @click="plusSlides(-1)">&#10094;</a>
+                <a class="prev">&#10094;</a>
                 <a class="next" @click="plusSlides(1)">&#10095;</a>
 
             </div>
@@ -89,6 +89,11 @@
     methods: {
 
         test() {
+          var count=0;
+          $('.image').each( function( ) {
+              count += 1;
+              $(this).find( "img" ).attr('data-slide', count);
+          });
 
           $('.close-modal').on( 'click', function() {
               $("#myModal").css('display','none');
@@ -96,6 +101,13 @@
           $('.image').on( 'click', function() {
               $("#myModal").css('display','block');
               slideIndex = $(this).attr("data-slide");
+          });
+
+          $('.prev').on( 'click', function() {
+              showSlides(slideIndex += -1);
+          });
+          $('.next').on( 'click', function() {
+              showSlides(slideIndex += 1);
           });
 
 
