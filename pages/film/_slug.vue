@@ -71,37 +71,49 @@
     beforeMount(){
     },
     mounted() {
+
+      // Open the Modal
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+
+      // Close the Modal
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+
       var slideIndex = 1;
-      this.showSlides(slideIndex);
-    },
-    destroyed() {
-    },
-    methods: {
-      openModal() {
-        $("#myModal").css('display', 'block');
-      },
-      closeModal() {
-        $("#myModal").css('display', 'none');
-      },
-      plusSlides(n) {
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
         showSlides(slideIndex += n);
-      },
-      currentSlide(n) {
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
         showSlides(slideIndex = n);
-      },
-      showSlides(n) {
+      }
+
+      function showSlides(n) {
         var i;
-        var slides = $(".mySlides");
-        var dots = $(".selected");
-        var captionText = $("#caption");
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("selected");
+        var captionText = document.getElementById("caption");
         if (n > slides.length) {slideIndex = 1}
         if (n < 1) {slideIndex = slides.length}
         for (i = 0; i < slides.length; i++) {
           slides[i].style.display = "none";
         }
+
         slides[slideIndex-1].style.display = "block";
         captionText.innerHTML = dots[slideIndex-1].alt;
       }
+
+    },
+    destroyed() {
+    },
+    methods: {
     }
   };
 </script>
