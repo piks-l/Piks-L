@@ -1,36 +1,25 @@
 <template>
-  <div id="main" :class="'ea-layout-'+this.$route.name">
-    <header class="ea-ui">
-
-      <ui-background/>
+  <div id="main" :class="'1plus2-layout-'+this.$route.name">
+    <header class="1plus2-ui">
       <nuxt-link to="/"><ui-logo/></nuxt-link>
-      <ea-social/>
-      <ui-menu class="ea-menu" />
-      
+      <h2 class="1plus2-titre">{{this.$route.name}}</h2>
+      <ui-menu class="1plus2-menu" />
     </header>
     <transition name="intro" mode="out-in" appear>
       <router-view :key="$route.fullPath"></router-view>
     </transition>
-    
-    <ui-footer/>
   </div>
 </template>
 <script>
   import $ from 'jquery'
   import uiLogo from '~/components/ui/logo.vue'
   import uiMenu from '~/components/ui/menu.vue'
-  import uiFooter from '~/components/ui/footer.vue'
-  import uiBackground from '~/components/ui/background.vue'
-  import eaSocial from '~/components/social.vue'
   export default {
-      components: {
-          uiLogo,
-          uiMenu,
-          uiFooter,
-          uiBackground,
-          eaSocial
-      },
-      mounted () {
-      }
+    components: {
+        uiLogo,
+        uiMenu
+    },
+    mounted () {
+    }
   }
 </script>

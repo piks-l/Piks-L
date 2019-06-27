@@ -1,19 +1,13 @@
 <template>
-  <main class="black">
-    <ea-titre/>
+  <main>
+    INDEX
   </main>
 </template>
 <script>
   import $ from 'jquery'
-  import eaTitre from '~/components/titre.vue'
   export default {
-    layout: 'intro',
-    transition: { name: 'outro', mode: 'out-in' },
-    components: { eaTitre },
-    data() {
-      return {
-        changed: false
-      }
-    }
+    layout: 'default',
+    transition: { name: 'intro', mode: 'out-in' },
+    components: { }
   }
 </script>
