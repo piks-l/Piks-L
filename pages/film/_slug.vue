@@ -3,7 +3,7 @@
     <div class="left-side">
         <vue-markdown>{{ iframe }}</vue-markdown>
         <div class="diapo">
-            <div v-for="s in social" class="image"><img class="selected" onclick="openModal();currentSlide(1)" src="assets/images/scene-c3po.jpg" alt="Residence 1+2 photo"></div>
+            <div class="image"><img class="selected" onclick="openModal();currentSlide(1)" src="assets/images/scene-c3po.jpg" alt="Residence 1+2 photo"></div>
         </div>
         <div id="myModal" class="modal">
             <span class="close-modal cursor" onclick="closeModal()">&times;</span>
