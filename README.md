@@ -1,1 +1,1 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e212373b-0b82-4674-b0e3-26ff3729b5e0/deploy-status)](https://app.netlify.com/sites/electro-alternativ-2019/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9701f426-b059-477e-bd3c-e9b8d38b5ea8/deploy-status)](https://app.netlify.com/sites/1plus2/deploys)
