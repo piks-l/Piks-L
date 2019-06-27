@@ -2,9 +2,10 @@ var webpack = require('webpack');
 var glob = require('glob');
 var path = require('path');
 var dynamicRoutes = getDynamicPaths({
-  '/artistes': 'artistes/page/*.json',
-  '/lieux': 'lieux/page/*.json',
-  '/programmation': 'programmation/page/*.json'
+  '/factory': 'factory/page/*.json',
+  '/film': 'film/page/*.json',
+  '/actualites': 'actualites/page/*.json',
+  '/editions': 'editions/page/*.json'
 });
 module.exports = {
   head: {
