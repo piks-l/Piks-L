@@ -4,19 +4,19 @@
         <vue-markdown>{{ iframe }}</vue-markdown>
         <div class="diapo">
             <div v-for="i in galerie" class="image">
-              <img class="selected" :click="openModal()" :src="i.image" :alt="i.alt">
+              <img class="selected" @click="openModal()" :src="i.image" :alt="i.alt">
             </div>
         </div>
         <div id="myModal" class="modal">
-            <span class="close-modal cursor" :click="closeModal()">&times;</span>
+            <span class="close-modal cursor" @click="closeModal()">&times;</span>
             <div class="modal-content">
 
                 <div v-for="i in galerie" class="mySlides">
                     <img :src="i.image" :alt="i.alt">
                 </div>
 
-                <a class="prev" :click="plusSlides(-1)">&#10094;</a>
-                <a class="next" :click="plusSlides(1)">&#10095;</a>
+                <a class="prev" @click="plusSlides(-1)">&#10094;</a>
+                <a class="next" @click="plusSlides(1)">&#10095;</a>
 
             </div>
             <div class="caption-container">
