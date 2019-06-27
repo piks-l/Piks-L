@@ -101,10 +101,12 @@
           $('.image').on( 'click', function() {
               $("#myModal").css('display','block');
               slideIndex = $(this).attr("data-slide");
+              console.log(slideIndex);
           });
 
           $('.prev').on( 'click', function() {
               showSlides(slideIndex += -1);
+
           });
           $('.next').on( 'click', function() {
               showSlides(slideIndex += 1);
@@ -112,6 +114,7 @@
 
 
           var slideIndex = 1;
+          console.log(slideIndex);
 
           showSlides(slideIndex);
 
