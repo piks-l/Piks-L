@@ -82,7 +82,9 @@
     destroyed() {
     },
     methods: {
-
+        start () {
+          this.slideIndex = 1
+        },
         // Open the Modal
         openModal() {
           $("#myModal").css('display','block');
