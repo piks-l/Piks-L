@@ -78,10 +78,10 @@
     },
     methods: {
       openModal() {
-        document.getElementById("myModal").style.display = "block";
+        $("#myModal").css('display', 'block');
       },
       closeModal() {
-        document.getElementById("myModal").style.display = "none";
+        $("#myModal").css('display', 'none');
       }
     }
   };
