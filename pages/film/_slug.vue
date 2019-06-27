@@ -71,9 +71,9 @@
     beforeMount(){
     },
     mounted() {
-      var slideIndex = 1;
 
-      showSlides(n) {
+
+      function showSlides(n) {
         var i;
         var slides = $(".mySlides");
         var dots = $(".selected");
@@ -86,6 +86,7 @@
         slides[slideIndex-1].style.display = "block";
         captionText.innerHTML = dots[slideIndex-1].alt;
       };
+      var slideIndex = 1;
       showSlides(slideIndex);
       this.openModal();
       this.closeModal();
