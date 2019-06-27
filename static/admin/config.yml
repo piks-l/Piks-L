@@ -51,6 +51,12 @@ collections:
       - {label: "Intro", name: "description", widget: "markdown", required: false}
       - {label: "Article", name: "article", widget: "markdown", required: false}
       - {label: "Iframe", name: "iframe", widget: "markdown", required: false}
-      - {label: "Galerie", name: "galerie", widget: "list", field: {label: Image, name: image, widget: image}, required: false}
+      - label: "Galerie"
+        name: "galerie"
+        widget: "list"
+        required: false
+        fields:
+          - { label: image, name: image, widget: image }
+          - { label: alt, name: alt, widget: string }
       - {label: "Description SEO", name: "descriptionseo", widget: "text", required: false}
       - {label: "Miniature SEO", name: "thumbnail", widget: "image", required: false}
