@@ -80,7 +80,7 @@
     },
     methods: {
 
-        var slideIndex = 1;
+        slideIndex = 1;
         // Open the Modal
         openModal() {
           $("#myModal").css('display','block');
