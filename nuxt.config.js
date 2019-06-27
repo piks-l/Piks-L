@@ -8,13 +8,13 @@ var dynamicRoutes = getDynamicPaths({
 });
 module.exports = {
   head: {
-    title: 'Electro Alternativ #15',
+    title: '1+2 – Photographie & Sciences',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: '1+2 est un programme de création artistique à vocation européenne, ancré à Toulouse, associant la photographie et les sciences.' },
       { 'property': 'og:title', 'content': '', 'vmid': 'og:title' },
-      { 'property': 'og:description', 'content': '' },
+      { 'property': 'og:description', 'content': '1+2 – Photographie & Sciences' },
       { 'property': 'og:image', 'content': 'images/uploads/link_share.jpg', 'vmid': 'og:image' }
     ],
     link: [
