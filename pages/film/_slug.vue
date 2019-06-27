@@ -71,34 +71,21 @@
     beforeMount(){
     },
     mounted() {
-    },
-    destroyed() {
-    },
-    methods: {
-      // Open the Modal
-      openModal: function () {
-        document.getElementById("myModal").style.display = "block";
-      }
-
-      // Close the Modal
-      closeModal: function () {
-        document.getElementById("myModal").style.display = "none";
-      }
 
       var slideIndex = 1;
       showSlides(slideIndex);
 
       // Next/previous controls
-      plusSlides: function (n) {
+      function plusSlides(n) {
         showSlides(slideIndex += n);
       }
 
       // Thumbnail image controls
-      currentSlide: function (n) {
+      function currentSlide(n) {
         showSlides(slideIndex = n);
       }
 
-      showSlides: function (n) {
+      function showSlides(n) {
         var i;
         var slides = document.getElementsByClassName("mySlides");
         var dots = document.getElementsByClassName("selected");
@@ -111,6 +98,20 @@
 
         slides[slideIndex-1].style.display = "block";
         captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+
+    },
+    destroyed() {
+    },
+    methods: {
+      // Open the Modal
+      openModal: function () {
+        document.getElementById("myModal").style.display = "block";
+      },
+
+      // Close the Modal
+      closeModal: function () {
+        document.getElementById("myModal").style.display = "none";
       }
     }
   };
