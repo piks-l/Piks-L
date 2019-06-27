@@ -9,7 +9,7 @@
   // export
 export default {
     layout: 'default',
-    components: { VueLazyload, eaTitre },
+    components: { VueLazyload },
     transition: { name: 'intro', mode: 'out-in' },
     head() {
       return {
