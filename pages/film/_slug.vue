@@ -71,6 +71,8 @@
     beforeMount(){
     },
     mounted() {
+      this.openModal();
+      this.closeModal();
     },
     destroyed() {
     },
