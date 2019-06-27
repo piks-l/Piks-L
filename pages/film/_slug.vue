@@ -4,11 +4,11 @@
         <vue-markdown>{{ iframe }}</vue-markdown>
         <div class="diapo">
             <div v-for="i in galerie" class="image">
-              <img class="selected" @click="openModal(); currentSlide(1);" :src="i.image" :alt="i.alt">
+              <img class="selected" @click="currentSlide(1);" :src="i.image" :alt="i.alt">
             </div>
         </div>
         <div id="myModal" class="modal">
-            <span class="close-modal cursor" @click="closeModal()">&times;</span>
+            <span class="close-modal cursor">&times;</span>
             <div class="modal-content">
 
                 <div v-for="i in galerie" class="mySlides">
@@ -89,15 +89,14 @@
     methods: {
 
         test() {
-          // Open the Modal
-          function openModal() {
-            document.getElementById("myModal").style.display = "block";
-          }
 
-          // Close the Modal
-          function closeModal() {
-            document.getElementById("myModal").style.display = "none";
-          }
+          $('.close-modal').on( 'click', function() {
+              $("#myModal").css('display','none');
+          });
+          $('.image').on( 'click', function() {
+              $("#myModal").css('display','block');
+          });
+
 
           var slideIndex = 1;
           showSlides(slideIndex);
