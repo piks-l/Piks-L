@@ -55,6 +55,12 @@
       let page = await import('~/content/film/page/' + params.slug + '.json');
       return page;
     },
+    data() {
+      return {
+        slideIndex: 1
+      }
+    },
+
     head() {
       return {
         title: '1+2 – Photographie & Sciences | ' +this.title,
@@ -75,7 +81,7 @@
     mounted() {
 
       var slideIndex = 1;
-      this.showSlides(slideIndex);
+
       console.log(slideIndex);
 
     },
