@@ -74,12 +74,12 @@
 
       // Open the Modal
       function openModal() {
-        document.getElementById("myModal").style.display = "block";
+        $("#myModal").css('display','block');
       }
 
       // Close the Modal
       function closeModal() {
-        document.getElementById("myModal").style.display = "none";
+        $("#myModal").css('display','none');
       }
 
       var slideIndex = 1;

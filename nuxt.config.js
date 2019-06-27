@@ -8,6 +8,10 @@ var dynamicRoutes = getDynamicPaths({
   '/editions': 'editions/page/*.json'
 });
 module.exports = {
+  server: {
+    port: 8000, // default: 3000
+    host: '0.0.0.0', // default: localhost
+  },
   head: {
     title: '1+2 – Photographie & Sciences',
     meta: [
