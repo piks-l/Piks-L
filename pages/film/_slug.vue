@@ -4,7 +4,7 @@
         <vue-markdown>{{ iframe }}</vue-markdown>
         <div class="diapo">
             <div v-for="i in galerie" class="image">
-              <img class="selected" @click="openModal()" :src="i.image" :alt="i.alt">
+              <img class="selected" @click="openModal(); currentSlide(1);" :src="i.image" :alt="i.alt">
             </div>
         </div>
         <div id="myModal" class="modal">
@@ -71,6 +71,9 @@
     beforeMount(){
     },
     mounted() {
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
       this.openModal();
       this.closeModal();
     },
@@ -82,6 +85,25 @@
       },
       closeModal() {
         $("#myModal").css('display', 'none');
+      },
+      plusSlides(n) {
+        showSlides(slideIndex += n);
+      },
+      currentSlide(n) {
+        showSlides(slideIndex = n);
+      },
+      showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("selected");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+        captionText.innerHTML = dots[slideIndex-1].alt;
       }
     }
   };
