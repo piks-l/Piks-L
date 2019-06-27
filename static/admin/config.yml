@@ -5,200 +5,50 @@ media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 display_url: https://1plus2.netlify.com/
 collections:
-  - name: "artistes"
-    label: "Artistes"
-    folder: "content/artistes/page"
+  - name: "actualites"
+    label: "Actualites"
+    folder: "content/actualites/page"
     create: true
     slug: "{{slug}}"
     format: 'json'
     fields:
-      - {label: "Url", name: "url", widget: "string", required: false}
-      - {label: "Image de couverture", name: "thumbnail", widget: "image", required: true}
-      - {label: "Nom", name: "title", widget: "string", tagname: "h1", required: true}
-      - {label: "Description", name: "description", widget: "markdown", required: false}
+      - {label: "Nom", name: "titre", widget: "string", tagname: "h1", required: true}
+      - {label: "Article", name: "description", widget: "markdown", required: false}
+      - {label: "Description SEO", name: "thumbnail", widget: "image", required: false}
+      - {label: "Miniature SEO", name: "thumbnail", widget: "image", required: false}
+  - name: "editions"
+    label: "Editions"
+    folder: "content/editions/page"
+    create: true
+    slug: "{{slug}}"
+    format: 'json'
+    fields:
+      - {label: "Nom", name: "titre", widget: "string", tagname: "h1", required: true}
+      - {label: "Article", name: "description", widget: "markdown", required: false}
+      - {label: "Description SEO", name: "thumbnail", widget: "image", required: false}
+      - {label: "Miniature SEO", name: "thumbnail", widget: "image", required: false}
+  - name: "factory"
+    label: "Factory"
+    folder: "content/factory/page"
+    create: true
+    slug: "{{slug}}"
+    format: 'json'
+    fields:
+      - {label: "Nom", name: "titre", widget: "string", tagname: "h1", required: true}
+      - {label: "Article", name: "description", widget: "markdown", required: false}
+      - {label: "Description SEO", name: "thumbnail", widget: "image", required: false}
+      - {label: "Miniature SEO", name: "thumbnail", widget: "image", required: false}
+  - name: "film"
+    label: "Film"
+    folder: "content/film/page"
+    create: true
+    slug: "{{slug}}"
+    format: 'json'
+    fields:
+      - {label: "Titre", name: "titre", widget: "string", tagname: "h1", required: true}
+      - {label: "Intro", name: "description", widget: "markdown", required: false}
+      - {label: "Article", name: "article", widget: "markdown", required: false}
       - {label: "Iframe", name: "iframe", widget: "markdown", required: false}
-      - label: "Evenement"
-        name: "Evenement"
-        widget: "list"
-        required: false
-        fields:
-          - label: "Date"
-            name: "dateh"
-            widget: "relation"
-            collection: "programmation"
-            searchFields: ["datehumaine", "titre"]
-            valueField: "datehumaine"
-            displayFields: ["datehumaine", "titre"]
-            multiple: "true"
-          - label: "Titre"
-            name: "titr"
-            widget: "relation"
-            collection: "programmation"
-            searchFields: ["datehumaine", "titre"]
-            valueField: "titre"
-            displayFields: ["datehumaine", "titre"]
-            multiple: "true"
-          - label: "Url"
-            name: "adresse"
-            widget: "relation"
-            collection: "programmation"
-            searchFields: ["datehumaine", "titre"]
-            valueField: "title"
-            displayFields: ["datehumaine", "titre"]
-            multiple: "true"
-      - {label: "Langue", name: "langue", widget: "string", required: false}
-      - {label: "Label", name: "label", widget: "string", required: false}
-      - label: "Social"
-        name: "social"
-        widget: "list"
-        required: false
-        fields:
-          - { label: Lien, name: lien, widget: string }
-          - { label: awesome, name: awesome, widget: string }
-      - {label: "Miniature Facebook", name: "thumbnail", widget: "image", required: false}
-
-  - name: "lieux"
-    label: "Lieux"
-    folder: "content/lieux/page"
-    create: true
-    slug: "{{slug}}"
-    format: 'json'
-    fields:
-      - {label: "Url", name: "url", widget: "string", required: false}
-      - {label: "Nom", name: "title", widget: "string", tagname: "h1", required: true}
-      - {label: "Image de couverture", name: "couverture", widget: "image", required: true}
-      - {label: "Description", name: "description", widget: "markdown", required: false}
-      - {label: "Adresse", name: "adresse", widget: "markdown", required: false}
-      - {label: "Lien gmap", name: "gmap", widget: "string", required: false}
-      - {label: "Direction", name: "direction", widget: "markdown", required: false}
-      - label: "Social"
-        name: "social"
-        required: false
-        widget: "list"
-        fields:
-          - { label: Texte, name: texte, widget: string , required: false}
-          - { label: Lien, name: lien, widget: string , required: false}
-      - {label: "Date de publication", name: "date", widget: "date", format: "DD/MM/YYYY", required: false}
-      - {label: "Miniature", name: "thumbnail", widget: "image", required: false}
-      - label: "Evenement"
-        name: "Evenement"
-        widget: "list"
-        required: false
-        fields:
-          - label: "Date"
-            name: "dateh"
-            widget: "relation"
-            collection: "programmation"
-            searchFields: ["datehumaine", "titre"]
-            valueField: "datehumaine"
-            displayFields: ["datehumaine", "titre"]
-            multiple: "true"
-          - label: "Titre"
-            name: "titr"
-            widget: "relation"
-            collection: "programmation"
-            searchFields: ["datehumaine", "titre"]
-            valueField: "titre"
-            displayFields: ["datehumaine", "titre"]
-            multiple: "true"
-          - label: "Url"
-            name: "adresse"
-            widget: "relation"
-            collection: "programmation"
-            searchFields: ["datehumaine", "titre"]
-            valueField: "title"
-            displayFields: ["datehumaine", "titre"]
-            multiple: "true"
-
-  - name: "programmation"
-    label: "Programmation"
-    folder: "content/programmation/page"
-    create: true
-    slug: "soiree-{{slug}}"
-    format: 'json'
-    fields:
-      - {label: "Url", name: "title", widget: "string", required: true}
-      - {label: "Titre", name: "titre", widget: "string", required: true, tagname: "h1"}
-      - label: "Intro"
-        name: "intro"
-        required: true
-        widget: "string"
-        pattern: [".{5,}", "5 caractères minimum !"]
-      - {label: "Description", name: "description", widget: "markdown", required: false}
-      - {label: "Date Robot", name: "dateevents", widget: "date", format: "MM/DD/YYYY", required: false}
-      - {label: "Date Humaine", name: "datehumaine", widget: "string", required: false}
-      - {label: "Heure de début", name: "start", widget: "string", required: false}
-      - {label: "Heure de fin", name: "end", widget: "string", required: false}
-      - {label: "Tarif", name: "tarif", widget: "string", required: false}
-      - {label: "Lien billeterie", name: "billet", widget: "string", required: false}
-      - {label: "Event ID Facebook", name: "idfb", widget: "string", required: false}
-      - label: "Type"
-        name: "type"
-        required: false
-        widget: "select"
-        options:
-          - { label: "Jour", value: "jour" }
-          - { label: "Soirée", value: "soiree" }
-          - { label: "Nuit", value: "nuit" }
-      - label: "Semaine"
-        name: "semaine"
-        required: false
-        widget: "select"
-        options:
-          - { label: "Semaine 1", value: "semaine1" }
-          - { label: "Semaine 2", value: "semaine2" }
-          - { label: "Semaine 3", value: "semaine3" }
-          - { label: "Semaine 4", value: "semaine4" }
-      - label: "Images de fond"
-        required: false
-        name: "background"
-        widget: "select"
-        options:
-          - { label: "Background 1", value: "/images/background-1-electro-alternativ.jpg" }
-          - { label: "Background 2", value: "/images/background-2-electro-alternativ.jpg" }
-          - { label: "Background 3", value: "/images/background-3-electro-alternativ.jpg" }
-          - { label: "Background 4", value: "/images/background-4-electro-alternativ.jpg" }
-          - { label: "Background 5", value: "/images/background-5-electro-alternativ.jpg" }
-          - { label: "Background 6", value: "/images/background-6-electro-alternativ.jpg" }
-      - label: "Groupes"
-        name: "groupes"
-        required: false
-        widget: "list"
-        fields:
-          - label: "Artiste"
-            name: "artiste"
-            widget: "relation"
-            collection: "artistes"
-            searchFields: ["title"]
-            valueField: "url"
-            displayFields: ["title"]
-            multiple: "true"
       - {label: "Galerie", name: "galerie", widget: "list", field: {label: Image, name: image, widget: image}, required: false}
-      - label: "Lieu"
-        name: "lieu"
-        widget: "relation"
-        collection: "lieux"
-        required: false
-        searchFields: ["title"]
-        valueField: "url"
-        displayFields: ["title"]
-        multiple: "true"
-      - {label: "Miniature Facebook", name: "thumbnail", widget: "image", required: false}
-  - name: "articles"
-    label: "Articles"
-    folder: "content/articles/page"
-    create: true
-    required: false
-    slug: "{{slug}}"
-    format: 'json'
-    fields:
-      - {label: "Image de couverture", name: "couverture", widget: "image", required: true}
-      - {label: "Nom", name: "title", widget: "string", tagname: "h1", required: true}
-      - {label: "Intro", name: "intro", widget: "markdown"}
-      - {label: "Article", name: "article", widget: "markdown"}
-      - label: "Liens"
-        name: "liens"
-        widget: "list"
-        fields:
-          - { label: Lien, name: lien, widget: string }
-          - { label: awesome, name: awesome, widget: string }
+      - {label: "Description SEO", name: "thumbnail", widget: "image", required: false}
+      - {label: "Miniature SEO", name: "thumbnail", widget: "image", required: false}
