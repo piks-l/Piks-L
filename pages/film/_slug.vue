@@ -72,38 +72,38 @@
     },
     mounted() {
 
-      this.diapo();
+      var slideIndex = 1;
+      this.showSlides(slideIndex);
 
     },
     destroyed() {
     },
     methods: {
 
-      diapo(){
+
         // Open the Modal
-        function openModal() {
+        openModal() {
           $("#myModal").css('display','block');
-        }
+        },
 
         // Close the Modal
-        function closeModal() {
+        closeModal() {
           $("#myModal").css('display','none');
-        }
+        },
 
-        var slideIndex = 1;
-        showSlides(slideIndex);
+
 
         // Next/previous controls
-        function plusSlides(n) {
+        plusSlides(n) {
           showSlides(slideIndex += n);
-        }
+        },
 
         // Thumbnail image controls
-        function currentSlide(n) {
+        currentSlide(n) {
           showSlides(slideIndex = n);
-        }
+        },
 
-        function showSlides(n) {
+        showSlides(n) {
           var i;
           var slides = document.getElementsByClassName("mySlides");
           var dots = document.getElementsByClassName("selected");
@@ -117,7 +117,7 @@
           slides[slideIndex-1].style.display = "block";
           captionText.innerHTML = dots[slideIndex-1].alt;
         }
-      }
+
 
     }
   };
