@@ -37,7 +37,7 @@ export default {
       }
     },
     data() {
-      const context = require.context('~/content/film/page/', false, /\.json$/);
+      const context = require.context('~/content/films/page/', false, /\.json$/);
       const actualites = context.keys().map(key => ({
         ...context(key),
         _path: `/actualites/${key.replace('.json', '').replace('./', '')}`

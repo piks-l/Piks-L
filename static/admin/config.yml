@@ -40,7 +40,7 @@ collections:
       - {label: "Miniature SEO", name: "thumbnail", widget: "image", required: false}
   - name: "film"
     label: "Film"
-    folder: "content/film/page"
+    folder: "content/films/page"
     create: true
     slug: "{{slug}}"
     format: 'json'
