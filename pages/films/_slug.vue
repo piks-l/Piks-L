@@ -46,11 +46,10 @@
 <script>
   import $ from 'jquery'
   import VueMarkdown from 'vue-markdown'
-  import VueLazyload from 'vue-lazyload'
   export default {
     layout: 'default',
     transition: { name: 'intro', mode: 'out-in' },
-    components: { VueMarkdown, VueLazyload },
+    components: { VueMarkdown},
     async asyncData({ params }) {
       let page = await import('~/content/films/page/' + params.slug + '.json');
       return page;
