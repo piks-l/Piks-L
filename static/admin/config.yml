@@ -38,8 +38,8 @@ collections:
       - {label: "Article", name: "description", widget: "markdown", required: false}
       - {label: "Description SEO", name: "descriptionseo", widget: "text", required: false}
       - {label: "Miniature SEO", name: "thumbnail", widget: "image", required: false}
-  - name: "film"
-    label: "Film"
+  - name: "films"
+    label: "Films"
     folder: "content/films/page"
     create: true
     slug: "{{slug}}"
