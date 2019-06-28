@@ -2,7 +2,7 @@
   <main>
     <article class="small-article">
         <a class="article-padding" href="article-film.html">
-            <img class="cover" src="">
+            <img class="cover" src="/images/uploads/influx-accueil-top.jpg">
             <div class="content">
                 <h3 class="title-article">Les jours - cahiers photographiques</h3>
                 <hr>
@@ -15,11 +15,10 @@
 </template>
 <script>
   import $ from 'jquery'
-  import VueLazyload from 'vue-lazyload'
   // export
 export default {
     layout: 'default',
-    components: { VueLazyload },
+    components: {  },
     transition: { name: 'intro', mode: 'out-in' },
     head() {
       return {
