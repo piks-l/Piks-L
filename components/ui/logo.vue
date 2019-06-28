@@ -10,17 +10,8 @@
 export default {
   components: {
   },
-  mounted: () => {
-      this.parallax();
-  },
+  mounted: () => {  },
   methods: {
-    parallax(){
-      var scene = document.getElementById('scene');
-      var parallaxInstance = new Parallax(scene, {
-        relativeInput: true,
-        hoverOnly: true
-      });
-    }
   }
 }
 </script>
