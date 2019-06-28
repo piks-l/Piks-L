@@ -1,5 +1,5 @@
 <template>
-  <main class="1plus2-layout-film">
+  <main class="1plus2-layout-films">
     <div class="left-side">
         <vue-markdown>{{ iframe }}</vue-markdown>
         <div class="diapo">
