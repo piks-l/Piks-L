@@ -11,10 +11,15 @@ export default {
   components: {
   },
   mounted: () => {
-    var scene = document.getElementById('scene');
-    var parallaxInstance = new Parallax(scene, {
-      relativeInput: true,
-      hoverOnly: true
-    });
+      this.parallax();
+  },
+  methods: {
+    parallax(){
+      var scene = document.getElementById('scene');
+      var parallaxInstance = new Parallax(scene, {
+        relativeInput: true,
+        hoverOnly: true
+      });
+    }
   }
 }

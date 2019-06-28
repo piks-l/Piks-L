@@ -3,17 +3,17 @@
       <div class="black-line"><div class="close">Navigation</div></div>
       <nav>
           <ul class="nav">
-            <li><a href="actualites.html" class="menu-link">ACTUALITES</a></li>
-            <li><a href="#" class="color-red menu-link">RESIDENCES</a></li>
-            <li><a href="#" class="color-red menu-link">COLLOQUES</a></li>
-            <li><a href="factory.html" class="color-blue menu-link">FACTORY</a></li>
-            <li><a href="#" class="color-yellow menu-link">HORS LES MURS</a></li>
-            <li><a href="#" class="menu-link">EXPOSITIONS</a></li>
-            <li><a href="editions.html" class="color-red menu-link">EDITIONS</a></li>
-            <li><a href="films.html" class="color-red menu-link">FILMS</a></li>
-            <li><a href="#" class="menu-link">STUDIES</a></li>
-            <li><a href="#" class="menu-link">PARTENAIRES</a></li>
-            <li><a href="#" class="menu-link">INFOS - CONTACTS</a></li>
+            <li><nuxt-link to="/actualites/" class="menu-link">ACTUALITES</nuxt-link></li>
+            <li><nuxt-link to="/" class="color-red menu-link">RESIDENCES</nuxt-link></li>
+            <li><nuxt-link to="/" class="color-red menu-link">COLLOQUES</nuxt-link></li>
+            <li><nuxt-link to="/factory/" class="color-blue menu-link">FACTORY</nuxt-link></li>
+            <li><nuxt-link to="/" class="color-yellow menu-link">HORS LES MURS</nuxt-link></li>
+            <li><nuxt-link to="/" class="menu-link">EXPOSITIONS</nuxt-link></li>
+            <li><nuxt-link to="/editions/" class="color-red menu-link">EDITIONS</nuxt-link></li>
+            <li><nuxt-link to="/films/" class="color-red menu-link">FILMS</nuxt-link></li>
+            <li><nuxt-link to="/" class="menu-link">STUDIES</nuxt-link></li>
+            <li><nuxt-link to="/" class="menu-link">PARTENAIRES</nuxt-link></li>
+            <li><nuxt-link to="/" class="menu-link">INFOS - CONTACTS</nuxt-link></li>
           </ul>
       </nav>
   </div>
@@ -28,7 +28,7 @@
       uiSocial,
     },
     mounted: () => {
-      
+
       $( ".menu-select" ).click(function() {
         $( "header" ).addClass( "open" );
       });

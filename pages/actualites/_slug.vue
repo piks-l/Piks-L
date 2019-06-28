@@ -131,7 +131,7 @@
             captionText.innerHTML = dots[slideIndex-1].alt;
           }
 
-        },
+        }
 
 
     }
