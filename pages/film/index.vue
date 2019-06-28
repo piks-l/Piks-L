@@ -1,6 +1,16 @@
 <template>
   <main>
-
+    <article class="small-article">
+        <a class="article-padding" href="article-film.html">
+            <img class="cover" src="">
+            <div class="content">
+                <h3 class="title-article">Les jours - cahiers photographiques</h3>
+                <hr>
+                <p class="description-article">Résidence 1+2 2017</p>
+                <small class="date">2017</small>
+            </div>
+        </a>
+    </article>
   </main>
 </template>
 <script>
