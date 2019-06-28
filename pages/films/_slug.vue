@@ -52,7 +52,7 @@
     transition: { name: 'intro', mode: 'out-in' },
     components: { VueMarkdown, VueLazyload },
     async asyncData({ params }) {
-      let page = await import('~/content/film/page/' + params.slug + '.json');
+      let page = await import('~/content/films/page/' + params.slug + '.json');
       return page;
     },
     data() {

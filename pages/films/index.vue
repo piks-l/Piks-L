@@ -33,13 +33,13 @@ export default {
       }
     },
     data() {
-      const context = require.context('~/content/film/page/', false, /\.json$/);
+      const context = require.context('~/content/films/page/', false, /\.json$/);
       const film = context.keys().map(key => ({
         ...context(key),
-        _path: `/film/${key.replace('.json', '').replace('./', '')}`
+        _path: `/films/${key.replace('.json', '').replace('./', '')}`
       }));
       return {
-        film
+        films
       };
     },
   mounted() {
