@@ -1,7 +1,7 @@
 <template>
   <main>
     <article class="small-article">
-        <a class="article-padding" href="article-film.html">
+        <nuxt-link class="article-padding" to="/films/les-jours-cahiers-photographiques/">
             <img class="cover" src="/images/uploads/influx-accueil-top.jpg">
             <div class="content">
                 <h3 class="title-article">Les jours - cahiers photographiques</h3>
@@ -9,7 +9,7 @@
                 <p class="description-article">Résidence 1+2 2017</p>
                 <small class="date">2017</small>
             </div>
-        </a>
+        </nuxt-link>
     </article>
   </main>
 </template>
