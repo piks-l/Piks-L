@@ -25,7 +25,7 @@
   export default {
     components: {
       uiLogo,
-      uiSocial,
+      uiSocial
     },
     mounted: () => {
 
