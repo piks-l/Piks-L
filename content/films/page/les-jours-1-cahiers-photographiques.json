@@ -1,6 +1,21 @@
 {
-  "title": "Les jours 1 Cahiers photographiques",
-  "soustitre": "Résidence 1+2 2017",
+  "descriptionseo": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. ",
+  "iframe": "<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/GRMaLmjXF8k\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+  "thumbnail": "/images/uploads/bellenger-factory-2018.jpg",
   "date": "2019",
+  "article": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. \n\nUt enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+  "cover": "/images/uploads/bellenger-factory-2018-05.jpg",
+  "soustitre": "Résidence 1+2 2017",
+  "title": "Les jours - Cahiers photographiques",
+  "galerie": [
+    {
+      "image": "/images/uploads/bellenger-factory-2018-05.jpg",
+      "alt": "Test 1"
+    },
+    {
+      "image": "/images/uploads/bellenger-factory-2018.jpg",
+      "alt": "Test 2"
+    }
+  ],
   "description": "DOCUMENTAIRE - 26 MINUTES\nUN FILM DE CLEMENTINE CARRIE\n\navec Israel Arino, Leslie Moquin et Christian Sanna\nCréation musical : Augustin Charnet\nDirection artistique : Philippe Guionie\n"
 }
