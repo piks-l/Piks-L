@@ -1,13 +1,13 @@
 <template>
   <main>
-    <article v-for="f in film" class="small-article">
-        <nuxt-link class="article-padding" :to="f._path+'/'">
-            <img class="cover" :src="f.cover">
+    <article v-for="fil in film" class="small-article">
+        <nuxt-link class="article-padding" :to="fil._path+'/'">
+            <img class="cover" :src="fil.cover">
             <div class="content">
-                <h3 class="title-article">{{ f.title }}</h3>
+                <h3 class="title-article">{{ fil.title }}</h3>
                 <hr>
-                <p class="description-article">{{ f.soustitre }}</p>
-                <small class="date">{{ f.date }}</small>
+                <p class="description-article">{{ fil.soustitre }}</p>
+                <small class="date">{{ fil.date }}</small>
             </div>
         </nuxt-link>
     </article>
