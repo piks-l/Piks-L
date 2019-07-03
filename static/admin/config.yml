@@ -45,12 +45,20 @@ collections:
     slug: "{{slug}}"
     format: 'json'
     fields:
+      - {label: "Image de couverture", name: "cover", widget: "image", required: false}
       - {label: "Titre", name: "title", widget: "string", tagname: "h1", required: true}
       - {label: "Sous titre", name: "soustitre", widget: "string", required: false}
       - {label: "Date de publication", name: "date", widget: "date", format: "YYYY", required: false}
       - {label: "Intro", name: "description", widget: "markdown", required: false}
       - {label: "Article", name: "article", widget: "markdown", required: false}
-      - {label: "Iframe", name: "iframe", widget: "markdown", required: false}
+      - label: "En savoir plus"
+        name: "galerie"
+        widget: "list"
+        required: false
+        fields:
+          - { label: image, name: image, widget: image }
+          - { label: alt, name: alt, widget: string }
+      - {label: "Iframe", hint: "Coller ici le code d'intégration de votre iframe",name: "iframe", widget: "markdown", required: false}
       - label: "Galerie"
         name: "galerie"
         widget: "list"
@@ -58,6 +66,11 @@ collections:
         fields:
           - { label: image, name: image, widget: image }
           - { label: alt, name: alt, widget: string }
-      - {label: "Image de couverture", name: "cover", widget: "image", required: false}
-      - {label: "Description SEO", name: "descriptionseo", widget: "text", required: false}
-      - {label: "Miniature SEO", name: "thumbnail", widget: "image", required: false}
+      - label: "SEO"
+        name: "seo"
+        widget: "object"
+        fields: 
+          - {label: "Description SEO", name: "descriptionseo", widget: "text", required: false}
+          - {label: "Miniature SEO", name: "thumbnail", widget: "image", required: false}
+
+
