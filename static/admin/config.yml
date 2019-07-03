@@ -58,5 +58,6 @@ collections:
         fields:
           - { label: image, name: image, widget: image }
           - { label: alt, name: alt, widget: string }
+      - {label: "Image de couverture", name: "cover", widget: "image", required: false}
       - {label: "Description SEO", name: "descriptionseo", widget: "text", required: false}
       - {label: "Miniature SEO", name: "thumbnail", widget: "image", required: false}
