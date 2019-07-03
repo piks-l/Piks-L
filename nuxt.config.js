@@ -3,23 +3,19 @@ var glob = require('glob');
 var path = require('path');
 var dynamicRoutes = getDynamicPaths({
   '/factory': 'factory/page/*.json',
-  '/film': 'film/page/*.json',
+  '/films': 'films/page/*.json',
   '/actualites': 'actualites/page/*.json',
   '/editions': 'editions/page/*.json'
 });
 module.exports = {
-  server: {
-    port: 8000, // default: 3000
-    host: '0.0.0.0', // default: localhost
-  },
   head: {
     title: '1+2 – Photographie & Sciences',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
       { hid: 'description', name: 'description', content: '1+2 est un programme de création artistique à vocation européenne, ancré à Toulouse, associant la photographie et les sciences.' },
-      { 'property': 'og:title', 'content': '', 'vmid': 'og:title' },
-      { 'property': 'og:description', 'content': '1+2 – Photographie & Sciences' },
+      { 'property': 'og:title', 'content': '1+2 – Photographie & Sciences', 'vmid': 'og:title' },
+      { 'property': 'og:description', 'content': '1+2 est un programme de création artistique à vocation européenne, ancré à Toulouse, associant la photographie et les sciences.' },
       { 'property': 'og:image', 'content': 'images/uploads/link_share.jpg', 'vmid': 'og:image' }
     ],
     link: [
