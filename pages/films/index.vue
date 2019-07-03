@@ -2,12 +2,12 @@
   <main>
     <article v-for="f in film" class="small-article">
         <nuxt-link class="article-padding" :to="f._path+'/'">
-            <img class="cover" :src="cover">
+            <img class="cover" :src="f.cover">
             <div class="content">
-                <h3 class="title-article">{{ title }}</h3>
+                <h3 class="title-article">{{ f.title }}</h3>
                 <hr>
-                <p class="description-article">{{ soustitre }}</p>
-                <small class="date">{{ date }}</small>
+                <p class="description-article">{{ f.soustitre }}</p>
+                <small class="date">{{ f.date }}</small>
             </div>
         </nuxt-link>
     </article>
