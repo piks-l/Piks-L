@@ -1,13 +1,13 @@
 <template>
   <main>
-    <article v-for="fil in film" class="small-article">
-        <nuxt-link class="article-padding" :to="fil._path+'/'">
-            <img class="cover" :src="fil.cover">
+    <article v-for="f in films" class="small-article">
+        <nuxt-link class="article-padding" :to="f._path+'/'">
+            <img class="cover" :src="f.cover">
             <div class="content">
-                <h3 class="title-article">{{ fil.title }}</h3>
+                <h3 class="title-article">{{ f.title }}</h3>
                 <hr>
-                <p class="description-article">{{ fil.soustitre }}</p>
-                <small class="date">{{ fil.date }}</small>
+                <p class="description-article">{{ f.soustitre }}</p>
+                <small class="date">{{ f.date }}</small>
             </div>
         </nuxt-link>
     </article>
@@ -22,7 +22,7 @@ export default {
     transition: { name: 'intro', mode: 'out-in' },
     head() {
       return {
-        title: 'Programmation | Electrobotik Invasion - le 2 & 3 Août 2019',
+        title: 'FILM | Résidence 1+2 – Photographie & Sciences',
         meta: [
           { hid: 'description', name: 'description', content: 'Electrobotik Invasion Festival, le 2 & 3 Août 2019, Circuit Paul Ricard - Le Castelet (83).' },
           { 'property': 'og:title', 'content': 'Electrobotik Invasion - le 2 & 3 Août 2019', 'vmid': 'og:title' },
