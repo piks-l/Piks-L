@@ -1,13 +1,13 @@
 <template>
   <main>
-    <article class="small-article">
-        <nuxt-link class="article-padding" to="/films/les-jours-cahiers-photographiques/">
-            <img class="cover" src="/images/uploads/influx-accueil-top.jpg">
+    <article v-for="f in film" class="small-article">
+        <nuxt-link class="article-padding" :to="f._path+'/'">
+            <img class="cover" :src="cover">
             <div class="content">
-                <h3 class="title-article">Les jours - cahiers photographiques</h3>
+                <h3 class="title-article">{{ title }}</h3>
                 <hr>
-                <p class="description-article">Résidence 1+2 2017</p>
-                <small class="date">2017</small>
+                <p class="description-article">{{ soustitre }}</p>
+                <small class="date">{{ date }}</small>
             </div>
         </nuxt-link>
     </article>
