@@ -1,5 +1,5 @@
 {
-  "cover": "/images/uploads/bellenger-factory-2018-05.jpg",
+  "cover": "/images/uploads/film2019.jpg",
   "title": "The future was yesterday (teaser)",
   "soustitre": "Résidence 2019",
   "date": "2019",
@@ -27,6 +27,6 @@
   },
   "seo": {
     "descriptionseo": "Cette année, la Résidence 1+2 a confié à Citizen Jif, artiste polymorphe, la réalisation de son film de création (format 26 mn) pour son édition 2019. Il réalisera également le programme «Création Capsules 2019» illustrant les actualités de la Résidence 1+2 à suivre tous les 15 jours, sur les réseaux sociaux de la Résidence 1+2.",
-    "thumbnail": ""
+    "thumbnail": "/images/uploads/film2019.jpg"
   }
 }
