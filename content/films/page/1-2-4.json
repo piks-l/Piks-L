@@ -1,0 +1,23 @@
+{
+  "cover": "/images/uploads/film.jpg",
+  "title": "1+2=4",
+  "soustitre": "Résidence 2018",
+  "date": "2018",
+  "body": {
+    "description": "**Dans son premier projet vidéo-documentaire, le point de\nvue de NESTOR révèle les trajectoires indépendantes\nde chacune des recherches faites par les artistes de la\nRésidence 1+2 à travers l’enregistrement sonore et visuel\nd’objets représentatifs ainsi que de l’environnement menant\nà chaque jeu convergent d’identité. Produit sur les lieux de\nproduction de chaque oeuvre, le documentaire est composé\nd’une bande son originale imaginée en réponse aux sons\npériphériques et au hasard.**",
+    "content": "Noé Cuellar est compositeur et photographe. Il développe\nune recherche musicale entre instruments à vent multiformes\n(orgue à soufflet-pompe, harmonium, accordéon) et\nsynthèse modulaire. Faisant converser les sons intentionnels\net accidentels, l’approche de Noé Cuellar en matière\nd’instrumentation est centrée sur le flux d’air enregistré et\nsimulé, et l’abstraction des instruments électroniques. En\ncollaboration avec Joseph Kramer, il fonde en 2009 le duo\nCoppice, à l’origine de nombreux albums, performances live,\ninstallations sonores et films centrés sur la relation de la\nmusique à ses objets.\n\n\nA Chicago, il a réalisé des oeuvres pour l’Experimental Sound\nStudio en partenariat avec le Chicago Park District et le Chicago\nFilm Archives, diffusées au Musée d’Art Contemporain de\nChicago, au Goethe-Institut ou à l’Université de Chicago,\nainsi qu’en de nombreux lieux et festivals américains,\nnotamment à l’Issue Project Room (New York), West\nHollywood Library Council Chambers (Californie), University\nof Minnesota (Minneapolis), University of Michigan (Ann\nArbor). Il a réalisé de nombreuses résidences à l’étranger, de\nl’Islande à l’Australie. Sa musique est diffusée par plusieurs\nlabels internationaux, notamment Another Timbre (UK),\nAposiopèse (FR), Entr’acte (BE) et Senufo Editions (IT).",
+    "link": [
+      {
+        "linktexte": "Future Vessel",
+        "linklien": "https://futurevessel.com/"
+      }
+    ]
+  },
+  "galeries": {
+    "iframe": "<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/7Fw_boF5mmI\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+  },
+  "seo": {
+    "descriptionseo": "Dans son premier projet vidéo-documentaire, le point de\nvue de NESTOR révèle les trajectoires indépendantes\nde chacune des recherches faites par les artistes de la\nRésidence 1+2 à travers l’enregistrement sonore et visuel\nd’objets représentatifs ainsi que de l’environnement menant\nà chaque jeu convergent d’identité.",
+    "thumbnail": "/images/uploads/film.jpg"
+  }
+}
