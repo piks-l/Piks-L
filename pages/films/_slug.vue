@@ -58,10 +58,10 @@
       return {
         title: '1+2 – Photographie & Sciences | ' +this.title,
         meta: [
-          { hid: 'description', name: 'description', content: `${this.descriptionseo}` },
+          { hid: 'description', name: 'description', content: `${this.seo.descriptionseo}` },
           { 'property': 'og:title', 'content': `${this.title}`, 'vmid': 'og:titre' },
-          { 'property': 'og:description', 'content': `${this.descriptionseo}` },
-          { 'property': 'og:image', 'content': `${this.thumbnail}`, 'vmid': 'og:image' }
+          { 'property': 'og:description', 'content': `${this.seo.descriptionseo}` },
+          { 'property': 'og:image', 'content': `${this.seo.thumbnail}`, 'vmid': 'og:image' }
         ]
       }
     },
