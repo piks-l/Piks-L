@@ -1,23 +1,20 @@
 <template>
   <main class="1plus2-layout-films">
     <div class="left-side">
-        <vue-markdown>{{ iframe }}</vue-markdown>
+        <vue-markdown>{{ galeries.iframe }}</vue-markdown>
         <div class="diapo">
-            <div v-for="i in galerie" class="image">
+            <div v-for="i in galeries.images" class="image">
               <img class="selected" :src="i.image" :alt="i.alt">
             </div>
         </div>
         <div id="myModal" class="modal">
             <span class="close-modal cursor">&times;</span>
             <div class="modal-content">
-
-                <div v-for="i in galerie" class="mySlides">
-                    <img :src="i.image" :alt="i.alt">
-                </div>
-
-                <a class="prev">&#10094;</a>
-                <a class="next">&#10095;</a>
-
+              <div v-for="i in galerie.images" class="mySlides">
+                  <img :src="i.image" :alt="i.alt">
+              </div>
+              <a class="prev">&#10094;</a>
+              <a class="next">&#10095;</a>
             </div>
             <div class="caption-container">
                 <p id="caption"></p>
@@ -29,22 +26,20 @@
         <h3 class="title-article">{{ title }}</h3>
         <p class="description-article">{{ soustitre }}</p>
         <div class="content">
-            <vue-markdown>{{ description }}</vue-markdown>
+            <vue-markdown>{{ body.description }}</vue-markdown>
             <br>
-            <vue-markdown>{{ article }}</vue-markdown>
+            <vue-markdown>{{ body.content }}</vue-markdown>
             <br>
             <p class="read-more">POUR EN SAVOIR PLUS</p>
-            <a href="#" class="link">Résidence 2017</a>
+            <a target="_blank" :href="readmore.readlien" class="link">{{ readmore.readtexte}}</a>
             <p class="no-margin">LIENS &#62;</p>
-            <a href="#" class="more-link">Clémentine Carrié</a>
-            <a href="#" class="more-link">Augustin Charnet</a>
+            <a target="_blank" v-for="i in body.link" :href="i.linklien" class="link">{{ i.linktexte}}</a>
         </div>
 
     </div>
   </main>
 </template>
 <script>
-  import $ from 'jquery'
   import VueMarkdown from 'vue-markdown'
   export default {
     layout: 'default',
@@ -59,7 +54,6 @@
         slideIndex: 1
       }
     },
-
     head() {
       return {
         title: '1+2 – Photographie & Sciences | ' +this.title,
@@ -71,69 +65,49 @@
         ]
       }
     },
-    updated() {
-
-    },
-    beforeMount(){
-
-    },
+    updated() {},
+    beforeMount() {},
+    destroyed() {},
     mounted() {
-
-      this.test();
-
-
-    },
-    destroyed() {
+      this.lightbox();
     },
     methods: {
-
-        test() {
-          var count=0;
-          var slideIndex = 1;
-          console.log(slideIndex);
-
-
-          $('.image').each( function( ) {
-              count += 1;
-              $(this).find( "img" ).attr('data-slide', count);
-          });
-
-          $('.close-modal').on( 'click', function() {
-              $("#myModal").css('display','none');
-          });
-          $('.image').on( 'click', function() {
-              $("#myModal").css('display','block');
-              slideIndex = $(this).find( "img" ).attr("data-slide");
-              showSlides(slideIndex);
-          });
-
-          $('.prev').on( 'click', function() {
-              showSlides(slideIndex += -1);
-
-          });
-          $('.next').on( 'click', function() {
-              showSlides(slideIndex += 1);
-          });
-
-
-          function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("selected");
-            var captionText = document.getElementById("caption");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";
-            }
-
-            slides[slideIndex-1].style.display = "block";
-            captionText.innerHTML = dots[slideIndex-1].alt;
+      lightbox() {
+        var count=0;
+        var slideIndex = 1;
+        console.log(slideIndex);
+        $('.image').each( function( ) {
+            count += 1;
+            $(this).find( "img" ).attr('data-slide', count);
+        });
+        $('.close-modal').on( 'click', function() {
+            $("#myModal").css('display','none');
+        });
+        $('.image').on( 'click', function() {
+            $("#myModal").css('display','block');
+            slideIndex = $(this).find( "img" ).attr("data-slide");
+            showSlides(slideIndex);
+        });
+        $('.prev').on( 'click', function() {
+            showSlides(slideIndex += -1);
+        });
+        $('.next').on( 'click', function() {
+            showSlides(slideIndex += 1);
+        });
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("selected");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
           }
-
+          slides[slideIndex-1].style.display = "block";
+          captionText.innerHTML = dots[slideIndex-1].alt;
         }
-
-
+      }
     }
   };
 </script>
