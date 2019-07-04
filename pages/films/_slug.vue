@@ -31,7 +31,7 @@
             <vue-markdown>{{ body.content }}</vue-markdown>
             <br>
             <p class="read-more">POUR EN SAVOIR PLUS</p>
-            <a target="_blank" :href="readmore.readlien" class="link">{{ readmore.readtexte}}</a>
+            <a target="_blank" :href="body.readmore.readlien" class="link">{{ body.readmore.readtexte}}</a>
             <p class="no-margin">LIENS &#62;</p>
             <a target="_blank" v-for="i in body.link" :href="i.linklien" class="link">{{ i.linktexte}}</a>
         </div>
