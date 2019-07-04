@@ -1,41 +1,32 @@
 {
   "cover": "/images/uploads/bellenger-factory-2018-05.jpg",
-  "title": "Les jours - Cahiers photographiques",
-  "soustitre": "Résidence 1+2 2017",
-  "date": "2017",
+  "title": "The future was yesterday (teaser)",
+  "soustitre": "Résidence 2019",
+  "date": "2019",
   "body": {
-    "description": "### DOCUMENTAIRE - 26 MINUTES\n\n### UN FILM DE CLEMENTINE CARRIE\n\navec Israel Arino, Leslie Moquin et [Christian Sanna](/films/)\n**Création musical** : Augustin Charnet\n**Direction artistique** : Philippe Guionie",
-    "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "### DOCUMENTAIRE - 26 MINUTES\n\n### UN FILM DE CITIZEN JIF\n\navec Matthieu Gafsou, Matilda Holloway et Manon Lanjouère\n**Création musicale** : Augustin Charnet\n**Direction artistique** : Philippe Guionie",
+    "content": "A chaque édition, la Résidence 1+2 invite un.e réalisateur. trice et produit un film de format 26’. Ce film de création est une «carte blanche» dont le fil rouge est la vie au sein de la Résidence 1+2. Alternant approche documentaire ou fictionnel, il donne à voir le travail de recherches des photographes, leurs productions, questionnements ou doutes, leur complicité,... Grâce à ce support filmique, les spectateurs entrent dans l’intimité du processus de création artistique des deux mois de résidence à Toulouse. Chaque court-métrage est partie prenante de la collection de films de la Résidence 1+2. Il est projeté en avant-première lors du week-end inaugural (mi-octobre) suivi d’un cycle de projections commentées à la Cinémathèque de Toulouse ou dans des festivals de cinéma.\n\nAprès Marjorie Calle en 2016 avec Diana Alice Léa, Clémentine Carrié en 2017 avec Les jours - Cahiers photographiques et Noé Cuéllar en 2018 avec 1+2=4, Citizen JiF est le nouveau réalisateur 2019 de la Résidence 1+2 « Photographie & Sciences ».\n\nCette année, la Résidence 1+2 a confié à cet artiste polymorphe la réalisation de son film de création (format 26 mn) pour son édition 2019. Citizen JiF réalisera également le programme «Création Capsules 2019» un nouveau format de vidéos très courtes, illustrant les actualités de la Résidence 1+2. Cette carte blanche d’une année, véritable création inédite est à suivre tous les 15 jours, sur les réseaux sociaux de la Résidence 1+2.",
     "readmore": {
-      "readtexte": "RESIDENCE 2017",
+      "readtexte": "RESIDENCE 2019",
       "readlien": "http://www.1plus2.fr/"
     },
     "link": [
       {
-        "linktexte": "Clémentine Carrié",
-        "linklien": "/"
-      },
-      {
-        "linktexte": "Augustin Charnet",
-        "linklien": "/"
+        "linktexte": "Citizen Jif",
+        "linklien": "https://www.citizenjif.com/"
       }
     ]
   },
   "galeries": {
-    "iframe": "<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/GRMaLmjXF8k\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+    "iframe": "<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/OAj30suncEs\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
     "images": [
       {
-        "image": "/images/uploads/bellenger-factory-2018-05.jpg",
-        "alt": "b1"
-      },
-      {
-        "image": "/images/uploads/bellenger-factory-2018.jpg",
-        "alt": "b2"
+        "image": ""
       }
     ]
   },
   "seo": {
-    "descriptionseo": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo",
-    "thumbnail": "/images/uploads/bellenger-factory-2018.jpg"
+    "descriptionseo": "Cette année, la Résidence 1+2 a confié à Citizen Jif, artiste polymorphe, la réalisation de son film de création (format 26 mn) pour son édition 2019. Il réalisera également le programme «Création Capsules 2019» illustrant les actualités de la Résidence 1+2 à suivre tous les 15 jours, sur les réseaux sociaux de la Résidence 1+2.",
+    "thumbnail": ""
   }
 }
