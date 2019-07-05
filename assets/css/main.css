@@ -348,11 +348,16 @@ main {
     margin: 0 0 30px;
     line-height: 2vw;
 }
-.content p {
+.content h2,
+.content h3,
+.content h4{
+    margin: 0;
+}
+.main-content p {
     margin: 0 0 15px;
 		font-size: 18px;
 }
-.content i {
+.main-content p:last-child {
     color: var(--color-1);
 }
 .read-more {
