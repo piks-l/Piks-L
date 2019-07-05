@@ -128,7 +128,7 @@
             }
         },
         titre(){
-            var modif = '<a href="/factory/" >FACTORY</nuxt-link>';
+            var modif = '<a href="/factory/" >FACTORY</a>';
             $('.page-title').html( modif );           
         }
 
