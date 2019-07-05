@@ -1,5 +1,5 @@
 <template>
-  <main class="1plus2-layout-film">
+  <main class="page-article-actu">
     <div class="left-side">
         <div class="diapo">
             <div v-for="i in galerie" class="image">
@@ -78,16 +78,14 @@
 
     },
     mounted() {
-
-      this.test();
-
-
+      $("body").removeClass('red-page, yellow-page, blue-page');
+      this.diapo();
     },
     destroyed() {
     },
     methods: {
 
-        test() {
+        diapo() {
           var count=0;
           var slideIndex = 1;
           console.log(slideIndex);
