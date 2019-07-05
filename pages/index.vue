@@ -11,6 +11,16 @@
     components: { },
     mounted() {
       $("body").removeClass('red-page, yellow-page, blue-page');
-    }
+      this.titre();
+  },
+  destroyed() {
+  },
+  methods: {
+      titre(){
+          var modif = 'ACCUEIL';
+          $('.page-title').html( modif );           
+      }
   }
+}
 </script>
+
