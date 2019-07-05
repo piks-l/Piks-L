@@ -7,16 +7,16 @@
           renforçant son ancrage local, régional ou national et s’ouvrant à d’autres publics. La Résidence 1+2 a pour ambition de créer une pépinière de jeunes
           photographes et un réseau d’entreprises et institutions, sensibles aux expressions artistiques.</p>
     </div>
-    <article class="small-article">
-        <a class="article-padding" href="article-film.html">
-            <img class="cover" src="">
+    <article  v-for="f in factory"  class="small-article">
+        <nuxt-link class="article-padding" :to="f._path+'/'">
+            <img class="cover" :src="f.cover">
             <div class="content">
-                <h3 class="title-article">Les jours - cahiers photographiques</h3>
+                <h3 class="title-article">{{ f.title }}</h3>
                 <hr>
-                <p class="description-article">Résidence 1+2 2017</p>
-                <small class="date">2017</small>
+                <p class="description-article">{{ f.soustitre }}</p>
+                <small class="date">{{ f.date }}</small>
             </div>
-        </a>
+        </nuxt-link>
     </article>
   </main>
 </template>
@@ -40,7 +40,7 @@ export default {
       }
     },
     data() {
-      const context = require.context('~/content/films/page/', false, /\.json$/);
+      const context = require.context('~/content/factory/page/', false, /\.json$/);
       const factory = context.keys().map(key => ({
         ...context(key),
         _path: `/factory/${key.replace('.json', '').replace('./', '')}`
