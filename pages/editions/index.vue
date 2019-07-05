@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="page-editions">
     <article class="small-article">
         <a class="article-padding" href="article-film.html">
             <img class="cover" src="">
