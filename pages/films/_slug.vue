@@ -109,8 +109,9 @@
         }
       },
       titre(){
-          var modif = "<a href="/films/">FILMS</a>";
+          var modif = "<nuxt-link to="/films/" >FILMS</nuxt-link>";
           $('.page-title').text( modif );
+           
       }
     }
   };
