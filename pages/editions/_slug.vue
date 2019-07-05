@@ -132,7 +132,7 @@
 
         },
         titre(){
-            var modif = '<a href="/editions/" >EDITIONS</nuxt-link>';
+            var modif = '<a href="/editions/" >EDITIONS</a>';
             $('.page-title').html( modif );           
         }
 
