@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="page-film">
     <article v-for="f in films" class="small-article">
         <nuxt-link class="article-padding" :to="f._path+'/'">
             <img class="cover" :src="f.cover">
