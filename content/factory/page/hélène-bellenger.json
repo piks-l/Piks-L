@@ -1,0 +1,57 @@
+{
+  "cover": "/images/uploads/bellenger-factory-2018-05.jpg",
+  "title": "Hélène BELLENGER",
+  "soustitre": "Les Corps Dociles",
+  "date": "2018",
+  "body": {
+    "description": "Projet réalisé au sein des collections de [la Cinémathèque de Toulouse](https://www.lacinemathequedetoulouse.com/) dans le cadre de la Résidence &+2 Factory 2018.\n\n![Cinémathèque de toulouse](/images/uploads/logo-cinemathequetoulouse.png)",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis auctor dignissim. Phasellus faucibus lacinia ex, et venenatis risus lobortis id. Curabitur et luctus ante, eu molestie libero. Integer varius tempus egestas. Aenean euismod ligula at tellus convallis, ac euismod sapien ultrices. Nunc feugiat aliquam elit, at accumsan elit vulputate congue. Aenean ultrices viverra sodales. Curabitur pulvinar dignissim purus id cursus. Nullam non augue tortor.\n\nCurabitur sapien ligula, tincidunt eget posuere at, dictum eu justo. Integer vel purus eget turpis eleifend pretium non et nisi. Integer congue, quam consequat egestas tincidunt, mi justo placerat neque, congue pharetra mauris nulla eu velit. Mauris porta maximus mi, quis vestibulum ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean vel vulputate neque, ac elementum erat. Maecenas ut turpis vitae nulla pulvinar eleifend. Ut justo ligula, ultricies sed rutrum id, consequat nec ante. In dictum efficitur sollicitudin. Donec aliquam malesuada quam quis elementum. Cras ac euismod nisl. Nullam viverra nunc at imperdiet ultrices. Nullam porttitor ex eget condimentum imperdiet.",
+    "readmore": "**EXPOSTION**\n**HÉLÈNE BELLENGER & INVITÉ.E.S**\nDU 08 NOV > 22 DEC 2018\nQUAI DES ARTS CUGNAUX",
+    "link": [
+      {
+        "linktexte": "Hélène Bellenger",
+        "linklien": "#"
+      },
+      {
+        "linktexte": "La Cinémathèque de Toulouse",
+        "linklien": "https://www.lacinemathequedetoulouse.com/"
+      }
+    ]
+  },
+  "galeries": {
+    "images": [
+      {
+        "image": "/images/uploads/bellenger-factory-2018.jpg",
+        "alt": "BELLENGER 01"
+      },
+      {
+        "image": "/images/uploads/bellenger-factory-2018-02.jpg",
+        "alt": "BELLENGER 02"
+      },
+      {
+        "image": "/images/uploads/bellenger-factory-2018-03.jpg",
+        "alt": "BELLENGER 03"
+      },
+      {
+        "image": "/images/uploads/bellenger-factory-2018-04.jpg",
+        "alt": "BELLENGER 04"
+      },
+      {
+        "image": "/images/uploads/bellenger-factory-2018-05.jpg",
+        "alt": "BELLENGER 05"
+      },
+      {
+        "image": "/images/uploads/bellenger-factory-2018-06.jpg",
+        "alt": "BELLENGER 06"
+      },
+      {
+        "image": "/images/uploads/bellenger-factory-2018-07.jpg",
+        "alt": "BELLENGER 07"
+      }
+    ]
+  },
+  "seo": {
+    "descriptionseo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis auctor dignissim. Phasellus faucibus lacinia ex, et venenatis risus lobortis id. Curabitur et luctus ante, eu molestie libero. Integer varius tempus egestas. ",
+    "thumbnail": "/images/uploads/bellenger-factory-2018.jpg"
+  }
+}
