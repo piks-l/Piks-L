@@ -82,6 +82,7 @@ header.open {
     }
         .page-title a {
             color: #000;
+            transition:all .5s ease;
         }
         .page-title a:hover {
             color: var(--color-1);
