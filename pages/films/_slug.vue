@@ -28,7 +28,7 @@
         <div class="content">
             <vue-markdown>{{ body.description }}</vue-markdown>
             <br>
-            <vue-markdown>{{ body.content }}</vue-markdown>
+            <vue-markdown class="main-content">{{ body.content }}</vue-markdown>
             <br>
             <p class="read-more">POUR EN SAVOIR PLUS</p>
             <a target="_blank" :href="body.readmore.readlien" class="link">{{ body.readmore.readtexte}}</a>
