@@ -43,10 +43,15 @@ export default {
     },
   mounted() {
       $("body").removeClass('red-page, yellow-page, blue-page');
+      this.titre();
   },
   destroyed() {
   },
   methods: {
+      titre(){
+          var modif = 'FILMS';
+          $('.page-title').html( modif );           
+      }
   }
 }
 </script>
