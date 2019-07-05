@@ -1,5 +1,5 @@
 <template>
-  <main class="1plus2-layout-films">
+  <main class="page-article-film">
     <div class="left-side">
         <vue-markdown>{{ galeries.iframe }}</vue-markdown>
         <div class="diapo">
