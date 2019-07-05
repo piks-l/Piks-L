@@ -109,7 +109,7 @@
         }
       },
       titre(){
-          var modif = '<a href="/films/" >FILMS</nuxt-link>';
+          var modif = '<a href="/films/" >FILMS</a>';
           $('.page-title').html( modif );           
       }
     }
