@@ -76,13 +76,13 @@
     mounted() {
       $("body").removeClass('red-page, yellow-page');
       $("body").addClass('blue-page');
-      this.test();
+      this.diapo();
     },
     destroyed() {
     },
     methods: {
 
-        test() {
+        diapo() {
           var count=0;
           var slideIndex = 1;
           console.log(slideIndex);
