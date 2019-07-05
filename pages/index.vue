@@ -8,6 +8,9 @@
   export default {
     layout: 'default',
     transition: { name: 'intro', mode: 'out-in' },
-    components: { }
+    components: { },
+    mounted() {
+      $("body").removeClass('red-page, yellow-page, blue-page');
+    }
   }
 </script>
