@@ -80,6 +80,15 @@ header.open {
         font-weight: 800;
         text-transform: uppercase;
     }
+        .page-title a {
+            color: #000;
+        }
+        .page-title a:hover {
+            color: var(--color-1);
+        }
+        .blue-page .page-title a:hover {
+            color: var(--color-3);
+        }
     .menu-select {
         position: absolute;
         bottom: 30px;
