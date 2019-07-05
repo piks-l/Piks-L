@@ -32,7 +32,7 @@
       $( ".menu-select" ).click(function() {
         $( "header" ).addClass( "open" );
       });
-      $( ".close, .menu-link" ).click(function() {
+      $( ".close, .menu-link, .logo-link" ).click(function() {
         $( "header" ).removeClass( "open" );
       });
 
