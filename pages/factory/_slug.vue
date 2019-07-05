@@ -1,5 +1,5 @@
 <template>
-  <main class="1plus2-layout-film">
+  <main class="page-article-factory">
     <div class="left-side">
         <div class="diapo">
             <div v-for="i in galeries.images" class="image">
