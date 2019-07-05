@@ -52,10 +52,15 @@ export default {
   mounted() {
       $("body").removeClass('red-page, yellow-page');
       $("body").addClass('blue-page');
+      this.titre();
   },
   destroyed() {
   },
   methods: {
+      titre(){
+          var modif = 'FACTORY';
+          $('.page-title').html( modif );           
+      }
   }
 }
 </script>
