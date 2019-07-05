@@ -361,6 +361,9 @@ main {
 .main-content p:last-child {
     color: var(--color-1);
 }
+.main-description a {
+    color: #000;
+}
 .read-more {
     color: var(--color-1);
     font-weight: 600;
@@ -397,7 +400,6 @@ main {
     width: 50%;
     height: calc((100vw - 250px ) / 2);
 }
-.page-factory .article-padding,
 .page-factory .small-article .content{
 		background: var(--color-3);
 }
@@ -412,7 +414,15 @@ main {
 .blue-page .right-side .link{
 		border:2px solid var(--color-3);
 }
-
+.blue-page .main-content p:last-child {
+    color: #000;
+}
+.blue-page .main-description {
+    color: var(--color-3);
+}
+.blue-page .main-description a{
+    color: #000;
+}
 
 /* page-actu */
 .article {
