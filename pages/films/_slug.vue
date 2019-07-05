@@ -106,6 +106,11 @@
           slides[slideIndex-1].style.display = "block";
           captionText.innerHTML = dots[slideIndex-1].alt;
         }
+      },
+      title(){
+          var select= $('.page-title');
+          var modif = "<a href="/films/">FILMS</a>";
+          select.text( modif );
       }
     }
   };
