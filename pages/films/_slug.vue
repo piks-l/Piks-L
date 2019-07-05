@@ -68,10 +68,10 @@
     destroyed() {},
     mounted() {
       $("body").removeClass('red-page, yellow-page, blue-page');
-      this.lightbox();
+      this.diapo();
     },
     methods: {
-      lightbox() {
+      diapo() {
         var count=0;
         var slideIndex = 1;
         console.log(slideIndex);
