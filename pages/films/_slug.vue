@@ -69,6 +69,7 @@
     mounted() {
       $("body").removeClass('red-page, yellow-page, blue-page');
       this.diapo();
+      this.title();
     },
     methods: {
       diapo() {
@@ -108,9 +109,8 @@
         }
       },
       title(){
-          var select= $('.page-title');
           var modif = "<a href="/films/">FILMS</a>";
-          select.text( modif );
+          $('.page-title').text( modif );
       }
     }
   };
