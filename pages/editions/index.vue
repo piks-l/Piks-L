@@ -43,6 +43,7 @@ export default {
       };
     },
   mounted() {
+      $("body").removeClass('red-page, yellow-page, blue-page');
   },
   destroyed() {
   },
