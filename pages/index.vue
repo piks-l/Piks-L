@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="page-index">
     INDEX
   </main>
 </template>
