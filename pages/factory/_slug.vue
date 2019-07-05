@@ -77,55 +77,59 @@
       $("body").removeClass('red-page, yellow-page');
       $("body").addClass('blue-page');
       this.diapo();
+      this.titre();
     },
     destroyed() {
     },
     methods: {
 
         diapo() {
-          var count=0;
-          var slideIndex = 1;
-          console.log(slideIndex);
+            var count=0;
+            var slideIndex = 1;
+            console.log(slideIndex);
 
 
-          $('.image').each( function( ) {
-              count += 1;
-              $(this).find( "img" ).attr('data-slide', count);
-          });
+            $('.image').each( function( ) {
+                count += 1;
+                $(this).find( "img" ).attr('data-slide', count);
+            });
 
-          $('.close-modal').on( 'click', function() {
-              $("#myModal").css('display','none');
-          });
-          $('.image').on( 'click', function() {
-              $("#myModal").css('display','block');
-              slideIndex = $(this).find( "img" ).attr("data-slide");
-              showSlides(slideIndex);
-          });
+            $('.close-modal').on( 'click', function() {
+                $("#myModal").css('display','none');
+            });
+            $('.image').on( 'click', function() {
+                $("#myModal").css('display','block');
+                slideIndex = $(this).find( "img" ).attr("data-slide");
+                showSlides(slideIndex);
+            });
 
-          $('.prev').on( 'click', function() {
-              showSlides(slideIndex += -1);
+            $('.prev').on( 'click', function() {
+                showSlides(slideIndex += -1);
 
-          });
-          $('.next').on( 'click', function() {
-              showSlides(slideIndex += 1);
-          });
+            });
+            $('.next').on( 'click', function() {
+                showSlides(slideIndex += 1);
+            });
 
 
-          function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("selected");
-            var captionText = document.getElementById("caption");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("selected");
+              var captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+
+              slides[slideIndex-1].style.display = "block";
+              captionText.innerHTML = dots[slideIndex-1].alt;
             }
-
-            slides[slideIndex-1].style.display = "block";
-            captionText.innerHTML = dots[slideIndex-1].alt;
-          }
-
+        },
+        titre(){
+            var modif = '<a href="/factory/" >FACTORY</nuxt-link>';
+            $('.page-title').html( modif );           
         }
 
 
