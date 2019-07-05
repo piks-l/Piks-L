@@ -27,9 +27,7 @@
         <p class="description-article">{{ soustitre }}</p>
         <div class="content">
             <vue-markdown class="main-description">{{ body.description }}</vue-markdown>
-            <br>
             <vue-markdown class="main-content">{{ body.content }}</vue-markdown>
-            <br>
             <p class="read-more">POUR EN SAVOIR PLUS</p>
             <a target="_blank" :href="body.readmore.readlien" class="link">{{ body.readmore.readtexte}}</a>
             <p class="no-margin">LIENS &#62;</p>
