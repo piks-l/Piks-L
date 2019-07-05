@@ -78,6 +78,7 @@ header.open {
         font-size: 7vh;
         margin: 0;
         font-weight: 800;
+        text-transform: uppercase;
     }
     .menu-select {
         position: absolute;
@@ -347,7 +348,7 @@ main {
     line-height: 2vw;
 }
 .content p {
-    margin: 0;
+    margin: 0 0 15px;
 		font-size: 18px;
 }
 .content i {
