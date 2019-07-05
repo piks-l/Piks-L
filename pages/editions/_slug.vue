@@ -80,6 +80,7 @@
     mounted() {
       $("body").removeClass('red-page, yellow-page, blue-page');
       this.diapo();
+      this.titre();
     },
     destroyed() {
     },
@@ -129,6 +130,10 @@
             captionText.innerHTML = dots[slideIndex-1].alt;
           }
 
+        },
+        titre(){
+            var modif = '<a href="/editions/" >EDITIONS</nuxt-link>';
+            $('.page-title').html( modif );           
         }
 
 
