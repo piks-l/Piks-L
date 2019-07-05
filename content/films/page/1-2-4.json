@@ -1,26 +1,28 @@
 {
-  "cover": "/images/uploads/couvfilm.jpg",
-  "title": "1+2=4",
-  "soustitre": "Résidence 2018",
-  "date": "2018",
+  "cover": "/images/uploads/lesjours-couv.jpg",
+  "title": "Les Jours Photographiques",
+  "soustitre": "Résidence 2017",
+  "date": "2017",
   "body": {
-    "description": "DOCUMENTAIRE - 26 MINUTES\n\n### UN FILM DE NESTOR\n\n_avec SMITH, Camille Carbonaro et Prune Phi_",
-    "content": "**Dans son premier projet vidéo-documentaire, le point de vue de NESTOR révèle les trajectoires indépendantes de chacune des recherches faites par les artistes de la Résidence 1+2 à travers l’enregistrement sonore et visuel d’objets représentatifs ainsi que de l’environnement menant à chaque jeu convergent d’identité. Produit sur les lieux de production de chaque oeuvre, le documentaire est composé d’une bande son originale imaginée en réponse aux sons périphériques et au hasard.**\n\nNoé Cuellar est compositeur et photographe. Il développe une recherche musicale entre instruments à vent multiformes (orgue à soufflet-pompe, harmonium, accordéon) et synthèse modulaire. Faisant converser les sons intentionnels et accidentels, l’approche de Noé Cuellar en matière d’instrumentation est centrée sur le flux d’air enregistré et simulé, et l’abstraction des instruments électroniques. En collaboration avec Joseph Kramer, il fonde en 2009 le duo Coppice, à l’origine de nombreux albums, performances live, installations sonores et films centrés sur la relation de la musique à ses objets.  \n\nÀ Chicago, il a réalisé des oeuvres pour l’Experimental Sound Studio en partenariat avec le Chicago Park District et le Chicago Film Archives, diffusées au Musée d’Art Contemporain de Chicago, au Goethe-Institut ou à l’Université de Chicago, ainsi qu’en de nombreux lieux et festivals américains, notamment à l’Issue Project Room (New York), West Hollywood Library Council Chambers (Californie), University of Minnesota (Minneapolis), University of Michigan (Ann Arbor). Il a réalisé de nombreuses résidences à l’étranger, de l’Islande à l’Australie. Sa musique est diffusée par plusieurs labels internationaux, notamment Another Timbre (UK), Aposiopèse (FR), Entr’acte (BE) et Senufo Editions (IT).",
+    "description": "DOCUMENTAIRE - 26 MINUTES\n\n### UN FILM DE CLÉMENTINE CARRIÉ\n\n_avec Israel Ariño, Leslie Moquin et Christian Sanna_",
+    "content": "**Tenu au jour le jour comme un journal, le film questionne trois photographes sur leur nécessité de faire des photographies. Suivant leur travail sur 2 mois, il témoigne de leur acharnement à comprendre, détourner ou sublimer le réel qui les entoure. Les mouvements inhérents aux processus créatifs de chaque photographe induisent la forme audiovisuelle et narrative du film. Ce sont comme des prises de notes rassemblées dans un journal vidéographique qui, au final, questionne les liens entre la photographie et le temps. **",
     "readmore": {
-      "readtexte": "Future Vessel",
-      "readlien": "http://www.futurevessel.com"
-    }
-  },
-  "galeries": {
-    "iframe": "<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/7Fw_boF5mmI\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-    "images": [
+      "readtexte": "en savoir plus",
+      "readlien": "#"
+    },
+    "link": [
       {
-        "image": "/images/uploads/film2018.jpg"
+        "linktexte": "Clémentine Carrié",
+        "linklien": "https://www.clementinecarrie.com"
       }
     ]
   },
+  "galeries": {
+    "iframe": "",
+    "images": []
+  },
   "seo": {
-    "descriptionseo": "Dans son premier projet vidéo-documentaire, le point de vue de NESTOR révèle les trajectoires indépendantes de chacune des recherches faites par les artistes de la Résidence 1+2 à travers l’enregistrement sonore et visuel d’objets représentatifs ainsi que de l’environnement menant à chaque jeu convergent d’identité. Produit sur les lieux de production de chaque oeuvre, le documentaire est composé d’une bande son originale imaginée en réponse aux sons périphériques et au hasard.",
-    "thumbnail": "/images/uploads/film.jpg"
+    "descriptionseo": "Tenu au jour le jour comme un journal, le film questionne trois photographes sur leur nécessité de faire des photographies. Suivant leur travail sur 2 mois, il témoigne de leur acharnement à comprendre, détourner ou sublimer le réel qui les entoure. Les mouvements inhérents aux processus créatifs de chaque photographe induisent la forme audiovisuelle et narrative du film. Ce sont comme des prises de notes rassemblées dans un journal vidéographique qui, au final, questionne les liens entre la photographie et le temps.",
+    "thumbnail": "/images/uploads/lesjours-couv.jpg"
   }
 }
