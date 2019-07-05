@@ -1,5 +1,5 @@
 <template>
-  <div id="main" :class="'1plus2-layout-'+this.$route.name">
+  <div id="main" :class="'layout-'+this.$route.name">
     <header class="1plus2-ui">
       <ui-logo/>
       <h2 class="page-title">{{this.$route.name}}</h2>
