@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="page-actu">
     <article class="article">
         <a class="article-padding" href="article-actu.html">
             <div class="thumb">
