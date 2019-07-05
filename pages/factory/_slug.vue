@@ -2,7 +2,7 @@
   <main class="1plus2-layout-film">
     <div class="left-side">
         <div class="diapo">
-            <div v-for="i in galerie" class="image">
+            <div v-for="i in galeries.images" class="image">
               <img class="selected" :src="i.image" :alt="i.alt">
             </div>
         </div>
@@ -10,7 +10,7 @@
             <span class="close-modal cursor">&times;</span>
             <div class="modal-content">
 
-                <div v-for="i in galerie" class="mySlides">
+                <div v-for="i in galeries.images" class="mySlides">
                     <img :src="i.image" :alt="i.alt">
                 </div>
 
@@ -28,15 +28,11 @@
         <h3 class="title-article">{{ title }}</h3>
         <p class="description-article">{{ soustitre }}</p>
         <div class="content">
-            <vue-markdown>{{ description }}</vue-markdown>
-            <br>
-            <vue-markdown>{{ article }}</vue-markdown>
-            <br>
-            <p class="read-more">POUR EN SAVOIR PLUS</p>
-            <a href="#" class="link">Résidence 2017</a>
+            <vue-markdown class="main-description">{{ body.description }}</vue-markdown>
+            <vue-markdown class="main-content">{{ body.content }}</vue-markdown>
+            <vue-markdown class="main-readmore">{{ body.readmore }}</vue-markdown>
             <p class="no-margin">LIENS &#62;</p>
-            <a href="#" class="more-link">Clémentine Carrié</a>
-            <a href="#" class="more-link">Augustin Charnet</a>
+            <a target="_blank" v-for="i in body.link" :href="i.linklien" class="more-link">{{ i.linktexte}}</a>
         </div>
 
     </div>
