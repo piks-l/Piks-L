@@ -67,6 +67,7 @@
     beforeMount() {},
     destroyed() {},
     mounted() {
+      $("body").removeClass('red-page, yellow-page, blue-page');
       this.lightbox();
     },
     methods: {
