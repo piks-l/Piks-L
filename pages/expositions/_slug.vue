@@ -67,7 +67,7 @@
     beforeMount() {},
     destroyed() {},
     mounted() {
-      $("body").removeClass('red-page, yellow-page, blue-page');
+      $("body").removeClass('red-page yellow-page blue-page');
       this.diapo();
       this.titre();
     },
@@ -89,7 +89,7 @@
             showSlides(slideIndex);
         });
         $('.prev').on( 'click', function() {
-            showSlides(slideIndex += -1);
+            showSlides(slideIndex -= 1);
         });
         $('.next').on( 'click', function() {
             showSlides(slideIndex += 1);
