@@ -104,7 +104,7 @@
             });
 
             $('.prev').on( 'click', function() {
-                showSlides(slideIndex += -1);
+                showSlides(slideIndex -= 1);
 
             });
             $('.next').on( 'click', function() {
