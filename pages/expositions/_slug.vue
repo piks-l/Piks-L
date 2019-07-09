@@ -37,6 +37,7 @@
   </main>
 </template>
 <script>
+ import $ from 'jquery'
   import VueMarkdown from 'vue-markdown'
   export default {
     layout: 'default',
