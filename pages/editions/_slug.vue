@@ -2,21 +2,18 @@
   <main class="page-article-editions">
     <div class="left-side">
         <div class="diapo">
-            <div v-for="i in galerie" class="image">
+            <div v-for="i in galeries.images" class="image">
               <img class="selected" :src="i.image" :alt="i.alt">
             </div>
         </div>
         <div id="myModal" class="modal">
             <span class="close-modal cursor">&times;</span>
             <div class="modal-content">
-
-                <div v-for="i in galerie" class="mySlides">
-                    <img :src="i.image" :alt="i.alt">
-                </div>
-
-                <a class="prev">&#10094;</a>
-                <a class="next">&#10095;</a>
-
+              <div v-for="i in galeries.images" class="mySlides">
+                  <img :src="i.image" :alt="i.alt">
+              </div>
+              <a class="prev">&#10094;</a>
+              <a class="next">&#10095;</a>
             </div>
             <div class="caption-container">
                 <p id="caption"></p>
@@ -28,18 +25,16 @@
         <h3 class="title-article">{{ title }}</h3>
         <p class="description-article">{{ soustitre }}</p>
         <div class="content">
-            <vue-markdown>{{ description }}</vue-markdown>
-            <br>
-            <vue-markdown>{{ article }}</vue-markdown>
-            <br>
+            <vue-markdown class="main-description">{{ body.description }}</vue-markdown>
+            <a target="_blank" v-for="i in body.commander" :href="i.linklien" class="link">{{ i.linktexte}}</a>
+            <vue-markdown class="main-content">{{ body.content }}</vue-markdown>
             <p class="read-more">POUR EN SAVOIR PLUS</p>
-            <a href="#" class="link">Résidence 2017</a>
+            <a target="_blank" v-for="i in body.savoirplus" :href="i.linklien" class="link">{{ i.linktexte}}</a>
             <p class="no-margin">LIENS &#62;</p>
-            <a href="#" class="more-link">Clémentine Carrié</a>
-            <a href="#" class="more-link">Augustin Charnet</a>
+            <a target="_blank" v-for="i in body.link" :href="i.linklien" class="more-link">{{ i.linktexte}}</a>
         </div>
 
-    </div>
+</div>
   </main>
 </template>
 <script>
