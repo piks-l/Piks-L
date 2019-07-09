@@ -463,6 +463,16 @@ main {
 
 .yellow-page .small-article .content{
 		background: var(--color-2);
+    color: #000;
+}
+.yellow-page .small-article hr,
+.yellow-page .small-article .date::before{
+    color: #000;
+}
+.yellow-page .intro{
+    color: #000;
+    background: var(--color-2);
+    border: 10px solid var(--color-2);
 }
 .yellow-page .right-side .title-article,
 .yellow-page .right-side .description-article,
