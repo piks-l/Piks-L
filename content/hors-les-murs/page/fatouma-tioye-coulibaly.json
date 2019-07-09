@@ -1,0 +1,41 @@
+{
+  "cover": "/images/uploads/cathalinat1200x1200.jpg",
+  "title": "ADRIEN BASSE-CATHALINAT",
+  "soustitre": "Réserve Naturelle de la Confluence Garonne-Ariège",
+  "date": "2019",
+  "body": {
+    "description": "**Réalisé en partenariat avec l’association **[**Nature En Occitanie**](https://www.naturemp.org/)** et dans le cadre de la 1+2 Factory 2019.**\n\n![Logo Nature en Occitanie](/images/uploads/natureoccitanie.jpg)",
+    "content": "**Après Hélène Bellenger, lauréate de la Factory 2018 à la Cinémathèque de Toulouse (une série exposée aux Rencontres d’Arles 2018, au Festival Circulations et au centre photographique de l’Hôtel Fontfreyde en 2019), Adrien Basse-Cathalinat, lauréat de la Factory 2019, réalise une série inédite sur les crues et l’inondabilité de la zone humide de la Confluence Garonne-Ariège.**\n\nIl pose un regard poétique et interrogatif sur ces espaces fragiles. Entre abstraction scientifique et réalité territoriale, Adrien Basse-Cathalinat superpose des images scientifiques relatives au phénomène des crues (schémas, graphiques,...) à ses propres prises de vues photographiques. \n\nEn posant son regard sensible sur les paysages de la Confluence Garonne-Ariège, il nous questionne sur les causes et les conséquences du phénomène des crues, aujourd’hui.",
+    "readmore": "**BIOGRAPHIE :** Né à Pau en 1989, je vis actuellement entre Toulouse et mon Béarn natal. Passionné par l’image, j’ intègre l’école de photographie Studio M de Montpellier. Diplômé en 2013, j’ai eu la chance d’assister dans leurs tra- vaux divers professionnels tels que Tilby Vatard, Jean-luc Chapin, photo- graphe de l’agence VU, ou encore Thomas Consani, tireur noir et blanc du laboratoire Dupon Central à Paris. Ce cursus fût très complet, répondant à mes attentes sur le plan technique, et m’ouvrant à diverses pratiques d’auteur. Implanté dans le sud-ouest de la France, je développe maintenant ma propre démarche artistique à travers plusieurs projets reliés à mes sensi- bilités diverses. Ces projets aboutissent sous diverses formes: expositions, résidences de création et de médiation, édition d’un livre de photogra- phies et de textes , oeuvres sonores. Attaché au côté physique de la pho- tographie, l’utilisation du support argentique sous toute ses formes est quasiment systématique. Je dévelope avec ce travail le côté plastique et pictural de la photographie en utilisant le transfert d’émultion de polaroid.",
+    "link": [
+      {
+        "linktexte": "Adrien Basse-Cathalinat",
+        "linklien": "https://adrienbasse.tumblr.com"
+      },
+      {
+        "linktexte": "Nature en occitanie",
+        "linklien": "https://www.naturemp.org/"
+      }
+    ]
+  },
+  "galeries": {
+    "images": [
+      {
+        "image": "/images/uploads/cathalinat-1.jpg",
+        "alt": "© Adrien Basse-Cathalinat"
+      },
+      {
+        "image": "/images/uploads/cathalinat-2.jpg",
+        "alt": "© Adrien Basse-Cathalinat"
+      },
+      {
+        "image": "/images/uploads/cathalinat-3.jpg",
+        "alt": "© Adrien Basse-Cathalinat"
+      }
+    ]
+  },
+  "seo": {
+    "descriptionseo": "Après Hélène Bellenger, lauréate de la Factory 2018 à la Cinémathèque de Toulouse (une série exposée aux Rencontres d’Arles 2018, au Festival Circulations et au centre photographique de l’Hôtel Fontfreyde en 2019), Adrien Basse-Cathalinat, lauréat de la Factory 2019, réalise une série inédite sur les crues et l’inondabilité de la zone humide de la Confluence Garonne-Ariège.",
+    "thumbnail": "/images/uploads/cathalinat-1.jpg"
+  }
+}
