@@ -50,7 +50,7 @@ export default {
       };
     },
   mounted() {
-      $("body").removeClass('red-page, yellow-page');
+      $("body").removeClass('red-page yellow-page');
       $("body").addClass('blue-page');
       this.titre();
   },
