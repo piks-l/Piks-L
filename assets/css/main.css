@@ -81,15 +81,20 @@ header.open {
         text-transform: uppercase;
     }
         .page-title a {
-            color: #000;
-            transition:all .5s ease;
-        }
-        .page-title a:hover {
             color: var(--color-1);
+            transition:all .5s ease;
+            text-decoration:none;
         }
-        .blue-page .page-title a:hover {
+        .yellow-page .page-title a {
+            color: var(--color-2);
+        }
+        .blue-page .page-title a {
             color: var(--color-3);
         }
+        .page-title a:hover {
+            color: #000;
+        }
+        
     .menu-select {
         position: absolute;
         bottom: 30px;
