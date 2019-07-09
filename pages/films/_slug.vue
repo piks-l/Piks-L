@@ -76,7 +76,7 @@
       diapo() {
         var count=0;
         var slideIndex = 1;
-        console.log(slideIndex);
+        
         $('.image').each( function( ) {
             count += 1;
             $(this).find( "img" ).attr('data-slide', count);
@@ -88,13 +88,16 @@
             $("#myModal").css('display','block');
             slideIndex = $(this).find( "img" ).attr("data-slide");
             showSlides(slideIndex);
+            console.log(slideIndex);
         });
         $('.prev').on( 'click', function() {
             showSlides(slideIndex += -1);
+            console.log(slideIndex);
         });
         $('.next').on( 'click', function() {
-            showSlides(slideIndex += 1);
             $(".prev").removeClass('none');
+            showSlides(slideIndex += 1);            
+            console.log(slideIndex);
         });
         function showSlides(n) {
           var i;
