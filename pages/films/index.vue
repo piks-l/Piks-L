@@ -21,13 +21,13 @@ export default {
     components: {  },
     transition: { name: 'intro', mode: 'out-in' },
     head() {
-      return {
-        title: 'FILM | Résidence 1+2 – Photographie & Sciences',
+     return {
+        title: 'FILM | 1+2 – Photographie & Sciences',
         meta: [
-          { hid: 'description', name: 'description', content: 'Electrobotik Invasion Festival, le 2 & 3 Août 2019, Circuit Paul Ricard - Le Castelet (83).' },
-          { 'property': 'og:title', 'content': 'Electrobotik Invasion - le 2 & 3 Août 2019', 'vmid': 'og:title' },
-          { 'property': 'og:description', 'content': 'Electrobotik Invasion Festival, le 2 & 3 Août 2019, Circuit Paul Ricard - Le Castelet (83).' },
-          { 'property': 'og:image', 'content': 'images/uploads/link_share.jpg', 'vmid': 'og:image' }
+          { hid: 'description', name: 'description', content: `1+2 est un programme de création artistique à vocation européenne, ancré à Toulouse, associant la photographie et les sciences.` },
+          { 'property': 'og:title', 'content': `FILM | 1+2 – Photographie & Sciences`, 'vmid': 'og:titre' },
+          { 'property': 'og:description', 'content': `1+2 est un programme de création artistique à vocation européenne, ancré à Toulouse, associant la photographie et les sciences.` },
+          { 'property': 'og:image', 'content': ``, 'vmid': 'og:image' }
         ]
       }
     },
