@@ -50,8 +50,8 @@ export default {
       };
     },
   mounted() {
-      $("body").removeClass('red-page, yellow-page');
-      $("body").addClass('blue-page');
+      $("body").removeClass('red-page, blue-page');
+      $("body").addClass('yellow-page');
       this.titre();
   },
   destroyed() {
