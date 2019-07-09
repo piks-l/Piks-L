@@ -8,7 +8,7 @@
             <li><nuxt-link to="/" class="color-red menu-link">COLLOQUES</nuxt-link></li>
             <li><nuxt-link to="/factory/" class="color-blue menu-link">FACTORY</nuxt-link></li>
             <li><nuxt-link to="/hors-les-murs/" class="color-yellow menu-link">HORS LES MURS</nuxt-link></li>
-            <li><nuxt-link to="/" class="menu-link">EXPOSITIONS</nuxt-link></li>
+            <li><nuxt-link to="/expositions/" class="menu-link">EXPOSITIONS</nuxt-link></li>
             <li><nuxt-link to="/editions/" class="color-red menu-link">EDITIONS</nuxt-link></li>
             <li><nuxt-link to="/films/" class="color-red menu-link">FILMS</nuxt-link></li>
             <li><nuxt-link to="/" class="menu-link">STUDIES</nuxt-link></li>
