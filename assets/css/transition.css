@@ -1,16 +1,19 @@
-.intro-enter-active,
-.intro-leave-active,
-.layout-enter-active,
-.layout-leave-active{
+.intro-enter-active,.intro-leave-active,
+.layout-enter-active,.layout-leave-active{
     transition: all .30s ease-out;
     /*transition-delay: 1000ms;*/
     filter: blur(0px);
     opacity: 1;
 }
-.intro-enter,
-.intro-leave-active,
-.layout-enter,
-.layout-leave-active{
+.intro-enter,.intro-leave-active,
+.layout-enter,.layout-leave-active{
     opacity: 0;
     filter: blur(100px);
+}
+.intro-enter-active .right-side, .intro-leave-active .right-side {
+    margin-top: 0px;
+    transition: all .30s ease-out;
+}
+.intro-enter .right-side, .intro-leave-active .right-side {
+    margin-top: 100px;
 }
