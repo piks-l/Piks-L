@@ -476,6 +476,9 @@ main {
     background: var(--color-2);
     border: 10px solid var(--color-2);
 }
+.yellow-page .right-side .description-article{
+    color:#000; 
+}
 .yellow-page .right-side .title-article,
 .yellow-page .right-side .content i,
 .yellow-page .right-side .read-more,
