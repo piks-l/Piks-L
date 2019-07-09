@@ -2,7 +2,7 @@
 .intro-leave-active,
 .layout-enter-active,
 .layout-leave-active{
-    transition: all 1s ease-out;
+    transition: all .50s ease-out;
     /*transition-delay: 1000ms;*/
     filter: blur(0px);
     opacity: 1;
