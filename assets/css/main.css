@@ -196,9 +196,6 @@ header.open {
 		        border: 2px solid var(--color-3);
 		    }
 
-        .yellow-page .page-title{
-						color:var(--color-2);
-				}
 				.yellow-page .rouge {
 		        background: var(--color-2);
 		    }
