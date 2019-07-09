@@ -196,6 +196,18 @@ header.open {
 		        border: 2px solid var(--color-3);
 		    }
 
+        .yellow-page .page-title{
+						color:var(--color-2);
+				}
+				.yellow-page .rouge {
+		        background: var(--color-2);
+		    }
+		    .yellow-page .jaune,
+				.yellow-page .bleu {
+						background: transparent;
+		        border: 2px solid var(--color-2);
+        }
+
 
 
 main {
@@ -442,6 +454,27 @@ main {
     color: var(--color-3);
 }
 .blue-page .main-description a{
+    color: #000;
+}
+
+.yellow-page .right-side .title-article,
+.yellow-page .right-side .description-article,
+.yellow-page .right-side .content i,
+.yellow-page .right-side .read-more,
+.yellow-page .right-side .link,
+.yellow-page .right-side .more-link{
+		color: var(--color-2);
+}
+.yellow-page .right-side .link{
+		border:2px solid var(--color-2);
+}
+.yellow-page .main-content p:last-child {
+    color: #000;
+}
+.yellow-page .main-description {
+    color: var(--color-2);
+}
+.yellow-page .main-description a{
     color: #000;
 }
 
