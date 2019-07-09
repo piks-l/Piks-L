@@ -165,13 +165,16 @@ header.open {
         .menu-link:hover {
             color: gray;
         }
-				.color-red:hover {
+				.color-red:hover,
+        .color-red.nuxt-link-exact-active{
             color: var(--color-1);
         }
-				.color-yellow:hover {
+				.color-yellow:hover,
+        .color-yellow.nuxt-link-exact-active{
             color: var(--color-2);
         }
-				.color-blue:hover {
+				.color-blue:hover,
+        .color-blue.nuxt-link-exact-active{
             color: var(--color-3);
         }
 
@@ -327,10 +330,13 @@ main {
 			max-height: 100%;
 	}
 		.page-article-edition .diapo .image:first-child img,
-		.page-article-factory .diapo .image:first-child img{
+		.page-article-factory .diapo .image:first-child img,
+    .page-article-film .diapo img {
 		    height: 100%;
 				width:auto;
+        max-width: none;
 		}
+
 .right-side .date {
     font-size: 32px;
     line-height: 32px;
