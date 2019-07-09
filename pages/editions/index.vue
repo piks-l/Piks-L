@@ -1,15 +1,15 @@
 <template>
   <main class="page-editions">
-    <article class="small-article">
-        <a class="article-padding" href="article-film.html">
-            <img class="cover" src="">
+    <article v-for="e in editions" class="small-article">
+        <nuxt-link class="article-padding" :to="e._path+'/'">
+            <img class="cover" :src="e.cover">
             <div class="content">
-                <h3 class="title-article">Les jours - cahiers photographiques</h3>
+                <h3 class="title-article">{{ e.title }}</h3>
                 <hr>
-                <p class="description-article">Résidence 1+2 2017</p>
-                <small class="date">2017</small>
+                <p class="description-article">{{ e.soustitre }}</p>
+                <small class="date">{{ e.date }}</small>
             </div>
-        </a>
+        </nuxt-link>
     </article>
   </main>
 </template>
@@ -22,18 +22,18 @@ export default {
     components: { VueLazyload },
     transition: { name: 'intro', mode: 'out-in' },
     head() {
-      return {
-        title: 'Programmation | Electrobotik Invasion - le 2 & 3 Août 2019',
+     return {
+        title: 'EDITIONS | 1+2 – Photographie & Sciences',
         meta: [
-          { hid: 'description', name: 'description', content: 'Electrobotik Invasion Festival, le 2 & 3 Août 2019, Circuit Paul Ricard - Le Castelet (83).' },
-          { 'property': 'og:title', 'content': 'Electrobotik Invasion - le 2 & 3 Août 2019', 'vmid': 'og:title' },
-          { 'property': 'og:description', 'content': 'Electrobotik Invasion Festival, le 2 & 3 Août 2019, Circuit Paul Ricard - Le Castelet (83).' },
-          { 'property': 'og:image', 'content': 'images/uploads/link_share.jpg', 'vmid': 'og:image' }
+          { hid: 'description', name: 'description', content: `1+2 est un programme de création artistique à vocation européenne, ancré à Toulouse, associant la photographie et les sciences.` },
+          { 'property': 'og:title', 'content': `EDITIONS | 1+2 – Photographie & Sciences`, 'vmid': 'og:titre' },
+          { 'property': 'og:description', 'content': `1+2 est un programme de création artistique à vocation européenne, ancré à Toulouse, associant la photographie et les sciences.` },
+          { 'property': 'og:image', 'content': ``, 'vmid': 'og:image' }
         ]
       }
     },
     data() {
-      const context = require.context('~/content/films/page/', false, /\.json$/);
+      const context = require.context('~/content/editions/page/', false, /\.json$/);
       const editions = context.keys().map(key => ({
         ...context(key),
         _path: `/editions/${key.replace('.json', '').replace('./', '')}`
