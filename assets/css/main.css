@@ -207,7 +207,9 @@ header.open {
 						background: transparent;
 		        border: 2px solid var(--color-2);
         }
-
+        .yellow-page .rouge .logo {		        
+            filter: invert(1);
+		    }
 
 
 main {
