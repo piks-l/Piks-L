@@ -8,6 +8,9 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
+.none{
+    display:none; 
+}
 
 header {
     position: fixed;
