@@ -74,7 +74,7 @@
 
     },
     mounted() {
-      $("body").removeClass('red-page, blue-page');
+      $("body").removeClass('red-page blue-page');
       $("body").addClass('yellow-page');
       this.diapo();
       this.titre();
