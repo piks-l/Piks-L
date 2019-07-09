@@ -6,7 +6,8 @@ var dynamicRoutes = getDynamicPaths({
   '/hors-les-murs': 'hors-les-murs/page/*.json',
   '/films': 'films/page/*.json',
   '/actualites': 'actualites/page/*.json',
-  '/editions': 'editions/page/*.json'
+  '/editions': 'editions/page/*.json',
+  '/expositions': 'expositions/page/*.json'
 });
 module.exports = {
   head: {
