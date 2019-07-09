@@ -3,6 +3,7 @@ var glob = require('glob');
 var path = require('path');
 var dynamicRoutes = getDynamicPaths({
   '/factory': 'factory/page/*.json',
+  '/hors-les-murs': 'hors-les-murs/page/*.json',
   '/films': 'films/page/*.json',
   '/actualites': 'actualites/page/*.json',
   '/editions': 'editions/page/*.json'
