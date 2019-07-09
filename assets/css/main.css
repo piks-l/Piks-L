@@ -332,7 +332,8 @@ main {
 			height: 35vh;
 	}
 	.page-article-edition .diapo .image:first-child,
-	.page-article-factory .diapo .image:first-child {
+	.page-article-factory .diapo .image:first-child,
+  .page-article-horslesmurs .diapo .image:first-child{
 	    height: 70vh;
 	}
 	.diapo img {
@@ -429,11 +430,12 @@ main {
 .intro p {
     margin: 0;
 }
-.page-factory .small-article:nth-child(2) {
+.page-factory .small-article:nth-child(2),
+.page-horslesmurs .small-article:nth-child(2) {
     width: 50%;
     height: calc((100vw - 250px ) / 2);
 }
-.page-factory .small-article .content{
+.blue-page .small-article .content{
 		background: var(--color-3);
 }
 .blue-page .right-side .title-article,
@@ -457,6 +459,9 @@ main {
     color: #000;
 }
 
+.yellow-page .small-article .content{
+		background: var(--color-2);
+}
 .yellow-page .right-side .title-article,
 .yellow-page .right-side .description-article,
 .yellow-page .right-side .content i,
