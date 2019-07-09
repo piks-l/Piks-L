@@ -13,7 +13,7 @@
               <div v-for="i in galeries.images" class="mySlides">
                   <img :src="i.image" :alt="i.alt">
               </div>
-              <a class="prev none">&#10094;</a>
+              <a class="prev">&#10094;</a>
               <a class="next">&#10095;</a>
             </div>
             <div class="caption-container">
@@ -95,7 +95,6 @@
             console.log(slideIndex);
         });
         $('.next').on( 'click', function() {
-            $(".prev").removeClass('none');
             showSlides(slideIndex += 1);            
             console.log(slideIndex);
         });
