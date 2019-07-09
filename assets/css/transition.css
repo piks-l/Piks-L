@@ -1,16 +1,16 @@
-.intro-enter-active .ea-titre,
-.intro-leave-active .ea-titre,
-.layout-enter-active .ea-titre,
-.layout-leave-active .ea-titre {
-    transition: all .50s ease-out;
-    transition-delay: 1000ms;
+.intro-enter-active,
+.intro-leave-active,
+.layout-enter-active,
+.layout-leave-active{
+    transition: all 1s ease-out;
+    /*transition-delay: 1000ms;*/
     filter: blur(0px);
     opacity: 1;
 }
-.intro-enter .ea-titre,
-.intro-leave-active .ea-titre,
-.layout-enter .ea-titre,
-.layout-leave-active .ea-titre{
+.intro-enter,
+.intro-leave-active,
+.layout-enter,
+.layout-leave-active{
     opacity: 0;
-    filter: blur(50px);
+    filter: blur(100px);
 }
