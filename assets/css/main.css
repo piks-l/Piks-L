@@ -467,7 +467,7 @@ main {
 }
 .yellow-page .small-article hr,
 .yellow-page .small-article .date::before{
-    color: #000;
+    background: #000;
 }
 .yellow-page .intro{
     color: #000;
