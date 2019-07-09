@@ -76,7 +76,7 @@
       diapo() {
         var count=0;
         var slideIndex = 1;
-        
+        console.log(slideIndex);
         $('.image').each( function( ) {
             count += 1;
             $(this).find( "img" ).attr('data-slide', count);
@@ -91,7 +91,7 @@
             console.log(slideIndex);
         });
         $('.prev').on( 'click', function() {
-            showSlides(slideIndex += -1);
+            showSlides(slideIndex -= 1);
             console.log(slideIndex);
         });
         $('.next').on( 'click', function() {
