@@ -465,7 +465,9 @@ main {
 		background: var(--color-2);
     color: #000;
 }
-.yellow-page .small-article hr,
+.yellow-page .small-article hr{
+    1px solid #000
+}
 .yellow-page .small-article .date::before{
     background: #000;
 }
@@ -475,12 +477,13 @@ main {
     border: 10px solid var(--color-2);
 }
 .yellow-page .right-side .title-article,
-.yellow-page .right-side .description-article,
 .yellow-page .right-side .content i,
 .yellow-page .right-side .read-more,
-.yellow-page .right-side .link,
-.yellow-page .right-side .more-link{
+.yellow-page .right-side .link{
 		color: var(--color-2);
+}
+.yellow-page .right-side .more-link{
+    color:gray;
 }
 .yellow-page .right-side .link{
 		border:2px solid var(--color-2);
@@ -489,8 +492,11 @@ main {
     color: #000;
 }
 .yellow-page .main-description {
-    color: var(--color-2);
+    border: 5px solid var(--color-2);
+    padding: 15px;
+    margin: 0 0 30px;
 }
+
 .yellow-page .main-description a{
     color: #000;
 }
