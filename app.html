@@ -7,7 +7,16 @@
   <link href="https://fonts.googleapis.com/css?family=Eczar:400,500,600,700,800&display=swap" rel="stylesheet">
 </head>
 <body {{ BODY_ATTRS }}>
-  {{ APP }}
+    <div id="preloader">
+       <div id="anim">
+           <div id="scene" class="logo-link">
+               <div class="carre bleu" data-depth="0.2"></div>
+               <div class="carre jaune" data-depth="0.4"></div>
+               <div class="carre rouge" data-depth="0.6"><img class="logo" src="https://www.piks-l.com/2019/residence/assets/images/logo.png"></div>
+           </div>
+       </div>
+    </div>
+    {{ APP }}
 </body>
 <script>
   if (window.netlifyIdentity) {
@@ -19,5 +28,19 @@
       }
     });
   }
+</script>
+<script>
+    $(window).on('load', function() { // makes sure the whole site is loaded
+        $('#anim').delay(400).fadeOut('slow'); // will first fade out the loading animation
+        $('#preloader').delay(1000).fadeOut(); // will fade out the white DIV that covers the website.
+        $('body').delay(1400).css({'overflow-y':'visible'});
+    })  
+  
+    var scene = document.getElementById('scene');
+    var parallaxInstance = new Parallax(scene, {
+      relativeInput: true,
+      hoverOnly: true
+    });
+  
 </script>
 </html>
