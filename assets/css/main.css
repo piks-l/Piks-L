@@ -1,5 +1,4 @@
 :root{
-
 	 --color-1: #ff0000;
 	 --color-2: #ffde00;
    --color-3: #1c20e3;
@@ -30,7 +29,7 @@ body {
         height: 100%;
         position: fixed;
     }
-        #anim #scene-intro {
+        #anim {
             height: 0;
             width: 30%;
             position: absolute;
@@ -39,7 +38,21 @@ body {
             padding-top: 30%;
             transform: translate(-50%, -50%);
         }
-
+            #scene-intro {
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+                #scene-intro .logo {
+                    max-height: 80%;
+                    max-width: 80%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
 
 header {
     position: fixed;
