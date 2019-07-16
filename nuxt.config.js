@@ -11,13 +11,13 @@ var dynamicRoutes = getDynamicPaths({
 });
 module.exports = {
   head: {
-    title: '1+2 – Photographie & Sciences',
+    title: 'PIKS-L - New template',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
-      { hid: 'description', name: 'description', content: '1+2 est un programme de création artistique à vocation européenne, ancré à Toulouse, associant la photographie et les sciences.' },
-      { 'property': 'og:title', 'content': '1+2 – Photographie & Sciences', 'vmid': 'og:title' },
-      { 'property': 'og:description', 'content': '1+2 est un programme de création artistique à vocation européenne, ancré à Toulouse, associant la photographie et les sciences.' },
+      { hid: 'description', name: 'description', content: 'Piks-L v2 arrive dans un nouveaux format. Grâce à la puissance de NUXT.js et les possibilités de Netlify.' },
+      { 'property': 'og:title', 'content': 'PIKS-L - New template', 'vmid': 'og:title' },
+      { 'property': 'og:description', 'content': 'Piks-L v2 arrive dans un nouveaux format. Grâce à la puissance de NUXT.js et les possibilités de Netlify.' },
       { 'property': 'og:image', 'content': 'images/uploads/link_share.jpg', 'vmid': 'og:image' }
     ],
     link: [
