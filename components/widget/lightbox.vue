@@ -2,26 +2,26 @@
   <div class="lightbox">
       <div class="diaporama">
           <div class="image-lightbox">
-            <img class="selected" src="https://placeimg.com/400/400/any1">
+            <img class="selected" src="https://www.piks-l.com/img/5.jpg">
           </div>
           <div class="image-lightbox">
-            <img class="selected" src="https://placeimg.com/400/400/any2">
+            <img class="selected" src="https://www.piks-l.com/img/4.jpg">
           </div>
           <div class="image-lightbox">
-            <img class="selected" src="https://placeimg.com/400/400/any3">
+            <img class="selected" src="https://www.piks-l.com/img/3.jpg">
           </div>
       </div>
       <div id="lightbox-full" class="modal">
           <span class="close-lightbox cursor">&times;</span>
           <div class="lightbox-content">
             <div class="full-lightbox">
-                <img class="selected" src="https://placeimg.com/1000/1000/any1">
+                <img class="selected" src="https://www.piks-l.com/img/5.jpg">
             </div>
             <div class="full-lightbox">
-                <img class="selected" src="https://placeimg.com/1000/1000/any2">
+                <img class="selected" src="https://www.piks-l.com/img/4.jpg">
             </div>
             <div class="full-lightbox">
-                <img class="selected" src="https://placeimg.com/1000/1000/any3">
+                <img class="selected" src="https://www.piks-l.com/img/3.jpg">
             </div>
             <a class="prev-full-lightbox">&#10094;</a>
             <a class="next-full-lightbox">&#10095;</a>

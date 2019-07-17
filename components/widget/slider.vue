@@ -1,8 +1,8 @@
 <template>
   <carousel :autoplay="true" :nav="false">
-    <img src="https://placeimg.com/200/200/any?1">
-    <img src="https://placeimg.com/200/200/any?2">
-    <img src="https://placeimg.com/200/200/any?3">
-    <img src="https://placeimg.com/200/200/any?4">
+    <img src="https://www.piks-l.com/img/crop.jpg">
+    <img src="https://www.piks-l.com/img/5.jpg">
+    <img src="https://www.piks-l.com/img/4.jpg">
+    <img src="https://www.piks-l.com/img/3.jpg">
   </carousel>
 </template>
