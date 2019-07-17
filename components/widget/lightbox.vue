@@ -81,5 +81,6 @@
           captionText.innerHTML = dots[lightboxIndex-1].alt;
         }
       }
-  };
+    }
+  }
 </script>
