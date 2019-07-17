@@ -20,22 +20,15 @@
 </template>
 <script>
   import $ from 'jquery'
-  import uiLogo from '~/components/ui/logo.vue'
-  import uiSocial from '~/components/social.vue'
   export default {
-    components: {
-      uiLogo,
-      uiSocial
-    },
+    components: {},
     mounted: () => {
-
       $( ".menu-select" ).click(function() {
         $( "header" ).addClass( "open" );
       });
       $( ".close, .menu-link, .logo-link" ).click(function() {
         $( "header" ).removeClass( "open" );
       });
-
-    } // Mounted end
-  } // Export end
+    }
+  }
 </script>
