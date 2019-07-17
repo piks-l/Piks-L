@@ -5,10 +5,9 @@
 }
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
 }
 .none{
-    display:none; 
+    display:none;
 }
 
 
@@ -22,37 +21,37 @@ body {
     top: 0;
     left: 0;
 }
-    #anim {
-        width: 100%;
-        top: 0;
-        left: 0;
-        height: 100%;
-        position: fixed;
-    }
-        #anim {
-            height: 0;
-            width: 30%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            padding-top: 30%;
-            transform: translate(-50%, -50%);
-        }
-            #scene-intro {
-                height: 100%;
-                width: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
-                #scene-intro .logo {
-                    max-height: 80%;
-                    max-width: 80%;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
+#anim {
+width: 100%;
+top: 0;
+left: 0;
+height: 100%;
+position: fixed;
+}
+#anim {
+height: 0;
+width: 30%;
+position: absolute;
+top: 50%;
+left: 50%;
+padding-top: 30%;
+transform: translate(-50%, -50%);
+}
+#scene-intro {
+height: 100%;
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+}
+#scene-intro .logo {
+max-height: 80%;
+max-width: 80%;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
 
 header {
     position: fixed;
@@ -139,7 +138,7 @@ header.open {
         .page-title a:hover {
             color: #000;
         }
-        
+
     .menu-select {
         position: absolute;
         bottom: 30px;
@@ -249,7 +248,7 @@ header.open {
 						background: transparent;
 		        border: 2px solid var(--color-2);
         }
-        .yellow-page .rouge .logo {		        
+        .yellow-page .rouge .logo {
             filter: invert(1);
 		    }
 
@@ -257,7 +256,6 @@ header.open {
 main {
     position: relative;
     padding: 50px 50px 50px 200px;
-		font-size:0;
 }
 	.small-article {
 	    position: relative;
@@ -519,7 +517,7 @@ main {
     border: 10px solid var(--color-2);
 }
 .yellow-page .right-side .description-article{
-    color:#000; 
+    color:#000;
 }
 .yellow-page .right-side .title-article,
 .yellow-page .right-side .content i,
