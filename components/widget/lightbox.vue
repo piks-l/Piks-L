@@ -128,6 +128,35 @@
   		transform: translatey(-50%);
   		height: 100%;
   }
+  .full-lightbox {
+      display: none;
+      height: 100%;
+  }
+  .full-lightbox img {
+      max-height: calc(100vh - 100px);
+      max-width: 100%;
+      top: 50%;
+      left: 50%;
+      position: relative;
+      transform: translate(-50%, -50%);
+  }
+  .caption-container {
+      text-align: center;
+      background-color: transparent;
+      padding: 0;
+      color: var(--color-3);
+      font-size: initial;
+      position: fixed;
+      bottom: 15px;
+      width: 60%;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+  #caption {
+      margin: 0;
+      line-height: 35px;
+  }
+  /* lightbox Nvigation */
   .close-lightbox {
       color: #000;
       position: absolute;
@@ -142,18 +171,6 @@
   	  color: #999;
   	  text-decoration: none;
   	  cursor: pointer;
-  }
-  .full-lightbox {
-  	  display: none;
-  		height: 100%;
-  }
-  .full-lightbox img {
-      max-height: calc(100vh - 100px);
-  		max-width: 100%;
-  		top: 50%;
-      left: 50%;
-      position: relative;
-      transform: translate(-50%, -50%);
   }
   .prev-full-lightbox,
   .next-full-lightbox {
@@ -181,21 +198,5 @@
   .prev-full-lightbox:hover,
   .next-full-lightbox:hover {
   	  color: #999;
-  }
-  .caption-container {
-      text-align: center;
-      background-color: transparent;
-      padding: 0;
-      color: var(--color-3);
-      font-size: initial;
-      position: fixed;
-      bottom: 15px;
-      width: 60%;
-      left: 50%;
-      transform: translateX(-50%);
-  }
-  #caption {
-  		margin: 0;
-  		line-height: 35px;
   }
 </style>
