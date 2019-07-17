@@ -93,3 +93,30 @@
     }
   }
 </script>
+<style scoped>
+/** WIDGET - LIGHTBOX */
+  .diaporama .image-lightbox {
+	    margin: 15px;
+	    display: inline-block;
+	    width: calc(50% - 30px);
+	    overflow: hidden;
+	    height: 25vh;
+	    position: relative;
+			background:#e9e9e9;
+	}
+	.diaporama .image-lightbox:first-child {
+	    width:calc(100% - 0px);
+			height: 35vh;
+	}
+	.diaporama img {
+			max-width: 100%;
+			position: relative;
+			display: block;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: auto;
+			height: auto;
+			max-height: 100%;
+	}
+</style>
