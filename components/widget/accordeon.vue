@@ -61,3 +61,60 @@
     }
   };
 </script>
+<style>
+.collapsible {
+      min-width: 290px;
+      max-width: 700px;
+      margin: 10px auto;
+      display: flex;
+      flex-direction: column;
+  }
+  .collapsible .linked {
+      padding: 10px 0px;
+  }
+  .collapsible > * {
+  }
+  .collapsible__head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 35px;
+      z-index: 1;
+      cursor: pointer;
+  }
+  .collapsible__body {
+      border-top: none;
+      margin-top: -10px;
+      overflow: hidden;
+      height: 0;
+      padding: 0px;
+      transition: all .4s;
+  }
+  .collapsible__content {
+      opacity: 0;
+      transition: all .4s .4s;
+      display: block;
+      justify-content: space-between;
+      border-bottom: 5px solid #FFB413;
+      padding-bottom: 20px;
+  }
+  .collapsible--open .collapsible__icon {
+      color: #000;
+  }
+  .collapsible__icon {
+      transition: all .2s;
+      transform: rotate(0);
+      font-size: 30px;
+      color: #FFB413;
+  }
+  .collapsible--open .collapsible__icon {
+      transform: rotate(180deg);
+  }
+  .collapsible--open .collapsible__body {
+      padding: 10px 0px 10px;
+      height: 100%;
+  }
+  .collapsible--open .collapsible__content {
+      opacity: 1;
+  }
+</style>
