@@ -45,8 +45,9 @@
       }
     },
     mounted() {
-      this.$Lazyload.$on('loaded', function ({ el, src }) {
+      this.$Lazyload.$on('loaded', function ({ el, src, listener }) {
         $(el).addClass("loaded");
+        console.table(this.$Lazyload.performance())
       });
       this.lightbox();
     },
