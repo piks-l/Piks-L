@@ -1,10 +1,10 @@
 <template>
   <div class="modal-basic">
-  <a id="open-modal">Open Modal</a>
+  <a id="open-modal" href="#">Open Modal</a>
   <div id="myModal" class="modal">
     <div class="modal-content">
       <div class="modal-header">
-        <span class="close">&times;</span>
+        <span id="close-modal" class="close">&times;</span>
         <h2>Modal Header</h2>
       </div>
       <div class="modal-body">
@@ -25,8 +25,8 @@ export default {
   mounted() {
     // Get the modal
     var modal = document.getElementById("myModal");
-    var btn = document.getElementById("myBtn");
-    var span = document.getElementsByClassName("close")[0];
+    var btn = document.getElementById("open-modal");
+    var span = document.getElementsById("close-modal");
     btn.onclick = function() {
       modal.style.display = "block";
     }
