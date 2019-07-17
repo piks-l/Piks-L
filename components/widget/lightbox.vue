@@ -2,10 +2,10 @@
   <div class="lightbox">
       <div class="diaporama">
           <div class="image-lightbox">
-            <img class="selected" v-lazy="https://placeimg.com/200/200/any?1">
+            <img class="selected" v-lazy="https://placeimg.com/200/200/any?1"/>
           </div>
           <div class="image-lightbox">
-            <img class="selected" v-lazy="https://placeimg.com/200/200/any?2">
+            <img class="selected" v-lazy="https://placeimg.com/200/200/any?2"/>
           </div>
       </div>
       <div id="lightbox-full" class="modal">
