@@ -1,32 +1,43 @@
 <template>
   <main class="page-index">
-    <no-ssr>
-      <carousel :autoplay="true" :nav="false">
-        <img src="https://placeimg.com/200/200/any?1">
-        <img src="https://placeimg.com/200/200/any?2">
-        <img src="https://placeimg.com/200/200/any?3">
-        <img src="https://placeimg.com/200/200/any?4">
-      </carousel>
-    </no-ssr>
+    <h2>WIDGET</h2>
+    <h3>Accordeon.vue</h3>
+    <accordeon/>
+    <h3>Lightbox.vue</h3>
+    <lightbox/>
+    <h3>Slider.vue</h3>
+    <slider/>
   </main>
 </template>
 <script>
+  // Library
   import $ from 'jquery'
+  // Ui
+  // Widget
+  import accordeon from '~/components/widget/accordeon.vue'
+  import lightbox from '~/components/widget/lightbox.vue'
+  import slider from '~/components/widget/slider.vue'
   export default {
     layout: 'default',
-    transition: { name: 'intro', mode: 'out-in' },
-    components: { },
+    transition: {
+      name: 'intro', mode: 'out-in'
+    },
+    components: {
+      accordeon,
+      lightbox,
+      slider
+    },
     mounted() {
       $("body").removeClass('red-page yellow-page blue-page');
       this.titre();
-  },
-  destroyed() {
-  },
-  methods: {
-      titre(){
-          var modif = 'ACCUEIL';
-          $('.page-title').html( modif );
-      }
+    },
+    destroyed() {
+    },
+    methods: {
+        titre(){
+            var modif = 'ACCUEIL';
+            $('.page-title').html( modif );
+        }
+    }
   }
-}
 </script>
