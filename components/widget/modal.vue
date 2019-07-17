@@ -1,4 +1,5 @@
 <template>
+  <div class="modal-basic">
   <a id="open-modal">Open Modal</a>
   <div id="myModal" class="modal">
     <div class="modal-content">
@@ -15,6 +16,7 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 <script>
 // Library
