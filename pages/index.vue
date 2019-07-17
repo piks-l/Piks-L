@@ -7,7 +7,7 @@
     <h4>Je suis un titre h4</h4>
     <h5>Je suis un titre h5</h5>
     <h6>Je suis un titre h6</h6>
-    <p>Je suis un P et lui c'est <strong>un Strong<strong>, quand à lui c'est un <a href="#">lien</a> et alors lui c'est juste un petit <small>small</small></p>
+    <p>Je suis un P et lui c'est <strong>un Strong</strong>, quand à lui c'est un <a href="#">lien</a> et alors lui c'est juste un petit <small>small</small></p>
     <hr>
     <h2>WIDGET</h2>
     <h3>Accordeon.vue</h3>
