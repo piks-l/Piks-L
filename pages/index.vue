@@ -19,6 +19,9 @@
     <h3>Slider.vue</h3>
     <slider/>
     <hr>
+    <h3>Modal.vue</h3>
+    <modal/>
+    <hr>
   </main>
 </template>
 <script>
@@ -29,6 +32,8 @@
   import accordeon from '~/components/widget/accordeon.vue'
   import lightbox from '~/components/widget/lightbox.vue'
   import slider from '~/components/widget/slider.vue'
+  import slider from '~/components/widget/modal.vue'
+
   export default {
     layout: 'default',
     transition: {
@@ -37,7 +42,8 @@
     components: {
       accordeon,
       lightbox,
-      slider
+      slider,
+      modal
     },
     mounted() {
       $("body").removeClass('red-page yellow-page blue-page');

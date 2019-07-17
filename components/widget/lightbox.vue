@@ -11,7 +11,7 @@
             <img class="selected" src="https://www.piks-l.com/img/3.jpg">
           </div>
       </div>
-      <div id="lightbox-full" class="modal">
+      <div id="lightbox-full" class="modal-lightbox">
           <span class="close-lightbox cursor">&times;</span>
           <div class="lightbox-content">
             <div class="full-lightbox">

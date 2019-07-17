@@ -59,5 +59,5 @@
         e.currentTarget.classList.toggle('accordeon--open')
       }));
     }
-  };
+  }
 </script>
