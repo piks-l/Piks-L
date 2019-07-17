@@ -3,8 +3,6 @@
 <head>
   {{ HEAD }}
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,300i,400,600,700,900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Eczar:400,500,600,700,800&display=swap" rel="stylesheet">
 </head>
 <body {{ BODY_ATTRS }}>
     <div id="preloader">
@@ -12,7 +10,9 @@
            <div id="scene-intro">
                <div class="carre bleu" data-depth="0.2"></div>
                <div class="carre jaune" data-depth="0.4"></div>
-               <div class="carre rouge" data-depth="0.6"><img class="logo" src="https://www.piks-l.com/2019/residence/assets/images/logo.png"></div>
+               <div class="carre rouge" data-depth="0.6">
+                 <img class="logo" src="https://www.piks-l.com/2019/residence/assets/images/logo.png">
+               </div>
           </div>
        </div>
     </div>
@@ -30,16 +30,15 @@
   }
 </script>
 <script>
-    $(window).on('load', function() { // makes sure the whole site is loaded
-        $('#anim').delay(100).fadeOut('slow'); // will first fade out the loading animation
-        $('#preloader').delay(1600).fadeOut(); // will fade out the white DIV that covers the website.
+    // Preloading
+    $(window).on('load', function() {
+        $('#anim').delay(100).fadeOut('slow');
+        $('#preloader').delay(1600).fadeOut();
         $('body').delay(2000).css({'overflow-y':'visible'});
-    })  
-  
+    })
     var scene = document.getElementById('scene-intro');
     var parallaxInstance = new Parallax(scene, {
       relativeInput: true
     });
-  
 </script>
 </html>
