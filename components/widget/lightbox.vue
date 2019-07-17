@@ -2,20 +2,26 @@
   <div class="lightbox">
       <div class="diaporama">
           <div class="image-lightbox">
-            <img class="selected" v-lazy="https://placeimg.com/200/200/any1">
+            <img class="selected" :v-lazy="https://placeimg.com/400/400/any1">
           </div>
           <div class="image-lightbox">
-            <img class="selected" v-lazy="https://placeimg.com/200/200/any2">
+            <img class="selected" :v-lazy="https://placeimg.com/400/400/any2">
+          </div>
+          <div class="image-lightbox">
+            <img class="selected" :v-lazy="https://placeimg.com/400/400/any3">
           </div>
       </div>
       <div id="lightbox-full" class="modal">
           <span class="close-lightbox cursor">&times;</span>
           <div class="lightbox-content">
             <div class="full-lightbox">
-                <img class="selected" v-lazy="https://placeimg.com/200/200/any1">
+                <img class="selected" :v-lazy="https://placeimg.com/1000/1000/any1">
             </div>
             <div class="full-lightbox">
-                <img class="selected" v-lazy="https://placeimg.com/200/200/any2">
+                <img class="selected" :v-lazy="https://placeimg.com/1000/1000/any2">
+            </div>
+            <div class="full-lightbox">
+                <img class="selected" :v-lazy="https://placeimg.com/1000/1000/any3">
             </div>
             <a class="prev">&#10094;</a>
             <a class="next">&#10095;</a>
