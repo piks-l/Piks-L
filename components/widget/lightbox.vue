@@ -23,8 +23,8 @@
             <div class="full-lightbox">
                 <img class="selected" src="https://placeimg.com/1000/1000/any3">
             </div>
-            <a class="prev">&#10094;</a>
-            <a class="next">&#10095;</a>
+            <a class="prev-full-lightbox">&#10094;</a>
+            <a class="next-full-lightbox">&#10095;</a>
           </div>
           <div class="caption-container">
               <p id="caption"></p>
@@ -63,17 +63,17 @@
         $('.close-lightbox').on( 'click', function() {
             $("#lightbox-full").css('display','none');
         });
-        $('.image').on( 'click', function() {
+        $('.image-lightbox').on( 'click', function() {
             $("#lightbox-full").css('display','block');
             lightboxIndex = $(this).find( "img" ).attr("data-slide");
             showLightbox(lightboxIndex);
             console.log(lightboxIndex);
         });
-        $('.prev').on( 'click', function() {
+        $('.prev-full-lightbox').on( 'click', function() {
             showLightbox(lightboxIndex -= 1);
             console.log(lightboxIndex);
         });
-        $('.next').on( 'click', function() {
+        $('.next-full-lightbox').on( 'click', function() {
             showLightbox(lightboxIndex += 1);
             console.log(lightboxIndex);
         });
@@ -96,6 +96,7 @@
 </script>
 <style scoped>
 /** WIDGET - LIGHTBOX */
+  /* Diaporama */
   .diaporama .image-lightbox {
 	    margin: 15px;
 	    display: inline-block;
@@ -104,10 +105,6 @@
 	    height: 25vh;
 	    position: relative;
 			background:#e9e9e9;
-	}
-	.diaporama .image-lightbox:first-child {
-	    width:calc(100% - 0px);
-			height: 35vh;
 	}
 	.diaporama img {
 			max-width: 100%;
@@ -120,4 +117,85 @@
 			height: auto;
 			max-height: 100%;
 	}
+  /* lightbox Full */
+  .lightbox-content {
+  	  position: relative;
+  	  background-color:transparent;
+  	  margin: auto;
+  	  padding: 0;
+  	  width: 60%;
+  		top: 50%;
+  		transform: translatey(-50%);
+  		height: 100%;
+  }
+  .close-lightbox {
+      color: #000;
+      position: absolute;
+      top: 10px;
+      right: 50px;
+      font-size: 70px;
+      font-weight: lighter;
+      text-transform: unset;
+  }
+  .close-lightbox:hover,
+  .close-lightbox:focus {
+  	  color: #999;
+  	  text-decoration: none;
+  	  cursor: pointer;
+  }
+  .full-lightbox {
+  	  display: none;
+  		height: 100%;
+  }
+  .full-lightbox img {
+      max-height: calc(100vh - 100px);
+  		max-width: 100%;
+  		top: 50%;
+      left: 50%;
+      position: relative;
+      transform: translate(-50%, -50%);
+  }
+  .prev-full-lightbox,
+  .next-full-lightbox {
+  	  cursor: pointer;
+  	  position: absolute;
+  	  top: 50%;
+  	  width: auto;
+  	  padding: 16px;
+  	  transform: translateY(-50%);
+  	  color: #000;
+  	  font-weight: bold;
+  	  font-size: 70px;
+  	  transition: 0.6s ease;
+  	  border-radius: 0 3px 3px 0;
+  	  user-select: none;
+  	  -webkit-user-select: none;
+  }
+  .prev-full-lightbox {
+  	  left: -100px;
+  }
+  .next-full-lightbox {
+  	  right: -100px;
+  	  border-radius: 3px 0 0 3px;
+  }
+  .prev-full-lightbox:hover,
+  .next-full-lightbox:hover {
+  	  color: #999;
+  }
+  .caption-container {
+      text-align: center;
+      background-color: transparent;
+      padding: 0;
+      color: var(--color-3);
+      font-size: initial;
+      position: fixed;
+      bottom: 15px;
+      width: 60%;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+  #caption {
+  		margin: 0;
+  		line-height: 35px;
+  }
 </style>
