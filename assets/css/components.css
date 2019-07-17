@@ -1,4 +1,4 @@
-/** WIDGET - LIGHTBOX */
+/* WIDGET - LIGHTBOX */
   /* Diaporama */
   .diaporama .image-lightbox {
 	    margin: 15px;
@@ -47,7 +47,7 @@
       text-align: center;
       background-color: transparent;
       padding: 0;
-      color: var(--color-3);
+      color: #000000;
       font-size: initial;
       position: fixed;
       bottom: 15px;
@@ -102,7 +102,7 @@
   .next-full-lightbox:hover {
   	  color: #999;
   }
-/** WIDGET - ACCORDEON */
+/* WIDGET - ACCORDEON */
   /* Accordeon */
   .accordeon {
       min-width: 290px;
