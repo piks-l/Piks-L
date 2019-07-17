@@ -32,7 +32,7 @@
   import accordeon from '~/components/widget/accordeon.vue'
   import lightbox from '~/components/widget/lightbox.vue'
   import slider from '~/components/widget/slider.vue'
-  import slider from '~/components/widget/modal.vue'
+  import modal from '~/components/widget/modal.vue'
 
   export default {
     layout: 'default',
