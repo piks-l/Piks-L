@@ -30,6 +30,7 @@ module.exports = {
     ]
   },
   css: [
+    '~/assets/css/components.css',
     '~/assets/css/main.css',
     '~/assets/css/responsive.css',
     '~/assets/css/transition.css',
