@@ -55,8 +55,8 @@
 <script>
   export default {
     mounted() {
-      document.querySelectorAll('.collapsible').forEach(el => el.addEventListener('click', e => {
-        e.currentTarget.classList.toggle('collapsible--open')
+      document.querySelectorAll('.accordeon').forEach(el => el.addEventListener('click', e => {
+        e.currentTarget.classList.toggle('accordeon--open')
       }));
     }
   };
