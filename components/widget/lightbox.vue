@@ -100,7 +100,7 @@
   .diaporama .image-lightbox {
 	    margin: 15px;
 	    display: inline-block;
-	    width: calc(50% - 30px);
+	    /* width: calc(50% - 30px); */
 	    overflow: hidden;
 	    height: 25vh;
 	    position: relative;
