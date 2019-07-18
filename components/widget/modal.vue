@@ -26,7 +26,7 @@ export default {
     // Get the modal
     var modal = document.getElementById("myModal");
     var btn = document.getElementById("open-modal");
-    var span = document.getElementsById("close-modal");
+    var span = document.getElementById("close-modal");
     btn.onclick = function() {
       modal.style.display = "block";
     }
