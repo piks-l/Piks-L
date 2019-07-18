@@ -229,6 +229,7 @@
       top: 70px;
       width: calc(100% - 40px);
       max-height: calc(100% - 130px);
+      overflow-y: scroll;
   }
   .modal h3, .modal h2 {
       margin: 20px 0;
