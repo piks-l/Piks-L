@@ -114,6 +114,8 @@
   .next-full-lightbox:hover {
   	  color: #999;
   }
+
+
 /* WIDGET - ACCORDEON */
   /* Accordeon */
   .accordeon {
@@ -169,6 +171,8 @@
   .accordeon--open .accordeon__content {
       opacity: 1;
   }
+
+
 /* WIDGET - MODAL */
   /* Modal */
   .modal {
@@ -194,14 +198,27 @@
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
+    -webkit-animation-duration: 0.5s;
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.5s
   }
   .modal-header {
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
+  }
+  #close-modal {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 70px;
+      background: #fff;
+      color: #000;
+      font-size: 40px;
+      text-align: center;
+      line-height: 70px;
+      cursor: pointer;
   }
   .modal-body {padding: 2px 16px;}
   .modal-footer {
@@ -211,12 +228,12 @@
   }
   /* Modal Animation */
   @-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
+    from { opacity:0}
+    to { opacity:1}
   }
   @keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
+    from { opacity:0}
+    to { opacity:1}
   }
   /* Modal Close*/
   .close {
