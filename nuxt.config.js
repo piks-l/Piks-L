@@ -46,6 +46,31 @@ module.exports = {
     { src: '~/plugins/owl.js', ssr: false }
   ],
   loading: '~/components/ui/loading.vue',
+  modules: [
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots'
+
+  ],
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: process.env.WEBSITE_URL,
+    cacheTime: 1000 * 60 * 15,
+    gzip: true,
+    generate: true, // Génère une version statique du sitemap quand activé. À utiliser avec nuxt generate.
+    exclude: [
+      '/admin/',
+      '/admin/**'
+    ],
+    routes() {
+      return getRoutes();
+    }
+  },
+  robots: {
+    Disallow: [
+      '/admin'
+    ],
+    Sitemap: `${process.env.WEBSITE_URL}/sitemap.xml`
+  },
   /*loading: false,*/
   generate: {
     routes: dynamicRoutes
