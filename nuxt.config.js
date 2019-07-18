@@ -61,9 +61,13 @@ module.exports = {
       '/admin/',
       '/admin/**'
     ],
-    routes() {
-      return getRoutes();
-    }
+    defaults: {
+      changefreq: 'daily',
+      priority: 1,
+      lastmod: new Date(),
+      lastmodrealtime: true
+    },
+    routes: []
   },
   robots: {
     Disallow: [
