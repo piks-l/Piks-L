@@ -4,7 +4,7 @@
   <div id="myModal" class="modal">
     <div class="modal-content">
       <div class="modal-header">
-        <span id="close-modal" class="close">&times;</span>
+        <span id="close-modal">&times;</span>
         <h2>Modal Header</h2>
       </div>
       <div class="modal-body">
