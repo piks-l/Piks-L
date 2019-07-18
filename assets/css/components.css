@@ -203,10 +203,12 @@
     animation-duration: 0.5s
   }
   .modal-header {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-    position:relative;
+      padding: 0px 15px;
+      background-color: #5cb85c;
+      color: white;
+      position: relative;
+      height: 70px;
+      display: block;
   }
   #close-modal {
       position: absolute;
@@ -221,11 +223,25 @@
       line-height: 70px;
       cursor: pointer;
   }
-  .modal-body {padding: 2px 16px;}
+  .modal-body {
+      padding: 0 20px;
+      position: absolute;
+      top: 70px;
+      width: calc(100% - 40px);
+      max-height: calc(100% - 130px);
+  }
+  .modal h3, .modal h2 {
+      margin: 20px 0;
+      display: inline-block;
+  }
   .modal-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
+      padding: 0 20px;
+      background-color: #5cb85c;
+      color: white;
+      position: absolute;
+      bottom: 0;
+      width: calc(100% - 40px);
+      height: 60px;
   }
   /* Modal Animation */
   @-webkit-keyframes animatetop {
